@@ -31,21 +31,28 @@
             let resultsTable = document.getElementById("results");
             resultsTable.innerHTML = "";
             
+            // Keeping your original probabilities
             const monsters = [
-                { id: 10876, rate: 0.155 },{ id: 10877, rate: 0.155 }, 
-				{ id: 10878, rate: 0.155 }, { id: 10879, rate: 0.155 },
+                { id: 10876, rate: 0.155 }, { id: 10877, rate: 0.155 }, 
+                { id: 10878, rate: 0.155 }, { id: 10879, rate: 0.155 },
                 { id: 10875, rate: 0.1 }, { id: 10874, rate: 0.025 }
             ];
-            
+
+            // Normalize the probabilities to sum to 1
+            let totalRate = monsters.reduce((sum, monster) => sum + monster.rate, 0);
+            let normalizedMonsters = monsters.map(m => ({ id: m.id, rate: m.rate / totalRate }));
+
             for (let p = 1; p <= numPlayers; p++) {
                 let draws = [];
+
                 for (let i = 0; i < numDraws; i++) {
-                    if ((i + 1) % 35 === 0) {
-                        draws.push(10874);
+                    if ((i + 1) % 35 === 0 && i !== 0) {
+                        draws.push(10874); // Guaranteed rare draw every 35th draw
                     } else {
                         let rand = Math.random();
                         let cumulative = 0;
-                        for (let monster of monsters) {
+
+                        for (let monster of normalizedMonsters) {
                             cumulative += monster.rate;
                             if (rand < cumulative) {
                                 draws.push(monster.id);
@@ -54,13 +61,14 @@
                         }
                     }
                 }
-                
+
+                // Display results in table
                 let headerRow = resultsTable.insertRow();
                 let headerCell = headerRow.insertCell();
                 headerCell.textContent = `Player ${p}`;
                 headerCell.colSpan = 10;
                 headerCell.style.fontWeight = "bold";
-                
+
                 for (let i = 0; i < draws.length; i += 10) {
                     let row = resultsTable.insertRow();
                     for (let j = 0; j < 10; j++) {
