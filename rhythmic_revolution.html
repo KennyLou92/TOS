@@ -32,35 +32,46 @@
             resultsTable.innerHTML = "";
             
             const monsters = [
-                { id: 10876, rate: 0.18 },{ id: 10877, rate: 0.18 }, 
-				{ id: 10878, rate: 0.18 }, { id: 10879, rate: 0.18 },
+                { id: 10876, rate: 0.18 }, { id: 10877, rate: 0.18 }, 
+                { id: 10878, rate: 0.18 }, { id: 10879, rate: 0.18 },
                 { id: 10875, rate: 0.045 }, { id: 10874, rate: 0.01 }
             ];
-            
+
             for (let p = 1; p <= numPlayers; p++) {
                 let draws = [];
+                
                 for (let i = 0; i < numDraws; i++) {
-                    if ((i + 1) % 35 === 0) {
-                        draws.push(10874);
+                    if ((i + 1) % 35 === 0 && i !== 0) {
+                        draws.push(10874); // Guaranteed rare draw every 35th draw
                     } else {
                         let rand = Math.random();
                         let cumulative = 0;
+                        let selected = null;
+
                         for (let monster of monsters) {
                             cumulative += monster.rate;
                             if (rand < cumulative) {
-                                draws.push(monster.id);
+                                selected = monster.id;
                                 break;
                             }
                         }
+
+                        // If no monster is selected (due to probability sum issue), select last one
+                        if (!selected) {
+                            selected = monsters[monsters.length - 2].id; // Pick 10875 as a fallback
+                        }
+
+                        draws.push(selected);
                     }
                 }
-                
+
+                // Display results in table
                 let headerRow = resultsTable.insertRow();
                 let headerCell = headerRow.insertCell();
                 headerCell.textContent = `Player ${p}`;
                 headerCell.colSpan = 10;
                 headerCell.style.fontWeight = "bold";
-                
+
                 for (let i = 0; i < draws.length; i += 10) {
                     let row = resultsTable.insertRow();
                     for (let j = 0; j < 10; j++) {
