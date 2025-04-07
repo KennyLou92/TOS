@@ -65,69 +65,68 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
-	.dropdown {
-	  position: relative;
-	  margin-left: 10px;
-	}
-
-	/* 下拉按鈕的樣式 */
-	.dropdown-button {
-	  background: #fff;
-	  padding: 8px 16px; /* 微調按鈕內邊距 */
-	  border-radius: 6px; /* 邊角圓潤 */
-	  border: 1px solid #ccc; /* 邊框顏色 */
-	  display: flex;
-	  align-items: center;
-	  font-size: 14px;
-	  cursor: pointer;
-	  transition: border-color 0.3s; /* 讓邊框顏色變化更平滑 */
-	}
-
-	/* 圖片的樣式 */
-	.dropdown-button img {
-	  width: 24px; /* 設定圖片大小 */
-	  height: 24px; /* 設定圖片大小 */
-	  margin-right: 8px; /* 與文字的間距 */
-	}
-
-	/* 當鼠標懸停時，改變邊框顏色 */
-	.dropdown-button:hover {
-	  border-color: #888;
-	}
-
-	/* 下拉選單樣式 */
-	.dropdown-content {
-	  display: none;
-	  position: absolute;
-	  top: 100%;
-	  left: 0;
-	  background-color: #fff;
-	  border: 1px solid #ccc; /* 邊框 */
-	  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* 柔和陰影 */
-	  z-index: 1;
-	  min-width: max-content; /* 根據內容自動寬度 */
-	  padding: 4px 0;
-	  border-radius: 6px;
-	}
-
-	.dropdown-item {
-	  padding: 6px 10px;
-	  cursor: pointer;
-	  display: flex;
-	  align-items: center;
-	  font-size: 14px;
-	  transition: background-color 0.2s;
-	}
-
-	.dropdown-item:hover {
-	  background-color: #f0f0f0;
-	}
-
-	.dropdown-item img {
-	  width: 24px; /* 設定圖片大小 */
-	  height: 24px; /* 設定圖片大小 */
-	  margin-right: 10px; /* 圖片與文字的間距 */
-	}
+    .dropdown {
+      position: relative;
+      margin-left: 10px;
+    }
+    .dropdown-button {
+      background: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: border-color 0.3s;
+    }
+    .dropdown-button:hover {
+      border-color: #888;
+    }
+    .dropdown-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    .dropdown-content {
+      display: none;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      min-width: max-content;
+      padding: 4px 0;
+      border-radius: 6px;
+      transition: opacity 0.3s ease;
+    }
+    .dropdown-content.show {
+      display: block;
+      opacity: 1;
+    }
+    .dropdown-item {
+      padding: 6px 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+    .dropdown-item:hover {
+      background-color: #f0f0f0;
+    }
+    .dropdown-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .dropdown-item.selected {
+      opacity: 0.4;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
@@ -135,72 +134,49 @@
     <div class="search-bar">
       <input id="searchInput" onkeyup="filterMonsters()" placeholder="搜尋怪物..." type="text"/>
     </div>
-    <!-- 屬性下拉選單 -->
+
+    <!-- 屬性 -->
     <div class="dropdown" id="attributeDropdown">
-      <div class="dropdown-button">
-	  <img src="" alt="屬性圖示" style="display: none;" />
+      <div class="dropdown-button dropdown-trigger">
+        <div class="selected-icons"></div>
         <span>屬性</span>
       </div>
       <div class="dropdown-content" id="attributeContent">
-        <div class="dropdown-item" data-value="1">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" alt="水">
-        </div>
-        <div class="dropdown-item" data-value="2">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" alt="火">
-        </div>
-        <div class="dropdown-item" data-value="3">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" alt="木">
-        </div>
-        <div class="dropdown-item" data-value="4">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" alt="光">
-        </div>
-        <div class="dropdown-item" data-value="5">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" alt="暗">
-        </div>
+        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" alt="水"></div>
+        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" alt="火"></div>
+        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" alt="木"></div>
+        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" alt="光"></div>
+        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" alt="暗"></div>
       </div>
     </div>
-    <!-- 種族下拉選單 -->
+
+    <!-- 種族 -->
     <div class="dropdown" id="raceDropdown">
-      <div class="dropdown-button">
-	  <img src="" alt="種族圖示" style="display: none;" />
+      <div class="dropdown-button dropdown-trigger">
+        <div class="selected-icons"></div>
         <span>種族</span>
       </div>
       <div class="dropdown-content" id="raceContent">
-        <div class="dropdown-item" data-value="1">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" alt="人">
-        </div>
-        <div class="dropdown-item" data-value="2">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" alt="獸">
-        </div>
-        <div class="dropdown-item" data-value="3">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" alt="妖">
-        </div>
-        <div class="dropdown-item" data-value="4">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" alt="龍">
-        </div>
-        <div class="dropdown-item" data-value="5">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" alt="神">
-        </div>
-        <div class="dropdown-item" data-value="8">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" alt="魔">
-        </div>
-        <div class="dropdown-item" data-value="10">
-          <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" alt="機械">
-        </div>
+        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" alt="人"></div>
+        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" alt="獸"></div>
+        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" alt="妖"></div>
+        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" alt="龍"></div>
+        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" alt="神"></div>
+        <div class="dropdown-item" data-value="8"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" alt="魔"></div>
+        <div class="dropdown-item" data-value="10"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" alt="機械"></div>
       </div>
     </div>
+
+    <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">重設</button>
   </div>
+
   <div class="gallery" id="monsterGallery">
-   <div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
-    <div>
-     0001
+    <div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
+      <div>0001</div>
+      <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
+      <div>莫莉</div>
     </div>
-    <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
-    <div>
-     莫莉
-    </div>
-   </div>
-   <div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-race="1">
+<div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-race="1">
     <div>
      0002
     </div>
@@ -36071,72 +36047,80 @@
    </div>
   </div>
 <script>
-// 變數來保存當前選擇的屬性和種族
-let selectedAttribute = null;
-let selectedRace = null;
+let selectedAttributes = new Set();
+let selectedRaces = new Set();
 
-// 顯示/隱藏下拉選單
-document.querySelectorAll('.dropdown-button').forEach(button => {
-  button.addEventListener('click', function () {
-    const content = this.parentNode.querySelector('.dropdown-content');
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+document.querySelectorAll(".dropdown").forEach(dropdown => {
+  const trigger = dropdown.querySelector(".dropdown-trigger");
+  const content = dropdown.querySelector(".dropdown-content");
+
+  trigger.addEventListener("click", () => {
+    content.classList.toggle("show");
   });
 });
 
-// 點選屬性選項後更新狀態並觸發過濾
+document.addEventListener("click", function(event) {
+  document.querySelectorAll(".dropdown-content").forEach(content => {
+    if (!content.parentElement.contains(event.target)) {
+      content.classList.remove("show");
+    }
+  });
+});
+
+function updateSelectedIcons(containerId, selectedSet) {
+  const container = document.querySelector(`#${containerId} .selected-icons`);
+  const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
+  const label = document.querySelector(`#${containerId} .dropdown-button span`);
+  container.innerHTML = '';
+
+  selectedSet.forEach(value => {
+    items.forEach(item => {
+      if (item.dataset.value === value) {
+        const img = item.querySelector('img').cloneNode();
+        img.style.width = '20px';
+        img.style.height = '20px';
+        container.appendChild(img);
+      }
+    });
+  });
+// 根據是否有選擇來顯示或隱藏標題文字
+  if (selectedSet.size > 0) {
+    label.style.display = 'none';
+  } else {
+    label.style.display = 'inline';
+  }
+} 
+
 document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
   item.addEventListener('click', function () {
-    const attributeValue = this.getAttribute('data-value');
-    
-    if (selectedAttribute === attributeValue) {
-      selectedAttribute = null;
-      const dropdown = document.getElementById('attributeDropdown');
-      dropdown.querySelector('.dropdown-button span').textContent = "屬性";
-      dropdown.querySelector('.dropdown-button img').style.display = "none"; // 隱藏圖片
+    const value = this.getAttribute('data-value');
+    this.classList.toggle('selected');
+
+    if (selectedAttributes.has(value)) {
+      selectedAttributes.delete(value);
     } else {
-      selectedAttribute = attributeValue;
-      const dropdown = document.getElementById('attributeDropdown');
-      const selectedImg = this.querySelector('img').src;
-      dropdown.querySelector('.dropdown-button img').src = selectedImg; // 更新圖片
-      dropdown.querySelector('.dropdown-button img').style.display = "block"; // 顯示圖片
-      dropdown.querySelector('.dropdown-button span').textContent = this.textContent;
+      selectedAttributes.add(value);
     }
-    
-    document.querySelector('.dropdown-content').style.display = 'none';
+    updateSelectedIcons('attributeDropdown', selectedAttributes);
     filterMonsters();
   });
 });
 
-// 點選種族選項後更新狀態並觸發過濾
-// 點選種族選項後更新狀態並觸發過濾
 document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
   item.addEventListener('click', function () {
-    const raceValue = this.getAttribute('data-value');
-    
-    if (selectedRace === raceValue) {
-      selectedRace = null;
-      const dropdown = document.getElementById('raceDropdown');
-      dropdown.querySelector('.dropdown-button span').textContent = "種族";
-      dropdown.querySelector('.dropdown-button img').style.display = "none"; // 隱藏圖片
+    const value = this.getAttribute('data-value');
+    this.classList.toggle('selected');
+
+    if (selectedRaces.has(value)) {
+      selectedRaces.delete(value);
     } else {
-      selectedRace = raceValue;
-      const dropdown = document.getElementById('raceDropdown');
-      const selectedImg = this.querySelector('img').src;
-      dropdown.querySelector('.dropdown-button img').src = selectedImg; // 更新圖片
-      dropdown.querySelector('.dropdown-button img').style.display = "block"; // 顯示圖片
-      dropdown.querySelector('.dropdown-button span').textContent = this.textContent;
+      selectedRaces.add(value);
     }
-    
-    // 隱藏下拉選單
-    const dropdownContent = document.getElementById('raceContent');
-    dropdownContent.style.display = 'none';
-    
+    updateSelectedIcons('raceDropdown', selectedRaces);
     filterMonsters();
   });
 });
 
-
-// 過濾怪物
 function filterMonsters() {
   const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
   const monsters = document.querySelectorAll(".monster");
@@ -36148,20 +36132,30 @@ function filterMonsters() {
     const race = monster.getAttribute('data-race');
 
     const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
-    const matchesAttribute = !selectedAttribute || attribute === selectedAttribute;
-    const matchesRace = !selectedRace || race === selectedRace;
+    const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
+    const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
 
-    if (matchesSearch && matchesAttribute && matchesRace) {
-      monster.style.display = "block";
-    } else {
-      monster.style.display = "none";
-    }
+    monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
   });
 }
 
-window.onload = function () {
+document.getElementById("resetFilters").addEventListener("click", () => {
+  selectedAttributes.clear();
+  selectedRaces.clear();
+
+  document.querySelectorAll('.dropdown-item.selected').forEach(item => {
+    item.classList.remove('selected');
+  });
+
+  document.querySelectorAll('.selected-icons').forEach(iconBox => {
+    iconBox.innerHTML = '';
+  });
+  // ➕ 加上這兩行讓標題回來
+  updateSelectedIcons('attributeDropdown', selectedAttributes);
+  updateSelectedIcons('raceDropdown', selectedRaces);
+  
   filterMonsters();
-}
+});
 </script>
 </body>
 </html>
