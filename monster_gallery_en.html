@@ -36125,6 +36125,7 @@ document.getElementById("resetFilters").addEventListener("click", () => {
   document.querySelectorAll('.selected-icons').forEach(iconBox => {
     iconBox.innerHTML = '';
   });
+  document.getElementById("searchInput").value = '';
   // ➕ 加上這兩行讓標題回來
   updateSelectedIcons('attributeDropdown', selectedAttributes);
   updateSelectedIcons('raceDropdown', selectedRaces);
