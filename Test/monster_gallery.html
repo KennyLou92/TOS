@@ -260,6 +260,7 @@
         const id = this.getAttribute('data-id');
         const name = this.querySelector("div:nth-child(3)").textContent;
         const info = monsterData.find(m => m.id === id);
+		console.log(info);  
 
         if (info) {
           const html = `
@@ -271,10 +272,13 @@
           `;
           document.getElementById("monsterInfoContent").innerHTML = html;
           document.getElementById("monsterInfoModal").style.display = "flex";
-        }
-      });
+        } else {
+    // 如果没有找到匹配的怪物，显示一个提示
+    document.getElementById("monsterInfoContent").innerHTML = "<p>無法找到怪物資訊</p>";
+    document.getElementById("monsterInfoModal").style.display = "flex";
+	}
     });
-  }
+	}
 
   function closeModal() {
     document.getElementById("monsterInfoModal").style.display = "none";
