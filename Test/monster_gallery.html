@@ -389,21 +389,16 @@ document.querySelectorAll('.monster').forEach(monster => {
       if (m !== monster) m.classList.remove('show-info');
     });
 
-    const id = monster.dataset.id;  // 確保這是四位數字的字串
+    const id = parseInt(monster.dataset.id);  // 注意這裡要轉成 number
     const infoBox = monster.querySelector('.monster-info');
-
-    // 用來打印資料檢查
-    console.log(查詢 id: ${id});
-    console.log(monsterData:, monsterData);
-
-    const data = monsterData[id];  // 使用字串型態的 id 查詢
+    const data = monsterData[id];
 
     if (data && infoBox) {
-      infoBox.innerHTML = 
+      infoBox.innerHTML = `
         <div>HP：${data.HP}</div>
         <div>ATK：${data.ATK}</div>
         <div>REC：${data.REC}</div>
-      ;
+      `;
     } else {
       infoBox.innerHTML = '<div>找不到資料</div>';
     }
@@ -411,6 +406,7 @@ document.querySelectorAll('.monster').forEach(monster => {
     monster.classList.toggle('show-info');
   });
 });
+
 
 
 </script>
