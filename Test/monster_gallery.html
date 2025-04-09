@@ -412,6 +412,7 @@ function scrollToBottom() {
 </script>
 <script>
 // Function to fetch monster info from monster.json based on the ID
+// Function to fetch monster info from monster.json based on the ID
 function fetchMonsterInfo(monsterId) {
   console.log("Fetching info for monster ID:", monsterId); // Debugging
 
@@ -444,7 +445,8 @@ function fetchMonsterInfo(monsterId) {
 
 // Function to close the modal
 function closeMonsterInfo() {
-  document.getElementById('monsterInfoModal').style.display = 'flex';
+  const modal = document.getElementById('monsterInfoModal');
+  modal.style.display = 'none'; // Hide the modal
 }
 
 // Add click event listeners to each monster
@@ -454,6 +456,7 @@ document.querySelectorAll('.monster').forEach(monster => {
     fetchMonsterInfo(monsterId);
   });
 });
+
 </script>
 <!-- 回頂部 / 到最底按鈕 -->
 <div id="scrollButtons">
