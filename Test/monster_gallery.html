@@ -433,7 +433,6 @@ function scrollToBottom() {
 </script>
 <script>
 // Function to fetch monster info from monster.json based on the ID
-// Function to fetch monster info from monster.json based on the ID
 function fetchMonsterInfo(monsterId) {
   console.log("Fetching info for monster ID:", monsterId); // Debugging
 
@@ -441,7 +440,9 @@ function fetchMonsterInfo(monsterId) {
     .then(response => response.json())
     .then(data => {
       // Find the monster that matches the clicked ID
+	  console.log(data);
       const monster = data.find(monster => monster.id === monsterId);
+	  console.log("Matched Monster Data:", monster);
 
       if (monster) {
         console.log("Matched Monster Data:", monster); // Log the matched monster's data
