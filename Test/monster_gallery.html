@@ -223,17 +223,21 @@
 	#monsterInfoContent button:hover {
 	  background-color: #555;
 	}
-	#monsterInfoModal .modal-content {
-	  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-	  margin: 5% auto;
-	  padding: 20px;
-	  border: 1px solid #888;
-	  width: 80%;
+	.modalContent {
 	  position: relative;
-	  background-size: contain; /* Ensure the image covers the modal */
-	  background-position: center; /* Center the background image */
-	  background-repeat: no-repeat; /* Prevents repeating the background image */
 	}
+
+	.modalContent::after {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background: rgba(255, 255, 255, 0.4);
+	  z-index: -1;
+	}
+
   </style>
 </head>
 <body>
@@ -457,8 +461,10 @@
 		  if (monster) {
 			// Set the background image of the modal to the monster's image
 			const modalContent = document.getElementById('monsterInfoContent');
-			modalContent.style.backgroundImage = `rgba(255, 255, 255, 0.8) url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
-			modalContent.style.backgroundSize = 'contain'; // 确保图片自适应
+			modalContent.style.background = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg') no-repeat center center`;
+			modalContent.style.backgroundSize = 'cover'; // 确保图片覆盖整个背景
+			modalContent.style.opacity = '0.4'; // 直接设置modal的透明度
+
 			// Display original data
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
