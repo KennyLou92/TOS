@@ -425,7 +425,7 @@ function fetchMonsterInfo(monsterId) {
         console.log("Matched Monster Data:", monster); // Log the matched monster's data
 
         // Update modal with monster details
-        document.getElementById('monsterName').textContent = "Name: " + monster.name;
+        document.getElementById('monsterID').textContent = "ID: " + monster.id; // Displaying ID
         document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
         document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
         document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
@@ -464,7 +464,7 @@ document.querySelectorAll('.monster').forEach(monster => {
 <div id="monsterInfoModal" style="display: none;">
   <div id="monsterInfoContent">
     <h2>Monster Info</h2>
-    <p id="monsterName"></p>
+    <p id="monsterID"></p>
     <p>HP: <span id="monsterHP"></span></p>
     <p>ATK: <span id="monsterATK"></span></p>
     <p>REC: <span id="monsterREC"></span></p>
