@@ -414,7 +414,7 @@
         .then(data => {
           const monster = data.find(m => m.id === monsterId);
           if (monster) {
-            document.getElementById('monsterID').textContent = monster.name +"("ID: " + monster.id +")";
+            document.getElementById('monsterID').textContent = monster.name + " (ID: " + monster.id + ")";
             document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
             document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
             document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
