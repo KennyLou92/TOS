@@ -412,30 +412,34 @@ function scrollToBottom() {
 <script>
 // Function to fetch monster info from monster.json based on the ID
 function fetchMonsterInfo(monsterId) {
-console.log("Fetching info for monster ID:", monsterId); // Debugging
+  console.log("Fetching info for monster ID:", monsterId); // Debugging
 
   fetch('monster.json')
     .then(response => response.json())
     .then(data => {
-	console.log("Data fetched:", data); // Debugging
-	
+      // Find the monster that matches the clicked ID
       const monster = data.find(monster => monster.id === monsterId);
+
       if (monster) {
+        console.log("Matched Monster Data:", monster); // Log the matched monster's data
+
         // Update modal with monster details
         document.getElementById('monsterName').textContent = monster.id;
         document.getElementById('monsterHP').textContent = monster.HP;
         document.getElementById('monsterATK').textContent = monster.ATK;
         document.getElementById('monsterREC').textContent = monster.REC;
+
         // Display the modal
         document.getElementById('monsterInfoModal').style.display = 'flex';
-      }else {
-        console.error("Monster not found:", monsterId); // Debugging
+      } else {
+        console.error("Monster not found:", monsterId); // If no match, log the error
       }
     })
     .catch(error => {
       console.error('Error fetching monster data:', error);
     });
 }
+
 
 // Function to close the modal
 function closeMonsterInfo() {
