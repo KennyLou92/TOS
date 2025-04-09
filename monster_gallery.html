@@ -36132,6 +36132,23 @@
     </div>
    </div>
   </div>
+<div id="scrollButtons">
+    <button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+    <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
+  </div>
+
+  <!-- Modal for displaying monster info -->
+  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+    <div class="modal-content" id="monsterInfoContent">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="monsterID"></p>
+	  <p id="monsterLevel"></p>  <!-- 顯示 Level -->
+      <p id="monsterHP"></p>
+      <p id="monsterATK"></p>
+      <p id="monsterREC"></p>
+      <button onclick="closeModal()">關閉</button>
+    </div>
+  </div> 
   <script>
     let selectedAttributes = new Set();
     let selectedRaces = new Set();
