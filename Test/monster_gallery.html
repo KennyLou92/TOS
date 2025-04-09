@@ -168,6 +168,7 @@
 	  object-fit: contain;
 	}
 	#monsterInfoModal {
+	  display:none
 	  position: fixed;
 	  top: 0;
 	  left: 0;
@@ -424,13 +425,14 @@ function fetchMonsterInfo(monsterId) {
         console.log("Matched Monster Data:", monster); // Log the matched monster's data
 
         // Update modal with monster details
-        document.getElementById('monsterName').textContent = monster.id;
-        document.getElementById('monsterHP').textContent = monster.HP;
-        document.getElementById('monsterATK').textContent = monster.ATK;
-        document.getElementById('monsterREC').textContent = monster.REC;
+        document.getElementById('monsterName').textContent = "Name: " + monster.name;
+        document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
+        document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
+        document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
 
-        // Display the modal
-        document.getElementById('monsterInfoModal').style.display = 'flex';
+        // Ensure the modal is visible
+        const modal = document.getElementById('monsterInfoModal');
+        modal.style.display = 'flex'; // Show the modal
       } else {
         console.error("Monster not found:", monsterId); // If no match, log the error
       }
@@ -439,7 +441,6 @@ function fetchMonsterInfo(monsterId) {
       console.error('Error fetching monster data:', error);
     });
 }
-
 
 // Function to close the modal
 function closeMonsterInfo() {
