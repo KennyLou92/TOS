@@ -167,18 +167,6 @@
 	  height: 30px;
 	  object-fit: contain;
 	}
-	#monsterInfoModal {
-	  display: none;
-	  position: fixed;
-	  z-index: 1;
-	  left: 0;
-	  top: 0;
-	  width: 100%;
-	  height: 100%;
-	  overflow: auto;
-	  background-color: rgba(0,0,0,0.4);
-	  padding-top: 60px;
-	}
 
 	.modal-content {
 	  background-color: #fefefe;
@@ -301,253 +289,155 @@
     </div>
    </div>
  </div>
-<script>
-let selectedAttributes = new Set();
-let selectedRaces = new Set();
-
-document.querySelectorAll(".dropdown").forEach(dropdown => {
-  const trigger = dropdown.querySelector(".dropdown-trigger");
-  const content = dropdown.querySelector(".dropdown-content");
-
-  trigger.addEventListener("click", () => {
-    content.classList.toggle("show");
-  });
-});
-
-document.addEventListener("click", function(event) {
-  document.querySelectorAll(".dropdown-content").forEach(content => {
-    if (!content.parentElement.contains(event.target)) {
-      content.classList.remove("show");
-    }
-  });
-});
-
-function updateSelectedIcons(containerId, selectedSet) {
-  const container = document.querySelector(`#${containerId} .selected-icons`);
-  const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
-  const label = document.querySelector(`#${containerId} .dropdown-button span`);
-  container.innerHTML = '';
-
-  selectedSet.forEach(value => {
-    items.forEach(item => {
-      if (item.dataset.value === value) {
-        const img = item.querySelector('img').cloneNode();
-        img.style.width = '20px';
-        img.style.height = '20px';
-        container.appendChild(img);
-      }
-    });
-  });
-// 根據是否有選擇來顯示或隱藏標題文字
-  if (selectedSet.size > 0) {
-    label.style.display = 'none';
-  } else {
-    label.style.display = 'inline';
-  }
-} 
-
-document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
-  item.addEventListener('click', function () {
-    const value = this.getAttribute('data-value');
-    this.classList.toggle('selected');
-
-    if (selectedAttributes.has(value)) {
-      selectedAttributes.delete(value);
-    } else {
-      selectedAttributes.add(value);
-    }
-    updateSelectedIcons('attributeDropdown', selectedAttributes);
-    filterMonsters();
-  });
-});
-
-document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
-  item.addEventListener('click', function () {
-    const value = this.getAttribute('data-value');
-    this.classList.toggle('selected');
-
-    if (selectedRaces.has(value)) {
-      selectedRaces.delete(value);
-    } else {
-      selectedRaces.add(value);
-    }
-    updateSelectedIcons('raceDropdown', selectedRaces);
-    filterMonsters();
-  });
-});
-
-function filterMonsters() {
-  const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
-  const monsters = document.querySelectorAll(".monster");
-
-  monsters.forEach(monster => {
-    const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
-    const id = monster.querySelector("div:nth-child(1)").textContent.toLowerCase();
-    const attribute = monster.getAttribute('data-attribute');
-    const race = monster.getAttribute('data-race');
-
-    const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
-    const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
-    const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
-
-    monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
-  });
-}
-
-document.getElementById("resetFilters").addEventListener("click", () => {
-  selectedAttributes.clear();
-  selectedRaces.clear();
-
-  document.querySelectorAll('.dropdown-item.selected').forEach(item => {
-    item.classList.remove('selected');
-  });
-
-  document.querySelectorAll('.selected-icons').forEach(iconBox => {
-    iconBox.innerHTML = '';
-  });
-  document.getElementById("searchInput").value = '';
-  // ➕ 加上這兩行讓標題回來
-  updateSelectedIcons('attributeDropdown', selectedAttributes);
-  updateSelectedIcons('raceDropdown', selectedRaces);
-  
-  filterMonsters();
-});
-// 顯示 / 隱藏按鈕
-window.addEventListener('scroll', () => {
-  const scrollBtn = document.getElementById('scrollButtons');
-  if (window.scrollY > 200) {
-    scrollBtn.style.display = 'flex';
-  } else {
-    scrollBtn.style.display = 'none';
-  }
-});
-
-// 滾動功能
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function scrollToBottom() {
-  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-}
-</script>
-<script>
-// Function to fetch monster info from monster.json based on the ID
-function fetchMonsterInfo(monsterId) {
-  console.log("Fetching info for monster ID:", monsterId); // Debugging
-
-  fetch('monster.json')
-    .then(response => response.json())
-    .then(data => {
-      // Find the monster that matches the clicked ID
-	  console.log(data);
-      const monster = data.find(monster => monster.id === monsterId);
-	  console.log("Matched Monster Data:", monster);
-
-      if (monster) {
-        console.log("Matched Monster Data:", monster); // Log the matched monster's data
-
-        // Update modal with monster details
-        document.getElementById('monsterID').textContent = "ID: " + monster.id; // Displaying ID
-        document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
-        document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
-        document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
-
-        // Ensure the modal is visible
-        const modal = document.getElementById('monsterInfoModal');
-        modal.style.display = 'flex'; // Show the modal
-      } else {
-        console.error("Monster not found:", monsterId); // If no match, log the error
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching monster data:', error);
-    });
-}
-
-// Function to close the modal
-function closeMonsterInfo() {
-  const modal = document.getElementById('monsterInfoModal');
-  modal.style.display = 'none'; // Hide the modal
-}
-
-// Add click event listeners to each monster
-document.querySelectorAll('.monster').forEach(monster => {
-  monster.addEventListener('click', function() {
-    const monsterId = this.getAttribute('data-id');
-    fetchMonsterInfo(monsterId);
-  });
-});
-
-</script>
-<script>
-// 為所有 .monster 元素綁定點擊事件
-document.querySelectorAll('.monster').forEach(monster => {
-  monster.addEventListener('click', () => {
-    const id = monster.getAttribute('data-id');
-    fetchMonsterInfo(id);
-  });
-});
-
-// 關閉彈窗的函數
-function closeModal() {
-  document.getElementById("monsterInfoModal").style.display = "none";
-}
-</script>
-<!-- 回頂部 / 到最底按鈕 -->
-<!-- 回頂部 / 到最底按鈕 -->
 <div id="scrollButtons">
-  <button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
-  <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
-</div>
-
-<!-- Modal for displaying monster info -->
-<div id="monsterInfoModal" style="display:none;">
-  <div class="modal-content" id="monsterInfoContent">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <p id="monsterID"></p>
-    <p id="monsterHP"></p>
-    <p id="monsterATK"></p>
-    <p id="monsterREC"></p>
-    <button onclick="closeModal()">關閉</button>
+    <button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+    <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
   </div>
-</div>
 
-<script>
-// 從 monster.json 取得資訊
-function fetchMonsterInfo(monsterId) {
-  fetch('monster.json')
-    .then(response => response.json())
-    .then(data => {
-      const monster = data.find(m => m.id === monsterId);
-      if (monster) {
-        document.getElementById('monsterID').textContent = "ID: " + monster.id;
-        document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
-        document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
-        document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
-        document.getElementById('monsterInfoModal').style.display = 'flex';
-      } else {
-        alert("找不到怪物資料！");
-      }
-    })
-    .catch(err => {
-      console.error("載入 monster.json 發生錯誤：", err);
+  <!-- Modal for displaying monster info -->
+  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+    <div class="modal-content" id="monsterInfoContent">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="monsterID"></p>
+      <p id="monsterHP"></p>
+      <p id="monsterATK"></p>
+      <p id="monsterREC"></p>
+      <button onclick="closeModal()">關閉</button>
+    </div>
+  </div>
+
+  <script>
+    let selectedAttributes = new Set();
+    let selectedRaces = new Set();
+
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
+      const trigger = dropdown.querySelector(".dropdown-trigger");
+      const content = dropdown.querySelector(".dropdown-content");
+
+      trigger.addEventListener("click", () => {
+        content.classList.toggle("show");
+      });
     });
-}
 
-// 點擊卡片時綁定觸發
-document.querySelectorAll('.monster').forEach(monster => {
-  monster.addEventListener('click', () => {
-    const id = monster.getAttribute('data-id');
-    fetchMonsterInfo(id);
-  });
-});
+    document.addEventListener("click", function(event) {
+      document.querySelectorAll(".dropdown-content").forEach(content => {
+        if (!content.parentElement.contains(event.target)) {
+          content.classList.remove("show");
+        }
+      });
+    });
 
-// 關閉 modal
-function closeModal() {
-  document.getElementById("monsterInfoModal").style.display = "none";
-}
-</script>
+    function updateSelectedIcons(containerId, selectedSet) {
+      const container = document.querySelector(`#${containerId} .selected-icons`);
+      const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
+      const label = document.querySelector(`#${containerId} .dropdown-button span`);
+      container.innerHTML = '';
+
+      selectedSet.forEach(value => {
+        items.forEach(item => {
+          if (item.dataset.value === value) {
+            const img = item.querySelector('img').cloneNode();
+            img.style.width = '20px';
+            img.style.height = '20px';
+            container.appendChild(img);
+          }
+        });
+      });
+      label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
+    }
+
+    document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
+      item.addEventListener('click', function () {
+        const value = this.getAttribute('data-value');
+        this.classList.toggle('selected');
+        selectedAttributes.has(value) ? selectedAttributes.delete(value) : selectedAttributes.add(value);
+        updateSelectedIcons('attributeDropdown', selectedAttributes);
+        filterMonsters();
+      });
+    });
+
+    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+      item.addEventListener('click', function () {
+        const value = this.getAttribute('data-value');
+        this.classList.toggle('selected');
+        selectedRaces.has(value) ? selectedRaces.delete(value) : selectedRaces.add(value);
+        updateSelectedIcons('raceDropdown', selectedRaces);
+        filterMonsters();
+      });
+    });
+
+    function filterMonsters() {
+      const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
+      const monsters = document.querySelectorAll(".monster");
+
+      monsters.forEach(monster => {
+        const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
+        const id = monster.querySelector("div:nth-child(1)").textContent.toLowerCase();
+        const attribute = monster.getAttribute('data-attribute');
+        const race = monster.getAttribute('data-race');
+
+        const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
+        const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
+        const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
+
+        monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
+      });
+    }
+
+    document.getElementById("resetFilters").addEventListener("click", () => {
+      selectedAttributes.clear();
+      selectedRaces.clear();
+      document.querySelectorAll('.dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+      document.querySelectorAll('.selected-icons').forEach(iconBox => iconBox.innerHTML = '');
+      document.getElementById("searchInput").value = '';
+      updateSelectedIcons('attributeDropdown', selectedAttributes);
+      updateSelectedIcons('raceDropdown', selectedRaces);
+      filterMonsters();
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollBtn = document.getElementById('scrollButtons');
+      scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+    function fetchMonsterInfo(monsterId) {
+      fetch('monster.json')
+        .then(response => response.json())
+        .then(data => {
+          const monster = data.find(m => m.id === monsterId);
+          if (monster) {
+            document.getElementById('monsterID').textContent = "ID: " + monster.id;
+            document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
+            document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
+            document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
+            document.getElementById('monsterInfoModal').style.display = 'flex';
+          } else {
+            alert("找不到怪物資料！");
+          }
+        })
+        .catch(err => {
+          console.error("載入 monster.json 發生錯誤：", err);
+        });
+    }
+
+    function closeModal() {
+      document.getElementById("monsterInfoModal").style.display = "none";
+    }
+
+    document.querySelectorAll('.monster').forEach(monster => {
+      monster.addEventListener('click', () => {
+        const id = monster.getAttribute('data-id');
+        fetchMonsterInfo(id);
+      });
+    });
+  </script>
 </body>
 </html>
-
