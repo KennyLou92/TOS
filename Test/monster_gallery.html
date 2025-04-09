@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="utf-8"/>
   <title>神魔圖鑒</title>
- <style>
+  <style>
     body {
       font-family: sans-serif;
       margin: 0;
@@ -16,7 +15,7 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(10, 1fr);
       gap: 10px;
       justify-items: center;
       width: 100%;
@@ -37,6 +36,17 @@
       display: block;
       margin: 0 auto 8px;
     }
+    .monster-info {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      font-size: 14px;
+      margin-top: 6px;
+      color: #444;
+    }
+    .monster.show-info .monster-info {
+      max-height: 150px;
+    }
     .search-bar-wrapper {
       position: fixed;
       top: 0;
@@ -48,10 +58,10 @@
       z-index: 999;
       display: flex;
       align-items: center;
+      padding: 0 10px;
     }
     .search-bar {
       width: 25%;
-      margin-left: 20px;
       background: #fff;
       padding: 10px 20px;
       box-sizing: border-box;
@@ -89,9 +99,12 @@
       height: 24px;
       margin-right: 8px;
     }
+    .selected-icons img {
+      width: 20px;
+      height: 20px;
+    }
     .dropdown-content {
       display: none;
-      opacity: 0;
       position: absolute;
       top: 100%;
       left: 0;
@@ -102,11 +115,9 @@
       min-width: max-content;
       padding: 4px 0;
       border-radius: 6px;
-      transition: opacity 0.3s ease;
     }
     .dropdown-content.show {
       display: block;
-      opacity: 1;
     }
     .dropdown-item {
       padding: 6px 10px;
@@ -128,124 +139,65 @@
       opacity: 0.4;
       pointer-events: none;
     }
-	#scrollButtons {
-	  position: fixed;
-	  right: 20px;
-	  bottom: 20px;
-	  display: none;
-	  flex-direction: column;
-	  gap: 10px;
-	  z-index: 999;
-	}
-
-	#scrollButtons button {
-	  padding: 10px 12px;
-	  font-size: 14px;
-	  border: none;
-	  border-radius: 8px;
-	  background-color: #333;
-	  color: white;
-	  cursor: pointer;
-	  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-	  transition: background-color 0.3s ease;
-	}
-
-	#scrollButtons button:hover {
-	  background-color: #555;
-	}
-	#resetFilters {
-	  padding: 8px;
-	  border: none;
-	  background: none;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  cursor: pointer;
-	}
-	#resetFilters img {
-	  width: 30px;
-	  height: 30px;
-	  object-fit: contain;
-	}
-	.monster-info {
-	  max-height: 0;
-	  overflow: hidden;
-	  transition: max-height 0.3s ease;
-	  font-size: 14px;
-	  margin-top: 6px;
-	  color: #444;
-	}
-
-	.monster.show-info .monster-info {
-	  max-height: 150px;
-	}
   </style>
 </head>
 <body>
   <div class="search-bar-wrapper">
     <div class="search-bar">
-      <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+      <input id="searchInput" onkeyup="filterMonsters()" placeholder="搜尋怪物..." type="text"/>
     </div>
-
-    <!-- 屬性 -->
     <div class="dropdown" id="attributeDropdown">
       <div class="dropdown-button dropdown-trigger">
         <div class="selected-icons"></div>
         <span>屬性</span>
       </div>
       <div class="dropdown-content" id="attributeContent">
-        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" alt="水"></div>
-        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" alt="火"></div>
-        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" alt="木"></div>
-        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" alt="光"></div>
-        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" alt="暗"></div>
+        <!-- 屬性選項 -->
       </div>
     </div>
-
-    <!-- 種族 -->
     <div class="dropdown" id="raceDropdown">
       <div class="dropdown-button dropdown-trigger">
         <div class="selected-icons"></div>
         <span>種族</span>
       </div>
       <div class="dropdown-content" id="raceContent">
-        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" alt="人"></div>
-        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" alt="獸"></div>
-        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" alt="妖"></div>
-        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" alt="龍"></div>
-        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" alt="神"></div>
-        <div class="dropdown-item" data-value="8"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" alt="魔"></div>
-        <div class="dropdown-item" data-value="10"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" alt="機械"></div>
-		<div class="dropdown-item" data-value="6"><img src="https://i.postimg.cc/zbDvRhPc/evolve.png" alt="進化"></div>
-		<div class="dropdown-item" data-value="7"><img src="https://i.postimg.cc/cKB6HhT3/level.png" alt="強化"></div>
+        <!-- 種族選項 -->
       </div>
     </div>
-
-    <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;"><img src = 'https://i.postimg.cc/X7SptCXY/SI125.png'></button>
+    <button id="resetFilters">
+      <img src="reset-icon.png" alt="重設" />
+    </button>
   </div>
 
   <div class="gallery" id="monsterGallery">
-    <div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
-      <div>0001</div>
-      <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
-      <div>莫莉</div>
-	  <div class = 'monster-info'></div>
-    </div>
-<div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-race="1">
-    <div>
-     0002
-    </div>
-    <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg"/>
-    <div>
-     高級水術士莫莉
-    </div>
-	<div class = 'monster-info'></div>
-   </div>
+    <!-- 動態插入 monster cards -->
   </div>
+
 <script>
 let selectedAttributes = new Set();
 let selectedRaces = new Set();
+let monsterData = {};
 
+// 自動加 .monster-info
+const monsters = document.querySelectorAll('.monster');
+monsters.forEach(monster => {
+  if (!monster.querySelector('.monster-info')) {
+    const infoDiv = document.createElement('div');
+    infoDiv.classList.add('monster-info');
+    monster.appendChild(infoDiv);
+  }
+});
+
+// 載入 JSON
+fetch('monster.json')
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(mon => {
+      monsterData[mon.id] = mon;
+    });
+  });
+
+// Dropdown toggle
 document.querySelectorAll(".dropdown").forEach(dropdown => {
   const trigger = dropdown.querySelector(".dropdown-trigger");
   const content = dropdown.querySelector(".dropdown-content");
@@ -264,9 +216,9 @@ document.addEventListener("click", function(event) {
 });
 
 function updateSelectedIcons(containerId, selectedSet) {
-  const container = document.querySelector(#${containerId} .selected-icons);
-  const items = document.querySelectorAll(#${containerId} .dropdown-item);
-  const label = document.querySelector(#${containerId} .dropdown-button span);
+  const container = document.querySelector(`#${containerId} .selected-icons`);
+  const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
+  const label = document.querySelector(`#${containerId} .dropdown-button span`);
   container.innerHTML = '';
 
   selectedSet.forEach(value => {
@@ -279,13 +231,25 @@ function updateSelectedIcons(containerId, selectedSet) {
       }
     });
   });
-// 根據是否有選擇來顯示或隱藏標題文字
-  if (selectedSet.size > 0) {
-    label.style.display = 'none';
-  } else {
-    label.style.display = 'inline';
-  }
-} 
+
+  label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
+}
+
+document.getElementById("resetFilters").addEventListener("click", () => {
+  selectedAttributes.clear();
+  selectedRaces.clear();
+
+  document.querySelectorAll('.dropdown-item.selected').forEach(item => {
+    item.classList.remove('selected');
+  });
+  document.querySelectorAll('.selected-icons').forEach(iconBox => {
+    iconBox.innerHTML = '';
+  });
+  document.getElementById("searchInput").value = '';
+  updateSelectedIcons('attributeDropdown', selectedAttributes);
+  updateSelectedIcons('raceDropdown', selectedRaces);
+  filterMonsters();
+});
 
 document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
   item.addEventListener('click', function () {
@@ -335,61 +299,13 @@ function filterMonsters() {
   });
 }
 
-document.getElementById("resetFilters").addEventListener("click", () => {
-  selectedAttributes.clear();
-  selectedRaces.clear();
-
-  document.querySelectorAll('.dropdown-item.selected').forEach(item => {
-    item.classList.remove('selected');
-  });
-
-  document.querySelectorAll('.selected-icons').forEach(iconBox => {
-    iconBox.innerHTML = '';
-  });
-  document.getElementById("searchInput").value = '';
-  // ➕ 加上這兩行讓標題回來
-  updateSelectedIcons('attributeDropdown', selectedAttributes);
-  updateSelectedIcons('raceDropdown', selectedRaces);
-  
-  filterMonsters();
-});
-// 顯示 / 隱藏按鈕
-window.addEventListener('scroll', () => {
-  const scrollBtn = document.getElementById('scrollButtons');
-  if (window.scrollY > 200) {
-    scrollBtn.style.display = 'flex';
-  } else {
-    scrollBtn.style.display = 'none';
-  }
-});
-
-// 滾動功能
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function scrollToBottom() {
-  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-}
-let monsterData = {};
-
-// 載入 JSON 資料
-fetch('monster.json')
-  .then(res => res.json())
-  .then(data => {
-    data.forEach(mon => {
-      monsterData[mon.id] = mon;  // 用 id 當 key 存起來
-    });
-  });
-
 document.querySelectorAll('.monster').forEach(monster => {
   monster.addEventListener('click', () => {
-    // 收起其他怪物 info
     document.querySelectorAll('.monster.show-info').forEach(m => {
       if (m !== monster) m.classList.remove('show-info');
     });
 
-    const id = parseInt(monster.dataset.id);  // 注意這裡要轉成 number
+    const id = parseInt(monster.dataset.id);
     const infoBox = monster.querySelector('.monster-info');
     const data = monsterData[id];
 
@@ -406,13 +322,6 @@ document.querySelectorAll('.monster').forEach(monster => {
     monster.classList.toggle('show-info');
   });
 });
-
-
-
 </script>
-<!-- 回頂部 / 到最底按鈕 -->
-<div id="scrollButtons">
-  <button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
-  <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
 </body>
 </html>
