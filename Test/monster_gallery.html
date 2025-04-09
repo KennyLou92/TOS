@@ -313,6 +313,7 @@
       <span class="close" onclick="closeModal()">&times;</span>
 	<div id="monsterInfoContent">
 	  <p id="monsterID"></p>
+	  <img id="monsterImg" class="info-icon" src="" alt="HP Icon" />
 	  <div class="info-row">
 		<p class="info-label">HP:</p>
 		<p id="monsterHP" class="info-value"></p>
@@ -454,6 +455,9 @@
 			document.getElementById('monsterHP1_5').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_5').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_5').textContent = Math.floor(monster.REC * 1.2);
+
+			// 顯示怪物圖片 (根據 monsterId 顯示對應的圖)
+			document.getElementById('monsterHPImg').src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg`;
 
 			// 顯示 modal
 			document.getElementById('monsterInfoModal').style.display = 'flex';
