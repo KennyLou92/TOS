@@ -174,7 +174,7 @@
     <div class="search-bar">
       <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
     </div>
-    <!-- 屬性 -->
+ <!-- 屬性 -->
     <div class="dropdown" id="attributeDropdown">
       <div class="dropdown-button dropdown-trigger">
         <div class="selected-icons"></div>
@@ -209,7 +209,6 @@
     </div>
 
     <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;"><img src = 'https://i.postimg.cc/X7SptCXY/SI125.png'></button>
-  </div>
   </div>
 
   <div class="gallery" id="monsterGallery">
@@ -36100,7 +36099,7 @@
     </div>
   </div>
 
- <script>
+<script>
   let selectedAttributes = new Set();
   let selectedRaces = new Set();
   let monsterData = [];
@@ -36166,6 +36165,7 @@
   function scrollToBottom() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
+</script>
 </script>
 </body>
 </html>
