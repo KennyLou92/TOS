@@ -299,6 +299,7 @@
     <div class="modal-content" id="monsterInfoContent">
       <span class="close" onclick="closeModal()">&times;</span>
       <p id="monsterID"></p>
+	  <p id="monsterLevel"></p>  <!-- 顯示 Level -->
       <p id="monsterHP"></p>
       <p id="monsterATK"></p>
       <p id="monsterREC"></p>
@@ -418,6 +419,7 @@
             document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
             document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
             document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
+			document.getElementById('monsterLevel').textContent = "Level: 99";  // 這裡顯示 Level 99
             document.getElementById('monsterInfoModal').style.display = 'flex';
           } else {
             alert("找不到怪物資料！");
