@@ -457,8 +457,8 @@
 		  if (monster) {
 			// Set the background image of the modal to the monster's image
 			const modalContent = document.getElementById('monsterInfoContent');
-			modalContent.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
-			modalContent.style.backgroundColor = 'rgba(255, 255, 255, 0.4)'; // 这里控制透明度
+			modalContent.style.backgroundImage = `rgba(255, 255, 255, 0.4) url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
+			modalContent.style.backgroundSize = 'contain'; // 确保图片自适应
 			// Display original data
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
