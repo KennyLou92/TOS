@@ -191,11 +191,24 @@
 	}
 
 	#monsterInfoContent {
-	  background-color: white;
-	  padding: 20px;
-	  border-radius: 8px;
-	  text-align: center;
-	  width: 300px;
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	.info-row {
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 5px 0;
+	}
+
+	.info-label {
+	  font-weight: bold;
+	  width: 100px;  /* 控制左側的寬度 */
+	}
+
+	.info-value {
+	  width: 100px;  /* 控制右側的寬度 */
+	  text-align: center;  /* 讓數據居中顯示 */
 	}
 
 	#monsterInfoContent button {
@@ -298,12 +311,24 @@
   <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
     <div class="modal-content" id="monsterInfoContent">
       <span class="close" onclick="closeModal()">&times;</span>
-      <p id="monsterID"></p>
-	  <p id="monsterLevel"></p>  <!-- 顯示 Level -->
-      <p id="monsterHP"></p>
-      <p id="monsterATK"></p>
-      <p id="monsterREC"></p>
-      <button onclick="closeModal()">關閉</button>
+	<div id="monsterInfoContent">
+	  <div class="info-row">
+		<p class="info-label">HP:</p>
+		<p id="monsterHP" class="info-value"></p>
+		<p id="monsterHP1_5" class="info-value"></p>
+	  </div>
+	  <div class="info-row">
+		<p class="info-label">ATK:</p>
+		<p id="monsterATK" class="info-value"></p>
+		<p id="monsterATK1_5" class="info-value"></p>
+	  </div>
+	  <div class="info-row">
+		<p class="info-label">REC:</p>
+		<p id="monsterREC" class="info-value"></p>
+		<p id="monsterREC1_5" class="info-value"></p>
+	  </div>
+	  <button onclick="closeModal()">關閉</button>
+	</div>
     </div>
   </div>
 
@@ -409,26 +434,33 @@
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
 
-    function fetchMonsterInfo(monsterId, monsterElement) {
-      fetch('monster.json')
-        .then(response => response.json())
-        .then(data => {
-          const monster = data.find(m => m.id === monsterId);
-          if (monster) {
-            document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
-            document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
-            document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
-            document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
-			document.getElementById('monsterLevel').textContent = "Level: 99";  // 這裡顯示 Level 99
-            document.getElementById('monsterInfoModal').style.display = 'flex';
-          } else {
-            alert("找不到怪物資料！");
-          }
-        })
-        .catch(err => {
-          console.error("載入 monster.json 發生錯誤：", err);
-        });
-    }
+	function fetchMonsterInfo(monsterId, monsterElement) {
+	  fetch('monster.json')
+		.then(response => response.json())
+		.then(data => {
+		  const monster = data.find(m => m.id === monsterId);
+		  if (monster) {
+			// 顯示原始數據
+			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+			document.getElementById('monsterHP').textContent = monster.HP;
+			document.getElementById('monsterATK').textContent = monster.ATK;
+			document.getElementById('monsterREC').textContent = monster.REC;
+
+			// 顯示乘以 1.5 的數據
+			document.getElementById('monsterHP1_5').textContent = (monster.HP * 1.5).toFixed(0);
+			document.getElementById('monsterATK1_5').textContent = (monster.ATK * 1.5).toFixed(0);
+			document.getElementById('monsterREC1_5').textContent = (monster.REC * 1.5).toFixed(0);
+
+			// 顯示 modal
+			document.getElementById('monsterInfoModal').style.display = 'flex';
+		  } else {
+			alert("找不到怪物資料！");
+		  }
+		})
+		.catch(err => {
+		  console.error("載入 monster.json 發生錯誤：", err);
+		});
+	}
 
     function closeModal() {
       document.getElementById("monsterInfoModal").style.display = "none";
