@@ -168,17 +168,38 @@
 	  object-fit: contain;
 	}
 	#monsterInfoModal {
-	  display:none
+	  display: none;
 	  position: fixed;
-	  top: 0;
+	  z-index: 1;
 	  left: 0;
+	  top: 0;
 	  width: 100%;
 	  height: 100%;
-	  background-color: rgba(0, 0, 0, 0.5);
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  z-index: 1000;
+	  overflow: auto;
+	  background-color: rgba(0,0,0,0.4);
+	  padding-top: 60px;
+	}
+
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: 5% auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	}
+
+	.close {
+	  color: #aaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: black;
+	  text-decoration: none;
+	  cursor: pointer;
 	}
 
 	#monsterInfoContent {
@@ -464,14 +485,14 @@ document.querySelectorAll('.monster').forEach(monster => {
   <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
 </body>
 <!-- Modal for displaying monster info -->
-<div id="monsterInfoModal" style="display: none;">
-  <div id="monsterInfoContent">
-    <h2>Monster Info</h2>
+<div id="monsterInfoModal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeMonsterInfo()">&times;</span>
     <p id="monsterID"></p>
-    <p>HP: <span id="monsterHP"></span></p>
-    <p>ATK: <span id="monsterATK"></span></p>
-    <p>REC: <span id="monsterREC"></span></p>
-    <button onclick="closeMonsterInfo()">Close</button>
+    <p id="monsterHP"></p>
+    <p id="monsterATK"></p>
+    <p id="monsterREC"></p>
   </div>
+</div>
 </div>
 </html>
