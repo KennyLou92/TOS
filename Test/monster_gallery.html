@@ -223,11 +223,15 @@
 	#monsterInfoContent button:hover {
 	  background-color: #555;
 	}
-	#monsterImg {
-	  display: block;
-	  margin: 0 auto; /* 上下 margin 0，左右 margin 自動調整 */
-	  width: 100px;
-	  height: 200px;
+	#monsterInfoModal .modal-content {
+	  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+	  margin: 5% auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	  position: relative;
+	  background-size: cover; /* Ensure the image covers the modal */
+	  background-position: center; /* Center the background image */
 	}
   </style>
 </head>
@@ -319,7 +323,6 @@
       <span class="close" onclick="closeModal()">&times;</span>
 	<div id="monsterInfoContent">
 	  <p id="monsterID"></p>
-	  <img id="monsterImg" class="info-icon" src="" alt="HP Icon" />
 	  <div class="info-row">
 		<p class="info-label">HP:</p>
 		<p id="monsterHP" class="info-value"></p>
@@ -451,21 +454,22 @@
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
 		  if (monster) {
-			// 顯示原始數據
+			// Set the background image of the modal to the monster's image
+			const modalContent = document.getElementById('monsterInfoContent');
+			modalContent.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
+
+			// Display original data
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
 			document.getElementById('monsterATK').textContent = monster.ATK;
 			document.getElementById('monsterREC').textContent = monster.REC;
 
-			// 顯示乘以 1.2 的數據
+			// Display multiplied data
 			document.getElementById('monsterHP1_5').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_5').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_5').textContent = Math.floor(monster.REC * 1.2);
 
-			// 顯示怪物圖片 (根據 monsterId 顯示對應的圖)
-			document.getElementById('monsterImg').src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg`;
-
-			// 顯示 modal
+			// Show modal
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
 			alert("找不到怪物資料！");
@@ -475,7 +479,6 @@
 		  console.error("載入 monster.json 發生錯誤：", err);
 		});
 	}
-
     function closeModal() {
       document.getElementById("monsterInfoModal").style.display = "none";
     }
