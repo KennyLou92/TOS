@@ -174,7 +174,42 @@
     <div class="search-bar">
       <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
     </div>
-    <!-- Add the rest of the dropdowns and buttons -->
+    <!-- 屬性 -->
+    <div class="dropdown" id="attributeDropdown">
+      <div class="dropdown-button dropdown-trigger">
+        <div class="selected-icons"></div>
+        <span>屬性</span>
+      </div>
+      <div class="dropdown-content" id="attributeContent">
+        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" alt="水"></div>
+        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" alt="火"></div>
+        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" alt="木"></div>
+        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" alt="光"></div>
+        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" alt="暗"></div>
+      </div>
+    </div>
+
+    <!-- 種族 -->
+    <div class="dropdown" id="raceDropdown">
+      <div class="dropdown-button dropdown-trigger">
+        <div class="selected-icons"></div>
+        <span>種族</span>
+      </div>
+      <div class="dropdown-content" id="raceContent">
+        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" alt="人"></div>
+        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" alt="獸"></div>
+        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" alt="妖"></div>
+        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" alt="龍"></div>
+        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" alt="神"></div>
+        <div class="dropdown-item" data-value="8"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" alt="魔"></div>
+        <div class="dropdown-item" data-value="10"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" alt="機械"></div>
+		<div class="dropdown-item" data-value="6"><img src="https://i.postimg.cc/zbDvRhPc/evolve.png" alt="進化"></div>
+		<div class="dropdown-item" data-value="7"><img src="https://i.postimg.cc/cKB6HhT3/level.png" alt="強化"></div>
+      </div>
+    </div>
+
+    <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;"><img src = 'https://i.postimg.cc/X7SptCXY/SI125.png'></button>
+  </div>
   </div>
 
   <div class="gallery" id="monsterGallery">
