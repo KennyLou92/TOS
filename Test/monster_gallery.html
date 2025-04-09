@@ -223,6 +223,25 @@
 	#monsterInfoContent button:hover {
 	  background-color: #555;
 	}
+	.monster-icon-container {
+	  text-align: center;
+	  margin-bottom: 20px; /* 保證圖標與內容有適當間距 */
+	}
+
+	.monster-icon-container img.monster-icon {
+	  width: 80px; /* 調整圖標的大小 */
+	  height: 80px;
+	  object-fit: contain;
+	  border-radius: 50%; /* 如果你想讓圖標圓形顯示 */
+	}
+
+	#monsterInfoModal {
+	  font-family: Arial, sans-serif;
+	  background-color: #fff;
+	  padding: 20px;
+	  border-radius: 10px;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
   </style>
 </head>
 <body>
@@ -313,6 +332,7 @@
       <span class="close" onclick="closeModal()">&times;</span>
 	<div id="monsterInfoContent">
 	  <p id="monsterID"></p>
+	  <div id="monsterIcon" class="monster-icon-container">
 	  <div class="info-row">
 		<p class="info-label">HP:</p>
 		<p id="monsterHP" class="info-value"></p>
@@ -454,7 +474,12 @@
 			document.getElementById('monsterHP1_5').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_5').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_5').textContent = Math.floor(monster.REC * 1.2);
+			// 生成怪物圖標 URL
+			const iconUrl = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
 
+			// 將圖標插入到 modal 中
+			const monsterIconContainer = document.getElementById('monsterIcon');
+			monsterIconContainer.innerHTML = `<img src="${iconUrl}" alt="Monster Icon" class="monster-icon">`;
 
 			// 顯示 modal
 			document.getElementById('monsterInfoModal').style.display = 'flex';
