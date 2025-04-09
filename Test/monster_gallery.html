@@ -36144,28 +36144,136 @@
   function closeModal() {
     document.getElementById("monsterInfoModal").style.display = "none";
   }
+</script>
+<script>
+let selectedAttributes = new Set();
+let selectedRaces = new Set();
 
-  function filterMonsters() {
-    const query = document.getElementById("searchInput").value.toLowerCase();
-    document.querySelectorAll('.monster').forEach(monster => {
-      const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
-      const id = monster.getAttribute('data-id').toLowerCase();
-      if (name.includes(query) || id.includes(query)) {
-        monster.style.display = 'block';
-      } else {
-        monster.style.display = 'none';
+document.querySelectorAll(".dropdown").forEach(dropdown => {
+  const trigger = dropdown.querySelector(".dropdown-trigger");
+  const content = dropdown.querySelector(".dropdown-content");
+
+  trigger.addEventListener("click", () => {
+    content.classList.toggle("show");
+  });
+});
+
+document.addEventListener("click", function(event) {
+  document.querySelectorAll(".dropdown-content").forEach(content => {
+    if (!content.parentElement.contains(event.target)) {
+      content.classList.remove("show");
+    }
+  });
+});
+
+function updateSelectedIcons(containerId, selectedSet) {
+  const container = document.querySelector(`#${containerId} .selected-icons`);
+  const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
+  const label = document.querySelector(`#${containerId} .dropdown-button span`);
+  container.innerHTML = '';
+
+  selectedSet.forEach(value => {
+    items.forEach(item => {
+      if (item.dataset.value === value) {
+        const img = item.querySelector('img').cloneNode();
+        img.style.width = '20px';
+        img.style.height = '20px';
+        container.appendChild(img);
       }
     });
+  });
+// 根據是否有選擇來顯示或隱藏標題文字
+  if (selectedSet.size > 0) {
+    label.style.display = 'none';
+  } else {
+    label.style.display = 'inline';
   }
+} 
 
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function () {
+    const value = this.getAttribute('data-value');
+    this.classList.toggle('selected');
 
-  function scrollToBottom() {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    if (selectedAttributes.has(value)) {
+      selectedAttributes.delete(value);
+    } else {
+      selectedAttributes.add(value);
+    }
+    updateSelectedIcons('attributeDropdown', selectedAttributes);
+    filterMonsters();
+  });
+});
+
+document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function () {
+    const value = this.getAttribute('data-value');
+    this.classList.toggle('selected');
+
+    if (selectedRaces.has(value)) {
+      selectedRaces.delete(value);
+    } else {
+      selectedRaces.add(value);
+    }
+    updateSelectedIcons('raceDropdown', selectedRaces);
+    filterMonsters();
+  });
+});
+
+function filterMonsters() {
+  const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
+  const monsters = document.querySelectorAll(".monster");
+
+  monsters.forEach(monster => {
+    const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
+    const id = monster.querySelector("div:nth-child(1)").textContent.toLowerCase();
+    const attribute = monster.getAttribute('data-attribute');
+    const race = monster.getAttribute('data-race');
+
+    const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
+    const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
+    const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
+
+    monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
+  });
+}
+
+document.getElementById("resetFilters").addEventListener("click", () => {
+  selectedAttributes.clear();
+  selectedRaces.clear();
+
+  document.querySelectorAll('.dropdown-item.selected').forEach(item => {
+    item.classList.remove('selected');
+  });
+
+  document.querySelectorAll('.selected-icons').forEach(iconBox => {
+    iconBox.innerHTML = '';
+  });
+  document.getElementById("searchInput").value = '';
+  // ➕ 加上這兩行讓標題回來
+  updateSelectedIcons('attributeDropdown', selectedAttributes);
+  updateSelectedIcons('raceDropdown', selectedRaces);
+  
+  filterMonsters();
+});
+// 顯示 / 隱藏按鈕
+window.addEventListener('scroll', () => {
+  const scrollBtn = document.getElementById('scrollButtons');
+  if (window.scrollY > 200) {
+    scrollBtn.style.display = 'flex';
+  } else {
+    scrollBtn.style.display = 'none';
   }
-</script>
+});
+
+// 滾動功能
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
 </script>
 </body>
 </html>
