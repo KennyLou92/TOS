@@ -495,19 +495,59 @@ function closeModal() {
 }
 </script>
 <!-- 回頂部 / 到最底按鈕 -->
+<!-- 回頂部 / 到最底按鈕 -->
 <div id="scrollButtons">
   <button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
   <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
+</div>
+
 <!-- Modal for displaying monster info -->
 <div id="monsterInfoModal" style="display:none;">
-  <div class="modal-content">
-    <span class="close" onclick="closeMonsterInfo()">&times;</span>
+  <div class="modal-content" id="monsterInfoContent">
+    <span class="close" onclick="closeModal()">&times;</span>
     <p id="monsterID"></p>
     <p id="monsterHP"></p>
     <p id="monsterATK"></p>
     <p id="monsterREC"></p>
+    <button onclick="closeModal()">關閉</button>
   </div>
+</div>
+
+<script>
+// 從 monster.json 取得資訊
+function fetchMonsterInfo(monsterId) {
+  fetch('monster.json')
+    .then(response => response.json())
+    .then(data => {
+      const monster = data.find(m => m.id === monsterId);
+      if (monster) {
+        document.getElementById('monsterID').textContent = "ID: " + monster.id;
+        document.getElementById('monsterHP').textContent = "HP: " + monster.HP;
+        document.getElementById('monsterATK').textContent = "ATK: " + monster.ATK;
+        document.getElementById('monsterREC').textContent = "REC: " + monster.REC;
+        document.getElementById('monsterInfoModal').style.display = 'flex';
+      } else {
+        alert("找不到怪物資料！");
+      }
+    })
+    .catch(err => {
+      console.error("載入 monster.json 發生錯誤：", err);
+    });
+}
+
+// 點擊卡片時綁定觸發
+document.querySelectorAll('.monster').forEach(monster => {
+  monster.addEventListener('click', () => {
+    const id = monster.getAttribute('data-id');
+    fetchMonsterInfo(id);
+  });
+});
+
+// 關閉 modal
+function closeModal() {
+  document.getElementById("monsterInfoModal").style.display = "none";
+}
+</script>
 </body>
-</div>
-</div>
 </html>
+
