@@ -194,7 +194,8 @@
 	#monsterInfoContent {
 	  display: flex;
 	  flex-direction: column;
-	  justify-content: space-between; /* 讓內容和按鈕分開並保持底部對齊 */
+	  justify-content: flex-start; /* 保持內容在上 */
+	  height: 100%; /* 使容器佔據全部高度 */
 	  position: relative;
 	  background-position: center;
 	  background-size: cover;
@@ -202,6 +203,9 @@
 	#monsterInfoContent > * {
 	  position: relative;
 	  z-index: 1;
+	}
+	#monsterInfoContent .content {
+	  flex-grow: 1;  /* 使內容區域可以擴展，填滿剩餘空間 */
 	}
 	.info-row {
 	  display: flex;
@@ -334,6 +338,7 @@
 <div class="modal-content" id="monsterInfoContent">
 <span class="close" onclick="closeModal()">×</span>
 <div id="monsterInfoContent">
+<div class="content">
 <p id="monsterID"></p>
 <div class="info-row">
 <p class="info-label">HP:</p>
