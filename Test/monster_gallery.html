@@ -227,22 +227,18 @@
   
 #monsterInfoContent {
   position: relative;
-  overflow: hidden;
-  background: none !important;
+  background-position: center;
+  background-size: cover;
 }
-
 #monsterInfoContent::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: var(--monster-bg);
   background-size: cover;
   background-position: center;
-  opacity: 0.15;
-  filter: grayscale(40%) blur(2px);
+  opacity: 0.2;
   z-index: 0;
 }
-
 #monsterInfoContent > * {
   position: relative;
   z-index: 1;
@@ -462,19 +458,19 @@
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
 		  if (monster) {
+			const infoBlock = document.getElementById("monsterInfoContent");
 			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monsterId}.jpg')`;
-			// 顯示原始數據
+			infoBlock.style.backgroundSize = "100% auto";  // 這裡設定背景圖的寬度為 100%，高度自動適應
+
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
 			document.getElementById('monsterATK').textContent = monster.ATK;
 			document.getElementById('monsterREC').textContent = monster.REC;
 
-			// 顯示乘以 1.2 的數據
 			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
-			// 顯示 modal
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
 			alert("找不到怪物資料！");
@@ -485,16 +481,16 @@
 		});
 	}
 
-    function closeModal() {
-      document.getElementById("monsterInfoModal").style.display = "none";
-    }
+	function closeModal() {
+	  document.getElementById("monsterInfoModal").style.display = "none";
+	}
 
-    document.querySelectorAll('.monster').forEach(monster => {
-      monster.addEventListener('click', () => {
-        const id = monster.getAttribute('data-id');
-        fetchMonsterInfo(id,monster);
-      });
-    });
+	document.querySelectorAll('.monster').forEach(monster => {
+	  monster.addEventListener('click', () => {
+		const id = monster.getAttribute('data-id');
+		fetchMonsterInfo(id, monster);
+	  });
+	});
   </script>
 </body>
 </html>
