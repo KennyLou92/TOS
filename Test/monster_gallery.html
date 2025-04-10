@@ -462,6 +462,7 @@
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
 		  if (monster) {
+			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monsterId}.jpg')`;
 			// 顯示原始數據
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
