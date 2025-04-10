@@ -488,34 +488,12 @@
 		  if (monster) {
 			const infoBlock = document.getElementById("monsterInfoContent");
 			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
-			infoBlock.style.backgroundSize = "auto 50%";  // 這裡設定背景圖的寬度為 100%，高度自動適應
-			infoBlock.style.backgroundRepeat = "no-repeat";  // 防止背景圖片重複
-		 // 設置怪物的ID與名稱
-			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
-			
-		// 獲取怪物的屬性和種族數字，並使用映射表將其轉換為名稱
-			const attribute = monsterElement.getAttribute('data-attribute');
-			const raceId = monsterElement.getAttribute('data-race');
-			const attritubeName = attributeMapping[attributeId] || 'unknown'; // 如果找不到對應的映射，設為'unknown'
-			const raceName = raceMapping[raceId] || 'unknown'; // 如果找不到對應的映射，設為'unknown'	
-			
-		// 設置怪物屬性和種族圖示
-			const attributeIcon = document.createElement("img");
-			attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attribute}.png`;
-			attributeIcon.alt = "屬性圖示";
-			attributeIcon.style.width = '24px';
-			attributeIcon.style.height = '24px';
-			attributeIcon.style.marginRight = '8px';
-			
-			const raceIcon = document.createElement("img");
-			raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
-			raceIcon.alt = "種族圖示";
-			raceIcon.style.width = '24px';
-			raceIcon.style.height = '24px';
+			infoBlock.style.backgroundSize = "auto 50%";
+			infoBlock.style.backgroundRepeat = "no-repeat";
 
-			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
-			monsterIDElement.appendChild(attributeIcon);  // 在monsterID後面插入屬性圖示
-			monsterIDElement.appendChild(raceIcon);      // 在monsterID後面插入種族圖示
+			// ✅ 呼叫新的圖示更新函式
+			updateMonsterIcons(monsterElement, monster);
+
 			document.getElementById('monsterHP').textContent = monster.HP;
 			document.getElementById('monsterATK').textContent = monster.ATK;
 			document.getElementById('monsterREC').textContent = monster.REC;
@@ -534,6 +512,7 @@
 		});
 	}
 
+
 	function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
 	}
@@ -545,5 +524,34 @@
 	  });
 	});
   </script>
+ <script>
+	 function updateMonsterIcons(monsterElement, monster) {
+	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
+	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
+
+	  const attributeName = attributeMapping[attributeId] || 'unknown';
+	  const raceName = raceMapping[raceId] || 'unknown';
+
+	  const monsterIdElement = document.getElementById('monsterID');
+	  monsterIdElement.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+
+	  const attributeIcon = document.createElement("img");
+	  attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
+	  attributeIcon.alt = "屬性圖示";
+	  attributeIcon.style.width = '24px';
+	  attributeIcon.style.height = '24px';
+	  attributeIcon.style.marginLeft = '8px';
+
+	  const raceIcon = document.createElement("img");
+	  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+	  raceIcon.alt = "種族圖示";
+	  raceIcon.style.width = '24px';
+	  raceIcon.style.height = '24px';
+	  raceIcon.style.marginLeft = '4px';
+
+	  monsterIdElement.appendChild(attributeIcon);
+	  monsterIdElement.appendChild(raceIcon);
+	}
+ </script>
 </body>
 </html>
