@@ -251,7 +251,7 @@
   background-position: center center;
   opacity: 0.2; /* 調整透明度 */
   <!--filter: grayscale(40%) blur(2px); /* 讓字更清楚 */-->
-  z-index: -1;
+  z-index: 0;
 }
 #monsterInfoContent > * {
   position: relative;
@@ -353,7 +353,8 @@
 </div>
 <!-- Modal for displaying monster info -->
 <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
-<div class="modal-content" id="monsterInfoContent">
+<div class="modal-content">
+<div id="monsterInfoContent">
 <span class="close" onclick="closeModal()">×</span>
 <div id="monsterInfoContent">
 <div class="content">
@@ -377,6 +378,7 @@
 <p class="info-value" id="monsterREC1_2"></p>
 </div>
 <!--<button onclick="closeModal()">關閉</button>-->
+</div>
 </div>
 </div>
 </div>
