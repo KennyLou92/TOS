@@ -1,11 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="zh-Hant">
- <head>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta charset="utf-8"/>
-  <title>
-   TOS Gallery
-  </title>
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>神魔圖鑒</title>
 <style>
     body {
       font-family: sans-serif;
@@ -254,6 +253,16 @@
 #monsterInfoContent > * {
   position: relative;
   z-index: 1;
+}
+#monsterID {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+#monsterID img {
+  width: 24px;
+  height: 24px;
 }
 </style>
 </head>
@@ -36168,7 +36177,7 @@
 <span class="close" onclick="closeModal()">×</span>
 <div id="monsterInfoContent">
 <div class="content">
-<p id="monsterID"></p>
+<div id="monsterID"></div>
 <div class="info-row">
 <p class="info-label">HP:</p>
 <p class="info-value" id="monsterHP"></p>
@@ -36293,6 +36302,22 @@
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
 
+	const raceMapping = {
+	  1: 'human',
+	  2: 'animal',
+	  3: 'fairy',
+	  4: 'dragon',
+	  5: 'god',
+	  8: 'devil',
+	  10: 'mech',
+	};
+	const attributeMapping = {
+	  1: 'water',
+	  2: 'fire',
+	  3: 'earth',
+	  4: 'light',
+	  5: 'dark',
+	};
 	function fetchMonsterInfo(monsterId, monsterElement) {
 	  fetch('monster.json')
 		.then(response => response.json())
@@ -36301,10 +36326,12 @@
 		  if (monster) {
 			const infoBlock = document.getElementById("monsterInfoContent");
 			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
-			infoBlock.style.backgroundSize = "auto 50%";  // 這裡設定背景圖的寬度為 100%，高度自動適應
-			infoBlock.style.backgroundRepeat = "no-repeat";  // 防止背景圖片重複
+			infoBlock.style.backgroundSize = "auto 50%";
+			infoBlock.style.backgroundRepeat = "no-repeat";
 
-			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+			// ✅ 呼叫新的圖示更新函式
+			updateMonsterIcons(monsterElement, monster);
+
 			document.getElementById('monsterHP').textContent = monster.HP;
 			document.getElementById('monsterATK').textContent = monster.ATK;
 			document.getElementById('monsterREC').textContent = monster.REC;
@@ -36315,13 +36342,14 @@
 
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
-			alert("⚠️Not available!");
+			alert("⚠️Not Available！");
 		  }
 		})
 		.catch(err => {
 		  console.error("載入 monster.json 發生錯誤：", err);
 		});
 	}
+
 
 	function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
@@ -36334,5 +36362,34 @@
 	  });
 	});
   </script>
+ <script>
+	 function updateMonsterIcons(monsterElement, monster) {
+	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
+	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
+
+	  const attributeName = attributeMapping[attributeId] || 'unknown';
+	  const raceName = raceMapping[raceId] || 'unknown';
+
+	  const monsterIdElement = document.getElementById('monsterID');
+	  monsterIdElement.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+
+	  const attributeIcon = document.createElement("img");
+	  attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
+	  attributeIcon.alt = "屬性圖示";
+	  attributeIcon.style.width = '24px';
+	  attributeIcon.style.height = '24px';
+	  attributeIcon.style.marginLeft = '8px';
+
+	  const raceIcon = document.createElement("img");
+	  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+	  raceIcon.alt = "種族圖示";
+	  raceIcon.style.width = '24px';
+	  raceIcon.style.height = '24px';
+	  raceIcon.style.marginLeft = '4px';
+
+	  monsterIdElement.appendChild(attributeIcon);
+	  monsterIdElement.appendChild(raceIcon);
+	}
+ </script>
 </body>
 </html>
