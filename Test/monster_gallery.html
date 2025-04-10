@@ -194,8 +194,15 @@
 	#monsterInfoContent {
 	  display: flex;
 	  flex-direction: column;
+	  justify-content: space-between; /* 讓內容和按鈕分開並保持底部對齊 */
+	  position: relative;
+	  background-position: center;
+	  background-size: cover;
 	}
-
+	#monsterInfoContent > * {
+	  position: relative;
+	  z-index: 1;
+	}
 	.info-row {
 	  display: flex;
 	  justify-content: space-between;
@@ -213,7 +220,7 @@
 	}
 
 	#monsterInfoContent button {
-	  margin-top: 20px;
+	  margin-top: auto;
 	  padding: 10px 20px;
 	  background-color: #333;
 	  color: white;
