@@ -460,7 +460,7 @@
 		  if (monster) {
 			const infoBlock = document.getElementById("monsterInfoContent");
 			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
-			infoBlock.style.backgroundSize = "100% auto";  // 這裡設定背景圖的寬度為 100%，高度自動適應
+			infoBlock.style.backgroundSize = "auto 30%";  // 這裡設定背景圖的寬度為 100%，高度自動適應
 
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
