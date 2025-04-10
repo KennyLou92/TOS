@@ -245,9 +245,11 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--monster-bg);
   background-size: cover;
   background-position: center bottom;
-  opacity: 0.2;
+  opacity: 0.2; /* 調整透明度 */
+  filter: grayscale(40%) blur(2px); /* 讓字更清楚 */
   z-index: 0;
 }
 #monsterInfoContent > * {
@@ -264,6 +266,7 @@
   width: 24px;
   height: 24px;
 }
+
 </style>
 </head>
 <body>
@@ -501,9 +504,8 @@
 		  const monster = data.find(m => m.id === monsterId);
 		  if (monster) {
 			const infoBlock = document.getElementById("monsterInfoContent");
-			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
-			infoBlock.style.backgroundSize = "auto 50%";
-			infoBlock.style.backgroundRepeat = "no-repeat";
+			infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`);
+
 
 			// ✅ 呼叫新的圖示更新函式
 			updateMonsterIcons(monsterElement, monster);
