@@ -197,7 +197,7 @@
 	  justify-content: flex-start; /* 保持內容在上 */
 	  height: 100%; /* 使容器佔據全部高度 */
 	  position: relative;
-	  background-position: center;
+	  background-position: center bottom;
 	  background-size: cover;
 	}
 	#monsterInfoContent > * {
@@ -238,7 +238,7 @@
   
 #monsterInfoContent {
   position: relative;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
 }
 #monsterInfoContent::before {
@@ -246,7 +246,7 @@
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   opacity: 0.2;
   z-index: 0;
 }
@@ -267,78 +267,82 @@
 </style>
 </head>
 <body>
-<div class="search-bar-wrapper">
-<div class="search-bar">
-<input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
-</div>
-<!-- 屬性 -->
-<div class="dropdown" id="attributeDropdown">
-<div class="dropdown-button dropdown-trigger">
-<div class="selected-icons"></div>
-<span>屬性</span>
-</div>
-<div class="dropdown-content" id="attributeContent">
-<div class="dropdown-item" data-value="1"><img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png"/></div>
-<div class="dropdown-item" data-value="2"><img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png"/></div>
-<div class="dropdown-item" data-value="3"><img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png"/></div>
-<div class="dropdown-item" data-value="4"><img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png"/></div>
-<div class="dropdown-item" data-value="5"><img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png"/></div>
-</div>
-</div>
-<!-- 種族 -->
-<div class="dropdown" id="raceDropdown">
-<div class="dropdown-button dropdown-trigger">
-<div class="selected-icons"></div>
-<span>種族</span>
-</div>
-<div class="dropdown-content" id="raceContent">
-<div class="dropdown-item" data-value="1"><img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png"/></div>
-<div class="dropdown-item" data-value="2"><img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png"/></div>
-<div class="dropdown-item" data-value="3"><img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png"/></div>
-<div class="dropdown-item" data-value="4"><img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png"/></div>
-<div class="dropdown-item" data-value="5"><img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png"/></div>
-<div class="dropdown-item" data-value="8"><img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png"/></div>
-<div class="dropdown-item" data-value="10"><img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png"/></div>
-<div class="dropdown-item" data-value="6"><img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png"/></div>
-<div class="dropdown-item" data-value="7"><img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png"/></div>
-</div>
-</div>
-<button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;"><img src="https://i.postimg.cc/X7SptCXY/SI125.png"/></button>
-</div>
-<div class="gallery" id="monsterGallery">
-<div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
-<div>0001</div>
-<img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg">
-<div>莫莉</div>
-</img></div>
+  <div class="search-bar-wrapper">
+    <div class="search-bar">
+      <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+    </div>
+
+    <!-- 屬性 -->
+    <div class="dropdown" id="attributeDropdown">
+      <div class="dropdown-button dropdown-trigger">
+        <div class="selected-icons"></div>
+        <span>屬性</span>
+      </div>
+      <div class="dropdown-content" id="attributeContent">
+        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" alt="水"></div>
+        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" alt="火"></div>
+        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" alt="木"></div>
+        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" alt="光"></div>
+        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" alt="暗"></div>
+      </div>
+    </div>
+
+    <!-- 種族 -->
+    <div class="dropdown" id="raceDropdown">
+      <div class="dropdown-button dropdown-trigger">
+        <div class="selected-icons"></div>
+        <span>種族</span>
+      </div>
+      <div class="dropdown-content" id="raceContent">
+        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" alt="人"></div>
+        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" alt="獸"></div>
+        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" alt="妖"></div>
+        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" alt="龍"></div>
+        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" alt="神"></div>
+        <div class="dropdown-item" data-value="8"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" alt="魔"></div>
+        <div class="dropdown-item" data-value="10"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" alt="機械"></div>
+		<div class="dropdown-item" data-value="6"><img src="https://i.postimg.cc/zbDvRhPc/evolve.png" alt="進化"></div>
+		<div class="dropdown-item" data-value="7"><img src="https://i.postimg.cc/cKB6HhT3/level.png" alt="強化"></div>
+      </div>
+    </div>
+
+    <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;"><img src = 'https://i.postimg.cc/X7SptCXY/SI125.png'></button>
+  </div>
+
+  <div class="gallery" id="monsterGallery">
+    <div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
+      <div>0001</div>
+      <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
+      <div>莫莉</div>
+    </div>
 <div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-race="1">
-<div>
+    <div>
      0002
     </div>
-<img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg">
-<div>
+    <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg"/>
+    <div>
      高級水術士莫莉
     </div>
-</img></div>
-<div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-race="7">
-<div>
+   </div>
+   <div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-race="1">
+    <div>
      0003
     </div>
-<img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg">
-<div>
+    <img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg"/>
+    <div>
      水魔法師莫莉
     </div>
-</img></div>
-<div class="monster" data-attribute="1" data-id="0004" data-name="水元素賢者莫莉" data-race="1">
-<div>
+   </div>
+   <div class="monster" data-attribute="1" data-id="0004" data-name="水元素賢者莫莉" data-race="1">
+    <div>
      0004
     </div>
-<img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg">
-<div>
+    <img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg"/>
+    <div>
      水元素賢者莫莉
     </div>
-</img></div>
-</div>
+   </div>
+  </div>
 <div id="scrollButtons">
 <button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
 <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
@@ -534,7 +538,7 @@
 	  });
 	});
   </script>
- <script>
+<script>
 	function updateMonsterIcons(monsterElement, monster) {
 	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
