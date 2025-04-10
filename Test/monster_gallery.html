@@ -254,6 +254,16 @@
   position: relative;
   z-index: 1;
 }
+#monsterID {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+#monsterID img {
+  width: 24px;
+  height: 24px;
+}
 </style>
 </head>
 <body>
@@ -339,7 +349,7 @@
 <span class="close" onclick="closeModal()">×</span>
 <div id="monsterInfoContent">
 <div class="content">
-<p id="monsterID"></p>
+<div id="monsterID"></div>
 <div class="info-row">
 <p class="info-label">HP:</p>
 <p class="info-value" id="monsterHP"></p>
