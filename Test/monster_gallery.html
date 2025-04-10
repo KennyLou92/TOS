@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="zh-Hant">
 <head>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta charset="utf-8"/>
-  <title>神魔圖鑒</title>
- <style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>神魔圖鑒</title>
+<style>
     body {
       font-family: sans-serif;
       margin: 0;
@@ -223,20 +224,26 @@
 	#monsterInfoContent button:hover {
 	  background-color: #555;
 	}
-	#monsterInfoModal .modal-bg {
-	  position: absolute;
-	  top: 0; left: 0; right: 0; bottom: 0;
-	  background-position: center;
-	  background-size: cover;
-	  opacity: 0.3; /* 半透明 */
-	  z-index: 0;   /* 確保在 modal-content 下面 */
-	  filter: grayscale(60%) blur(2px);
-	}
-	#monsterInfoModal .modal-content {
-	  position: relative;
-	  z-index: 1; /* 讓文字內容在背景之上 */
-	}
-  </style>
+  
+#monsterInfoContent {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+#monsterInfoContent::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+#monsterInfoContent > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
 </head>
 <body>
   <div class="search-bar-wrapper">
@@ -320,38 +327,35 @@
     <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
   </div>
 
-  <!-- Modal for displaying monster info -->
-  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
-	<!-- Modal 背景層 -->
-	<div class="modal-bg"></div>
-    <div class="modal-content" id="monsterInfoContent">
-      <span class="close" onclick="closeModal()">&times;</span>
-	<div id="monsterInfoContent">
-	  <p id="monsterID"></p>
-	  <div class="info-row">
-		<p class="info-label">HP:</p>
-		<p id="monsterHP" class="info-value"></p>
-		<p class="info-label">HP (+20):</p>
-		<p id="monsterHP1_2" class="info-value"></p>
-	  </div>
-	  <div class="info-row">
-		<p class="info-label">ATK:</p>
-		<p id="monsterATK" class="info-value"></p>
-		<p class="info-label">ATK (+20):</p>
-		<p id="monsterATK1_2" class="info-value"></p>
-	  </div>
-	  <div class="info-row">
-		<p class="info-label">REC:</p>
-		<p id="monsterREC" class="info-value"></p>
-		<p class="info-label">REC (+20):</p>
-		<p id="monsterREC1_2" class="info-value"></p>
-	  </div>
-	  <button onclick="closeModal()">關閉</button>
-	</div>
-    </div>
-  </div>
-
-  <script>
+<!-- Modal for displaying monster info -->
+<div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+<div class="modal-content" id="monsterInfoContent">
+<span class="close" onclick="closeModal()">×</span>
+<div id="monsterInfoContent">
+<p id="monsterID"></p>
+<div class="info-row">
+<p class="info-label">HP:</p>
+<p class="info-value" id="monsterHP"></p>
+<p class="info-label">HP (+20):</p>
+<p class="info-value" id="monsterHP1_2"></p>
+</div>
+<div class="info-row">
+<p class="info-label">ATK:</p>
+<p class="info-value" id="monsterATK"></p>
+<p class="info-label">ATK (+20):</p>
+<p class="info-value" id="monsterATK1_2"></p>
+</div>
+<div class="info-row">
+<p class="info-label">REC:</p>
+<p class="info-value" id="monsterREC"></p>
+<p class="info-label">REC (+20):</p>
+<p class="info-value" id="monsterREC1_2"></p>
+</div>
+<button onclick="closeModal()">關閉</button>
+</div>
+</div>
+</div>
+<script>
     let selectedAttributes = new Set();
     let selectedRaces = new Set();
 
@@ -454,15 +458,37 @@
     }
 
 	function fetchMonsterInfo(monsterId, monsterElement) {
+  fetch('monster.json')
+    .then(response => response.json())
+    .then(data => {
+      const monster = data.find(m => m.id === monsterId);
+      if (monster) {
+        const infoBlock = document.getElementById("monsterInfoContent");
+        infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
+
+        document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+        document.getElementById('monsterHP').textContent = monster.HP;
+        document.getElementById('monsterATK').textContent = monster.ATK;
+        document.getElementById('monsterREC').textContent = monster.REC;
+
+        document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
+        document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
+        document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+
+        document.getElementById('monsterInfoModal').style.display = 'flex';
+      } else {
+        alert("找不到怪物資料！");
+      }
+    })
+    .catch(err => {
+      console.error("載入 monster.json 發生錯誤：", err);
+    });
+}
 	  fetch('monster.json')
 		.then(response => response.json())
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
 		  if (monster) {
-			// 新增背景圖片設定
-			const modalBg = document.querySelector("#monsterInfoModal .modal-bg");
-			modalBg.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monsterId}.jpg')`;
-
 			// 顯示原始數據
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
