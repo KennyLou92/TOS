@@ -195,8 +195,19 @@
 	#monsterInfoContent {
 	  display: flex;
 	  flex-direction: column;
+	  justify-content: flex-start; /* 保持內容在上 */
+	  height: 100%; /* 使容器佔據全部高度 */
+	  position: relative;
+	  background-position: center;
+	  background-size: cover;
 	}
-
+	#monsterInfoContent > * {
+	  position: relative;
+	  z-index: 1;
+	}
+	#monsterInfoContent .content {
+	  flex-grow: 1;  /* 使內容區域可以擴展，填滿剩餘空間 */
+	}
 	.info-row {
 	  display: flex;
 	  justify-content: space-between;
@@ -214,7 +225,7 @@
 	}
 
 	#monsterInfoContent button {
-	  margin-top: 20px;
+	  margin-top: auto;
 	  padding: 10px 20px;
 	  background-color: #333;
 	  color: white;
@@ -225,7 +236,26 @@
 	#monsterInfoContent button:hover {
 	  background-color: #555;
 	}
-  </style>
+  
+#monsterInfoContent {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+#monsterInfoContent::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+#monsterInfoContent > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
 </head>
 <body>
   <div class="search-bar-wrapper">
@@ -36127,41 +36157,41 @@
     </div>
    </div>
   </div>
+</div>
 <div id="scrollButtons">
-    <button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
-    <button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
-  </div>
-
-  <!-- Modal for displaying monster info -->
-  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
-    <div class="modal-content" id="monsterInfoContent">
-      <span class="close" onclick="closeModal()">&times;</span>
-	<div id="monsterInfoContent">
-	  <p id="monsterID"></p>
-	  <div class="info-row">
-		<p class="info-label">HP:</p>
-		<p id="monsterHP" class="info-value"></p>
-		<p class="info-label">HP (+20):</p>
-		<p id="monsterHP1_5" class="info-value"></p>
-	  </div>
-	  <div class="info-row">
-		<p class="info-label">ATK:</p>
-		<p id="monsterATK" class="info-value"></p>
-		<p class="info-label">ATK (+20):</p>
-		<p id="monsterATK1_5" class="info-value"></p>
-	  </div>
-	  <div class="info-row">
-		<p class="info-label">REC:</p>
-		<p id="monsterREC" class="info-value"></p>
-		<p class="info-label">REC (+20):</p>
-		<p id="monsterREC1_5" class="info-value"></p>
-	  </div>
-	  <button onclick="closeModal()">Close</button>
-	</div>
-    </div>
-  </div>
-
-  <script>
+<button onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+<button onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
+</div>
+<!-- Modal for displaying monster info -->
+<div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+<div class="modal-content" id="monsterInfoContent">
+<span class="close" onclick="closeModal()">×</span>
+<div id="monsterInfoContent">
+<div class="content">
+<p id="monsterID"></p>
+<div class="info-row">
+<p class="info-label">HP:</p>
+<p class="info-value" id="monsterHP"></p>
+<p class="info-label">HP (+20):</p>
+<p class="info-value" id="monsterHP1_2"></p>
+</div>
+<div class="info-row">
+<p class="info-label">ATK:</p>
+<p class="info-value" id="monsterATK"></p>
+<p class="info-label">ATK (+20):</p>
+<p class="info-value" id="monsterATK1_2"></p>
+</div>
+<div class="info-row">
+<p class="info-label">REC:</p>
+<p class="info-value" id="monsterREC"></p>
+<p class="info-label">REC (+20):</p>
+<p class="info-value" id="monsterREC1_2"></p>
+</div>
+<!--<button onclick="closeModal()">關閉</button>-->
+</div>
+</div>
+</div>
+<script>
     let selectedAttributes = new Set();
     let selectedRaces = new Set();
 
@@ -36269,21 +36299,23 @@
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
 		  if (monster) {
-			// 顯示原始數據
+			const infoBlock = document.getElementById("monsterInfoContent");
+			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
+			infoBlock.style.backgroundSize = "auto 50%";  // 這裡設定背景圖的寬度為 100%，高度自動適應
+			infoBlock.style.backgroundRepeat = "no-repeat";  // 防止背景圖片重複
+
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
 			document.getElementById('monsterATK').textContent = monster.ATK;
 			document.getElementById('monsterREC').textContent = monster.REC;
 
-			// 顯示乘以 1.5 的數據
-			document.getElementById('monsterHP1_5').textContent = Math.floor(monster.HP * 1.2);
-			document.getElementById('monsterATK1_5').textContent = Math.floor(monster.ATK * 1.2);
-			document.getElementById('monsterREC1_5').textContent = Math.floor(monster.REC * 1.2);
+			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
+			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
+			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
-			// 顯示 modal
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
-			alert("Not Available!!!");
+			alert("找不到怪物資料！");
 		  }
 		})
 		.catch(err => {
@@ -36291,16 +36323,16 @@
 		});
 	}
 
-    function closeModal() {
-      document.getElementById("monsterInfoModal").style.display = "none";
-    }
+	function closeModal() {
+	  document.getElementById("monsterInfoModal").style.display = "none";
+	}
 
-    document.querySelectorAll('.monster').forEach(monster => {
-      monster.addEventListener('click', () => {
-        const id = monster.getAttribute('data-id');
-        fetchMonsterInfo(id,monster);
-      });
-    });
+	document.querySelectorAll('.monster').forEach(monster => {
+	  monster.addEventListener('click', () => {
+		const id = monster.getAttribute('data-id');
+		fetchMonsterInfo(id, monster);
+	  });
+	});
   </script>
 </body>
 </html>
