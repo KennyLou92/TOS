@@ -453,49 +453,23 @@
     }
 
 	function fetchMonsterInfo(monsterId, monsterElement) {
-  fetch('monster.json')
-    .then(response => response.json())
-    .then(data => {
-      const monster = data.find(m => m.id === monsterId);
-      if (monster) {
-        const infoBlock = document.getElementById("monsterInfoContent");
-        infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
-
-        document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
-        document.getElementById('monsterHP').textContent = monster.HP;
-        document.getElementById('monsterATK').textContent = monster.ATK;
-        document.getElementById('monsterREC').textContent = monster.REC;
-
-        document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
-        document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
-        document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
-
-        document.getElementById('monsterInfoModal').style.display = 'flex';
-      } else {
-        alert("找不到怪物資料！");
-      }
-    })
-    .catch(err => {
-      console.error("載入 monster.json 發生錯誤：", err);
-    });
-}
 	  fetch('monster.json')
 		.then(response => response.json())
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
 		  if (monster) {
-			// 顯示原始數據
+			const infoBlock = document.getElementById("monsterInfoContent");
+			infoBlock.style.backgroundImage = `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`;
+
 			document.getElementById('monsterID').textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 			document.getElementById('monsterHP').textContent = monster.HP;
 			document.getElementById('monsterATK').textContent = monster.ATK;
 			document.getElementById('monsterREC').textContent = monster.REC;
 
-			// 顯示乘以 1.2 的數據
 			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
-			// 顯示 modal
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
 			alert("找不到怪物資料！");
@@ -506,16 +480,16 @@
 		});
 	}
 
-    function closeModal() {
-      document.getElementById("monsterInfoModal").style.display = "none";
-    }
+	function closeModal() {
+	  document.getElementById("monsterInfoModal").style.display = "none";
+	}
 
-    document.querySelectorAll('.monster').forEach(monster => {
-      monster.addEventListener('click', () => {
-        const id = monster.getAttribute('data-id');
-        fetchMonsterInfo(id,monster);
-      });
-    });
+	document.querySelectorAll('.monster').forEach(monster => {
+	  monster.addEventListener('click', () => {
+		const id = monster.getAttribute('data-id');
+		fetchMonsterInfo(id, monster);
+	  });
+	});
   </script>
 </body>
 </html>
