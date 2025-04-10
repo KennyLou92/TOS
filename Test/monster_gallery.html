@@ -320,7 +320,7 @@
      高級水術士莫莉
     </div>
 </img></div>
-<div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-race="1">
+<div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-race="7">
 <div>
      0003
     </div>
@@ -541,6 +541,13 @@
 
 	  const attributeName = attributeMapping[attributeId] || 'unknown';
 	  const raceName = raceMapping[raceId] || 'unknown';
+	
+	// 如果是 race 6 或 7，使用特殊的圖示 URL
+		if (raceId === 6) {
+			raceName = 'evolve';
+		} else if (raceId === 7) {
+			raceName = 'level';
+		}
 
 	  const monsterIdElement = document.getElementById('monsterID');
 	  monsterIdElement.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
@@ -553,7 +560,14 @@
 	  attributeIcon.style.marginLeft = '8px';
 
 	  const raceIcon = document.createElement("img");
-	  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+	// 如果是 race 6 或 7，顯示指定的圖示 URL
+		if (raceId === 6) {
+			raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';  // race 6 特定圖示
+		} else if (raceId === 7) {
+			raceIcon.src = 'https://i.postimg.cc/cKB6HhT3/level.png';  // race 7 特定圖示
+		} else {
+			raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+		}
 	  raceIcon.alt = "種族圖示";
 	  raceIcon.style.width = '24px';
 	  raceIcon.style.height = '24px';
