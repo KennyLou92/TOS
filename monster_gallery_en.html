@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="zh-Hant">
-<head>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<title>TOS Gallery</title>
-<style>
-    body {
+ <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <title>
+   TOS Gallery
+  </title>
+  <style>
+   body {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
@@ -271,186 +272,233 @@
   width: 24px;
   height: 24px;
 }
-
-</style>
-</head>
-<body>
+  </style>
+ </head>
+ <body>
   <div class="search-bar-wrapper">
-    <div class="search-bar">
-      <input id="searchInput" onkeyup="filterMonsters()" placeholder="Insert monster id/name..." type="text"/>
+   <div class="search-bar">
+    <input id="searchInput" onkeyup="filterMonsters()" placeholder="Insert monster id/name..." type="text"/>
+   </div>
+   <!-- 屬性 -->
+   <div class="dropdown" id="attributeDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      Attribute
+     </span>
     </div>
-
-    <!-- 屬性 -->
-    <div class="dropdown" id="attributeDropdown">
-      <div class="dropdown-button dropdown-trigger">
-        <div class="selected-icons"></div>
-        <span>Attribute</span>
-      </div>
-      <div class="dropdown-content" id="attributeContent">
-        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" alt="水"></div>
-        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" alt="火"></div>
-        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" alt="木"></div>
-        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" alt="光"></div>
-        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" alt="暗"></div>
-      </div>
+    <div class="dropdown-content" id="attributeContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png"/>
+     </div>
     </div>
-
-    <!-- 種族 -->
-    <div class="dropdown" id="raceDropdown">
-      <div class="dropdown-button dropdown-trigger">
-        <div class="selected-icons"></div>
-        <span>Race</span>
-      </div>
-      <div class="dropdown-content" id="raceContent">
-        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" alt="人"></div>
-        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" alt="獸"></div>
-        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" alt="妖"></div>
-        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" alt="龍"></div>
-        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" alt="神"></div>
-        <div class="dropdown-item" data-value="8"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" alt="魔"></div>
-        <div class="dropdown-item" data-value="10"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" alt="機械"></div>
-		<div class="dropdown-item" data-value="6"><img src="https://i.postimg.cc/zbDvRhPc/evolve.png" alt="進化"></div>
-		<div class="dropdown-item" data-value="7"><img src="https://i.postimg.cc/cKB6HhT3/level.png" alt="強化"></div>
-      </div>
+   </div>
+   <!-- 種族 -->
+   <div class="dropdown" id="raceDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      Race
+     </span>
     </div>
-
-    <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;"><img src = 'https://i.postimg.cc/X7SptCXY/SI125.png'></button>
+    <div class="dropdown-content" id="raceContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png"/>
+     </div>
+     <div class="dropdown-item" data-value="8">
+      <img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png"/>
+     </div>
+     <div class="dropdown-item" data-value="10">
+      <img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png"/>
+     </div>
+     <div class="dropdown-item" data-value="6">
+      <img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png"/>
+     </div>
+     <div class="dropdown-item" data-value="7">
+      <img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png"/>
+     </div>
+    </div>
+   </div>
+   <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">
+    <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
+   </button>
   </div>
   <div class="gallery" id="monsterGallery">
    <div class="monster" data-attribute="1" data-id="0001" data-name="Molly" data-race="1">
     <div>
      0001
     </div>
-    <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
-    <div>
-     Molly
-    </div>
+    <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg">
+     <div>
+      Molly
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="1" data-id="0002" data-name="Hydromancer Molly" data-race="1">
     <div>
      0002
     </div>
-    <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg"/>
-    <div>
-     Hydromancer Molly
-    </div>
+    <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg">
+     <div>
+      Hydromancer Molly
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="1" data-id="0003" data-name="Aqua Sorceress Molly" data-race="1">
     <div>
      0003
     </div>
-    <img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg"/>
-    <div>
-     Aqua Sorceress Molly
-    </div>
+    <img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg">
+     <div>
+      Aqua Sorceress Molly
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="1" data-id="0004" data-name="Aqua Elementalist Molly" data-race="1">
     <div>
      0004
     </div>
-    <img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg"/>
-    <div>
-     Aqua Elementalist Molly
-    </div>
+    <img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg">
+     <div>
+      Aqua Elementalist Molly
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0005" data-name="Sean" data-race="1">
     <div>
      0005
     </div>
-    <img alt="0005" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0005.jpg"/>
-    <div>
-     Sean
-    </div>
+    <img alt="0005" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0005.jpg">
+     <div>
+      Sean
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0006" data-name="Swordsman Sean" data-race="1">
     <div>
      0006
     </div>
-    <img alt="0006" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0006.jpg"/>
-    <div>
-     Swordsman Sean
-    </div>
+    <img alt="0006" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0006.jpg">
+     <div>
+      Swordsman Sean
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0007" data-name="Blazing Swordsman Sean" data-race="1">
     <div>
      0007
     </div>
-    <img alt="0007" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0007.jpg"/>
-    <div>
-     Blazing Swordsman Sean
-    </div>
+    <img alt="0007" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0007.jpg">
+     <div>
+      Blazing Swordsman Sean
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0008" data-name="Inferno Swordsman Sean" data-race="1">
     <div>
      0008
     </div>
-    <img alt="0008" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0008.jpg"/>
-    <div>
-     Inferno Swordsman Sean
-    </div>
+    <img alt="0008" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0008.jpg">
+     <div>
+      Inferno Swordsman Sean
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0009" data-name="Duncan" data-race="1">
     <div>
      0009
     </div>
-    <img alt="0009" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0009.jpg"/>
-    <div>
-     Duncan
-    </div>
+    <img alt="0009" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0009.jpg">
+     <div>
+      Duncan
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0010" data-name="Cleric Duncan" data-race="1">
     <div>
      0010
     </div>
-    <img alt="0010" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0010.jpg"/>
-    <div>
-     Cleric Duncan
-    </div>
+    <img alt="0010" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0010.jpg">
+     <div>
+      Cleric Duncan
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0011" data-name="Druid Duncan" data-race="1">
     <div>
      0011
     </div>
-    <img alt="0011" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0011.jpg"/>
-    <div>
-     Druid Duncan
-    </div>
+    <img alt="0011" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0011.jpg">
+     <div>
+      Druid Duncan
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0012" data-name="Lord of Forest Duncan" data-race="1">
     <div>
      0012
     </div>
-    <img alt="0012" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0012.jpg"/>
-    <div>
-     Lord of Forest Duncan
-    </div>
+    <img alt="0012" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0012.jpg">
+     <div>
+      Lord of Forest Duncan
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0013" data-name="Baron Nathaniel" data-race="1">
     <div>
      0013
     </div>
-    <img alt="0013" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0013.jpg"/>
-    <div>
-     Baron Nathaniel
-    </div>
+    <img alt="0013" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0013.jpg">
+     <div>
+      Baron Nathaniel
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0014" data-name="Viscount Nathaniel" data-race="1">
     <div>
      0014
     </div>
-    <img alt="0014" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0014.jpg"/>
-    <div>
-     Viscount Nathaniel
-    </div>
+    <img alt="0014" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0014.jpg">
+     <div>
+      Viscount Nathaniel
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0015" data-name="Earl Nathaniel" data-race="1">
     <div>
      0015
     </div>
-    <img alt="0015" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0015.jpg"/>
-    <div>
-     Earl Nathaniel
-    </div>
+    <img alt="0015" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0015.jpg">
+     <div>
+      Earl Nathaniel
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0016" data-name="Marquess Nathaniel" data-race="1">
     <div>
@@ -3881,13 +3929,13 @@
      The Unjust Soldier
     </div>
    </div>
-   <div class="monster" data-id="0397" data-name="Lü Bu the Warlord" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="0397" data-name="L&uuml; Bu the Warlord" data-race="8">
     <div>
      0397
     </div>
     <img alt="0397" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0397.jpg"/>
     <div>
-     Lü Bu the Warlord
+     L&uuml; Bu the Warlord
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="0398" data-name="Prime Millennium Light Soulstone" data-race="7">
@@ -5636,13 +5684,13 @@
      Ao Guang the Lord of Dragons
     </div>
    </div>
-   <div class="monster" data-attribute="2" data-id="0592" data-name="Nezha the Guard of Vaiśravaṇa" data-race="1">
+   <div class="monster" data-attribute="2" data-id="0592" data-name="Nezha the Guard of Vai&sacute;ravaṇa" data-race="1">
     <div>
      0592
     </div>
     <img alt="0592" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0592.jpg"/>
     <div>
-     Nezha the Guard of Vaiśravaṇa
+     Nezha the Guard of Vai&sacute;ravaṇa
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="0593" data-name="Potentate Bull King" data-race="2">
@@ -5681,7 +5729,7 @@
      Gretchen and Heisenberg
     </div>
    </div>
-   <div class="monster" data-id="0597" data-name="Adjoined Android - Gretchen H." data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="0597" data-name="Adjoined Android - Gretchen H." data-race="1">
     <div>
      0597
     </div>
@@ -6788,13 +6836,13 @@
      Imanotsurugi &amp; Usumidori
     </div>
    </div>
-   <div class="monster" data-id="0720" data-name="Lü Lingshuang the Vicious Cadaver" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="0720" data-name="L&uuml; Lingshuang the Vicious Cadaver" data-race="8">
     <div>
      0720
     </div>
     <img alt="0720" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0720.jpg"/>
     <div>
-     Lü Lingshuang the Vicious Cadaver
+     L&uuml; Lingshuang the Vicious Cadaver
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="0721" data-name="Dragonic Avenger - Beowulf" data-race="8">
@@ -6833,13 +6881,13 @@
      Katana - Minamoto no Yoshitsune
     </div>
    </div>
-   <div class="monster" data-id="0725" data-name="Lü Bu the Bedemoned General" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="0725" data-name="L&uuml; Bu the Bedemoned General" data-race="8">
     <div>
      0725
     </div>
     <img alt="0725" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0725.jpg"/>
     <div>
-     Lü Bu the Bedemoned General
+     L&uuml; Bu the Bedemoned General
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="0726" data-name="Yuki-onna" data-race="8">
@@ -6860,22 +6908,22 @@
      Princess of Icicle - Yuki-onna
     </div>
    </div>
-   <div class="monster" data-attribute="2" data-id="0728" data-name="Shuten-dōji" data-race="8">
+   <div class="monster" data-attribute="2" data-id="0728" data-name="Shuten-d&omacr;ji" data-race="8">
     <div>
      0728
     </div>
     <img alt="0728" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0728.jpg"/>
     <div>
-     Shuten-dōji
+     Shuten-d&omacr;ji
     </div>
    </div>
-   <div class="monster" data-attribute="2" data-id="0729" data-name="Kingpin of Youkai - Shuten-dōji" data-race="8">
+   <div class="monster" data-attribute="2" data-id="0729" data-name="Kingpin of Youkai - Shuten-d&omacr;ji" data-race="8">
     <div>
      0729
     </div>
     <img alt="0729" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0729.jpg"/>
     <div>
-     Kingpin of Youkai - Shuten-dōji
+     Kingpin of Youkai - Shuten-d&omacr;ji
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="0730" data-name="Karasutengu" data-race="8">
@@ -6941,13 +6989,13 @@
      Aoandon
     </div>
    </div>
-   <div class="monster" data-attribute="1" data-id="0737" data-name="Douman Ashiya, Onmyōji of Douma" data-race="8">
+   <div class="monster" data-attribute="1" data-id="0737" data-name="Douman Ashiya, Onmy&omacr;ji of Douma" data-race="8">
     <div>
      0737
     </div>
     <img alt="0737" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0737.jpg"/>
     <div>
-     Douman Ashiya, Onmyōji of Douma
+     Douman Ashiya, Onmy&omacr;ji of Douma
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="0738" data-name="Draupnir the Intellect" data-race="6">
@@ -7958,13 +8006,13 @@
      Ancient Wood of Resentment
     </div>
    </div>
-   <div class="monster" data-id="0850" data-name="Nidhogg the Corpse of Ragnarök" data-attribute = '3' data-race = '4'>
+   <div class="monster" data-attribute="3" data-id="0850" data-name="Nidhogg the Corpse of Ragnar&ouml;k" data-race="4">
     <div>
      0850
     </div>
     <img alt="0850" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0850.jpg"/>
     <div>
-     Nidhogg the Corpse of Ragnarök
+     Nidhogg the Corpse of Ragnar&ouml;k
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="0851" data-name="Lord of R'lyeh - Cthulhu" data-race="2">
@@ -8201,7 +8249,7 @@
      Elf Summoner - Princess Woodbury
     </div>
    </div>
-   <div class="monster" data-id="0877" data-name="Cowherd of Undying Love - Altair" data-attribute = '3' data-race = '1'>
+   <div class="monster" data-attribute="3" data-id="0877" data-name="Cowherd of Undying Love - Altair" data-race="1">
     <div>
      0877
     </div>
@@ -8210,7 +8258,7 @@
      Cowherd of Undying Love - Altair
     </div>
    </div>
-   <div class="monster" data-id="0878" data-name="Weaver of Unswerving Love - Vega" data-attribute = '1' data-race = '5'>
+   <div class="monster" data-attribute="1" data-id="0878" data-name="Weaver of Unswerving Love - Vega" data-race="5">
     <div>
      0878
     </div>
@@ -8228,7 +8276,7 @@
      Rhinobeetle Samurai
     </div>
    </div>
-   <div class="monster" data-id="0880" data-name="Automated Fort - Stirling" data-attribute = '1' data-race = '10'>
+   <div class="monster" data-attribute="1" data-id="0880" data-name="Automated Fort - Stirling" data-race="10">
     <div>
      0880
     </div>
@@ -9461,7 +9509,7 @@
      Thunderous Statue
     </div>
    </div>
-   <div class="monster" data-id="1017" data-name="Supreme Divine Overlord - Zeus" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="1017" data-name="Supreme Divine Overlord - Zeus" data-race="5">
     <div>
      1017
     </div>
@@ -10451,13 +10499,13 @@
      Princess of Blizzard - Yuki-onna
     </div>
    </div>
-   <div class="monster" data-attribute="2" data-id="1127" data-name="Chief of Infernal Blaze - Shuten-dōji" data-race="8">
+   <div class="monster" data-attribute="2" data-id="1127" data-name="Chief of Infernal Blaze - Shuten-d&omacr;ji" data-race="8">
     <div>
      1127
     </div>
     <img alt="1127" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1127.jpg"/>
     <div>
-     Chief of Infernal Blaze - Shuten-dōji
+     Chief of Infernal Blaze - Shuten-d&omacr;ji
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="1128" data-name="Howl of Raging Storm - Ootengu" data-race="8">
@@ -10478,13 +10526,13 @@
      Soul-Devouring Geisha - Kejourou
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="1130" data-name="Five Elements of Onmyō - Tuchigumo" data-race="8">
+   <div class="monster" data-attribute="5" data-id="1130" data-name="Five Elements of Onmy&omacr; - Tuchigumo" data-race="8">
     <div>
      1130
     </div>
     <img alt="1130" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1130.jpg"/>
     <div>
-     Five Elements of Onmyō - Tuchigumo
+     Five Elements of Onmy&omacr; - Tuchigumo
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="1131" data-name="Sorbian Rider Rabbit - Moai" data-race="2">
@@ -11648,13 +11696,13 @@
      Camera of Precious Flashes
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="1260" data-name="Doll of Child’s Play" data-race="8">
+   <div class="monster" data-attribute="5" data-id="1260" data-name="Doll of Child&rsquo;s Play" data-race="8">
     <div>
      1260
     </div>
     <img alt="1260" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1260.jpg"/>
     <div>
-     Doll of Child’s Play
+     Doll of Child&rsquo;s Play
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="1261" data-name="Spoon of Limpidity - Raphael" data-race="5">
@@ -11918,22 +11966,22 @@
      Genuine Sentiments - Qiao Sisters
     </div>
    </div>
-   <div class="monster" data-id="1290" data-name="Lü Bu" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="1290" data-name="L&uuml; Bu" data-race="1">
     <div>
      1290
     </div>
     <img alt="1290" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1290.jpg"/>
     <div>
-     Lü Bu
+     L&uuml; Bu
     </div>
    </div>
-   <div class="monster" data-id="1291" data-name="Reincarnated Warlord - Lü Bu" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="1291" data-name="Reincarnated Warlord - L&uuml; Bu" data-race="1">
     <div>
      1291
     </div>
     <img alt="1291" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1291.jpg"/>
     <div>
-     Reincarnated Warlord - Lü Bu
+     Reincarnated Warlord - L&uuml; Bu
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="1292" data-name="Dragon of World - Zhao Yun" data-race="4">
@@ -14384,7 +14432,7 @@
      Hel the Morale of All
     </div>
    </div>
-   <div class="monster" data-id="1564" data-name="Child of Khaos - Nyx" data-attribute = '4' data-race = '3'>
+   <div class="monster" data-attribute="4" data-id="1564" data-name="Child of Khaos - Nyx" data-race="3">
     <div>
      1564
     </div>
@@ -14618,13 +14666,13 @@
      Terry
     </div>
    </div>
-   <div class="monster" data-id="1590" data-name="Genetic Instinct of Flames - K´" data-attribute = '2' data-race = '1'>
+   <div class="monster" data-attribute="2" data-id="1590" data-name="Genetic Instinct of Flames - K&acute;" data-race="1">
     <div>
      1590
     </div>
     <img alt="1590" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1590.jpg"/>
     <div>
-     Genetic Instinct of Flames - K´
+     Genetic Instinct of Flames - K&acute;
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="1591" data-name="Ice Doll of Freeze - Kula Diamond" data-race="1">
@@ -15194,13 +15242,13 @@
      Desire of Erosion - Arwassa
     </div>
    </div>
-   <div class="monster" data-attribute="4" data-id="1654" data-name="Hotbed of Immorality - Y’golonac" data-race="8">
+   <div class="monster" data-attribute="4" data-id="1654" data-name="Hotbed of Immorality - Y&rsquo;golonac" data-race="8">
     <div>
      1654
     </div>
     <img alt="1654" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1654.jpg"/>
     <div>
-     Hotbed of Immorality - Y’golonac
+     Hotbed of Immorality - Y&rsquo;golonac
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="1655" data-name="Apperception Evolutionist - Mordiggian" data-race="8">
@@ -15599,7 +15647,7 @@
      The Last Shine - Hula
     </div>
    </div>
-   <div class="monster" data-id="1699" data-name="Sombre Void - Zeus" data-attribute = '5' data-race = '5'>
+   <div class="monster" data-attribute="5" data-id="1699" data-name="Sombre Void - Zeus" data-race="5">
     <div>
      1699
     </div>
@@ -15653,13 +15701,13 @@
      Supreme Lotus - He Xian'gu
     </div>
    </div>
-   <div class="monster" data-id="1705" data-name="Mischievous Wit - Lü Dongbin" data-attribute = '5' data-race = '5'>
+   <div class="monster" data-attribute="5" data-id="1705" data-name="Mischievous Wit - L&uuml; Dongbin" data-race="5">
     <div>
      1705
     </div>
     <img alt="1705" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1705.jpg"/>
     <div>
-     Mischievous Wit - Lü Dongbin
+     Mischievous Wit - L&uuml; Dongbin
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="1706" data-name="Emulative Ascetic - Zhongli Quan" data-race="5">
@@ -16139,7 +16187,7 @@
      Scroll of Essence - Dragon
     </div>
    </div>
-   <div class="monster" data-id="1759" data-name="Leorio" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="1759" data-name="Leorio" data-race="1">
     <div>
      1759
     </div>
@@ -16148,7 +16196,7 @@
      Leorio
     </div>
    </div>
-   <div class="monster" data-id="1760" data-name="Biscuit">
+   <div class="monster" data-attribute="2" data-id="1760" data-name="Biscuit" data-race="1">
     <div>
      1760
     </div>
@@ -16157,7 +16205,7 @@
      Biscuit
     </div>
    </div>
-   <div class="monster" data-id="1761" data-name="Body Transmutation - Biscuit">
+   <div class="monster" data-attribute="2" data-id="1761" data-name="Body Transmutation - Biscuit" data-race="1">
     <div>
      1761
     </div>
@@ -16166,7 +16214,7 @@
      Body Transmutation - Biscuit
     </div>
    </div>
-   <div class="monster" data-id="1762" data-name="Gon">
+   <div class="monster" data-attribute="3" data-id="1762" data-name="Gon" data-race="1">
     <div>
      1762
     </div>
@@ -16175,7 +16223,7 @@
      Gon
     </div>
    </div>
-   <div class="monster" data-id="1763" data-name="Limitation Transformation - Gon">
+   <div class="monster" data-attribute="3" data-id="1763" data-name="Limitation Transformation - Gon" data-race="1">
     <div>
      1763
     </div>
@@ -16184,7 +16232,7 @@
      Limitation Transformation - Gon
     </div>
    </div>
-   <div class="monster" data-id="1764" data-name="Kurapika">
+   <div class="monster" data-attribute="4" data-id="1764" data-name="Kurapika" data-race="1">
     <div>
      1764
     </div>
@@ -16193,7 +16241,7 @@
      Kurapika
     </div>
    </div>
-   <div class="monster" data-id="1765" data-name="Scarlet Eyes - Kurapika">
+   <div class="monster" data-attribute="4" data-id="1765" data-name="Scarlet Eyes - Kurapika" data-race="1">
     <div>
      1765
     </div>
@@ -16202,7 +16250,7 @@
      Scarlet Eyes - Kurapika
     </div>
    </div>
-   <div class="monster" data-id="1766" data-name="Killua">
+   <div class="monster" data-attribute="5" data-id="1766" data-name="Killua" data-race="1">
     <div>
      1766
     </div>
@@ -16211,7 +16259,7 @@
      Killua
     </div>
    </div>
-   <div class="monster" data-id="1767" data-name="Godspeed - Killua">
+   <div class="monster" data-attribute="5" data-id="1767" data-name="Godspeed - Killua" data-race="1">
     <div>
      1767
     </div>
@@ -16220,7 +16268,7 @@
      Godspeed - Killua
     </div>
    </div>
-   <div class="monster" data-id="1768" data-name="Hisoka">
+   <div class="monster" data-attribute="2" data-id="1768" data-name="Hisoka" data-race="1">
     <div>
      1768
     </div>
@@ -16229,7 +16277,7 @@
      Hisoka
     </div>
    </div>
-   <div class="monster" data-id="1769" data-name="Illumi">
+   <div class="monster" data-attribute="5" data-id="1769" data-name="Illumi" data-race="1">
     <div>
      1769
     </div>
@@ -16238,7 +16286,7 @@
      Illumi
     </div>
    </div>
-   <div class="monster" data-id="1770" data-name="Chrollo">
+   <div class="monster" data-attribute="5" data-id="1770" data-name="Chrollo" data-race="1">
     <div>
      1770
     </div>
@@ -16247,7 +16295,7 @@
      Chrollo
     </div>
    </div>
-   <div class="monster" data-id="1771" data-name="Meruem">
+   <div class="monster" data-attribute="3" data-id="1771" data-name="Meruem" data-race="8">
     <div>
      1771
     </div>
@@ -16256,7 +16304,7 @@
      Meruem
     </div>
    </div>
-   <div class="monster" data-id="1772" data-name="Netero">
+   <div class="monster" data-attribute="4" data-id="1772" data-name="Netero" data-race="1">
     <div>
      1772
     </div>
@@ -16265,7 +16313,7 @@
      Netero
     </div>
    </div>
-   <div class="monster" data-id="1773" data-name="Neferpitou">
+   <div class="monster" data-attribute="5" data-id="1773" data-name="Neferpitou" data-race="8">
     <div>
      1773
     </div>
@@ -16274,7 +16322,7 @@
      Neferpitou
     </div>
    </div>
-   <div class="monster" data-id="1774" data-name="Kite">
+   <div class="monster" data-attribute="1" data-id="1774" data-name="Kite" data-race="1">
     <div>
      1774
     </div>
@@ -16283,7 +16331,7 @@
      Kite
     </div>
    </div>
-   <div class="monster" data-id="1775" data-name="Menthuthuyoupi">
+   <div class="monster" data-attribute="2" data-id="1775" data-name="Menthuthuyoupi" data-race="8">
     <div>
      1775
     </div>
@@ -16292,7 +16340,7 @@
      Menthuthuyoupi
     </div>
    </div>
-   <div class="monster" data-id="1776" data-name="Shaiapouf">
+   <div class="monster" data-attribute="4" data-id="1776" data-name="Shaiapouf" data-race="3">
     <div>
      1776
     </div>
@@ -16364,7 +16412,7 @@
      Deed of Sacred - Roger
     </div>
    </div>
-   <div class="monster" data-id="1784" data-name="Vicious Prankster - Roger">
+   <div class="monster" data-attribute="5" data-id="1784" data-name="Vicious Prankster - Roger" data-race="1">
     <div>
      1784
     </div>
@@ -16373,7 +16421,7 @@
      Vicious Prankster - Roger
     </div>
    </div>
-   <div class="monster" data-id="1785" data-name="Alluka">
+   <div class="monster" data-attribute="5" data-id="1785" data-name="Alluka" data-race="1">
     <div>
      1785
     </div>
@@ -16841,13 +16889,13 @@
      Shiva
     </div>
    </div>
-   <div class="monster" data-id="1837" data-name="Maheśvara - Shiva">
+   <div class="monster" data-attribute="1" data-id="1837" data-name="Mahe&sacute;vara - Shiva" data-race="5">
     <div>
      1837
     </div>
     <img alt="1837" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1837.jpg"/>
     <div>
-     Maheśvara - Shiva
+     Mahe&sacute;vara - Shiva
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="1838" data-name="Brahma" data-race="5">
@@ -16859,7 +16907,7 @@
      Brahma
     </div>
    </div>
-   <div class="monster" data-id="1839" data-name="Chittamatra - Brahma">
+   <div class="monster" data-attribute="2" data-id="1839" data-name="Chittamatra - Brahma" data-race="5">
     <div>
      1839
     </div>
@@ -16913,7 +16961,7 @@
      Vishnu
     </div>
    </div>
-   <div class="monster" data-id="1845" data-name="Ascetic Mind - Vishnu">
+   <div class="monster" data-attribute="5" data-id="1845" data-name="Ascetic Mind - Vishnu" data-race="5">
     <div>
      1845
     </div>
@@ -17669,13 +17717,13 @@
      Choux
     </div>
    </div>
-   <div class="monster" data-id="1934" data-name="Bon Appétit - Choux">
+   <div class="monster" data-attribute="4" data-id="1934" data-name="Bon App&eacute;tit - Choux" data-race="2">
     <div>
      1934
     </div>
     <img alt="1934" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1934.jpg"/>
     <div>
-     Bon Appétit - Choux
+     Bon App&eacute;tit - Choux
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="1935" data-name="Tim" data-race="2">
@@ -17930,13 +17978,13 @@
      Satan Soul - Mirajane
     </div>
    </div>
-   <div class="monster" data-id="1963" data-name="Crime Sorcière - Jellal">
+   <div class="monster" data-attribute="1" data-id="1963" data-name="Crime Sorci&egrave;re - Jellal" data-race="1">
     <div>
      1963
     </div>
     <img alt="1963" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1963.jpg"/>
     <div>
-     Crime Sorcière - Jellal
+     Crime Sorci&egrave;re - Jellal
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="1964" data-name="Fire Dragon King - Igneel" data-race="4">
@@ -18119,13 +18167,13 @@
      Majesty of Millennium - Ying Zheng
     </div>
    </div>
-   <div class="monster" data-id="1984" data-name="Exquisite Perfumer - Jiutian Xuannü">
+   <div class="monster" data-attribute="4" data-id="1984" data-name="Exquisite Perfumer - Jiutian Xuann&uuml;" data-race="5">
     <div>
      1984
     </div>
     <img alt="1984" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1984.jpg"/>
     <div>
-     Exquisite Perfumer - Jiutian Xuannü
+     Exquisite Perfumer - Jiutian Xuann&uuml;
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="1985" data-name="Splendid Palette - Salamander" data-race="7">
@@ -18146,7 +18194,7 @@
      Chiffonette Fairy - Yan &amp; Xi
     </div>
    </div>
-   <div class="monster" data-id="1987" data-name="Miserable Priestess - Cassandra">
+   <div class="monster" data-attribute="1" data-id="1987" data-name="Miserable Priestess - Cassandra" data-race="1">
     <div>
      1987
     </div>
@@ -18173,7 +18221,7 @@
      Witch of Catastrophe - Circe
     </div>
    </div>
-   <div class="monster" data-id="1990" data-name="Theogony Ruler - Hera">
+   <div class="monster" data-attribute="4" data-id="1990" data-name="Theogony Ruler - Hera" data-race="5">
     <div>
      1990
     </div>
@@ -18182,7 +18230,7 @@
      Theogony Ruler - Hera
     </div>
    </div>
-   <div class="monster" data-id="1991" data-name="Kraken of Aeons - Cthulhu">
+   <div class="monster" data-attribute="1" data-id="1991" data-name="Kraken of Aeons - Cthulhu" data-race="10">
     <div>
      1991
     </div>
@@ -18191,7 +18239,7 @@
      Kraken of Aeons - Cthulhu
     </div>
    </div>
-   <div class="monster" data-id="1992" data-name="Hellfire Mortar - Cerberus">
+   <div class="monster" data-attribute="2" data-id="1992" data-name="Hellfire Mortar - Cerberus" data-race="10">
     <div>
      1992
     </div>
@@ -18200,7 +18248,7 @@
      Hellfire Mortar - Cerberus
     </div>
    </div>
-   <div class="monster" data-id="1993" data-name="Venomous Lazer - Medusa">
+   <div class="monster" data-attribute="3" data-id="1993" data-name="Venomous Lazer - Medusa" data-race="10">
     <div>
      1993
     </div>
@@ -18209,7 +18257,7 @@
      Venomous Lazer - Medusa
     </div>
    </div>
-   <div class="monster" data-id="1994" data-name="Mythical Thunderbolt - Griffin">
+   <div class="monster" data-attribute="4" data-id="1994" data-name="Mythical Thunderbolt - Griffin" data-race="10">
     <div>
      1994
     </div>
@@ -18218,7 +18266,7 @@
      Mythical Thunderbolt - Griffin
     </div>
    </div>
-   <div class="monster" data-id="1995" data-name="Grim Reaper - Baphomet">
+   <div class="monster" data-attribute="5" data-id="1995" data-name="Grim Reaper - Baphomet" data-race="10">
     <div>
      1995
     </div>
@@ -18236,7 +18284,7 @@
      Flames Forsaken - Jason
     </div>
    </div>
-   <div class="monster" data-id="1997" data-name="Medixie">
+   <div class="monster" data-attribute="3" data-id="1997" data-name="Medixie" data-race="7">
     <div>
      1997
     </div>
@@ -18272,7 +18320,7 @@
      Sky 100 - Madhead
     </div>
    </div>
-   <div class="monster" data-id="2001" data-name="Sword of Annihilation - Freyr">
+   <div class="monster" data-attribute="1" data-id="2001" data-name="Sword of Annihilation - Freyr" data-race="5">
     <div>
      2001
     </div>
@@ -18281,7 +18329,7 @@
      Sword of Annihilation - Freyr
     </div>
    </div>
-   <div class="monster" data-id="2002" data-name="Destructive Incineration - Tyr">
+   <div class="monster" data-attribute="2" data-id="2002" data-name="Destructive Incineration - Tyr" data-race="5">
     <div>
      2002
     </div>
@@ -18290,7 +18338,7 @@
      Destructive Incineration - Tyr
     </div>
    </div>
-   <div class="monster" data-id="2003" data-name="Finale of Aria - Freyja">
+   <div class="monster" data-attribute="3" data-id="2003" data-name="Finale of Aria - Freyja" data-race="5">
     <div>
      2003
     </div>
@@ -18299,7 +18347,7 @@
      Finale of Aria - Freyja
     </div>
    </div>
-   <div class="monster" data-id="2004" data-name="Fulgurous Blast - Thor">
+   <div class="monster" data-attribute="4" data-id="2004" data-name="Fulgurous Blast - Thor" data-race="5">
     <div>
      2004
     </div>
@@ -18308,7 +18356,7 @@
      Fulgurous Blast - Thor
     </div>
    </div>
-   <div class="monster" data-id="2005" data-name="Alteration of Sins - Loki">
+   <div class="monster" data-attribute="5" data-id="2005" data-name="Alteration of Sins - Loki" data-race="5">
     <div>
      2005
     </div>
@@ -18506,16 +18554,16 @@
      The Last Judgment - Michelangelo
     </div>
    </div>
-   <div class="monster" data-id="2027" data-name="Research of Life - Schrödinger">
+   <div class="monster" data-attribute="5" data-id="2027" data-name="Research of Life - Schr&ouml;dinger" data-race="10">
     <div>
      2027
     </div>
     <img alt="2027" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2027.jpg"/>
     <div>
-     Research of Life - Schrödinger
+     Research of Life - Schr&ouml;dinger
     </div>
    </div>
-   <div class="monster" data-id="2028" data-name="Patra the Light Alchemist">
+   <div class="monster" data-attribute="4" data-id="2028" data-name="Patra the Light Alchemist" data-race="8">
     <div>
      2028
     </div>
@@ -18524,7 +18572,7 @@
      Patra the Light Alchemist
     </div>
    </div>
-   <div class="monster" data-id="2029" data-name="Perfect Proportion - Da Vinci">
+   <div class="monster" data-attribute="2" data-id="2029" data-name="Perfect Proportion - Da Vinci" data-race="1">
     <div>
      2029
     </div>
@@ -18560,7 +18608,7 @@
      Sceptical Scientist - Boyle
     </div>
    </div>
-   <div class="monster" data-id="2033" data-name="Sweety Maid - Tiffany">
+   <div class="monster" data-attribute="4" data-id="2033" data-name="Sweety Maid - Tiffany" data-race="10">
     <div>
      2033
     </div>
@@ -18569,7 +18617,7 @@
      Sweety Maid - Tiffany
     </div>
    </div>
-   <div class="monster" data-id="2034" data-name="Best Pet - Poopeyed Egg">
+   <div class="monster" data-attribute="3" data-id="2034" data-name="Best Pet - Poopeyed Egg" data-race="10">
     <div>
      2034
     </div>
@@ -18614,7 +18662,7 @@
      Demonic Vines - Denise
     </div>
    </div>
-   <div class="monster" data-id="2039" data-name="Dawning Templar - Denise">
+   <div class="monster" data-attribute="4" data-id="2039" data-name="Dawning Templar - Denise" data-race="1">
     <div>
      2039
     </div>
@@ -18632,7 +18680,7 @@
      Shadow Galloper - Denise
     </div>
    </div>
-   <div class="monster" data-id="2041" data-name="Streamy Sworder - Florice">
+   <div class="monster" data-attribute="1" data-id="2041" data-name="Streamy Sworder - Florice" data-race="1">
     <div>
      2041
     </div>
@@ -18641,7 +18689,7 @@
      Streamy Sworder - Florice
     </div>
    </div>
-   <div class="monster" data-id="2042" data-name="Water of Revolution - Florice">
+   <div class="monster" data-attribute="1" data-id="2042" data-name="Water of Revolution - Florice" data-race="1">
     <div>
      2042
     </div>
@@ -18650,7 +18698,7 @@
      Water of Revolution - Florice
     </div>
    </div>
-   <div class="monster" data-id="2043" data-name="Rebel Igniter - Rococo">
+   <div class="monster" data-attribute="2" data-id="2043" data-name="Rebel Igniter - Rococo" data-race="1">
     <div>
      2043
     </div>
@@ -18659,7 +18707,7 @@
      Rebel Igniter - Rococo
     </div>
    </div>
-   <div class="monster" data-id="2044" data-name="Glamorous Combustion - Rococo">
+   <div class="monster" data-attribute="2" data-id="2044" data-name="Glamorous Combustion - Rococo" data-race="1">
     <div>
      2044
     </div>
@@ -18668,7 +18716,7 @@
      Glamorous Combustion - Rococo
     </div>
    </div>
-   <div class="monster" data-id="2045" data-name="Berserk Medic - Crescent">
+   <div class="monster" data-attribute="3" data-id="2045" data-name="Berserk Medic - Crescent" data-race="1">
     <div>
      2045
     </div>
@@ -18677,7 +18725,7 @@
      Berserk Medic - Crescent
     </div>
    </div>
-   <div class="monster" data-id="2046" data-name="Weaponized Healer - Crescent">
+   <div class="monster" data-attribute="3" data-id="2046" data-name="Weaponized Healer - Crescent" data-race="1">
     <div>
      2046
     </div>
@@ -18686,7 +18734,7 @@
      Weaponized Healer - Crescent
     </div>
    </div>
-   <div class="monster" data-id="2047" data-name="Mind Expansion - Morse">
+   <div class="monster" data-attribute="4" data-id="2047" data-name="Mind Expansion - Morse" data-race="1">
     <div>
      2047
     </div>
@@ -18695,7 +18743,7 @@
      Mind Expansion - Morse
     </div>
    </div>
-   <div class="monster" data-id="2048" data-name="Erupting Inspiration - Morse">
+   <div class="monster" data-attribute="4" data-id="2048" data-name="Erupting Inspiration - Morse" data-race="1">
     <div>
      2048
     </div>
@@ -18704,7 +18752,7 @@
      Erupting Inspiration - Morse
     </div>
    </div>
-   <div class="monster" data-id="2049" data-name="Corrupted Somberness - Yocto">
+   <div class="monster" data-attribute="5" data-id="2049" data-name="Corrupted Somberness - Yocto" data-race="1">
     <div>
      2049
     </div>
@@ -18713,7 +18761,7 @@
      Corrupted Somberness - Yocto
     </div>
    </div>
-   <div class="monster" data-id="2050" data-name="Shield of Primordial - Yocto">
+   <div class="monster" data-attribute="5" data-id="2050" data-name="Shield of Primordial - Yocto" data-race="1">
     <div>
      2050
     </div>
@@ -18731,7 +18779,7 @@
      Li Ji
     </div>
    </div>
-   <div class="monster" data-id="2052" data-name="Deceiving Motherhood - Li Ji">
+   <div class="monster" data-attribute="1" data-id="2052" data-name="Deceiving Motherhood - Li Ji" data-race="3">
     <div>
      2052
     </div>
@@ -18749,7 +18797,7 @@
      Eve
     </div>
    </div>
-   <div class="monster" data-id="2054" data-name="Origin of All Sins - Eve">
+   <div class="monster" data-attribute="2" data-id="2054" data-name="Origin of All Sins - Eve" data-race="8">
     <div>
      2054
     </div>
@@ -18767,7 +18815,7 @@
      Longyang Jun
     </div>
    </div>
-   <div class="monster" data-id="2056" data-name="Purely Sensual - Longyang Jun">
+   <div class="monster" data-attribute="3" data-id="2056" data-name="Purely Sensual - Longyang Jun" data-race="3">
     <div>
      2056
     </div>
@@ -18785,7 +18833,7 @@
      Wu Zetian
     </div>
    </div>
-   <div class="monster" data-id="2058" data-name="Militant Heroine - Wu Zetian">
+   <div class="monster" data-attribute="4" data-id="2058" data-name="Militant Heroine - Wu Zetian" data-race="8">
     <div>
      2058
     </div>
@@ -18803,7 +18851,7 @@
      Cleo
     </div>
    </div>
-   <div class="monster" data-id="2060" data-name="Diva of Obsession - Cleo">
+   <div class="monster" data-attribute="5" data-id="2060" data-name="Diva of Obsession - Cleo" data-race="8">
     <div>
      2060
     </div>
@@ -18821,7 +18869,7 @@
      Bao Si
     </div>
    </div>
-   <div class="monster" data-id="2062" data-name="Mass Extermination - Bao Si">
+   <div class="monster" data-attribute="2" data-id="2062" data-name="Mass Extermination - Bao Si" data-race="8">
     <div>
      2062
     </div>
@@ -18839,7 +18887,7 @@
      Yang Yuhuan
     </div>
    </div>
-   <div class="monster" data-id="2064" data-name="Suicidal Romance - Yang Yuhuan">
+   <div class="monster" data-attribute="4" data-id="2064" data-name="Suicidal Romance - Yang Yuhuan" data-race="3">
     <div>
      2064
     </div>
@@ -18857,7 +18905,7 @@
      Mo Xi
     </div>
    </div>
-   <div class="monster" data-id="2066" data-name="Forbidden Masculinity - Mo Xi">
+   <div class="monster" data-attribute="5" data-id="2066" data-name="Forbidden Masculinity - Mo Xi" data-race="8">
     <div>
      2066
     </div>
@@ -18866,16 +18914,16 @@
      Forbidden Masculinity - Mo Xi
     </div>
    </div>
-   <div class="monster" data-id="2067" data-name="Delusional Lover - Lü Zhi">
+   <div class="monster" data-attribute="3" data-id="2067" data-name="Delusional Lover - L&uuml; Zhi" data-race="8">
     <div>
      2067
     </div>
     <img alt="2067" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2067.jpg"/>
     <div>
-     Delusional Lover - Lü Zhi
+     Delusional Lover - L&uuml; Zhi
     </div>
    </div>
-   <div class="monster" data-id="2068" data-name="Voluntary Victim - Wang Zhaojun">
+   <div class="monster" data-attribute="4" data-id="2068" data-name="Voluntary Victim - Wang Zhaojun" data-race="3">
     <div>
      2068
     </div>
@@ -18884,7 +18932,7 @@
      Voluntary Victim - Wang Zhaojun
     </div>
    </div>
-   <div class="monster" data-id="2069" data-name="Artistic Scalping - Xi Shi">
+   <div class="monster" data-attribute="5" data-id="2069" data-name="Artistic Scalping - Xi Shi" data-race="3">
     <div>
      2069
     </div>
@@ -18911,7 +18959,7 @@
      Wild Sensory - Sun Erniang
     </div>
    </div>
-   <div class="monster" data-id="2072" data-name="Crazy Rich Queen - Cixi">
+   <div class="monster" data-attribute="3" data-id="2072" data-name="Crazy Rich Queen - Cixi" data-race="8">
     <div>
      2072
     </div>
@@ -18920,7 +18968,7 @@
      Crazy Rich Queen - Cixi
     </div>
    </div>
-   <div class="monster" data-id="2073" data-name="Faded Memento - Yu Miaoyi">
+   <div class="monster" data-attribute="1" data-id="2073" data-name="Faded Memento - Yu Miaoyi" data-race="1">
     <div>
      2073
     </div>
@@ -18929,7 +18977,7 @@
      Faded Memento - Yu Miaoyi
     </div>
    </div>
-   <div class="monster" data-id="2074" data-name="Tender Soul - Li Lianying">
+   <div class="monster" data-attribute="2" data-id="2074" data-name="Tender Soul - Li Lianying" data-race="1">
     <div>
      2074
     </div>
@@ -18947,7 +18995,7 @@
      Superficial Admirer - Wei Zhongxian
     </div>
    </div>
-   <div class="monster" data-id="2076" data-name="Fake Affection - Zhao Gao">
+   <div class="monster" data-attribute="5" data-id="2076" data-name="Fake Affection - Zhao Gao" data-race="1">
     <div>
      2076
     </div>
@@ -18992,7 +19040,7 @@
      Honey Latte
     </div>
    </div>
-   <div class="monster" data-id="2081" data-name="Chalice of Eternity - Aria">
+   <div class="monster" data-attribute="1" data-id="2081" data-name="Chalice of Eternity - Aria" data-race="1">
     <div>
      2081
     </div>
@@ -19073,7 +19121,7 @@
      Blinded Pride - Mahonin
     </div>
    </div>
-   <div class="monster" data-id="2090" data-name="Genius of Epoch - Tesla">
+   <div class="monster" data-attribute="4" data-id="2090" data-name="Genius of Epoch - Tesla" data-race="10">
     <div>
      2090
     </div>
@@ -19091,7 +19139,7 @@
      Poet of Bemoaning - Qu Yuan
     </div>
    </div>
-   <div class="monster" data-id="2092" data-name="New Order Creation - Khaos">
+   <div class="monster" data-attribute="5" data-id="2092" data-name="New Order Creation - Khaos" data-race="5">
     <div>
      2092
     </div>
@@ -19442,13 +19490,13 @@
      Primal Divinity - Fuxi
     </div>
    </div>
-   <div class="monster" data-id="2131" data-name="Ancestral Creation - Nüwa">
+   <div class="monster" data-attribute="3" data-id="2131" data-name="Ancestral Creation - N&uuml;wa" data-race="5">
     <div>
      2131
     </div>
     <img alt="2131" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2131.jpg"/>
     <div>
-     Ancestral Creation - Nüwa
+     Ancestral Creation - N&uuml;wa
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="2132" data-name="Lady of the Supreme - Xiwangmu" data-race="5">
@@ -20180,7 +20228,7 @@
      Wheel of Dismemberment - Speckle
     </div>
    </div>
-   <div class="monster" data-id="2213" data-name="Cardbuster Girlfriend - Ringo">
+   <div class="monster" data-attribute="2" data-id="2213" data-name="Cardbuster Girlfriend - Ringo" data-race="7">
     <div>
      2213
     </div>
@@ -20486,7 +20534,7 @@
      Aquarious Anchisaurus - Brock
     </div>
    </div>
-   <div class="monster" data-id="2247" data-name="Scale of Combustion - Brock">
+   <div class="monster" data-attribute="2" data-id="2247" data-name="Scale of Combustion - Brock" data-race="4">
     <div>
      2247
     </div>
@@ -20657,13 +20705,13 @@
      Noble Prodigal - Yuan Shao
     </div>
    </div>
-   <div class="monster" data-id="2266" data-name="Belligerent Mania - Lü Bu">
+   <div class="monster" data-attribute="5" data-id="2266" data-name="Belligerent Mania - L&uuml; Bu" data-race="1">
     <div>
      2266
     </div>
     <img alt="2266" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2266.jpg"/>
     <div>
-     Belligerent Mania - Lü Bu
+     Belligerent Mania - L&uuml; Bu
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="2267" data-name="Love of Fidelity - Diaochan" data-race="1">
@@ -20783,7 +20831,7 @@
      Mech Christmas Reindeer
     </div>
    </div>
-   <div class="monster" data-id="2280" data-name="Tower Voyager - Molin">
+   <div class="monster" data-attribute="4" data-id="2280" data-name="Tower Voyager - Molin" data-race="5">
     <div>
      2280
     </div>
@@ -20999,7 +21047,7 @@
      Jingwei the Sea Filler
     </div>
    </div>
-   <div class="monster" data-id="2304" data-name="Crowned Titan - Cronus">
+   <div class="monster" data-attribute="5" data-id="2304" data-name="Crowned Titan - Cronus" data-race="5">
     <div>
      2304
     </div>
@@ -21125,7 +21173,7 @@
      Nine-Spirited Lion - Jiuling Yuansheng
     </div>
    </div>
-   <div class="monster" data-id="2318" data-name="Eyes of Wickedness - Baiyan Mojun">
+   <div class="monster" data-attribute="3" data-id="2318" data-name="Eyes of Wickedness - Baiyan Mojun" data-race="8">
     <div>
      2318
     </div>
@@ -21530,16 +21578,16 @@
      Victor Quinn York
     </div>
    </div>
-   <div class="monster" data-id="2365" data-name="Ophélie Gaston">
+   <div class="monster" data-attribute="5" data-id="2365" data-name="Oph&eacute;lie Gaston" data-race="1">
     <div>
      2365
     </div>
     <img alt="2365" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2365.jpg"/>
     <div>
-     Ophélie Gaston
+     Oph&eacute;lie Gaston
     </div>
    </div>
-   <div class="monster" data-id="2366" data-name="Phora Klepsydra">
+   <div class="monster" data-attribute="5" data-id="2366" data-name="Phora Klepsydra" data-race="3">
     <div>
      2366
     </div>
@@ -21611,7 +21659,7 @@
      Kiri the Wolf Shaman
     </div>
    </div>
-   <div class="monster" data-id="2374" data-name="Swaggy Breaker - Pupuro">
+   <div class="monster" data-attribute="3" data-id="2374" data-name="Swaggy Breaker - Pupuro" data-race="3">
     <div>
      2374
     </div>
@@ -21620,7 +21668,7 @@
      Swaggy Breaker - Pupuro
     </div>
    </div>
-   <div class="monster" data-id="2375" data-name="Dope B-boy - Haza">
+   <div class="monster" data-attribute="4" data-id="2375" data-name="Dope B-boy - Haza" data-race="2">
     <div>
      2375
     </div>
@@ -21800,7 +21848,7 @@
      Lion-Dragon Hybrid - Ushumgallu
     </div>
    </div>
-   <div class="monster" data-id="2395" data-name="Colchian Dragon the Sleepless Protector">
+   <div class="monster" data-attribute="5" data-id="2395" data-name="Colchian Dragon the Sleepless Protector" data-race="4">
     <div>
      2395
     </div>
@@ -22205,7 +22253,7 @@
      Elite Bot - Navy
     </div>
    </div>
-   <div class="monster" data-id="2440" data-name="King of Fruits - Durian">
+   <div class="monster" data-attribute="3" data-id="2440" data-name="King of Fruits - Durian" data-race="3">
     <div>
      2440
     </div>
@@ -22214,7 +22262,7 @@
      King of Fruits - Durian
     </div>
    </div>
-   <div class="monster" data-id="2441" data-name="Flattering Komainu - Furry">
+   <div class="monster" data-attribute="1" data-id="2441" data-name="Flattering Komainu - Furry" data-race="2">
     <div>
      2441
     </div>
@@ -22223,7 +22271,7 @@
      Flattering Komainu - Furry
     </div>
    </div>
-   <div class="monster" data-id="2442" data-name="Explosive Mustache - Dadaru">
+   <div class="monster" data-attribute="2" data-id="2442" data-name="Explosive Mustache - Dadaru" data-race="2">
     <div>
      2442
     </div>
@@ -22232,7 +22280,7 @@
      Explosive Mustache - Dadaru
     </div>
    </div>
-   <div class="monster" data-id="2443" data-name="Deep Bass Taiko - Hibiki">
+   <div class="monster" data-attribute="3" data-id="2443" data-name="Deep Bass Taiko - Hibiki" data-race="2">
     <div>
      2443
     </div>
@@ -22241,7 +22289,7 @@
      Deep Bass Taiko - Hibiki
     </div>
    </div>
-   <div class="monster" data-id="2444" data-name="Fortune Beckoning - Snowball">
+   <div class="monster" data-attribute="4" data-id="2444" data-name="Fortune Beckoning - Snowball" data-race="2">
     <div>
      2444
     </div>
@@ -22250,7 +22298,7 @@
      Fortune Beckoning - Snowball
     </div>
    </div>
-   <div class="monster" data-id="2445" data-name="Beguiling White Snake - Hana">
+   <div class="monster" data-attribute="5" data-id="2445" data-name="Beguiling White Snake - Hana" data-race="2">
     <div>
      2445
     </div>
@@ -22259,7 +22307,7 @@
      Beguiling White Snake - Hana
     </div>
    </div>
-   <div class="monster" data-id="2446" data-name="Solar Sirius of Catastrophe">
+   <div class="monster" data-attribute="4" data-id="2446" data-name="Solar Sirius of Catastrophe" data-race="2">
     <div>
      2446
     </div>
@@ -22268,7 +22316,7 @@
      Solar Sirius of Catastrophe
     </div>
    </div>
-   <div class="monster" data-id="2447" data-name="Solar Sirius of Apocalypse">
+   <div class="monster" data-attribute="4" data-id="2447" data-name="Solar Sirius of Apocalypse" data-race="2">
     <div>
      2447
     </div>
@@ -22277,7 +22325,7 @@
      Solar Sirius of Apocalypse
     </div>
    </div>
-   <div class="monster" data-id="2448" data-name="Lunar Sirius of Catastrophe">
+   <div class="monster" data-attribute="5" data-id="2448" data-name="Lunar Sirius of Catastrophe" data-race="2">
     <div>
      2448
     </div>
@@ -22286,7 +22334,7 @@
      Lunar Sirius of Catastrophe
     </div>
    </div>
-   <div class="monster" data-id="2449" data-name="Lunar Sirius of Apocalypse">
+   <div class="monster" data-attribute="5" data-id="2449" data-name="Lunar Sirius of Apocalypse" data-race="2">
     <div>
      2449
     </div>
@@ -22295,7 +22343,7 @@
      Lunar Sirius of Apocalypse
     </div>
    </div>
-   <div class="monster" data-id="2450" data-name="Wolf of Ragnarok - Fenrir">
+   <div class="monster" data-attribute="4" data-id="2450" data-name="Wolf of Ragnarok - Fenrir" data-race="2">
     <div>
      2450
     </div>
@@ -22421,7 +22469,7 @@
      Elaine
     </div>
    </div>
-   <div class="monster" data-id="2464" data-name="Ludoshel the Leader of the Four Archangels">
+   <div class="monster" data-attribute="4" data-id="2464" data-name="Ludoshel the Leader of the Four Archangels" data-race="5">
     <div>
      2464
     </div>
@@ -22511,7 +22559,7 @@
      Goddess Elizabeth
     </div>
    </div>
-   <div class="monster" data-id="2474" data-name="Auxo the Goddess of Fertility">
+   <div class="monster" data-attribute="3" data-id="2474" data-name="Auxo the Goddess of Fertility" data-race="5">
     <div>
      2474
     </div>
@@ -22520,7 +22568,7 @@
      Auxo the Goddess of Fertility
     </div>
    </div>
-   <div class="monster" data-id="2475" data-name="Swallow-tailed Butler - Berkeley">
+   <div class="monster" data-attribute="1" data-id="2475" data-name="Swallow-tailed Butler - Berkeley" data-race="1">
     <div>
      2475
     </div>
@@ -22529,7 +22577,7 @@
      Swallow-tailed Butler - Berkeley
     </div>
    </div>
-   <div class="monster" data-id="2476" data-name="Summer Paradise - Eve">
+   <div class="monster" data-attribute="4" data-id="2476" data-name="Summer Paradise - Eve" data-race="8">
     <div>
      2476
     </div>
@@ -22538,7 +22586,7 @@
      Summer Paradise - Eve
     </div>
    </div>
-   <div class="monster" data-id="2477" data-name="Resentment Awakening - Enlil">
+   <div class="monster" data-attribute="2" data-id="2477" data-name="Resentment Awakening - Enlil" data-race="8">
     <div>
      2477
     </div>
@@ -22547,13 +22595,13 @@
      Resentment Awakening - Enlil
     </div>
    </div>
-   <div class="monster" data-id="2478" data-name="Soul-burning Seal - Schrödinger">
+   <div class="monster" data-attribute="4" data-id="2478" data-name="Soul-burning Seal - Schr&ouml;dinger" data-race="10">
     <div>
      2478
     </div>
     <img alt="2478" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2478.jpg"/>
     <div>
-     Soul-burning Seal - Schrödinger
+     Soul-burning Seal - Schr&ouml;dinger
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="2479" data-name="Breakdown of Principle - Michael" data-race="5">
@@ -22565,7 +22613,7 @@
      Breakdown of Principle - Michael
     </div>
    </div>
-   <div class="monster" data-id="2480" data-name="Demon of Omniscience - Laplace">
+   <div class="monster" data-attribute="4" data-id="2480" data-name="Demon of Omniscience - Laplace" data-race="8">
     <div>
      2480
     </div>
@@ -22718,7 +22766,7 @@
      Life Decoding - Manungal
     </div>
    </div>
-   <div class="monster" data-id="2497" data-name="Phantom Pride - Ishtar">
+   <div class="monster" data-attribute="2" data-id="2497" data-name="Phantom Pride - Ishtar" data-race="5">
     <div>
      2497
     </div>
@@ -22799,13 +22847,13 @@
      Homicidal Cannibal - Wendigo
     </div>
    </div>
-   <div class="monster" data-id="2506" data-name="Midgard Serpent - Jörmungandr">
+   <div class="monster" data-attribute="3" data-id="2506" data-name="Midgard Serpent - J&ouml;rmungandr" data-race="2">
     <div>
      2506
     </div>
     <img alt="2506" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2506.jpg"/>
     <div>
-     Midgard Serpent - Jörmungandr
+     Midgard Serpent - J&ouml;rmungandr
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2507" data-name="Giant of Hurricane - Typhon" data-race="3">
@@ -23087,13 +23135,13 @@
      Asuka &amp; EVA Production Model-02 (Rebuild) Beast Mode 4th Phase
     </div>
    </div>
-   <div class="monster" data-attribute="3" data-id="2538" data-name="Mari &amp; EVA Production Model Custom Type-08β" data-race="5">
+   <div class="monster" data-attribute="3" data-id="2538" data-name="Mari &amp; EVA Production Model Custom Type-08&beta;" data-race="5">
     <div>
      2538
     </div>
     <img alt="2538" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2538.jpg"/>
     <div>
-     Mari &amp; EVA Production Model Custom Type-08β
+     Mari &amp; EVA Production Model Custom Type-08&beta;
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2539" data-name="AAA Wunder &amp; Misato Katsuragi" data-race="5">
@@ -23195,13 +23243,13 @@
      Sworded Samurai - Minamoto no Yoshitsune
     </div>
    </div>
-   <div class="monster" data-id="2550" data-name="Battlefield Dominator - Lü Bu">
+   <div class="monster" data-attribute="5" data-id="2550" data-name="Battlefield Dominator - L&uuml; Bu" data-race="8">
     <div>
      2550
     </div>
     <img alt="2550" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2550.jpg"/>
     <div>
-     Battlefield Dominator - Lü Bu
+     Battlefield Dominator - L&uuml; Bu
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2551" data-name="Indigo Feathers - Scrubia" data-race="8">
@@ -23240,13 +23288,13 @@
      Masterful Blades - Imanotsurugi &amp; Usumidori
     </div>
    </div>
-   <div class="monster" data-id="2555" data-name="Lü Lingshuang the Horrid Chariot">
+   <div class="monster" data-attribute="5" data-id="2555" data-name="L&uuml; Lingshuang the Horrid Chariot" data-race="8">
     <div>
      2555
     </div>
     <img alt="2555" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2555.jpg"/>
     <div>
-     Lü Lingshuang the Horrid Chariot
+     L&uuml; Lingshuang the Horrid Chariot
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2556" data-name="Mighty Oceanic Axe - Beowulf" data-race="8">
@@ -23285,13 +23333,13 @@
      Unified Blades - Minamoto no Yoshitsune
     </div>
    </div>
-   <div class="monster" data-id="2560" data-name="Steerer of the Wind - Lü Bu">
+   <div class="monster" data-attribute="5" data-id="2560" data-name="Steerer of the Wind - L&uuml; Bu" data-race="8">
     <div>
      2560
     </div>
     <img alt="2560" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2560.jpg"/>
     <div>
-     Steerer of the Wind - Lü Bu
+     Steerer of the Wind - L&uuml; Bu
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2561" data-name="Roar of the Conjoined - Amhuluk" data-race="4">
@@ -23429,13 +23477,13 @@
      Youthful Arms - Madam Heidi
     </div>
    </div>
-   <div class="monster" data-id="2576" data-name="Lumière under the Veil - Tawil">
+   <div class="monster" data-attribute="5" data-id="2576" data-name="Lumi&egrave;re under the Veil - Tawil" data-race="5">
     <div>
      2576
     </div>
     <img alt="2576" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2576.jpg"/>
     <div>
-     Lumière under the Veil - Tawil
+     Lumi&egrave;re under the Veil - Tawil
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2577" data-name="Koobor the Eucalyptus Warrior" data-race="2">
@@ -23726,7 +23774,7 @@
      Engulfing Obscurum - Novalis
     </div>
    </div>
-   <div class="monster" data-id="2610" data-name="The Final Waiting - Novalis">
+   <div class="monster" data-attribute="5" data-id="2610" data-name="The Final Waiting - Novalis" data-race="4">
     <div>
      2610
     </div>
@@ -24482,13 +24530,13 @@
      Unruffled Heart - Miaosha
     </div>
    </div>
-   <div class="monster" data-attribute="1" data-id="2694" data-name="Shrine Dogū" data-race="7">
+   <div class="monster" data-attribute="1" data-id="2694" data-name="Shrine Dog&umacr;" data-race="7">
     <div>
      2694
     </div>
     <img alt="2694" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2694.jpg"/>
     <div>
-     Shrine Dogū
+     Shrine Dog&umacr;
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2695" data-name="Ao Ji, Dragon King of the North Sea" data-race="4">
@@ -24779,13 +24827,13 @@
      Sunny Daylight - Aria
     </div>
    </div>
-   <div class="monster" data-id="2727" data-name="The Surfing Duo - Lü Bu">
+   <div class="monster" data-attribute="3" data-id="2727" data-name="The Surfing Duo - L&uuml; Bu" data-race="1">
     <div>
      2727
     </div>
     <img alt="2727" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2727.jpg"/>
     <div>
-     The Surfing Duo - Lü Bu
+     The Surfing Duo - L&uuml; Bu
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="2728" data-name="Spiker of Strength - Madam Heidi" data-race="1">
@@ -24968,13 +25016,13 @@
      Stalwart Devotee - Bedivere
     </div>
    </div>
-   <div class="monster" data-id="2748" data-name="Nidhogg the Trumpet of Ragnarök">
+   <div class="monster" data-attribute="3" data-id="2748" data-name="Nidhogg the Trumpet of Ragnar&ouml;k" data-race="4">
     <div>
      2748
     </div>
     <img alt="2748" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2748.jpg"/>
     <div>
-     Nidhogg the Trumpet of Ragnarök
+     Nidhogg the Trumpet of Ragnar&ouml;k
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2749" data-name="Nidhogg the Purgation of Vices" data-race="4">
@@ -25013,7 +25061,7 @@
      Autocratic Pretensions - Ying Zheng
     </div>
    </div>
-   <div class="monster" data-id="2753" data-name="Devilish Appropriation - Ying Zheng">
+   <div class="monster" data-attribute="5" data-id="2753" data-name="Devilish Appropriation - Ying Zheng" data-race="8">
     <div>
      2753
     </div>
@@ -25184,7 +25232,7 @@
      Tower Keeper - Terry
     </div>
    </div>
-   <div class="monster" data-id="2772" data-name="Firefist Monk">
+   <div class="monster" data-attribute="2" data-id="2772" data-name="Firefist Monk" data-race="1">
     <div>
      2772
     </div>
@@ -25193,7 +25241,7 @@
      Firefist Monk
     </div>
    </div>
-   <div class="monster" data-id="2773" data-name="Bee-autiful Empress - Marguerite">
+   <div class="monster" data-attribute="3" data-id="2773" data-name="Bee-autiful Empress - Marguerite" data-race="3">
     <div>
      2773
     </div>
@@ -25445,13 +25493,13 @@
      Manipulator of Apeiron - Circe
     </div>
    </div>
-   <div class="monster" data-id="2801" data-name="Märchen Maker - Katherin">
+   <div class="monster" data-attribute="3" data-id="2801" data-name="M&auml;rchen Maker - Katherin" data-race="1">
     <div>
      2801
     </div>
     <img alt="2801" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2801.jpg"/>
     <div>
-     Märchen Maker - Katherin
+     M&auml;rchen Maker - Katherin
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2802" data-name="Merry Amble - Komainu" data-race="2">
@@ -25518,7 +25566,7 @@
      Navigator of Stars - Ophiuchus
     </div>
    </div>
-   <div class="monster" data-id="2809" data-name="Intergalactic Combo - Mitty and Marble">
+   <div class="monster" data-attribute="4" data-id="2809" data-name="Intergalactic Combo - Mitty and Marble" data-race="2">
     <div>
      2809
     </div>
@@ -25554,7 +25602,7 @@
      Boar-hearted Rescuer - Zhu Bajie
     </div>
    </div>
-   <div class="monster" data-id="2813" data-name="Supersonic Armor - Xi">
+   <div class="monster" data-attribute="3" data-id="2813" data-name="Supersonic Armor - Xi" data-race="10">
     <div>
      2813
     </div>
@@ -25626,13 +25674,13 @@
      Rain of Reconciliation - Tefnut
     </div>
    </div>
-   <div class="monster" data-attribute="2" data-id="2821" data-name="Wardragon’s Rise - Seth" data-race="4">
+   <div class="monster" data-attribute="2" data-id="2821" data-name="Wardragon&rsquo;s Rise - Seth" data-race="4">
     <div>
      2821
     </div>
     <img alt="2821" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2821.jpg"/>
     <div>
-     Wardragon’s Rise - Seth
+     Wardragon&rsquo;s Rise - Seth
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2822" data-name="Wings of Tempest - Shu" data-race="4">
@@ -25644,13 +25692,13 @@
      Wings of Tempest - Shu
     </div>
    </div>
-   <div class="monster" data-attribute="4" data-id="2823" data-name="The Sun’s Guidance - Ra" data-race="2">
+   <div class="monster" data-attribute="4" data-id="2823" data-name="The Sun&rsquo;s Guidance - Ra" data-race="2">
     <div>
      2823
     </div>
     <img alt="2823" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2823.jpg"/>
     <div>
-     The Sun’s Guidance - Ra
+     The Sun&rsquo;s Guidance - Ra
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="2824" data-name="Guide of Souls - Osiris" data-race="5">
@@ -25752,7 +25800,7 @@
      Unresolved Repentance - Hyacinth
     </div>
    </div>
-   <div class="monster" data-id="2835" data-name="Irreplaceable Gift - Cilantro &amp; Jabir">
+   <div class="monster" data-attribute="2" data-id="2835" data-name="Irreplaceable Gift - Cilantro &amp; Jabir" data-race="2">
     <div>
      2835
     </div>
@@ -25833,7 +25881,7 @@
      Infinite Athenaeum - Abhoth
     </div>
    </div>
-   <div class="monster" data-id="2844" data-name="Twisted Tribulation - Ghatanothoa">
+   <div class="monster" data-attribute="4" data-id="2844" data-name="Twisted Tribulation - Ghatanothoa" data-race="2">
     <div>
      2844
     </div>
@@ -25941,13 +25989,13 @@
      Jeopardous Conspiracy - Endor
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="2856" data-name="The Red Hood’s Return - Doris" data-race="8">
+   <div class="monster" data-attribute="5" data-id="2856" data-name="The Red Hood&rsquo;s Return - Doris" data-race="8">
     <div>
      2856
     </div>
     <img alt="2856" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2856.jpg"/>
     <div>
-     The Red Hood’s Return - Doris
+     The Red Hood&rsquo;s Return - Doris
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2857" data-name="Flawless Disguise - Diamond" data-race="3">
@@ -26067,16 +26115,16 @@
      Florescent Grace - He Xian'gu
     </div>
    </div>
-   <div class="monster" data-id="2870" data-name="Talismanic Twists - Lü Dongbin">
+   <div class="monster" data-attribute="5" data-id="2870" data-name="Talismanic Twists - L&uuml; Dongbin" data-race="5">
     <div>
      2870
     </div>
     <img alt="2870" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2870.jpg"/>
     <div>
-     Talismanic Twists - Lü Dongbin
+     Talismanic Twists - L&uuml; Dongbin
     </div>
    </div>
-   <div class="monster" data-id="2871" data-name="Dauntless Figure - Zhongli Quan">
+   <div class="monster" data-attribute="2" data-id="2871" data-name="Dauntless Figure - Zhongli Quan" data-race="5">
     <div>
      2871
     </div>
@@ -26157,13 +26205,12 @@
      Arctic Pursuit - Dodo
     </div>
    </div>
-   <div class="monster" data-id="2880" data-name="" data-race="" data-attribute = ''>
+   <div class="monster" data-attribute="" data-id="2880" data-name="" data-race="">
     <div>
      2880
     </div>
     <img alt="2880" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2880.jpg"/>
     <div>
-
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2881" data-name="Creator of Maelstrom - Pontos " data-race="5">
@@ -26193,7 +26240,7 @@
      Eons of Flora - Gaia
     </div>
    </div>
-   <div class="monster" data-id="2884" data-name="Tapestry of Stars -  Aether">
+   <div class="monster" data-attribute="4" data-id="2884" data-name="Tapestry of Stars -  Aether" data-race="5">
     <div>
      2884
     </div>
@@ -26265,13 +26312,13 @@
      Vengeful Eclipse - Himiko
     </div>
    </div>
-   <div class="monster" data-attribute="3" data-id="2892" data-name="Mercenary’s Dream - Felix" data-race="8">
+   <div class="monster" data-attribute="3" data-id="2892" data-name="Mercenary&rsquo;s Dream - Felix" data-race="8">
     <div>
      2892
     </div>
     <img alt="2892" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2892.jpg"/>
     <div>
-     Mercenary’s Dream - Felix
+     Mercenary&rsquo;s Dream - Felix
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="2893" data-name="Gratifying Tutorship - Metatron" data-race="5">
@@ -26283,7 +26330,7 @@
      Gratifying Tutorship - Metatron
     </div>
    </div>
-   <div class="monster" data-id="2894" data-name="Reconstruction of Order - Laplace">
+   <div class="monster" data-attribute="4" data-id="2894" data-name="Reconstruction of Order - Laplace" data-race="8">
     <div>
      2894
     </div>
@@ -26292,22 +26339,22 @@
      Reconstruction of Order - Laplace
     </div>
    </div>
-   <div class="monster" data-attribute="1" data-id="2895" data-name="Love-devourer’s Whispers - Eve" data-race="8">
+   <div class="monster" data-attribute="1" data-id="2895" data-name="Love-devourer&rsquo;s Whispers - Eve" data-race="8">
     <div>
      2895
     </div>
     <img alt="2895" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2895.jpg"/>
     <div>
-     Love-devourer’s Whispers - Eve
+     Love-devourer&rsquo;s Whispers - Eve
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="2896" data-name="Conqueror’s Heart - Baal" data-race="8">
+   <div class="monster" data-attribute="5" data-id="2896" data-name="Conqueror&rsquo;s Heart - Baal" data-race="8">
     <div>
      2896
     </div>
     <img alt="2896" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2896.jpg"/>
     <div>
-     Conqueror’s Heart - Baal
+     Conqueror&rsquo;s Heart - Baal
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2897" data-name="Bellowing Conscience - Jichen" data-race="4">
@@ -26355,7 +26402,7 @@
      Perfect Evolvement - Metazord
     </div>
    </div>
-   <div class="monster" data-id="2903" data-name="Brilliant Triumph - Glauox">
+   <div class="monster" data-attribute="4" data-id="2903" data-name="Brilliant Triumph - Glauox" data-race="8">
     <div>
      2903
     </div>
@@ -26391,13 +26438,13 @@
      Ever-present Triumphs - Mesopotamia
     </div>
    </div>
-   <div class="monster" data-attribute="1" data-id="2907" data-name="The Majesty’s Ovation - Ying Zheng" data-race="8">
+   <div class="monster" data-attribute="1" data-id="2907" data-name="The Majesty&rsquo;s Ovation - Ying Zheng" data-race="8">
     <div>
      2907
     </div>
     <img alt="2907" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2907.jpg"/>
     <div>
-     The Majesty’s Ovation - Ying Zheng
+     The Majesty&rsquo;s Ovation - Ying Zheng
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2908" data-name="Glamorous Corruption - Eve" data-race="8">
@@ -26418,7 +26465,7 @@
      Start of Novelty - Chiyou
     </div>
    </div>
-   <div class="monster" data-id="2910" data-name="Treasured Eons - Daji">
+   <div class="monster" data-attribute="1" data-id="2910" data-name="Treasured Eons - Daji" data-race="3">
     <div>
      2910
     </div>
@@ -26436,7 +26483,7 @@
      Wings of Blind Fury - Lucifer
     </div>
    </div>
-   <div class="monster" data-id="2912" data-name="Connected Souls  - Lucifer and Michael">
+   <div class="monster" data-attribute="4" data-id="2912" data-name="Connected Souls  - Lucifer and Michael" data-race="5">
     <div>
      2912
     </div>
@@ -26463,7 +26510,7 @@
      Utopian Harmony - Giemsa
     </div>
    </div>
-   <div class="monster" data-id="2915" data-name="Realms of Existence - Shiva">
+   <div class="monster" data-attribute="1" data-id="2915" data-name="Realms of Existence - Shiva" data-race="5">
     <div>
      2915
     </div>
@@ -26472,7 +26519,7 @@
      Realms of Existence - Shiva
     </div>
    </div>
-   <div class="monster" data-id="2916" data-name="Detrimental Vedas - Brahma">
+   <div class="monster" data-attribute="2" data-id="2916" data-name="Detrimental Vedas - Brahma" data-race="5">
     <div>
      2916
     </div>
@@ -26499,7 +26546,7 @@
      Perpetual Metta - Lakshmi
     </div>
    </div>
-   <div class="monster" data-id="2919" data-name="Awakened Bodhicitta - Vishnu">
+   <div class="monster" data-attribute="5" data-id="2919" data-name="Awakened Bodhicitta - Vishnu" data-race="5">
     <div>
      2919
     </div>
@@ -26634,7 +26681,7 @@
      Shattered Dimensions - Yog-Sothoth
     </div>
    </div>
-   <div class="monster" data-id="3009" data-name="Enraged Phantasm - Khaos">
+   <div class="monster" data-attribute="5" data-id="3009" data-name="Enraged Phantasm - Khaos" data-race="5">
     <div>
      3009
     </div>
@@ -26661,7 +26708,7 @@
      Core of Doom
     </div>
    </div>
-   <div class="monster" data-id="3012" data-name="Harlyn the Snow Puppet">
+   <div class="monster" data-attribute="1" data-id="3012" data-name="Harlyn the Snow Puppet" data-race="10">
     <div>
      3012
     </div>
@@ -26742,13 +26789,13 @@
      Mother of Inferno - Shub-Niggurath
     </div>
    </div>
-   <div class="monster" data-attribute="1" data-id="7002" data-name="Great Onmyōji - Abe no Seimei" data-race="1">
+   <div class="monster" data-attribute="1" data-id="7002" data-name="Great Onmy&omacr;ji - Abe no Seimei" data-race="1">
     <div>
      7002
     </div>
     <img alt="7002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/7002.jpg"/>
     <div>
-     Great Onmyōji - Abe no Seimei
+     Great Onmy&omacr;ji - Abe no Seimei
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="7003" data-name="Devilish Coquette in Mountain - Yaoji" data-race="8">
@@ -26841,7 +26888,7 @@
      Furi the Youkai of Whirlwind
     </div>
    </div>
-   <div class="monster" data-id="7013" data-name="Human Swallower - Peryton the Traveler">
+   <div class="monster" data-attribute="4" data-id="7013" data-name="Human Swallower - Peryton the Traveler" data-race="5">
     <div>
      7013
     </div>
@@ -27093,7 +27140,7 @@
      Maleficent the Evil Mistress
     </div>
    </div>
-   <div class="monster" data-id="8007" data-name="Cruella De Vil">
+   <div class="monster" data-attribute="4" data-id="8007" data-name="Cruella De Vil" data-race="1">
     <div>
      8007
     </div>
@@ -27102,7 +27149,7 @@
      Cruella De Vil
     </div>
    </div>
-   <div class="monster" data-id="8008" data-name="Lady Cruella De Vil">
+   <div class="monster" data-attribute="4" data-id="8008" data-name="Lady Cruella De Vil" data-race="1">
     <div>
      8008
     </div>
@@ -27660,7 +27707,7 @@
      Vepar
     </div>
    </div>
-   <div class="monster" data-id="9002" data-name="Vepar the Duchess of Maelstrom">
+   <div class="monster" data-attribute="1" data-id="9002" data-name="Vepar the Duchess of Maelstrom" data-race="3">
     <div>
      9002
     </div>
@@ -27678,7 +27725,7 @@
      Marchosias
     </div>
    </div>
-   <div class="monster" data-id="9004" data-name="Marchosias the Marquis of Flames">
+   <div class="monster" data-attribute="2" data-id="9004" data-name="Marchosias the Marquis of Flames" data-race="3">
     <div>
      9004
     </div>
@@ -27696,7 +27743,7 @@
      Stolas
     </div>
    </div>
-   <div class="monster" data-id="9006" data-name="Stolas the Prince of Knowledge">
+   <div class="monster" data-attribute="3" data-id="9006" data-name="Stolas the Prince of Knowledge" data-race="8">
     <div>
      9006
     </div>
@@ -27714,7 +27761,7 @@
      Marbas
     </div>
    </div>
-   <div class="monster" data-id="9008" data-name="Marbas the General of Truth">
+   <div class="monster" data-attribute="4" data-id="9008" data-name="Marbas the General of Truth" data-race="1">
     <div>
      9008
     </div>
@@ -27732,7 +27779,7 @@
      Malphas
     </div>
    </div>
-   <div class="monster" data-id="9010" data-name="Malphas the Earl of Warfare">
+   <div class="monster" data-attribute="5" data-id="9010" data-name="Malphas the Earl of Warfare" data-race="3">
     <div>
      9010
     </div>
@@ -27750,7 +27797,7 @@
      Valac
     </div>
    </div>
-   <div class="monster" data-id="9012" data-name="Valac the Master of Whispers">
+   <div class="monster" data-attribute="4" data-id="9012" data-name="Valac the Master of Whispers" data-race="1">
     <div>
      9012
     </div>
@@ -27768,7 +27815,7 @@
      Astaroth
     </div>
    </div>
-   <div class="monster" data-id="9014" data-name="Astaroth the Duke of Hell">
+   <div class="monster" data-attribute="5" data-id="9014" data-name="Astaroth the Duke of Hell" data-race="8">
     <div>
      9014
     </div>
@@ -27777,7 +27824,7 @@
      Astaroth the Duke of Hell
     </div>
    </div>
-   <div class="monster" data-id="9015" data-name="Wisdom of the World - King Solomon">
+   <div class="monster" data-attribute="3" data-id="9015" data-name="Wisdom of the World - King Solomon" data-race="8">
     <div>
      9015
     </div>
@@ -27786,7 +27833,7 @@
      Wisdom of the World - King Solomon
     </div>
    </div>
-   <div class="monster" data-id="9016" data-name="Duke of Unicorn - Amduscias">
+   <div class="monster" data-attribute="2" data-id="9016" data-name="Duke of Unicorn - Amduscias" data-race="8">
     <div>
      9016
     </div>
@@ -28974,7 +29021,7 @@
      Asui Tsuyu
     </div>
    </div>
-   <div class="monster" data-id="10129" data-name="All Might">
+   <div class="monster" data-attribute="4" data-id="10129" data-name="All Might" data-race="1">
     <div>
      10129
     </div>
@@ -29136,7 +29183,7 @@
      Unvacillating Guardian - Khloe
     </div>
    </div>
-   <div class="monster" data-id="10147" data-name="Volcanic Draco-flame - Milton">
+   <div class="monster" data-attribute="2" data-id="10147" data-name="Volcanic Draco-flame - Milton" data-race="4">
     <div>
      10147
     </div>
@@ -29244,7 +29291,7 @@
      Crow Master - Halpas
     </div>
    </div>
-   <div class="monster" data-id="10159" data-name="False and Sham - Mayhem Arum">
+   <div class="monster" data-attribute="4" data-id="10159" data-name="False and Sham - Mayhem Arum" data-race="5">
     <div>
      10159
     </div>
@@ -29586,7 +29633,7 @@
      Prince Hata
     </div>
    </div>
-   <div class="monster" data-id="10197" data-name="Rippling Dragon-howl - Lelenia">
+   <div class="monster" data-attribute="1" data-id="10197" data-name="Rippling Dragon-howl - Lelenia" data-race="4">
     <div>
      10197
     </div>
@@ -29712,7 +29759,7 @@
      Velocious Rodeo - Moe
     </div>
    </div>
-   <div class="monster" data-id="10211" data-name="Neo: Reverse Mode">
+   <div class="monster" data-attribute="1" data-id="10211" data-name="Neo: Reverse Mode" data-race="1">
     <div>
      10211
     </div>
@@ -29721,7 +29768,7 @@
      Neo: Reverse Mode
     </div>
    </div>
-   <div class="monster" data-id="10212" data-name="Neo: HelloWorld Mode">
+   <div class="monster" data-attribute="1" data-id="10212" data-name="Neo: HelloWorld Mode" data-race="1">
     <div>
      10212
     </div>
@@ -29757,7 +29804,7 @@
      Lightblessed Trailblazer Uriel
     </div>
    </div>
-   <div class="monster" data-id="10216" data-name="Elusive Thief Arsene: Phantom Mode">
+   <div class="monster" data-attribute="5" data-id="10216" data-name="Elusive Thief Arsene: Phantom Mode" data-race="1">
     <div>
      10216
     </div>
@@ -29802,7 +29849,7 @@
      Pandora, Unbridled Bringer of Hope
     </div>
    </div>
-   <div class="monster" data-id="10221" data-name="Two For All: The Power of Unity">
+   <div class="monster" data-attribute="5" data-id="10221" data-name="Two For All: The Power of Unity" data-race="1">
     <div>
      10221
     </div>
@@ -29847,7 +29894,7 @@
      Naraku, God of the Abyss
     </div>
    </div>
-   <div class="monster" data-id="10226" data-name="Chalice System: Avalon">
+   <div class="monster" data-attribute="2" data-id="10226" data-name="Chalice System: Avalon" data-race="1">
     <div>
      10226
     </div>
@@ -29865,7 +29912,7 @@
      The Immortal Sage Penglai
     </div>
    </div>
-   <div class="monster" data-id="10228" data-name="Antithesis, Contrarian">
+   <div class="monster" data-attribute="4" data-id="10228" data-name="Antithesis, Contrarian" data-race="8">
     <div>
      10228
     </div>
@@ -29937,7 +29984,7 @@
      Hubristic Vampire - Dracula
     </div>
    </div>
-   <div class="monster" data-id="10236" data-name="Unambiguous Papilio - Joffe">
+   <div class="monster" data-attribute="1" data-id="10236" data-name="Unambiguous Papilio - Joffe" data-race="3">
     <div>
      10236
     </div>
@@ -30018,7 +30065,7 @@
      Yamato Ishida &amp; Gabumon
     </div>
    </div>
-   <div class="monster" data-id="10245" data-name="Taichi Yagami &amp; Agumon">
+   <div class="monster" data-attribute="2" data-id="10245" data-name="Taichi Yagami &amp; Agumon" data-race="4">
     <div>
      10245
     </div>
@@ -30216,7 +30263,7 @@
      MagnaAngemon &amp; Angewomon
     </div>
    </div>
-   <div class="monster" data-id="10267" data-name="Omegamon">
+   <div class="monster" data-attribute="4" data-id="10267" data-name="Omegamon" data-race="5">
     <div>
      10267
     </div>
@@ -30333,7 +30380,7 @@
      Star-crushing Strikes - Utu
     </div>
    </div>
-   <div class="monster" data-id="10280" data-name="Intrepid Liberator - Caesar">
+   <div class="monster" data-attribute="1" data-id="10280" data-name="Intrepid Liberator - Caesar" data-race="2">
     <div>
      10280
     </div>
@@ -30405,7 +30452,7 @@
      Cruising Avarice - Giles
     </div>
    </div>
-   <div class="monster" data-id="10288" data-name="Vampire Potentate - Carlo">
+   <div class="monster" data-attribute="3" data-id="10288" data-name="Vampire Potentate - Carlo" data-race="8">
     <div>
      10288
     </div>
@@ -30567,7 +30614,7 @@
      Jillion Tentacles - Oliver
     </div>
    </div>
-   <div class="monster" data-id="10306" data-name="Prancing Lanterns - Akina">
+   <div class="monster" data-attribute="5" data-id="10306" data-name="Prancing Lanterns - Akina" data-race="1">
     <div>
      10306
     </div>
@@ -30612,7 +30659,7 @@
      Ganoderma Spore - Keanu
     </div>
    </div>
-   <div class="monster" data-id="10311" data-name="Freezing Heat - Cynthia">
+   <div class="monster" data-attribute="1" data-id="10311" data-name="Freezing Heat - Cynthia" data-race="1">
     <div>
      10311
     </div>
@@ -30639,7 +30686,7 @@
      Trapping Jaws - Armand
     </div>
    </div>
-   <div class="monster" data-id="10314" data-name="Wooded Voodoo- York">
+   <div class="monster" data-attribute="3" data-id="10314" data-name="Wooded Voodoo- York" data-race="3">
     <div>
      10314
     </div>
@@ -30648,7 +30695,7 @@
      Wooded Voodoo- York
     </div>
    </div>
-   <div class="monster" data-id="10315" data-name="Fundraising Sham - Popo">
+   <div class="monster" data-attribute="4" data-id="10315" data-name="Fundraising Sham - Popo" data-race="2">
     <div>
      10315
     </div>
@@ -30657,7 +30704,7 @@
      Fundraising Sham - Popo
     </div>
    </div>
-   <div class="monster" data-id="10316" data-name="Water Blast - Edgar">
+   <div class="monster" data-attribute="1" data-id="10316" data-name="Water Blast - Edgar" data-race="1">
     <div>
      10316
     </div>
@@ -30666,7 +30713,7 @@
      Water Blast - Edgar
     </div>
    </div>
-   <div class="monster" data-id="10317" data-name="Fleeting Funeral -  Hua Jie">
+   <div class="monster" data-attribute="3" data-id="10317" data-name="Fleeting Funeral -  Hua Jie" data-race="4">
     <div>
      10317
     </div>
@@ -30675,7 +30722,7 @@
      Fleeting Funeral -  Hua Jie
     </div>
    </div>
-   <div class="monster" data-id="10318" data-name="Feast of Blood - Shroy">
+   <div class="monster" data-attribute="2" data-id="10318" data-name="Feast of Blood - Shroy" data-race="8">
     <div>
      10318
     </div>
@@ -30855,7 +30902,7 @@
      Anya Forger
     </div>
    </div>
-   <div class="monster" data-id="10338" data-name="Loid Forger">
+   <div class="monster" data-attribute="4" data-id="10338" data-name="Loid Forger" data-race="1">
     <div>
      10338
     </div>
@@ -30972,7 +31019,7 @@
      Luna &amp; Artemis &amp; Diana
     </div>
    </div>
-   <div class="monster" data-id="10351" data-name="Neo-Queen Serenity &amp; King Endymion">
+   <div class="monster" data-attribute="4" data-id="10351" data-name="Neo-Queen Serenity &amp; King Endymion" data-race="5">
     <div>
      10351
     </div>
@@ -31143,7 +31190,7 @@
      Hoppy New Year - Bernice
     </div>
    </div>
-   <div class="monster" data-id="10370" data-name="Devisal of Zeroes - Nulla">
+   <div class="monster" data-attribute="5" data-id="10370" data-name="Devisal of Zeroes - Nulla" data-race="5">
     <div>
      10370
     </div>
@@ -31180,7 +31227,7 @@
      Explosion Maniac - Nobel
     </div>
    </div>
-   <div class="monster" data-id="10374" data-name="Wrathful Gales - Shinatsuhiko">
+   <div class="monster" data-attribute="3" data-id="10374" data-name="Wrathful Gales - Shinatsuhiko" data-race="5">
     <div>
      10374
     </div>
@@ -31189,7 +31236,7 @@
      Wrathful Gales - Shinatsuhiko
     </div>
    </div>
-   <div class="monster" data-id="10375" data-name="Thundering Taiko - Haruka">
+   <div class="monster" data-attribute="4" data-id="10375" data-name="Thundering Taiko - Haruka" data-race="5">
     <div>
      10375
     </div>
@@ -31432,7 +31479,7 @@
      Zeke Yeager &amp; Beast Titan
     </div>
    </div>
-   <div class="monster" data-id="10402" data-name="Doomsday Titan" data-attribute = '2' data-race = '1'>
+   <div class="monster" data-attribute="2" data-id="10402" data-name="Doomsday Titan" data-race="1">
     <div>
      10402
     </div>
@@ -31441,7 +31488,7 @@
      Doomsday Titan
     </div>
    </div>
-   <div class="monster" data-id="10403" data-name="Attack Titan - Water" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="10403" data-name="Attack Titan - Water" data-race="1">
     <div>
      10403
     </div>
@@ -31450,7 +31497,7 @@
      Attack Titan - Water
     </div>
    </div>
-   <div class="monster" data-id="10404" data-name="Attack Titan - Fire" data-attribute = '2' data-race = '1'>
+   <div class="monster" data-attribute="2" data-id="10404" data-name="Attack Titan - Fire" data-race="1">
     <div>
      10404
     </div>
@@ -31459,7 +31506,7 @@
      Attack Titan - Fire
     </div>
    </div>
-   <div class="monster" data-id="10405" data-name="Attack Titan - Earth" data-attribute = '3' data-race = '1'>
+   <div class="monster" data-attribute="3" data-id="10405" data-name="Attack Titan - Earth" data-race="1">
     <div>
      10405
     </div>
@@ -31468,7 +31515,7 @@
      Attack Titan - Earth
     </div>
    </div>
-   <div class="monster" data-id="10406" data-name="Attack Titan - Light" data-attribute = '4' data-race = '1'>
+   <div class="monster" data-attribute="4" data-id="10406" data-name="Attack Titan - Light" data-race="1">
     <div>
      10406
     </div>
@@ -31477,7 +31524,7 @@
      Attack Titan - Light
     </div>
    </div>
-   <div class="monster" data-id="10407" data-name="Attack Titan - Dark" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="10407" data-name="Attack Titan - Dark" data-race="1">
     <div>
      10407
     </div>
@@ -31684,7 +31731,7 @@
      Nobara Kugisaki
     </div>
    </div>
-   <div class="monster" data-id="10430" data-name="Kento Nanami">
+   <div class="monster" data-attribute="4" data-id="10430" data-name="Kento Nanami" data-race="1">
     <div>
      10430
     </div>
@@ -31819,7 +31866,7 @@
      Unremitting Flashlights - Maomao
     </div>
    </div>
-   <div class="monster" data-id="10445" data-name="Dazzling Entrance - Zoe">
+   <div class="monster" data-attribute="5" data-id="10445" data-name="Dazzling Entrance - Zoe" data-race="1">
     <div>
      10445
     </div>
@@ -31918,7 +31965,7 @@
      Disordered Gluttony - Harvard
     </div>
    </div>
-   <div class="monster" data-id="10456" data-name="Argent Decapitation - Charlotte">
+   <div class="monster" data-attribute="5" data-id="10456" data-name="Argent Decapitation - Charlotte" data-race="10">
     <div>
      10456
     </div>
@@ -31963,7 +32010,7 @@
      Shinichiro Isumi
     </div>
    </div>
-   <div class="monster" data-id="10461" data-name="The Eternal Rival - Akira Toya">
+   <div class="monster" data-attribute="3" data-id="10461" data-name="The Eternal Rival - Akira Toya" data-race="1">
     <div>
      10461
     </div>
@@ -32116,13 +32163,13 @@
      Dancing Ophidian - Angelina
     </div>
    </div>
-   <div class="monster" data-attribute="3" data-id="10481" data-name="The Skeleton’s Lament - Natsuhiko" data-race="8">
+   <div class="monster" data-attribute="3" data-id="10481" data-name="The Skeleton&rsquo;s Lament - Natsuhiko" data-race="8">
     <div>
      10481
     </div>
     <img alt="10481" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10481.jpg"/>
     <div>
-     The Skeleton’s Lament - Natsuhiko
+     The Skeleton&rsquo;s Lament - Natsuhiko
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="10482" data-name="Lion Days - Queness" data-race="2">
@@ -32152,13 +32199,13 @@
      Sound of Summertide - Melody
     </div>
    </div>
-   <div class="monster" data-attribute="4" data-id="10485" data-name="The Barrenonts’ Voyage - Khloe" data-race="2">
+   <div class="monster" data-attribute="4" data-id="10485" data-name="The Barrenonts&rsquo; Voyage - Khloe" data-race="2">
     <div>
      10485
     </div>
     <img alt="10485" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10485.jpg"/>
     <div>
-     The Barrenonts’ Voyage - Khloe
+     The Barrenonts&rsquo; Voyage - Khloe
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="10486" data-name="The Burgeoning Synthetic Soul - Adam" data-race="10">
@@ -32251,7 +32298,7 @@
      The Black Swordsman - Kirito
     </div>
    </div>
-   <div class="monster" data-id="10496" data-name="Furin Kazan - Klein">
+   <div class="monster" data-attribute="2" data-id="10496" data-name="Furin Kazan - Klein" data-race="1">
     <div>
      10496
     </div>
@@ -32278,7 +32325,7 @@
      The Blacksmith - Lisbeth
     </div>
    </div>
-   <div class="monster" data-id="10499" data-name="The Sylph Swordswoman - Leafa">
+   <div class="monster" data-attribute="3" data-id="10499" data-name="The Sylph Swordswoman - Leafa" data-race="3">
     <div>
      10499
     </div>
@@ -32314,7 +32361,7 @@
      The Undine - Siune
     </div>
    </div>
-   <div class="monster" data-id="10503" data-name="The Sylph Leader - Sakuya">
+   <div class="monster" data-attribute="3" data-id="10503" data-name="The Sylph Leader - Sakuya" data-race="3">
     <div>
      10503
     </div>
@@ -32323,7 +32370,7 @@
      The Sylph Leader - Sakuya
     </div>
    </div>
-   <div class="monster" data-id="10504" data-name="The Cait Sith Leader - Alicia">
+   <div class="monster" data-attribute="4" data-id="10504" data-name="The Cait Sith Leader - Alicia" data-race="3">
     <div>
      10504
     </div>
@@ -32332,7 +32379,7 @@
      The Cait Sith Leader - Alicia
     </div>
    </div>
-   <div class="monster" data-id="10505" data-name="The Berserk Healer - Asuna">
+   <div class="monster" data-attribute="1" data-id="10505" data-name="The Berserk Healer - Asuna" data-race="3">
     <div>
      10505
     </div>
@@ -32539,7 +32586,7 @@
      Danava of Drought - Vṛtra
     </div>
    </div>
-   <div class="monster" data-id="10528" data-name="Erudite Expedition - Nocturne">
+   <div class="monster" data-attribute="4" data-id="10528" data-name="Erudite Expedition - Nocturne" data-race="3">
     <div>
      10528
     </div>
@@ -32593,7 +32640,7 @@
      Teal-green Fantasy - Hatsune Miku
     </div>
    </div>
-   <div class="monster" data-id="10534" data-name="Dance of Pleasure - Megurine Luka">
+   <div class="monster" data-attribute="4" data-id="10534" data-name="Dance of Pleasure - Megurine Luka" data-race="10">
     <div>
      10534
     </div>
@@ -32611,7 +32658,7 @@
      Mask of Sorrow - Hatsune Miku
     </div>
    </div>
-   <div class="monster" data-id="10536" data-name="Elegant Synthesis - KAITO">
+   <div class="monster" data-attribute="1" data-id="10536" data-name="Elegant Synthesis - KAITO" data-race="10">
     <div>
      10536
     </div>
@@ -32683,7 +32730,7 @@
      Feathers of Creativity - Hatsune Miku
     </div>
    </div>
-   <div class="monster" data-id="10544" data-name="Hatsune Miku MIKU EXPO 2023">
+   <div class="monster" data-attribute="4" data-id="10544" data-name="Hatsune Miku MIKU EXPO 2023" data-race="10">
     <div>
      10544
     </div>
@@ -32881,13 +32928,13 @@
      Sagacious Cardinal - Lelenia
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="10566" data-name="Sinners’ Redemption - Cilovic" data-race="1">
+   <div class="monster" data-attribute="5" data-id="10566" data-name="Sinners&rsquo; Redemption - Cilovic" data-race="1">
     <div>
      10566
     </div>
     <img alt="10566" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10566.jpg"/>
     <div>
-     Sinners’ Redemption - Cilovic
+     Sinners&rsquo; Redemption - Cilovic
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="10567" data-name="Chivalric Hooves - Moe" data-race="2">
@@ -32989,13 +33036,13 @@
      Caesar Anthonio Zeppeli
     </div>
    </div>
-   <div class="monster" data-attribute="2" data-id="10578" data-name="Mohammed Avdol &amp; Magician’s Red" data-race="1">
+   <div class="monster" data-attribute="2" data-id="10578" data-name="Mohammed Avdol &amp; Magician&rsquo;s Red" data-race="1">
     <div>
      10578
     </div>
     <img alt="10578" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10578.jpg"/>
     <div>
-     Mohammed Avdol &amp; Magician’s Red
+     Mohammed Avdol &amp; Magician&rsquo;s Red
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="10579" data-name="Joseph Joestar" data-race="1">
@@ -33007,7 +33054,7 @@
      Joseph Joestar
     </div>
    </div>
-   <div class="monster" data-id="10580" data-name="Jonathan Joestar">
+   <div class="monster" data-attribute="4" data-id="10580" data-name="Jonathan Joestar" data-race="1">
     <div>
      10580
     </div>
@@ -33106,7 +33153,7 @@
      Lisa Lisa
     </div>
    </div>
-   <div class="monster" data-id="10591" data-name="Wamuu">
+   <div class="monster" data-attribute="3" data-id="10591" data-name="Wamuu" data-race="8">
     <div>
      10591
     </div>
@@ -33223,7 +33270,7 @@
      Four Symbols - Auspicious Beasts (Dragon)
     </div>
    </div>
-   <div class="monster" data-id="10604" data-name="Oriental Heiress - Hitomi Tsukishita">
+   <div class="monster" data-attribute="4" data-id="10604" data-name="Oriental Heiress - Hitomi Tsukishita" data-race="1">
     <div>
      10604
     </div>
@@ -33268,7 +33315,7 @@
      The Humble Poor - Bi Gan
     </div>
    </div>
-   <div class="monster" data-id="10609" data-name="Promised Prosperity - Caishen">
+   <div class="monster" data-attribute="4" data-id="10609" data-name="Promised Prosperity - Caishen" data-race="5">
     <div>
      10609
     </div>
@@ -33385,7 +33432,7 @@
      Peachy Glamor - Chen Yuanyuan
     </div>
    </div>
-   <div class="monster" data-id="10622" data-name="Undeadly Allure - Lin Daiyu">
+   <div class="monster" data-attribute="3" data-id="10622" data-name="Undeadly Allure - Lin Daiyu" data-race="8">
     <div>
      10622
     </div>
@@ -33403,13 +33450,13 @@
      Parasitical Cost - Zhao Feiyan
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="10624" data-name="Blustering Chain - Shangguan Wan’er" data-race="8">
+   <div class="monster" data-attribute="5" data-id="10624" data-name="Blustering Chain - Shangguan Wan&rsquo;er" data-race="8">
     <div>
      10624
     </div>
     <img alt="10624" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10624.jpg"/>
     <div>
-     Blustering Chain - Shangguan Wan’er
+     Blustering Chain - Shangguan Wan&rsquo;er
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="10625" data-name="Invasive Sprouts - Lady Meng Jiang" data-race="3">
@@ -33457,13 +33504,13 @@
      Desireless Path - Ximen Qing
     </div>
    </div>
-   <div class="monster" data-attribute="4" data-id="10630" data-name="The Queen’s Dignity - Semele" data-race="5">
+   <div class="monster" data-attribute="4" data-id="10630" data-name="The Queen&rsquo;s Dignity - Semele" data-race="5">
     <div>
      10630
     </div>
     <img alt="10630" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10630.jpg"/>
     <div>
-     The Queen’s Dignity - Semele
+     The Queen&rsquo;s Dignity - Semele
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="10631" data-name="All-seeing Eyes - Botis" data-race="3">
@@ -33475,7 +33522,7 @@
      All-seeing Eyes - Botis
     </div>
    </div>
-   <div class="monster" data-id="10632" data-name="Imperious Command - Boreas">
+   <div class="monster" data-attribute="5" data-id="10632" data-name="Imperious Command - Boreas" data-race="5">
     <div>
      10632
     </div>
@@ -33511,7 +33558,7 @@
      Catastrophic Outgrowth - Unknown Creature
     </div>
    </div>
-   <div class="monster" data-id="10636" data-name="Kenshin Himura">
+   <div class="monster" data-attribute="2" data-id="10636" data-name="Kenshin Himura" data-race="1">
     <div>
      10636
     </div>
@@ -33520,7 +33567,7 @@
      Kenshin Himura
     </div>
    </div>
-   <div class="monster" data-id="10637" data-name="Sanosuke Sagara">
+   <div class="monster" data-attribute="3" data-id="10637" data-name="Sanosuke Sagara" data-race="1">
     <div>
      10637
     </div>
@@ -33538,7 +33585,7 @@
      Kaoru Kamiya
     </div>
    </div>
-   <div class="monster" data-id="10639" data-name="Hajime Saito">
+   <div class="monster" data-attribute="5" data-id="10639" data-name="Hajime Saito" data-race="1">
     <div>
      10639
     </div>
@@ -33601,7 +33648,7 @@
      Hitokiri Battosai
     </div>
    </div>
-   <div class="monster" data-id="10646" data-name="Wolf of Mibu - Hajime Saito">
+   <div class="monster" data-attribute="1" data-id="10646" data-name="Wolf of Mibu - Hajime Saito" data-race="1">
     <div>
      10646
     </div>
@@ -33718,7 +33765,7 @@
      Interstellar Cruiser - Montana
     </div>
    </div>
-   <div class="monster" data-id="10659" data-name="Iron-blooded Core - Montana" data-attribute = '2' data-attribute = '10'>
+   <div class="monster" data-attribute="10" data-id="10659" data-name="Iron-blooded Core - Montana" data-race="10">
     <div>
      10659
     </div>
@@ -33727,13 +33774,13 @@
      Iron-blooded Core - Montana
     </div>
    </div>
-   <div class="monster" data-id="10660" data-name="Course of Justice - Scáthach">
+   <div class="monster" data-attribute="3" data-id="10660" data-name="Course of Justice - Sc&aacute;thach" data-race="10">
     <div>
      10660
     </div>
     <img alt="10660" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10660.jpg"/>
     <div>
-     Course of Justice - Scáthach
+     Course of Justice - Sc&aacute;thach
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="10661" data-name="Galaxy Gazer - Rosalind" data-race="1">
@@ -33754,7 +33801,7 @@
      Plasmatic Burst - Kepler
     </div>
    </div>
-   <div class="monster" data-id="10663" data-name="Mortal Atonement - Nuada">
+   <div class="monster" data-attribute="2" data-id="10663" data-name="Mortal Atonement - Nuada" data-race="10">
     <div>
      10663
     </div>
@@ -33781,13 +33828,13 @@
      Hazardous Experiment - Galois
     </div>
    </div>
-   <div class="monster" data-attribute="4" data-id="10666" data-name="Nebula’s Threnody - Theta" data-race="10">
+   <div class="monster" data-attribute="4" data-id="10666" data-name="Nebula&rsquo;s Threnody - Theta" data-race="10">
     <div>
      10666
     </div>
     <img alt="10666" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10666.jpg"/>
     <div>
-     Nebula’s Threnody - Theta
+     Nebula&rsquo;s Threnody - Theta
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="10667" data-name="Infinite Search - Ohio" data-race="10">
@@ -33889,7 +33936,7 @@
      Lasvoss Reborn
     </div>
    </div>
-   <div class="monster" data-id="10678" data-name="Mellow Cat &amp; Ghostie Cat">
+   <div class="monster" data-attribute="4" data-id="10678" data-name="Mellow Cat &amp; Ghostie Cat" data-race="2">
     <div>
      10678
     </div>
@@ -34087,13 +34134,13 @@
      Rokurota
     </div>
    </div>
-   <div class="monster" data-attribute="4" data-id="10700" data-name="Gabimaru’s Wife" data-race="1">
+   <div class="monster" data-attribute="4" data-id="10700" data-name="Gabimaru&rsquo;s Wife" data-race="1">
     <div>
      10700
     </div>
     <img alt="10700" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10700.jpg"/>
     <div>
-     Gabimaru’s Wife
+     Gabimaru&rsquo;s Wife
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="10701" data-name="Yuzuriha" data-race="1">
@@ -34114,7 +34161,7 @@
      Mei
     </div>
    </div>
-   <div class="monster" data-id="10703" data-name="Tamiya Gantetsusai">
+   <div class="monster" data-attribute="2" data-id="10703" data-name="Tamiya Gantetsusai" data-race="1">
     <div>
      10703
     </div>
@@ -34132,13 +34179,13 @@
      Keiun
     </div>
    </div>
-   <div class="monster" data-attribute="1" data-id="10705" data-name="Yuanjun Tathātā - Zhu Jin" data-race="5">
+   <div class="monster" data-attribute="1" data-id="10705" data-name="Yuanjun Tath&amacr;t&amacr; - Zhu Jin" data-race="5">
     <div>
      10705
     </div>
     <img alt="10705" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10705.jpg"/>
     <div>
-     Yuanjun Tathātā - Zhu Jin
+     Yuanjun Tath&amacr;t&amacr; - Zhu Jin
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="10706" data-name="Kishikai - Zhu Jin" data-race="3">
@@ -34195,7 +34242,7 @@
      Soul-severing Edges - Tyrfing
     </div>
    </div>
-   <div class="monster" data-id="10712" data-name="Dignified Ridge - Gram" data-attribute = '2' data-race = '4'>
+   <div class="monster" data-attribute="2" data-id="10712" data-name="Dignified Ridge - Gram" data-race="4">
     <div>
      10712
     </div>
@@ -34213,7 +34260,7 @@
      Ingrained Malevolence - Admah
     </div>
    </div>
-   <div class="monster" data-id="10714" data-name="Displaced Innocence - Sodom" data-attribute = '4' data-race = '4'>
+   <div class="monster" data-attribute="4" data-id="10714" data-name="Displaced Innocence - Sodom" data-race="4">
     <div>
      10714
     </div>
@@ -34303,13 +34350,13 @@
      Chasing the Sun - Harvard
     </div>
    </div>
-   <div class="monster" data-attribute="3" data-id="10724" data-name="Dexterous Footwork - Lee Long’er" data-race="1">
+   <div class="monster" data-attribute="3" data-id="10724" data-name="Dexterous Footwork - Lee Long&rsquo;er" data-race="1">
     <div>
      10724
     </div>
     <img alt="10724" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10724.jpg"/>
     <div>
-     Dexterous Footwork - Lee Long’er
+     Dexterous Footwork - Lee Long&rsquo;er
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="10725" data-name="Appetizing Beef Noodle" data-race="7">
@@ -34357,13 +34404,13 @@
      Pathogen Remover - Kappa
     </div>
    </div>
-   <div class="monster" data-attribute="3" data-id="10730" data-name="Azure’s Blessing - Heshi" data-race="1">
+   <div class="monster" data-attribute="3" data-id="10730" data-name="Azure&rsquo;s Blessing - Heshi" data-race="1">
     <div>
      10730
     </div>
     <img alt="10730" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10730.jpg"/>
     <div>
-     Azure’s Blessing - Heshi
+     Azure&rsquo;s Blessing - Heshi
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="10731" data-name="Executor of Retribution - Salome" data-race="2">
@@ -34438,7 +34485,7 @@
      Benimaru
     </div>
    </div>
-   <div class="monster" data-id="10739" data-name="Gobta">
+   <div class="monster" data-attribute="3" data-id="10739" data-name="Gobta" data-race="3">
     <div>
      10739
     </div>
@@ -34465,7 +34512,7 @@
      Hakuro
     </div>
    </div>
-   <div class="monster" data-id="10742" data-name="Rimuru Tempest" data-attribute = '1' data-race = '3'>
+   <div class="monster" data-attribute="1" data-id="10742" data-name="Rimuru Tempest" data-race="3">
     <div>
      10742
     </div>
@@ -34474,7 +34521,7 @@
      Rimuru Tempest
     </div>
    </div>
-   <div class="monster" data-id="10743" data-name="Founder of the Tempest - Rimuru" data-attribute = '1' data-race = '3'>
+   <div class="monster" data-attribute="1" data-id="10743" data-name="Founder of the Tempest - Rimuru" data-race="3">
     <div>
      10743
     </div>
@@ -34537,7 +34584,7 @@
      Diablo
     </div>
    </div>
-   <div class="monster" data-id="10750" data-name="Demon Lord - Rimuru" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="10750" data-name="Demon Lord - Rimuru" data-race="8">
     <div>
      10750
     </div>
@@ -34546,7 +34593,7 @@
      Demon Lord - Rimuru
     </div>
    </div>
-   <div class="monster" data-id="10751" data-name="Veldora the Storm Dragon" data-attribute = '3' data-race = '4'>
+   <div class="monster" data-attribute="3" data-id="10751" data-name="Veldora the Storm Dragon" data-race="4">
     <div>
      10751
     </div>
@@ -34645,7 +34692,7 @@
      Hipokute Herbs
     </div>
    </div>
-   <div class="monster" data-id="10762" data-name="Rimuru Tempest (Human)" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="10762" data-name="Rimuru Tempest (Human)" data-race="1">
     <div>
      10762
     </div>
@@ -34654,7 +34701,7 @@
      Rimuru Tempest (Human)
     </div>
    </div>
-   <div class="monster" data-id="10763" data-name="Rimuru Tempest (Beast)" data-attribute = '1' data-race = '2'>
+   <div class="monster" data-attribute="1" data-id="10763" data-name="Rimuru Tempest (Beast)" data-race="2">
     <div>
      10763
     </div>
@@ -34663,7 +34710,7 @@
      Rimuru Tempest (Beast)
     </div>
    </div>
-   <div class="monster" data-id="10764" data-name="Rimuru Tempest (Elf)" data-attribute = '1' data-race = '3'>
+   <div class="monster" data-attribute="1" data-id="10764" data-name="Rimuru Tempest (Elf)" data-race="3">
     <div>
      10764
     </div>
@@ -34672,7 +34719,7 @@
      Rimuru Tempest (Elf)
     </div>
    </div>
-   <div class="monster" data-id="10765" data-name="Rimuru Tempest (Dragon)" data-attribute = '1' data-race = '4'>
+   <div class="monster" data-attribute="1" data-id="10765" data-name="Rimuru Tempest (Dragon)" data-race="4">
     <div>
      10765
     </div>
@@ -34681,7 +34728,7 @@
      Rimuru Tempest (Dragon)
     </div>
    </div>
-   <div class="monster" data-id="10766" data-name="Rimuru Tempest (God)" data-attribute = '1' data-race = '5'>
+   <div class="monster" data-attribute="1" data-id="10766" data-name="Rimuru Tempest (God)" data-race="5">
     <div>
      10766
     </div>
@@ -34690,7 +34737,7 @@
      Rimuru Tempest (God)
     </div>
    </div>
-   <div class="monster" data-id="10767" data-name="Rimuru Tempest (Demon)" data-attribute = '1' data-race = '8'>
+   <div class="monster" data-attribute="1" data-id="10767" data-name="Rimuru Tempest (Demon)" data-race="8">
     <div>
      10767
     </div>
@@ -34699,7 +34746,7 @@
      Rimuru Tempest (Demon)
     </div>
    </div>
-   <div class="monster" data-id="10768" data-name="Rimuru Tempest (Machina)"data-attribute = '1' data-race = '10'>
+   <div class="monster" data-attribute="1" data-id="10768" data-name="Rimuru Tempest (Machina)" data-race="10">
     <div>
      10768
     </div>
@@ -34744,7 +34791,7 @@
      Deduction Before Dessert - Agatha
     </div>
    </div>
-   <div class="monster" data-id="10773" data-name="Astute Diagnosis - Watson">
+   <div class="monster" data-attribute="3" data-id="10773" data-name="Astute Diagnosis - Watson" data-race="5">
     <div>
      10773
     </div>
@@ -34753,7 +34800,7 @@
      Astute Diagnosis - Watson
     </div>
    </div>
-   <div class="monster" data-id="10774" data-name="Redefinition of Variables - Moriarty">
+   <div class="monster" data-attribute="4" data-id="10774" data-name="Redefinition of Variables - Moriarty" data-race="1">
     <div>
      10774
     </div>
@@ -34861,7 +34908,7 @@
      Befouled Massacre - Behemoth
     </div>
    </div>
-   <div class="monster" data-id="10787" data-name="Claw Machine Master - Chung Jai">
+   <div class="monster" data-attribute="4" data-id="10787" data-name="Claw Machine Master - Chung Jai" data-race="10">
     <div>
      10787
     </div>
@@ -34915,7 +34962,7 @@
      Zero Blind Spots - Derek
     </div>
    </div>
-   <div class="monster" data-id="10793" data-name="Roulette of Luck - Beryl">
+   <div class="monster" data-attribute="4" data-id="10793" data-name="Roulette of Luck - Beryl" data-race="5">
     <div>
      10793
     </div>
@@ -34960,7 +35007,7 @@
      Cheating Expert - Belinda
     </div>
    </div>
-   <div class="monster" data-id="10798" data-name="The First Santa - Nicolas">
+   <div class="monster" data-attribute="3" data-id="10798" data-name="The First Santa - Nicolas" data-race="3">
     <div>
      10798
     </div>
@@ -34969,7 +35016,7 @@
      The First Santa - Nicolas
     </div>
    </div>
-   <div class="monster" data-id="10799" data-name="Mirroring Reunion - Jenny">
+   <div class="monster" data-attribute="1" data-id="10799" data-name="Mirroring Reunion - Jenny" data-race="8">
     <div>
      10799
     </div>
@@ -34978,7 +35025,7 @@
      Mirroring Reunion - Jenny
     </div>
    </div>
-   <div class="monster" data-id="10800" data-name="First Morning Reflection - Penny">
+   <div class="monster" data-attribute="2" data-id="10800" data-name="First Morning Reflection - Penny" data-race="8">
     <div>
      10800
     </div>
@@ -35149,7 +35196,7 @@
      Shrimpy
     </div>
    </div>
-   <div class="monster" data-id="10819" data-name="Forever and Ever - Hei Jiajia" data-attribute = '4' data-race = '1'>
+   <div class="monster" data-attribute="4" data-id="10819" data-name="Forever and Ever - Hei Jiajia" data-race="1">
     <div>
      10819
     </div>
@@ -35158,7 +35205,7 @@
      Forever and Ever - Hei Jiajia
     </div>
    </div>
-   <div class="monster" data-id="10820" data-name="Go and Romance - Hei Jiajia" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="10820" data-name="Go and Romance - Hei Jiajia" data-race="1">
     <div>
      10820
     </div>
@@ -35167,7 +35214,7 @@
      Go and Romance - Hei Jiajia
     </div>
    </div>
-   <div class="monster" data-id="10821" data-name="Retaliatory Bounce - White Stone" data-attribute = '4' data-race = '3'>
+   <div class="monster" data-attribute="4" data-id="10821" data-name="Retaliatory Bounce - White Stone" data-race="3">
     <div>
      10821
     </div>
@@ -35176,7 +35223,7 @@
      Retaliatory Bounce - White Stone
     </div>
    </div>
-   <div class="monster" data-id="10822" data-name="Pivotal Precedence - Black Stone" data-attribute = '5' data-race = '3'>
+   <div class="monster" data-attribute="5" data-id="10822" data-name="Pivotal Precedence - Black Stone" data-race="3">
     <div>
      10822
     </div>
@@ -35203,7 +35250,7 @@
      Pur-fect Move - Bubu
     </div>
    </div>
-   <div class="monster" data-id="10825" data-name="Esoteric Discipleship - Omega" data-attribute = '1' data-race = '10'>
+   <div class="monster" data-attribute="1" data-id="10825" data-name="Esoteric Discipleship - Omega" data-race="10">
     <div>
      10825
     </div>
@@ -35212,7 +35259,7 @@
      Esoteric Discipleship - Omega
     </div>
    </div>
-   <div class="monster" data-id="10826" data-name="Absolutist of Regulation - Randena">
+   <div class="monster" data-attribute="3" data-id="10826" data-name="Absolutist of Regulation - Randena" data-race="1">
     <div>
      10826
     </div>
@@ -35230,7 +35277,7 @@
      Diamonded Wonders - Paraiba
     </div>
    </div>
-   <div class="monster" data-id="10828" data-name="The Unchanging Synthetic Soul - Lilith">
+   <div class="monster" data-attribute="1" data-id="10828" data-name="The Unchanging Synthetic Soul - Lilith" data-race="10">
     <div>
      10828
     </div>
@@ -35257,7 +35304,7 @@
      Uncontaminated Integrity - Zhen Ke
     </div>
    </div>
-   <div class="monster" data-id="10836" data-name="Thundering Whips - Ling Sheng" data-attribute = '4' data-race = '2'>
+   <div class="monster" data-attribute="4" data-id="10836" data-name="Thundering Whips - Ling Sheng" data-race="2">
     <div>
      10836
     </div>
@@ -35365,7 +35412,7 @@
      Prophetic Poems  - Brushie
     </div>
    </div>
-   <div class="monster" data-id="10848" data-name="Theophanic Presence - Wong Tai Sin" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="10848" data-name="Theophanic Presence - Wong Tai Sin" data-race="5">
     <div>
      10848
     </div>
@@ -35383,7 +35430,7 @@
      Valorous Feats - Che Kung
     </div>
    </div>
-   <div class="monster" data-id="10850" data-name="Winds of Fortune - Ji Niang" data-attribute = '5' data-race = '5'>
+   <div class="monster" data-attribute="5" data-id="10850" data-name="Winds of Fortune - Ji Niang" data-race="5">
     <div>
      10850
     </div>
@@ -35401,7 +35448,7 @@
      Wealth-bringing Horns - Mythic Goat
     </div>
    </div>
-   <div class="monster" data-id="10852" data-name="Rem" data-attribute = '1' data-race = '8'>
+   <div class="monster" data-attribute="1" data-id="10852" data-name="Rem" data-race="8">
     <div>
      10852
     </div>
@@ -35419,7 +35466,7 @@
      Moonlit Eyes - Demonized Rem
     </div>
    </div>
-   <div class="monster" data-id="10854" data-name="Ram" data-attribute = '2' data-race = '8'>
+   <div class="monster" data-attribute="2" data-id="10854" data-name="Ram" data-race="8">
     <div>
      10854
     </div>
@@ -35473,7 +35520,7 @@
      Subaru Natsuki
     </div>
    </div>
-   <div class="monster" data-id="10860" data-name="Beatrice" data-attribute = '5' data-race = '3'>
+   <div class="monster" data-attribute="5" data-id="10860" data-name="Beatrice" data-race="3">
     <div>
      10860
     </div>
@@ -35482,7 +35529,7 @@
      Beatrice
     </div>
    </div>
-   <div class="monster" data-id="10861" data-name="White Whale" data-attribute = '1' data-race = '2'>
+   <div class="monster" data-attribute="1" data-id="10861" data-name="White Whale" data-race="2">
     <div>
      10861
     </div>
@@ -35581,7 +35628,7 @@
      Echidna
     </div>
    </div>
-   <div class="monster" data-id="10872" data-name="Silver-haired Angel - Emilia" data-attribute = '4' data-race = '3'>
+   <div class="monster" data-attribute="4" data-id="10872" data-name="Silver-haired Angel - Emilia" data-race="3">
     <div>
      10872
     </div>
@@ -35626,13 +35673,13 @@
      Operatic Tunesmith - Schubert
     </div>
    </div>
-   <div class="monster" data-id="10877" data-name="Scandalous Träumerei - Schumann" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="10877" data-name="Scandalous Tr&auml;umerei - Schumann" data-race="5">
     <div>
      10877
     </div>
     <img alt="10877" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10877.jpg"/>
     <div>
-     Scandalous Träumerei - Schumann
+     Scandalous Tr&auml;umerei - Schumann
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="10878" data-name="Line of Inspiration - Haydn" data-race="5">
@@ -35680,13 +35727,13 @@
      The Farewell Waltz - Chopin
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="10883" data-name="Devil’s Aria - Paganini" data-race="5">
+   <div class="monster" data-attribute="5" data-id="10883" data-name="Devil&rsquo;s Aria - Paganini" data-race="5">
     <div>
      10883
     </div>
     <img alt="10883" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10883.jpg"/>
     <div>
-     Devil’s Aria - Paganini
+     Devil&rsquo;s Aria - Paganini
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="10884" data-name="Fugue of Silence - Bach" data-race="5">
@@ -35695,7 +35742,7 @@
     </div>
     <img alt="10884" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10884.jpg"/>
     <div>
-	Fugue of Silence - Bach
+     Fugue of Silence - Bach
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="10885" data-name="March of Happiness - Mendelssohn" data-race="5">
@@ -35731,7 +35778,7 @@
     </div>
     <img alt="10887" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10888.jpg"/>
     <div>
-	Impenitent Arms Dealer - Haider
+     Impenitent Arms Dealer - Haider
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="10889" data-name="Lemony Par-tea - Lin Daiyu" data-race="8">
@@ -35752,7 +35799,7 @@
      Beauty of Kume - Jia Baoyu
     </div>
    </div>
-   <div class="monster" data-id="10891" data-name="Rumble of Divine Order - Ke Hun" data-attribute = '2' data-race = '4'>
+   <div class="monster" data-attribute="2" data-id="10891" data-name="Rumble of Divine Order - Ke Hun" data-race="4">
     <div>
      10891
     </div>
@@ -35770,7 +35817,7 @@
      Refulgent Amberfire - Ke Hun
     </div>
    </div>
-<div class="monster" data-id="10893" data-name="">
+   <div class="monster" data-id="10893" data-name="">
     <div>
      10893
     </div>
@@ -36078,7 +36125,7 @@
     </div>
     <img alt="10942" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10942.jpg"/>
     <div>
-	 (10931 - VR)
+     (10931 - VR)
     </div>
    </div>
    <div class="monster" data-id="10943" data-name="">
@@ -36129,7 +36176,7 @@
     <div>
     </div>
    </div>
-   <div class="monster" data-id="11001" data-name="" data-attribute = '2' data-race = '5'>
+   <div class="monster" data-attribute="2" data-id="11001" data-name="" data-race="5">
     <div>
      11001
     </div>
@@ -36137,7 +36184,7 @@
     <div>
     </div>
    </div>
-   <div class="monster" data-id="11002" data-name="Moment of Chastisement - Joan" data-attribute = '1' data-race = '4'>
+   <div class="monster" data-attribute="1" data-id="11002" data-name="Moment of Chastisement - Joan" data-race="4">
     <div>
      11002
     </div>
@@ -36146,7 +36193,7 @@
      Moment of Chastisement - Joan
     </div>
    </div>
-  <div class="monster" data-id="20001" data-name="Enoch" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="20001" data-name="Enoch" data-race="1">
     <div>
      20001
     </div>
@@ -36155,7 +36202,7 @@
      Enoch
     </div>
    </div>
-   <div class="monster" data-id="20002" data-name="Shroy Zagudy" data-attribute = '4' data-race = '1' >
+   <div class="monster" data-attribute="4" data-id="20002" data-name="Shroy Zagudy" data-race="1">
     <div>
      20002
     </div>
@@ -36164,7 +36211,7 @@
      Shroy Zagudy
     </div>
    </div>
-   <div class="monster" data-id="20003" data-name="Daring Future - Shroy" data-attribute = '4' data-race = '1'>
+   <div class="monster" data-attribute="4" data-id="20003" data-name="Daring Future - Shroy" data-race="1">
     <div>
      20003
     </div>
@@ -36174,44 +36221,70 @@
     </div>
    </div>
   </div>
-<div id="scrollButtons">
-<button onclick="scrollToTop()"><i class="fas fa-angle-up"></i></button>
-<button onclick="scrollToBottom()"><i class="fas fa-angle-down"></i></button>
-</div>
-<!-- Modal for displaying monster info -->
-<div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
-<div class="modal-content">
-<span class="close" onclick="closeModal()">
-<i class="fas fa-times"></i>
-</span>
-<div id="monsterInfoContent">
-<div class="content">
-<div id="monsterID"></div>
-<div class="info-row">
-<p class="info-label">HP:</p>
-<p class="info-value" id="monsterHP"></p>
-<p class="info-label">HP (+20):</p>
-<p class="info-value" id="monsterHP1_2"></p>
-</div>
-<div class="info-row">
-<p class="info-label">ATK:</p>
-<p class="info-value" id="monsterATK"></p>
-<p class="info-label">ATK (+20):</p>
-<p class="info-value" id="monsterATK1_2"></p>
-</div>
-<div class="info-row">
-<p class="info-label">REC:</p>
-<p class="info-value" id="monsterREC"></p>
-<p class="info-label">REC (+20):</p>
-<p class="info-value" id="monsterREC1_2"></p>
-</div>
-<!--<button onclick="closeModal()">關閉</button>-->
-</div>
-</div>
-</div>
-</div>
-<script>
-    let selectedAttributes = new Set();
+  <div id="scrollButtons">
+   <button onclick="scrollToTop()">
+    <i class="fas fa-angle-up">
+    </i>
+   </button>
+   <button onclick="scrollToBottom()">
+    <i class="fas fa-angle-down">
+    </i>
+   </button>
+  </div>
+  <!-- Modal for displaying monster info -->
+  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+   <div class="modal-content">
+    <span class="close" onclick="closeModal()">
+     <i class="fas fa-times">
+     </i>
+    </span>
+    <div id="monsterInfoContent">
+     <div class="content">
+      <div id="monsterID">
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        HP:
+       </p>
+       <p class="info-value" id="monsterHP">
+       </p>
+       <p class="info-label">
+        HP (+20):
+       </p>
+       <p class="info-value" id="monsterHP1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        ATK:
+       </p>
+       <p class="info-value" id="monsterATK">
+       </p>
+       <p class="info-label">
+        ATK (+20):
+       </p>
+       <p class="info-value" id="monsterATK1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        REC:
+       </p>
+       <p class="info-value" id="monsterREC">
+       </p>
+       <p class="info-label">
+        REC (+20):
+       </p>
+       <p class="info-value" id="monsterREC1_2">
+       </p>
+      </div>
+      <!--<button onclick="closeModal()">關閉</button>-->
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   let selectedAttributes = new Set();
     let selectedRaces = new Set();
 
     document.querySelectorAll(".dropdown").forEach(dropdown => {
@@ -36371,8 +36444,8 @@
 	  });
 	});
   </script>
-<script>
-	function updateMonsterIcons(monsterElement, monster) {
+  <script>
+   function updateMonsterIcons(monsterElement, monster) {
 	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
 
@@ -36415,6 +36488,6 @@
 	  monsterIdElement.appendChild(attributeIcon);
 	  monsterIdElement.appendChild(raceIcon);
 	}
- </script>
-</body>
+  </script>
+ </body>
 </html>
