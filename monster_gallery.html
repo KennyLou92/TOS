@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="zh-Hant">
-<head>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<title>神魔圖鑒</title>
-<style>
-    body {
+ <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <title>
+   神魔圖鑒
+  </title>
+  <style>
+   body {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
@@ -271,183 +272,233 @@
   width: 24px;
   height: 24px;
 }
-
-</style>
-</head>
-<body>
+  </style>
+ </head>
+ <body>
   <div class="search-bar-wrapper">
-    <div class="search-bar">
-      <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+   <div class="search-bar">
+    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+   </div>
+   <!-- 屬性 -->
+   <div class="dropdown" id="attributeDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      屬性
+     </span>
     </div>
-
-    <!-- 屬性 -->
-    <div class="dropdown" id="attributeDropdown">
-      <div class="dropdown-button dropdown-trigger">
-        <div class="selected-icons"></div>
-        <span>屬性</span>
-      </div>
-      <div class="dropdown-content" id="attributeContent">
-        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" alt="水"></div>
-        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" alt="火"></div>
-        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" alt="木"></div>
-        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" alt="光"></div>
-        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" alt="暗"></div>
-      </div>
+    <div class="dropdown-content" id="attributeContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png"/>
+     </div>
     </div>
-
-    <!-- 種族 -->
-    <div class="dropdown" id="raceDropdown">
-      <div class="dropdown-button dropdown-trigger">
-        <div class="selected-icons"></div>
-        <span>種族</span>
-      </div>
-      <div class="dropdown-content" id="raceContent">
-        <div class="dropdown-item" data-value="1"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" alt="人"></div>
-        <div class="dropdown-item" data-value="2"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" alt="獸"></div>
-        <div class="dropdown-item" data-value="3"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" alt="妖"></div>
-        <div class="dropdown-item" data-value="4"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" alt="龍"></div>
-        <div class="dropdown-item" data-value="5"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" alt="神"></div>
-        <div class="dropdown-item" data-value="8"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" alt="魔"></div>
-        <div class="dropdown-item" data-value="10"><img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" alt="機械"></div>
-		<div class="dropdown-item" data-value="6"><img src="https://i.postimg.cc/zbDvRhPc/evolve.png" alt="進化"></div>
-		<div class="dropdown-item" data-value="7"><img src="https://i.postimg.cc/cKB6HhT3/level.png" alt="強化"></div>
-      </div>
+   </div>
+   <!-- 種族 -->
+   <div class="dropdown" id="raceDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      種族
+     </span>
     </div>
-
-    <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;"><img src = 'https://i.postimg.cc/X7SptCXY/SI125.png'></button>
+    <div class="dropdown-content" id="raceContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png"/>
+     </div>
+     <div class="dropdown-item" data-value="8">
+      <img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png"/>
+     </div>
+     <div class="dropdown-item" data-value="10">
+      <img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png"/>
+     </div>
+     <div class="dropdown-item" data-value="6">
+      <img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png"/>
+     </div>
+     <div class="dropdown-item" data-value="7">
+      <img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png"/>
+     </div>
+    </div>
+   </div>
+   <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">
+    <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
+   </button>
   </div>
-
   <div class="gallery" id="monsterGallery">
-    <div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
-      <div>0001</div>
-      <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
-      <div>莫莉</div>
+   <div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
+    <div>
+     0001
     </div>
-<div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-race="1">
+    <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg">
+     <div>
+      莫莉
+     </div>
+    </img>
+   </div>
+   <div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-race="1">
     <div>
      0002
     </div>
-    <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg"/>
-    <div>
-     高級水術士莫莉
-    </div>
+    <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg">
+     <div>
+      高級水術士莫莉
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-race="1">
     <div>
      0003
     </div>
-    <img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg"/>
-    <div>
-     水魔法師莫莉
-    </div>
+    <img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg">
+     <div>
+      水魔法師莫莉
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="1" data-id="0004" data-name="水元素賢者莫莉" data-race="1">
     <div>
      0004
     </div>
-    <img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg"/>
-    <div>
-     水元素賢者莫莉
-    </div>
+    <img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg">
+     <div>
+      水元素賢者莫莉
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0005" data-name="肖恩" data-race="1">
     <div>
      0005
     </div>
-    <img alt="0005" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0005.jpg"/>
-    <div>
-     肖恩
-    </div>
+    <img alt="0005" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0005.jpg">
+     <div>
+      肖恩
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0006" data-name="高級劍士肖恩" data-race="1">
     <div>
      0006
     </div>
-    <img alt="0006" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0006.jpg"/>
-    <div>
-     高級劍士肖恩
-    </div>
+    <img alt="0006" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0006.jpg">
+     <div>
+      高級劍士肖恩
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0007" data-name="火焰劍士肖恩" data-race="1">
     <div>
      0007
     </div>
-    <img alt="0007" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0007.jpg"/>
-    <div>
-     火焰劍士肖恩
-    </div>
+    <img alt="0007" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0007.jpg">
+     <div>
+      火焰劍士肖恩
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="2" data-id="0008" data-name="紅蓮劍士肖恩" data-race="1">
     <div>
      0008
     </div>
-    <img alt="0008" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0008.jpg"/>
-    <div>
-     紅蓮劍士肖恩
-    </div>
+    <img alt="0008" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0008.jpg">
+     <div>
+      紅蓮劍士肖恩
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0009" data-name="鄧肯" data-race="1">
     <div>
      0009
     </div>
-    <img alt="0009" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0009.jpg"/>
-    <div>
-     鄧肯
-    </div>
+    <img alt="0009" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0009.jpg">
+     <div>
+      鄧肯
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0010" data-name="牧者鄧肯" data-race="1">
     <div>
      0010
     </div>
-    <img alt="0010" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0010.jpg"/>
-    <div>
-     牧者鄧肯
-    </div>
+    <img alt="0010" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0010.jpg">
+     <div>
+      牧者鄧肯
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0011" data-name="德魯依鄧肯" data-race="1">
     <div>
      0011
     </div>
-    <img alt="0011" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0011.jpg"/>
-    <div>
-     德魯依鄧肯
-    </div>
+    <img alt="0011" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0011.jpg">
+     <div>
+      德魯依鄧肯
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="3" data-id="0012" data-name="森林王者鄧肯" data-race="1">
     <div>
      0012
     </div>
-    <img alt="0012" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0012.jpg"/>
-    <div>
-     森林王者鄧肯
-    </div>
+    <img alt="0012" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0012.jpg">
+     <div>
+      森林王者鄧肯
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0013" data-name="男爵奈寶尼" data-race="1">
     <div>
      0013
     </div>
-    <img alt="0013" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0013.jpg"/>
-    <div>
-     男爵奈寶尼
-    </div>
+    <img alt="0013" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0013.jpg">
+     <div>
+      男爵奈寶尼
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0014" data-name="子爵奈寶尼" data-race="1">
     <div>
      0014
     </div>
-    <img alt="0014" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0014.jpg"/>
-    <div>
-     子爵奈寶尼
-    </div>
+    <img alt="0014" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0014.jpg">
+     <div>
+      子爵奈寶尼
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0015" data-name="伯爵奈寶尼" data-race="1">
     <div>
      0015
     </div>
-    <img alt="0015" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0015.jpg"/>
-    <div>
-     伯爵奈寶尼
-    </div>
+    <img alt="0015" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0015.jpg">
+     <div>
+      伯爵奈寶尼
+     </div>
+    </img>
    </div>
    <div class="monster" data-attribute="4" data-id="0016" data-name="侯爵奈寶尼" data-race="1">
     <div>
@@ -3878,7 +3929,7 @@
      不義的鬼將士
     </div>
    </div>
-   <div class="monster" data-id="0397" data-name="鬼神 ‧ 呂布" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="0397" data-name="鬼神 ‧ 呂布" data-race="8">
     <div>
      0397
     </div>
@@ -5678,13 +5729,13 @@
      格蕾琴與海森堡
     </div>
    </div>
-   <div class="monster" data-id="0597" data-name="連肢機偶 · 格蕾琴與海森堡" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="0597" data-name="連肢機偶 &middot; 格蕾琴與海森堡" data-race="1">
     <div>
      0597
     </div>
     <img alt="0597" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0597.jpg"/>
     <div>
-     連肢機偶 · 格蕾琴與海森堡
+     連肢機偶 &middot; 格蕾琴與海森堡
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="0598" data-name="阿涅茜" data-race="1">
@@ -6785,7 +6836,7 @@
      鬼刀意志 ‧ 今劍與薄綠
     </div>
    </div>
-   <div class="monster" data-id="0720" data-name="魔骸戰意 ‧ 呂凌霜" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="0720" data-name="魔骸戰意 ‧ 呂凌霜" data-race="8">
     <div>
      0720
     </div>
@@ -6830,7 +6881,7 @@
      鬼面魔刃 ‧ 源義經
     </div>
    </div>
-   <div class="monster" data-id="0725" data-name="魔骸神將 ‧ 王鬼呂布" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="0725" data-name="魔骸神將 ‧ 王鬼呂布" data-race="8">
     <div>
      0725
     </div>
@@ -7955,7 +8006,7 @@
      怨靈古木
     </div>
    </div>
-   <div class="monster" data-id="0850" data-name="末日屍龍 ‧ 尼德霍格" data-attribute = '3' data-race = '4'>
+   <div class="monster" data-attribute="3" data-id="0850" data-name="末日屍龍 ‧ 尼德霍格" data-race="4">
     <div>
      0850
     </div>
@@ -8198,22 +8249,22 @@
      精靈使 ‧ 烏特博麗公主
     </div>
    </div>
-   <div class="monster" data-id="0877" data-name="永恆守候 · 牛郎" data-attribute = '3' data-race = '1'>
+   <div class="monster" data-attribute="3" data-id="0877" data-name="永恆守候 &middot; 牛郎" data-race="1">
     <div>
      0877
     </div>
     <img alt="0877" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0877.jpg"/>
     <div>
-     永恆守候 · 牛郎
+     永恆守候 &middot; 牛郎
     </div>
    </div>
-   <div class="monster" data-id="0878" data-name="念郎仙子 · 織女" data-attribute = '1' data-race = '5'>
+   <div class="monster" data-attribute="1" data-id="0878" data-name="念郎仙子 &middot; 織女" data-race="5">
     <div>
      0878
     </div>
     <img alt="0878" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0878.jpg"/>
     <div>
-     念郎仙子 · 織女
+     念郎仙子 &middot; 織女
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="0879" data-name="獨角仙君" data-race="2">
@@ -8225,13 +8276,13 @@
      獨角仙君
     </div>
    </div>
-   <div class="monster" data-id="0880" data-name="機動要塞 · 斯特靈" data-attribute = '1' data-race = '10'>
+   <div class="monster" data-attribute="1" data-id="0880" data-name="機動要塞 &middot; 斯特靈" data-race="10">
     <div>
      0880
     </div>
     <img alt="0880" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0880.jpg"/>
     <div>
-     機動要塞 · 斯特靈
+     機動要塞 &middot; 斯特靈
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="0881" data-name="華衣國王" data-race="8">
@@ -9458,13 +9509,13 @@
      雷霆神像
     </div>
    </div>
-   <div class="monster" data-id="1017" data-name="千殛雷霆 · 神皇宙斯" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="1017" data-name="千殛雷霆 &middot; 神皇宙斯" data-race="5">
     <div>
      1017
     </div>
     <img alt="1017" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1017.jpg"/>
     <div>
-     千殛雷霆 · 神皇宙斯
+     千殛雷霆 &middot; 神皇宙斯
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="1018" data-name="無頭騎士 ‧ 杜拉漢" data-race="8">
@@ -11915,7 +11966,7 @@
      戀眷朝暮 ‧ 大喬與小喬
     </div>
    </div>
-   <div class="monster" data-id="1290" data-name="呂布" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="1290" data-name="呂布" data-race="1">
     <div>
      1290
     </div>
@@ -11924,7 +11975,7 @@
      呂布
     </div>
    </div>
-   <div class="monster" data-id="1291" data-name="轉世狂將 ‧ 呂布" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="1291" data-name="轉世狂將 ‧ 呂布" data-race="1">
     <div>
      1291
     </div>
@@ -14381,7 +14432,7 @@
      眾心所牽 ‧ 凱拉
     </div>
    </div>
-   <div class="monster" data-id="1564" data-name="源生混沌 ‧ 倪克斯" data-attribute = '4' data-race = '3'>
+   <div class="monster" data-attribute="4" data-id="1564" data-name="源生混沌 ‧ 倪克斯" data-race="3">
     <div>
      1564
     </div>
@@ -14615,13 +14666,13 @@
      Terry
     </div>
    </div>
-   <div class="monster" data-id="1590" data-name="灼熱本能 ‧ K´" data-attribute = '2' data-race = '1'>
+   <div class="monster" data-attribute="2" data-id="1590" data-name="灼熱本能 ‧ K&acute;" data-race="1">
     <div>
      1590
     </div>
     <img alt="1590" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1590.jpg"/>
     <div>
-     灼熱本能 ‧ K´
+     灼熱本能 ‧ K&acute;
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="1591" data-name="瞬間凍結 ‧ 庫拉" data-race="1">
@@ -15596,13 +15647,13 @@
      璀璨遺光 ‧ 小呼
     </div>
    </div>
-   <div class="monster" data-id="1699" data-name="黝光萬丈 · 神皇宙斯" data-attribute = '5' data-race = '5'>
+   <div class="monster" data-attribute="5" data-id="1699" data-name="黝光萬丈 &middot; 神皇宙斯" data-race="5">
     <div>
      1699
     </div>
     <img alt="1699" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1699.jpg"/>
     <div>
-     黝光萬丈 · 神皇宙斯
+     黝光萬丈 &middot; 神皇宙斯
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="1700" data-name="浮游幸福 ‧ 青郎君" data-race="7">
@@ -15650,7 +15701,7 @@
      菡萏香銷 ‧ 何仙姑
     </div>
    </div>
-   <div class="monster" data-id="1705" data-name="劍氣御神 ‧ 呂洞賓" data-attribute = '5' data-race = '5'>
+   <div class="monster" data-attribute="5" data-id="1705" data-name="劍氣御神 ‧ 呂洞賓" data-race="5">
     <div>
      1705
     </div>
@@ -16136,7 +16187,7 @@
      靈寶經 ‧ 正機
     </div>
    </div>
-   <div class="monster" data-id="1759" data-name="雷歐力" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="1759" data-name="雷歐力" data-race="1">
     <div>
      1759
     </div>
@@ -16145,7 +16196,7 @@
      雷歐力
     </div>
    </div>
-   <div class="monster" data-id="1760" data-name="比司吉">
+   <div class="monster" data-attribute="2" data-id="1760" data-name="比司吉" data-race="1">
     <div>
      1760
     </div>
@@ -16154,7 +16205,7 @@
      比司吉
     </div>
    </div>
-   <div class="monster" data-id="1761" data-name="真 ‧ 比司吉">
+   <div class="monster" data-attribute="2" data-id="1761" data-name="真 ‧ 比司吉" data-race="1">
     <div>
      1761
     </div>
@@ -16163,7 +16214,7 @@
      真 ‧ 比司吉
     </div>
    </div>
-   <div class="monster" data-id="1762" data-name="小傑">
+   <div class="monster" data-attribute="3" data-id="1762" data-name="小傑" data-race="1">
     <div>
      1762
     </div>
@@ -16172,7 +16223,7 @@
      小傑
     </div>
    </div>
-   <div class="monster" data-id="1763" data-name="強制成長 ‧ 小傑">
+   <div class="monster" data-attribute="3" data-id="1763" data-name="強制成長 ‧ 小傑" data-race="1">
     <div>
      1763
     </div>
@@ -16181,7 +16232,7 @@
      強制成長 ‧ 小傑
     </div>
    </div>
-   <div class="monster" data-id="1764" data-name="酷拉皮卡">
+   <div class="monster" data-attribute="4" data-id="1764" data-name="酷拉皮卡" data-race="1">
     <div>
      1764
     </div>
@@ -16190,7 +16241,7 @@
      酷拉皮卡
     </div>
    </div>
-   <div class="monster" data-id="1765" data-name="火紅眼 ‧ 酷拉皮卡">
+   <div class="monster" data-attribute="4" data-id="1765" data-name="火紅眼 ‧ 酷拉皮卡" data-race="1">
     <div>
      1765
     </div>
@@ -16199,7 +16250,7 @@
      火紅眼 ‧ 酷拉皮卡
     </div>
    </div>
-   <div class="monster" data-id="1766" data-name="奇犽">
+   <div class="monster" data-attribute="5" data-id="1766" data-name="奇犽" data-race="1">
     <div>
      1766
     </div>
@@ -16208,7 +16259,7 @@
      奇犽
     </div>
    </div>
-   <div class="monster" data-id="1767" data-name="神速 ‧ 奇犽">
+   <div class="monster" data-attribute="5" data-id="1767" data-name="神速 ‧ 奇犽" data-race="1">
     <div>
      1767
     </div>
@@ -16217,7 +16268,7 @@
      神速 ‧ 奇犽
     </div>
    </div>
-   <div class="monster" data-id="1768" data-name="西索">
+   <div class="monster" data-attribute="2" data-id="1768" data-name="西索" data-race="1">
     <div>
      1768
     </div>
@@ -16226,7 +16277,7 @@
      西索
     </div>
    </div>
-   <div class="monster" data-id="1769" data-name="伊耳謎">
+   <div class="monster" data-attribute="5" data-id="1769" data-name="伊耳謎" data-race="1">
     <div>
      1769
     </div>
@@ -16235,7 +16286,7 @@
      伊耳謎
     </div>
    </div>
-   <div class="monster" data-id="1770" data-name="庫洛洛">
+   <div class="monster" data-attribute="5" data-id="1770" data-name="庫洛洛" data-race="1">
     <div>
      1770
     </div>
@@ -16244,7 +16295,7 @@
      庫洛洛
     </div>
    </div>
-   <div class="monster" data-id="1771" data-name="梅路艾姆">
+   <div class="monster" data-attribute="3" data-id="1771" data-name="梅路艾姆" data-race="8">
     <div>
      1771
     </div>
@@ -16253,7 +16304,7 @@
      梅路艾姆
     </div>
    </div>
-   <div class="monster" data-id="1772" data-name="尼特羅">
+   <div class="monster" data-attribute="4" data-id="1772" data-name="尼特羅" data-race="1">
     <div>
      1772
     </div>
@@ -16262,7 +16313,7 @@
      尼特羅
     </div>
    </div>
-   <div class="monster" data-id="1773" data-name="尼飛彼多">
+   <div class="monster" data-attribute="5" data-id="1773" data-name="尼飛彼多" data-race="8">
     <div>
      1773
     </div>
@@ -16271,7 +16322,7 @@
      尼飛彼多
     </div>
    </div>
-   <div class="monster" data-id="1774" data-name="凱特">
+   <div class="monster" data-attribute="1" data-id="1774" data-name="凱特" data-race="1">
     <div>
      1774
     </div>
@@ -16280,7 +16331,7 @@
      凱特
     </div>
    </div>
-   <div class="monster" data-id="1775" data-name="孟徒徒尤匹">
+   <div class="monster" data-attribute="2" data-id="1775" data-name="孟徒徒尤匹" data-race="8">
     <div>
      1775
     </div>
@@ -16289,7 +16340,7 @@
      孟徒徒尤匹
     </div>
    </div>
-   <div class="monster" data-id="1776" data-name="梟亞普夫">
+   <div class="monster" data-attribute="4" data-id="1776" data-name="梟亞普夫" data-race="3">
     <div>
      1776
     </div>
@@ -16361,16 +16412,16 @@
      翅翼的契約 ‧ 朗杰
     </div>
    </div>
-   <div class="monster" data-id="1784" data-name="鏡幻的惡戲 · 朗杰">
+   <div class="monster" data-attribute="5" data-id="1784" data-name="鏡幻的惡戲 &middot; 朗杰" data-race="1">
     <div>
      1784
     </div>
     <img alt="1784" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1784.jpg"/>
     <div>
-     鏡幻的惡戲 · 朗杰
+     鏡幻的惡戲 &middot; 朗杰
     </div>
    </div>
-   <div class="monster" data-id="1785" data-name="阿路加">
+   <div class="monster" data-attribute="5" data-id="1785" data-name="阿路加" data-race="1">
     <div>
      1785
     </div>
@@ -16838,7 +16889,7 @@
      濕婆
     </div>
    </div>
-   <div class="monster" data-id="1837" data-name="大自在天 ‧ 濕婆">
+   <div class="monster" data-attribute="1" data-id="1837" data-name="大自在天 ‧ 濕婆" data-race="5">
     <div>
      1837
     </div>
@@ -16856,7 +16907,7 @@
      梵天
     </div>
    </div>
-   <div class="monster" data-id="1839" data-name="唯識無境 ‧ 梵天">
+   <div class="monster" data-attribute="2" data-id="1839" data-name="唯識無境 ‧ 梵天" data-race="5">
     <div>
      1839
     </div>
@@ -16910,7 +16961,7 @@
      毗濕奴
     </div>
    </div>
-   <div class="monster" data-id="1845" data-name="持戒苦行 ‧ 毗濕奴">
+   <div class="monster" data-attribute="5" data-id="1845" data-name="持戒苦行 ‧ 毗濕奴" data-race="5">
     <div>
      1845
     </div>
@@ -17666,7 +17717,7 @@
      泡芙
     </div>
    </div>
-   <div class="monster" data-id="1934" data-name="巧手廚魂 ‧ 泡芙">
+   <div class="monster" data-attribute="4" data-id="1934" data-name="巧手廚魂 ‧ 泡芙" data-race="2">
     <div>
      1934
     </div>
@@ -17927,7 +17978,7 @@
      撒旦之魂 ‧ 米拉珍
     </div>
    </div>
-   <div class="monster" data-id="1963" data-name="魔女之罪 ‧ 傑拉爾">
+   <div class="monster" data-attribute="1" data-id="1963" data-name="魔女之罪 ‧ 傑拉爾" data-race="1">
     <div>
      1963
     </div>
@@ -18116,7 +18167,7 @@
      千古一帝 ‧ 秦始皇
     </div>
    </div>
-   <div class="monster" data-id="1984" data-name="馥郁芳香 ‧ 九天玄女">
+   <div class="monster" data-attribute="4" data-id="1984" data-name="馥郁芳香 ‧ 九天玄女" data-race="5">
     <div>
      1984
     </div>
@@ -18143,13 +18194,13 @@
      仙逸清靈 ‧ 妍希
     </div>
    </div>
-   <div class="monster" data-id="1987" data-name="女祭司的悲慟 · 卡珊德拉">
+   <div class="monster" data-attribute="1" data-id="1987" data-name="女祭司的悲慟 &middot; 卡珊德拉" data-race="1">
     <div>
      1987
     </div>
     <img alt="1987" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1987.jpg"/>
     <div>
-     女祭司的悲慟 · 卡珊德拉
+     女祭司的悲慟 &middot; 卡珊德拉
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="1988" data-name="命與炎之纏繞 ‧ 美狄亞" data-race="1">
@@ -18170,58 +18221,58 @@
      黑巫女之歿世 ‧ 喀耳刻
     </div>
    </div>
-   <div class="monster" data-id="1990" data-name="神譜的統治 · 希拉">
+   <div class="monster" data-attribute="4" data-id="1990" data-name="神譜的統治 &middot; 希拉" data-race="5">
     <div>
      1990
     </div>
     <img alt="1990" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1990.jpg"/>
     <div>
-     神譜的統治 · 希拉
+     神譜的統治 &middot; 希拉
     </div>
    </div>
-   <div class="monster" data-id="1991" data-name="萬銃呼喚 · 克蘇魯">
+   <div class="monster" data-attribute="1" data-id="1991" data-name="萬銃呼喚 &middot; 克蘇魯" data-race="10">
     <div>
      1991
     </div>
     <img alt="1991" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1991.jpg"/>
     <div>
-     萬銃呼喚 · 克蘇魯
+     萬銃呼喚 &middot; 克蘇魯
     </div>
    </div>
-   <div class="monster" data-id="1992" data-name="狙槍轟射 · 基路比魯斯">
+   <div class="monster" data-attribute="2" data-id="1992" data-name="狙槍轟射 &middot; 基路比魯斯" data-race="10">
     <div>
      1992
     </div>
     <img alt="1992" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1992.jpg"/>
     <div>
-     狙槍轟射 · 基路比魯斯
+     狙槍轟射 &middot; 基路比魯斯
     </div>
    </div>
-   <div class="monster" data-id="1993" data-name="木旋輪彈 · 美杜莎">
+   <div class="monster" data-attribute="3" data-id="1993" data-name="木旋輪彈 &middot; 美杜莎" data-race="10">
     <div>
      1993
     </div>
     <img alt="1993" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1993.jpg"/>
     <div>
-     木旋輪彈 · 美杜莎
+     木旋輪彈 &middot; 美杜莎
     </div>
    </div>
-   <div class="monster" data-id="1994" data-name="遊炮厲耀 · 格里芬">
+   <div class="monster" data-attribute="4" data-id="1994" data-name="遊炮厲耀 &middot; 格里芬" data-race="10">
     <div>
      1994
     </div>
     <img alt="1994" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1994.jpg"/>
     <div>
-     遊炮厲耀 · 格里芬
+     遊炮厲耀 &middot; 格里芬
     </div>
    </div>
-   <div class="monster" data-id="1995" data-name="幽附鋼刀 · 巴風特">
+   <div class="monster" data-attribute="5" data-id="1995" data-name="幽附鋼刀 &middot; 巴風特" data-race="10">
     <div>
      1995
     </div>
     <img alt="1995" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/1995.jpg"/>
     <div>
-     幽附鋼刀 · 巴風特
+     幽附鋼刀 &middot; 巴風特
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="1996" data-name="逐焰勇者 ‧ 伊阿宋" data-race="1">
@@ -18233,7 +18284,7 @@
      逐焰勇者 ‧ 伊阿宋
     </div>
    </div>
-   <div class="monster" data-id="1997" data-name="苜蓿秘靈">
+   <div class="monster" data-attribute="3" data-id="1997" data-name="苜蓿秘靈" data-race="7">
     <div>
      1997
     </div>
@@ -18269,49 +18320,49 @@
      天際100 ‧ 瘋頭
     </div>
    </div>
-   <div class="monster" data-id="2001" data-name="誅滅戰劍 · 費雷">
+   <div class="monster" data-attribute="1" data-id="2001" data-name="誅滅戰劍 &middot; 費雷" data-race="5">
     <div>
      2001
     </div>
     <img alt="2001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2001.jpg"/>
     <div>
-     誅滅戰劍 · 費雷
+     誅滅戰劍 &middot; 費雷
     </div>
    </div>
-   <div class="monster" data-id="2002" data-name="超然焚烈· 提爾">
+   <div class="monster" data-attribute="2" data-id="2002" data-name="超然焚烈&middot; 提爾" data-race="5">
     <div>
      2002
     </div>
     <img alt="2002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2002.jpg"/>
     <div>
-     超然焚烈· 提爾
+     超然焚烈&middot; 提爾
     </div>
    </div>
-   <div class="monster" data-id="2003" data-name="終章詠嘆 · 費蕾雅">
+   <div class="monster" data-attribute="3" data-id="2003" data-name="終章詠嘆 &middot; 費蕾雅" data-race="5">
     <div>
      2003
     </div>
     <img alt="2003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2003.jpg"/>
     <div>
-     終章詠嘆 · 費蕾雅
+     終章詠嘆 &middot; 費蕾雅
     </div>
    </div>
-   <div class="monster" data-id="2004" data-name="擎天萬鈞 · 索爾">
+   <div class="monster" data-attribute="4" data-id="2004" data-name="擎天萬鈞 &middot; 索爾" data-race="5">
     <div>
      2004
     </div>
     <img alt="2004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2004.jpg"/>
     <div>
-     擎天萬鈞 · 索爾
+     擎天萬鈞 &middot; 索爾
     </div>
    </div>
-   <div class="monster" data-id="2005" data-name="罪愆篡改 · 洛基">
+   <div class="monster" data-attribute="5" data-id="2005" data-name="罪愆篡改 &middot; 洛基" data-race="5">
     <div>
      2005
     </div>
     <img alt="2005" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2005.jpg"/>
     <div>
-     罪愆篡改 · 洛基
+     罪愆篡改 &middot; 洛基
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2006" data-name="愛因斯坦" data-race="10">
@@ -18503,31 +18554,31 @@
      最後的審判 ‧ 米開朗基羅
     </div>
    </div>
-   <div class="monster" data-id="2027" data-name="可塑性生命 · 薛丁格">
+   <div class="monster" data-attribute="5" data-id="2027" data-name="可塑性生命 &middot; 薛丁格" data-race="10">
     <div>
      2027
     </div>
     <img alt="2027" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2027.jpg"/>
     <div>
-     可塑性生命 · 薛丁格
+     可塑性生命 &middot; 薛丁格
     </div>
    </div>
-   <div class="monster" data-id="2028" data-name="鍊合化光 · 佩脫拉">
+   <div class="monster" data-attribute="4" data-id="2028" data-name="鍊合化光 &middot; 佩脫拉" data-race="8">
     <div>
      2028
     </div>
     <img alt="2028" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2028.jpg"/>
     <div>
-     鍊合化光 · 佩脫拉
+     鍊合化光 &middot; 佩脫拉
     </div>
    </div>
-   <div class="monster" data-id="2029" data-name="神聖比例 · 達文西">
+   <div class="monster" data-attribute="2" data-id="2029" data-name="神聖比例 &middot; 達文西" data-race="1">
     <div>
      2029
     </div>
     <img alt="2029" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2029.jpg"/>
     <div>
-     神聖比例 · 達文西
+     神聖比例 &middot; 達文西
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2030" data-name="我思故我在 ‧ 笛卡兒" data-race="10">
@@ -18557,22 +18608,22 @@
      定義質疑 ‧ 波以耳
     </div>
    </div>
-   <div class="monster" data-id="2033" data-name="甜心女僕 · 蒂芙妮">
+   <div class="monster" data-attribute="4" data-id="2033" data-name="甜心女僕 &middot; 蒂芙妮" data-race="10">
     <div>
      2033
     </div>
     <img alt="2033" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2033.jpg"/>
     <div>
-     甜心女僕 · 蒂芙妮
+     甜心女僕 &middot; 蒂芙妮
     </div>
    </div>
-   <div class="monster" data-id="2034" data-name="最佳寵物 · 米異蛋">
+   <div class="monster" data-attribute="3" data-id="2034" data-name="最佳寵物 &middot; 米異蛋" data-race="10">
     <div>
      2034
     </div>
     <img alt="2034" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2034.jpg"/>
     <div>
-     最佳寵物 · 米異蛋
+     最佳寵物 &middot; 米異蛋
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2035" data-name="新進騎士 ‧ 丹尼絲" data-race="1">
@@ -18611,13 +18662,13 @@
      結藤魔騎士．丹尼絲
     </div>
    </div>
-   <div class="monster" data-id="2039" data-name="拂曉聖騎士 · 丹尼絲">
+   <div class="monster" data-attribute="4" data-id="2039" data-name="拂曉聖騎士 &middot; 丹尼絲" data-race="1">
     <div>
      2039
     </div>
     <img alt="2039" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2039.jpg"/>
     <div>
-     拂曉聖騎士 · 丹尼絲
+     拂曉聖騎士 &middot; 丹尼絲
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="2040" data-name="馳騁女騎兵 ‧ 丹尼絲" data-race="2">
@@ -18629,94 +18680,94 @@
      馳騁女騎兵 ‧ 丹尼絲
     </div>
    </div>
-   <div class="monster" data-id="2041" data-name="盈水劍舞 · 冰花">
+   <div class="monster" data-attribute="1" data-id="2041" data-name="盈水劍舞 &middot; 冰花" data-race="1">
     <div>
      2041
     </div>
     <img alt="2041" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2041.jpg"/>
     <div>
-     盈水劍舞 · 冰花
+     盈水劍舞 &middot; 冰花
     </div>
    </div>
-   <div class="monster" data-id="2042" data-name="瀑浴雙劍 · 冰花">
+   <div class="monster" data-attribute="1" data-id="2042" data-name="瀑浴雙劍 &middot; 冰花" data-race="1">
     <div>
      2042
     </div>
     <img alt="2042" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2042.jpg"/>
     <div>
-     瀑浴雙劍 · 冰花
+     瀑浴雙劍 &middot; 冰花
     </div>
    </div>
-   <div class="monster" data-id="2043" data-name="熾軍雄志 · 洛可可">
+   <div class="monster" data-attribute="2" data-id="2043" data-name="熾軍雄志 &middot; 洛可可" data-race="1">
     <div>
      2043
     </div>
     <img alt="2043" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2043.jpg"/>
     <div>
-     熾軍雄志 · 洛可可
+     熾軍雄志 &middot; 洛可可
     </div>
    </div>
-   <div class="monster" data-id="2044" data-name="麗姿炸現 · 洛可可">
+   <div class="monster" data-attribute="2" data-id="2044" data-name="麗姿炸現 &middot; 洛可可" data-race="1">
     <div>
      2044
     </div>
     <img alt="2044" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2044.jpg"/>
     <div>
-     麗姿炸現 · 洛可可
+     麗姿炸現 &middot; 洛可可
     </div>
    </div>
-   <div class="monster" data-id="2045" data-name="狂亂妙醫 · 新月">
+   <div class="monster" data-attribute="3" data-id="2045" data-name="狂亂妙醫 &middot; 新月" data-race="1">
     <div>
      2045
     </div>
     <img alt="2045" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2045.jpg"/>
     <div>
-     狂亂妙醫 · 新月
+     狂亂妙醫 &middot; 新月
     </div>
    </div>
-   <div class="monster" data-id="2046" data-name="武裝狂醫 · 新月">
+   <div class="monster" data-attribute="3" data-id="2046" data-name="武裝狂醫 &middot; 新月" data-race="1">
     <div>
      2046
     </div>
     <img alt="2046" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2046.jpg"/>
     <div>
-     武裝狂醫 · 新月
+     武裝狂醫 &middot; 新月
     </div>
    </div>
-   <div class="monster" data-id="2047" data-name="思維擴張 · 摩斯">
+   <div class="monster" data-attribute="4" data-id="2047" data-name="思維擴張 &middot; 摩斯" data-race="1">
     <div>
      2047
     </div>
     <img alt="2047" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2047.jpg"/>
     <div>
-     思維擴張 · 摩斯
+     思維擴張 &middot; 摩斯
     </div>
    </div>
-   <div class="monster" data-id="2048" data-name="迸拓啟思 · 摩斯">
+   <div class="monster" data-attribute="4" data-id="2048" data-name="迸拓啟思 &middot; 摩斯" data-race="1">
     <div>
      2048
     </div>
     <img alt="2048" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2048.jpg"/>
     <div>
-     迸拓啟思 · 摩斯
+     迸拓啟思 &middot; 摩斯
     </div>
    </div>
-   <div class="monster" data-id="2049" data-name="沒入冥行 · 優格圖">
+   <div class="monster" data-attribute="5" data-id="2049" data-name="沒入冥行 &middot; 優格圖" data-race="1">
     <div>
      2049
     </div>
     <img alt="2049" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2049.jpg"/>
     <div>
-     沒入冥行 · 優格圖
+     沒入冥行 &middot; 優格圖
     </div>
    </div>
-   <div class="monster" data-id="2050" data-name="聖化庇護 · 優格圖">
+   <div class="monster" data-attribute="5" data-id="2050" data-name="聖化庇護 &middot; 優格圖" data-race="1">
     <div>
      2050
     </div>
     <img alt="2050" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2050.jpg"/>
     <div>
-     聖化庇護 · 優格圖
+     聖化庇護 &middot; 優格圖
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2051" data-name="驪姬" data-race="3">
@@ -18728,13 +18779,13 @@
      驪姬
     </div>
    </div>
-   <div class="monster" data-id="2052" data-name="母愛啟蒙 · 驪姬">
+   <div class="monster" data-attribute="1" data-id="2052" data-name="母愛啟蒙 &middot; 驪姬" data-race="3">
     <div>
      2052
     </div>
     <img alt="2052" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2052.jpg"/>
     <div>
-     母愛啟蒙 · 驪姬
+     母愛啟蒙 &middot; 驪姬
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2053" data-name="夏娃" data-race="8">
@@ -18746,13 +18797,13 @@
      夏娃
     </div>
    </div>
-   <div class="monster" data-id="2054" data-name="魔性原罪 · 夏娃">
+   <div class="monster" data-attribute="2" data-id="2054" data-name="魔性原罪 &middot; 夏娃" data-race="8">
     <div>
      2054
     </div>
     <img alt="2054" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2054.jpg"/>
     <div>
-     魔性原罪 · 夏娃
+     魔性原罪 &middot; 夏娃
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2055" data-name="龍陽君" data-race="3">
@@ -18764,13 +18815,13 @@
      龍陽君
     </div>
    </div>
-   <div class="monster" data-id="2056" data-name="斷袖縱情 · 龍陽君">
+   <div class="monster" data-attribute="3" data-id="2056" data-name="斷袖縱情 &middot; 龍陽君" data-race="3">
     <div>
      2056
     </div>
     <img alt="2056" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2056.jpg"/>
     <div>
-     斷袖縱情 · 龍陽君
+     斷袖縱情 &middot; 龍陽君
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="2057" data-name="武則天" data-race="8">
@@ -18782,13 +18833,13 @@
      武則天
     </div>
    </div>
-   <div class="monster" data-id="2058" data-name="后儀天下 · 武則天">
+   <div class="monster" data-attribute="4" data-id="2058" data-name="后儀天下 &middot; 武則天" data-race="8">
     <div>
      2058
     </div>
     <img alt="2058" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2058.jpg"/>
     <div>
-     后儀天下 · 武則天
+     后儀天下 &middot; 武則天
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="2059" data-name="克麗奧" data-race="8">
@@ -18800,13 +18851,13 @@
      克麗奧
     </div>
    </div>
-   <div class="monster" data-id="2060" data-name="艷后爭鳴 · 克麗奧">
+   <div class="monster" data-attribute="5" data-id="2060" data-name="艷后爭鳴 &middot; 克麗奧" data-race="8">
     <div>
      2060
     </div>
     <img alt="2060" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2060.jpg"/>
     <div>
-     艷后爭鳴 · 克麗奧
+     艷后爭鳴 &middot; 克麗奧
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2061" data-name="褒姒" data-race="8">
@@ -18818,13 +18869,13 @@
      褒姒
     </div>
    </div>
-   <div class="monster" data-id="2062" data-name="禍國魔娃 · 褒姒">
+   <div class="monster" data-attribute="2" data-id="2062" data-name="禍國魔娃 &middot; 褒姒" data-race="8">
     <div>
      2062
     </div>
     <img alt="2062" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2062.jpg"/>
     <div>
-     禍國魔娃 · 褒姒
+     禍國魔娃 &middot; 褒姒
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="2063" data-name="楊玉環" data-race="3">
@@ -18836,13 +18887,13 @@
      楊玉環
     </div>
    </div>
-   <div class="monster" data-id="2064" data-name="殉愛杳渺 · 楊玉環">
+   <div class="monster" data-attribute="4" data-id="2064" data-name="殉愛杳渺 &middot; 楊玉環" data-race="3">
     <div>
      2064
     </div>
     <img alt="2064" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2064.jpg"/>
     <div>
-     殉愛杳渺 · 楊玉環
+     殉愛杳渺 &middot; 楊玉環
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="2065" data-name="妺喜" data-race="8">
@@ -18854,16 +18905,16 @@
      妺喜
     </div>
    </div>
-   <div class="monster" data-id="2066" data-name="烈女勳章 · 妺喜">
+   <div class="monster" data-attribute="5" data-id="2066" data-name="烈女勳章 &middot; 妺喜" data-race="8">
     <div>
      2066
     </div>
     <img alt="2066" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2066.jpg"/>
     <div>
-     烈女勳章 · 妺喜
+     烈女勳章 &middot; 妺喜
     </div>
    </div>
-   <div class="monster" data-id="2067" data-name="斷腸思慕 ‧ 呂雉">
+   <div class="monster" data-attribute="3" data-id="2067" data-name="斷腸思慕 ‧ 呂雉" data-race="8">
     <div>
      2067
     </div>
@@ -18872,22 +18923,22 @@
      斷腸思慕 ‧ 呂雉
     </div>
    </div>
-   <div class="monster" data-id="2068" data-name="落雁琴姬 · 王昭君">
+   <div class="monster" data-attribute="4" data-id="2068" data-name="落雁琴姬 &middot; 王昭君" data-race="3">
     <div>
      2068
     </div>
     <img alt="2068" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2068.jpg"/>
     <div>
-     落雁琴姬 · 王昭君
+     落雁琴姬 &middot; 王昭君
     </div>
    </div>
-   <div class="monster" data-id="2069" data-name="獵皮艷妖 · 西施">
+   <div class="monster" data-attribute="5" data-id="2069" data-name="獵皮艷妖 &middot; 西施" data-race="3">
     <div>
      2069
     </div>
     <img alt="2069" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2069.jpg"/>
     <div>
-     獵皮艷妖 · 西施
+     獵皮艷妖 &middot; 西施
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2070" data-name="誘食禁果 ‧ 烏洛波" data-race="8">
@@ -18908,31 +18959,31 @@
      風騷母夜叉 ‧ 孫二娘
     </div>
    </div>
-   <div class="monster" data-id="2072" data-name="萬貫嬈后 · 慈禧">
+   <div class="monster" data-attribute="3" data-id="2072" data-name="萬貫嬈后 &middot; 慈禧" data-race="8">
     <div>
      2072
     </div>
     <img alt="2072" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2072.jpg"/>
     <div>
-     萬貫嬈后 · 慈禧
+     萬貫嬈后 &middot; 慈禧
     </div>
    </div>
-   <div class="monster" data-id="2073" data-name="虛憶迴夢 · 虞姬">
+   <div class="monster" data-attribute="1" data-id="2073" data-name="虛憶迴夢 &middot; 虞姬" data-race="1">
     <div>
      2073
     </div>
     <img alt="2073" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2073.jpg"/>
     <div>
-     虛憶迴夢 · 虞姬
+     虛憶迴夢 &middot; 虞姬
     </div>
    </div>
-   <div class="monster" data-id="2074" data-name="俏漢柔情 · 李蓮英">
+   <div class="monster" data-attribute="2" data-id="2074" data-name="俏漢柔情 &middot; 李蓮英" data-race="1">
     <div>
      2074
     </div>
     <img alt="2074" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2074.jpg"/>
     <div>
-     俏漢柔情 · 李蓮英
+     俏漢柔情 &middot; 李蓮英
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2075" data-name="秉筆弄權 ‧ 魏忠賢" data-race="1">
@@ -18944,13 +18995,13 @@
      秉筆弄權 ‧ 魏忠賢
     </div>
    </div>
-   <div class="monster" data-id="2076" data-name="妖言情盜 · 趙高">
+   <div class="monster" data-attribute="5" data-id="2076" data-name="妖言情盜 &middot; 趙高" data-race="1">
     <div>
      2076
     </div>
     <img alt="2076" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2076.jpg"/>
     <div>
-     妖言情盜 · 趙高
+     妖言情盜 &middot; 趙高
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="2077" data-name="金童" data-race="7">
@@ -18989,13 +19040,13 @@
      糖心咖啡
     </div>
    </div>
-   <div class="monster" data-id="2081" data-name="聖杯之永息 · 艾莉亞">
+   <div class="monster" data-attribute="1" data-id="2081" data-name="聖杯之永息 &middot; 艾莉亞" data-race="1">
     <div>
      2081
     </div>
     <img alt="2081" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2081.jpg"/>
     <div>
-     聖杯之永息 · 艾莉亞
+     聖杯之永息 &middot; 艾莉亞
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2082" data-name="境界扭曲 ‧ 亞伯汗" data-race="5">
@@ -19070,13 +19121,13 @@
      沐浴榮譽 ‧ 瑪伊雅彌
     </div>
    </div>
-   <div class="monster" data-id="2090" data-name="劃時代天才 · 特斯拉">
+   <div class="monster" data-attribute="4" data-id="2090" data-name="劃時代天才 &middot; 特斯拉" data-race="10">
     <div>
      2090
     </div>
     <img alt="2090" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2090.jpg"/>
     <div>
-     劃時代天才 · 特斯拉
+     劃時代天才 &middot; 特斯拉
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2091" data-name="水中離騷 ‧ 屈原" data-race="1">
@@ -19088,7 +19139,7 @@
      水中離騷 ‧ 屈原
     </div>
    </div>
-   <div class="monster" data-id="2092" data-name="初序的創造論 ‧ 卡俄斯">
+   <div class="monster" data-attribute="5" data-id="2092" data-name="初序的創造論 ‧ 卡俄斯" data-race="5">
     <div>
      2092
     </div>
@@ -19439,7 +19490,7 @@
      太昊八卦 ‧ 伏羲
     </div>
    </div>
-   <div class="monster" data-id="2131" data-name="創世神女 ‧ 女媧">
+   <div class="monster" data-attribute="3" data-id="2131" data-name="創世神女 ‧ 女媧" data-race="5">
     <div>
      2131
     </div>
@@ -20177,13 +20228,13 @@
      獄輪拷問 ‧ 斑點
     </div>
    </div>
-   <div class="monster" data-id="2213" data-name="刪卡女友 · 小蘋果">
+   <div class="monster" data-attribute="2" data-id="2213" data-name="刪卡女友 &middot; 小蘋果" data-race="7">
     <div>
      2213
     </div>
     <img alt="2213" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2213.jpg"/>
     <div>
-     刪卡女友 · 小蘋果
+     刪卡女友 &middot; 小蘋果
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2214" data-name="虛駭元素噬者 ‧ 迪亞布羅" data-race="3">
@@ -20483,13 +20534,13 @@
      幻水蜥龍 ‧ 布魯克
     </div>
    </div>
-   <div class="monster" data-id="2247" data-name="赤鱗焚龍 · 布魯克">
+   <div class="monster" data-attribute="2" data-id="2247" data-name="赤鱗焚龍 &middot; 布魯克" data-race="4">
     <div>
      2247
     </div>
     <img alt="2247" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2247.jpg"/>
     <div>
-     赤鱗焚龍 · 布魯克
+     赤鱗焚龍 &middot; 布魯克
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="2248" data-name="角龍盤踞 ‧ 布魯克" data-race="4">
@@ -20654,7 +20705,7 @@
      炮殞華甲 ‧ 袁紹
     </div>
    </div>
-   <div class="monster" data-id="2266" data-name="驍猛狂者 ‧ 呂布">
+   <div class="monster" data-attribute="5" data-id="2266" data-name="驍猛狂者 ‧ 呂布" data-race="1">
     <div>
      2266
     </div>
@@ -20780,7 +20831,7 @@
      鹿式 ‧ 聖誕號
     </div>
    </div>
-   <div class="monster" data-id="2280" data-name="神境旅塔 ‧ 莫靈">
+   <div class="monster" data-attribute="4" data-id="2280" data-name="神境旅塔 ‧ 莫靈" data-race="5">
     <div>
      2280
     </div>
@@ -20996,13 +21047,13 @@
      銜木填海 ‧ 精衛
     </div>
    </div>
-   <div class="monster" data-id="2304" data-name="金冠泰坦 · 克洛諾斯">
+   <div class="monster" data-attribute="5" data-id="2304" data-name="金冠泰坦 &middot; 克洛諾斯" data-race="5">
     <div>
      2304
     </div>
     <img alt="2304" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2304.jpg"/>
     <div>
-     金冠泰坦 · 克洛諾斯
+     金冠泰坦 &middot; 克洛諾斯
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="2305" data-name="破陣無雙 ‧ 項羽" data-race="1">
@@ -21122,7 +21173,7 @@
      九曲獅嘯 ‧ 九靈元聖
     </div>
    </div>
-   <div class="monster" data-id="2318" data-name="通天邪目 ‧ 百眼魔君">
+   <div class="monster" data-attribute="3" data-id="2318" data-name="通天邪目 ‧ 百眼魔君" data-race="8">
     <div>
      2318
     </div>
@@ -21527,7 +21578,7 @@
      維克托 ‧ 沃克 ‧ 格林
     </div>
    </div>
-   <div class="monster" data-id="2365" data-name="絲諾克 ‧ 基爾斯">
+   <div class="monster" data-attribute="5" data-id="2365" data-name="絲諾克 ‧ 基爾斯" data-race="1">
     <div>
      2365
     </div>
@@ -21536,7 +21587,7 @@
      絲諾克 ‧ 基爾斯
     </div>
    </div>
-   <div class="monster" data-id="2366" data-name="莉絲">
+   <div class="monster" data-attribute="5" data-id="2366" data-name="莉絲" data-race="3">
     <div>
      2366
     </div>
@@ -21608,22 +21659,22 @@
      灰狼使 ‧ 基麗
     </div>
    </div>
-   <div class="monster" data-id="2374" data-name="動感快舞 · 普普璐">
+   <div class="monster" data-attribute="3" data-id="2374" data-name="動感快舞 &middot; 普普璐" data-race="3">
     <div>
      2374
     </div>
     <img alt="2374" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2374.jpg"/>
     <div>
-     動感快舞 · 普普璐
+     動感快舞 &middot; 普普璐
     </div>
    </div>
-   <div class="monster" data-id="2375" data-name="舞力比拼 · 哈沙">
+   <div class="monster" data-attribute="4" data-id="2375" data-name="舞力比拼 &middot; 哈沙" data-race="2">
     <div>
      2375
     </div>
     <img alt="2375" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2375.jpg"/>
     <div>
-     舞力比拼 · 哈沙
+     舞力比拼 &middot; 哈沙
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2376" data-name="戀意快遞 ‧ 安琪拉" data-race="1">
@@ -21797,7 +21848,7 @@
      凶悍獅龍 ‧ 烏修穆迦魯
     </div>
    </div>
-   <div class="monster" data-id="2395" data-name="無休護衛 ‧ 不眠龍">
+   <div class="monster" data-attribute="5" data-id="2395" data-name="無休護衛 ‧ 不眠龍" data-race="4">
     <div>
      2395
     </div>
@@ -22202,103 +22253,103 @@
      精銳機兵 ‧ 水戰
     </div>
    </div>
-   <div class="monster" data-id="2440" data-name="麝香貓果 · 榴槤">
+   <div class="monster" data-attribute="3" data-id="2440" data-name="麝香貓果 &middot; 榴槤" data-race="3">
     <div>
      2440
     </div>
     <img alt="2440" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2440.jpg"/>
     <div>
-     麝香貓果 · 榴槤
+     麝香貓果 &middot; 榴槤
     </div>
    </div>
-   <div class="monster" data-id="2441" data-name="逢迎狛犬 · 鬃角">
+   <div class="monster" data-attribute="1" data-id="2441" data-name="逢迎狛犬 &middot; 鬃角" data-race="2">
     <div>
      2441
     </div>
     <img alt="2441" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2441.jpg"/>
     <div>
-     逢迎狛犬 · 鬃角
+     逢迎狛犬 &middot; 鬃角
     </div>
    </div>
-   <div class="monster" data-id="2442" data-name="爆炸鬍子 · 達達摩">
+   <div class="monster" data-attribute="2" data-id="2442" data-name="爆炸鬍子 &middot; 達達摩" data-race="2">
     <div>
      2442
     </div>
     <img alt="2442" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2442.jpg"/>
     <div>
-     爆炸鬍子 · 達達摩
+     爆炸鬍子 &middot; 達達摩
     </div>
    </div>
-   <div class="monster" data-id="2443" data-name="腹鼓震天 · 響狸">
+   <div class="monster" data-attribute="3" data-id="2443" data-name="腹鼓震天 &middot; 響狸" data-race="2">
     <div>
      2443
     </div>
     <img alt="2443" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2443.jpg"/>
     <div>
-     腹鼓震天 · 響狸
+     腹鼓震天 &middot; 響狸
     </div>
    </div>
-   <div class="monster" data-id="2444" data-name="幸運招財 · 雪喵子">
+   <div class="monster" data-attribute="4" data-id="2444" data-name="幸運招財 &middot; 雪喵子" data-race="2">
     <div>
      2444
     </div>
     <img alt="2444" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2444.jpg"/>
     <div>
-     幸運招財 · 雪喵子
+     幸運招財 &middot; 雪喵子
     </div>
    </div>
-   <div class="monster" data-id="2445" data-name="嬌美白蛇 · 堇犽">
+   <div class="monster" data-attribute="5" data-id="2445" data-name="嬌美白蛇 &middot; 堇犽" data-race="2">
     <div>
      2445
     </div>
     <img alt="2445" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2445.jpg"/>
     <div>
-     嬌美白蛇 · 堇犽
+     嬌美白蛇 &middot; 堇犽
     </div>
    </div>
-   <div class="monster" data-id="2446" data-name="噬日災煞 · 噬日狼">
+   <div class="monster" data-attribute="4" data-id="2446" data-name="噬日災煞 &middot; 噬日狼" data-race="2">
     <div>
      2446
     </div>
     <img alt="2446" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2446.jpg"/>
     <div>
-     噬日災煞 · 噬日狼
+     噬日災煞 &middot; 噬日狼
     </div>
    </div>
-   <div class="monster" data-id="2447" data-name="滅日墮怨 · 噬日狼">
+   <div class="monster" data-attribute="4" data-id="2447" data-name="滅日墮怨 &middot; 噬日狼" data-race="2">
     <div>
      2447
     </div>
     <img alt="2447" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2447.jpg"/>
     <div>
-     滅日墮怨 · 噬日狼
+     滅日墮怨 &middot; 噬日狼
     </div>
    </div>
-   <div class="monster" data-id="2448" data-name="蝕月浩劫 · 喰月狼">
+   <div class="monster" data-attribute="5" data-id="2448" data-name="蝕月浩劫 &middot; 喰月狼" data-race="2">
     <div>
      2448
     </div>
     <img alt="2448" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2448.jpg"/>
     <div>
-     蝕月浩劫 · 喰月狼
+     蝕月浩劫 &middot; 喰月狼
     </div>
    </div>
-   <div class="monster" data-id="2449" data-name="泯月闇咒 · 喰月狼">
+   <div class="monster" data-attribute="5" data-id="2449" data-name="泯月闇咒 &middot; 喰月狼" data-race="2">
     <div>
      2449
     </div>
     <img alt="2449" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2449.jpg"/>
     <div>
-     泯月闇咒 · 喰月狼
+     泯月闇咒 &middot; 喰月狼
     </div>
    </div>
-   <div class="monster" data-id="2450" data-name="日月雙生 · 芬爾厄">
+   <div class="monster" data-attribute="4" data-id="2450" data-name="日月雙生 &middot; 芬爾厄" data-race="2">
     <div>
      2450
     </div>
     <img alt="2450" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2450.jpg"/>
     <div>
-     日月雙生 · 芬爾厄
+     日月雙生 &middot; 芬爾厄
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2451" data-name="貪婪之罪 ‧ 班" data-race="1">
@@ -22418,7 +22469,7 @@
      伊蓮恩
     </div>
    </div>
-   <div class="monster" data-id="2464" data-name="四大天使長 ‧ 流德雪爾">
+   <div class="monster" data-attribute="4" data-id="2464" data-name="四大天使長 ‧ 流德雪爾" data-race="5">
     <div>
      2464
     </div>
@@ -22508,43 +22559,43 @@
      最高神的女兒 ‧ 伊麗莎白
     </div>
    </div>
-   <div class="monster" data-id="2474" data-name="豐春之女神 · 奧克索">
+   <div class="monster" data-attribute="3" data-id="2474" data-name="豐春之女神 &middot; 奧克索" data-race="5">
     <div>
      2474
     </div>
     <img alt="2474" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2474.jpg"/>
     <div>
-     豐春之女神 · 奧克索
+     豐春之女神 &middot; 奧克索
     </div>
    </div>
-   <div class="monster" data-id="2475" data-name="燕尾執事 · 伯勒爾">
+   <div class="monster" data-attribute="1" data-id="2475" data-name="燕尾執事 &middot; 伯勒爾" data-race="1">
     <div>
      2475
     </div>
     <img alt="2475" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2475.jpg"/>
     <div>
-     燕尾執事 · 伯勒爾
+     燕尾執事 &middot; 伯勒爾
     </div>
    </div>
-   <div class="monster" data-id="2476" data-name="夏海之赤槿 · 夏娃">
+   <div class="monster" data-attribute="4" data-id="2476" data-name="夏海之赤槿 &middot; 夏娃" data-race="8">
     <div>
      2476
     </div>
     <img alt="2476" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2476.jpg"/>
     <div>
-     夏海之赤槿 · 夏娃
+     夏海之赤槿 &middot; 夏娃
     </div>
    </div>
-   <div class="monster" data-id="2477" data-name="源恨復甦 · 恩莉兒">
+   <div class="monster" data-attribute="2" data-id="2477" data-name="源恨復甦 &middot; 恩莉兒" data-race="8">
     <div>
      2477
     </div>
     <img alt="2477" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2477.jpg"/>
     <div>
-     源恨復甦 · 恩莉兒
+     源恨復甦 &middot; 恩莉兒
     </div>
    </div>
-   <div class="monster" data-id="2478" data-name="魂石封印 ‧ 薛丁格">
+   <div class="monster" data-attribute="4" data-id="2478" data-name="魂石封印 ‧ 薛丁格" data-race="10">
     <div>
      2478
     </div>
@@ -22562,13 +22613,13 @@
      制約瓦解 ‧ 米迦勒
     </div>
    </div>
-   <div class="monster" data-id="2480" data-name="全知的惡魔 · 拉普拉斯">
+   <div class="monster" data-attribute="4" data-id="2480" data-name="全知的惡魔 &middot; 拉普拉斯" data-race="8">
     <div>
      2480
     </div>
     <img alt="2480" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2480.jpg"/>
     <div>
-     全知的惡魔 · 拉普拉斯
+     全知的惡魔 &middot; 拉普拉斯
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2481" data-name="雲劍斬禍 ‧ 須佐之男" data-race="5">
@@ -22715,7 +22766,7 @@
      命序解構 ‧ 瑪努恩
     </div>
    </div>
-   <div class="monster" data-id="2497" data-name="蜃樓星火 ‧ 伊斯塔">
+   <div class="monster" data-attribute="2" data-id="2497" data-name="蜃樓星火 ‧ 伊斯塔" data-race="5">
     <div>
      2497
     </div>
@@ -22796,7 +22847,7 @@
      噬紅利牙 ‧ 溫迪哥
     </div>
    </div>
-   <div class="monster" data-id="2506" data-name="禍根血脈 ‧ 耶夢加得">
+   <div class="monster" data-attribute="3" data-id="2506" data-name="禍根血脈 ‧ 耶夢加得" data-race="2">
     <div>
      2506
     </div>
@@ -23084,13 +23135,13 @@
      明日香與EVA改2號機 (獸化第4形態)
     </div>
    </div>
-   <div class="monster" data-attribute="3" data-id="2538" data-name="真理與EVA8號機β" data-race="5">
+   <div class="monster" data-attribute="3" data-id="2538" data-name="真理與EVA8號機&beta;" data-race="5">
     <div>
      2538
     </div>
     <img alt="2538" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2538.jpg"/>
     <div>
-     真理與EVA8號機β
+     真理與EVA8號機&beta;
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="2539" data-name="AAA Wunder與葛城美里" data-race="5">
@@ -23192,7 +23243,7 @@
      劍戟武侯 ‧ 源義經
     </div>
    </div>
-   <div class="monster" data-id="2550" data-name="沙場無敵 ‧ 呂布 ">
+   <div class="monster" data-attribute="5" data-id="2550" data-name="沙場無敵 ‧ 呂布 " data-race="8">
     <div>
      2550
     </div>
@@ -23237,7 +23288,7 @@
      砉然游刃 ‧ 今劍與薄綠
     </div>
    </div>
-   <div class="monster" data-id="2555" data-name="悚駭轍印 ‧ 呂凌霜">
+   <div class="monster" data-attribute="5" data-id="2555" data-name="悚駭轍印 ‧ 呂凌霜" data-race="8">
     <div>
      2555
     </div>
@@ -23282,7 +23333,7 @@
      合璧之刃 ‧ 源義經
     </div>
    </div>
-   <div class="monster" data-id="2560" data-name="馳風馭者 ‧ 呂布">
+   <div class="monster" data-attribute="5" data-id="2560" data-name="馳風馭者 ‧ 呂布" data-race="8">
     <div>
      2560
     </div>
@@ -23426,7 +23477,7 @@
      青春臂彎 ‧ 哈迪婆婆
     </div>
    </div>
-   <div class="monster" data-id="2576" data-name="面紗下的微光 ‧ 塔維爾">
+   <div class="monster" data-attribute="5" data-id="2576" data-name="面紗下的微光 ‧ 塔維爾" data-race="5">
     <div>
      2576
     </div>
@@ -23723,7 +23774,7 @@
      群山蘊量 ‧ 諾瓦利斯
     </div>
    </div>
-   <div class="monster" data-id="2610" data-name="終末等待 ‧ 諾瓦利斯">
+   <div class="monster" data-attribute="5" data-id="2610" data-name="終末等待 ‧ 諾瓦利斯" data-race="4">
     <div>
      2610
     </div>
@@ -24776,7 +24827,7 @@
      明媚驕陽 ‧ 艾莉亞
     </div>
    </div>
-   <div class="monster" data-id="2727" data-name="飛珠濺玉 ‧ 呂布">
+   <div class="monster" data-attribute="3" data-id="2727" data-name="飛珠濺玉 ‧ 呂布" data-race="1">
     <div>
      2727
     </div>
@@ -24965,7 +25016,7 @@
      虔誠獻奉 ‧ 貝德維爾
     </div>
    </div>
-   <div class="monster" data-id="2748" data-name="末日來臨 ‧ 尼德霍格">
+   <div class="monster" data-attribute="3" data-id="2748" data-name="末日來臨 ‧ 尼德霍格" data-race="4">
     <div>
      2748
     </div>
@@ -25010,7 +25061,7 @@
      霸權傾軋 ‧ 秦始皇
     </div>
    </div>
-   <div class="monster" data-id="2753" data-name="魔身吞佔 ‧ 秦始皇">
+   <div class="monster" data-attribute="5" data-id="2753" data-name="魔身吞佔 ‧ 秦始皇" data-race="8">
     <div>
      2753
     </div>
@@ -25181,7 +25232,7 @@
      塔之守護者 ‧ Terry
     </div>
    </div>
-   <div class="monster" data-id="2772" data-name="熾拳行者">
+   <div class="monster" data-attribute="2" data-id="2772" data-name="熾拳行者" data-race="1">
     <div>
      2772
     </div>
@@ -25190,7 +25241,7 @@
      熾拳行者
     </div>
    </div>
-   <div class="monster" data-id="2773" data-name="蜂芒畢露 ‧ 瑪格莉特">
+   <div class="monster" data-attribute="3" data-id="2773" data-name="蜂芒畢露 ‧ 瑪格莉特" data-race="3">
     <div>
      2773
     </div>
@@ -25442,7 +25493,7 @@
      萬象操控 ‧ 喀耳刻
     </div>
    </div>
-   <div class="monster" data-id="2801" data-name="幻想繪本 ‧ 凱瑟琳">
+   <div class="monster" data-attribute="3" data-id="2801" data-name="幻想繪本 ‧ 凱瑟琳" data-race="1">
     <div>
      2801
     </div>
@@ -25514,7 +25565,7 @@
      繁星命脈 ‧ 斯克勒
     </div>
    </div>
-   <div class="monster" data-id="2809" data-name="星光庇佑 ‧ 米堤與波子">
+   <div class="monster" data-attribute="4" data-id="2809" data-name="星光庇佑 ‧ 米堤與波子" data-race="2">
     <div>
      2809
     </div>
@@ -25550,7 +25601,7 @@
      猛將悟能 ‧ 豬八戒
     </div>
    </div>
-   <div class="monster" data-id="2813" data-name="幻速武鎧 ‧ 希">
+   <div class="monster" data-attribute="3" data-id="2813" data-name="幻速武鎧 ‧ 希" data-race="10">
     <div>
      2813
     </div>
@@ -25748,7 +25799,7 @@
      斷刺煥新 ‧ 風信子
     </div>
    </div>
-   <div class="monster" data-id="2835" data-name="炙愛烙魂 ‧ 詩蘭捷與賈比爾">
+   <div class="monster" data-attribute="2" data-id="2835" data-name="炙愛烙魂 ‧ 詩蘭捷與賈比爾" data-race="2">
     <div>
      2835
     </div>
@@ -25829,7 +25880,7 @@
      邁向永劫 ‧ 阿布霍斯
     </div>
    </div>
-   <div class="monster" data-id="2844" data-name="紡織絕望 ‧ 加塔諾托亞">
+   <div class="monster" data-attribute="4" data-id="2844" data-name="紡織絕望 ‧ 加塔諾托亞" data-race="2">
     <div>
      2844
     </div>
@@ -26063,7 +26114,7 @@
      荷意娉婷 ‧ 何仙姑
     </div>
    </div>
-   <div class="monster" data-id="2870" data-name="天遁劍芒 ‧ 呂洞賓">
+   <div class="monster" data-attribute="5" data-id="2870" data-name="天遁劍芒 ‧ 呂洞賓" data-race="5">
     <div>
      2870
     </div>
@@ -26072,7 +26123,7 @@
      天遁劍芒 ‧ 呂洞賓
     </div>
    </div>
-   <div class="monster" data-id="2871" data-name="至剛神勇 ‧ 鍾離權">
+   <div class="monster" data-attribute="2" data-id="2871" data-name="至剛神勇 ‧ 鍾離權" data-race="5">
     <div>
      2871
     </div>
@@ -26188,7 +26239,7 @@
      繁木芬馥 ‧ 蓋婭
     </div>
    </div>
-   <div class="monster" data-id="2884" data-name="構建星淵 ‧ 埃忒耳">
+   <div class="monster" data-attribute="4" data-id="2884" data-name="構建星淵 ‧ 埃忒耳" data-race="5">
     <div>
      2884
     </div>
@@ -26278,13 +26329,13 @@
      權耀庇翼 ‧ 梅塔特隆
     </div>
    </div>
-   <div class="monster" data-id="2894" data-name="秩序重構 · 拉普拉斯">
+   <div class="monster" data-attribute="4" data-id="2894" data-name="秩序重構 &middot; 拉普拉斯" data-race="8">
     <div>
      2894
     </div>
     <img alt="2894" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/2894.jpg"/>
     <div>
-     秩序重構 · 拉普拉斯
+     秩序重構 &middot; 拉普拉斯
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="2895" data-name="惑言噬愛 ‧ 夏娃" data-race="8">
@@ -26350,7 +26401,7 @@
      完美昇華 ‧ 超獸魔神
     </div>
    </div>
-   <div class="monster" data-id="2903" data-name="巧智破關 ‧ 加諾奧斯">
+   <div class="monster" data-attribute="4" data-id="2903" data-name="巧智破關 ‧ 加諾奧斯" data-race="8">
     <div>
      2903
     </div>
@@ -26413,7 +26464,7 @@
      嶄新開端 ‧ 蚩尤
     </div>
    </div>
-   <div class="monster" data-id="2910" data-name="珍念歲月 ‧ 妲己">
+   <div class="monster" data-attribute="1" data-id="2910" data-name="珍念歲月 ‧ 妲己" data-race="3">
     <div>
      2910
     </div>
@@ -26431,7 +26482,7 @@
      暴虐之翼 ‧ 路西法
     </div>
    </div>
-   <div class="monster" data-id="2912" data-name="魂靈相依 ‧ 路西法與米迦勒">
+   <div class="monster" data-attribute="4" data-id="2912" data-name="魂靈相依 ‧ 路西法與米迦勒" data-race="5">
     <div>
      2912
     </div>
@@ -26458,7 +26509,7 @@
      冀望的理想鄉 ‧ 法神姬氏
     </div>
    </div>
-   <div class="monster" data-id="2915" data-name="三千界主 ‧ 濕婆">
+   <div class="monster" data-attribute="1" data-id="2915" data-name="三千界主 ‧ 濕婆" data-race="5">
     <div>
      2915
     </div>
@@ -26467,7 +26518,7 @@
      三千界主 ‧ 濕婆
     </div>
    </div>
-   <div class="monster" data-id="2916" data-name="寂滅吠陀 ‧ 梵天">
+   <div class="monster" data-attribute="2" data-id="2916" data-name="寂滅吠陀 ‧ 梵天" data-race="5">
     <div>
      2916
     </div>
@@ -26494,7 +26545,7 @@
      無量蓮華 ‧ 拉克什米
     </div>
    </div>
-   <div class="monster" data-id="2919" data-name="菩提心醒 ‧ 毗濕奴">
+   <div class="monster" data-attribute="5" data-id="2919" data-name="菩提心醒 ‧ 毗濕奴" data-race="5">
     <div>
      2919
     </div>
@@ -26629,7 +26680,7 @@
      維度粉碎 ‧ 猶格索托斯
     </div>
    </div>
-   <div class="monster" data-id="3009" data-name="殘像肆虐 ‧ 卡俄斯">
+   <div class="monster" data-attribute="5" data-id="3009" data-name="殘像肆虐 ‧ 卡俄斯" data-race="5">
     <div>
      3009
     </div>
@@ -26656,7 +26707,7 @@
      滅絕晶玉
     </div>
    </div>
-   <div class="monster" data-id="3012" data-name="雪偶 ‧ 小霞">
+   <div class="monster" data-attribute="1" data-id="3012" data-name="雪偶 ‧ 小霞" data-race="10">
     <div>
      3012
     </div>
@@ -26836,7 +26887,7 @@
      疾風繾綣 ‧ 風狸
     </div>
    </div>
-   <div class="monster" data-id="7013" data-name="噬人旅者 ‧ 佩利冬">
+   <div class="monster" data-attribute="4" data-id="7013" data-name="噬人旅者 ‧ 佩利冬" data-race="5">
     <div>
      7013
     </div>
@@ -27088,22 +27139,22 @@
      黑魔女梅菲瑟
     </div>
    </div>
-   <div class="monster" data-id="8007" data-name="庫伊拉 · 德維爾">
+   <div class="monster" data-attribute="4" data-id="8007" data-name="庫伊拉 &middot; 德維爾" data-race="1">
     <div>
      8007
     </div>
     <img alt="8007" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/8007.jpg"/>
     <div>
-     庫伊拉 · 德維爾
+     庫伊拉 &middot; 德維爾
     </div>
    </div>
-   <div class="monster" data-id="8008" data-name="名流庫伊拉 · 德維爾">
+   <div class="monster" data-attribute="4" data-id="8008" data-name="名流庫伊拉 &middot; 德維爾" data-race="1">
     <div>
      8008
     </div>
     <img alt="8008" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/8008.jpg"/>
     <div>
-     名流庫伊拉 · 德維爾
+     名流庫伊拉 &middot; 德維爾
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="8009" data-name="伊絲瑪" data-race="3">
@@ -27655,13 +27706,13 @@
      威沛
     </div>
    </div>
-   <div class="monster" data-id="9002" data-name="浪淘女公爵 · 威沛">
+   <div class="monster" data-attribute="1" data-id="9002" data-name="浪淘女公爵 &middot; 威沛" data-race="3">
     <div>
      9002
     </div>
     <img alt="9002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9002.jpg"/>
     <div>
-     浪淘女公爵 · 威沛
+     浪淘女公爵 &middot; 威沛
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="9003" data-name="馬加錫亞" data-race="3">
@@ -27673,13 +27724,13 @@
      馬加錫亞
     </div>
    </div>
-   <div class="monster" data-id="9004" data-name="熾翼候爵 · 馬加錫亞">
+   <div class="monster" data-attribute="2" data-id="9004" data-name="熾翼候爵 &middot; 馬加錫亞" data-race="3">
     <div>
      9004
     </div>
     <img alt="9004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9004.jpg"/>
     <div>
-     熾翼候爵 · 馬加錫亞
+     熾翼候爵 &middot; 馬加錫亞
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="9005" data-name="斯托剌" data-race="8">
@@ -27691,13 +27742,13 @@
      斯托剌
     </div>
    </div>
-   <div class="monster" data-id="9006" data-name="梟智親王 · 斯托剌">
+   <div class="monster" data-attribute="3" data-id="9006" data-name="梟智親王 &middot; 斯托剌" data-race="8">
     <div>
      9006
     </div>
     <img alt="9006" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9006.jpg"/>
     <div>
-     梟智親王 · 斯托剌
+     梟智親王 &middot; 斯托剌
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="9007" data-name="瑪巴斯" data-race="1">
@@ -27709,13 +27760,13 @@
      瑪巴斯
     </div>
    </div>
-   <div class="monster" data-id="9008" data-name="真知統領 · 瑪巴斯">
+   <div class="monster" data-attribute="4" data-id="9008" data-name="真知統領 &middot; 瑪巴斯" data-race="1">
     <div>
      9008
     </div>
     <img alt="9008" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9008.jpg"/>
     <div>
-     真知統領 · 瑪巴斯
+     真知統領 &middot; 瑪巴斯
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="9009" data-name="瑪帕" data-race="3">
@@ -27727,13 +27778,13 @@
      瑪帕
     </div>
    </div>
-   <div class="monster" data-id="9010" data-name="戰鴉伯爵 · 瑪帕">
+   <div class="monster" data-attribute="5" data-id="9010" data-name="戰鴉伯爵 &middot; 瑪帕" data-race="3">
     <div>
      9010
     </div>
     <img alt="9010" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9010.jpg"/>
     <div>
-     戰鴉伯爵 · 瑪帕
+     戰鴉伯爵 &middot; 瑪帕
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="9011" data-name="華劣克" data-race="1">
@@ -27745,13 +27796,13 @@
      華劣克
     </div>
    </div>
-   <div class="monster" data-id="9012" data-name="私語領袖 · 華劣克">
+   <div class="monster" data-attribute="4" data-id="9012" data-name="私語領袖 &middot; 華劣克" data-race="1">
     <div>
      9012
     </div>
     <img alt="9012" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9012.jpg"/>
     <div>
-     私語領袖 · 華劣克
+     私語領袖 &middot; 華劣克
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="9013" data-name="亞斯塔祿" data-race="8">
@@ -27763,31 +27814,31 @@
      亞斯塔祿
     </div>
    </div>
-   <div class="monster" data-id="9014" data-name="地獄大公 · 亞斯塔祿">
+   <div class="monster" data-attribute="5" data-id="9014" data-name="地獄大公 &middot; 亞斯塔祿" data-race="8">
     <div>
      9014
     </div>
     <img alt="9014" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9014.jpg"/>
     <div>
-     地獄大公 · 亞斯塔祿
+     地獄大公 &middot; 亞斯塔祿
     </div>
    </div>
-   <div class="monster" data-id="9015" data-name="世界的智慧 · 所羅門王">
+   <div class="monster" data-attribute="3" data-id="9015" data-name="世界的智慧 &middot; 所羅門王" data-race="8">
     <div>
      9015
     </div>
     <img alt="9015" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9015.jpg"/>
     <div>
-     世界的智慧 · 所羅門王
+     世界的智慧 &middot; 所羅門王
     </div>
    </div>
-   <div class="monster" data-id="9016" data-name="獨角公爵 · 安度西亞斯">
+   <div class="monster" data-attribute="2" data-id="9016" data-name="獨角公爵 &middot; 安度西亞斯" data-race="8">
     <div>
      9016
     </div>
     <img alt="9016" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/9016.jpg"/>
     <div>
-     獨角公爵 · 安度西亞斯
+     獨角公爵 &middot; 安度西亞斯
     </div>
    </div>
    <div class="monster" data-attribute="5" data-id="9017" data-name="萬娃主人 ‧ 托比" data-race="5">
@@ -28969,7 +29020,7 @@
      蛙吹梅雨
     </div>
    </div>
-   <div class="monster" data-id="10129" data-name="歐爾麥特">
+   <div class="monster" data-attribute="4" data-id="10129" data-name="歐爾麥特" data-race="1">
     <div>
      10129
     </div>
@@ -29131,7 +29182,7 @@
      屹立獸衛 ‧ 克洛怡
     </div>
    </div>
-   <div class="monster" data-id="10147" data-name="龍火爆發 ‧ 彌爾頓">
+   <div class="monster" data-attribute="2" data-id="10147" data-name="龍火爆發 ‧ 彌爾頓" data-race="4">
     <div>
      10147
     </div>
@@ -29239,7 +29290,7 @@
      鴉首掌控 ‧ 哈帕斯
     </div>
    </div>
-   <div class="monster" data-id="10159" data-name="虛與偽 ‧ 混沌之花">
+   <div class="monster" data-attribute="4" data-id="10159" data-name="虛與偽 ‧ 混沌之花" data-race="5">
     <div>
      10159
     </div>
@@ -29581,7 +29632,7 @@
      哈達王子
     </div>
    </div>
-   <div class="monster" data-id="10197" data-name="盈蕙龍嘯 ‧ 依蓮尼亞">
+   <div class="monster" data-attribute="1" data-id="10197" data-name="盈蕙龍嘯 ‧ 依蓮尼亞" data-race="4">
     <div>
      10197
     </div>
@@ -29707,7 +29758,7 @@
      橫衝直撞 ‧ 萌萌
     </div>
    </div>
-   <div class="monster" data-id="10211" data-name="妮奧：Reverse模式" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="10211" data-name="妮奧：Reverse模式" data-race="1">
     <div>
      10211
     </div>
@@ -29716,7 +29767,7 @@
      妮奧：Reverse模式
     </div>
    </div>
-   <div class="monster" data-id="10212" data-name="妮奧：Hello World模式" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="10212" data-name="妮奧：Hello World模式" data-race="1">
     <div>
      10212
     </div>
@@ -29752,7 +29803,7 @@
      賜予神之光開啟天國者 烏列爾
     </div>
    </div>
-   <div class="monster" data-id="10216" data-name="怪盜亞森：魅影模式">
+   <div class="monster" data-attribute="5" data-id="10216" data-name="怪盜亞森：魅影模式" data-race="1">
     <div>
      10216
     </div>
@@ -29797,7 +29848,7 @@
      好奇轉換的希望少女 潘朵拉
     </div>
    </div>
-   <div class="monster" data-id="10221" data-name="邂逅相逢的思念之力 Two for all">
+   <div class="monster" data-attribute="5" data-id="10221" data-name="邂逅相逢的思念之力 Two for all" data-race="1">
     <div>
      10221
     </div>
@@ -29842,7 +29893,7 @@
      滅絕之人 奈落
     </div>
    </div>
-   <div class="monster" data-id="10226" data-name="聖杯系統．阿瓦隆" data-attribute = '2' data-race = '1'>
+   <div class="monster" data-attribute="2" data-id="10226" data-name="聖杯系統．阿瓦隆" data-race="1">
     <div>
      10226
     </div>
@@ -29860,7 +29911,7 @@
      不死神仙 蓬萊
     </div>
    </div>
-   <div class="monster" data-id="10228" data-name="相背自身者 安岐鐵桀" data-attribute = '4' data-race = '8'>
+   <div class="monster" data-attribute="4" data-id="10228" data-name="相背自身者 安岐鐵桀" data-race="8">
     <div>
      10228
     </div>
@@ -29932,7 +29983,7 @@
      狂傲血魔 ‧ 德古拉
     </div>
    </div>
-   <div class="monster" data-id="10236" data-name="沉潛斑翼 ‧ 約菲" data-attribute = '1' data-race = '3'>
+   <div class="monster" data-attribute="1" data-id="10236" data-name="沉潛斑翼 ‧ 約菲" data-race="3">
     <div>
      10236
     </div>
@@ -30013,7 +30064,7 @@
      石田大和與加布獸
     </div>
    </div>
-   <div class="monster" data-id="10245" data-name="八神太一與亞古獸" data-attribute = '2' data-race = '4'>
+   <div class="monster" data-attribute="2" data-id="10245" data-name="八神太一與亞古獸" data-race="4">
     <div>
      10245
     </div>
@@ -30211,7 +30262,7 @@
      神聖天使獸與天女獸
     </div>
    </div>
-   <div class="monster" data-id="10267" data-name="奧米加獸" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="10267" data-name="奧米加獸" data-race="5">
     <div>
      10267
     </div>
@@ -30328,7 +30379,7 @@
      拳破星屑 ‧ 烏圖
     </div>
    </div>
-   <div class="monster" data-id="10280" data-name="獸道征途 ‧ 凱撒">
+   <div class="monster" data-attribute="1" data-id="10280" data-name="獸道征途 ‧ 凱撒" data-race="2">
     <div>
      10280
     </div>
@@ -30400,7 +30451,7 @@
      毀星掠盡 ‧ 賈艾斯
     </div>
    </div>
-   <div class="monster" data-id="10288" data-name="群魔首魁 ‧ 卡洛 ">
+   <div class="monster" data-attribute="3" data-id="10288" data-name="群魔首魁 ‧ 卡洛 " data-race="8">
     <div>
      10288
     </div>
@@ -30562,7 +30613,7 @@
      千肢百觸 ‧ 奧利弗
     </div>
    </div>
-   <div class="monster" data-id="10306" data-name="華燈出遊 ‧ 秋奈">
+   <div class="monster" data-attribute="5" data-id="10306" data-name="華燈出遊 ‧ 秋奈" data-race="1">
     <div>
      10306
     </div>
@@ -30607,13 +30658,13 @@
      靈芝孢子 ‧ 奇諾
     </div>
    </div>
-   <div class="monster" data-id="10311" data-name="冰與火之心 · 辛西亞">
+   <div class="monster" data-attribute="1" data-id="10311" data-name="冰與火之心 &middot; 辛西亞" data-race="1">
     <div>
      10311
     </div>
     <img alt="10311" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10311.jpg"/>
     <div>
-     冰與火之心 · 辛西亞
+     冰與火之心 &middot; 辛西亞
     </div>
    </div>
    <div class="monster" data-attribute="3" data-id="10312" data-name="鐵骨詭熊 ‧ 盧基烏斯" data-race="2">
@@ -30634,49 +30685,49 @@
      血噬捕獸夾 ‧ 亞爾曼
     </div>
    </div>
-   <div class="monster" data-id="10314" data-name="深林毒巫 · 約克">
+   <div class="monster" data-attribute="3" data-id="10314" data-name="深林毒巫 &middot; 約克" data-race="3">
     <div>
      10314
     </div>
     <img alt="10314" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10314.jpg"/>
     <div>
-     深林毒巫 · 約克
+     深林毒巫 &middot; 約克
     </div>
    </div>
-   <div class="monster" data-id="10315" data-name="假意籌資 · 波波">
+   <div class="monster" data-attribute="4" data-id="10315" data-name="假意籌資 &middot; 波波" data-race="2">
     <div>
      10315
     </div>
     <img alt="10315" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10315.jpg"/>
     <div>
-     假意籌資 · 波波
+     假意籌資 &middot; 波波
     </div>
    </div>
-   <div class="monster" data-id="10316" data-name="水柱翻騰 · 埃德加">
+   <div class="monster" data-attribute="1" data-id="10316" data-name="水柱翻騰 &middot; 埃德加" data-race="1">
     <div>
      10316
     </div>
     <img alt="10316" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10316.jpg"/>
     <div>
-     水柱翻騰 · 埃德加
+     水柱翻騰 &middot; 埃德加
     </div>
    </div>
-   <div class="monster" data-id="10317" data-name="葬殺潛龍 · 樺桀">
+   <div class="monster" data-attribute="3" data-id="10317" data-name="葬殺潛龍 &middot; 樺桀" data-race="4">
     <div>
      10317
     </div>
     <img alt="10317" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10317.jpg"/>
     <div>
-     葬殺潛龍 · 樺桀
+     葬殺潛龍 &middot; 樺桀
     </div>
    </div>
-   <div class="monster" data-id="10318" data-name="血夜祭宴 · 雪萊">
+   <div class="monster" data-attribute="2" data-id="10318" data-name="血夜祭宴 &middot; 雪萊" data-race="8">
     <div>
      10318
     </div>
     <img alt="10318" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10318.jpg"/>
     <div>
-     血夜祭宴 · 雪萊
+     血夜祭宴 &middot; 雪萊
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="10319" data-name="商戰爭鋒 ‧ 羅森" data-race="1">
@@ -30850,7 +30901,7 @@
      安妮亞．佛傑
     </div>
    </div>
-   <div class="monster" data-id="10338" data-name="洛伊德．佛傑">
+   <div class="monster" data-attribute="4" data-id="10338" data-name="洛伊德．佛傑" data-race="1">
     <div>
      10338
     </div>
@@ -30967,7 +31018,7 @@
      露娜與阿提米斯與黛安娜
     </div>
    </div>
-   <div class="monster" data-id="10351" data-name="新希蕾妮蒂女王與安迪米歐國王">
+   <div class="monster" data-attribute="4" data-id="10351" data-name="新希蕾妮蒂女王與安迪米歐國王" data-race="5">
     <div>
      10351
     </div>
@@ -31138,7 +31189,7 @@
      瑞兔迎福 ‧ 比涅希
     </div>
    </div>
-   <div class="monster" data-id="10370" data-name="神創 ‧ 零覓">
+   <div class="monster" data-attribute="5" data-id="10370" data-name="神創 ‧ 零覓" data-race="5">
     <div>
      10370
     </div>
@@ -31174,7 +31225,7 @@
      爆破高手 ‧ 諾貝爾
     </div>
    </div>
-   <div class="monster" data-id="10374" data-name="風神怒疾 ‧ 志那都">
+   <div class="monster" data-attribute="3" data-id="10374" data-name="風神怒疾 ‧ 志那都" data-race="5">
     <div>
      10374
     </div>
@@ -31183,7 +31234,7 @@
      風神怒疾 ‧ 志那都
     </div>
    </div>
-   <div class="monster" data-id="10375" data-name="雷神耀天 ‧ 晴賀">
+   <div class="monster" data-attribute="4" data-id="10375" data-name="雷神耀天 ‧ 晴賀" data-race="5">
     <div>
      10375
     </div>
@@ -31426,7 +31477,7 @@
      吉克 ‧ 葉卡與野獸巨人
     </div>
    </div>
-   <div class="monster" data-id="10402" data-name="終尾巨人" data-attribute = '2' data-race = '1'>
+   <div class="monster" data-attribute="2" data-id="10402" data-name="終尾巨人" data-race="1">
     <div>
      10402
     </div>
@@ -31435,7 +31486,7 @@
      終尾巨人
     </div>
    </div>
-   <div class="monster" data-id="10403" data-name="進擊的巨人 ‧ 水" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="10403" data-name="進擊的巨人 ‧ 水" data-race="1">
     <div>
      10403
     </div>
@@ -31444,7 +31495,7 @@
      進擊的巨人 ‧ 水
     </div>
    </div>
-   <div class="monster" data-id="10404" data-name="進擊的巨人 ‧ 火" data-attribute = '2' data-race = '1'>
+   <div class="monster" data-attribute="2" data-id="10404" data-name="進擊的巨人 ‧ 火" data-race="1">
     <div>
      10404
     </div>
@@ -31453,7 +31504,7 @@
      進擊的巨人 ‧ 火
     </div>
    </div>
-   <div class="monster" data-id="10405" data-name="進擊的巨人 ‧ 木" data-attribute = '3' data-race = '1'>
+   <div class="monster" data-attribute="3" data-id="10405" data-name="進擊的巨人 ‧ 木" data-race="1">
     <div>
      10405
     </div>
@@ -31462,7 +31513,7 @@
      進擊的巨人 ‧ 木
     </div>
    </div>
-   <div class="monster" data-id="10406" data-name="進擊的巨人 ‧ 光" data-attribute = '4' data-race = '1'>
+   <div class="monster" data-attribute="4" data-id="10406" data-name="進擊的巨人 ‧ 光" data-race="1">
     <div>
      10406
     </div>
@@ -31471,7 +31522,7 @@
      進擊的巨人 ‧ 光
     </div>
    </div>
-   <div class="monster" data-id="10407" data-name="進擊的巨人 ‧ 暗" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="10407" data-name="進擊的巨人 ‧ 暗" data-race="1">
     <div>
      10407
     </div>
@@ -31678,7 +31729,7 @@
      釘崎野薔薇
     </div>
    </div>
-   <div class="monster" data-id="10430" data-name="七海建人">
+   <div class="monster" data-attribute="4" data-id="10430" data-name="七海建人" data-race="1">
     <div>
      10430
     </div>
@@ -31813,7 +31864,7 @@
      華燈俏影 ‧ 毛毛
     </div>
    </div>
-   <div class="monster" data-id="10445" data-name="昭昭登場 ‧ 貓包子">
+   <div class="monster" data-attribute="5" data-id="10445" data-name="昭昭登場 ‧ 貓包子" data-race="1">
     <div>
      10445
     </div>
@@ -31912,7 +31963,7 @@
      無序飢餓 ‧ 哈佛
     </div>
    </div>
-   <div class="monster" data-id="10456" data-name="死亡洗禮 ‧ 夏綠蒂">
+   <div class="monster" data-attribute="5" data-id="10456" data-name="死亡洗禮 ‧ 夏綠蒂" data-race="10">
     <div>
      10456
     </div>
@@ -31957,7 +32008,7 @@
      伊角慎一郎
     </div>
    </div>
-   <div class="monster" data-id="10461" data-name="永遠的勁敵 ‧ 塔矢亮">
+   <div class="monster" data-attribute="3" data-id="10461" data-name="永遠的勁敵 ‧ 塔矢亮" data-race="1">
     <div>
      10461
     </div>
@@ -32098,7 +32149,7 @@
     </div>
     <img alt="10476" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10476.jpg"/>
     <div>
-	異塔
+     異塔
     </div>
    </div>
    <div class="monster" data-id="10477" data-name="">
@@ -32108,7 +32159,7 @@
     <img alt="10477" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10477.jpg"/>
     <div>
     </div>
-	異塔
+    異塔
    </div>
    <div class="monster" data-id="10478" data-name="">
     <div>
@@ -32116,7 +32167,7 @@
     </div>
     <img alt="10478" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10478.jpg"/>
     <div>
-	異塔
+     異塔
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="10479" data-name="炎日戲水 ‧ 莉莉絲" data-race="10">
@@ -32272,7 +32323,7 @@
      黑色劍士 ‧ 桐人
     </div>
    </div>
-   <div class="monster" data-id="10496" data-name="風林火山 ‧ 克萊因">
+   <div class="monster" data-attribute="2" data-id="10496" data-name="風林火山 ‧ 克萊因" data-race="1">
     <div>
      10496
     </div>
@@ -32299,7 +32350,7 @@
      鍛造師 ‧ 莉茲貝特
     </div>
    </div>
-   <div class="monster" data-id="10499" data-name="魔法劍士 ‧ 莉法">
+   <div class="monster" data-attribute="3" data-id="10499" data-name="魔法劍士 ‧ 莉法" data-race="3">
     <div>
      10499
     </div>
@@ -32335,7 +32386,7 @@
      水精靈 ‧ 朱涅
     </div>
    </div>
-   <div class="monster" data-id="10503" data-name="風精靈領主 ‧ 朔夜">
+   <div class="monster" data-attribute="3" data-id="10503" data-name="風精靈領主 ‧ 朔夜" data-race="3">
     <div>
      10503
     </div>
@@ -32344,7 +32395,7 @@
      風精靈領主 ‧ 朔夜
     </div>
    </div>
-   <div class="monster" data-id="10504" data-name="貓精靈領主 ‧ 亞麗莎">
+   <div class="monster" data-attribute="4" data-id="10504" data-name="貓精靈領主 ‧ 亞麗莎" data-race="3">
     <div>
      10504
     </div>
@@ -32353,7 +32404,7 @@
      貓精靈領主 ‧ 亞麗莎
     </div>
    </div>
-   <div class="monster" data-id="10505" data-name="狂戰士補師 ‧ 亞絲娜">
+   <div class="monster" data-attribute="1" data-id="10505" data-name="狂戰士補師 ‧ 亞絲娜" data-race="3">
     <div>
      10505
     </div>
@@ -32560,7 +32611,7 @@
      旱虐到臨 ‧ 弗栗多
     </div>
    </div>
-   <div class="monster" data-id="10528" data-name="焰沙探秘 ‧ 珞答以">
+   <div class="monster" data-attribute="4" data-id="10528" data-name="焰沙探秘 ‧ 珞答以" data-race="3">
     <div>
      10528
     </div>
@@ -32614,7 +32665,7 @@
      奇想碧色 ‧ 初音未來
     </div>
    </div>
-   <div class="monster" data-id="10534" data-name="勝利喜舞 ‧ 巡音流歌">
+   <div class="monster" data-attribute="4" data-id="10534" data-name="勝利喜舞 ‧ 巡音流歌" data-race="10">
     <div>
      10534
     </div>
@@ -32632,7 +32683,7 @@
      哀傷假面 ‧ 初音未來
     </div>
    </div>
-   <div class="monster" data-id="10536" data-name="韻雅合音 ‧ KAITO">
+   <div class="monster" data-attribute="1" data-id="10536" data-name="韻雅合音 ‧ KAITO" data-race="10">
     <div>
      10536
     </div>
@@ -32704,7 +32755,7 @@
      形聲之翼 ‧ 初音未來
     </div>
    </div>
-   <div class="monster" data-id="10544" data-name="初音未來 MIKU EXPO 2023">
+   <div class="monster" data-attribute="4" data-id="10544" data-name="初音未來 MIKU EXPO 2023" data-race="10">
     <div>
      10544
     </div>
@@ -33028,7 +33079,7 @@
      喬瑟夫 ‧ 喬斯達
     </div>
    </div>
-   <div class="monster" data-id="10580" data-name="喬納森 ‧ 喬斯達">
+   <div class="monster" data-attribute="4" data-id="10580" data-name="喬納森 ‧ 喬斯達" data-race="1">
     <div>
      10580
     </div>
@@ -33127,7 +33178,7 @@
      莉莎莉莎
     </div>
    </div>
-   <div class="monster" data-id="10591" data-name="瓦姆烏">
+   <div class="monster" data-attribute="3" data-id="10591" data-name="瓦姆烏" data-race="8">
     <div>
      10591
     </div>
@@ -33244,7 +33295,7 @@
      四象合一 ‧ 聖獸神君 (龍)
     </div>
    </div>
-   <div class="monster" data-id="10604" data-name="東和帝姬 ‧ 月下瞳">
+   <div class="monster" data-attribute="4" data-id="10604" data-name="東和帝姬 ‧ 月下瞳" data-race="1">
     <div>
      10604
     </div>
@@ -33289,7 +33340,7 @@
      清貧洗志 ‧ 比干
     </div>
    </div>
-   <div class="monster" data-id="10609" data-name="萬貫江山 ‧ 守財真君">
+   <div class="monster" data-attribute="4" data-id="10609" data-name="萬貫江山 ‧ 守財真君" data-race="5">
     <div>
      10609
     </div>
@@ -33406,7 +33457,7 @@
      桃鈴艷才 ‧ 陳圓圓
     </div>
    </div>
-   <div class="monster" data-id="10622" data-name="紅顏敕令 ‧ 林黛玉">
+   <div class="monster" data-attribute="3" data-id="10622" data-name="紅顏敕令 ‧ 林黛玉" data-race="8">
     <div>
      10622
     </div>
@@ -33496,7 +33547,7 @@
      睿博異瞳 ‧ 布提斯
     </div>
    </div>
-   <div class="monster" data-id="10632" data-name="凜風主帥 ‧ 波雷阿斯">
+   <div class="monster" data-attribute="5" data-id="10632" data-name="凜風主帥 ‧ 波雷阿斯" data-race="5">
     <div>
      10632
     </div>
@@ -33532,7 +33583,7 @@
      天軸握殺 ‧ 畸異生命
     </div>
    </div>
-   <div class="monster" data-id="10636" data-name="緋村劍心">
+   <div class="monster" data-attribute="2" data-id="10636" data-name="緋村劍心" data-race="1">
     <div>
      10636
     </div>
@@ -33541,7 +33592,7 @@
      緋村劍心
     </div>
    </div>
-   <div class="monster" data-id="10637" data-name="相樂左之助">
+   <div class="monster" data-attribute="3" data-id="10637" data-name="相樂左之助" data-race="1">
     <div>
      10637
     </div>
@@ -33559,7 +33610,7 @@
      神谷薰
     </div>
    </div>
-   <div class="monster" data-id="10639" data-name="齋藤一">
+   <div class="monster" data-attribute="5" data-id="10639" data-name="齋藤一" data-race="1">
     <div>
      10639
     </div>
@@ -33622,7 +33673,7 @@
      劊子手拔刀齋
     </div>
    </div>
-   <div class="monster" data-id="10646" data-name="壬生狼 ‧ 齋藤一">
+   <div class="monster" data-attribute="1" data-id="10646" data-name="壬生狼 ‧ 齋藤一" data-race="1">
     <div>
      10646
     </div>
@@ -33739,7 +33790,7 @@
      星際巡邏 ‧ 蒙大拿
     </div>
    </div>
-   <div class="monster" data-id="10659" data-name="鋼軀無懼 ‧ 蒙大拿" data-attribute = '2' data-attribute = '10'>
+   <div class="monster" data-attribute="10" data-id="10659" data-name="鋼軀無懼 ‧ 蒙大拿" data-race="10">
     <div>
      10659
     </div>
@@ -33748,7 +33799,7 @@
      鋼軀無懼 ‧ 蒙大拿
     </div>
    </div>
-   <div class="monster" data-id="10660" data-name="正義掌舵 ‧ 斯卡塔赫">
+   <div class="monster" data-attribute="3" data-id="10660" data-name="正義掌舵 ‧ 斯卡塔赫" data-race="10">
     <div>
      10660
     </div>
@@ -33775,7 +33826,7 @@
      磁脈轟擊 ‧ 克卜勒
     </div>
    </div>
-   <div class="monster" data-id="10663" data-name="永絕歸途 ‧ 努亞達">
+   <div class="monster" data-attribute="2" data-id="10663" data-name="永絕歸途 ‧ 努亞達" data-race="10">
     <div>
      10663
     </div>
@@ -33910,7 +33961,7 @@
      真．拉斯沃斯
     </div>
    </div>
-   <div class="monster" data-id="10678" data-name="蜜兒貓與阿飄貓">
+   <div class="monster" data-attribute="4" data-id="10678" data-name="蜜兒貓與阿飄貓" data-race="2">
     <div>
      10678
     </div>
@@ -34135,7 +34186,7 @@
      梅
     </div>
    </div>
-   <div class="monster" data-id="10703" data-name="民谷巖鐵齋">
+   <div class="monster" data-attribute="2" data-id="10703" data-name="民谷巖鐵齋" data-race="1">
     <div>
      10703
     </div>
@@ -34216,7 +34267,7 @@
      斷魂雙刃 ‧ 提爾鋒
     </div>
    </div>
-   <div class="monster" data-id="10712" data-name="祈譽劍骨 ‧ 格拉墨">
+   <div class="monster" data-attribute="2" data-id="10712" data-name="祈譽劍骨 ‧ 格拉墨" data-race="4">
     <div>
      10712
     </div>
@@ -34234,7 +34285,7 @@
      凶虐本質 ‧ 押瑪
     </div>
    </div>
-   <div class="monster" data-id="10714" data-name="皓潔伊始 ‧ 所多瑪" data-attribute = '4' data-race = '4'>
+   <div class="monster" data-attribute="4" data-id="10714" data-name="皓潔伊始 ‧ 所多瑪" data-race="4">
     <div>
      10714
     </div>
@@ -34459,7 +34510,7 @@
      紅丸
     </div>
    </div>
-   <div class="monster" data-id="10739" data-name="哥布達">
+   <div class="monster" data-attribute="3" data-id="10739" data-name="哥布達" data-race="3">
     <div>
      10739
     </div>
@@ -34486,7 +34537,7 @@
      白老
     </div>
    </div>
-   <div class="monster" data-id="10742" data-name="利姆路 ‧ 坦派斯特" data-attribute = '1' data-race = '3'>
+   <div class="monster" data-attribute="1" data-id="10742" data-name="利姆路 ‧ 坦派斯特" data-race="3">
     <div>
      10742
     </div>
@@ -34495,7 +34546,7 @@
      利姆路 ‧ 坦派斯特
     </div>
    </div>
-   <div class="monster" data-id="10743" data-name="魔國聯邦盟主 ‧ 利姆路">
+   <div class="monster" data-attribute="1" data-id="10743" data-name="魔國聯邦盟主 ‧ 利姆路" data-race="3">
     <div>
      10743
     </div>
@@ -34504,7 +34555,7 @@
      魔國聯邦盟主 ‧ 利姆路
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="10744" data-name="蘭加" data-race="2" data-attribute = '1' data-race = '3'>
+   <div class="monster" data-attribute="1" data-id="10744" data-name="蘭加" data-race="3">
     <div>
      10744
     </div>
@@ -34558,7 +34609,7 @@
      迪亞布羅
     </div>
    </div>
-   <div class="monster" data-id="10750" data-name="魔王 ‧ 利姆路" data-attribute = '5' data-race = '8'>
+   <div class="monster" data-attribute="5" data-id="10750" data-name="魔王 ‧ 利姆路" data-race="8">
     <div>
      10750
     </div>
@@ -34567,7 +34618,7 @@
      魔王 ‧ 利姆路
     </div>
    </div>
-   <div class="monster" data-id="10751" data-name="暴風龍 ‧ 維爾德拉" data-attribute = '3' data-race = '4'>
+   <div class="monster" data-attribute="3" data-id="10751" data-name="暴風龍 ‧ 維爾德拉" data-race="4">
     <div>
      10751
     </div>
@@ -34666,7 +34717,7 @@
      希波庫特草
     </div>
    </div>
-   <div class="monster" data-id="10762" data-name="利姆路 ‧ 坦派斯特 (人)" data-attribute = '1' data-race = '1'>
+   <div class="monster" data-attribute="1" data-id="10762" data-name="利姆路 ‧ 坦派斯特 (人)" data-race="1">
     <div>
      10762
     </div>
@@ -34675,7 +34726,7 @@
      利姆路 ‧ 坦派斯特 (人)
     </div>
    </div>
-   <div class="monster" data-id="10763" data-name="利姆路 ‧ 坦派斯特 (獸)" data-attribute = '1' data-race = '2'>
+   <div class="monster" data-attribute="1" data-id="10763" data-name="利姆路 ‧ 坦派斯特 (獸)" data-race="2">
     <div>
      10763
     </div>
@@ -34684,7 +34735,7 @@
      利姆路 ‧ 坦派斯特 (獸)
     </div>
    </div>
-   <div class="monster" data-id="10764" data-name="利姆路 ‧ 坦派斯特 (妖)" data-attribute = '1' data-race = '3'>
+   <div class="monster" data-attribute="1" data-id="10764" data-name="利姆路 ‧ 坦派斯特 (妖)" data-race="3">
     <div>
      10764
     </div>
@@ -34693,7 +34744,7 @@
      利姆路 ‧ 坦派斯特 (妖)
     </div>
    </div>
-   <div class="monster" data-id="10765" data-name="利姆路 ‧ 坦派斯特 (龍)" data-attribute = '1' data-race = '4'>
+   <div class="monster" data-attribute="1" data-id="10765" data-name="利姆路 ‧ 坦派斯特 (龍)" data-race="4">
     <div>
      10765
     </div>
@@ -34702,7 +34753,7 @@
      利姆路 ‧ 坦派斯特 (龍)
     </div>
    </div>
-   <div class="monster" data-id="10766" data-name="利姆路 ‧ 坦派斯特 (神)" data-attribute = '1' data-race = '5'>
+   <div class="monster" data-attribute="1" data-id="10766" data-name="利姆路 ‧ 坦派斯特 (神)" data-race="5">
     <div>
      10766
     </div>
@@ -34711,7 +34762,7 @@
      利姆路 ‧ 坦派斯特 (神)
     </div>
    </div>
-   <div class="monster" data-id="10767" data-name="利姆路 ‧ 坦派斯特 (魔)" data-attribute = '1' data-race = '8'>
+   <div class="monster" data-attribute="1" data-id="10767" data-name="利姆路 ‧ 坦派斯特 (魔)" data-race="8">
     <div>
      10767
     </div>
@@ -34720,7 +34771,7 @@
      利姆路 ‧ 坦派斯特 (魔)
     </div>
    </div>
-   <div class="monster" data-id="10768" data-name="利姆路 ‧ 坦派斯特 (機械)" data-attribute = '1' data-race = '10'>
+   <div class="monster" data-attribute="1" data-id="10768" data-name="利姆路 ‧ 坦派斯特 (機械)" data-race="10">
     <div>
      10768
     </div>
@@ -34765,7 +34816,7 @@
      午茶前推理 ‧ 阿嘉莎
     </div>
    </div>
-   <div class="monster" data-id="10773" data-name="卓識斷症 ‧ 華生">
+   <div class="monster" data-attribute="3" data-id="10773" data-name="卓識斷症 ‧ 華生" data-race="5">
     <div>
      10773
     </div>
@@ -34774,7 +34825,7 @@
      卓識斷症 ‧ 華生
     </div>
    </div>
-   <div class="monster" data-id="10774" data-name="變量釋義 ‧ 莫里亞蒂">
+   <div class="monster" data-attribute="4" data-id="10774" data-name="變量釋義 ‧ 莫里亞蒂" data-race="1">
     <div>
      10774
     </div>
@@ -34882,7 +34933,7 @@
      異度殺戮 ‧ 貝西摩斯
     </div>
    </div>
-   <div class="monster" data-id="10787" data-name="抓娃娃達人 ‧ 宗仔">
+   <div class="monster" data-attribute="4" data-id="10787" data-name="抓娃娃達人 ‧ 宗仔" data-race="10">
     <div>
      10787
     </div>
@@ -34936,7 +34987,7 @@
      全面監視 ‧ 德里克
     </div>
    </div>
-   <div class="monster" data-id="10793" data-name="運氣輪盤 ‧ 百麗兒">
+   <div class="monster" data-attribute="4" data-id="10793" data-name="運氣輪盤 ‧ 百麗兒" data-race="5">
     <div>
      10793
     </div>
@@ -34981,31 +35032,31 @@
      作弊專家 ‧ 貝琳達
     </div>
    </div>
-   <div class="monster" data-id="10798" data-name="最初的雪夜聖者 · 尼古拉斯">
+   <div class="monster" data-attribute="3" data-id="10798" data-name="最初的雪夜聖者 &middot; 尼古拉斯" data-race="3">
     <div>
      10798
     </div>
     <img alt="10798" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10798.jpg"/>
     <div>
-     最初的雪夜聖者 · 尼古拉斯
+     最初的雪夜聖者 &middot; 尼古拉斯
     </div>
    </div>
-   <div class="monster" data-id="10799" data-name="鏡中重圓 · 珍妮">
+   <div class="monster" data-attribute="1" data-id="10799" data-name="鏡中重圓 &middot; 珍妮" data-race="8">
     <div>
      10799
     </div>
     <img alt="10799" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10799.jpg"/>
     <div>
-     鏡中重圓 · 珍妮
+     鏡中重圓 &middot; 珍妮
     </div>
    </div>
-   <div class="monster" data-id="10800" data-name="鏡映初晨 · 潘妮">
+   <div class="monster" data-attribute="2" data-id="10800" data-name="鏡映初晨 &middot; 潘妮" data-race="8">
     <div>
      10800
     </div>
     <img alt="10800" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10800.jpg"/>
     <div>
-     鏡映初晨 · 潘妮
+     鏡映初晨 &middot; 潘妮
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="10801" data-name="Spirit" data-race="1">
@@ -35170,7 +35221,7 @@
      蝦翁
     </div>
    </div>
-   <div class="monster" data-id="10819" data-name="雋永之約 ‧ 黑嘉嘉" data-attribute = '4' data-race = '1'>
+   <div class="monster" data-attribute="4" data-id="10819" data-name="雋永之約 ‧ 黑嘉嘉" data-race="1">
     <div>
      10819
     </div>
@@ -35179,7 +35230,7 @@
      雋永之約 ‧ 黑嘉嘉
     </div>
    </div>
-   <div class="monster" data-id="10820" data-name="情定棋局 ‧ 黑嘉嘉" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="10820" data-name="情定棋局 ‧ 黑嘉嘉" data-race="1">
     <div>
      10820
     </div>
@@ -35188,22 +35239,22 @@
      情定棋局 ‧ 黑嘉嘉
     </div>
    </div>
-   <div class="monster" data-id="10821" data-name="後來居上 · 白棋" data-attribute = '4' data-race = '3'>
+   <div class="monster" data-attribute="4" data-id="10821" data-name="後來居上 &middot; 白棋" data-race="3">
     <div>
      10821
     </div>
     <img alt="10821" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10821.jpg"/>
     <div>
-     後來居上 · 白棋
+     後來居上 &middot; 白棋
     </div>
    </div>
-   <div class="monster" data-id="10822" data-name="構築先機 · 黑棋" data-attribute = '5' data-race = '3'>
+   <div class="monster" data-attribute="5" data-id="10822" data-name="構築先機 &middot; 黑棋" data-race="3">
     <div>
      10822
     </div>
     <img alt="10822" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10822.jpg"/>
     <div>
-     構築先機 · 黑棋
+     構築先機 &middot; 黑棋
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="10823" data-name="人造棋師 ‧ 道知" data-race="10">
@@ -35224,22 +35275,22 @@
      喵之一手 ‧ Bubu
     </div>
    </div>
-   <div class="monster" data-id="10825" data-name="詭秘聖祭 · 奧米伽" data-attribute = '1' data-race = '10'>
+   <div class="monster" data-attribute="1" data-id="10825" data-name="詭秘聖祭 &middot; 奧米伽" data-race="10">
     <div>
      10825
     </div>
     <img alt="10825" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10825.jpg"/>
     <div>
-     詭秘聖祭 · 奧米伽
+     詭秘聖祭 &middot; 奧米伽
     </div>
    </div>
-   <div class="monster" data-id="10826" data-name="莊嚴規律 · 藍德南">
+   <div class="monster" data-attribute="3" data-id="10826" data-name="莊嚴規律 &middot; 藍德南" data-race="1">
     <div>
      10826
     </div>
     <img alt="10826" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10826.jpg"/>
     <div>
-     莊嚴規律 · 藍德南
+     莊嚴規律 &middot; 藍德南
     </div>
    </div>
    <div class="monster" data-attribute="1" data-id="10827" data-name="魔法石靈 ‧ 帕拉伊巴" data-race="3">
@@ -35251,7 +35302,7 @@
      魔法石靈 ‧ 帕拉伊巴
     </div>
    </div>
-   <div class="monster" data-id="10828" data-name="恆定的仿魂 ‧ 莉莉絲">
+   <div class="monster" data-attribute="1" data-id="10828" data-name="恆定的仿魂 ‧ 莉莉絲" data-race="10">
     <div>
      10828
     </div>
@@ -35278,7 +35329,7 @@
      凜潔意氣 ‧ 甄珂
     </div>
    </div>
-   <div class="monster" data-id="10836" data-name="雷鞭銳網 ‧ 凌笙" data-attribute = '4' data-race = '2'>
+   <div class="monster" data-attribute="4" data-id="10836" data-name="雷鞭銳網 ‧ 凌笙" data-race="2">
     <div>
      10836
     </div>
@@ -35386,7 +35437,7 @@
      靈驗籤詩 ‧ 小筆
     </div>
    </div>
-   <div class="monster" data-id="10848" data-name="大仙顯靈 ‧ 黃大仙" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="10848" data-name="大仙顯靈 ‧ 黃大仙" data-race="5">
     <div>
      10848
     </div>
@@ -35404,7 +35455,7 @@
      忠毅顯赫 ‧ 車公
     </div>
    </div>
-   <div class="monster" data-id="10850" data-name="吉運轉來 ‧ 吉娘" data-attribute = '5' data-race = '5'>
+   <div class="monster" data-attribute="5" data-id="10850" data-name="吉運轉來 ‧ 吉娘" data-race="5">
     <div>
      10850
     </div>
@@ -35422,7 +35473,7 @@
      福祿傳予 ‧ 仙羊
     </div>
    </div>
-   <div class="monster" data-id="10852" data-name="雷姆" data-attribute = '1' data-race = '8'>
+   <div class="monster" data-attribute="1" data-id="10852" data-name="雷姆" data-race="8">
     <div>
      10852
     </div>
@@ -35440,7 +35491,7 @@
      月下的眸光 ‧ 鬼化雷姆
     </div>
    </div>
-   <div class="monster" data-id="10854" data-name="拉姆" data-attribute = '1' data-race = '8'>
+   <div class="monster" data-attribute="1" data-id="10854" data-name="拉姆" data-race="8">
     <div>
      10854
     </div>
@@ -35494,7 +35545,7 @@
      菜月昴
     </div>
    </div>
-   <div class="monster" data-id="10860" data-name="碧翠絲" data-attribute = '5' data-race = '3'>
+   <div class="monster" data-attribute="5" data-id="10860" data-name="碧翠絲" data-race="3">
     <div>
      10860
     </div>
@@ -35503,7 +35554,7 @@
      碧翠絲
     </div>
    </div>
-   <div class="monster" data-id="10861" data-name="白鯨" data-attribute = '1' data-race = '2'>
+   <div class="monster" data-attribute="1" data-id="10861" data-name="白鯨" data-race="2">
     <div>
      10861
     </div>
@@ -35602,7 +35653,7 @@
      艾姬多娜
     </div>
    </div>
-   <div class="monster" data-id="10872" data-name="銀髮天使・愛蜜莉雅" data-attribute = '4' data-race = '3'>
+   <div class="monster" data-attribute="4" data-id="10872" data-name="銀髮天使・愛蜜莉雅" data-race="3">
     <div>
      10872
     </div>
@@ -35647,7 +35698,7 @@
      調律享頌樂 ‧ 舒伯特
     </div>
    </div>
-   <div class="monster" data-id="10877" data-name="悖德夢幻曲 ‧ 舒曼" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="10877" data-name="悖德夢幻曲 ‧ 舒曼" data-race="5">
     <div>
      10877
     </div>
@@ -35710,13 +35761,13 @@
      惡魔詠歎調 ‧ 帕格尼尼
     </div>
    </div>
-   <div class="monster" data-id="10884" data-name="沉默賦格曲 ‧ 巴赫" data-attribute = '4' data-race = '5'>
+   <div class="monster" data-attribute="4" data-id="10884" data-name="沉默賦格曲 ‧ 巴赫" data-race="5">
     <div>
      10884
     </div>
     <img alt="10884" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10884.jpg"/>
     <div>
-	沉默賦格曲 ‧ 巴赫
+     沉默賦格曲 ‧ 巴赫
     </div>
    </div>
    <div class="monster" data-attribute="2" data-id="10885" data-name="幸福進行曲 ‧ 孟德爾頌" data-race="5">
@@ -35746,13 +35797,13 @@
      正道鐵律 ‧ 蓋倫
     </div>
    </div>
-   <div class="monster" data-id="10888" data-name="貪婪暗契 ‧ 希特" data-attribute = '3' data-race = '4'>
+   <div class="monster" data-attribute="3" data-id="10888" data-name="貪婪暗契 ‧ 希特" data-race="4">
     <div>
      10888
     </div>
     <img alt="10888" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10888.jpg"/>
     <div>
-	貪婪暗契 ‧ 希特
+     貪婪暗契 ‧ 希特
     </div>
    </div>
    <div class="monster" data-attribute="4" data-id="10889" data-name="檸可思議 ‧ 林黛玉" data-race="8">
@@ -35773,7 +35824,7 @@
      球美之水 ‧ 賈寶玉
     </div>
    </div>
-   <div class="monster" data-id="10891" data-name="天道震鳴 ‧ 刻琿" data-attribute = '2' data-race = '4'>
+   <div class="monster" data-attribute="2" data-id="10891" data-name="天道震鳴 ‧ 刻琿" data-race="4">
     <div>
      10891
     </div>
@@ -36099,7 +36150,7 @@
     </div>
     <img alt="10942" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10942.jpg"/>
     <div>
-	 (10931異轉卡號)
+     (10931異轉卡號)
     </div>
    </div>
    <div class="monster" data-id="10943" data-name="">
@@ -36150,7 +36201,7 @@
     <div>
     </div>
    </div>
-   <div class="monster" data-id="11001" data-name="罪状宣告 ‧ 圣枪涅索伊" data-attribute = '2' data-race = '5'>
+   <div class="monster" data-attribute="2" data-id="11001" data-name="罪状宣告 ‧ 圣枪涅索伊" data-race="5">
     <div>
      11001
     </div>
@@ -36159,7 +36210,7 @@
      罪状宣告 ‧ 圣枪涅索伊
     </div>
    </div>
-   <div class="monster" data-id="11002" data-name="聖裁時刻 ‧ 貞德" data-attribute = '1' data-race = '4'>
+   <div class="monster" data-attribute="1" data-id="11002" data-name="聖裁時刻 ‧ 貞德" data-race="4">
     <div>
      11002
     </div>
@@ -36168,7 +36219,7 @@
      聖裁時刻 ‧ 貞德
     </div>
    </div>
-   <div class="monster" data-id="20001" data-name="以諾" data-attribute = '5' data-race = '1'>
+   <div class="monster" data-attribute="5" data-id="20001" data-name="以諾" data-race="1">
     <div>
      20001
     </div>
@@ -36177,7 +36228,7 @@
      以諾
     </div>
    </div>
-   <div class="monster" data-id="20002" data-name="雪萊 ‧ 沙古迪" data-attribute = '4' data-race = '1' >
+   <div class="monster" data-attribute="4" data-id="20002" data-name="雪萊 ‧ 沙古迪" data-race="1">
     <div>
      20002
     </div>
@@ -36186,7 +36237,7 @@
      雪萊 ‧ 沙古迪
     </div>
    </div>
-   <div class="monster" data-id="20003" data-name="未來開拓 ‧ 雪萊" data-attribute = '4' data-race = '1'>
+   <div class="monster" data-attribute="4" data-id="20003" data-name="未來開拓 ‧ 雪萊" data-race="1">
     <div>
      20003
     </div>
@@ -36196,44 +36247,70 @@
     </div>
    </div>
   </div>
-<div id="scrollButtons">
-<button onclick="scrollToTop()"><i class="fas fa-angle-up"></i></button>
-<button onclick="scrollToBottom()"><i class="fas fa-angle-down"></i></button>
-</div>
-<!-- Modal for displaying monster info -->
-<div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
-<div class="modal-content">
-<span class="close" onclick="closeModal()">
-  <i class="fas fa-times"></i>
-</span>
-<div id="monsterInfoContent">
-<div class="content">
-<div id="monsterID"></div>
-<div class="info-row">
-<p class="info-label">HP:</p>
-<p class="info-value" id="monsterHP"></p>
-<p class="info-label">HP (+20):</p>
-<p class="info-value" id="monsterHP1_2"></p>
-</div>
-<div class="info-row">
-<p class="info-label">ATK:</p>
-<p class="info-value" id="monsterATK"></p>
-<p class="info-label">ATK (+20):</p>
-<p class="info-value" id="monsterATK1_2"></p>
-</div>
-<div class="info-row">
-<p class="info-label">REC:</p>
-<p class="info-value" id="monsterREC"></p>
-<p class="info-label">REC (+20):</p>
-<p class="info-value" id="monsterREC1_2"></p>
-</div>
-<!--<button onclick="closeModal()">關閉</button>-->
-</div>
-</div>
-</div>
-</div>
-<script>
-    let selectedAttributes = new Set();
+  <div id="scrollButtons">
+   <button onclick="scrollToTop()">
+    <i class="fas fa-angle-up">
+    </i>
+   </button>
+   <button onclick="scrollToBottom()">
+    <i class="fas fa-angle-down">
+    </i>
+   </button>
+  </div>
+  <!-- Modal for displaying monster info -->
+  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+   <div class="modal-content">
+    <span class="close" onclick="closeModal()">
+     <i class="fas fa-times">
+     </i>
+    </span>
+    <div id="monsterInfoContent">
+     <div class="content">
+      <div id="monsterID">
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        HP:
+       </p>
+       <p class="info-value" id="monsterHP">
+       </p>
+       <p class="info-label">
+        HP (+20):
+       </p>
+       <p class="info-value" id="monsterHP1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        ATK:
+       </p>
+       <p class="info-value" id="monsterATK">
+       </p>
+       <p class="info-label">
+        ATK (+20):
+       </p>
+       <p class="info-value" id="monsterATK1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        REC:
+       </p>
+       <p class="info-value" id="monsterREC">
+       </p>
+       <p class="info-label">
+        REC (+20):
+       </p>
+       <p class="info-value" id="monsterREC1_2">
+       </p>
+      </div>
+      <!--<button onclick="closeModal()">關閉</button>-->
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   let selectedAttributes = new Set();
     let selectedRaces = new Set();
 
     document.querySelectorAll(".dropdown").forEach(dropdown => {
@@ -36393,8 +36470,8 @@
 	  });
 	});
   </script>
-<script>
-	function updateMonsterIcons(monsterElement, monster) {
+  <script>
+   function updateMonsterIcons(monsterElement, monster) {
 	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
 
@@ -36437,6 +36514,6 @@
 	  monsterIdElement.appendChild(attributeIcon);
 	  monsterIdElement.appendChild(raceIcon);
 	}
- </script>
-</body>
+  </script>
+ </body>
 </html>
