@@ -319,6 +319,110 @@
   font-size: 12px;
   color: #555;
 }
+
+<!-- 已整合 skilldesc.js 中 board 標籤解析的 JS 與樣式 -->
+
+<script>
+  // 基本 decode 工具（從 board.decoder.html 擷取）
+  function decode1(data) {
+    const arr = [];
+    for (let i = 0; i < data.length; i++) {
+      arr.push(data.charCodeAt(i));
+    }
+    return arr;
+  }
+
+  function decode2(data) {
+    const result = [];
+    for (let i = 0; i < data.length; i += 2) {
+      const high = data.charCodeAt(i);
+      const low = data.charCodeAt(i + 1);
+      const value = high * 256 + low;
+      result.push(value);
+    }
+    return result;
+  }
+
+  // base64 轉卡圖顯示
+  function decodeBoardToElement(base64) {
+    const decoded = atob(base64);
+    const type = decoded.charCodeAt(2);
+    const data = decoded.slice(6);
+    const board = (type === 1 ? decode1(data) : decode2(data));
+
+    const table = document.createElement('table');
+    let row;
+    for (let i = 0; i < board.length; i++) {
+      if (i % 6 === 0) {
+        row = document.createElement('tr');
+        table.appendChild(row);
+      }
+      const td = document.createElement('td');
+      const img = document.createElement('img');
+      img.src = 'https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/' + board[i].toString().padStart(4, '0') + '.jpg';
+      img.style.width = '40px';
+      img.style.height = '40px';
+      td.appendChild(img);
+      row.appendChild(td);
+    }
+    return table;
+  }
+
+  // 將 [board=xxx]...[/board] 轉成 HTML
+  function parseSkillDesc(rawDesc) {
+    let desc = rawDesc || '';
+    desc = desc.replace(/\n/g, '<br>');
+
+    // 轉換 board 語法
+    desc = desc.replace(/\[board=(.*?)\](.*?)\[\/board\]/g, (match, code, label) => {
+      return `<span class="board-hover" data-board="${code}">${label}</span>`;
+    });
+    return desc;
+  }
+
+  // 綁定 hover 事件
+  function bindBoardHover() {
+    document.querySelectorAll('.board-hover').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        const code = el.dataset.board;
+        const tooltip = decodeBoardToElement(code);
+        tooltip.classList.add('board-tooltip');
+        el.appendChild(tooltip);
+      });
+      el.addEventListener('mouseleave', () => {
+        const tip = el.querySelector('.board-tooltip');
+        if (tip) tip.remove();
+      });
+    });
+  }
+</script>
+
+<style>
+  .board-hover {
+    position: relative;
+    cursor: pointer;
+    color: #0077cc;
+    text-decoration: underline dotted;
+  }
+  .board-tooltip {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    z-index: 999;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .board-tooltip table td {
+    padding: 2px;
+  }
+  .board-tooltip img {
+    width: 40px;
+    height: 40px;
+  }
+</style>
+
   </style>
  </head>
  <body>
@@ -36513,7 +36617,8 @@
 
 				const descLine = document.createElement('div');
 				descLine.className = 'skill-desc collapsed';
-				descLine.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
+				descLine.innerHTML = parseSkillDesc(skillDesc);
+				bindBoardHover();
 
 				// 🔁 正確綁定點擊事件
 				descLine.addEventListener('click', () => {
@@ -36604,7 +36709,8 @@
 
 		const descLine = document.createElement('div');
 		descLine.className = 'skill-desc collapsed';
-		descLine.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
+		descLine.innerHTML = parseSkillDesc(skillDesc);
+		bindBoardHover();
 
 		descLine.addEventListener('click', () => {
 		  descLine.classList.toggle('collapsed');
