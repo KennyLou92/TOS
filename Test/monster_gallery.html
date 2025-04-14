@@ -2,7 +2,6 @@
 
 <html lang="zh-Hant">
 <head>
-<script src="skilldesc.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 <meta charset="utf-8"/>
 <title>
@@ -352,41 +351,41 @@
 </button>
 </div>
 <div class="gallery" id="monsterGallery">
-<div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-normalskill-id="80" data-race="1">
+<div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-race="1">
 <div>
      0001
     </div>
 <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
 <div>
-     莫莉
-    </div>
+      莫莉
+     </div>
 </div>
-<div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-normalskill-id="80" data-race="1">
+<div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-race="1">
 <div>
      0002
     </div>
 <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg"/>
 <div>
-     高級水術士莫莉
-    </div>
+      高級水術士莫莉
+     </div>
 </div>
-<div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-normalskill-id="80" data-race="1">
+<div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-race="1">
 <div>
      0003
     </div>
 <img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg"/>
 <div>
-     水魔法師莫莉
-    </div>
+      水魔法師莫莉
+     </div>
 </div>
-<div class="monster" data-attribute="1" data-id="0004" data-name="水元素賢者莫莉" data-normalskill-id="104" data-race="1">
+<div class="monster" data-attribute="1" data-id="0004" data-name="水元素賢者莫莉" data-race="1">
 <div>
      0004
     </div>
 <img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg"/>
 <div>
-     水元素賢者莫莉
-    </div>
+      水元素賢者莫莉
+     </div>
 </div>
 </div>
 <div id="scrollButtons">
@@ -589,46 +588,6 @@
 			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
-        // === 🌟 顯示所有 normalskill ===
-        {
-          let skillIdsRaw = monsterElement.getAttribute("data-normalskill-id") || "";
-          let skillIds = skillIdsRaw.split(",").filter(id => id.trim() !== "");
-
-          const contentBlock = document.querySelector("#monsterInfoContent .content");
-          contentBlock.querySelectorAll(".info-row[data-skill='true']").forEach(e => e.remove());
-
-          skillIds.forEach((skillId, index) => {
-            let skillName = "無技能";
-            let skillDesc = "";
-            if (typeof skilldesc !== "undefined" && skilldesc[skillId]) {
-              skillName = skilldesc[skillId].name || "無名稱";
-              skillDesc = skilldesc[skillId].description || "";
-            }
-
-            const skillRow = document.createElement("div");
-            skillRow.className = "info-row";
-            skillRow.setAttribute("data-skill", "true");
-
-            const label = document.createElement("div");
-            label.className = "info-label";
-
-            const value = document.createElement("div");
-            value.className = "info-value";
-            const nameLine = document.createElement("div");
-            nameLine.style.textAlign = "left";
-            nameLine.innerHTML = `<strong>${skillName}</strong>`;
-            const descLine = document.createElement("div");
-            descLine.style.textAlign = "left";
-            descLine.textContent = skillDesc;
-            value.innerHTML = "";
-            value.appendChild(nameLine);
-            value.appendChild(descLine);
-
-            skillRow.appendChild(value);
-            contentBlock.appendChild(skillRow);
-          });
-        }
-
 
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
