@@ -589,94 +589,39 @@
 			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
-        // === 🌟 顯示所有 normalskill ===
-        const skillIdsRaw = monsterElement.getAttribute("data-normalskill-id") || "";
-        const skillIds = skillIdsRaw.split(",").filter(id => id.trim() !== "");
+        {
+          let skillIdsRaw = monsterElement.getAttribute("data-normalskill-id") || "";
+          let skillIds = skillIdsRaw.split(",").filter(id => id.trim() !== "");
 
-        const contentBlock = document.querySelector("#monsterInfoContent .content");
-        contentBlock.querySelectorAll(".info-row[data-skill='true']").forEach(e => e.remove());
+          const contentBlock = document.querySelector("#monsterInfoContent .content");
+          contentBlock.querySelectorAll(".info-row[data-skill='true']").forEach(e => e.remove());
 
-        skillIds.forEach((skillId, index) => {
-          let skillName = "無技能";
-          let skillDesc = "";
-          if (typeof skilldesc !== "undefined" && skilldesc[skillId]) {
-            skillName = skilldesc[skillId].name || "無名稱";
-            skillDesc = skilldesc[skillId].description || "";
-          }
+          skillIds.forEach((skillId, index) => {
+            let skillName = "無技能";
+            let skillDesc = "";
+            if (typeof skilldesc !== "undefined" && skilldesc[skillId]) {
+              skillName = skilldesc[skillId].name || "無名稱";
+              skillDesc = skilldesc[skillId].description || "";
+            }
 
-          const skillRow = document.createElement("div");
-          skillRow.className = "info-row";
-          skillRow.setAttribute("data-skill", "true");
+            const skillRow = document.createElement("div");
+            skillRow.className = "info-row";
+            skillRow.setAttribute("data-skill", "true");
 
-          const label = document.createElement("div");
-          label.className = "info-label";
-          label.textContent = skillIds.length > 1 ? `Normal Skill ${index + 1}` : "Normal Skill";
+            const label = document.createElement("div");
+            label.className = "info-label";
+            label.textContent = skillIds.length > 1 ? `Normal Skill ${index + 1}` : "Normal Skill";
 
-          const value = document.createElement("div");
-          value.className = "info-value";
-          value.textContent = skillName;
-          value.title = skillDesc;
+            const value = document.createElement("div");
+            value.className = "info-value";
+            value.textContent = skillName;
+            value.title = skillDesc;
 
-          skillRow.appendChild(label);
-          skillRow.appendChild(value);
-          contentBlock.appendChild(skillRow);
-        });
-        
-        // === 🌟 顯示所有 normalskill ===
-        const skillIdsRaw = monsterElement.getAttribute("data-normalskill-id") || "";
-        const skillIds = skillIdsRaw.split(",").filter(id => id.trim() !== "");
-
-        const contentBlock = document.querySelector("#monsterInfoContent .content");
-        contentBlock.querySelectorAll(".info-row[data-skill='true']").forEach(e => e.remove());
-
-        skillIds.forEach((skillId, index) => {
-          let skillName = "無技能";
-          let skillDesc = "";
-          if (skilldesc[skillId]) {
-            skillName = skilldesc[skillId].name || "無名稱";
-            skillDesc = skilldesc[skillId].description || "";
-          }
-
-          const skillRow = document.createElement("div");
-          skillRow.className = "info-row";
-          skillRow.setAttribute("data-skill", "true");
-
-          const label = document.createElement("div");
-          label.className = "info-label";
-          label.textContent = skillIds.length > 1 ? `Normal Skill ${index + 1}` : "Normal Skill";
-
-          const value = document.createElement("div");
-          value.className = "info-value";
-          value.textContent = skillName;
-          value.title = skillDesc;
-
-          skillRow.appendChild(label);
-          skillRow.appendChild(value);
-          contentBlock.appendChild(skillRow);
-        });
-    
-
-			document.getElementById('monsterInfoModal').style.display = 'flex';
-		  } else {
-			alert("⚠️找不到怪物資料！");
-		  }
-		})
-		.catch(err => {
-		  console.error("載入 monster.json 發生錯誤：", err);
-		});
-	}
-
-
-	function closeModal() {
-	  document.getElementById("monsterInfoModal").style.display = "none";
-	}
-
-	document.querySelectorAll('.monster').forEach(monster => {
-	  monster.addEventListener('click', () => {
-		const id = monster.getAttribute('data-id');
-		fetchMonsterInfo(id, monster);
-	  });
-	});
+            skillRow.appendChild(label);
+            skillRow.appendChild(value);
+            contentBlock.appendChild(skillRow);
+          });
+        }
   </script>
   <script>
    function updateMonsterIcons(monsterElement, monster) {
