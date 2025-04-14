@@ -561,5 +561,15 @@
 	  monsterIdElement.appendChild(raceIcon);
 	}
   </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".monster").forEach(monster => {
+    monster.addEventListener("click", () => {
+      const monsterId = monster.getAttribute("data-id");
+      fetchMonsterInfo(monsterId, monster);
+    });
+  });
+});
+</script>
  </body>
 </html>
