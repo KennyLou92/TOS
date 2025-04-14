@@ -614,7 +614,15 @@
 
             const value = document.createElement("div");
             value.className = "info-value";
-            value.innerHTML = `<div style="text-align: left;"><strong>${skillName}</strong><br>${skillDesc}</div>`;
+            const nameLine = document.createElement("div");
+            nameLine.style.textAlign = "left";
+            nameLine.innerHTML = `<strong>${skillName}</strong>`;
+            const descLine = document.createElement("div");
+            descLine.style.textAlign = "left";
+            descLine.textContent = skillDesc;
+            value.innerHTML = "";
+            value.appendChild(nameLine);
+            value.appendChild(descLine);
 
             skillRow.appendChild(value);
             contentBlock.appendChild(skillRow);
