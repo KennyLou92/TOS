@@ -228,6 +228,12 @@
 	  text-align: center;  /* 讓數據居中顯示 */
 	}
 
+	.info-row[data-skill="true"] .info-value {
+	  width: auto;
+	  flex-grow: 1;
+	  text-align: left;
+	}
+
 	#monsterInfoContent button {
 	  margin-top: auto;
 	  padding: 10px 20px;
@@ -36473,29 +36479,26 @@
 				skillDesc = skilldesc[skillId].description || skilldesc[skillId].desc || '';
 			  }
 
-			  const skillRow = document.createElement('div');
-			  skillRow.className = 'info-row';
-			  skillRow.setAttribute('data-skill', 'true');
-			  skillRow.style.borderTop = '1px solid #ccc';
-			  skillRow.style.marginTop = '8px';
-			  paddingTop = '8px';
+				const skillRow = document.createElement('div');
+				skillRow.className = 'info-row';
+				skillRow.setAttribute('data-skill', 'true');
+				skillRow.style.borderTop = '1px solid #ccc';
+				skillRow.style.marginTop = '8px';
+				skillRow.style.paddingTop = '8px';
+				skillRow.style.alignItems = 'flex-start'; // 確保多行時對齊上方
 
-			  const value = document.createElement('div');
-			  value.className = 'info-value';
-			  value.style.textAlign = 'left';
-			  value.style.width = '100%'; // ✅ 新增這行
+				const label = document.createElement('div');
+				label.className = 'info-label';
+				label.textContent = skillName;
+				label.style.fontWeight = 'bold';
 
-			  const nameLine = document.createElement('div');
-			  nameLine.textContent = skillName;
-			  nameLine.style.fontWeight = 'bold';
+				const value = document.createElement('div');
+				value.className = 'info-value scrollable-desc';
+				value.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
 
-			  const descLine = document.createElement('div');
-			  descLine.className = 'scrollable-desc';
-			  descLine.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
-
-			  value.appendChild(nameLine);
-			  value.appendChild(descLine);
-			  skillRow.appendChild(value);
+				// 把 label 和 value 加進 skillRow
+				skillRow.appendChild(label);
+				skillRow.appendChild(value);
 
 			  recRow.insertAdjacentElement('afterend', skillRow);
 			});
