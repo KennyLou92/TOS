@@ -611,13 +611,11 @@
 
             const label = document.createElement("div");
             label.className = "info-label";
-            label.textContent = skillIds.length > 1 ? `Normal Skill ${index + 1}` : "Normal Skill";
 
             const value = document.createElement("div");
             value.className = "info-value";
-            value.innerHTML = `<div><strong>${skillName}</strong><br><span class="skill-desc">${skillDesc}</span></div>`;
+            value.innerHTML = `<div style="text-align: left;"><strong>${skillName}</strong><br>${skillDesc}</div>`;
 
-            skillRow.appendChild(label);
             skillRow.appendChild(value);
             contentBlock.appendChild(skillRow);
           });
