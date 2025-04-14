@@ -452,143 +452,26 @@
    </div>
   </div>
   <script>
-   let selectedAttributes = new Set();
-    let selectedRaces = new Set();
+   function fetchMonsterInfo(monsterId, monsterElement) {
+  fetch('monster.json')
+    .then(response => response.json())
+    .then(data => {
+      const monster = data.find(m => m.id === monsterId);
+      if (monster) {
+        const infoBlock = document.getElementById("monsterInfoContent");
+        infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`);
 
-    document.querySelectorAll(".dropdown").forEach(dropdown => {
-      const trigger = dropdown.querySelector(".dropdown-trigger");
-      const content = dropdown.querySelector(".dropdown-content");
+        updateMonsterIcons(monsterElement, monster);
 
-      trigger.addEventListener("click", () => {
-        content.classList.toggle("show");
-      });
-    });
+        document.getElementById('monsterHP').textContent = monster.HP;
+        document.getElementById('monsterATK').textContent = monster.ATK;
+        document.getElementById('monsterREC').textContent = monster.REC;
 
-    document.addEventListener("click", function(event) {
-      document.querySelectorAll(".dropdown-content").forEach(content => {
-        if (!content.parentElement.contains(event.target)) {
-          content.classList.remove("show");
-        }
-      });
-    });
+        document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
+        document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
+        document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
-    function updateSelectedIcons(containerId, selectedSet) {
-      const container = document.querySelector(`#${containerId} .selected-icons`);
-      const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
-      const label = document.querySelector(`#${containerId} .dropdown-button span`);
-      container.innerHTML = '';
-
-      selectedSet.forEach(value => {
-        items.forEach(item => {
-          if (item.dataset.value === value) {
-            const img = item.querySelector('img').cloneNode();
-            img.style.width = '20px';
-            img.style.height = '20px';
-            container.appendChild(img);
-          }
-        });
-      });
-      label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
-    }
-
-    document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
-      item.addEventListener('click', function () {
-        const value = this.getAttribute('data-value');
-        this.classList.toggle('selected');
-        selectedAttributes.has(value) ? selectedAttributes.delete(value) : selectedAttributes.add(value);
-        updateSelectedIcons('attributeDropdown', selectedAttributes);
-        filterMonsters();
-      });
-    });
-
-    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
-      item.addEventListener('click', function () {
-        const value = this.getAttribute('data-value');
-        this.classList.toggle('selected');
-        selectedRaces.has(value) ? selectedRaces.delete(value) : selectedRaces.add(value);
-        updateSelectedIcons('raceDropdown', selectedRaces);
-        filterMonsters();
-      });
-    });
-
-    function filterMonsters() {
-      const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
-      const monsters = document.querySelectorAll(".monster");
-
-      monsters.forEach(monster => {
-        const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
-        const id = monster.querySelector("div:nth-child(1)").textContent.toLowerCase();
-        const attribute = monster.getAttribute('data-attribute');
-        const race = monster.getAttribute('data-race');
-
-        const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
-        const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
-        const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
-
-        monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
-      });
-    }
-
-    document.getElementById("resetFilters").addEventListener("click", () => {
-      selectedAttributes.clear();
-      selectedRaces.clear();
-      document.querySelectorAll('.dropdown-item.selected').forEach(item => item.classList.remove('selected'));
-      document.querySelectorAll('.selected-icons').forEach(iconBox => iconBox.innerHTML = '');
-      document.getElementById("searchInput").value = '';
-      updateSelectedIcons('attributeDropdown', selectedAttributes);
-      updateSelectedIcons('raceDropdown', selectedRaces);
-      filterMonsters();
-    });
-
-    window.addEventListener('scroll', () => {
-      const scrollBtn = document.getElementById('scrollButtons');
-      scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
-    });
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function scrollToBottom() {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    }
-
-	const raceMapping = {
-	  1: 'human',
-	  2: 'animal',
-	  3: 'fairy',
-	  4: 'dragon',
-	  5: 'god',
-	  8: 'devil',
-	  10: 'mech',
-	};
-	const attributeMapping = {
-	  1: 'water',
-	  2: 'fire',
-	  3: 'earth',
-	  4: 'light',
-	  5: 'dark',
-	};
-	function fetchMonsterInfo(monsterId, monsterElement) {
-	  fetch('monster.json')
-		.then(response => response.json())
-		.then(data => {
-		  const monster = data.find(m => m.id === monsterId);
-		  if (monster) {
-			const infoBlock = document.getElementById("monsterInfoContent");
-			infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`);
-
-
-			// ✅ 呼叫新的圖示更新函式
-			updateMonsterIcons(monsterElement, monster);
-
-			document.getElementById('monsterHP').textContent = monster.HP;
-			document.getElementById('monsterATK').textContent = monster.ATK;
-			document.getElementById('monsterREC').textContent = monster.REC;
-
-			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
-			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
-			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+        // === 🌟 顯示所有 normalskill ===
         {
           let skillIdsRaw = monsterElement.getAttribute("data-normalskill-id") || "";
           let skillIds = skillIdsRaw.split(",").filter(id => id.trim() !== "");
@@ -622,6 +505,15 @@
             contentBlock.appendChild(skillRow);
           });
         }
+
+        document.getElementById('monsterInfoModal').style.display = 'flex';
+      } else {
+        alert("⚠️找不到怪物資料！");
+      }
+    })
+    .catch(err => {
+      console.error("載入 monster.json 發生錯誤：", err);
+    });
 }
   </script>
   <script>
