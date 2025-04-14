@@ -280,22 +280,6 @@
   width: 24px;
   height: 24px;
 }
-
-.scrollable-desc:hover {
-  overflow-y: auto;
-}
-
-/* 美化捲軸 */
-.scrollable-desc::-webkit-scrollbar {
-  width: 6px;
-}
-.scrollable-desc::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-.scrollable-desc::-webkit-scrollbar-track {
-  background-color: transparent;
-}
 .skill-desc.collapsed {
   max-height: 60px;
   overflow: hidden;
@@ -36524,17 +36508,16 @@
 				value.className = 'info-value';
 
 				const descLine = document.createElement('div');
-				descLine.className = 'skill-desc collapsed';  // ✅ 記得用這個
+				descLine.className = 'skill-desc collapsed';
 				descLine.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
 
+				// 🔁 正確綁定點擊事件
 				descLine.addEventListener('click', () => {
 				  descLine.classList.toggle('collapsed');
 				  descLine.classList.toggle('expanded');
 				});
 
 				value.appendChild(descLine);
-
-				value.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
 
 				// 把 label 和 value 加進 skillRow
 				skillRow.appendChild(label);
