@@ -588,6 +588,34 @@
 			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+            // 顯示技能（兩行排版）
+            const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
+            const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
+            const contentBlock = document.querySelector('#monsterInfoContent .content');
+            contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+            skillIds.forEach((skillId) => {
+              let skillName = '無技能';
+              let skillDesc = '';
+              if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
+                skillName = skilldesc[skillId].name || '無名稱';
+                skillDesc = skilldesc[skillId].description || skilldesc[skillId].desc || '';
+              }
+              const skillRow = document.createElement('div');
+              skillRow.className = 'info-row';
+              skillRow.setAttribute('data-skill', 'true');
+              const value = document.createElement('div');
+              value.className = 'info-value';
+              value.style.textAlign = 'left';
+              const nameLine = document.createElement('div');
+              nameLine.textContent = skillName;
+              nameLine.style.fontWeight = 'bold';
+              const descLine = document.createElement('div');
+              descLine.textContent = skillDesc;
+              value.appendChild(nameLine);
+              value.appendChild(descLine);
+              skillRow.appendChild(value);
+              contentBlock.appendChild(skillRow);
+            });
 
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
