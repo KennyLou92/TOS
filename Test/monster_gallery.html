@@ -280,13 +280,6 @@
   width: 24px;
   height: 24px;
 }
-.scrollable-desc {
-  max-height: 150px;
-  overflow-y: hidden;
-  white-space: normal;
-  line-height: 1.4;
-  transition: overflow 0.3s ease;
-}
 
 .scrollable-desc:hover {
   overflow-y: auto;
@@ -36528,7 +36521,19 @@
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
-				value.className = 'info-value scrollable-desc';
+				value.className = 'info-value';
+
+				const descLine = document.createElement('div');
+				descLine.className = 'skill-desc collapsed';  // ✅ 記得用這個
+				descLine.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
+
+				descLine.addEventListener('click', () => {
+				  descLine.classList.toggle('collapsed');
+				  descLine.classList.toggle('expanded');
+				});
+
+				value.appendChild(descLine);
+
 				value.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
 
 				// 把 label 和 value 加進 skillRow
