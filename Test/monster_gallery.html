@@ -36467,7 +36467,7 @@
 			  nameLine.style.fontWeight = 'bold';
 
 			  const descLine = document.createElement('div');
-			  descLine.textContent = skillDesc;
+			  descLine.innerHTML = (skillDesc || '').replace(/\n/g, '<br>');
 
 			  value.appendChild(nameLine);
 			  value.appendChild(descLine);
