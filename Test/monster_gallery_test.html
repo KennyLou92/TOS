@@ -4,25 +4,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
   <script src="skilldesc.js">
-   const attributeMapping = {
-  "1": "水",
-  "2": "火",
-  "3": "木",
-  "4": "光",
-  "5": "暗"
-};
-
-const raceMapping = {
-  "1": "人類",
-  "2": "獸類",
-  "3": "龍類",
-  "4": "神族",
-  "5": "魔族",
-  "6": "機械族",
-  "7": "妖精類",
-  "8": "強化素材",
-  "9": "進化素材"
-};
   </script>
   <title>
    神魔圖鑒
@@ -536,7 +517,27 @@ const raceMapping = {
 }
   </script>
   <script>
-   function updateMonsterIcons(monsterElement, monster) {
+   const attributeMapping = {
+  "1": "水",
+  "2": "火",
+  "3": "木",
+  "4": "光",
+  "5": "暗"
+};
+
+const raceMapping = {
+  "1": "人類",
+  "2": "獸類",
+  "3": "龍類",
+  "4": "神族",
+  "5": "魔族",
+  "6": "機械族",
+  "7": "妖精類",
+  "8": "強化素材",
+  "9": "進化素材"
+};
+
+function updateMonsterIcons(monsterElement, monster) {
 	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
 
@@ -579,16 +580,6 @@ const raceMapping = {
 	  monsterIdElement.appendChild(attributeIcon);
 	  monsterIdElement.appendChild(raceIcon);
 	}
-  </script>
-  <script>
-   document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".monster").forEach(monster => {
-    monster.addEventListener("click", () => {
-      const monsterId = monster.getAttribute("data-id");
-      fetchMonsterInfo(monsterId, monster);
-    });
-  });
-});
   </script>
  </body>
 </html>
