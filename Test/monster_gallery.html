@@ -179,6 +179,8 @@
 	  padding: 20px;
 	  border: 1px solid #888;
 	  width: 80%;
+	  max-height: 90vh;     /* 可選：限制最大高度 */
+	  overflow-y: auto;     /* 當內容真的太多可滾動 */
 	}
 
 	.close {
@@ -211,6 +213,8 @@
 	}
 	#monsterInfoContent .content {
 	  flex-grow: 1;  /* 使內容區域可以擴展，填滿剩餘空間 */
+	  height: auto;     /* ✅ 新增這行，確保會撐開高度 */
+	  overflow: visible; /* ✅ 讓裡面的內容正常顯示 */
 	}
 	.info-row {
 	  display: flex;
