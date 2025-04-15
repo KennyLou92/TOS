@@ -755,39 +755,36 @@
 	  }
 
 	  const monsterIdElement = document.getElementById('monsterID');
-	  monsterIdElement.innerHTML = ''; // 清空舊內容（避免多次 append）
-	  
-	  const nameText = document.createElement('span');
-	  nameText.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
-	  monsterIdElement.appendChild(nameText);
+		monsterIdElement.innerHTML = ''; // 清空舊內容（避免多次 append）
 
-	  const attributeIcon = document.createElement("img");
-	  attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
-	  attributeIcon.alt = "屬性圖示";
-	  attributeIcon.style.width = '24px';
-	  attributeIcon.style.height = '24px';
-	  attributeIcon.style.marginLeft = '8px';
-	  monsterIdElement.appendChild(attributeIcon);
-	  console.log("📷 attribute icon:", attributeIcon.src);
-	  
+		const nameText = document.createElement('span');
+		nameText.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+		monsterIdElement.appendChild(nameText);
 
-	  const raceIcon = document.createElement("img");
-	  // Use custom URLs for race 6 and 7
-	  if (raceId === 6) {
-		raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
-	  } else if (raceId === 7) {
-		raceIcon.src = 'https://i.postimg.cc/cKB6HhT3/level.png';
-	  } else {
-		raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
-	  }
+		const attributeIcon = document.createElement("img");
+		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
+		attributeIcon.alt = "屬性圖示";
+		attributeIcon.style.width = '24px';
+		attributeIcon.style.height = '24px';
+		attributeIcon.style.marginLeft = '8px';
 
-	  raceIcon.alt = "種族圖示";
-	  raceIcon.style.width = '24px';
-	  raceIcon.style.height = '24px';
-	  raceIcon.style.marginLeft = '4px';
-	  monsterIdElement.appendChild(raceIcon);
+		const raceIcon = document.createElement("img");
+		if (raceId === 6) {
+		  raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
+		} else if (raceId === 7) {
+		  raceIcon.src = 'https://i.postimg.cc/cKB6HhT3/level.png';
+		} else {
+		  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+		}
+		raceIcon.alt = "種族圖示";
+		raceIcon.style.width = '24px';
+		raceIcon.style.height = '24px';
+		raceIcon.style.marginLeft = '4px';
+
+		monsterIdElement.appendChild(attributeIcon);
+		monsterIdElement.appendChild(raceIcon);
+
 	  console.log("📷 race icon:", raceIcon.src);
-	  // Append the icons to the element
 	}
   </script>
 <script>
