@@ -808,56 +808,29 @@
       }
       return result;
     }
-	function decodeBoardToElement(base64) {
-	  const decoded = atob(base64);
-	  const type = decoded.charCodeAt(2);
-	  const data = decoded.slice(6);
-	  const board = (type === 1 ? decode1(data) : decode2(data));
-
-	  const table = document.createElement('table');
-	  let row;
-	  for (let i = 0; i < board.length; i++) {
-		if (i % 6 === 0) {
-		  row = document.createElement('tr');
-		  table.appendChild(row);
-		}
-		const td = document.createElement('td');
-		const img = document.createElement('img');
-
-		const index = board[i] + 1; // ✅ offset +1 對齊你的 icons[] 陣列
-		img.src = icons[index] || icons[0]; // ❗ fallback 空圖保險
-
-		img.style.width = '40px';
-		img.style.height = '40px';
-
-		td.appendChild(img);
-		row.appendChild(td);
-		console.log('index', board[i], 'src', icons[board[i]]);
-	  }
-	  return table;
+	
+	function parseSkillDesc(rawDesc) {
+	  return (rawDesc || '')
+		.replace(/\n/g, '<br>')
+		.replace(/\[board=(.*?)\](.*?)\[\/board\]/g, (match, code, label) => {
+		  return `<span class="board-hover" data-board="${code}">${label}</span>`;
+		});
 	}
-    function parseSkillDesc(rawDesc) {
-      let desc = rawDesc || '';
-      desc = desc.replace(/\n/g, '<br>');
-      desc = desc.replace(/\[board=(.*?)\](.*?)\[\/board\]/g, (match, code, label) => {
-        return `<span class="board-hover" data-board="${code}">${label}</span>`;
-      });
-      return desc;
-    }
-    function bindBoardHover() {
-      document.querySelectorAll('.board-hover').forEach(el => {
-        el.addEventListener('mouseenter', () => {
-          const code = el.dataset.board;
-          const tooltip = decodeBoardToElement(code);
-          tooltip.classList.add('board-tooltip');
-          el.appendChild(tooltip);
-        });
-        el.addEventListener('mouseleave', () => {
-          const tip = el.querySelector('.board-tooltip');
-          if (tip) tip.remove();
-        });
-      });
-    }
+
+	function bindBoardHover() {
+	  document.querySelectorAll('.board-hover').forEach(el => {
+		el.addEventListener('mouseenter', () => {
+		  const code = el.dataset.board;
+		  const tooltip = decodeBoardToElement(code);
+		  tooltip.classList.add('board-tooltip');
+		  el.appendChild(tooltip);
+		});
+		el.addEventListener('mouseleave', () => {
+		  const tip = el.querySelector('.board-tooltip');
+		  if (tip) tip.remove();
+		});
+	  });
+	}
 
     // 顯示 modal 的事件邏輯（略過原始，保留原邏輯）
     document.querySelectorAll('.monster').forEach(monster => {
