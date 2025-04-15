@@ -741,6 +741,8 @@
   <script>
    function updateMonsterIcons(monsterElement, monster) {
 	  console.log("✅ updateMonsterIcons 被執行了！");
+	  console.log("📷 attribute icon:", attributeIcon.src);
+	  console.log("📷 race icon:", raceIcon.src);
 	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
 
