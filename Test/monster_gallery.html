@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
  <head>
+ <script src="board.icons.js"></script>
+<script src="board.decoder.js"></script>
   <script src="skilldesc.js">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
@@ -820,7 +822,7 @@
         }
         const td = document.createElement('td');
         const img = document.createElement('img');
-        img.src = 'https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/' + board[i].toString().padStart(4, '0') + '.jpg';
+        img.src = icons[board[i]] || icons[0];
         img.style.width = '40px';
         img.style.height = '40px';
         td.appendChild(img);
