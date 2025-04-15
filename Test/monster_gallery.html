@@ -756,6 +756,7 @@
 
 	  const monsterIdElement = document.getElementById('monsterID');
 	  monsterIdElement.innerHTML = ''; // 清空舊內容（避免多次 append）
+	  
 	  const nameText = document.createElement('span');
 	  nameText.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 	  monsterIdElement.appendChild(nameText);
@@ -766,7 +767,7 @@
 	  attributeIcon.style.width = '24px';
 	  attributeIcon.style.height = '24px';
 	  attributeIcon.style.marginLeft = '8px';
-	  
+	  monsterIdElement.appendChild(attributeIcon);
 	  console.log("📷 attribute icon:", attributeIcon.src);
 	  
 
@@ -784,11 +785,9 @@
 	  raceIcon.style.width = '24px';
 	  raceIcon.style.height = '24px';
 	  raceIcon.style.marginLeft = '4px';
-	  
+	  monsterIdElement.appendChild(raceIcon);
 	  console.log("📷 race icon:", raceIcon.src);
 	  // Append the icons to the element
-	  monsterIdElement.appendChild(attributeIcon);
-	  monsterIdElement.appendChild(raceIcon);
 	}
   </script>
 <script>
