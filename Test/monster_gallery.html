@@ -36537,6 +36537,10 @@
 				console.log('原始描述:', skillDesc);
 				console.log('解析後:', parseSkillDesc(skillDesc));
 				descLine.innerHTML = parseSkillDesc(skillDesc);
+				value.appendChild(descLine);
+				skillRow.appendChild(label);
+				skillRow.appendChild(value);
+				recRow.insertAdjacentElement('afterend', skillRow);
 				bindBoardHover();
 
 				// 🔁 正確綁定點擊事件
