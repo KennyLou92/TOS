@@ -1482,40 +1482,39 @@
 	  const attributeName = attributeMapping[attributeId] || 'unknown';
 	  let raceName = raceMapping[raceId] || 'unknown';
 
-	  if (raceId === 6) {
-		raceName = 'evolve';
-	  } else if (raceId === 7) {
-		raceName = 'level';
-	  }
+	  if (raceId === 6) raceName = 'evolve';
+	  if (raceId === 7) raceName = 'level';
 
 	  const monsterIdElement = document.getElementById('monsterID');
-	  monsterIdElement.innerHTML = ''; // 清空整個內容（圖示 + 文字）
+	  monsterIdElement.innerHTML = ''; // 清空原本內容
 
-	  // 屬性圖示
-	  const attributeIcon = document.createElement("img");
+	  // 加入文字（先）
+	  const nameText = document.createTextNode(`${monster.id} ${monsterElement.getAttribute('data-name')} `);
+	  monsterIdElement.appendChild(nameText);
+
+	  // 加入屬性圖示
+	  const attributeIcon = document.createElement('img');
 	  attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
-	  attributeIcon.alt = "屬性圖示";
+	  attributeIcon.alt = attributeName;
+	  attributeIcon.title = attributeName;
 	  attributeIcon.style.width = '24px';
 	  attributeIcon.style.height = '24px';
+	  attributeIcon.style.marginLeft = '8px';
+	  monsterIdElement.appendChild(attributeIcon);
 
-	  // 種族圖示
-	  const raceIcon = document.createElement("img");
+	  // 加入種族圖示
+	  const raceIcon = document.createElement('img');
 	  raceIcon.src = (raceId === 6)
 		? 'https://i.postimg.cc/zbDvRhPc/evolve.png'
 		: (raceId === 7)
 		? 'https://i.postimg.cc/cKB6HhT3/level.png'
 		: `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
-	  raceIcon.alt = "種族圖示";
+	  raceIcon.alt = raceName;
+	  raceIcon.title = raceName;
 	  raceIcon.style.width = '24px';
 	  raceIcon.style.height = '24px';
 	  raceIcon.style.marginLeft = '4px';
-
-	  // 加入圖示 + 名稱文字
-	  monsterIdElement.appendChild(attributeIcon);
 	  monsterIdElement.appendChild(raceIcon);
-
-	  const nameText = document.createTextNode(` ${monster.id} ${monsterElement.getAttribute('data-name')}`);
-	  monsterIdElement.appendChild(nameText);
 	}
   </script>
   <script>
