@@ -1661,12 +1661,17 @@
 			const descLine = document.createElement('div');
 			descLine.className = 'skill-desc collapsed';
 			descLine.innerHTML = parseSkillDesc(skillDesc);
-			value.appendChild(descLine);
 
+			// ✅ 正確加上展開事件
+			descLine.addEventListener('click', () => {
+			  descLine.classList.toggle('collapsed');
+			  descLine.classList.toggle('expanded');
+			});
+
+			value.appendChild(descLine);
 			skillRow.appendChild(label);
 			skillRow.appendChild(value);
 			recRow.insertAdjacentElement('afterend', skillRow);
-
             });
             bindBoardHover();
             document.getElementById("monsterInfoModal").style.display = "flex";
