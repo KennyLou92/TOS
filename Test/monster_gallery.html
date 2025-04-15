@@ -729,14 +729,14 @@
 
 	function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
-	};
+	}
 
-//	document.querySelectorAll('.monster').forEach(monster => {
-//	  monster.addEventListener('click', () => {
-//		const id = monster.getAttribute('data-id');
-//		fetchMonsterInfo(id, monster);
-//	  });
-//	});
+	document.querySelectorAll('.monster').forEach(monster => {
+	  monster.addEventListener('click', () => {
+		const id = monster.getAttribute('data-id');
+		fetchMonsterInfo(id, monster);
+	  });
+	});
   </script>
   <script>
    function updateMonsterIcons(monsterElement, monster) {
@@ -862,7 +862,7 @@
             if (!monsterData) return;
             const infoBlock = document.getElementById("monsterInfoContent");
             infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${id}.jpg')`);
-            document.getElementById("monsterID").textContent = monster.getAttribute("data-name") + ` (ID: ${id})`;
+            //document.getElementById("monsterID").textContent = monster.getAttribute("data-name") + ` (ID: ${id})`;
             document.getElementById('monsterHP').textContent = monsterData.HP;
             document.getElementById('monsterATK').textContent = monsterData.ATK;
             document.getElementById('monsterREC').textContent = monsterData.REC;
