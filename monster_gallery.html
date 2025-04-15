@@ -36310,7 +36310,7 @@
     </div>
    </div>
   </div>
-  <div id="scrollButtons">
+   <div id="scrollButtons">
    <button onclick="scrollToTop()">
     <i class="fas fa-angle-up">
     </i>
@@ -36529,6 +36529,9 @@
 				const skillRow = document.createElement('div');
 				skillRow.className = 'skill-block';
 				skillRow.setAttribute('data-skill', 'true');
+				skillRow.style.marginTop = '8px';
+				skillRow.style.paddingTop = '8px';
+				skillRow.style.borderTop = '1px solid #ccc';
 
 				const skillNameDiv = document.createElement('div');
 				skillNameDiv.className = 'skill-name';
@@ -36745,11 +36748,10 @@
             document.getElementById('monsterATK1_2').textContent = Math.floor(monsterData.ATK * 1.2);
             document.getElementById('monsterREC1_2').textContent = Math.floor(monsterData.REC * 1.2);
 
-			// 清空舊技能
-			const contentBlock = document.querySelector('#monsterInfoContent .content');
-			contentBlock.querySelectorAll('[data-skill="true"]').forEach(e => e.remove());
-			const recRow = document.querySelector('#monsterREC1_2').closest('[data-skill]') || document.querySelector('#monsterREC1_2').closest('div');
-
+            // 清空舊技能
+            const contentBlock = document.querySelector('#monsterInfoContent .content');
+            contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+            const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
             // 顯示技能
             const skillIdsRaw = monster.getAttribute('data-normalskill-id') || '';
