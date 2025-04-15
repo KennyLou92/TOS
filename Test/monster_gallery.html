@@ -340,6 +340,15 @@
       width: 40px;
       height: 40px;
     }
+	.skill-block {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 4px;
+	  margin-bottom: 12px;
+	}
+	.skill-name {
+	  font-weight: bold;
+	}
   </style>
 </head>
 <body>
@@ -681,29 +690,26 @@
 			  }
 
 				const skillRow = document.createElement('div');
-				skillRow.className = 'info-row';
+				skillRow.className = 'skill-block';
 				skillRow.setAttribute('data-skill', 'true');
-				skillRow.style.borderTop = '1px solid #ccc';
 				skillRow.style.marginTop = '8px';
 				skillRow.style.paddingTop = '8px';
-				skillRow.style.alignItems = 'flex-start'; // 確保多行時對齊上方
+				skillRow.style.borderTop = '1px solid #ccc';
 
-				const label = document.createElement('div');
-				label.className = 'info-label';
-				label.textContent = skillName;
-				label.style.fontWeight = 'bold';
+				const skillNameDiv = document.createElement('div');
+				skillNameDiv.className = 'skill-name';
+				skillNameDiv.textContent = skillName;
 
-				const value = document.createElement('div');
-				value.className = 'info-value';
+				const skillDescDiv = document.createElement('div');
+				skillDescDiv.className = 'skill-desc collapsed';
+				skillDescDiv.innerHTML = parseSkillDesc(skillDesc);
+				skillDescDiv.addEventListener('click', () => {
+				  skillDescDiv.classList.toggle('collapsed');
+				  skillDescDiv.classList.toggle('expanded');
+				});
 
-				const descLine = document.createElement('div');
-				descLine.className = 'skill-desc collapsed';
-				console.log('原始描述:', skillDesc);
-				console.log('解析後:', parseSkillDesc(skillDesc));
-				descLine.innerHTML = parseSkillDesc(skillDesc);
-				value.appendChild(descLine);
-				skillRow.appendChild(label);
-				skillRow.appendChild(value);
+				skillRow.appendChild(skillNameDiv);
+				skillRow.appendChild(skillDescDiv);
 				recRow.insertAdjacentElement('afterend', skillRow);
 				bindBoardHover();
 
