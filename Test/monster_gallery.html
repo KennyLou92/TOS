@@ -756,7 +756,7 @@
 	  const monsterIdElement = document.getElementById('monsterID');
 	  monsterIdElement.innerHTML = ''; // 清空舊內容（避免多次 append）
 	  const nameText = document.createElement('span');
-	  monsterIdElement.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+	  nameText.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
 	  monsterIdElement.appendChild(nameText);
 
 	  const attributeIcon = document.createElement("img");
