@@ -1259,40 +1259,52 @@
 
 	  const attributeName = attributeMapping[attributeId] || 'unknown';
 	  let raceName = raceMapping[raceId] || 'unknown';
-
 	  if (raceId === 6) raceName = 'evolve';
 	  if (raceId === 7) raceName = 'level';
 
 	  const monsterIdElement = document.getElementById('monsterID');
 	  monsterIdElement.innerHTML = ''; // 清空原本內容
 
-	  // 加入文字（先）
-	  const nameText = document.createTextNode(`${monster.id} ${monsterElement.getAttribute('data-name')} `);
-	  monsterIdElement.appendChild(nameText);
+	  // 🔸 卡片 ID + 名稱（先放進 span）
+	  const idNameSpan = document.createElement('span');
+	  idNameSpan.textContent = `${monster.id} ${monsterElement.getAttribute('data-name')}`;
+	  monsterIdElement.appendChild(idNameSpan);
+
+	  // 🔸 圖示容器（flex 排在右側）
+	  const iconContainer = document.createElement('span');
+	  iconContainer.style.display = 'inline-flex';
+	  iconContainer.style.alignItems = 'center';
+	  iconContainer.style.gap = '4px';
+	  iconContainer.style.marginLeft = '10px';
 
 	  // 加入屬性圖示
-	  const attributeIcon = document.createElement('img');
-	  attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
-	  attributeIcon.alt = attributeName;
-	  attributeIcon.title = attributeName;
-	  attributeIcon.style.width = '24px';
-	  attributeIcon.style.height = '24px';
-	  attributeIcon.style.marginLeft = '8px';
-	  monsterIdElement.appendChild(attributeIcon);
+	  if (attributeId && attributeName !== 'unknown') {
+		const attributeIcon = document.createElement('img');
+		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
+		attributeIcon.alt = attributeName;
+		attributeIcon.title = attributeName;
+		attributeIcon.style.width = '24px';
+		attributeIcon.style.height = '24px';
+		iconContainer.appendChild(attributeIcon);
+	  }
 
 	  // 加入種族圖示
-	  const raceIcon = document.createElement('img');
-	  raceIcon.src = (raceId === 6)
-		? 'https://i.postimg.cc/zbDvRhPc/evolve.png'
-		: (raceId === 7)
-		? 'https://i.postimg.cc/cKB6HhT3/level.png'
-		: `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
-	  raceIcon.alt = raceName;
-	  raceIcon.title = raceName;
-	  raceIcon.style.width = '24px';
-	  raceIcon.style.height = '24px';
-	  raceIcon.style.marginLeft = '4px';
-	  monsterIdElement.appendChild(raceIcon);
+	  if (raceId && raceName !== 'unknown') {
+		const raceIcon = document.createElement('img');
+		raceIcon.src = (raceId === 6)
+		  ? 'https://i.postimg.cc/zbDvRhPc/evolve.png'
+		  : (raceId === 7)
+			? 'https://i.postimg.cc/cKB6HhT3/level.png'
+			: `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+		raceIcon.alt = raceName;
+		raceIcon.title = raceName;
+		raceIcon.style.width = '24px';
+		raceIcon.style.height = '24px';
+		iconContainer.appendChild(raceIcon);
+	  }
+
+	  // 加入圖示容器
+	  monsterIdElement.appendChild(iconContainer);
 	}
   </script>
   <script>
