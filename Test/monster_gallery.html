@@ -3,6 +3,8 @@
  <head>
   <script src="skilldesc.js">
   </script>
+  <script src="board.icons.js">
+  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
   <title>
@@ -36651,7 +36653,7 @@
         }
         const td = document.createElement('td');
         const img = document.createElement('img');
-        img.src = 'https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/' + board[i].toString().padStart(4, '0') + '.jpg';
+        img.src = 'data:image/png;base64,' + icons[board[i]];
         img.style.width = '40px';
         img.style.height = '40px';
         td.appendChild(img);
