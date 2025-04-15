@@ -729,14 +729,14 @@
 
 	function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
-	}
+	};
 
-	document.querySelectorAll('.monster').forEach(monster => {
-	  monster.addEventListener('click', () => {
-		const id = monster.getAttribute('data-id');
-		fetchMonsterInfo(id, monster);
-	  });
-	});
+//	document.querySelectorAll('.monster').forEach(monster => {
+//	  monster.addEventListener('click', () => {
+//		const id = monster.getAttribute('data-id');
+//		fetchMonsterInfo(id, monster);
+//	  });
+//	});
   </script>
   <script>
    function updateMonsterIcons(monsterElement, monster) {
