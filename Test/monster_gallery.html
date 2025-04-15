@@ -792,23 +792,56 @@
 	}
   </script>
 <script>
-    function decode1(data) {
-      const arr = [];
-      for (let i = 0; i < data.length; i++) {
-        arr.push(data.charCodeAt(i));
-      }
-      return arr;
-    }
-    function decode2(data) {
-      const result = [];
-      for (let i = 0; i < data.length; i += 2) {
-        const high = data.charCodeAt(i);
-        const low = data.charCodeAt(i + 1);
-        const value = high * 256 + low;
-        result.push(value);
-      }
-      return result;
-    }
+		function decode1(seq) {
+	  const board = new Array(30).fill(0);
+	  let i = 0;
+	  do {
+		const r = seq.charCodeAt(i++);
+		if (r < 1) continue;
+		let rpt = 0;
+		let a;
+		do {
+		  a = seq.charCodeAt(i++);
+		  let b = a & 127;
+		  let j = 7 * rpt;
+		  while (b > 0) {
+			if (b % 2) board[j] = r;
+			j++;
+			b = b >> 1;
+		  }
+		  rpt++;
+		} while (a & 128);
+	  } while (i < seq.length);
+	  return board;
+	}
+
+	function decode2(seq) {
+	  const c = [];
+	  let i = 0, rpt = 0;
+	  let a;
+	  do {
+		a = seq.charCodeAt(i++);
+		let b = a & 127;
+		let j = 7 * rpt;
+		while (b > 0) {
+		  if (b % 2 > 0) c.push(j);
+		  j++;
+		  b = b >> 1;
+		}
+		rpt++;
+	  } while (a & 128);
+
+	  const board = new Array(30).fill(0);
+	  let j = 0;
+	  do {
+		const r = seq.charCodeAt(i++);
+		if (r < 1) continue;
+		let l = seq.charCodeAt(i++);
+		while (l-- > 0) board[c[j++]] = r;
+	  } while (i < seq.length);
+	  return board;
+	}
+
     function decodeBoardToElement(base64) {
       const decoded = atob(base64);
       const type = decoded.charCodeAt(2);
