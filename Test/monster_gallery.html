@@ -838,6 +838,7 @@
       }
       return result;
     }
+<<<<<<< HEAD
 	function decodeBoardToElement(base64) {
 	  const decoded = atob(base64);
 	  const type = decoded.charCodeAt(2);
@@ -866,6 +867,30 @@
 	  return table;
 >>>>>>> parent of 3ad1f02 (Update monster_gallery.html)
 	}
+=======
+    function decodeBoardToElement(base64) {
+      const decoded = atob(base64);
+      const type = decoded.charCodeAt(2);
+      const data = decoded.slice(6);
+      const board = (type === 1 ? decode1(data) : decode2(data));
+      const table = document.createElement('table');
+      let row;
+      for (let i = 0; i < board.length; i++) {
+        if (i % 6 === 0) {
+          row = document.createElement('tr');
+          table.appendChild(row);
+        }
+        const td = document.createElement('td');
+        const img = document.createElement('img');
+        img.src = icons[board[i]] || icons[0];
+        img.style.width = '40px';
+        img.style.height = '40px';
+        td.appendChild(img);
+        row.appendChild(td);
+      }
+      return table;
+    }
+>>>>>>> parent of 43523ea (Update monster_gallery.html)
     function parseSkillDesc(rawDesc) {
       let desc = rawDesc || '';
       desc = desc.replace(/\n/g, '<br>');
