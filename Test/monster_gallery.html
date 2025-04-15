@@ -341,15 +341,6 @@
       width: 40px;
       height: 40px;
     }
-	.skill-block {
-	  display: flex;
-	  flex-direction: column;
-	  gap: 4px;
-	  margin-bottom: 12px;
-	}
-	.skill-name {
-	  font-weight: bold;
-	}
   </style>
  </head>
  <body>
@@ -1384,6 +1375,67 @@
 			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
 			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
 			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+<<<<<<< HEAD
+=======
+            // 顯示技能（兩行排版）
+            const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
+            const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
+            const contentBlock = document.querySelector('#monsterInfoContent .content');
+			contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+
+			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
+
+			skillIds.forEach((skillId) => {
+			  let skillName = '無技能';
+			  let skillDesc = '';
+			  if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
+				skillName = skilldesc[skillId].name || '無名稱';
+				skillDesc = skilldesc[skillId].description || skilldesc[skillId].desc || '';
+			  }
+
+				const skillRow = document.createElement('div');
+				skillRow.className = 'info-row';
+				skillRow.setAttribute('data-skill', 'true');
+				skillRow.style.borderTop = '1px solid #ccc';
+				skillRow.style.marginTop = '8px';
+				skillRow.style.paddingTop = '8px';
+				skillRow.style.alignItems = 'flex-start'; // 確保多行時對齊上方
+
+				const label = document.createElement('div');
+				label.className = 'info-label';
+				label.textContent = skillName;
+				label.style.fontWeight = 'bold';
+
+				const value = document.createElement('div');
+				value.className = 'info-value';
+
+				const descLine = document.createElement('div');
+				descLine.className = 'skill-desc collapsed';
+				console.log('原始描述:', skillDesc);
+				console.log('解析後:', parseSkillDesc(skillDesc));
+				descLine.innerHTML = parseSkillDesc(skillDesc);
+				value.appendChild(descLine);
+				skillRow.appendChild(label);
+				skillRow.appendChild(value);
+				recRow.insertAdjacentElement('afterend', skillRow);
+				bindBoardHover();
+
+				// 🔁 正確綁定點擊事件
+				descLine.addEventListener('click', () => {
+				  descLine.classList.toggle('collapsed');
+				  descLine.classList.toggle('expanded');
+				});
+
+				value.appendChild(descLine);
+
+				// 把 label 和 value 加進 skillRow
+				skillRow.appendChild(label);
+				skillRow.appendChild(value);
+
+			  recRow.insertAdjacentElement('afterend', skillRow);
+			});
+
+>>>>>>> parent of 9aa00ab (Update monster_gallery.html)
 
 			document.getElementById('monsterInfoModal').style.display = 'flex';
 		  } else {
