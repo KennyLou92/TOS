@@ -1307,6 +1307,56 @@
 	  monsterIdElement.appendChild(iconContainer);
 	}
   </script>
+ <script>
+document.querySelectorAll('.dropdown-button').forEach(button => {
+  button.addEventListener('click', function () {
+    const dropdown = this.nextElementSibling;
+    dropdown.classList.toggle('show');
+  });
+});
+
+document.querySelectorAll('.dropdown-item').forEach(item => {
+  item.addEventListener('click', function () {
+    const selectedValue = this.dataset.value;
+    const isAttribute = this.closest('#attributeContent');
+    const isRace = this.closest('#raceContent');
+    const selectedIcons = this.closest('.dropdown').querySelector('.selected-icons');
+    
+    // 移除已選的圖示
+    selectedIcons.innerHTML = '';
+    selectedIcons.appendChild(this.querySelector('img').cloneNode());
+
+    // 篩選怪物
+    filterMonsters();
+  });
+});
+
+function filterMonsters() {
+  const searchInput = document.getElementById('searchInput').value.trim();
+  const selectedAttribute = document.querySelector('#attributeContent .dropdown-item.selected')?.dataset.value;
+  const selectedRace = document.querySelector('#raceContent .dropdown-item.selected')?.dataset.value;
+
+  document.querySelectorAll('.monster').forEach(monster => {
+    const name = monster.dataset.name || '';
+    const id = monster.dataset.id || '';
+    const attr = monster.dataset.attribute || '';
+    const race = monster.dataset.race || '';
+
+    const matchesSearch = name.includes(searchInput) || id.includes(searchInput);
+    const matchesAttribute = !selectedAttribute || attr === selectedAttribute;
+    const matchesRace = !selectedRace || race === selectedRace;
+
+    monster.style.display = matchesSearch && matchesAttribute && matchesRace ? '' : 'none';
+  });
+}
+
+document.getElementById('resetFilters').addEventListener('click', () => {
+  document.getElementById('searchInput').value = '';
+  document.querySelectorAll('.selected-icons').forEach(iconBox => iconBox.innerHTML = '');
+  document.querySelectorAll('.dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  filterMonsters();
+});
+</script>
   <script>
    let selectedAttributes = new Set();
     let selectedRaces = new Set();
