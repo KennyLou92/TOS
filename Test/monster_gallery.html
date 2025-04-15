@@ -1373,6 +1373,10 @@
 			const infoBlock = document.getElementById("monsterInfoContent");
 			infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`);
 
+	function updateMonsterIcons(monsterElement, monster) {
+  const attributeId = parseInt(monster.attribute ?? monsterElement.getAttribute('data-attribute'), 10);
+  const raceId = parseInt(monster.race ?? monsterElement.getAttribute('data-race'), 10);
+  console.log("更新圖示：", attributeId, raceId);
 
 			// ✅ 呼叫新的圖示更新函式
 			updateMonsterIcons(monsterElement, monster);
