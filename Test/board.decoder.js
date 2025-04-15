@@ -54,7 +54,7 @@ function decodeBoardToElement(base64) {
     }
     const td = document.createElement('td');
     const img = document.createElement('img');
-    img.src = icons[board[i]];
+    img.src = icons[board[i]] || icons[0]; // 若圖示 index 錯，就用第 0 張預設圖
     img.style.width = '40px';
     img.style.height = '40px';
     td.appendChild(img);
