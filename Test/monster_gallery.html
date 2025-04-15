@@ -790,7 +790,6 @@
 	}
   </script>
 <script>
-<<<<<<< HEAD
 	function parseSkillDesc(rawDesc) {
 	  return (rawDesc || '')
 		.replace(/\n/g, '<br>')
@@ -820,7 +819,6 @@
 		  if (tip) tip.remove();
 		});
 	  });
-=======
     function decode1(data) {
       const arr = [];
       for (let i = 0; i < data.length; i++) {
@@ -838,7 +836,6 @@
       }
       return result;
     }
-<<<<<<< HEAD
 	function decodeBoardToElement(base64) {
 	  const decoded = atob(base64);
 	  const type = decoded.charCodeAt(2);
@@ -865,9 +862,7 @@
 		row.appendChild(td);
 	  }
 	  return table;
->>>>>>> parent of 3ad1f02 (Update monster_gallery.html)
 	}
-=======
     function decodeBoardToElement(base64) {
       const decoded = atob(base64);
       const type = decoded.charCodeAt(2);
@@ -890,7 +885,6 @@
       }
       return table;
     }
->>>>>>> parent of 43523ea (Update monster_gallery.html)
     function parseSkillDesc(rawDesc) {
       let desc = rawDesc || '';
       desc = desc.replace(/\n/g, '<br>');
