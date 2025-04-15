@@ -799,21 +799,28 @@
 	}
 
 	function bindBoardHover() {
-  document.querySelectorAll('.board-hover').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-	  console.log("🟡 hover detected!", el);
-      const code = el.dataset.board;
-      const tooltip = decodeBoardToElement(code);	  // <== 關鍵
-      console.log("🔍 decodeBoardToElement called!", base64);
-	  tooltip.classList.add('board-tooltip');
-      el.appendChild(tooltip);
-    });
-    el.addEventListener('mouseleave', () => {
-      const tip = el.querySelector('.board-tooltip');
-      if (tip) tip.remove();
-    });
-  });
-}
+	  document.querySelectorAll('.board-hover').forEach(el => {
+		el.addEventListener('mouseenter', () => {
+		  // 避免重複產生 tooltip
+		  if (el.querySelector('.board-tooltip')) return;
+
+		  const code = el.dataset.board;
+		  if (!code) return;
+
+		  const tooltip = decodeBoardToElement(code);
+		  if (tooltip) {
+			tooltip.classList.add('board-tooltip');
+			el.appendChild(tooltip);
+		  }
+		});
+
+		el.addEventListener('mouseleave', () => {
+		  const tip = el.querySelector('.board-tooltip');
+		  if (tip) tip.remove();
+		});
+	  });
+	}
+
 
     // 顯示 modal 的事件邏輯（略過原始，保留原邏輯）
     document.querySelectorAll('.monster').forEach(monster => {
