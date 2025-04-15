@@ -1475,14 +1475,13 @@
 	});
   </script>
   <script>
-   function updateMonsterIcons(monsterElement, monster) {
+	function updateMonsterIcons(monsterElement, monster) {
 	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
 
 	  const attributeName = attributeMapping[attributeId] || 'unknown';
-	  let raceName = raceMapping[raceId] || 'unknown'; // Use let here if needed
+	  let raceName = raceMapping[raceId] || 'unknown';
 
-	  // Handle race 6 and 7 explicitly
 	  if (raceId === 6) {
 		raceName = 'evolve';
 	  } else if (raceId === 7) {
@@ -1490,33 +1489,33 @@
 	  }
 
 	  const monsterIdElement = document.getElementById('monsterID');
-	  monsterIdElement.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+	  monsterIdElement.innerHTML = ''; // 清空整個內容（圖示 + 文字）
 
+	  // 屬性圖示
 	  const attributeIcon = document.createElement("img");
 	  attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
 	  attributeIcon.alt = "屬性圖示";
 	  attributeIcon.style.width = '24px';
 	  attributeIcon.style.height = '24px';
-	  attributeIcon.style.marginLeft = '8px';
 
+	  // 種族圖示
 	  const raceIcon = document.createElement("img");
-	  // Use custom URLs for race 6 and 7
-	  if (raceId === 6) {
-		raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
-	  } else if (raceId === 7) {
-		raceIcon.src = 'https://i.postimg.cc/cKB6HhT3/level.png';
-	  } else {
-		raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
-	  }
-
+	  raceIcon.src = (raceId === 6)
+		? 'https://i.postimg.cc/zbDvRhPc/evolve.png'
+		: (raceId === 7)
+		? 'https://i.postimg.cc/cKB6HhT3/level.png'
+		: `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
 	  raceIcon.alt = "種族圖示";
 	  raceIcon.style.width = '24px';
 	  raceIcon.style.height = '24px';
 	  raceIcon.style.marginLeft = '4px';
 
-	  // Append the icons to the element
+	  // 加入圖示 + 名稱文字
 	  monsterIdElement.appendChild(attributeIcon);
 	  monsterIdElement.appendChild(raceIcon);
+
+	  const nameText = document.createTextNode(` ${monster.id} ${monsterElement.getAttribute('data-name')}`);
+	  monsterIdElement.appendChild(nameText);
 	}
   </script>
   <script>
