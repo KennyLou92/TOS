@@ -2,7 +2,6 @@
 <html lang="zh-Hant">
  <head>
 <script src="board.icons.js"></script>
-<script src="board.decoder.js"></script>
 <script src="skilldesc.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
@@ -864,28 +863,6 @@
 	  }
 	  return table;
 	}
-    function decodeBoardToElement(base64) {
-      const decoded = atob(base64);
-      const type = decoded.charCodeAt(2);
-      const data = decoded.slice(6);
-      const board = (type === 1 ? decode1(data) : decode2(data));
-      const table = document.createElement('table');
-      let row;
-      for (let i = 0; i < board.length; i++) {
-        if (i % 6 === 0) {
-          row = document.createElement('tr');
-          table.appendChild(row);
-        }
-        const td = document.createElement('td');
-        const img = document.createElement('img');
-        img.src = icons[board[i]] || icons[0];
-        img.style.width = '40px';
-        img.style.height = '40px';
-        td.appendChild(img);
-        row.appendChild(td);
-      }
-      return table;
-    }
     function parseSkillDesc(rawDesc) {
       let desc = rawDesc || '';
       desc = desc.replace(/\n/g, '<br>');
