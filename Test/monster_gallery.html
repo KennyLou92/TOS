@@ -808,28 +808,33 @@
       }
       return result;
     }
-    function decodeBoardToElement(base64) {
-      const decoded = atob(base64);
-      const type = decoded.charCodeAt(2);
-      const data = decoded.slice(6);
-      const board = (type === 1 ? decode1(data) : decode2(data));
-      const table = document.createElement('table');
-      let row;
-      for (let i = 0; i < board.length; i++) {
-        if (i % 6 === 0) {
-          row = document.createElement('tr');
-          table.appendChild(row);
-        }
-        const td = document.createElement('td');
-        const img = document.createElement('img');
-        img.src = icons[board[i]] || icons[0];
-        img.style.width = '40px';
-        img.style.height = '40px';
-        td.appendChild(img);
-        row.appendChild(td);
-      }
-      return table;
-    }
+	function decodeBoardToElement(base64) {
+	  const decoded = atob(base64);
+	  const type = decoded.charCodeAt(2);
+	  const data = decoded.slice(6);
+	  const board = (type === 1 ? decode1(data) : decode2(data));
+
+	  const table = document.createElement('table');
+	  let row;
+	  for (let i = 0; i < board.length; i++) {
+		if (i % 6 === 0) {
+		  row = document.createElement('tr');
+		  table.appendChild(row);
+		}
+		const td = document.createElement('td');
+		const img = document.createElement('img');
+
+		const index = board[i] + 1; // ✅ offset +1 對齊你的 icons[] 陣列
+		img.src = icons[index] || icons[0]; // ❗ fallback 空圖保險
+
+		img.style.width = '40px';
+		img.style.height = '40px';
+
+		td.appendChild(img);
+		row.appendChild(td);
+	  }
+	  return table;
+	}
     function parseSkillDesc(rawDesc) {
       let desc = rawDesc || '';
       desc = desc.replace(/\n/g, '<br>');
