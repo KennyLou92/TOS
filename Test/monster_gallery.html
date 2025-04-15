@@ -36534,6 +36534,8 @@
 
 				const descLine = document.createElement('div');
 				descLine.className = 'skill-desc collapsed';
+				console.log('原始描述:', skillDesc);
+				console.log('解析後:', parseSkillDesc(skillDesc));
 				descLine.innerHTML = parseSkillDesc(skillDesc);
 				bindBoardHover();
 
