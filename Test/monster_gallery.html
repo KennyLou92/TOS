@@ -1423,20 +1423,6 @@
 				skillRow.appendChild(skillDescDiv);
 				recRow.insertAdjacentElement('afterend', skillRow);
 				bindBoardHover();
-
-				// 🔁 正確綁定點擊事件
-				descLine.addEventListener('click', () => {
-				  descLine.classList.toggle('collapsed');
-				  descLine.classList.toggle('expanded');
-				});
-
-				value.appendChild(descLine);
-
-				// 把 label 和 value 加進 skillRow
-				skillRow.appendChild(label);
-				skillRow.appendChild(value);
-
-			  recRow.insertAdjacentElement('afterend', skillRow);
 			});
 
 
