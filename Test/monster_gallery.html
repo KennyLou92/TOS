@@ -234,21 +234,25 @@
 	  text-align: center;  /* 讓數據居中顯示 */
 	}
 
-	.info-row[data-skill="true"] .info-value {
-	  display:flex;
-	  text-align: left;
+	/* 🔧 修正技能上下排列的樣式 */
+	.info-row[data-skill="true"] {
+	  display: flex;
 	  flex-direction: column;
 	  align-items: flex-start;
-	  margin-top: 12px;
-	}
-	
-	.info-label {
-	font-weight: bold;
-	margin-bottom: 4px;
+	  margin-top: 16px;
+	  gap: 4px;
 	}
 
-	.info-value {
-	margin-left: 0;
+	.info-row[data-skill="true"] .info-label {
+	  font-weight: bold;
+	  font-size: 16px;
+	  margin: 0;
+	}
+
+	.info-row[data-skill="true"] .info-value {
+	  margin-left: 0;
+	  width: 100%;
+	  text-align: left;
 	}
 
 	#monsterInfoContent button {
@@ -1644,29 +1648,25 @@
               const skillName = skill?.name || '無名稱';
               const skillDesc = skill?.description || skill?.desc || '';
               const skillRow = document.createElement('div');
-              skillRow.className = 'info-row';
-              skillRow.setAttribute('data-skill', 'true');
-              skillRow.style.borderTop = '1px solid #ccc';
-              skillRow.style.marginTop = '8px';
-              skillRow.style.paddingTop = '8px';
-              skillRow.style.alignItems = 'flex-start';
-              const label = document.createElement('div');
-              label.className = 'info-label';
-              label.textContent = skillName;
-              label.style.fontWeight = 'bold';
-              const value = document.createElement('div');
-              value.className = 'info-value';
-              const descLine = document.createElement('div');
-              descLine.className = 'skill-desc collapsed';
-              descLine.innerHTML = parseSkillDesc(skillDesc);
-              descLine.addEventListener('click', () => {
-                descLine.classList.toggle('collapsed');
-                descLine.classList.toggle('expanded');
-              });
-              value.appendChild(descLine);
-              skillRow.appendChild(label);
-              skillRow.appendChild(value);
-              recRow.insertAdjacentElement('afterend', skillRow);
+			skillRow.className = 'info-row';
+			skillRow.setAttribute('data-skill', 'true');
+
+			const label = document.createElement('div');
+			label.className = 'info-label';
+			label.textContent = skillName;
+
+			const value = document.createElement('div');
+			value.className = 'info-value';
+
+			const descLine = document.createElement('div');
+			descLine.className = 'skill-desc collapsed';
+			descLine.innerHTML = parseSkillDesc(skillDesc);
+			value.appendChild(descLine);
+
+			skillRow.appendChild(label);
+			skillRow.appendChild(value);
+			recRow.insertAdjacentElement('afterend', skillRow);
+
             });
             bindBoardHover();
             document.getElementById("monsterInfoModal").style.display = "flex";
