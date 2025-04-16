@@ -689,7 +689,7 @@
 
 			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
-			skillIds.forEach((skillId) => {
+			skillIds.reverse().forEach((skillId) => {
 			  let skillName = '無技能';
 			  let skillDesc = '';
 			  if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
