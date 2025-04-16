@@ -840,6 +840,7 @@
 	function decodeBoardToElement(base64) {
   const decoded = atob(base64);
   const type = decoded.charCodeAt(2);
+  console.log("🔍 base64 類型 =", type);
   const data = decoded.slice(6);
   const board = (type === 1 ? decode1(data) : decode2(data));
 
