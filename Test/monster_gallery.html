@@ -841,7 +841,8 @@
 	  const type = decoded.charCodeAt(2);
 	  const data = decoded.slice(6);
 	  const board = (type === 1 ? decode1(data) : decode2(data));
-
+	  // ✅ 在這裡 log 出解析後的 index 陣列
+	  console.log("🧩 board 解碼結果：", board);
 	  const table = document.createElement('table');
 	  let row;
 	  for (let i = 0; i < board.length; i++) {
