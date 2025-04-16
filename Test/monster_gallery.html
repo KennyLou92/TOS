@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
  <head>
 <script src="board.icons.js"></script>
+<script src="board.decoder.js"></script>
 <script src="skilldesc.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
@@ -843,43 +844,6 @@
 	  });
 	 }
 	 
-function decode1(data) {
-  const board = Array(30).fill(0);
-  let i = 0;
-  while (i < data.length) {
-    const r = data.charCodeAt(i); i++;
-    let rpt = 0;
-    while (true) {
-      const a = data.charCodeAt(i); i++;
-      const b = a & 127;
-      let j = 7 * rpt;
-      let bb = b;
-      while (bb > 0) {
-        if (bb % 2 === 1) board[j] = r;
-        j++;
-        bb = Math.floor(bb / 2);
-      }
-      rpt++;
-      if ((a & 128) === 0) break;
-    }
-  }
-  return board;
-}
-
-function decode2(data) {
-  const result = [];
-  for (let i = 0; i < 45; i += 3) {
-    const v1 = data.charCodeAt(i);
-    const v2 = data.charCodeAt(i + 1);
-    const v3 = data.charCodeAt(i + 2);
-    result.push((v1 & 252) >> 2);
-    result.push(((v1 & 3) << 4) | ((v2 & 240) >> 4));
-    result.push(((v2 & 15) << 2) | ((v3 & 192) >> 6));
-    result.push(v3 & 63);
-  }
-  return result.slice(0, 30);
-}
-
 function decodeBoardToElement(base64) {
   const decoded = atob(base64);
   const type = decoded.charCodeAt(2);
