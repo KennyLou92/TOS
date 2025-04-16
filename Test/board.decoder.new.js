@@ -50,20 +50,19 @@ function decodeBoardToElement(base64) {
   });
 
   const table = document.createElement('table');
-  let row;
-  for (let i = 0; i < board.length; i++) {
-    if (i % 6 === 0) {
-      row = document.createElement('tr');
-      table.appendChild(row);
+  for (let y = 4; y >= 0; y--) {
+    const row = document.createElement('tr');
+    table.appendChild(row);
+    for (let x = 0; x < 6; x++) {
+      const index = y * 6 + x;
+      const td = document.createElement('td');
+      const img = document.createElement('img');
+      img.src = icons[board[index]] || icons[1];
+      img.style.width = '40px';
+      img.style.height = '40px';
+      td.appendChild(img);
+      row.appendChild(td);
     }
-    const td = document.createElement('td');
-    const img = document.createElement('img');
-    const index = board[i];
-    img.src = icons[index] || icons[1];  // fallback 為 icons[1]
-    img.style.width = '40px';
-    img.style.height = '40px';
-    td.appendChild(img);
-    row.appendChild(td);
   }
   return table;
 }
