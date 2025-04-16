@@ -2,7 +2,6 @@
 <html lang="zh-Hant">
  <head>
 <script src="board.icons.js"></script>
-<script src="board.decoder.js"></script>
 <script src="skilldesc.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
@@ -340,11 +339,6 @@
       width: 40px;
       height: 40px;
     }
-	.skill-name {
-	  margin-bottom: 4px;
-	  color: #333;
-	  font-size: 15px;
-	}
   </style>
 </head>
 <body>
@@ -459,24 +453,6 @@
      水元素賢者莫莉
     </div>
    </div>
-   <div class="monster" data-attribute="5" data-id="10857" data-name="愛蜜莉雅與帕克" data-normalskill-id="4874,4875" data-race="3">
-    <div>
-     10857
-    </div>
-    <img alt="10857" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10857.jpg"/>
-    <div>
-     愛蜜莉雅與帕克
-    </div>
-   </div>
-   <div class="monster" data-attribute="1" data-id="10874" data-name="命運歡樂頌 ‧ 貝多芬" data-normalskill-id="4957" data-race="5">
-    <div>
-     10874
-    </div>
-    <img alt="10874" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10874.jpg"/>
-    <div>
-     命運歡樂頌 ‧ 貝多芬
-    </div>
-   </div>
    <div class="monster" data-attribute="5" data-id="10887" data-name="正道鐵律 ‧ 蓋倫" data-normalskill-id="4972" data-race="1">
     <div>
      10887
@@ -486,7 +462,7 @@
      正道鐵律 ‧ 蓋倫
     </div>
    </div>
-   </div>
+  </div>
   <div id="scrollButtons">
    <button onclick="scrollToTop()">
     <i class="fas fa-angle-up">
@@ -843,39 +819,7 @@
 		});
 	  });
 	 }
-	 
-function decodeBoardToElement(base64) {
-  const decoded = atob(base64);
-  const type = decoded.charCodeAt(2);
-  const data = decoded.slice(6);
-  const board = (type === 1 ? decode1(data) : decode2(data));
-
-  console.log("🔍 board type =", type);
-  console.log("🧩 解出棋盤 index：", board);
-
-  board.forEach((val, i) => {
-    const index = val;
-    console.log(`第 ${i + 1} 格: board=${val}, 使用 icons[${index}]`, icons[index] ? "✅ OK" : "❌ 缺圖");
-  });
-
-  const table = document.createElement('table');
-  let row;
-  for (let i = 0; i < board.length; i++) {
-    if (i % 6 === 0) {
-      row = document.createElement('tr');
-      table.appendChild(row);
-    }
-    const td = document.createElement('td');
-    const img = document.createElement('img');
-    const index = board[i];
-    img.src = icons[index] || icons[1]; // fallback 空圖
-    img.style.width = '40px';
-    img.style.height = '40px';
-    td.appendChild(img);
-    row.appendChild(td);
-  }
-  return table;
-}
+    
 
 
     // 顯示 modal 的事件邏輯（略過原始，保留原邏輯）
@@ -917,26 +861,21 @@ function decodeBoardToElement(base64) {
               skillRow.style.marginTop = '8px';
               skillRow.style.paddingTop = '8px';
               skillRow.style.alignItems = 'flex-start';
-			const value = document.createElement('div');
-			value.className = 'info-value';
-			value.style.flexDirection = 'column'; // 額外保險讓內容垂直排列
-
-			const skillTitle = document.createElement('div');
-			skillTitle.className = 'skill-name';
-			skillTitle.textContent = skillName;
-			skillTitle.style.fontWeight = 'bold';
-
-			const descLine = document.createElement('div');
-			descLine.className = 'skill-desc collapsed';
-			descLine.innerHTML = parseSkillDesc(skillDesc);
-			descLine.addEventListener('click', () => {
-			  descLine.classList.toggle('collapsed');
-			  descLine.classList.toggle('expanded');
-			});
-
-			value.appendChild(skillTitle);
-			value.appendChild(descLine);
-
+              const label = document.createElement('div');
+              label.className = 'info-label';
+              label.textContent = skillName;
+              label.style.fontWeight = 'bold';
+              const value = document.createElement('div');
+              value.className = 'info-value';
+              const descLine = document.createElement('div');
+              descLine.className = 'skill-desc collapsed';
+              descLine.innerHTML = parseSkillDesc(skillDesc);
+              descLine.addEventListener('click', () => {
+                descLine.classList.toggle('collapsed');
+                descLine.classList.toggle('expanded');
+              });
+              value.appendChild(descLine);
+              skillRow.appendChild(label);
               skillRow.appendChild(value);
               recRow.insertAdjacentElement('afterend', skillRow);
             });
@@ -950,5 +889,6 @@ function decodeBoardToElement(base64) {
       document.getElementById("monsterInfoModal").style.display = "none";
     }
   </script>
+  <script src="board.decoder.js"></script>
 </body>
 </html>
