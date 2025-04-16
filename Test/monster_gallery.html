@@ -339,6 +339,11 @@
       width: 40px;
       height: 40px;
     }
+	.skill-name {
+	  margin-bottom: 4px;
+	  color: #333;
+	  font-size: 15px;
+	}
   </style>
 </head>
 <body>
@@ -930,21 +935,26 @@ function decodeBoardToElement(base64) {
               skillRow.style.marginTop = '8px';
               skillRow.style.paddingTop = '8px';
               skillRow.style.alignItems = 'flex-start';
-              const label = document.createElement('div');
-              label.className = 'info-label';
-              label.textContent = skillName;
-              label.style.fontWeight = 'bold';
-              const value = document.createElement('div');
-              value.className = 'info-value';
-              const descLine = document.createElement('div');
-              descLine.className = 'skill-desc collapsed';
-              descLine.innerHTML = parseSkillDesc(skillDesc);
-              descLine.addEventListener('click', () => {
-                descLine.classList.toggle('collapsed');
-                descLine.classList.toggle('expanded');
-              });
-              value.appendChild(descLine);
-              skillRow.appendChild(label);
+			const value = document.createElement('div');
+			value.className = 'info-value';
+			value.style.flexDirection = 'column'; // 額外保險讓內容垂直排列
+
+			const skillTitle = document.createElement('div');
+			skillTitle.className = 'skill-name';
+			skillTitle.textContent = skillName;
+			skillTitle.style.fontWeight = 'bold';
+
+			const descLine = document.createElement('div');
+			descLine.className = 'skill-desc collapsed';
+			descLine.innerHTML = parseSkillDesc(skillDesc);
+			descLine.addEventListener('click', () => {
+			  descLine.classList.toggle('collapsed');
+			  descLine.classList.toggle('expanded');
+			});
+
+			value.appendChild(skillTitle);
+			value.appendChild(descLine);
+
               skillRow.appendChild(value);
               recRow.insertAdjacentElement('afterend', skillRow);
             });
