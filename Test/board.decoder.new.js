@@ -60,23 +60,22 @@ function decodeBoardToElement(base64, icons) {
     console.log("🧩 解出棋盤 index：", board);
 
     const table = document.createElement('table');
-    let row;
-    for (let i = 0; i < board.length; i++) {
-      if (i % 6 === 0) {
-        row = document.createElement('tr');
-        table.insertBefore(row, table.firstChild); // 下→上排列
+    for (let y = 4; y >= 0; y--) {
+      const row = document.createElement('tr');
+      table.appendChild(row);
+      for (let x = 0; x < 6; x++) {
+        const index = y * 6 + x;
+        const td = document.createElement('td');
+        const img = document.createElement('img');
+        const boardIndex = board[index];
+        console.log(`第 ${index + 1} 格: board=${boardIndex}, 使用 icons[${boardIndex}]`, icons?.[boardIndex] ? "✅ OK" : "❌ 缺圖");
+        img.src = (icons && icons[boardIndex]) || (icons && icons[0]) || "";
+        img.style.width = '40px';
+        img.style.height = '40px';
+        td.appendChild(img);
+        row.appendChild(td);
       }
-      const td = document.createElement('td');
-      const img = document.createElement('img');
-      const index = board[i];
-      console.log(`第 ${i + 1} 格: board=${index}, 使用 icons[${index}]`, icons[index] ? "✅ OK" : "❌ 缺圖");
-      img.src = icons[index] || icons[0];
-      img.style.width = '40px';
-      img.style.height = '40px';
-      td.appendChild(img);
-      row.appendChild(td);
     }
-
     return table;
   } catch (err) {
     console.error("❌ decodeBoardToElement error:", err);
