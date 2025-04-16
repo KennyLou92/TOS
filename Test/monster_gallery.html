@@ -819,13 +819,27 @@
 		});
 	  });
 	 }
-    function decode1(data) {
-      const arr = [];
-      for (let i = 0; i < data.length; i++) {
-        arr.push(data.charCodeAt(i));
-      }
-      return arr;
-    }
+	 
+	function decode1(data) {
+	  const result = new Array(30).fill(0);
+	  let cursor = 0;
+	  for (let i = 0; i < data.length; i++) {
+		const r = data.charCodeAt(i);
+		const len = data.charCodeAt(i + 1);
+		i += 2;
+		for (let j = 0; j < len; j++) {
+		  const byte = data.charCodeAt(i + j);
+		  for (let k = 0; k < 8; k++) {
+			if (cursor >= 30) break;
+			if ((byte >> k) & 1) result[cursor] = r;
+			cursor++;
+		  }
+		}
+		i += len - 1;
+	  }
+	  return result;
+	}
+
     function decode2(data) {
       const result = [];
       for (let i = 0; i < data.length; i += 2) {
