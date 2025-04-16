@@ -68,8 +68,9 @@ function decodeBoardToElement(base64, icons) {
         const td = document.createElement('td');
         const img = document.createElement('img');
         const boardIndex = board[index];
-        console.log(`第 ${index + 1} 格: board=${boardIndex}, 使用 icons[${boardIndex}]`, icons?.[boardIndex] ? "✅ OK" : "❌ 缺圖");
-        img.src = (icons && icons[boardIndex]) || (icons && icons[0]) || "";
+        const iconKey = String(boardIndex);
+        console.log(`第 ${index + 1} 格: board=${boardIndex}, 使用 icons[${iconKey}]`, icons[iconKey] ? "✅ OK" : "❌ 缺圖");
+        img.src = (icons && icons[iconKey]) || (icons && icons["0"]) || "";
         img.style.width = '40px';
         img.style.height = '40px';
         td.appendChild(img);
