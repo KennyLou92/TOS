@@ -46,7 +46,7 @@ function decodeBoardToElement(base64) {
 
   board.forEach((val, i) => {
     const index = val;
-    console.log(\`第 \${i + 1} 格: board=\${val}, 使用 icons[\${index}]\`, icons[index] ? "✅ OK" : "❌ 缺圖");
+    console.log("第 " + (i + 1) + " 格: board=" + val + ", 使用 icons[" + index + "]", icons[index] ? "✅ OK" : "❌ 缺圖");
   });
 
   const table = document.createElement('table');
