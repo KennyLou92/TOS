@@ -880,7 +880,7 @@ function decodeBoardToElement(base64) {
     }
     const td = document.createElement('td');
     const img = document.createElement('img');
-    const index = board[i] + 1;
+    const index = board[i];
     img.src = icons[index] || icons[0]; // fallback 空圖
     img.style.width = '40px';
     img.style.height = '40px';
