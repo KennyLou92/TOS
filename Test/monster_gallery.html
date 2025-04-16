@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="zh-Hant">
- <head>
+<head>
 <script src="board.icons.js"></script>
 <script src="skilldesc.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <meta charset="utf-8"/>
-  <title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>
    神魔圖鑒
   </title>
-  <style>
+<style>
    body {
       font-family: sans-serif;
       margin: 0;
@@ -342,208 +343,208 @@
   </style>
 </head>
 <body>
-  <div class="search-bar-wrapper">
-   <div class="search-bar">
-    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
-   </div>
-   <!-- 屬性 -->
-   <div class="dropdown" id="attributeDropdown">
-    <div class="dropdown-button dropdown-trigger">
-     <div class="selected-icons">
-     </div>
-     <span>
+<div class="search-bar-wrapper">
+<div class="search-bar">
+<input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+</div>
+<!-- 屬性 -->
+<div class="dropdown" id="attributeDropdown">
+<div class="dropdown-button dropdown-trigger">
+<div class="selected-icons">
+</div>
+<span>
       屬性
      </span>
-    </div>
-    <div class="dropdown-content" id="attributeContent">
-     <div class="dropdown-item" data-value="1">
-      <img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png"/>
-     </div>
-     <div class="dropdown-item" data-value="2">
-      <img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png"/>
-     </div>
-     <div class="dropdown-item" data-value="3">
-      <img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png"/>
-     </div>
-     <div class="dropdown-item" data-value="4">
-      <img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png"/>
-     </div>
-     <div class="dropdown-item" data-value="5">
-      <img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png"/>
-     </div>
-    </div>
-   </div>
-   <!-- 種族 -->
-   <div class="dropdown" id="raceDropdown">
-    <div class="dropdown-button dropdown-trigger">
-     <div class="selected-icons">
-     </div>
-     <span>
+</div>
+<div class="dropdown-content" id="attributeContent">
+<div class="dropdown-item" data-value="1">
+<img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png"/>
+</div>
+<div class="dropdown-item" data-value="2">
+<img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png"/>
+</div>
+<div class="dropdown-item" data-value="3">
+<img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png"/>
+</div>
+<div class="dropdown-item" data-value="4">
+<img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png"/>
+</div>
+<div class="dropdown-item" data-value="5">
+<img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png"/>
+</div>
+</div>
+</div>
+<!-- 種族 -->
+<div class="dropdown" id="raceDropdown">
+<div class="dropdown-button dropdown-trigger">
+<div class="selected-icons">
+</div>
+<span>
       種族
      </span>
-    </div>
-    <div class="dropdown-content" id="raceContent">
-     <div class="dropdown-item" data-value="1">
-      <img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png"/>
-     </div>
-     <div class="dropdown-item" data-value="2">
-      <img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png"/>
-     </div>
-     <div class="dropdown-item" data-value="3">
-      <img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png"/>
-     </div>
-     <div class="dropdown-item" data-value="4">
-      <img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png"/>
-     </div>
-     <div class="dropdown-item" data-value="5">
-      <img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png"/>
-     </div>
-     <div class="dropdown-item" data-value="8">
-      <img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png"/>
-     </div>
-     <div class="dropdown-item" data-value="10">
-      <img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png"/>
-     </div>
-     <div class="dropdown-item" data-value="6">
-      <img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png"/>
-     </div>
-     <div class="dropdown-item" data-value="7">
-      <img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png"/>
-     </div>
-    </div>
-   </div>
-   <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">
-    <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
-   </button>
-  </div>
-  <div class="gallery" id="monsterGallery">
-   <div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-normalskill-id="80" data-race="1">
-    <div>
+</div>
+<div class="dropdown-content" id="raceContent">
+<div class="dropdown-item" data-value="1">
+<img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png"/>
+</div>
+<div class="dropdown-item" data-value="2">
+<img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png"/>
+</div>
+<div class="dropdown-item" data-value="3">
+<img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png"/>
+</div>
+<div class="dropdown-item" data-value="4">
+<img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png"/>
+</div>
+<div class="dropdown-item" data-value="5">
+<img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png"/>
+</div>
+<div class="dropdown-item" data-value="8">
+<img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png"/>
+</div>
+<div class="dropdown-item" data-value="10">
+<img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png"/>
+</div>
+<div class="dropdown-item" data-value="6">
+<img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png"/>
+</div>
+<div class="dropdown-item" data-value="7">
+<img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png"/>
+</div>
+</div>
+</div>
+<button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">
+<img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
+</button>
+</div>
+<div class="gallery" id="monsterGallery">
+<div class="monster" data-attribute="1" data-id="0001" data-name="莫莉" data-normalskill-id="80" data-race="1">
+<div>
      0001
     </div>
-    <img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
-    <div>
+<img alt="0001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0001.jpg"/>
+<div>
      莫莉
     </div>
-   </div>
-   <div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-normalskill-id="80" data-race="1">
-    <div>
+</div>
+<div class="monster" data-attribute="1" data-id="0002" data-name="高級水術士莫莉" data-normalskill-id="80" data-race="1">
+<div>
      0002
     </div>
-    <img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg"/>
-    <div>
+<img alt="0002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0002.jpg"/>
+<div>
      高級水術士莫莉
     </div>
-   </div>
-   <div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-normalskill-id="80" data-race="1">
-    <div>
+</div>
+<div class="monster" data-attribute="1" data-id="0003" data-name="水魔法師莫莉" data-normalskill-id="80" data-race="1">
+<div>
      0003
     </div>
-    <img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg"/>
-    <div>
+<img alt="0003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0003.jpg"/>
+<div>
      水魔法師莫莉
     </div>
-   </div>
-   <div class="monster" data-attribute="1" data-id="0004" data-name="水元素賢者莫莉" data-normalskill-id="104" data-race="1">
-    <div>
+</div>
+<div class="monster" data-attribute="1" data-id="0004" data-name="水元素賢者莫莉" data-normalskill-id="104" data-race="1">
+<div>
      0004
     </div>
-    <img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg"/>
-    <div>
+<img alt="0004" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/0004.jpg"/>
+<div>
      水元素賢者莫莉
     </div>
-   </div>
-      <div class="monster" data-attribute="5" data-id="10857" data-name="愛蜜莉雅與帕克" data-normalskill-id="4874,4875" data-race="3">
-    <div>
+</div>
+<div class="monster" data-attribute="5" data-id="10857" data-name="愛蜜莉雅與帕克" data-normalskill-id="4874,4875" data-race="3">
+<div>
      10857
     </div>
-    <img alt="10857" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10857.jpg"/>
-    <div>
+<img alt="10857" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10857.jpg"/>
+<div>
      愛蜜莉雅與帕克
     </div>
-   </div>
-   <div class="monster" data-attribute="1" data-id="10874" data-name="命運歡樂頌 ‧ 貝多芬" data-normalskill-id="4957" data-race="5">
-    <div>
+</div>
+<div class="monster" data-attribute="1" data-id="10874" data-name="命運歡樂頌 ‧ 貝多芬" data-normalskill-id="4957" data-race="5">
+<div>
      10874
     </div>
-    <img alt="10874" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10874.jpg"/>
-    <div>
+<img alt="10874" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10874.jpg"/>
+<div>
      命運歡樂頌 ‧ 貝多芬
     </div>
-   </div>
-   <div class="monster" data-attribute="5" data-id="10887" data-name="正道鐵律 ‧ 蓋倫" data-normalskill-id="4972" data-race="1">
-    <div>
+</div>
+<div class="monster" data-attribute="5" data-id="10887" data-name="正道鐵律 ‧ 蓋倫" data-normalskill-id="4972" data-race="1">
+<div>
      10887
     </div>
-    <img alt="10887" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10887.jpg"/>
-    <div>
+<img alt="10887" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10887.jpg"/>
+<div>
      正道鐵律 ‧ 蓋倫
     </div>
-   </div>
-  </div>
-  <div id="scrollButtons">
-   <button onclick="scrollToTop()">
-    <i class="fas fa-angle-up">
-    </i>
-   </button>
-   <button onclick="scrollToBottom()">
-    <i class="fas fa-angle-down">
-    </i>
-   </button>
-  </div>
-  <!-- Modal for displaying monster info -->
-  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
-   <div class="modal-content">
-    <span class="close" onclick="closeModal()">
-     <i class="fas fa-times">
-     </i>
-    </span>
-    <div id="monsterInfoContent">
-     <div class="content">
-      <div id="monsterID">
-      </div>
-      <div class="info-row">
-       <p class="info-label">
+</div>
+</div>
+<div id="scrollButtons">
+<button onclick="scrollToTop()">
+<i class="fas fa-angle-up">
+</i>
+</button>
+<button onclick="scrollToBottom()">
+<i class="fas fa-angle-down">
+</i>
+</button>
+</div>
+<!-- Modal for displaying monster info -->
+<div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">
+<i class="fas fa-times">
+</i>
+</span>
+<div id="monsterInfoContent">
+<div class="content">
+<div id="monsterID">
+</div>
+<div class="info-row">
+<p class="info-label">
         HP:
        </p>
-       <p class="info-value" id="monsterHP">
-       </p>
-       <p class="info-label">
+<p class="info-value" id="monsterHP">
+</p>
+<p class="info-label">
         HP (+20):
        </p>
-       <p class="info-value" id="monsterHP1_2">
-       </p>
-      </div>
-      <div class="info-row">
-       <p class="info-label">
+<p class="info-value" id="monsterHP1_2">
+</p>
+</div>
+<div class="info-row">
+<p class="info-label">
         ATK:
        </p>
-       <p class="info-value" id="monsterATK">
-       </p>
-       <p class="info-label">
+<p class="info-value" id="monsterATK">
+</p>
+<p class="info-label">
         ATK (+20):
        </p>
-       <p class="info-value" id="monsterATK1_2">
-       </p>
-      </div>
-      <div class="info-row">
-       <p class="info-label">
+<p class="info-value" id="monsterATK1_2">
+</p>
+</div>
+<div class="info-row">
+<p class="info-label">
         REC:
        </p>
-       <p class="info-value" id="monsterREC">
-       </p>
-       <p class="info-label">
+<p class="info-value" id="monsterREC">
+</p>
+<p class="info-label">
         REC (+20):
        </p>
-       <p class="info-value" id="monsterREC1_2">
-       </p>
-      </div>
-      <!--<button onclick="closeModal()">關閉</button>-->
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
+<p class="info-value" id="monsterREC1_2">
+</p>
+</div>
+<!--<button onclick="closeModal()">關閉</button>-->
+</div>
+</div>
+</div>
+</div>
+<script>
    let selectedAttributes = new Set();
     let selectedRaces = new Set();
 
@@ -689,7 +690,7 @@
 
 			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
-			skillIds.reverse().forEach((skillId) => {
+			[...skillIds].reverse().forEach((skillId) => {
 			  let skillName = '無技能';
 			  let skillDesc = '';
 			  if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
@@ -756,7 +757,7 @@
 	  });
 	});
   </script>
-  <script>
+<script>
    function updateMonsterIcons(monsterElement, monster) {
 	  console.log("✅ updateMonsterIcons 被執行了！");
 	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
@@ -901,6 +902,6 @@
       document.getElementById("monsterInfoModal").style.display = "none";
     }
   </script>
-  <script src="board.decoder.new.js"></script>
+<script src="board.decoder.new.js"></script>
 </body>
 </html>
