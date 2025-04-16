@@ -820,50 +820,56 @@
 	  });
 	 }
 	 
-	function decode1(data) {
-	  const result = new Array(30).fill(0);
-	  let cursor = 0;
-	  for (let i = 0; i < data.length; i++) {
-		const r = data.charCodeAt(i);
-		const len = data.charCodeAt(i + 1);
-		i += 2;
-		for (let j = 0; j < len; j++) {
-		  const byte = data.charCodeAt(i + j);
-		  for (let k = 0; k < 8; k++) {
-			if (cursor >= 30) break;
-			if ((byte >> k) & 1) result[cursor] = r;
-			cursor++;
-		  }
-		}
-		i += len - 1;
-	  }
-	  return result;
-	}
-
-    function decode2(data) {
-      const result = [];
-      for (let i = 0; i < data.length; i += 2) {
-        const high = data.charCodeAt(i);
-        const low = data.charCodeAt(i + 1);
-        const value = high * 256 + low;
-        result.push(value);
+function decode1(data) {
+  const board = Array(30).fill(0);
+  let i = 0;
+  while (i < data.length) {
+    const r = data.charCodeAt(i); i++;
+    let rpt = 0;
+    while (true) {
+      const a = data.charCodeAt(i); i++;
+      const b = a & 127;
+      let j = 7 * rpt;
+      let bb = b;
+      while (bb > 0) {
+        if (bb % 2 === 1) board[j] = r;
+        j++;
+        bb = Math.floor(bb / 2);
       }
-      return result;
+      rpt++;
+      if ((a & 128) === 0) break;
     }
-	
-	function decodeBoardToElement(base64) {
+  }
+  return board;
+}
+
+function decode2(data) {
+  const result = [];
+  for (let i = 0; i < 45; i += 3) {
+    const v1 = data.charCodeAt(i);
+    const v2 = data.charCodeAt(i + 1);
+    const v3 = data.charCodeAt(i + 2);
+    result.push((v1 & 252) >> 2);
+    result.push(((v1 & 3) << 4) | ((v2 & 240) >> 4));
+    result.push(((v2 & 15) << 2) | ((v3 & 192) >> 6));
+    result.push(v3 & 63);
+  }
+  return result.slice(0, 30);
+}
+
+function decodeBoardToElement(base64) {
   const decoded = atob(base64);
   const type = decoded.charCodeAt(2);
-  console.log("🔍 base64 類型 =", type);
   const data = decoded.slice(6);
   const board = (type === 1 ? decode1(data) : decode2(data));
 
-  // ✅ 安全顯示 board
-board.forEach((val, i) => {
-  const index = val + 1;
-  console.log(`第 ${i + 1} 格: board=${val}, 使用 icons[${index}]`, icons[index] ? '✅ OK' : '❌ 缺圖');
-});
+  console.log("🔍 board type =", type);
+  console.log("🧩 解出棋盤 index：", board);
 
+  board.forEach((val, i) => {
+    const index = val + 1;
+    console.log(`第 ${i + 1} 格: board=${val}, 使用 icons[${index}]`, icons[index] ? "✅ OK" : "❌ 缺圖");
+  });
 
   const table = document.createElement('table');
   let row;
@@ -874,13 +880,8 @@ board.forEach((val, i) => {
     }
     const td = document.createElement('td');
     const img = document.createElement('img');
-
     const index = board[i] + 1;
-    if (!icons[index]) {
-      console.warn(`⚠️ icons[${index}] 不存在，board[i]=${board[i]}`);
-    }
-    img.src = icons[index] || icons[0];
-
+    img.src = icons[index] || icons[0]; // fallback 空圖
     img.style.width = '40px';
     img.style.height = '40px';
     td.appendChild(img);
