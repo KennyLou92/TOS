@@ -862,7 +862,7 @@
             const skillIdsRaw = monster.getAttribute('data-normalskill-id') || '';
             const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
 
-            skillIds.forEach(skillId => {
+            skillIds.reverse().forEach(skillId => {
               const skill = skilldesc[skillId];
               const skillName = skill?.name || '無名稱';
               const skillDesc = skill?.description || skill?.desc || '';
