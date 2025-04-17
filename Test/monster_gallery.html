@@ -1337,6 +1337,7 @@
 				const label = document.createElement('div');
 				label.className = 'info-label';
 				label.textContent = skillName;
+                applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -1510,6 +1511,7 @@
               const label = document.createElement('div');
               label.className = 'info-label';
               label.textContent = skillName;
+                applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
