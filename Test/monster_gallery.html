@@ -1,28 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
  <head>
-<script>
-function applySkillTypeTag(skillId, labelElement) {
-  if (!window.skillData) {
-    console.warn("⚠️ skillData 未定義，延遲重試 skillId:", skillId);
-    setTimeout(() => applySkillTypeTag(skillId, labelElement), 100);
-    return;
-  }
-  const info = skillData.find(s => s.skillid === parseInt(skillId));
-  if (!info) {
-    console.warn("❌ 找不到對應的 skillId:", skillId);
-    return;
-  }
-  const value = info.type === 'CD' ? info.min_cd : info.min_ep;
-  const tag = document.createElement('span');
-  tag.textContent = ` [${info.type}: ${value}]`;
-  tag.style.marginLeft = '6px';
-  tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
-  tag.style.fontSize = '13px';
-  labelElement.appendChild(tag);
-}
-</script>
-
   <script src="board.icons.js">
   </script>
   <script src="skilldesc.js">
@@ -434,10 +412,7 @@ function applySkillTypeTag(skillId, labelElement) {
 	  content: '▲';
 	}
   </style>
- 
-
-
-</head>
+ </head>
  <body>
   <div class="search-bar-wrapper">
    <div class="search-bar">
@@ -1362,7 +1337,6 @@ function applySkillTypeTag(skillId, labelElement) {
 				const label = document.createElement('div');
 				label.className = 'info-label';
 				label.textContent = skillName;
-                applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -1536,7 +1510,6 @@ function applySkillTypeTag(skillId, labelElement) {
               const label = document.createElement('div');
               label.className = 'info-label';
               label.textContent = skillName;
-                applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
@@ -1568,16 +1541,5 @@ function applySkillTypeTag(skillId, labelElement) {
   </script>
   <script src="board.decoder.new.js">
   </script>
- 
-<script>
-  const script = document.createElement('script');
-  script.src = 'skillData.js';
-  script.onload = () => {
-    console.log("✅ skillData.js 載入完成！");
-    fetchMonsterInfo(); // 等載入完畢後執行主程式
-  };
-  document.head.appendChild(script);
-</script>
-
-</body>
+ </body>
 </html>
