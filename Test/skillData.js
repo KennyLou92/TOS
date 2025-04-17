@@ -1,4 +1,4 @@
-const skillData = [
+window.skillData = [
   {
     "skillid": 0,
     "min_cd": 1,
