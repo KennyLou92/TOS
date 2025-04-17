@@ -664,7 +664,7 @@
      <i class="fas fa-times"></i></span>
 	 </div>
       <div class="content">
-		<div class = "info-row"></div>
+		
        <p class="info-label">
         HP:
        </p>
@@ -846,7 +846,7 @@
             // 顯示技能（兩行排版）
             const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
             const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
-            document.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+            contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
 
 			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
@@ -896,7 +896,7 @@
 				skillRow.appendChild(label);
 				skillRow.appendChild(value);
 
-			  recRow.insertAdjacentElement('afterend', skillRow);
+			  contentBlock.appendChild(skillRow);
 			});
 
 
@@ -1059,7 +1059,7 @@
               value.appendChild(descLine);
               skillRow.appendChild(label);
               skillRow.appendChild(value);
-              recRow.insertAdjacentElement('afterend', skillRow);
+              contentBlock.appendChild(skillRow);
             });
             bindBoardHover();
             document.getElementById("monsterInfoModal").style.display = "flex";
