@@ -434,7 +434,19 @@ function applySkillTypeTag(skillId, labelElement) {
 	  content: '▲';
 	}
   </style>
- </head>
+ 
+<script>
+function waitForSkillDataThenStart(callback) {
+  if (window.skillData) {
+    callback();
+  } else {
+    console.log("⏳ 等待 skillData 載入中...");
+    setTimeout(() => waitForSkillDataThenStart(callback), 100);
+  }
+}
+</script>
+
+</head>
  <body>
   <div class="search-bar-wrapper">
    <div class="search-bar">
