@@ -1291,7 +1291,11 @@
 	  5: 'dark',
 	};
 	function fetchMonsterInfo(monsterId, monsterElement) {
-	  fetch('monster.json')
+	    if (!monsterId || !monsterElement) {
+    console.warn(\"🚫 停止：無效的 monsterId 或 monsterElement\", monsterId, monsterElement);
+    return;
+  }
+fetch('monster.json')
 		.then(response => response.json())
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
