@@ -1364,6 +1364,8 @@ function applySkillTypeTag(skillId, labelElement) {
 				const label = document.createElement('div');
 				label.className = 'info-label';
 				label.textContent = skillName;
+                console.log("⚙️ 嘗試加上 CD/EP tag，skillId =", skillId);
+                applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -1537,6 +1539,8 @@ function applySkillTypeTag(skillId, labelElement) {
               const label = document.createElement('div');
               label.className = 'info-label';
               label.textContent = skillName;
+                console.log("⚙️ 嘗試加上 CD/EP tag，skillId =", skillId);
+                applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
