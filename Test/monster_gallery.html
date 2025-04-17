@@ -341,74 +341,6 @@
       width: 40px;
       height: 40px;
     }
-
-	/* ✅ 讓技能區塊上下排列 */
-	.info-row[data-skill="true"] {
-	  flex-direction: column;
-	  align-items: flex-start;
-	}
-
-	/* ✅ 技能名稱不換行，讓它顯眼一點 */
-	.info-row[data-skill="true"] .info-label {
-	  white-space: nowrap;
-	  font-size: 16px;
-	  margin-bottom: 4px;
-	  color: #333;
-	}
-
-	/* ✅ 技能描述內文樣式（讓它寬度自適應並自然換行） */
-	.info-row[data-skill="true"] .info-value {
-	  width: 100%;
-	}
-
-	/* ✅ 技能描述收合狀態只顯示一行，加上漸層遮罩 */
-	.skill-desc.collapsed {
-	  max-height: 1.5em;
-	  overflow: hidden;
-	  position: relative;
-	  cursor: pointer;
-	  white-space: nowrap;
-	  text-overflow: ellipsis;
-	  display:none;
-	}
-
-	/* ✅ 點開後可展開多行 */
-	.skill-desc.expanded {
-	  white-space: normal;
-	  max-height: none;
-	  overflow: visible;
-	  display: block;
-	  white-space: normal;
-	  max-height: none;
-	  overflow: visible;
-	  position: relative;
-	}
-
-	/* ✅ 折疊/展開箭頭 */
-	.skill-desc.collapsed::after,
-	.skill-desc.expanded::after {
-	  content: '▼';
-	  position: absolute;
-	  right: 0;
-	  bottom: 0;
-	  padding: 0 4px;
-	  font-size: 12px;
-	  background: linear-gradient(to left, white 30%, transparent);
-	  color: #777;
-	}
-
-	/* 箭頭符號（只在 collapsed 狀態才顯示） */
-	.info-row[data-skill="true"] .info-label::after {
-	  content: ' ▼';
-	  font-size: 12px;
-	  color: #666;
-	  margin-left: 6px;
-	  cursor: pointer;
-	}
-
-	.skill-desc.expanded::after {
-	  content: '▲';
-	}
   </style>
  </head>
  <body>
@@ -644,10 +576,6 @@
      <div class="content">
       <div id="monsterID">
       </div>
-	<span class="close" onclick="closeModal()">
-     <i class="fas fa-times"></i></span>
-	 </div>
-      <div class="content">
       <div class="info-row">
        <p class="info-label">
         HP:
@@ -830,7 +758,8 @@
             // 顯示技能（兩行排版）
             const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
             const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
-            contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+            const contentBlock = document.querySelector('#monsterInfoContent .content');
+			document.querySelectorAll(\'.info-row[data-skill=\"true\"]\').forEach(e => e.remove());
 
 			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
@@ -868,14 +797,13 @@
 				  descLine.classList.toggle('collapsed');
 				  descLine.classList.toggle('expanded');
 				});
-				
-				// ✅ 新增這段：讓標題也可以展開
-				label.addEventListener('click', () => {
-				  descLine.classList.toggle('collapsed');
-				  descLine.classList.toggle('expanded');
-				});	
-				
+label.addEventListener('click', () => {
+  descLine.classList.toggle('collapsed');
+  descLine.classList.toggle('expanded');
+});
+
 				value.appendChild(descLine);
+
 				// 把 label 和 value 加進 skillRow
 				skillRow.appendChild(label);
 				skillRow.appendChild(value);
@@ -1005,7 +933,7 @@
 
             // 清空舊技能
             const contentBlock = document.querySelector('#monsterInfoContent .content');
-            contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+            document.querySelectorAll(\'.info-row[data-skill=\"true\"]\').forEach(e => e.remove());
             const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
             // 顯示技能
@@ -1036,10 +964,10 @@
                 descLine.classList.toggle('collapsed');
                 descLine.classList.toggle('expanded');
               });
-			  label.addEventListener('click', () => {
-			  descLine.classList.toggle('collapsed');
-			  descLine.classList.toggle('expanded');
-			  });
+label.addEventListener('click', () => {
+  descLine.classList.toggle('collapsed');
+  descLine.classList.toggle('expanded');
+});
               value.appendChild(descLine);
               skillRow.appendChild(label);
               skillRow.appendChild(value);
