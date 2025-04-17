@@ -2,11 +2,50 @@
 <html lang="zh-Hant">
  <head>
   <script src="board.icons.js">
-  </script>
+  
+  function applySkillTypeTag(skillId, labelElement) {
+    if (!window.skillData || !labelElement) return;
+    const info = skillData.find(s => s.skillid === parseInt(skillId));
+    if (info) {
+      const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+      const tag = document.createElement('span');
+      tag.className = `skill-tag ${info.type.toLowerCase()}`;
+      tag.textContent = `${info.type}: ${value}`;
+      labelElement.appendChild(tag);
+    }
+  }
+
+</script>
   <script src="skilldesc.js">
-  </script>
+  
+  function applySkillTypeTag(skillId, labelElement) {
+    if (!window.skillData || !labelElement) return;
+    const info = skillData.find(s => s.skillid === parseInt(skillId));
+    if (info) {
+      const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+      const tag = document.createElement('span');
+      tag.className = `skill-tag ${info.type.toLowerCase()}`;
+      tag.textContent = `${info.type}: ${value}`;
+      labelElement.appendChild(tag);
+    }
+  }
+
+</script>
   <script src="skillData.js">
-  </script>
+  
+  function applySkillTypeTag(skillId, labelElement) {
+    if (!window.skillData || !labelElement) return;
+    const info = skillData.find(s => s.skillid === parseInt(skillId));
+    if (info) {
+      const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+      const tag = document.createElement('span');
+      tag.className = `skill-tag ${info.type.toLowerCase()}`;
+      tag.textContent = `${info.type}: ${value}`;
+      labelElement.appendChild(tag);
+    }
+  }
+
+</script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
   <title>
@@ -411,7 +450,22 @@
 	.skill-desc.expanded::after {
 	  content: '▲';
 	}
-  </style>
+  
+  .skill-tag {
+    font-size: 13px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin-left: 8px;
+    color: white;
+  }
+  .skill-tag.cd {
+    background-color: #409EFF;
+  }
+  .skill-tag.ep {
+    background-color: #67C23A;
+  }
+
+</style>
  </head>
  <body>
   <div class="search-bar-wrapper">
@@ -1337,6 +1391,7 @@
 				const label = document.createElement('div');
 				label.className = 'info-label';
 				label.textContent = skillName;
+        applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -1389,7 +1444,20 @@
 		fetchMonsterInfo(id, monster);
 	  });
 	});
-  </script>
+  
+  function applySkillTypeTag(skillId, labelElement) {
+    if (!window.skillData || !labelElement) return;
+    const info = skillData.find(s => s.skillid === parseInt(skillId));
+    if (info) {
+      const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+      const tag = document.createElement('span');
+      tag.className = `skill-tag ${info.type.toLowerCase()}`;
+      tag.textContent = `${info.type}: ${value}`;
+      labelElement.appendChild(tag);
+    }
+  }
+
+</script>
   <script>
    function updateMonsterIcons(monsterElement, monster) {
 	  console.log("✅ updateMonsterIcons 被執行了！");
@@ -1439,7 +1507,20 @@
 
 	  console.log("📷 race icon:", raceIcon.src);
 	}
-  </script>
+  
+  function applySkillTypeTag(skillId, labelElement) {
+    if (!window.skillData || !labelElement) return;
+    const info = skillData.find(s => s.skillid === parseInt(skillId));
+    if (info) {
+      const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+      const tag = document.createElement('span');
+      tag.className = `skill-tag ${info.type.toLowerCase()}`;
+      tag.textContent = `${info.type}: ${value}`;
+      labelElement.appendChild(tag);
+    }
+  }
+
+</script>
   <script>
    function parseSkillDesc(rawDesc) {
 	  return (rawDesc || '')
@@ -1510,6 +1591,7 @@
               const label = document.createElement('div');
               label.className = 'info-label';
               label.textContent = skillName;
+        applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
@@ -1538,8 +1620,34 @@
     function closeModal() {
       document.getElementById("monsterInfoModal").style.display = "none";
     }
-  </script>
+  
+  function applySkillTypeTag(skillId, labelElement) {
+    if (!window.skillData || !labelElement) return;
+    const info = skillData.find(s => s.skillid === parseInt(skillId));
+    if (info) {
+      const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+      const tag = document.createElement('span');
+      tag.className = `skill-tag ${info.type.toLowerCase()}`;
+      tag.textContent = `${info.type}: ${value}`;
+      labelElement.appendChild(tag);
+    }
+  }
+
+</script>
   <script src="board.decoder.new.js">
-  </script>
+  
+  function applySkillTypeTag(skillId, labelElement) {
+    if (!window.skillData || !labelElement) return;
+    const info = skillData.find(s => s.skillid === parseInt(skillId));
+    if (info) {
+      const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+      const tag = document.createElement('span');
+      tag.className = `skill-tag ${info.type.toLowerCase()}`;
+      tag.textContent = `${info.type}: ${value}`;
+      labelElement.appendChild(tag);
+    }
+  }
+
+</script>
  </body>
 </html>
