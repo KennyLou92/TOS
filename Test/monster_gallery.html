@@ -369,6 +369,7 @@
 	  cursor: pointer;
 	  white-space: nowrap;
 	  text-overflow: ellipsis;
+	  display:none;
 	}
 
 	/* ✅ 點開後可展開多行 */
@@ -376,6 +377,11 @@
 	  white-space: normal;
 	  max-height: none;
 	  overflow: visible;
+	  display: block;
+	  white-space: normal;
+	  max-height: none;
+	  overflow: visible;
+	  position: relative;
 	}
 
 	/* ✅ 折疊/展開箭頭 */
@@ -389,6 +395,15 @@
 	  font-size: 12px;
 	  background: linear-gradient(to left, white 30%, transparent);
 	  color: #777;
+	}
+
+	/* 箭頭符號（只在 collapsed 狀態才顯示） */
+	.info-label::after {
+	  content: ' ▼';
+	  font-size: 12px;
+	  color: #666;
+	  margin-left: 6px;
+	  cursor: pointer;
 	}
 
 	.skill-desc.expanded::after {
@@ -850,6 +865,12 @@
 				  descLine.classList.toggle('collapsed');
 				  descLine.classList.toggle('expanded');
 				});
+				
+				label.addEventListener('click', () => {
+				descLine.classList.toggle('collapsed');
+				descLine.classList.toggle('expanded');
+				});
+
 
 				value.appendChild(descLine);
 
