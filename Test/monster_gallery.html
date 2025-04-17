@@ -435,16 +435,7 @@ function applySkillTypeTag(skillId, labelElement) {
 	}
   </style>
  
-<script>
-function waitForSkillDataThenStart(callback) {
-  if (window.skillData) {
-    callback();
-  } else {
-    console.log("⏳ 等待 skillData 載入中...");
-    setTimeout(() => waitForSkillDataThenStart(callback), 100);
-  }
-}
-</script>
+
 
 </head>
  <body>
@@ -1577,5 +1568,16 @@ function waitForSkillDataThenStart(callback) {
   </script>
   <script src="board.decoder.new.js">
   </script>
- </body>
+ 
+<script>
+  const script = document.createElement('script');
+  script.src = 'skillData.js';
+  script.onload = () => {
+    console.log("✅ skillData.js 載入完成！");
+    fetchMonsterInfo(); // 等載入完畢後執行主程式
+  };
+  document.head.appendChild(script);
+</script>
+
+</body>
 </html>
