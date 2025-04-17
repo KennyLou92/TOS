@@ -1291,11 +1291,12 @@
 	  5: 'dark',
 	};
 	function fetchMonsterInfo(monsterId, monsterElement) {
-	    if (!monsterId || !monsterElement) {
-    console.warn(\"[GUARD] 無效的 monsterId 或 monsterElement\", monsterId, monsterElement);
+  if (!monsterId || !monsterElement) {
+    console.warn("[guard] Invalid monsterId or monsterElement", monsterId, monsterElement);
     return;
   }
-fetch('monster.json')
+
+	  fetch('monster.json')
 		.then(response => response.json())
 		.then(data => {
 		  const monster = data.find(m => m.id === monsterId);
