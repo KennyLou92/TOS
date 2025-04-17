@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
  <head>
+<script>
+function applySkillTypeTag(skillId, labelElement) {
+  if (!window.skillData) {
+    console.warn("⚠️ skillData 未定義，延遲重試 skillId:", skillId);
+    setTimeout(() => applySkillTypeTag(skillId, labelElement), 100);
+    return;
+  }
+  const info = skillData.find(s => s.skillid === parseInt(skillId));
+  if (!info) {
+    console.warn("❌ 找不到對應的 skillId:", skillId);
+    return;
+  }
+  const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+  const tag = document.createElement('span');
+  tag.textContent = ` [${info.type}: ${value}]`;
+  tag.style.marginLeft = '6px';
+  tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
+  tag.style.fontSize = '13px';
+  labelElement.appendChild(tag);
+}
+</script>
+
   <script src="board.icons.js">
   </script>
   <script src="skilldesc.js">
