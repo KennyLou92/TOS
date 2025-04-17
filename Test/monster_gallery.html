@@ -398,7 +398,7 @@
 	}
 
 	/* 箭頭符號（只在 collapsed 狀態才顯示） */
-	.info-label::after {
+	.info-row[data-skill="true"] .info-label::after {
 	  content: ' ▼';
 	  font-size: 12px;
 	  color: #666;
@@ -866,8 +866,13 @@
 				  descLine.classList.toggle('expanded');
 				});
 				
+				// ✅ 新增這段：讓標題也可以展開
+				label.addEventListener('click', () => {
+				  descLine.classList.toggle('collapsed');
+				  descLine.classList.toggle('expanded');
+				});	
+				
 				value.appendChild(descLine);
-
 				// 把 label 和 value 加進 skillRow
 				skillRow.appendChild(label);
 				skillRow.appendChild(value);
