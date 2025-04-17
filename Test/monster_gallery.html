@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
  <head>
-<script src="board.icons.js">
+  <script src="board.icons.js">
   </script>
   <script src="skilldesc.js">
   </script>
@@ -1173,8 +1173,6 @@
    </div>
   </div>
   <script>
-document.addEventListener("DOMContentLoaded", function () {
-
    let selectedAttributes = new Set();
     let selectedRaces = new Set();
 
@@ -1339,8 +1337,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				const label = document.createElement('div');
 				label.className = 'info-label';
 				label.textContent = skillName;
-                applySkillTypeTag(parseInt(skillId.trim()), label);
-                label.style.fontWeight = 'bold';
+				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
 				value.className = 'info-value';
@@ -1392,9 +1389,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		fetchMonsterInfo(id, monster);
 	  });
 	});
-  
-});
-</script>
+  </script>
   <script>
    function updateMonsterIcons(monsterElement, monster) {
 	  console.log("✅ updateMonsterIcons 被執行了！");
@@ -1515,8 +1510,7 @@ document.addEventListener("DOMContentLoaded", function () {
               const label = document.createElement('div');
               label.className = 'info-label';
               label.textContent = skillName;
-                applySkillTypeTag(parseInt(skillId.trim()), label);
-                label.style.fontWeight = 'bold';
+              label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
               const descLine = document.createElement('div');
@@ -1547,33 +1541,5 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
   <script src="board.decoder.new.js">
   </script>
-
-<script>
-function applySkillTypeTag(skillId, labelElement) {
-  console.log("💡 呼叫 applySkillTypeTag，接收的 skillId:", skillId);
-
-  if (!window.skillData) {
-    console.warn("⚠️ skillData 未定義！");
-    return;
-  }
-
-  const info = skillData.find(s => s.skillid === skillId);
-  if (!info) {
-    console.warn("❌ 找不到對應的 skillId:", skillId);
-    return;
-  }
-
-  console.log("✅ 找到技能資料:", info);
-
-  const value = info.type === 'CD' ? info.min_cd : info.min_ep;
-  const tag = document.createElement('span');
-  tag.textContent = ` [${info.type}: ${value}]`;
-  tag.style.marginLeft = '6px';
-  tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
-  tag.style.fontSize = '13px';
-  labelElement.appendChild(tag);
-}
-</script>
-
-</body>
+ </body>
 </html>
