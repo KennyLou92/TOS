@@ -1338,6 +1338,7 @@
 				label.className = 'info-label';
 				label.textContent = skillName;
                 applySkillTypeTag(skillId, label);
+                applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -1512,6 +1513,7 @@
               label.className = 'info-label';
               label.textContent = skillName;
                 applySkillTypeTag(skillId, label);
+                applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
@@ -1554,6 +1556,23 @@ function applySkillTypeTag(skillId, labelElement) {
     tag.textContent = ` [${info.type}: ${value}]`;
     tag.style.marginLeft = '6px';
     tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
+    labelElement.appendChild(tag);
+  }
+}
+</script>
+
+
+<script>
+function applySkillTypeTag(skillId, labelElement) {
+  if (!window.skillData || !labelElement) return;
+  const info = skillData.find(s => s.skillid === parseInt(skillId));
+  if (info) {
+    const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+    const tag = document.createElement('span');
+    tag.textContent = ` [${info.type}: ${value}]`;
+    tag.style.marginLeft = '6px';
+    tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
+    tag.style.fontSize = '13px';
     labelElement.appendChild(tag);
   }
 }
