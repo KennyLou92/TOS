@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
  <head>
+<script>
+function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {    return;
+  }
+  const info = skillData.find(s => s.skillid === parseInt(skillId));
+  if (!info) {    return;
+  }  const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+  const tag = document.createElement('span');
+  tag.textContent = ` [${info.type}: ${value}]`;
+  tag.style.marginLeft = '6px';
+  tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
+  tag.style.fontSize = '13px';
+  labelElement.appendChild(tag);
+}
+</script>
   <script src="board.icons.js">
   </script>
   <script src="skilldesc.js">
+  </script>
+  <script src="skillData.js">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
@@ -36559,6 +36575,9 @@
 	  5: 'dark',
 	};
 	function fetchMonsterInfo(monsterId, monsterElement) {
+  if (!monsterId || !monsterElement) {    return;
+  }
+
 	  fetch('monster.json')
 		.then(response => response.json())
 		.then(data => {
@@ -36604,7 +36623,7 @@
 
 				const label = document.createElement('div');
 				label.className = 'info-label';
-				label.textContent = skillName;
+				label.textContent = skillName;                applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -36659,9 +36678,7 @@
 	});
   </script>
   <script>
-   function updateMonsterIcons(monsterElement, monster) {
-	  console.log("✅ updateMonsterIcons 被執行了！");
-	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
+   function updateMonsterIcons(monsterElement, monster) {	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
 
 	  const attributeName = attributeMapping[attributeId] || 'unknown';
@@ -36687,8 +36704,6 @@
 		attributeIcon.style.width = '24px';
 		attributeIcon.style.height = '24px';
 		attributeIcon.style.marginLeft = '8px';
-		console.log("📷 attribute icon:", attributeIcon.src);
-
 		const raceIcon = document.createElement("img");
 		if (raceId === 6) {
 		  raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
@@ -36703,10 +36718,7 @@
 		raceIcon.style.marginLeft = '4px';
 
 		monsterIdElement.appendChild(attributeIcon);
-		monsterIdElement.appendChild(raceIcon);
-
-	  console.log("📷 race icon:", raceIcon.src);
-	}
+		monsterIdElement.appendChild(raceIcon);	}
   </script>
   <script>
    function parseSkillDesc(rawDesc) {
@@ -36725,9 +36737,7 @@
 		  if (tooltip instanceof HTMLElement) {
 			tooltip.classList.add('board-tooltip');
 			el.appendChild(tooltip);
-		  } else {
-			console.warn("⚠️ decodeBoardToElement 回傳非元素", tooltip);
-		  }
+		  } else {		  }
 		});
 		el.addEventListener('mouseleave', () => {
 		  const tip = el.querySelector('.board-tooltip');
@@ -36777,7 +36787,7 @@
               skillRow.style.alignItems = 'flex-start';
               const label = document.createElement('div');
               label.className = 'info-label';
-              label.textContent = skillName;
+              label.textContent = skillName;                applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
