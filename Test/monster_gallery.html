@@ -1,103 +1,1545 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monster Gallery</title>
+ <head>
+  <script src="board.icons.js">
+  </script>
+  <script src="skilldesc.js">
+  </script>
+  <script src="skillData.js">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <title>
+   神魔圖鑒
+  </title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+   body {
+      font-family: sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 100vh;
     }
-    .monster-container {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 10px;
+      justify-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 80px;
     }
-    .monster-header {
+    .monster {
+      width: 142px;
+      text-align: center;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+    .monster img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 8px;
+    }
+    .search-bar-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      z-index: 999;
       display: flex;
       align-items: center;
-      justify-content: space-between;
     }
-    .monster-header h2 {
-      margin: 0;
-      font-size: 1.2em;
+    .search-bar {
+      width: 25%;
+      margin-left: 20px;
+      background: #fff;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border-radius: 6px;
+      position: relative;
+      z-index: 1000;
     }
-    .skill-title {
-      font-weight: bold;
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-    .skill-container {
-      margin-top: 10px;
-    }
-    .skill-type {
-      font-size: 0.9em;
-      color: #555;
+    .dropdown {
+      position: relative;
       margin-left: 10px;
     }
+    .dropdown-button {
+      background: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: border-color 0.3s;
+    }
+    .dropdown-button:hover {
+      border-color: #888;
+    }
+    .dropdown-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    .dropdown-content {
+      display: none;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      min-width: max-content;
+      padding: 4px 0;
+      border-radius: 6px;
+      transition: opacity 0.3s ease;
+    }
+    .dropdown-content.show {
+      display: block;
+      opacity: 1;
+    }
+    .dropdown-item {
+      padding: 6px 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+    .dropdown-item:hover {
+      background-color: #f0f0f0;
+    }
+    .dropdown-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .dropdown-item.selected {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+	#scrollButtons {
+	  position: fixed;
+	  right: 20px;
+	  bottom: 20px;
+	  display: none;
+	  flex-direction: column;
+	  gap: 10px;
+	  z-index: 999;
+	}
+
+	#scrollButtons button {
+	  padding: 10px 12px;
+	  font-size: 14px;
+	  border: none;
+	  border-radius: 8px;
+	  background-color: #333;
+	  color: white;
+	  cursor: pointer;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	  transition: background-color 0.3s ease;
+	}
+
+	#scrollButtons button:hover {
+	  background-color: #555;
+	}
+	#resetFilters {
+	  padding: 8px;
+	  border: none;
+	  background: none;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  cursor: pointer;
+	}
+	#resetFilters img {
+	  width: 30px;
+	  height: 30px;
+	  object-fit: contain;
+	}
+
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: 5% auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	  max-height: 90vh;     /* 可選：限制最大高度 */
+	  overflow-y: auto;     /* 當內容真的太多可滾動 */
+	}
+
+	.close {
+	  position: absolute;
+	  top: 10px;
+	  right: 10px;
+	  font-size: 28px;
+	  color: #aaa;
+	  cursor: pointer;
+	  transition: color 0.2s;
+	  z-index: 10;
+	}
+
+	.close:hover {
+	  color: #333;
+	}
+
+	#monsterInfoContent {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-start; /* 保持內容在上 */
+	  height: 100%; /* 使容器佔據全部高度 */
+	  position: relative;
+	  /* background-position: center bottom; */
+	  /* background-size: cover; */
+	}
+	#monsterInfoContent > * {
+	  position: relative;
+	  z-index: 1;
+	}
+	#monsterInfoContent .content {
+	  flex-grow: 1;  /* 使內容區域可以擴展，填滿剩餘空間 */
+	  height: auto;     /* ✅ 新增這行，確保會撐開高度 */
+	  overflow: visible; /* ✅ 讓裡面的內容正常顯示 */
+	}
+	.info-row {
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 5px 0;
+	}
+
+	.info-label {
+	  font-weight: bold;
+	  width: 100px;  /* 控制左側的寬度 */
+	}
+
+	.info-value {
+	  width: 100px;  /* 控制右側的寬度 */
+	  text-align: center;  /* 讓數據居中顯示 */
+	}
+
+	.info-row[data-skill="true"] .info-value {
+	  width: auto;
+	  flex-grow: 1;
+	  text-align: left;
+	}
+
+	#monsterInfoContent button {
+	  margin-top: auto;
+	  padding: 10px 20px;
+	  background-color: #333;
+	  color: white;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	#monsterInfoContent button:hover {
+	  background-color: #555;
+	}
+  
+#monsterInfoContent {
+  position: relative;
+  width : 100%;
+  padding-top: 40px; /* ✅ 預留空間，讓 .close 不會被蓋住 */
+  /* background-position: center bottom; */
+  /* background-size: cover; */
+}
+#monsterInfoContent::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--monster-bg);
+  background-size: auto 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.2; /* 調整透明度 */
+  <!--filter: grayscale(40%) blur(2px); /* 讓字更清楚 */-->
+  z-index: 0;
+}
+#monsterInfoContent > * {
+  position: relative;
+  z-index: 1;
+}
+#monsterID {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+#monsterID img {
+  width: 24px;
+  height: 24px;
+}
+.skill-desc.collapsed {
+      max-height: 60px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+    }
+    .skill-desc.collapsed::after {
+      content: '▼';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(to top, white, transparent 50%);
+      padding: 4px 8px;
+      font-size: 12px;
+      color: #555;
+    }
+    .skill-desc.expanded {
+      max-height: none;
+      overflow: visible;
+      cursor: pointer;
+      position: relative;
+    }
+    .skill-desc.expanded::after {
+      content: '▲';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(to top, white, transparent 50%);
+      padding: 4px 8px;
+      font-size: 12px;
+      color: #555;
+    }
+    .board-hover {
+      position: relative;
+      cursor: pointer;
+      color: #0077cc;
+      text-decoration: underline dotted;
+    }
+    .board-tooltip {
+      position: absolute;
+      top: 120%;
+      left: 0;
+      z-index: 999;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .board-tooltip table td {
+      padding: 2px;
+    }
+    .board-tooltip img {
+      width: 40px;
+      height: 40px;
+    }
+
+	/* ✅ 讓技能區塊上下排列 */
+	.info-row[data-skill="true"] {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+
+	/* ✅ 技能名稱不換行，讓它顯眼一點 */
+	.info-row[data-skill="true"] .info-label {
+	  white-space: nowrap;
+	  font-size: 16px;
+	  margin-bottom: 4px;
+	  color: #333;
+	}
+
+	/* ✅ 技能描述內文樣式（讓它寬度自適應並自然換行） */
+	.info-row[data-skill="true"] .info-value {
+	  width: 100%;
+	}
+
+	/* ✅ 技能描述收合狀態只顯示一行，加上漸層遮罩 */
+	.skill-desc.collapsed {
+	  max-height: 1.5em;
+	  overflow: hidden;
+	  position: relative;
+	  cursor: pointer;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+	  display:none;
+	}
+
+	/* ✅ 點開後可展開多行 */
+	.skill-desc.expanded {
+	  white-space: normal;
+	  max-height: none;
+	  overflow: visible;
+	  display: block;
+	  white-space: normal;
+	  max-height: none;
+	  overflow: visible;
+	  position: relative;
+	}
+
+	/* ✅ 折疊/展開箭頭 */
+	.skill-desc.collapsed::after,
+	.skill-desc.expanded::after {
+	  content: '▼';
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  padding: 0 4px;
+	  font-size: 12px;
+	  background: linear-gradient(to left, white 30%, transparent);
+	  color: #777;
+	}
+
+	/* 箭頭符號（只在 collapsed 狀態才顯示） */
+	.info-row[data-skill="true"] .info-label::after {
+	  content: ' ▼';
+	  font-size: 12px;
+	  color: #666;
+	  margin-left: 6px;
+	  cursor: pointer;
+	}
+
+	.skill-desc.expanded::after {
+	  content: '▲';
+	}
   </style>
-</head>
-
-<body>
-  <div id="gallery"></div>
-  <script src="skillData.js"></script>
+ </head>
+ <body>
+  <div class="search-bar-wrapper">
+   <div class="search-bar">
+    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+   </div>
+   <!-- 屬性 -->
+   <div class="dropdown" id="attributeDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      屬性
+     </span>
+    </div>
+    <div class="dropdown-content" id="attributeContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png"/>
+     </div>
+    </div>
+   </div>
+   <!-- 種族 -->
+   <div class="dropdown" id="raceDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      種族
+     </span>
+    </div>
+    <div class="dropdown-content" id="raceContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png"/>
+     </div>
+     <div class="dropdown-item" data-value="8">
+      <img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png"/>
+     </div>
+     <div class="dropdown-item" data-value="10">
+      <img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png"/>
+     </div>
+     <div class="dropdown-item" data-value="6">
+      <img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png"/>
+     </div>
+     <div class="dropdown-item" data-value="7">
+      <img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png"/>
+     </div>
+    </div>
+   </div>
+   <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">
+    <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
+   </button>
+  </div>
+  <div class="gallery" id="monsterGallery">
+   <div class="monster" data-attribute="5" data-id="10870" data-name="貝特魯吉烏斯 ‧ 羅曼尼康帝" data-normalskill-id="4898" data-race="3">
+    <div>
+     10870
+    </div>
+    <img alt="10870" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10870.jpg"/>
+    <div>
+     貝特魯吉烏斯 ‧ 羅曼尼康帝
+    </div>
+   </div>
+   <div class="monster" data-attribute="5" data-id="10871" data-name="艾姬多娜" data-normalskill-id="4901" data-race="8">
+    <div>
+     10871
+    </div>
+    <img alt="10871" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10871.jpg"/>
+    <div>
+     艾姬多娜
+    </div>
+   </div>
+   <div class="monster" data-attribute="4" data-id="10872" data-name="銀髮天使・愛蜜莉雅" data-normalskill-id="4890,4891" data-race="3">
+    <div>
+     10872
+    </div>
+    <img alt="10872" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10872.jpg"/>
+    <div>
+     銀髮天使・愛蜜莉雅
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10873" data-name="蒸番薯" data-race="7" data-normalskill-id = "0">
+    <div>
+     10873
+    </div>
+    <img alt="10873" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10873.jpg"/>
+    <div>
+     蒸番薯
+    </div>
+   </div>
+   <div class="monster" data-attribute="1" data-id="10874" data-name="命運歡樂頌 ‧ 貝多芬" data-normalskill-id="4957" data-race="5">
+    <div>
+     10874
+    </div>
+    <img alt="10874" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10874.jpg"/>
+    <div>
+     命運歡樂頌 ‧ 貝多芬
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10875" data-name="無調性和聲 ‧ 莫札特" data-normalskill-id="4960" data-race="5">
+    <div>
+     10875
+    </div>
+    <img alt="10875" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10875.jpg"/>
+    <div>
+     無調性和聲 ‧ 莫札特
+    </div>
+   </div>
+   <div class="monster" data-attribute="3" data-id="10876" data-name="調律享頌樂 ‧ 舒伯特" data-normalskill-id="4961" data-race="5">
+    <div>
+     10876
+    </div>
+    <img alt="10876" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10876.jpg"/>
+    <div>
+     調律享頌樂 ‧ 舒伯特
+    </div>
+   </div>
+   <div class="monster" data-attribute="4" data-id="10877" data-name="悖德夢幻曲 ‧ 舒曼" data-normalskill-id="4962" data-race="5">
+    <div>
+     10877
+    </div>
+    <img alt="10877" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10877.jpg"/>
+    <div>
+     悖德夢幻曲 ‧ 舒曼
+    </div>
+   </div>
+   <div class="monster" data-attribute="5" data-id="10878" data-name="啟迪旋律線 ‧ 海頓" data-normalskill-id="4963" data-race="5">
+    <div>
+     10878
+    </div>
+    <img alt="10878" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10878.jpg"/>
+    <div>
+     啟迪旋律線 ‧ 海頓
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10879" data-name="獨弦羅曼號 ‧ 柴可夫斯基" data-normalskill-id="4964" data-race="5">
+    <div>
+     10879
+    </div>
+    <img alt="10879" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10879.jpg"/>
+    <div>
+     獨弦羅曼號 ‧ 柴可夫斯基
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10880" data-name="古典樂靈" data-normalskill-id="0" data-race="7">
+    <div>
+     10880
+    </div>
+    <img alt="10880" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10880.jpg"/>
+    <div>
+     古典樂靈
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10881" data-name="狂熱圓舞曲 ‧ 李斯特" data-normalskill-id="4966" data-race="5">
+    <div>
+     10881
+    </div>
+    <img alt="10881" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10881.jpg"/>
+    <div>
+     狂熱圓舞曲 ‧ 李斯特
+    </div>
+   </div>
+   <div class="monster" data-attribute="5" data-id="10882" data-name="和諧離別曲 ‧ 蕭邦" data-normalskill-id="4965" data-race="5">
+    <div>
+     10882
+    </div>
+    <img alt="10882" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10882.jpg"/>
+    <div>
+     和諧離別曲 ‧ 蕭邦
+    </div>
+   </div>
+   <div class="monster" data-attribute="5" data-id="10883" data-name="惡魔詠歎調 ‧ 帕格尼尼" data-normalskill-id="4967" data-race="5">
+    <div>
+     10883
+    </div>
+    <img alt="10883" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10883.jpg"/>
+    <div>
+     惡魔詠歎調 ‧ 帕格尼尼
+    </div>
+   </div>
+   <div class="monster" data-attribute="4" data-id="10884" data-name="沉默賦格曲 ‧ 巴赫" data-normalskill-id="4969,4970" data-race="5">
+    <div>
+     10884
+    </div>
+    <img alt="10884" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10884.jpg"/>
+    <div>
+     沉默賦格曲 ‧ 巴赫
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10885" data-name="幸福進行曲 ‧ 孟德爾頌" data-normalskill-id="4968" data-race="5">
+    <div>
+     10885
+    </div>
+    <img alt="10885" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10885.jpg"/>
+    <div>
+     幸福進行曲 ‧ 孟德爾頌
+    </div>
+   </div>
+   <div class="monster" data-attribute="3" data-id="10886" data-name="潛幕謀局 ‧ 雷蒙德" data-normalskill-id="4971" data-race="1">
+    <div>
+     10886
+    </div>
+    <img alt="10886" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10886.jpg"/>
+    <div>
+     潛幕謀局 ‧ 雷蒙德
+    </div>
+   </div>
+   <div class="monster" data-attribute="5" data-id="10887" data-name="正道鐵律 ‧ 蓋倫" data-normalskill-id="4972" data-race="1">
+    <div>
+     10887
+    </div>
+    <img alt="10887" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10887.jpg"/>
+    <div>
+     正道鐵律 ‧ 蓋倫
+    </div>
+   </div>
+   <div class="monster" data-attribute="3" data-id="10888" data-name="貪婪暗契 ‧ 希特" data-normalskill-id="4973" data-race="4">
+    <div>
+     10888
+    </div>
+    <img alt="10888" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10888.jpg"/>
+    <div>
+     貪婪暗契 ‧ 希特
+    </div>
+   </div>
+   <div class="monster" data-attribute="4" data-id="10889" data-name="檸可思議 ‧ 林黛玉" data-normalskill-id="4982" data-race="8">
+    <div>
+     10889
+    </div>
+    <img alt="10889" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10889.jpg"/>
+    <div>
+     檸可思議 ‧ 林黛玉
+    </div>
+   </div>
+   <div class="monster" data-attribute="1" data-id="10890" data-name="球美之水 ‧ 賈寶玉" data-normalskill-id="4983" data-race="8">
+    <div>
+     10890
+    </div>
+    <img alt="10890" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10890.jpg"/>
+    <div>
+     球美之水 ‧ 賈寶玉
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10891" data-name="天道震鳴 ‧ 刻琿" data-normalskill-id="4976" data-race="4">
+    <div>
+     10891
+    </div>
+    <img alt="10891" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10891.jpg"/>
+    <div>
+     天道震鳴 ‧ 刻琿
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10892" data-name="皓耀珀火 ‧ 刻琿" data-normalskill-id="4977" data-race="4">
+    <div>
+     10892
+    </div>
+    <img alt="10892" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10892.jpg"/>
+    <div>
+     皓耀珀火 ‧ 刻琿
+    </div>
+   </div>
+   <div class="monster" data-id="10893" data-name="">
+    <div>
+     10893
+    </div>
+    <img alt="10893" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10893.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10894" data-name="">
+    <div>
+     10894
+    </div>
+    <img alt="10894" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10894.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10895" data-name="空調徐倫與石之海">
+    <div>
+     10895
+    </div>
+    <img alt="10895" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10895.jpg"/>
+    <div>
+     空調徐倫與石之海
+    </div>
+   </div>
+   <div class="monster" data-id="10896" data-name="東方仗助與瘋狂鑽石">
+    <div>
+     10896
+    </div>
+    <img alt="10896" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10896.jpg"/>
+    <div>
+     東方仗助與瘋狂鑽石
+    </div>
+   </div>
+   <div class="monster" data-id="10897" data-name="廣瀨康一與迴音三號">
+    <div>
+     10897
+    </div>
+    <img alt="10897" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10897.jpg"/>
+    <div>
+     廣瀨康一與迴音三號
+    </div>
+   </div>
+   <div class="monster" data-id="10898" data-name="喬魯諾 ‧ 喬巴達與黃金體驗">
+    <div>
+     10898
+    </div>
+    <img alt="10898" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10898.jpg"/>
+    <div>
+     喬魯諾 ‧ 喬巴達與黃金體驗
+    </div>
+   </div>
+   <div class="monster" data-id="10899" data-name="喬魯諾 ‧ 喬巴達與黃金體驗鎮魂曲">
+    <div>
+     10899
+    </div>
+    <img alt="10899" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10899.jpg"/>
+    <div>
+     喬魯諾 ‧ 喬巴達與黃金體驗鎮魂曲
+    </div>
+   </div>
+   <div class="monster" data-id="10900" data-name="虹村億泰與轟炸空間">
+    <div>
+     10900
+    </div>
+    <img alt="10900" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10900.jpg"/>
+    <div>
+     虹村億泰與轟炸空間
+    </div>
+   </div>
+   <div class="monster" data-id="10901" data-name="特莉修 ‧ 烏納與辣妹">
+    <div>
+     10901
+    </div>
+    <img alt="10901" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10901.jpg"/>
+    <div>
+     特莉修 ‧ 烏納與辣妹
+    </div>
+   </div>
+   <div class="monster" data-id="10902" data-name="艾梅斯 ‧ 羅斯提羅與親吻">
+    <div>
+     10902
+    </div>
+    <img alt="10902" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10902.jpg"/>
+    <div>
+     艾梅斯 ‧ 羅斯提羅與親吻
+    </div>
+   </div>
+   <div class="monster" data-id="10903" data-name="布魯諾 ‧ 布加拉提與銅練手指">
+    <div>
+     10903
+    </div>
+    <img alt="10903" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10903.jpg"/>
+    <div>
+     布魯諾 ‧ 布加拉提與銅練手指
+    </div>
+   </div>
+   <div class="monster" data-id="10904" data-name="幽浮一族">
+    <div>
+     10904
+    </div>
+    <img alt="10904" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10904.jpg"/>
+    <div>
+     幽浮一族
+    </div>
+   </div>
+   <div class="monster" data-id="10905" data-name="岸邊露伴與天堂之門">
+    <div>
+     10905
+    </div>
+    <img alt="10905" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10905.jpg"/>
+    <div>
+     岸邊露伴與天堂之門
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="10906" data-name="吉良吉影與殺手皇后" data-race="1">
+    <div>
+     10906
+    </div>
+    <img alt="10906" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10906.jpg"/>
+    <div>
+     吉良吉影與殺手皇后
+    </div>
+   </div>
+   <div class="monster" data-id="10907" data-name="JOJO第二彈">
+    <div>
+     10907
+    </div>
+    <img alt="10907" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10907.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10908" data-name="JOJO第二彈">
+    <div>
+     10908
+    </div>
+    <img alt="10908" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10908.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10909" data-name="JOJO第二彈">
+    <div>
+     10909
+    </div>
+    <img alt="10909" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10909.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10910" data-name="JOJO第二彈">
+    <div>
+     10910
+    </div>
+    <img alt="10910" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10910.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10911" data-name="JOJO第二彈">
+    <div>
+     10911
+    </div>
+    <img alt="10911" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10911.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10912" data-name="JOJO第二彈">
+    <div>
+     10912
+    </div>
+    <img alt="10912" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10912.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10913" data-name="JOJO第二彈">
+    <div>
+     10913
+    </div>
+    <img alt="10913" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10913.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10914" data-name="JOJO第二彈">
+    <div>
+     10914
+    </div>
+    <img alt="10914" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10914.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10915" data-name="JOJO第二彈">
+    <div>
+     10915
+    </div>
+    <img alt="10915" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10915.jpg"/>
+    <div>
+     JOJO第二彈
+    </div>
+   </div>
+   <div class="monster" data-id="10916" data-name="空調承太郎與白金之星 ‧ 世界">
+    <div>
+     10916
+    </div>
+    <img alt="10916" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10916.jpg"/>
+    <div>
+     空調承太郎與白金之星 ‧ 世界
+    </div>
+   </div>
+   <div class="monster" data-id="10917" data-name="夜幕貓影 ‧ 斯芬克斯">
+    <div>
+     10917
+    </div>
+    <img alt="10917" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10917.jpg"/>
+    <div>
+     夜幕貓影 ‧ 斯芬克斯
+    </div>
+   </div>
+   <div class="monster" data-id="10931" data-name="">
+    <div>
+     10931
+    </div>
+    <img alt="10931" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10931.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10932" data-name="">
+    <div>
+     10932
+    </div>
+    <img alt="10932" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10932.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10933" data-name="">
+    <div>
+     10933
+    </div>
+    <img alt="10933" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10933.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10934" data-name="">
+    <div>
+     10934
+    </div>
+    <img alt="10934" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10934.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10935" data-name="">
+    <div>
+     10935
+    </div>
+    <img alt="10935" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10935.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10936" data-name="">
+    <div>
+     10936
+    </div>
+    <img alt="10936" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10936.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10937" data-name="">
+    <div>
+     10937
+    </div>
+    <img alt="10937" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10937.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10938" data-name="">
+    <div>
+     10938
+    </div>
+    <img alt="10938" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10938.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10939" data-name="">
+    <div>
+     10939
+    </div>
+    <img alt="10939" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10939.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10940" data-name="">
+    <div>
+     10940
+    </div>
+    <img alt="10940" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10940.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10941" data-name="">
+    <div>
+     10941
+    </div>
+    <img alt="10941" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10941.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10942" data-name="">
+    <div>
+     10942
+    </div>
+    <img alt="10942" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10942.jpg"/>
+    <div>
+     (10931異轉卡號)
+    </div>
+   </div>
+   <div class="monster" data-id="10943" data-name="">
+    <div>
+     10943
+    </div>
+    <img alt="10943" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10943.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10944" data-name="">
+    <div>
+     10944
+    </div>
+    <img alt="10944" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10944.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10945" data-name="">
+    <div>
+     10945
+    </div>
+    <img alt="10945" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10945.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10946" data-name="">
+    <div>
+     10946
+    </div>
+    <img alt="10946" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10946.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10947" data-name="">
+    <div>
+     10947
+    </div>
+    <img alt="10947" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10947.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-id="10948" data-name="">
+    <div>
+     10948
+    </div>
+    <img alt="10948" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/10948.jpg"/>
+    <div>
+    </div>
+   </div>
+   <div class="monster" data-attribute="2" data-id="11001" data-name="罪状宣告 ‧ 圣枪涅索伊" data-race="5">
+    <div>
+     11001
+    </div>
+    <img alt="11001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://i.postimg.cc/7hVRdL7z/11001.png"/>
+    <div>
+     罪状宣告 ‧ 圣枪涅索伊
+    </div>
+   </div>
+   <div class="monster" data-attribute="1" data-id="11002" data-name="聖裁時刻 ‧ 貞德" data-race="4">
+    <div>
+     11002
+    </div>
+    <img alt="11002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://i.postimg.cc/BbQKxxWR/11002.png"/>
+    <div>
+     聖裁時刻 ‧ 貞德
+    </div>
+   </div>
+   <div class="monster" data-attribute="5" data-id="20001" data-name="以諾" data-race="1">
+    <div>
+     20001
+    </div>
+    <img alt="20001" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://kennylou92.github.io/tos_story/Img/20001.png"/>
+    <div>
+     以諾
+    </div>
+   </div>
+   <div class="monster" data-attribute="4" data-id="20002" data-name="雪萊 ‧ 沙古迪" data-race="1">
+    <div>
+     20002
+    </div>
+    <img alt="20002" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://kennylou92.github.io/tos_story/Img/20002.png"/>
+    <div>
+     雪萊 ‧ 沙古迪
+    </div>
+   </div>
+   <div class="monster" data-attribute="4" data-id="20003" data-name="未來開拓 ‧ 雪萊" data-race="1">
+    <div>
+     20003
+    </div>
+    <img alt="20003" onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" src="https://kennylou92.github.io/tos_story/Img/20003.png"/>
+    <div>
+     未來開拓 ‧ 雪萊
+    </div>
+   </div>
+  </div>
+  <div id="scrollButtons">
+   <button onclick="scrollToTop()">
+    <i class="fas fa-angle-up">
+    </i>
+   </button>
+   <button onclick="scrollToBottom()">
+    <i class="fas fa-angle-down">
+    </i>
+   </button>
+  </div>
+  <!-- Modal for displaying monster info -->
+  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+   <div class="modal-content">
+    <span class="close" onclick="closeModal()">
+     <i class="fas fa-times">
+     </i>
+    </span>
+    <div id="monsterInfoContent">
+     <div class="content">
+      <div id="monsterID">
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        HP:
+       </p>
+       <p class="info-value" id="monsterHP">
+       </p>
+       <p class="info-label">
+        HP (+20):
+       </p>
+       <p class="info-value" id="monsterHP1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        ATK:
+       </p>
+       <p class="info-value" id="monsterATK">
+       </p>
+       <p class="info-label">
+        ATK (+20):
+       </p>
+       <p class="info-value" id="monsterATK1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        REC:
+       </p>
+       <p class="info-value" id="monsterREC">
+       </p>
+       <p class="info-label">
+        REC (+20):
+       </p>
+       <p class="info-value" id="monsterREC1_2">
+       </p>
+      </div>
+      <!--<button onclick="closeModal()">關閉</button>-->
+     </div>
+    </div>
+   </div>
+  </div>
   <script>
-    const monsters = [
-      {
-        id: 10875,
-        name: "無調性和聲・莫札特",
-        hp: 3610,
-        hp20: 4332,
-        atk: 2091,
-        atk20: 2509,
-        rec: 421,
-        rec20: 505,
-        skillName: "第 40 號交響曲",
-        skillId: 10875
-      }
-    ];
+   let selectedAttributes = new Set();
+    let selectedRaces = new Set();
 
-    const gallery = document.getElementById("gallery");
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
+      const trigger = dropdown.querySelector(".dropdown-trigger");
+      const content = dropdown.querySelector(".dropdown-content");
 
-    monsters.forEach(monster => {
-      const container = document.createElement("div");
-      container.className = "monster-container";
-
-      const header = document.createElement("div");
-      header.className = "monster-header";
-      header.innerHTML = `<h2>${monster.name} (ID: ${monster.id})</h2>`;
-      container.appendChild(header);
-
-      container.innerHTML += `
-        <p><strong>HP:</strong> ${monster.hp} &nbsp;&nbsp; <strong>HP (+20):</strong> ${monster.hp20}</p>
-        <p><strong>ATK:</strong> ${monster.atk} &nbsp;&nbsp; <strong>ATK (+20):</strong> ${monster.atk20}</p>
-        <p><strong>REC:</strong> ${monster.rec} &nbsp;&nbsp; <strong>REC (+20):</strong> ${monster.rec20}</p>
-      `;
-
-      const skillContainer = document.createElement("div");
-      skillContainer.className = "skill-container";
-
-      let skillTypeStr = "";
-      const skillData = skillDataMap[monster.skillId];
-      if (skillData) {
-        const minCd = skillData[3];
-        const type = skillData[4] === 1 ? "EP" : "CD";
-        skillTypeStr = `<span class="skill-type">[${type}: ${minCd}]</span>`;
-      }
-
-      skillContainer.innerHTML = `
-        <div class="skill-title">${monster.skillName} ${skillTypeStr}</div>
-        <div>…技能描述內容…</div>
-      `;
-      container.appendChild(skillContainer);
-
-      gallery.appendChild(container);
+      trigger.addEventListener("click", () => {
+        content.classList.toggle("show");
+      });
     });
-  </script>
-</body>
 
+    document.addEventListener("click", function(event) {
+      document.querySelectorAll(".dropdown-content").forEach(content => {
+        if (!content.parentElement.contains(event.target)) {
+          content.classList.remove("show");
+        }
+      });
+    });
+
+    function updateSelectedIcons(containerId, selectedSet) {
+      const container = document.querySelector(`#${containerId} .selected-icons`);
+      const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
+      const label = document.querySelector(`#${containerId} .dropdown-button span`);
+      container.innerHTML = '';
+
+      selectedSet.forEach(value => {
+        items.forEach(item => {
+          if (item.dataset.value === value) {
+            const img = item.querySelector('img').cloneNode();
+            img.style.width = '20px';
+            img.style.height = '20px';
+            container.appendChild(img);
+          }
+        });
+      });
+      label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
+    }
+
+    document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
+      item.addEventListener('click', function () {
+        const value = this.getAttribute('data-value');
+        this.classList.toggle('selected');
+        selectedAttributes.has(value) ? selectedAttributes.delete(value) : selectedAttributes.add(value);
+        updateSelectedIcons('attributeDropdown', selectedAttributes);
+        filterMonsters();
+      });
+    });
+
+    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+      item.addEventListener('click', function () {
+        const value = this.getAttribute('data-value');
+        this.classList.toggle('selected');
+        selectedRaces.has(value) ? selectedRaces.delete(value) : selectedRaces.add(value);
+        updateSelectedIcons('raceDropdown', selectedRaces);
+        filterMonsters();
+      });
+    });
+
+    function filterMonsters() {
+      const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
+      const monsters = document.querySelectorAll(".monster");
+
+      monsters.forEach(monster => {
+        const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
+        const id = monster.querySelector("div:nth-child(1)").textContent.toLowerCase();
+        const attribute = monster.getAttribute('data-attribute');
+        const race = monster.getAttribute('data-race');
+
+        const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
+        const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
+        const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
+
+        monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
+      });
+    }
+
+    document.getElementById("resetFilters").addEventListener("click", () => {
+      selectedAttributes.clear();
+      selectedRaces.clear();
+      document.querySelectorAll('.dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+      document.querySelectorAll('.selected-icons').forEach(iconBox => iconBox.innerHTML = '');
+      document.getElementById("searchInput").value = '';
+      updateSelectedIcons('attributeDropdown', selectedAttributes);
+      updateSelectedIcons('raceDropdown', selectedRaces);
+      filterMonsters();
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollBtn = document.getElementById('scrollButtons');
+      scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+	const raceMapping = {
+	  1: 'human',
+	  2: 'animal',
+	  3: 'fairy',
+	  4: 'dragon',
+	  5: 'god',
+	  8: 'devil',
+	  10: 'mech',
+	};
+	const attributeMapping = {
+	  1: 'water',
+	  2: 'fire',
+	  3: 'earth',
+	  4: 'light',
+	  5: 'dark',
+	};
+	function fetchMonsterInfo(monsterId, monsterElement) {
+	  fetch('monster.json')
+		.then(response => response.json())
+		.then(data => {
+		  const monster = data.find(m => m.id === monsterId);
+		  if (monster) {
+			const infoBlock = document.getElementById("monsterInfoContent");
+			infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`);
+
+
+			// ✅ 呼叫新的圖示更新函式
+			updateMonsterIcons(monsterElement, monster);
+
+			document.getElementById('monsterHP').textContent = monster.HP;
+			document.getElementById('monsterATK').textContent = monster.ATK;
+			document.getElementById('monsterREC').textContent = monster.REC;
+
+			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
+			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
+			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+            // 顯示技能（兩行排版）
+            const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
+            const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
+            const contentBlock = document.querySelector('#monsterInfoContent .content');
+			contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+
+			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
+
+			skillIds.forEach((skillId) => {
+			  let skillName = '無技能';
+			  let skillDesc = '';
+			  if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
+				skillName = skilldesc[skillId].name || '無名稱';
+				skillDesc = skilldesc[skillId].description || skilldesc[skillId].desc || '';
+			  }
+
+				const skillRow = document.createElement('div');
+				skillRow.className = 'info-row';
+				skillRow.setAttribute('data-skill', 'true');
+				skillRow.style.borderTop = '1px solid #ccc';
+				skillRow.style.marginTop = '8px';
+				skillRow.style.paddingTop = '8px';
+				skillRow.style.alignItems = 'flex-start'; // 確保多行時對齊上方
+
+				const label = document.createElement('div');
+				label.className = 'info-label';
+				label.textContent = skillName;
+				label.style.fontWeight = 'bold';
+
+				const value = document.createElement('div');
+				value.className = 'info-value';
+
+				const descLine = document.createElement('div');
+				descLine.className = 'skill-desc collapsed';
+				descLine.innerHTML = parseSkillDesc(skillDesc);
+				bindBoardHover();
+
+				// 🔁 正確綁定點擊事件
+				descLine.addEventListener('click', () => {
+				  descLine.classList.toggle('collapsed');
+				  descLine.classList.toggle('expanded');
+				});
+				
+				// ✅ 新增這段：讓標題也可以展開
+				label.addEventListener('click', () => {
+				  descLine.classList.toggle('collapsed');
+				  descLine.classList.toggle('expanded');
+				});	
+				
+				value.appendChild(descLine);
+				// 把 label 和 value 加進 skillRow
+				skillRow.appendChild(label);
+				skillRow.appendChild(value);
+
+			  recRow.insertAdjacentElement('afterend', skillRow);
+			});
+
+
+			document.getElementById('monsterInfoModal').style.display = 'flex';
+		  } else {
+			alert("⚠️找不到怪物資料！");
+		  }
+		})
+		.catch(err => {
+		  console.error("載入 monster.json 發生錯誤：", err);
+		});
+	}
+
+
+	function closeModal() {
+	  document.getElementById("monsterInfoModal").style.display = "none";
+	}
+
+	document.querySelectorAll('.monster').forEach(monster => {
+	  monster.addEventListener('click', () => {
+		const id = monster.getAttribute('data-id');
+		fetchMonsterInfo(id, monster);
+	  });
+	});
+  </script>
+  <script>
+   function updateMonsterIcons(monsterElement, monster) {
+	  console.log("✅ updateMonsterIcons 被執行了！");
+	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
+	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
+
+	  const attributeName = attributeMapping[attributeId] || 'unknown';
+	  let raceName = raceMapping[raceId] || 'unknown'; // Use let here if needed
+
+	  // Handle race 6 and 7 explicitly
+	  if (raceId === 6) {
+		raceName = 'evolve';
+	  } else if (raceId === 7) {
+		raceName = 'level';
+	  }
+
+	  const monsterIdElement = document.getElementById('monsterID');
+		monsterIdElement.innerHTML = ''; // 清空舊內容（避免多次 append）
+
+		const nameText = document.createElement('span');
+		nameText.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
+		monsterIdElement.appendChild(nameText);
+
+		const attributeIcon = document.createElement("img");
+		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
+		attributeIcon.alt = "屬性圖示";
+		attributeIcon.style.width = '24px';
+		attributeIcon.style.height = '24px';
+		attributeIcon.style.marginLeft = '8px';
+		console.log("📷 attribute icon:", attributeIcon.src);
+
+		const raceIcon = document.createElement("img");
+		if (raceId === 6) {
+		  raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
+		} else if (raceId === 7) {
+		  raceIcon.src = 'https://i.postimg.cc/cKB6HhT3/level.png';
+		} else {
+		  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+		}
+		raceIcon.alt = "種族圖示";
+		raceIcon.style.width = '24px';
+		raceIcon.style.height = '24px';
+		raceIcon.style.marginLeft = '4px';
+
+		monsterIdElement.appendChild(attributeIcon);
+		monsterIdElement.appendChild(raceIcon);
+
+	  console.log("📷 race icon:", raceIcon.src);
+	}
+  </script>
+  <script>
+   function parseSkillDesc(rawDesc) {
+	  return (rawDesc || '')
+		.replace(/\n/g, '<br>')
+		.replace(/\[board=(.*?)\](.*?)\[\/board\]/g, (match, code, label) => {
+		  return `<span class="board-hover" data-board="${code}">${label}</span>`;
+		});
+	}
+
+	function bindBoardHover() {
+	  document.querySelectorAll('.board-hover').forEach(el => {
+		el.addEventListener('mouseenter', () => {
+		  const code = el.dataset.board;
+		  const tooltip = decodeBoardToElement(code, icons);
+		  if (tooltip instanceof HTMLElement) {
+			tooltip.classList.add('board-tooltip');
+			el.appendChild(tooltip);
+		  } else {
+			console.warn("⚠️ decodeBoardToElement 回傳非元素", tooltip);
+		  }
+		});
+		el.addEventListener('mouseleave', () => {
+		  const tip = el.querySelector('.board-tooltip');
+		  if (tip) tip.remove();
+		});
+	  });
+	}
+
+    // 顯示 modal 的事件邏輯（略過原始，保留原邏輯）
+    document.querySelectorAll('.monster').forEach(monster => {
+      monster.addEventListener('click', () => {
+        const id = monster.getAttribute('data-id');
+        fetch('monster.json')
+          .then(response => response.json())
+          .then(data => {
+            const monsterData = data.find(m => m.id === id);
+            if (!monsterData) return;
+            const infoBlock = document.getElementById("monsterInfoContent");
+            infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${id}.jpg')`);
+            //document.getElementById("monsterID").textContent = monster.getAttribute("data-name") + ` (ID: ${id})`;
+            document.getElementById('monsterHP').textContent = monsterData.HP;
+            document.getElementById('monsterATK').textContent = monsterData.ATK;
+            document.getElementById('monsterREC').textContent = monsterData.REC;
+            document.getElementById('monsterHP1_2').textContent = Math.floor(monsterData.HP * 1.2);
+            document.getElementById('monsterATK1_2').textContent = Math.floor(monsterData.ATK * 1.2);
+            document.getElementById('monsterREC1_2').textContent = Math.floor(monsterData.REC * 1.2);
+
+            // 清空舊技能
+            const contentBlock = document.querySelector('#monsterInfoContent .content');
+            contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+            const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
+
+            // 顯示技能
+            const skillIdsRaw = monster.getAttribute('data-normalskill-id') || '';
+            const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
+
+            skillIds.reverse().forEach(skillId => {
+              const skill = skilldesc[skillId];
+              const skillName = skill?.name || '無名稱';
+              const skillDesc = skill?.description || skill?.desc || '';
+              const skillRow = document.createElement('div');
+              skillRow.className = 'info-row';
+              skillRow.setAttribute('data-skill', 'true');
+              skillRow.style.borderTop = '1px solid #ccc';
+              skillRow.style.marginTop = '8px';
+              skillRow.style.paddingTop = '8px';
+              skillRow.style.alignItems = 'flex-start';
+              const label = document.createElement('div');
+              label.className = 'info-label';
+              label.textContent = skillName;
+              label.style.fontWeight = 'bold';
+              const value = document.createElement('div');
+              value.className = 'info-value';
+              const descLine = document.createElement('div');
+              descLine.className = 'skill-desc collapsed';
+              descLine.innerHTML = parseSkillDesc(skillDesc);
+              descLine.addEventListener('click', () => {
+                descLine.classList.toggle('collapsed');
+                descLine.classList.toggle('expanded');
+              });
+			  label.addEventListener('click', () => {
+			  descLine.classList.toggle('collapsed');
+			  descLine.classList.toggle('expanded');
+			  });
+              value.appendChild(descLine);
+              skillRow.appendChild(label);
+              skillRow.appendChild(value);
+              recRow.insertAdjacentElement('afterend', skillRow);
+            });
+            bindBoardHover();
+            document.getElementById("monsterInfoModal").style.display = "flex";
+          });
+      });
+    });
+
+    function closeModal() {
+      document.getElementById("monsterInfoModal").style.display = "none";
+    }
+  </script>
+  <script src="board.decoder.new.js">
+  </script>
+ </body>
 </html>
