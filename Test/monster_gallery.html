@@ -1033,6 +1033,10 @@
                 descLine.classList.toggle('collapsed');
                 descLine.classList.toggle('expanded');
               });
+			  label.addEventListener('click', () => {
+			  descLine.classList.toggle('collapsed');
+			  descLine.classList.toggle('expanded');
+			  });
               value.appendChild(descLine);
               skillRow.appendChild(label);
               skillRow.appendChild(value);
