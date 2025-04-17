@@ -846,8 +846,7 @@
             // 顯示技能（兩行排版）
             const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
             const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
-            const contentBlock = document.querySelector('#monsterInfoContent .content');
-			contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+            document.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
 
 			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
