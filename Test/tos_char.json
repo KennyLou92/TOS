@@ -23240,6 +23240,14 @@
     "normalskill2": ""
   },
   {
+    "monsterid": 2926,
+    "monstername": "煦日燦華 ‧ 紅璦",
+    "race": 4,
+    "attribute": 4,
+    "normalskill1": "",
+    "normalskill2": ""
+  },
+  {
     "monsterid": 7001,
     "monstername": "火慾母神 ‧ 莎布尼古拉絲",
     "race": 4,
@@ -30784,11 +30792,43 @@
     "normalskill2": ""
   },
   {
+    "monsterid": 10881,
+    "monstername": "狂熱圓舞曲 ‧ 李斯特",
+    "race": 5,
+    "attribute": 2,
+    "normalskill1": 4966,
+    "normalskill2": ""
+  },
+  {
     "monsterid": 10882,
     "monstername": "和諧離別曲 ‧ 蕭邦",
     "race": 5,
     "attribute": 5,
     "normalskill1": 4965,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10883,
+    "monstername": "惡魔詠歎調 ‧ 帕格尼尼",
+    "race": 5,
+    "attribute": 5,
+    "normalskill1": 4967,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10884,
+    "monstername": "沉默賦格曲 ‧ 巴赫",
+    "race": 5,
+    "attribute": 4,
+    "normalskill1": 4969,
+    "normalskill2": 4970
+  },
+  {
+    "monsterid": 10885,
+    "monstername": "幸福進行曲 ‧ 孟德爾頌",
+    "race": 5,
+    "attribute": 2,
+    "normalskill1": 4968,
     "normalskill2": ""
   },
   {
@@ -30800,11 +30840,19 @@
     "normalskill2": ""
   },
   {
-    "monsterid": 10881,
-    "monstername": "狂熱圓舞曲 ‧ 李斯特",
-    "race": 5,
-    "attribute": 2,
-    "normalskill1": 4966,
+    "monsterid": 10887,
+    "monstername": "正道鐵律 ‧ 蓋倫",
+    "race": 1,
+    "attribute": 5,
+    "normalskill1": 4972,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10888,
+    "monstername": "貪婪暗契 ‧ 希特",
+    "race": 4,
+    "attribute": 3,
+    "normalskill1": 4973,
     "normalskill2": ""
   },
   {
@@ -30824,30 +30872,6 @@
     "normalskill2": ""
   },
   {
-    "monsterid": 10883,
-    "monstername": "惡魔詠歎調 ‧ 帕格尼尼",
-    "race": 5,
-    "attribute": 5,
-    "normalskill1": 4967,
-    "normalskill2": ""
-  },
-  {
-    "monsterid": 10885,
-    "monstername": "幸福進行曲 ‧ 孟德爾頌",
-    "race": 5,
-    "attribute": 2,
-    "normalskill1": 4968,
-    "normalskill2": ""
-  },
-  {
-    "monsterid": 10887,
-    "monstername": "正道鐵律 ‧ 蓋倫",
-    "race": 1,
-    "attribute": 5,
-    "normalskill1": 4972,
-    "normalskill2": ""
-  },
-  {
     "monsterid": 10892,
     "monstername": "皓耀珀火 ‧ 刻琿",
     "race": 4,
@@ -30856,19 +30880,91 @@
     "normalskill2": ""
   },
   {
-    "monsterid": 10884,
-    "monstername": "沉默賦格曲 ‧ 巴赫",
-    "race": 5,
-    "attribute": 4,
-    "normalskill1": 4969,
-    "normalskill2": 4970
+    "monsterid": 10895,
+    "monstername": "空條徐倫與石之海",
+    "race": 1,
+    "attribute": 1,
+    "normalskill1": 4923,
+    "normalskill2": ""
   },
   {
-    "monsterid": 10888,
-    "monstername": "貪婪暗契 ‧ 希特",
-    "race": 4,
+    "monsterid": 10896,
+    "monstername": "東方仗助與瘋狂鑽石",
+    "race": 1,
+    "attribute": 2,
+    "normalskill1": 4921,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10897,
+    "monstername": "廣瀨康一與迴音三號",
+    "race": 1,
     "attribute": 3,
-    "normalskill1": 4973,
+    "normalskill1": 4927,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10900,
+    "monstername": "虹村億泰與轟炸空間",
+    "race": 1,
+    "attribute": 1,
+    "normalskill1": 4925,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10901,
+    "monstername": "特莉休 ‧ 烏納與辣妹",
+    "race": 1,
+    "attribute": 2,
+    "normalskill1": 4929,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10902,
+    "monstername": "艾梅斯 ‧ 羅斯提羅與親吻",
+    "race": 1,
+    "attribute": 3,
+    "normalskill1": 4933,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10903,
+    "monstername": "布羅諾 ‧ 布加拉提與鋼鏈手指",
+    "race": 1,
+    "attribute": 4,
+    "normalskill1": 4931,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10904,
+    "monstername": "幽浮一族",
+    "race": 3,
+    "attribute": 1,
+    "normalskill1": 4935,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10905,
+    "monstername": "岸邊露伴與天堂之門",
+    "race": 1,
+    "attribute": 3,
+    "normalskill1": 4936,
+    "normalskill2": ""
+  },
+  {
+    "monsterid": 10906,
+    "monstername": "吉良吉影與殺手皇后",
+    "race": 1,
+    "attribute": 2,
+    "normalskill1": 4937,
+    "normalskill2": 4938
+  },
+  {
+    "monsterid": 10917,
+    "monstername": "夜幕貓影 ‧ 斯芬克斯",
+    "race": 7,
+    "attribute": 4,
+    "normalskill1": "",
     "normalskill2": ""
   },
   {
