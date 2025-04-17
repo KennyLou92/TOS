@@ -1543,19 +1543,14 @@
   </script>
   <script src="board.decoder.new.js">
   </script>
- 
-
-
-
-
-
-
 <script>
 function applySkillTypeTag(skillId, labelElement) {
   console.log("💡 呼叫 applySkillTypeTag，接收的 skillId:", skillId);
+  console.log("🔍 當前 window.skillData 是：", window.skillData);
 
   if (!window.skillData) {
-    console.warn("⚠️ skillData 未定義！");
+    console.warn("⚠️ skillData 還沒準備好，延遲執行...");
+    setTimeout(() => applySkillTypeTag(skillId, labelElement), 100); // 再等一下
     return;
   }
 
