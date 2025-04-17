@@ -2,19 +2,11 @@
 <html lang="zh-Hant">
  <head>
 <script>
-function applySkillTypeTag(skillId, labelElement) {
-  console.log("💡 呼叫 applySkillTypeTag，skillId:", skillId);
-  if (!window.skillData) {
-    console.warn("[tag] skillData 未定義");
-    return;
+function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {    return;
   }
   const info = skillData.find(s => s.skillid === parseInt(skillId));
-  if (!info) {
-    console.warn("[tag] 找不到 skillId:", skillId);
-    return;
-  }
-  console.log("✅ 找到技能資料:", info);
-  const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+  if (!info) {    return;
+  }  const value = info.type === 'CD' ? info.min_cd : info.min_ep;
   const tag = document.createElement('span');
   tag.textContent = ` [${info.type}: ${value}]`;
   tag.style.marginLeft = '6px';
@@ -1313,9 +1305,7 @@ function applySkillTypeTag(skillId, labelElement) {
 	  5: 'dark',
 	};
 	function fetchMonsterInfo(monsterId, monsterElement) {
-  if (!monsterId || !monsterElement) {
-    console.warn("[guard] Invalid monsterId or monsterElement", monsterId, monsterElement);
-    return;
+  if (!monsterId || !monsterElement) {    return;
   }
 
 	  fetch('monster.json')
@@ -1363,9 +1353,7 @@ function applySkillTypeTag(skillId, labelElement) {
 
 				const label = document.createElement('div');
 				label.className = 'info-label';
-				label.textContent = skillName;
-                console.log("⚙️ 嘗試加上 CD/EP tag，skillId =", skillId);
-                applySkillTypeTag(skillId, label);
+				label.textContent = skillName;                applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -1420,9 +1408,7 @@ function applySkillTypeTag(skillId, labelElement) {
 	});
   </script>
   <script>
-   function updateMonsterIcons(monsterElement, monster) {
-	  console.log("✅ updateMonsterIcons 被執行了！");
-	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
+   function updateMonsterIcons(monsterElement, monster) {	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
 	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
 
 	  const attributeName = attributeMapping[attributeId] || 'unknown';
@@ -1448,8 +1434,6 @@ function applySkillTypeTag(skillId, labelElement) {
 		attributeIcon.style.width = '24px';
 		attributeIcon.style.height = '24px';
 		attributeIcon.style.marginLeft = '8px';
-		console.log("📷 attribute icon:", attributeIcon.src);
-
 		const raceIcon = document.createElement("img");
 		if (raceId === 6) {
 		  raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
@@ -1464,10 +1448,7 @@ function applySkillTypeTag(skillId, labelElement) {
 		raceIcon.style.marginLeft = '4px';
 
 		monsterIdElement.appendChild(attributeIcon);
-		monsterIdElement.appendChild(raceIcon);
-
-	  console.log("📷 race icon:", raceIcon.src);
-	}
+		monsterIdElement.appendChild(raceIcon);	}
   </script>
   <script>
    function parseSkillDesc(rawDesc) {
@@ -1486,9 +1467,7 @@ function applySkillTypeTag(skillId, labelElement) {
 		  if (tooltip instanceof HTMLElement) {
 			tooltip.classList.add('board-tooltip');
 			el.appendChild(tooltip);
-		  } else {
-			console.warn("⚠️ decodeBoardToElement 回傳非元素", tooltip);
-		  }
+		  } else {		  }
 		});
 		el.addEventListener('mouseleave', () => {
 		  const tip = el.querySelector('.board-tooltip');
@@ -1538,9 +1517,7 @@ function applySkillTypeTag(skillId, labelElement) {
               skillRow.style.alignItems = 'flex-start';
               const label = document.createElement('div');
               label.className = 'info-label';
-              label.textContent = skillName;
-                console.log("⚙️ 嘗試加上 CD/EP tag，skillId =", skillId);
-                applySkillTypeTag(skillId, label);
+              label.textContent = skillName;                applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
