@@ -1290,7 +1290,21 @@
 	  4: 'light',
 	  5: 'dark',
 	};
-	function fetchMonsterInfo(monsterId, monsterElement) {
+	function 
+function applySkillTypeTag(skillId, labelElement) {
+  if (!window.skillData || !labelElement) return;
+  const info = skillData.find(s => s.skillid === parseInt(skillId));
+  if (info) {
+    const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+    const tag = document.createElement('span');
+    tag.textContent = ` [${info.type}: ${value}]`;
+    tag.style.marginLeft = '6px';
+    tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
+    labelElement.appendChild(tag);
+  }
+}
+
+fetchMonsterInfo(monsterId, monsterElement) {
 	  fetch('monster.json')
 		.then(response => response.json())
 		.then(data => {
@@ -1337,6 +1351,7 @@
 				const label = document.createElement('div');
 				label.className = 'info-label';
 				label.textContent = skillName;
+                applySkillTypeTag(skillId, label);
 				label.style.fontWeight = 'bold';
 
 				const value = document.createElement('div');
@@ -1510,6 +1525,7 @@
               const label = document.createElement('div');
               label.className = 'info-label';
               label.textContent = skillName;
+                applySkillTypeTag(skillId, label);
               label.style.fontWeight = 'bold';
               const value = document.createElement('div');
               value.className = 'info-value';
