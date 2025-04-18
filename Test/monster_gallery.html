@@ -845,13 +845,16 @@ function processSkill(skillId, recRow) {
     return;
   }
 
-  const skill = window.skilldesc[skillId];
+  const skill = window.skilldesc?.[skillId?.toString()];
+  console.log("顯示技能:", skillId, skill);
   if (!skill) {
-    console.warn(`找不到技能資料: ${skillId}`);
+    console.warn("找不到技能描述 for skillId:", skillId);
     return;
   }
 
-  console.log('處理技能:', skillId, skill);
+  const skillDesc = skill.description || skill.desc || skill.skillDesc || "（描述缺失）";
+  return skillDesc.replace(/\n/g, "<br>");
+}
 
   const skillRow = document.createElement('div');
   skillRow.className = 'info-row';
