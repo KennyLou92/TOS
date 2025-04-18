@@ -23,14 +23,31 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script>
     window.addEventListener('load', () => {
+      // 確保 skilldesc.js 已經載入
       if (!window.skilldesc) {
-        console.error('技能資料載入失敗');
+        console.error('技能資料載入失敗，嘗試重新載入...');
+        loadSkillData();
       } else {
         console.log('技能資料載入成功');
         console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
       }
-      loadMonsters();
     });
+
+    function loadSkillData() {
+      return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'skilldesc.js';
+        script.onload = () => {
+          console.log('技能資料載入成功');
+          resolve();
+        };
+        script.onerror = () => {
+          console.error('技能資料載入失敗');
+          reject();
+        };
+        document.head.appendChild(script);
+      });
+    }
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
@@ -745,12 +762,18 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
-        // 设置背景图和基本信息
+        // 設置背景圖和基本資訊
         const infoBlock = document.getElementById("monsterInfoContent");
         infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
         
-        // 更新怪物信息
+        // 更新怪物資訊
+        const monsterName = monsterElement.getAttribute('data-name');
+        document.getElementById('monsterID').innerHTML = `
+          <span>${monsterName} (ID: ${monster.id})</span>
+        `;
         updateMonsterIcons(monsterElement, monster);
+        
+        // 更新基本屬性
         document.getElementById('monsterHP').textContent = monster.HP;
         document.getElementById('monsterATK').textContent = monster.ATK;
         document.getElementById('monsterREC').textContent = monster.REC;
