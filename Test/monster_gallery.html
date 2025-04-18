@@ -849,14 +849,11 @@ function processSkill(skillId, recRow) {
   console.log("顯示技能:", skillId, skill);
   if (!skill) {
     console.warn("找不到技能描述 for skillId:", skillId);
-    return "（無技能描述）";;
+    return;
   }
 
-  const skillDesc = skill.description || skill.desc || skill.skillDesc || "（描述缺失）";
-  return skillDesc.replace(/\n/g, "<br>");
-}
-
-  const skillRow = document.createElement('div');
+ // 創建技能行
+ const skillRow = document.createElement('div');
   skillRow.className = 'info-row';
   skillRow.setAttribute('data-skill', 'true');
   skillRow.style.borderTop = '1px solid #ccc';
@@ -868,20 +865,24 @@ function processSkill(skillId, recRow) {
   label.textContent = skill.name || '無名稱';
   applySkillTypeTag(skillId, label);
 
+  // 創建技能值容器
   const value = document.createElement('div');
   value.className = 'info-value';
 
+  // 創建技能描述
   const descLine = document.createElement('div');
   descLine.className = 'skill-desc expanded';
   const skillDesc = skill.description || skill.desc || skill.skillDesc || '';
   descLine.innerHTML = parseSkillDesc(skillDesc);
-  descLine.style.position = 'relative';  // 添加這行
+  descLine.style.position = 'relative';
   descLine.style.display = 'block';
 
+  // 組裝元素
   value.appendChild(descLine);
   skillRow.appendChild(label);
   skillRow.appendChild(value);
 
+  // 添加切換功能
   const toggleSkill = () => {
     descLine.classList.toggle('collapsed');
     descLine.classList.toggle('expanded');
@@ -890,10 +891,11 @@ function processSkill(skillId, recRow) {
   label.addEventListener('click', toggleSkill);
   descLine.addEventListener('click', toggleSkill);
 
-  // 確保技能描述被添加到正確的位置
+  // 插入技能行
   if (recRow && recRow.parentNode) {
     recRow.insertAdjacentElement('afterend', skillRow);
   }
+}
 
 function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
