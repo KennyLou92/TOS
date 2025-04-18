@@ -50450,8 +50450,8 @@
         "attribute": 4,
         "race": 4,
         "leaderskill": ,
-        "normalskill1": ,
-        "normalskill2": ,
+        "normalskill1": null,
+        "normalskill2": null,
         "HP": ,
         "ATK": ,
         "REC": 
