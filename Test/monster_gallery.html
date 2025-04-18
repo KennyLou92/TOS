@@ -447,12 +447,19 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
                     <div>${monster.name}</div>
                 </div>
             `).join('');
+
+            // 添加點擊事件監聽器
+            document.querySelectorAll('.monster').forEach(monster => {
+                monster.addEventListener('click', () => {
+                    const id = monster.getAttribute('data-id');
+                    fetchMonsterInfo(id, monster);
+                });
+            });
+
         } catch (error) {
             console.error('Error loading monsters:', error);
         }
     }
-
-    document.addEventListener('DOMContentLoaded', loadMonsters);
 </script>
  </head>
  <body>
