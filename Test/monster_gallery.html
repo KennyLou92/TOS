@@ -764,10 +764,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
        // 處理技能
        const skillIds = [];
-      if (monster.normalskill_id) {
-      if (Array.isArray(monster.normalskill_id)) {
+        if (monster.normalskill_id) {
+        // 檢查是否為字串類型（可能是逗號分隔的技能ID）
+        if (typeof monster.normalskill_id === 'string') {
+          skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
+        } 
+        // 檢查是否為數組
+        else if (Array.isArray(monster.normalskill_id)) {
           skillIds.push(...monster.normalskill_id);
-        } else {
+        } 
+        // 如果是單個數值
+        else {
           skillIds.push(monster.normalskill_id);
         }
       }
