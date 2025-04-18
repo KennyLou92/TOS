@@ -745,7 +745,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   
   const monsterIdStr = monsterId.toString();
   
-    fetch('monster.json')
+  fetch('monster.json')
     .then(response => response.json())
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
@@ -772,23 +772,24 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         console.log('原始技能數據:', monster.normalskill_id);
         console.log('技能數據類型:', typeof monster.normalskill_id);
         // 處理技能
-       const skillIds = [];
+        let skillIds = [];
+        // 先嘗試 normalskill_id
         if (monster.normalskill_id) {
-        // 檢查是否為字串類型（可能是逗號分隔的技能ID）
-        if (typeof monster.normalskill_id === 'string') {
-          skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
-        } 
-        // 檢查是否為數組
-        else if (Array.isArray(monster.normalskill_id)) {
-          skillIds.push(...monster.normalskill_id);
-        } 
-        // 如果是單個數值
-        else {
-          skillIds.push(monster.normalskill_id);
+          if (typeof monster.normalskill_id === 'string') {
+            skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
+          } else if (Array.isArray(monster.normalskill_id)) {
+            skillIds.push(...monster.normalskill_id);
+          } else {
+            skillIds.push(monster.normalskill_id);
+          }
         }
-      }
-
-      console.log('處理技能 IDs:', skillIds);
+         // 若沒有，再嘗試 normalskill1/normalskill2
+         if (skillIds.length === 0) {
+          if (monster.normalskill1) skillIds.push(monster.normalskill1);
+          if (monster.normalskill2) skillIds.push(monster.normalskill2);
+        }
+        console.log('原始技能數據:', skillIds);
+        console.log('技能數據類型:', Array.isArray(skillIds) ? 'array' : typeof skillIds);
 
       const contentBlock = document.querySelector('#monsterInfoContent .content');
       contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
@@ -796,11 +797,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
       // 確保技能 ID 存在且不為 0 或空值
       skillIds.forEach(skillId => {
-        if (skillId && skillId !== "0" && skillId !== 0) {
-          console.log('正在處理技能:', skillId);
-          processSkill(skillId, recRow);
-        }
-      });
+          if (skillId && skillId !== "0" && skillId !== 0) {
+            processSkill(skillId, recRow);
+          }
+        });
 
         // 綁定技能描述的展開/收合功能
         setTimeout(() => {
