@@ -735,10 +735,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	  4: 'light',
 	  5: 'dark',
 	};
+
 	function fetchMonsterInfo(monsterId, monsterElement) {
   if (!monsterId || !monsterElement) { return; }
   
-  // 將 monsterId 轉換為字串
   const monsterIdStr = monsterId.toString();
   
   fetch('monster.json')
@@ -746,7 +746,18 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
-        // ... 其他代碼保持不變 ...
+        // 設置背景圖和基本資訊
+        const infoBlock = document.getElementById("monsterInfoContent");
+        infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
+        
+        // 更新怪物資訊
+        updateMonsterIcons(monsterElement, monster);
+        document.getElementById('monsterHP').textContent = monster.HP;
+        document.getElementById('monsterATK').textContent = monster.ATK;
+        document.getElementById('monsterREC').textContent = monster.REC;
+        document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
+        document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
+        document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
         // 處理技能
         const skillIds = Array.isArray(monster.normalskill_id) 
@@ -758,23 +769,14 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
         // 在這裡處理技能
-        skillIds.forEach(skillId => {
-          if (!skillId) return;
-          
-          if (!window.skilldesc) {
-            console.error('skilldesc 尚未載入，重新載入中...');
-            const script = document.createElement('script');
-            script.src = 'skilldesc.js';
-            script.onload = () => {
-              console.log('skilldesc 重新載入成功');
-              processSkill(skillId, recRow);
-            };
-            document.head.appendChild(script);
-            return;
-          }
-          
-          processSkill(skillId, recRow);
-        });
+        if (window.skilldesc) {
+          skillIds.forEach(skillId => {
+            if (!skillId) return;
+            processSkill(skillId, recRow);
+          });
+        } else {
+          console.error('skilldesc 未載入');
+        }
 
         document.getElementById('monsterInfoModal').style.display = 'flex';
       } else {
@@ -785,6 +787,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       console.error("載入 monster.json 發生錯誤：", err);
     });
 }
+
 function processSkill(skillId, recRow) {
   const skill = window.skilldesc[skillId];
   if (!skill) {
