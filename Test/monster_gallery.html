@@ -302,14 +302,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   width: 24px;
   height: 24px;
 }
+    .skill-desc {
+      display: block !important; /* 強制顯示 */
+      margin: 8px 0;
+      line-height: 1.5;
+    }
     .skill-desc.collapsed {
     max-height: 1.5em;
     overflow: hidden;
-    position: relative;
-    cursor: pointer;
     white-space: nowrap;
     text-overflow: ellipsis;
-    display: block; /* 修改這裡：改為 block */
     }
     .skill-desc.collapsed::after {
       content: '▼';
@@ -325,8 +327,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     white-space: normal;
     max-height: none;
     overflow: visible;
-    display: block;
-    position: relative;
     }
     .skill-desc.expanded::after {
       content: '▲';
@@ -379,29 +379,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	/* ✅ 技能描述內文樣式（讓它寬度自適應並自然換行） */
 	.info-row[data-skill="true"] .info-value {
 	  width: 100%;
-	}
-
-	/* ✅ 技能描述收合狀態只顯示一行，加上漸層遮罩 */
-	.skill-desc.collapsed {
-	  max-height: 1.5em;
-	  overflow: hidden;
-	  position: relative;
-	  cursor: pointer;
-	  white-space: nowrap;
-	  text-overflow: ellipsis;
-	  display:none;
-	}
-
-	/* ✅ 點開後可展開多行 */
-	.skill-desc.expanded {
-	  white-space: normal;
-	  max-height: none;
-	  overflow: visible;
-	  display: block;
-	  white-space: normal;
-	  max-height: none;
-	  overflow: visible;
-	  position: relative;
 	}
 
 	/* ✅ 折疊/展開箭頭 */
@@ -786,6 +763,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         const skill = window.skilldesc[skillId];
         if (!skill) return;
 
+        console.log('處理技能:', skillId, skill); // 添加除錯日誌
+
         const skillRow = document.createElement('div');
         skillRow.className = 'info-row';
         skillRow.setAttribute('data-skill', 'true');
@@ -802,19 +781,21 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         value.className = 'info-value';
 
         const descLine = document.createElement('div');
-        descLine.className = 'skill-desc expanded'; // 預設為展開狀態
+        descLine.className = 'skill-desc';  // 移除 expanded class
         descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
-        descLine.style.display = 'block'; // 確保顯示
         
         value.appendChild(descLine);
         skillRow.appendChild(label);
         skillRow.appendChild(value);
 
         // 綁定展開/收合事件
-        label.addEventListener('click', () => {
+        const toggleSkill = () => {
           descLine.classList.toggle('collapsed');
           descLine.classList.toggle('expanded');
-        });
+        };
+        
+        label.addEventListener('click', toggleSkill);
+        descLine.addEventListener('click', toggleSkill);
 
         recRow.insertAdjacentElement('afterend', skillRow);
       });
