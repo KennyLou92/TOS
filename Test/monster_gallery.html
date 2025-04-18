@@ -22,15 +22,21 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <script src="skillData.js">
   </script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      if (window.skilldesc) {
+  window.addEventListener('load', () => {
+      if (!window.skilldesc) {
+        console.error('技能資料載入失敗，重新載入中...');
+        const script = document.createElement('script');
+        script.src = 'skilldesc.js';
+        script.onload = () => {
+          console.log('技能資料重新載入成功');
+          loadMonsters();
+        };
+        document.head.appendChild(script);
+      } else {
         console.log('技能資料載入成功');
         console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
-      } else {
-        console.error('技能資料載入失敗');
+        loadMonsters();
       }
-      // 在確保資料載入後才載入怪物列表
-      loadMonsters();
     });
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
@@ -761,31 +767,31 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
         // 處理技能
         const skillIds = Array.isArray(monster.normalskill_id) 
-          ? monster.normalskill_id 
-          : [monster.normalskill_id];
+        ? monster.normalskill_id 
+        : [monster.normalskill_id];
 
         const contentBlock = document.querySelector('#monsterInfoContent .content');
         contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
         const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
         // 在這裡處理技能
-        if (window.skilldesc) {
-          skillIds.forEach(skillId => {
-            if (!skillId) return;
-            processSkill(skillId, recRow);
-          });
-        } else {
-          console.error('skilldesc 未載入');
-        }
-
-        document.getElementById('monsterInfoModal').style.display = 'flex';
-      } else {
-        alert("⚠️找不到怪物資料！");
-      }
-    })
-    .catch(err => {
-      console.error("載入 monster.json 發生錯誤：", err);
+        if (!window.skilldesc) {
+    const script = document.createElement('script');
+    script.src = 'skilldesc.js';
+    script.onload = () => {
+      console.log('技能資料載入成功');
+      skillIds.forEach(skillId => {
+        if (!skillId) return;
+        processSkill(skillId, recRow);
+      });
+    };
+    document.head.appendChild(script);
+  } else {
+    skillIds.forEach(skillId => {
+      if (!skillId) return;
+      processSkill(skillId, recRow);
     });
+  }
 }
 
 function processSkill(skillId, recRow) {
