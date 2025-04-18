@@ -437,9 +437,20 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </style>
   <script>
     // 確保 DOM 載入完成後執行
-    document.addEventListener('DOMContentLoaded', () => {
-      loadMonsters();
-    });
+  document.addEventListener('DOMContentLoaded', () => {
+  loadMonsters();
+  });
+
+  // 修改為：
+  window.addEventListener('load', async () => {
+    if (!window.skilldesc) {
+      console.error('技能資料載入失敗');
+      return;
+    }
+    console.log('技能資料載入成功');
+    console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
+    await loadMonsters();
+  });
 
   async function loadMonsters() {
   try {
@@ -454,8 +465,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     const gallery = document.getElementById('monsterGallery');
     
     gallery.innerHTML = monsters.map(monster => {
-      // 修改名稱查找邏輯
-      const nameObj = names.find(n => n.id === monster.id);
+      // 修正名稱查找邏輯，確保 id 為數字類型
+      const nameObj = names.find(n => n.id === parseInt(monster.id));
       const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
       
       return `
@@ -476,16 +487,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
         // 重新綁定點擊事件
         document.querySelectorAll('.monster').forEach(monster => {
-          monster.addEventListener('click', () => {
-            const id = monster.getAttribute('data-id');
-            fetchMonsterInfo(id, monster);
-          });
-        });
+      monster.addEventListener('click', () => {
+        const id = monster.getAttribute('data-id');
+        fetchMonsterInfo(id, monster);
+      });
+    });
 
-      } catch (error) {
-        console.error('載入怪物資料時發生錯誤：', error);
-      }
-    }
+  } catch (error) {
+    console.error('載入怪物資料時發生錯誤：', error);
+  }
+}
   </script>
  </head>
  <body>
