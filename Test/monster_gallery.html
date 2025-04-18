@@ -323,6 +323,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    display: none !important;
     }
     .skill-desc.collapsed::after {
       content: '▼';
@@ -888,9 +889,8 @@ function processSkill(skillId, recRow) {
     descLine.classList.toggle('collapsed');
     descLine.classList.toggle('expanded');
   };
-  
+
   label.addEventListener('click', toggleSkill);
-  descLine.addEventListener('click', toggleSkill);
 
   // 插入技能行
   if (recRow && recRow.parentNode) {
