@@ -15,7 +15,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   labelElement.appendChild(tag);
 }
 </script>
-<script>
+  <script src="board.icons.js">
+  </script>
+  <script src="skilldesc.js">
+  </script>
+  <script src="skillData.js">
+  </script>
+  <script>
   // 確保 skilldesc 已載入
   let skillDescLoaded = false;
   window.addEventListener('load', () => {
@@ -27,12 +33,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
   });
 </script>
-  <script src="board.icons.js">
-  </script>
-  <script src="skilldesc.js">
-  </script>
-  <script src="skillData.js">
-  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
   <title>
@@ -772,16 +772,31 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         skillIds.forEach(skillId => {
         if (!skillId) return;
         
-        console.log('正在處理技能ID:', skillId); // 新增除錯日誌
-        console.log('skilldesc 狀態:', window.skilldesc); // 檢查 skilldesc 是否存在
+        // 確保 skilldesc 已載入
+        if (!window.skilldesc) {
+          console.error('skilldesc 尚未載入，重新載入中...');
+          const script = document.createElement('script');
+          script.src = 'skilldesc.js';
+          script.onload = () => {
+            console.log('skilldesc 重新載入成功');
+            processSkill(skillId);
+          };
+          document.head.appendChild(script);
+          return;
+        }
         
-        const skill = window.skilldesc ? window.skilldesc[skillId] : null;
-        console.log('獲取到的技能資料:', skill); // 檢查技能資料
-        
+        processSkill(skillId);
+      });
+
+      // 將技能處理邏輯抽出為獨立函數
+      function processSkill(skillId) {
+        const skill = window.skilldesc[skillId];
         if (!skill) {
           console.warn(`找不到技能資料: ${skillId}`);
           return;
         }
+
+        console.log('處理技能:', skillId, skill);
 
         const skillRow = document.createElement('div');
         skillRow.className = 'info-row';
