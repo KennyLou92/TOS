@@ -759,17 +759,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   if (!monsterId || !monsterElement) { return; }
   
   const monsterIdStr = monsterId.toString();
-  
+  const skillTab = document.getElementById('tab-skill');
+  const leaderTab = document.getElementById('tab-leader');
+        skillTab.innerHTML = '';
+        leaderTab.innerHTML = '';
   fetch('monster.json')
     .then(response => response.json())
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
         console.log('完整的怪物數據:', monster); // 新增這行來檢查完整的怪物數據
-        const skillTab = document.getElementById('tab-skill');
-        const leaderTab = document.getElementById('tab-leader');
-        skillTab.innerHTML = '';
-        leaderTab.innerHTML = '';
       // 技能顯示（原本的技能顯示流程，插入 skillTab）
       let skillIds = [];
     // ... 取得 skillIds 的程式碼 ...
