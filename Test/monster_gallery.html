@@ -747,43 +747,46 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	  5: 'dark',
 	};
 	function fetchMonsterInfo(monsterId, monsterElement) {
-  if (!monsterId || !monsterElement) {    return;
-  }
+  if (!monsterId || !monsterElement) { return; }
+  
+  // 添加日誌
+  console.log('Monster ID:', monsterId);
+  console.log('Skill IDs:', monsterElement.getAttribute('data-normalskill-id'));
 
-	  fetch('monster.json')
-		.then(response => response.json())
-		.then(data => {
-		  const monster = data.find(m => m.id === monsterId);
-		  if (monster) {
-			const infoBlock = document.getElementById("monsterInfoContent");
-			infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterId}.jpg')`);
+  fetch('monster.json')
+    .then(response => response.json())
+    .then(data => {
+      const monster = data.find(m => m.id === monsterId);
+      if (monster) {
+        // ... 其他代碼 ...
 
+        // 顯示技能（兩行排版）
+        const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
+        const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
+        
+        // 添加日誌
+        console.log('Parsed Skill IDs:', skillIds);
+        console.log('Skilldesc object:', skilldesc);
 
-			// ✅ 呼叫新的圖示更新函式
-			updateMonsterIcons(monsterElement, monster);
+        const contentBlock = document.querySelector('#monsterInfoContent .content');
+        contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
 
-			document.getElementById('monsterHP').textContent = monster.HP;
-			document.getElementById('monsterATK').textContent = monster.ATK;
-			document.getElementById('monsterREC').textContent = monster.REC;
+        const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
-			document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
-			document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
-			document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
-            // 顯示技能（兩行排版）
-            const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
-            const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
-            const contentBlock = document.querySelector('#monsterInfoContent .content');
-			contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+        skillIds.forEach((skillId) => {
+          // 添加日誌
+          console.log('Processing skill ID:', skillId);
+          console.log('Skill data:', skilldesc[skillId]);
 
-			const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
-
-			skillIds.forEach((skillId) => {
-			  let skillName = '無技能';
-			  let skillDesc = '';
-			  if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
-				skillName = skilldesc[skillId].name || '無名稱';
-				skillDesc = skilldesc[skillId].description || skilldesc[skillId].desc || '';
-			  }
+          let skillName = '無技能';
+          let skillDesc = '';
+          if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
+            skillName = skilldesc[skillId].name || '無名稱';
+            skillDesc = skilldesc[skillId].description || skilldesc[skillId].desc || '';
+            // 添加日誌
+            console.log('Skill name:', skillName);
+            console.log('Skill description:', skillDesc);
+          }
 
 				const skillRow = document.createElement('div');
         skillRow.className = 'info-row';
