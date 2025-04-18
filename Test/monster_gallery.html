@@ -419,6 +419,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	  content: '▲';
 	}
   </style>
+  <style>
+    .tab-container { margin-top: 16px; }
+    .tab-buttons { display: flex; gap: 8px; }
+    .tab-btn { padding: 4px 16px; border: 1px solid #ccc; background: #f9f9f9; cursor: pointer; }
+    .tab-btn.active { background: #e0e0e0; font-weight: bold; }
+    .tab-content { margin-top: 12px; }
+  </style>
   <script>
     // 確保 DOM 載入完成後執行
   document.addEventListener('DOMContentLoaded', () => {
@@ -617,7 +624,14 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
        <p class="info-value" id="monsterREC1_2">
        </p>
       </div>
-      <!--<button onclick="closeModal()">關閉</button>-->
+      <div class="tab-container">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="leader">隊長技</button>
+          <button class="tab-btn" data-tab="skill">主動技</button>
+        </div>
+        <div class="tab-content" id="tab-leader"></div>
+        <div class="tab-content" id="tab-skill" style="display:none"></div>
+      </div>
      </div>
     </div>
    </div>
@@ -752,12 +766,56 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
         console.log('完整的怪物數據:', monster); // 新增這行來檢查完整的怪物數據
-        
+        const skillTab = document.getElementById('tab-skill');
+        const leaderTab = document.getElementById('tab-leader');
+        skillTab.innerHTML = '';
+        leaderTab.innerHTML = '';
+      // 技能顯示（原本的技能顯示流程，插入 skillTab）
+      let skillIds = [];
+    // ... 取得 skillIds 的程式碼 ...
+    skillIds.forEach(skillId => {
+      if (skillId && skillId !== "0" && skillId !== 0) {
+        // 這裡要改成插入 skillTab
+        processSkill(skillId, null, skillTab);
+      }
+    });
+
+    // 隊長技顯示
+    let leaderSkillId = monster.leaderskill || monster.leaderSkill || monster.leader_skill;
+    if (leaderSkillId && window.leader_skill) {
+      const leader = window.leader_skill.find(l => l.id == leaderSkillId);
+      if (leader) {
+        leaderTab.innerHTML = `
+          <div class="info-row" data-leader="true">
+            <div class="info-label">${leader.name}</div>
+            <div class="info-value">${leader.desc.replace(/\n/g, '<br>')}</div>
+          </div>
+        `;
+      } else {
+        leaderTab.innerHTML = '<div class="info-row">查無隊長技資料</div>';
+      }
+    } else {
+      leaderTab.innerHTML = '<div class="info-row">查無隊長技資料</div>';
+    }
+
+    // Tab 切換功能
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.onclick = function() {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        document.getElementById('tab-skill').style.display = this.dataset.tab === 'skill' ? '' : 'none';
+        document.getElementById('tab-leader').style.display = this.dataset.tab === 'leader' ? '' : 'none';
+      };
+    });
         // 設置背景圖和基本資訊
         const infoBlock = document.getElementById("monsterInfoContent");
         infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
         
         updateMonsterIcons(monsterElement, monster);
+        const skillTab = document.getElementById('tab-skill');
+        const leaderTab = document.getElementById('tab-leader');
+        skillTab.innerHTML = '';
+        leaderTab.innerHTML = '';
         
         // 更新基本屬性
         document.getElementById('monsterHP').textContent = monster.HP;
@@ -844,6 +902,11 @@ function processSkill(skillId, recRow) {
     };
     document.head.appendChild(script);
     return;
+  }
+  if (container) {
+    container.appendChild(skillRow);
+  } else if (recRow && recRow.parentNode) {
+    recRow.insertAdjacentElement('afterend', skillRow);
   }
 
   const skill = window.skilldesc?.[skillId?.toString()];
