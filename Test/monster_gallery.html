@@ -743,11 +743,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   
   const monsterIdStr = monsterId.toString();
   
-  fetch('monster.json')
+    fetch('monster.json')
     .then(response => response.json())
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
+        console.log('完整的怪物數據:', monster); // 新增這行來檢查完整的怪物數據
+        
         // 設置背景圖和基本資訊
         const infoBlock = document.getElementById("monsterInfoContent");
         infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
@@ -761,6 +763,9 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
         document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
         document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+
+        // 檢查技能 ID 的屬性名稱
+        console.log('怪物所有屬性:', Object.keys(monster)); // 新增這行來檢查所有可用的屬性
 
         console.log('原始技能數據:', monster.normalskill_id);
         console.log('技能數據類型:', typeof monster.normalskill_id);
