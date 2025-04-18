@@ -749,104 +749,85 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	function fetchMonsterInfo(monsterId, monsterElement) {
   if (!monsterId || !monsterElement) { return; }
   
-  // 添加日誌
-  console.log('Monster ID:', monsterId);
-  console.log('Skill IDs:', monsterElement.getAttribute('data-normalskill-id'));
-
+  // 將 monsterId 轉換為字串
+  const monsterIdStr = monsterId.toString();
+  
   fetch('monster.json')
     .then(response => response.json())
     .then(data => {
-      const monster = data.find(m => m.id === monsterId);
+      const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
-        // ... 其他代碼 ...
-
-        // 顯示技能（兩行排版）
-        const skillIdsRaw = monsterElement.getAttribute('data-normalskill-id') || '';
-        const skillIds = skillIdsRaw.split(',').filter(id => id.trim() !== '');
+        // 設置背景圖和基本資訊
+        const infoBlock = document.getElementById("monsterInfoContent");
+        infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
         
-        // 添加日誌
-        console.log('Parsed Skill IDs:', skillIds);
-        console.log('Skilldesc object:', skilldesc);
+        // 更新怪物資訊
+        updateMonsterIcons(monsterElement, monster);
+        document.getElementById('monsterHP').textContent = monster.HP;
+        document.getElementById('monsterATK').textContent = monster.ATK;
+        document.getElementById('monsterREC').textContent = monster.REC;
+        document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
+        document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
+        document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+
+        // 處理技能
+        const skillIds = Array.isArray(monster.normalskill_id) 
+          ? monster.normalskill_id 
+          : [monster.normalskill_id];
 
         const contentBlock = document.querySelector('#monsterInfoContent .content');
         contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
-
         const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
-        skillIds.forEach((skillId) => {
-          // 添加日誌
-          console.log('Processing skill ID:', skillId);
-          console.log('Skill data:', skilldesc[skillId]);
+        skillIds.forEach(skillId => {
+          if (!skillId) return;
+          
+          const skill = window.skilldesc[skillId];
+          if (!skill) return;
 
-          let skillName = '無技能';
-          let skillDesc = '';
-          if (typeof skilldesc !== 'undefined' && skilldesc[skillId]) {
-            skillName = skilldesc[skillId].name || '無名稱';
-            skillDesc = skilldesc[skillId].description || skilldesc[skillId].desc || '';
-            // 添加日誌
-            console.log('Skill name:', skillName);
-            console.log('Skill description:', skillDesc);
-          }
+          const skillRow = document.createElement('div');
+          skillRow.className = 'info-row';
+          skillRow.setAttribute('data-skill', 'true');
+          skillRow.style.borderTop = '1px solid #ccc';
+          skillRow.style.marginTop = '8px';
+          skillRow.style.paddingTop = '8px';
 
-				const skillRow = document.createElement('div');
-        skillRow.className = 'info-row';
-        skillRow.setAttribute('data-skill', 'true');
-        skillRow.style.borderTop = '1px solid #ccc';
-        skillRow.style.marginTop = '8px';
-        skillRow.style.paddingTop = '8px';
-        skillRow.style.alignItems = 'flex-start';
+          const label = document.createElement('div');
+          label.className = 'info-label';
+          label.textContent = skill.name || '無名稱';
+          applySkillTypeTag(skillId, label);
 
-        const label = document.createElement('div');
-        label.className = 'info-label';
-        label.textContent = skillName;
-        applySkillTypeTag(skillId, label);
-        label.style.fontWeight = 'bold';
+          const value = document.createElement('div');
+          value.className = 'info-value';
 
-        const value = document.createElement('div');
-        value.className = 'info-value';
+          const descLine = document.createElement('div');
+          descLine.className = 'skill-desc expanded';
+          descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
+          
+          value.appendChild(descLine);
+          skillRow.appendChild(label);
+          skillRow.appendChild(value);
 
-        const descLine = document.createElement('div');
-        descLine.className = 'skill-desc expanded'; // 修改這裡：預設為 expanded
-        descLine.innerHTML = parseSkillDesc(skillDesc);
-        descLine.style.display = 'block'; // 添加這行：確保技能描述可見
+          // 綁定展開/收合事件
+          label.addEventListener('click', () => {
+            descLine.classList.toggle('collapsed');
+            descLine.classList.toggle('expanded');
+          });
 
-        value.appendChild(descLine);
-        skillRow.appendChild(label);
-        skillRow.appendChild(value);
+          recRow.insertAdjacentElement('afterend', skillRow);
+        });
 
-				// 🔁 正確綁定點擊事件
-				descLine.addEventListener('click', () => {
-				  descLine.classList.toggle('collapsed');
-				  descLine.classList.toggle('expanded');
-				});
-				
-				// ✅ 新增這段：讓標題也可以展開
-				label.addEventListener('click', () => {
-				  descLine.classList.toggle('collapsed');
-				  descLine.classList.toggle('expanded');
-				});	
-				
-				value.appendChild(descLine);
-				// 把 label 和 value 加進 skillRow
-				skillRow.appendChild(label);
-				skillRow.appendChild(value);
+        document.getElementById('monsterInfoModal').style.display = 'flex';
+      } else {
+        alert("⚠️找不到怪物資料！");
+      }
+    })
+    .catch(err => {
+      console.error("載入 monster.json 發生錯誤：", err);
+    });
+}
 
-			  recRow.insertAdjacentElement('afterend', skillRow);
-			});
-
-
-			document.getElementById('monsterInfoModal').style.display = 'flex';
-		  } else {
-			alert("⚠️找不到怪物資料！");
-		  }
-		})
-		.catch(err => {
-		  console.error("載入 monster.json 發生錯誤：", err);
-		});
-	}
-
-
-	function closeModal() {
+function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
 	}
 
