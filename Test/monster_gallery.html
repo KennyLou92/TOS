@@ -442,11 +442,15 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     const monsters = await monsterResponse.json();
     const names = await nameResponse.json();
     
+    // 加入除錯訊息
+    console.log('Monster Data:', monsters[0]);
+    console.log('Name Data:', names[0]);
+    
     const gallery = document.getElementById('monsterGallery');
     
     gallery.innerHTML = monsters.map(monster => {
-      // 修改這裡：直接讀取 name 屬性
-      const monsterName = names.find(n => n.id === monster.id)?.name || `未知 (${monster.id})`;
+      // 確保 ID 型別一致（轉為字串進行比較）
+      const monsterName = names.find(n => n.id.toString() === monster.id.toString())?.name || `未知 (${monster.id})`;
       return `
         <div class="monster" 
              data-attribute="${monster.attribute}" 
@@ -462,6 +466,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         </div>
       `;
     }).join('');
+
+    // ... 其餘代碼保持不變 ...
 
         // 重新綁定點擊事件
         document.querySelectorAll('.monster').forEach(monster => {
