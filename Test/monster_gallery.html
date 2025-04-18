@@ -752,7 +752,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         const infoBlock = document.getElementById("monsterInfoContent");
         infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
         
-        // 更新怪物資訊（移除重複的更新）
         updateMonsterIcons(monsterElement, monster);
         
         // 更新基本屬性
@@ -763,20 +762,31 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
         document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
-        // 处理技能
-        const skillIds = Array.isArray(monster.normalskill_id) 
+       // 處理技能
+       const skillIds = Array.isArray(monster.normalskill_id) 
           ? monster.normalskill_id 
           : [monster.normalskill_id];
 
-        const contentBlock = document.querySelector('#monsterInfoContent .content');
-        contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
-        const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
+        console.log('處理技能 IDs:', skillIds); // 新增除錯訊息
 
-        // 处理技能
+        const contentBlock = document.querySelector('#monsterInfoContent .content');
+        // 先清除舊的技能
+        contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+        
+        const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
+        
+        // 確保技能 ID 存在且不為 0 或空值
         skillIds.forEach(skillId => {
-          if (!skillId) return;
-          processSkill(skillId, recRow);
+          if (skillId && skillId !== "0" && skillId !== 0) {
+            console.log('正在處理技能:', skillId); // 新增除錯訊息
+            processSkill(skillId, recRow);
+          }
         });
+
+        // 綁定技能描述的展開/收合功能
+        setTimeout(() => {
+          bindSkillDescriptions();
+        }, 100);
 
         document.getElementById('monsterInfoModal').style.display = 'flex';
       } else {
@@ -786,6 +796,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     .catch(err => {
       console.error("載入 monster.json 發生錯誤：", err);
     });
+}
+
+// 新增綁定技能描述展開/收合的函數
+function bindSkillDescriptions() {
+  document.querySelectorAll('.skill-desc').forEach(desc => {
+    desc.addEventListener('click', function() {
+      this.classList.toggle('collapsed');
+      this.classList.toggle('expanded');
+    });
+  });
 }
 
 function processSkill(skillId, recRow) {
