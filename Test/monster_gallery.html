@@ -763,25 +763,28 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
        // 處理技能
-       const skillIds = Array.isArray(monster.normalskill_id) 
-          ? monster.normalskill_id 
-          : [monster.normalskill_id];
+       const skillIds = [];
+      if (monster.normalskill_id) {
+      if (Array.isArray(monster.normalskill_id)) {
+          skillIds.push(...monster.normalskill_id);
+        } else {
+          skillIds.push(monster.normalskill_id);
+        }
+      }
 
-        console.log('處理技能 IDs:', skillIds); // 新增除錯訊息
+      console.log('處理技能 IDs:', skillIds);
 
-        const contentBlock = document.querySelector('#monsterInfoContent .content');
-        // 先清除舊的技能
-        contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
-        
-        const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
-        
-        // 確保技能 ID 存在且不為 0 或空值
-        skillIds.forEach(skillId => {
-          if (skillId && skillId !== "0" && skillId !== 0) {
-            console.log('正在處理技能:', skillId); // 新增除錯訊息
-            processSkill(skillId, recRow);
-          }
-        });
+      const contentBlock = document.querySelector('#monsterInfoContent .content');
+      contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
+      const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
+
+      // 確保技能 ID 存在且不為 0 或空值
+      skillIds.forEach(skillId => {
+        if (skillId && skillId !== "0" && skillId !== 0) {
+          console.log('正在處理技能:', skillId);
+          processSkill(skillId, recRow);
+        }
+      });
 
         // 綁定技能描述的展開/收合功能
         setTimeout(() => {
