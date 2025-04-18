@@ -50445,6 +50445,15 @@
         "ATK": 1994,
         "REC": 314
     },
+	    "id": "10898",
+        "attribute": 4,
+        "race": 4,
+        "leaderskill": ,
+        "normalskill1": ,
+        "normalskill2": ,
+        "HP": ,
+        "ATK": ,
+        "REC": 
     {
         "id": "11001",
         "attribute": 2,
