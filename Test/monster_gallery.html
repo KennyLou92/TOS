@@ -449,15 +449,19 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     const gallery = document.getElementById('monsterGallery');
     
     gallery.innerHTML = monsters.map(monster => {
-      // 確保 ID 型別一致（轉為字串進行比較）
       const monsterName = names.find(n => n.id.toString() === monster.id.toString())?.name || `未知 (${monster.id})`;
+      // 確保 normalskill_id 是字串形式，如果是陣列則用逗號連接
+      const skillIds = Array.isArray(monster.normalskill_id) 
+        ? monster.normalskill_id.join(',')
+        : monster.normalskill_id || '';
+        
       return `
         <div class="monster" 
              data-attribute="${monster.attribute}" 
              data-id="${monster.id}" 
              data-race="${monster.race}" 
              data-name="${monsterName}"
-             data-normalskill-id="${monster.normalskill_id}">
+             data-normalskill-id="${skillIds}">
           <div>${monster.id}</div>
           <img alt="${monster.id}" 
                src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
@@ -466,8 +470,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         </div>
       `;
     }).join('');
-
-    // ... 其餘代碼保持不變 ...
 
         // 重新綁定點擊事件
         document.querySelectorAll('.monster').forEach(monster => {
