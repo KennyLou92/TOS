@@ -849,7 +849,7 @@ function processSkill(skillId, recRow) {
   console.log("顯示技能:", skillId, skill);
   if (!skill) {
     console.warn("找不到技能描述 for skillId:", skillId);
-    return;
+    return "（無技能描述）";;
   }
 
   const skillDesc = skill.description || skill.desc || skill.skillDesc || "（描述缺失）";
