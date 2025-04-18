@@ -433,34 +433,35 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     });
 
     async function loadMonsters() {
-      try {
-        const [monsterResponse, nameResponse] = await Promise.all([
-          fetch('monster.json'),
-          fetch('monster_name_zh.json')
-        ]);
-        
-        const monsters = await monsterResponse.json();
-        const names = await nameResponse.json();
-        
-        const gallery = document.getElementById('monsterGallery');
-        
-        gallery.innerHTML = monsters.map(monster => {
-          const monsterName = names[monster.id] || `未知 (${monster.id})`;
-          return `
-            <div class="monster" 
-                 data-attribute="${monster.attribute}" 
-                 data-id="${monster.id}" 
-                 data-race="${monster.race}" 
-                 data-name="${monsterName}"
-                 data-normalskill-id="${monster.normalskill_id}">
-              <div>${monster.id}</div>
-              <img alt="${monster.id}" 
-                   src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
-                   onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
-              <div>${monsterName}</div>
-            </div>
-          `;
-        }).join('');
+  try {
+    const [monsterResponse, nameResponse] = await Promise.all([
+      fetch('monster.json'),
+      fetch('monster_name_zh.json')
+    ]);
+    
+    const monsters = await monsterResponse.json();
+    const names = await nameResponse.json();
+    
+    const gallery = document.getElementById('monsterGallery');
+    
+    gallery.innerHTML = monsters.map(monster => {
+      // 修改這裡：直接讀取 name 屬性
+      const monsterName = names.find(n => n.id === monster.id)?.name || `未知 (${monster.id})`;
+      return `
+        <div class="monster" 
+             data-attribute="${monster.attribute}" 
+             data-id="${monster.id}" 
+             data-race="${monster.race}" 
+             data-name="${monsterName}"
+             data-normalskill-id="${monster.normalskill_id}">
+          <div>${monster.id}</div>
+          <img alt="${monster.id}" 
+               src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
+               onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
+          <div>${monsterName}</div>
+        </div>
+      `;
+    }).join('');
 
         // 重新綁定點擊事件
         document.querySelectorAll('.monster').forEach(monster => {
