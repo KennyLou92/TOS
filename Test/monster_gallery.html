@@ -302,11 +302,14 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   width: 24px;
   height: 24px;
 }
-.skill-desc.collapsed {
-      max-height: 60px;
-      overflow: hidden;
-      cursor: pointer;
-      position: relative;
+    .skill-desc.collapsed {
+    max-height: 1.5em;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block; /* 修改這裡：改為 block */
     }
     .skill-desc.collapsed::after {
       content: '▼';
@@ -319,10 +322,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       color: #555;
     }
     .skill-desc.expanded {
-      max-height: none;
-      overflow: visible;
-      cursor: pointer;
-      position: relative;
+    white-space: normal;
+    max-height: none;
+    overflow: visible;
+    display: block;
+    position: relative;
     }
     .skill-desc.expanded::after {
       content: '▲';
@@ -782,25 +786,30 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 			  }
 
 				const skillRow = document.createElement('div');
-				skillRow.className = 'info-row';
-				skillRow.setAttribute('data-skill', 'true');
-				skillRow.style.borderTop = '1px solid #ccc';
-				skillRow.style.marginTop = '8px';
-				skillRow.style.paddingTop = '8px';
-				skillRow.style.alignItems = 'flex-start'; // 確保多行時對齊上方
+        skillRow.className = 'info-row';
+        skillRow.setAttribute('data-skill', 'true');
+        skillRow.style.borderTop = '1px solid #ccc';
+        skillRow.style.marginTop = '8px';
+        skillRow.style.paddingTop = '8px';
+        skillRow.style.alignItems = 'flex-start';
 
-				const label = document.createElement('div');
-				label.className = 'info-label';
-				label.textContent = skillName;                applySkillTypeTag(skillId, label);
-				label.style.fontWeight = 'bold';
+        const label = document.createElement('div');
+        label.className = 'info-label';
+        label.textContent = skillName;
+        applySkillTypeTag(skillId, label);
+        label.style.fontWeight = 'bold';
 
-				const value = document.createElement('div');
-				value.className = 'info-value';
+        const value = document.createElement('div');
+        value.className = 'info-value';
 
-				const descLine = document.createElement('div');
-				descLine.className = 'skill-desc collapsed';
-				descLine.innerHTML = parseSkillDesc(skillDesc);
-				bindBoardHover();
+        const descLine = document.createElement('div');
+        descLine.className = 'skill-desc expanded'; // 修改這裡：預設為 expanded
+        descLine.innerHTML = parseSkillDesc(skillDesc);
+        descLine.style.display = 'block'; // 添加這行：確保技能描述可見
+
+        value.appendChild(descLine);
+        skillRow.appendChild(label);
+        skillRow.appendChild(value);
 
 				// 🔁 正確綁定點擊事件
 				descLine.addEventListener('click', () => {
