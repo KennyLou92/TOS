@@ -779,43 +779,44 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
         const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
-        skillIds.forEach(skillId => {
-          if (!skillId) return;
-          
-          const skill = window.skilldesc[skillId];
-          if (!skill) return;
+        // 在 fetchMonsterInfo 函數中
+      skillIds.forEach(skillId => {
+        if (!skillId) return;
+        
+        const skill = window.skilldesc[skillId];
+        if (!skill) return;
 
-          const skillRow = document.createElement('div');
-          skillRow.className = 'info-row';
-          skillRow.setAttribute('data-skill', 'true');
-          skillRow.style.borderTop = '1px solid #ccc';
-          skillRow.style.marginTop = '8px';
-          skillRow.style.paddingTop = '8px';
+        const skillRow = document.createElement('div');
+        skillRow.className = 'info-row';
+        skillRow.setAttribute('data-skill', 'true');
+        skillRow.style.borderTop = '1px solid #ccc';
+        skillRow.style.marginTop = '8px';
+        skillRow.style.paddingTop = '8px';
 
-          const label = document.createElement('div');
-          label.className = 'info-label';
-          label.textContent = skill.name || '無名稱';
-          applySkillTypeTag(skillId, label);
+        const label = document.createElement('div');
+        label.className = 'info-label';
+        label.textContent = skill.name || '無名稱';
+        applySkillTypeTag(skillId, label);
 
-          const value = document.createElement('div');
-          value.className = 'info-value';
+        const value = document.createElement('div');
+        value.className = 'info-value';
 
-          const descLine = document.createElement('div');
-          descLine.className = 'skill-desc expanded';
-          descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
-          
-          value.appendChild(descLine);
-          skillRow.appendChild(label);
-          skillRow.appendChild(value);
+        const descLine = document.createElement('div');
+        descLine.className = 'skill-desc expanded'; // 預設為展開狀態
+        descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
+        
+        value.appendChild(descLine);
+        skillRow.appendChild(label);
+        skillRow.appendChild(value);
 
-          // 綁定展開/收合事件
-          label.addEventListener('click', () => {
-            descLine.classList.toggle('collapsed');
-            descLine.classList.toggle('expanded');
-          });
-
-          recRow.insertAdjacentElement('afterend', skillRow);
+        // 綁定展開/收合事件
+        label.addEventListener('click', () => {
+          descLine.classList.toggle('collapsed');
+          descLine.classList.toggle('expanded');
         });
+
+        recRow.insertAdjacentElement('afterend', skillRow);
+      });
 
         document.getElementById('monsterInfoModal').style.display = 'flex';
       } else {
