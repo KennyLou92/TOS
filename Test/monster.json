@@ -50452,9 +50452,9 @@
         "leaderskill": null,
         "normalskill1": null,
         "normalskill2": null,
-        "HP": ,
-        "ATK": ,
-        "REC": 
+        "HP": null,
+        "ATK": null,
+        "REC": null
 	},
     {
         "id": "11001",
