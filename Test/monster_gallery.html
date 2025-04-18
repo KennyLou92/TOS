@@ -17,37 +17,18 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 </script>
   <script src="board.icons.js">
   </script>
-  <script src="skilldesc.js">
-  </script>
   <script src="skillData.js">
   </script>
+  <script src="skilldesc.js">
+  </script>
   <script>
-      window.addEventListener('load', () => {
-      if (!window.skilldesc) {
-        console.error('技能資料載入失敗');
-      } else {
-        console.log('技能資料載入成功');
+    // 檢查 skilldesc 是否正確載入
+    window.addEventListener('load', () => {
+      console.log('skilldesc 載入狀態:', !!window.skilldesc);
+      if (window.skilldesc) {
         console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
       }
-      // 在確保資料載入後才載入怪物列表
-      loadMonsters();
     });
-
-    function loadSkillData() {
-      return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = 'skilldesc.js';
-        script.onload = () => {
-          console.log('技能資料載入成功');
-          resolve();
-        };
-        script.onerror = () => {
-          console.error('技能資料載入失敗');
-          reject();
-        };
-        document.head.appendChild(script);
-      });
-    }
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
@@ -808,6 +789,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 }
 
 function processSkill(skillId, recRow) {
+  if (!window.skilldesc) {
+    console.error('skilldesc 未載入');
+    return;
+  }
+
   const skill = window.skilldesc[skillId];
   if (!skill) {
     console.warn(`找不到技能資料: ${skillId}`);
