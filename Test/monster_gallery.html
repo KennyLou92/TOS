@@ -833,7 +833,9 @@ function processSkill(skillId, recRow) {
 
   const descLine = document.createElement('div');
   descLine.className = 'skill-desc expanded';
-  descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
+  const skillDesc = skill.description || skill.desc || skill.skillDesc || '';
+  descLine.innerHTML = parseSkillDesc(skillDesc);
+  descLine.style.position = 'relative';  // 添加這行
   descLine.style.display = 'block';
 
   value.appendChild(descLine);
@@ -841,7 +843,6 @@ function processSkill(skillId, recRow) {
   skillRow.appendChild(value);
 
   const toggleSkill = () => {
-    console.log('切換技能描述顯示狀態');
     descLine.classList.toggle('collapsed');
     descLine.classList.toggle('expanded');
   };
@@ -849,7 +850,10 @@ function processSkill(skillId, recRow) {
   label.addEventListener('click', toggleSkill);
   descLine.addEventListener('click', toggleSkill);
 
-  recRow.insertAdjacentElement('afterend', skillRow);
+  // 確保技能描述被添加到正確的位置
+  if (recRow && recRow.parentNode) {
+    recRow.insertAdjacentElement('afterend', skillRow);
+  }
 }
 
 function closeModal() {
