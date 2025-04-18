@@ -15,6 +15,18 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   labelElement.appendChild(tag);
 }
 </script>
+<script>
+  // 確保 skilldesc 已載入
+  let skillDescLoaded = false;
+  window.addEventListener('load', () => {
+    if (window.skilldesc) {
+      skillDescLoaded = true;
+      console.log('技能資料載入成功');
+    } else {
+      console.error('技能資料載入失敗');
+    }
+  });
+</script>
   <script src="board.icons.js">
   </script>
   <script src="skilldesc.js">
@@ -757,13 +769,19 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
         // 在 fetchMonsterInfo 函數中
-      skillIds.forEach(skillId => {
+        skillIds.forEach(skillId => {
         if (!skillId) return;
         
-        const skill = window.skilldesc[skillId];
-        if (!skill) return;
-
-        console.log('處理技能:', skillId, skill); // 添加除錯日誌
+        console.log('正在處理技能ID:', skillId); // 新增除錯日誌
+        console.log('skilldesc 狀態:', window.skilldesc); // 檢查 skilldesc 是否存在
+        
+        const skill = window.skilldesc ? window.skilldesc[skillId] : null;
+        console.log('獲取到的技能資料:', skill); // 檢查技能資料
+        
+        if (!skill) {
+          console.warn(`找不到技能資料: ${skillId}`);
+          return;
+        }
 
         const skillRow = document.createElement('div');
         skillRow.className = 'info-row';
@@ -781,15 +799,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         value.className = 'info-value';
 
         const descLine = document.createElement('div');
-        descLine.className = 'skill-desc';  // 移除 expanded class
+        descLine.className = 'skill-desc expanded'; // 改回 expanded
         descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
-        
+        descLine.style.display = 'block'; // 確保顯示
+
         value.appendChild(descLine);
         skillRow.appendChild(label);
         skillRow.appendChild(value);
 
         // 綁定展開/收合事件
         const toggleSkill = () => {
+          console.log('切換技能描述顯示狀態'); // 新增除錯日誌
           descLine.classList.toggle('collapsed');
           descLine.classList.toggle('expanded');
         };
