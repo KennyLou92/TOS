@@ -24,9 +24,9 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <script>
     window.addEventListener('load', () => {
       // 確保 skilldesc.js 已經載入
+      window.addEventListener('load', () => {
       if (!window.skilldesc) {
-        console.error('技能資料載入失敗，嘗試重新載入...');
-        loadSkillData();
+        console.error('技能資料載入失敗');
       } else {
         console.log('技能資料載入成功');
         console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
@@ -766,11 +766,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         const infoBlock = document.getElementById("monsterInfoContent");
         infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
         
-        // 更新怪物資訊
-        const monsterName = monsterElement.getAttribute('data-name');
-        document.getElementById('monsterID').innerHTML = `
-          <span>${monsterName} (ID: ${monster.id})</span>
-        `;
+        // 更新怪物資訊（移除重複的更新）
         updateMonsterIcons(monsterElement, monster);
         
         // 更新基本屬性
@@ -863,25 +859,33 @@ function closeModal() {
 	});
   </script>
   <script>
-   function updateMonsterIcons(monsterElement, monster) {	  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
-	  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
+  function updateMonsterIcons(monsterElement, monster) {
+  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
+  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
+  const monsterName = monsterElement.getAttribute('data-name');
 
-	  const attributeName = attributeMapping[attributeId] || 'unknown';
-	  let raceName = raceMapping[raceId] || 'unknown'; // Use let here if needed
+  const attributeName = attributeMapping[attributeId] || 'unknown';
+  let raceName = raceMapping[raceId] || 'unknown';
 
-	  // Handle race 6 and 7 explicitly
-	  if (raceId === 6) {
-		raceName = 'evolve';
-	  } else if (raceId === 7) {
-		raceName = 'level';
-	  }
+  if (raceId === 6) {
+    raceName = 'evolve';
+  } else if (raceId === 7) {
+    raceName = 'level';
+  }
 
-	  const monsterIdElement = document.getElementById('monsterID');
-		monsterIdElement.innerHTML = ''; // 清空舊內容（避免多次 append）
+  const monsterIdElement = document.getElementById('monsterID');
+  monsterIdElement.innerHTML = ''; // 清空舊內容
 
-		const nameText = document.createElement('span');
-		nameText.textContent = monsterElement.getAttribute('data-name') + " (ID: " + monster.id + ")";
-		monsterIdElement.appendChild(nameText);
+  // 先加入名稱
+  const nameText = document.createElement('span');
+  nameText.textContent = monsterName;
+  monsterIdElement.appendChild(nameText);
+
+  // 加入 ID
+  const idText = document.createElement('span');
+  idText.textContent = ` (ID: ${monster.id})`;
+  idText.style.color = '#666';
+  monsterIdElement.appendChild(idText);
 
 		const attributeIcon = document.createElement("img");
 		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
