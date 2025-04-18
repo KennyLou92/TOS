@@ -24,11 +24,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
-      console.log('skilldesc 載入狀態:', !!window.skilldesc);
-      if (window.skilldesc) {
-        console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
-      }
-    });
+  if (!window.skilldesc) {
+    console.error('skilldesc.js 未正確載入');
+  } else {
+    console.log('skilldesc.js 載入成功');
+    console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
+  }
+});
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
@@ -826,8 +828,20 @@ function bindSkillDescriptions() {
 }
 
 function processSkill(skillId, recRow) {
+  // 先檢查 skilldesc 是否存在並輸出其內容
+  console.log('skilldesc 狀態:', window.skilldesc);
+  
   if (!window.skilldesc) {
-    console.error('skilldesc 未載入');
+    console.error('skilldesc 未載入，嘗試重新載入');
+    // 嘗試重新載入 skilldesc.js
+    const script = document.createElement('script');
+    script.src = 'skilldesc.js';
+    script.onload = () => {
+      console.log('skilldesc 重新載入完成');
+      // 重新嘗試處理技能
+      processSkill(skillId, recRow);
+    };
+    document.head.appendChild(script);
     return;
   }
 
