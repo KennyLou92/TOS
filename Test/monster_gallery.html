@@ -22,17 +22,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <script src="skillData.js">
   </script>
   <script>
-  // 確保 skilldesc 已載入
-  let skillDescLoaded = false;
-  window.addEventListener('load', () => {
-    if (window.skilldesc) {
-      skillDescLoaded = true;
-      console.log('技能資料載入成功');
-    } else {
-      console.error('技能資料載入失敗');
-    }
-  });
-</script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.skilldesc) {
+        console.log('技能資料載入成功');
+        console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
+      } else {
+        console.error('技能資料載入失敗');
+      }
+      // 在確保資料載入後才載入怪物列表
+      loadMonsters();
+    });
+  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
   <title>
