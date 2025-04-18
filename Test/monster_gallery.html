@@ -22,8 +22,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <script src="skillData.js">
   </script>
   <script>
-    window.addEventListener('load', () => {
-      // 確保 skilldesc.js 已經載入
       window.addEventListener('load', () => {
       if (!window.skilldesc) {
         console.error('技能資料載入失敗');
@@ -31,6 +29,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         console.log('技能資料載入成功');
         console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
       }
+      // 在確保資料載入後才載入怪物列表
+      loadMonsters();
     });
 
     function loadSkillData() {
@@ -441,7 +441,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       loadMonsters();
     });
 
-    async function loadMonsters() {
+  async function loadMonsters() {
   try {
     const [monsterResponse, nameResponse] = await Promise.all([
       fetch('monster.json'),
@@ -451,28 +451,22 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     const monsters = await monsterResponse.json();
     const names = await nameResponse.json();
     
-    // 加入除錯訊息
-    console.log('Monster Data:', monsters[0]);
-    console.log('Name Data:', names[0]);
-    
     const gallery = document.getElementById('monsterGallery');
     
     gallery.innerHTML = monsters.map(monster => {
-      const monsterName = names.find(n => n.id.toString() === monster.id.toString())?.name || `未知 (${monster.id})`;
-      // 確保 normalskill_id 是字串形式，如果是陣列則用逗號連接
-      const skillIds = Array.isArray(monster.normalskill_id) 
-        ? monster.normalskill_id.join(',')
-        : monster.normalskill_id || '';
-        
+      // 修改名稱查找邏輯
+      const nameObj = names.find(n => n.id === monster.id);
+      const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+      
       return `
         <div class="monster" 
              data-attribute="${monster.attribute}" 
              data-id="${monster.id}" 
              data-race="${monster.race}" 
              data-name="${monsterName}"
-             data-normalskill-id="${skillIds}">
+             data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
           <div>${monster.id}</div>
-          <img alt="${monster.id}" 
+          <img alt="${monsterName}" 
                src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
                onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
           <div>${monsterName}</div>
