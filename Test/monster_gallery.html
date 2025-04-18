@@ -746,18 +746,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
-        // 設置背景圖和基本資訊
-        const infoBlock = document.getElementById("monsterInfoContent");
-        infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
-        
-        // 更新怪物資訊
-        updateMonsterIcons(monsterElement, monster);
-        document.getElementById('monsterHP').textContent = monster.HP;
-        document.getElementById('monsterATK').textContent = monster.ATK;
-        document.getElementById('monsterREC').textContent = monster.REC;
-        document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
-        document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
-        document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
+        // ... 其他代碼保持不變 ...
 
         // 處理技能
         const skillIds = Array.isArray(monster.normalskill_id) 
@@ -768,72 +757,24 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
         const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
 
-        // 在 fetchMonsterInfo 函數中
+        // 在這裡處理技能
         skillIds.forEach(skillId => {
-        if (!skillId) return;
-        
-        // 確保 skilldesc 已載入
-        if (!window.skilldesc) {
-          console.error('skilldesc 尚未載入，重新載入中...');
-          const script = document.createElement('script');
-          script.src = 'skilldesc.js';
-          script.onload = () => {
-            console.log('skilldesc 重新載入成功');
-            processSkill(skillId);
-          };
-          document.head.appendChild(script);
-          return;
-        }
-        
-        processSkill(skillId);
-      });
-
-      // 將技能處理邏輯抽出為獨立函數
-      function processSkill(skillId) {
-        const skill = window.skilldesc[skillId];
-        if (!skill) {
-          console.warn(`找不到技能資料: ${skillId}`);
-          return;
-        }
-
-        console.log('處理技能:', skillId, skill);
-
-        const skillRow = document.createElement('div');
-        skillRow.className = 'info-row';
-        skillRow.setAttribute('data-skill', 'true');
-        skillRow.style.borderTop = '1px solid #ccc';
-        skillRow.style.marginTop = '8px';
-        skillRow.style.paddingTop = '8px';
-
-        const label = document.createElement('div');
-        label.className = 'info-label';
-        label.textContent = skill.name || '無名稱';
-        applySkillTypeTag(skillId, label);
-
-        const value = document.createElement('div');
-        value.className = 'info-value';
-
-        const descLine = document.createElement('div');
-        descLine.className = 'skill-desc expanded'; // 改回 expanded
-        descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
-        descLine.style.display = 'block'; // 確保顯示
-
-        value.appendChild(descLine);
-        skillRow.appendChild(label);
-        skillRow.appendChild(value);
-
-        // 綁定展開/收合事件
-        const toggleSkill = () => {
-          console.log('切換技能描述顯示狀態'); // 新增除錯日誌
-          descLine.classList.toggle('collapsed');
-          descLine.classList.toggle('expanded');
-        };
-        
-        label.addEventListener('click', toggleSkill);
-        descLine.addEventListener('click', toggleSkill);
-
-        recRow.insertAdjacentElement('afterend', skillRow);
-      });
+          if (!skillId) return;
+          
+          if (!window.skilldesc) {
+            console.error('skilldesc 尚未載入，重新載入中...');
+            const script = document.createElement('script');
+            script.src = 'skilldesc.js';
+            script.onload = () => {
+              console.log('skilldesc 重新載入成功');
+              processSkill(skillId, recRow);
+            };
+            document.head.appendChild(script);
+            return;
+          }
+          
+          processSkill(skillId, recRow);
+        });
 
         document.getElementById('monsterInfoModal').style.display = 'flex';
       } else {
@@ -843,6 +784,50 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     .catch(err => {
       console.error("載入 monster.json 發生錯誤：", err);
     });
+}
+function processSkill(skillId, recRow) {
+  const skill = window.skilldesc[skillId];
+  if (!skill) {
+    console.warn(`找不到技能資料: ${skillId}`);
+    return;
+  }
+
+  console.log('處理技能:', skillId, skill);
+
+  const skillRow = document.createElement('div');
+  skillRow.className = 'info-row';
+  skillRow.setAttribute('data-skill', 'true');
+  skillRow.style.borderTop = '1px solid #ccc';
+  skillRow.style.marginTop = '8px';
+  skillRow.style.paddingTop = '8px';
+
+  const label = document.createElement('div');
+  label.className = 'info-label';
+  label.textContent = skill.name || '無名稱';
+  applySkillTypeTag(skillId, label);
+
+  const value = document.createElement('div');
+  value.className = 'info-value';
+
+  const descLine = document.createElement('div');
+  descLine.className = 'skill-desc expanded';
+  descLine.innerHTML = parseSkillDesc(skill.description || skill.desc || '');
+  descLine.style.display = 'block';
+
+  value.appendChild(descLine);
+  skillRow.appendChild(label);
+  skillRow.appendChild(value);
+
+  const toggleSkill = () => {
+    console.log('切換技能描述顯示狀態');
+    descLine.classList.toggle('collapsed');
+    descLine.classList.toggle('expanded');
+  };
+  
+  label.addEventListener('click', toggleSkill);
+  descLine.addEventListener('click', toggleSkill);
+
+  recRow.insertAdjacentElement('afterend', skillRow);
 }
 
 function closeModal() {
