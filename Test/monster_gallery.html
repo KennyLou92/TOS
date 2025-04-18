@@ -896,6 +896,7 @@ function processSkill(skillId, recRow) {
   if (recRow && recRow.parentNode) {
     recRow.insertAdjacentElement('afterend', skillRow);
   }
+  bindBoardHover();
 }
 
 function closeModal() {
