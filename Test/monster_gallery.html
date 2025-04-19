@@ -794,7 +794,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         if (monster.leaderskill && window.leader_skill) {
           const leaderObj = window.leader_skill.find(ls => ls.id == monster.leaderskill);
           if (leaderObj) {
-            leaderSkillText = `${leaderObj.name}<br>${leaderObj.desc.replace(/\n/g, '<br>')}`;
+            leaderSkillText = `<div style="font-weight:bold;">${leaderObj.name}</div><div>${leaderObj.desc.replace(/\n/g, '<br>')}</div>`;
           }
         }
         leaderTab.innerHTML = leaderSkillText || '無';
