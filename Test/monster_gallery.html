@@ -447,6 +447,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   min-width: 48px;
   height: 28px;
   line-height: 24px;
+  display: flex;               /* 新增 */
+  align-items: center;         /* 垂直置中 */
+  justify-content: center;     /* 水平置中 */
+  text-align: center;          /* 保險起見 */
 }
 
 .tab-btn.active {
