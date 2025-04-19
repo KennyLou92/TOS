@@ -439,6 +439,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   border: none;
   border-radius: 6px 6px 0 0;
   padding: 2px 10px 2px 10px; /* 更小的 padding */
+  position: relative;
   font-size: 13px;            /* 更小字體 */
   font-weight: 500;
   color: #888;
@@ -453,21 +454,34 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   display: flex;               /* 新增 */
   align-items: center;         /* 垂直置中 */
   justify-content: center;     /* 水平置中 */
-  text-align: center;          /* 保險起見 */
+  text-align: center;   
+  overflow: hidden;       /* 保險起見 */
+}
+
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #007bff;
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+  border-radius: 2px;
+  transform: translateX(-50%);
 }
 
 .tab-btn.active {
   color: #333;
-  background: #e3f0ff;      /* 更明顯的底色 */
+  background: #e3f0ff;
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,123,255,0.08); /* 輕微陰影 */
-  border-bottom: 3px solid #007bff;           /* 底線強調 */
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  /* border-bottom: 3px solid #007bff;  // 移除舊底線 */
   transition: background 0.2s, box-shadow 0.2s, border-bottom 0.2s;
 }
 
-.tab-btn:hover:not(.active) {
-  color: #007bff;
-  background: #f0f0f0;
+.tab-btn.active::after {
+  width: 80%;
 }
     .tab-content { margin-top: 12px; }
   </style>
