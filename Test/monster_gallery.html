@@ -807,7 +807,25 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     } else {
       leaderTab.innerHTML = '<div class="info-row">查無隊長技資料</div>';
     }
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
+        leaderTab.style.display = '';
+        skillTab.style.display = 'none';
 
+        // Tab 切換功能
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.onclick = function() {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            if (this.dataset.tab === 'skill') {
+              skillTab.style.display = '';
+              leaderTab.style.display = 'none';
+            } else {
+              skillTab.style.display = 'none';
+              leaderTab.style.display = '';
+            }
+          };
+        });
     // Tab 切換功能
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.onclick = function() {
