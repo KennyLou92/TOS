@@ -423,9 +423,31 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </style>
   <style>
     .tab-container { margin-top: 16px; }
-    .tab-buttons { display: flex; gap: 8px; }
-    .tab-btn { padding: 4px 16px; border: 1px solid #ccc; background: #f9f9f9; cursor: pointer; }
-    .tab-btn.active { background: #e0e0e0; font-weight: bold; }
+    .tab-buttons {   display: flex;
+  gap: 8px;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 0;
+  background: none; }
+    .tab-btn { background: none;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 8px 24px 6px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  cursor: pointer;
+  margin-bottom: -2px;
+  transition: color 0.2s, border-bottom 0.2s;
+  box-shadow: none;
+  outline: none;}
+    .tab-btn.active {   color: #333;
+  border-bottom: 3px solid #007bff;
+  background: #fff;
+  font-weight: bold; }
+  .tab-btn:hover:not(.active) {
+  color: #007bff;
+  background: none;
+}
     .tab-content { margin-top: 12px; }
   </style>
   <script>
