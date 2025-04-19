@@ -789,12 +789,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
         // 清除舊技能顯示
         skillTab.innerHTML = '';
-        // 顯示技能
-        skillIds.forEach(skillId => {
-          if (skillId && skillId !== "0" && skillId !== 0) {
-            processSkill(skillId, null, skillTab);
-          }
-        });
 
     // 隊長技顯示
     let leaderSkillId = monster.leaderskill || monster.leaderSkill || monster.leader_skill;
