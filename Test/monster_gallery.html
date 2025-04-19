@@ -933,11 +933,6 @@ function processSkill(skillId, recRow,container) {
   }
   bindBoardHover();
 }
-skillIds.forEach(skillId => {
-  if (skillId && skillId !== "0" && skillId !== 0) {
-    processSkill(skillId, null, skillTab); // 傳入 skillTab 作為 container
-  }
-});
 function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
 	}
