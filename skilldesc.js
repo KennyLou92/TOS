@@ -1,10 +1,10 @@
-const skilldesc = {
+window.skilldesc = {
   "3261": {
     "name": "光芒卍象",
     "description": "I. 將場上所有符石轉化為\n⇒ [board=AAEBAAYFC/nkz7wCDYabsMMBAA==]固定數量及位置[/board]的\n    「光及心」強化符石\n1 回合內\nII. 光屬性及龍類攻擊力 2 倍"
   },
   "0": {
-    "name": "沒有技能",
+    "name": "無盡的殺戮",
     "description": "沒有技能"
   },
   "1": {
