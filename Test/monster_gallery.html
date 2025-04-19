@@ -771,7 +771,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         console.log('完整的怪物數據:', monster); // 新增這行來檢查完整的怪物數據
       // 技能顯示（原本的技能顯示流程，插入 skillTab）
       let skillIds = [];
-    // ... 取得 skillIds 的程式碼 ...
     if (monster.normalskill_id) {
           if (typeof monster.normalskill_id === 'string') {
             skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
@@ -785,8 +784,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           if (monster.normalskill1) skillIds.push(monster.normalskill1);
           if (monster.normalskill2) skillIds.push(monster.normalskill2);
         }
-      }
-    });
+        console.log('原始技能數據:', skillIds);
+        console.log('技能數據類型:', Array.isArray(skillIds) ? 'array' : typeof skillIds);
+
+        // 清除舊技能顯示
+        skillTab.innerHTML = '';
+        // 顯示技能
+        skillIds.forEach(skillId => {
+          if (skillId && skillId !== "0" && skillId !== 0) {
+            processSkill(skillId, null, skillTab);
+          }
+        });
 
     // 隊長技顯示
     let leaderSkillId = monster.leaderskill || monster.leaderSkill || monster.leader_skill;
@@ -833,44 +841,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
         document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
 
-        // 檢查技能 ID 的屬性名稱
-        console.log('怪物所有屬性:', Object.keys(monster)); // 新增這行來檢查所有可用的屬性
-
-        console.log('原始技能數據:', monster.normalskill_id);
-        console.log('技能數據類型:', typeof monster.normalskill_id);
-        // 處理技能
-        let skillIds = [];
-        // 先嘗試 normalskill_id
-        if (monster.normalskill_id) {
-          if (typeof monster.normalskill_id === 'string') {
-            skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
-          } else if (Array.isArray(monster.normalskill_id)) {
-            skillIds.push(...monster.normalskill_id);
-          } else {
-            skillIds.push(monster.normalskill_id);
-          }
-        }
-         // 若沒有，再嘗試 normalskill1/normalskill2
-         if (skillIds.length === 0) {
-          if (monster.normalskill1) skillIds.push(monster.normalskill1);
-          if (monster.normalskill2) skillIds.push(monster.normalskill2);
-        }
-        console.log('原始技能數據:', skillIds);
-        console.log('技能數據類型:', Array.isArray(skillIds) ? 'array' : typeof skillIds);
-
-      const contentBlock = document.querySelector('#monsterInfoContent .content');
-      contentBlock.querySelectorAll('.info-row[data-skill="true"]').forEach(e => e.remove());
-      const recRow = document.querySelector('#monsterREC1_2').closest('.info-row');
-
-      // 確保技能 ID 存在且不為 0 或空值
-      skillIds.forEach(skillId => {
-          if (skillId && skillId !== "0" && skillId !== 0) {
-            processSkill(skillId, recRow);
-          }
-        });
-
-        // 綁定技能描述的展開/收合功能
-        setTimeout(() => {
+         // 綁定技能描述的展開/收合功能
+         setTimeout(() => {
           bindSkillDescriptions();
         }, 100);
 
