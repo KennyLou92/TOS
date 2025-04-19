@@ -589,6 +589,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       <div id="monsterID">
       </div>
       <div class="info-row">
+        <p class="info-label">隊長技：</p>
+        <p class="info-value" id="monsterLeaderSkill"></p>
+      </div>
+      <div class="info-row">
        <p class="info-label">
         HP:
        </p>
@@ -773,21 +777,21 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         const modalContent = document.getElementById('monsterInfoContent');
         modalContent.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monster.id}.jpg')`);
        // 填入 HP/ATK/REC
-        document.getElementById('monsterHP').textContent = monster.hp || '';
-        document.getElementById('monsterHP1_2').textContent = monster.hp1_2 || '';
-        document.getElementById('monsterATK').textContent = monster.atk || '';
-        document.getElementById('monsterATK1_2').textContent = monster.atk1_2 || '';
-        document.getElementById('monsterREC').textContent = monster.rec || '';
-        document.getElementById('monsterREC1_2').textContent = monster.rec1_2 || '';
-        let leaderDesc = '';
-        if (monster.leader_skill && window.skilldesc) {
-          const leaderSkill = window.skilldesc[monster.leader_skill.toString()];
-          leaderDesc = leaderSkill ? parseSkillDesc(leaderSkill.description || leaderSkill.desc || leaderSkill.skillDesc || '') : '';
+        document.getElementById('monsterHP').textContent = monster.HP || '';
+        document.getElementById('monsterHP1_2').textContent = monster.HP ? Math.floor(monster.HP * 1.2) : '';
+        document.getElementById('monsterATK').textContent = monster.ATK || '';
+        document.getElementById('monsterATK1_2').textContent = monster.ATK ? Math.floor(monster.ATK * 1.2) : '';
+        document.getElementById('monsterREC').textContent = monster.REC || '';
+        document.getElementById('monsterREC1_2').textContent = monster.REC ? Math.floor(monster.REC * 1.2) : '';
+        let leaderSkillText = '';
+        if (monster.leaderskill && window.leader_skill) {
+          const leaderObj = window.leader_skill.find(ls => ls.id == monster.leaderskill);
+          if (leaderObj) {
+            leaderSkillText = `${leaderObj.name}<br>${leaderObj.desc.replace(/\n/g, '<br>')}`;
+          }
         }
-        // 隊長技內容
-        leaderTab.innerHTML = monster.leader_skill_desc
-          ? `<div>${parseSkillDesc(monster.leader_skill_desc)}</div>`
-          : '<div>無</div>';
+        // 顯示隊長技能（假設有一個元素 id="monsterLeaderSkill"）
+        document.getElementById('monsterLeaderSkill').innerHTML = leaderSkillText || '無';
         // ... 取得 skillIds ...
         let skillIds = [];
         if (monster.normalskill_id) {
