@@ -21,6 +21,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script src="skilldesc.js">
   </script>
+  <script src="leader_skill_zh.js">
+  </script>
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
@@ -783,6 +785,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         document.getElementById('monsterATK1_2').textContent = monster.ATK ? Math.floor(monster.ATK * 1.2) : '';
         document.getElementById('monsterREC').textContent = monster.REC || '';
         document.getElementById('monsterREC1_2').textContent = monster.REC ? Math.floor(monster.REC * 1.2) : '';
+        
+      // === 這裡加 log 檢查 ===
+        console.log('monster.leaderskill:', monster.leaderskill);
+        console.log('window.leader_skill:', window.leader_skill);
+
         let leaderSkillText = '';
         if (monster.leaderskill && window.leader_skill) {
           const leaderObj = window.leader_skill.find(ls => ls.id == monster.leaderskill);
