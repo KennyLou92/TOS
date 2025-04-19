@@ -858,6 +858,21 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         skillTab.innerHTML = '';
 
         // 新增：渲染技能內容
+        let skillFound = false; // 新增變數
+        skillIds.forEach(skillId => {
+          if (skillId && skillId !== "0" && skillId !== 0) {
+            // 嘗試取得技能描述
+            if (window.skilldesc && window.skilldesc[skillId?.toString()]) {
+              processSkill(skillId, null, skillTab);
+              skillFound = true;
+            }
+          }
+        });
+        if (!skillFound) {
+          skillTab.innerHTML = '無';
+        }
+
+        // 新增：渲染技能內容
         skillIds.forEach(skillId => {
           if (skillId && skillId !== "0" && skillId !== 0) {
             processSkill(skillId, null, skillTab);
