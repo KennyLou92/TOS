@@ -458,8 +458,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
 .tab-btn.active {
   color: #333;
-  background: #f5f5f5;
+  background: #e3f0ff;      /* 更明顯的底色 */
   font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08); /* 輕微陰影 */
+  border-bottom: 3px solid #007bff;           /* 底線強調 */
+  transition: background 0.2s, box-shadow 0.2s, border-bottom 0.2s;
 }
 
 .tab-btn:hover:not(.active) {
