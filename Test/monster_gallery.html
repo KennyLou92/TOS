@@ -292,13 +292,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 #monsterInfoContent::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  left: 50%;
+  top: 60px; /* 距離上方固定 60px，可依需求調整 */
+  width: 400px;
+  height: 400px;
+  transform: translateX(-50%);
   background-image: var(--monster-bg);
   background-size: 400px 400px;
   background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.2; /* 調整透明度 */
-  <!--filter: grayscale(40%) blur(2px); /* 讓字更清楚 */-->
+  background-position: center top;
+  opacity: 0.2;
   z-index: 0;
 }
 #monsterInfoContent > * {
