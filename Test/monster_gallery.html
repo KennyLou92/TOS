@@ -864,7 +864,7 @@ function bindSkillDescriptions() {
   });
 }
 
-function processSkill(skillId, recRow) {
+function processSkill(skillId, recRow,container) {
   // 先檢查 skilldesc 是否存在並輸出其內容
   console.log('skilldesc 狀態:', window.skilldesc);
   
@@ -939,7 +939,11 @@ function processSkill(skillId, recRow) {
   }
   bindBoardHover();
 }
-
+skillIds.forEach(skillId => {
+  if (skillId && skillId !== "0" && skillId !== 0) {
+    processSkill(skillId, null, skillTab); // 傳入 skillTab 作為 container
+  }
+});
 function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
 	}
