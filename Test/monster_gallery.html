@@ -768,6 +768,19 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
+        // 顯示名稱與圖示
+        updateMonsterIcons(monsterElement, monster);
+       // 填入 HP/ATK/REC
+        document.getElementById('monsterHP').textContent = monster.hp || '';
+        document.getElementById('monsterHP1_2').textContent = monster.hp1_2 || '';
+        document.getElementById('monsterATK').textContent = monster.atk || '';
+        document.getElementById('monsterATK1_2').textContent = monster.atk1_2 || '';
+        document.getElementById('monsterREC').textContent = monster.rec || '';
+        document.getElementById('monsterREC1_2').textContent = monster.rec1_2 || '';
+        // 隊長技內容
+        leaderTab.innerHTML = monster.leader_skill_desc
+          ? `<div>${parseSkillDesc(monster.leader_skill_desc)}</div>`
+          : '<div>無</div>';
         // ... 取得 skillIds ...
         let skillIds = [];
         if (monster.normalskill_id) {
@@ -815,9 +828,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             }
           };
         });
+        // 顯示 Modal
+        document.getElementById("monsterInfoModal").style.display = "block";
       }
     })
-  }
+}
 // 新增綁定技能描述展開/收合的函數
 function bindSkillDescriptions() {
   document.querySelectorAll('.skill-desc').forEach(desc => {
@@ -850,7 +865,7 @@ function processSkill(skillId, recRow,container) {
   //} else if (recRow && recRow.parentNode) {
   //  recRow.insertAdjacentElement('afterend', skillRow);
  // }
- 
+
  // 創建技能行
  const skillRow = document.createElement('div');
   skillRow.className = 'info-row';
