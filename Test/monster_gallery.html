@@ -772,10 +772,19 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       // 技能顯示（原本的技能顯示流程，插入 skillTab）
       let skillIds = [];
     // ... 取得 skillIds 的程式碼 ...
-    skillIds.forEach(skillId => {
-      if (skillId && skillId !== "0" && skillId !== 0) {
-        // 這裡要改成插入 skillTab
-        processSkill(skillId, null, skillTab);
+    if (monster.normalskill_id) {
+          if (typeof monster.normalskill_id === 'string') {
+            skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
+          } else if (Array.isArray(monster.normalskill_id)) {
+            skillIds.push(...monster.normalskill_id);
+          } else {
+            skillIds.push(monster.normalskill_id);
+          }
+        }
+        if (skillIds.length === 0) {
+          if (monster.normalskill1) skillIds.push(monster.normalskill1);
+          if (monster.normalskill2) skillIds.push(monster.normalskill2);
+        }
       }
     });
 
