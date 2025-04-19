@@ -517,7 +517,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     gallery.innerHTML = monsters.map(monster => {
       // 修正名稱查找邏輯，確保 id 為數字類型
       const nameObj = names.find(n => n.id === parseInt(monster.id));
-      const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+      const monsterName = nameObj ? nameObj.name : `Null (${monster.id})`;
       
       return `
         <div class="monster" 
@@ -648,7 +648,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       <div id="monsterID">
       </div>
       <div class="info-row">
-        <p class="info-label">隊長技：</p>
+        <p class="info-label">Leader Skill：</p>
         <p class="info-value" id="monsterLeaderSkill"></p>
       </div>
       <div class="info-row">
@@ -689,8 +689,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       </div>
       <div class="tab-container">
         <div class="tab-buttons">
-          <button class="tab-btn active" data-tab="leader">隊長技</button>
-          <button class="tab-btn" data-tab="skill">主動技</button>
+          <button class="tab-btn active" data-tab="leader">Leader Skill</button>
+          <button class="tab-btn" data-tab="skill">Active Skill</button>
         </div>
         <div class="tab-content" id="tab-leader"></div>
         <div class="tab-content" id="tab-skill" style="display:none"></div>
@@ -889,7 +889,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           skillTab.innerHTML = '無';
         }
 
-        // 預設顯示隊長技
+        // 預設顯示Leader Skill
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
         leaderTab.style.display = '';
