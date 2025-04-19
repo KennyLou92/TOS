@@ -797,8 +797,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             leaderSkillText = `${leaderObj.name}<br>${leaderObj.desc.replace(/\n/g, '<br>')}`;
           }
         }
-        // 顯示隊長技能（假設有一個元素 id="monsterLeaderSkill"）
-        document.getElementById('monsterLeaderSkill').innerHTML = leaderSkillText || '無';
+        leaderTab.innerHTML = leaderSkillText || '無';
         // ... 取得 skillIds ...
         let skillIds = [];
         if (monster.normalskill_id) {
