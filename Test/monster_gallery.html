@@ -757,21 +757,20 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
 	function fetchMonsterInfo(monsterId, monsterElement) {
   if (!monsterId || !monsterElement) { return; }
-  
+
   const monsterIdStr = monsterId.toString();
   const skillTab = document.getElementById('tab-skill');
   const leaderTab = document.getElementById('tab-leader');
-        skillTab.innerHTML = '';
-        leaderTab.innerHTML = '';
+  skillTab.innerHTML = '';
+  leaderTab.innerHTML = '';
   fetch('monster.json')
     .then(response => response.json())
     .then(data => {
       const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
-        console.log('完整的怪物數據:', monster); // 新增這行來檢查完整的怪物數據
-      // 技能顯示（原本的技能顯示流程，插入 skillTab）
-      let skillIds = [];
-    if (monster.normalskill_id) {
+        // ... 取得 skillIds ...
+        let skillIds = [];
+        if (monster.normalskill_id) {
           if (typeof monster.normalskill_id === 'string') {
             skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
           } else if (Array.isArray(monster.normalskill_id)) {
@@ -784,30 +783,20 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           if (monster.normalskill1) skillIds.push(monster.normalskill1);
           if (monster.normalskill2) skillIds.push(monster.normalskill2);
         }
-        console.log('原始技能數據:', skillIds);
-        console.log('技能數據類型:', Array.isArray(skillIds) ? 'array' : typeof skillIds);
 
         // 清除舊技能顯示
         skillTab.innerHTML = '';
 
-    // 隊長技顯示
-    let leaderSkillId = monster.leaderskill || monster.leaderSkill || monster.leader_skill;
-    if (leaderSkillId && window.leader_skill) {
-      const leader = window.leader_skill.find(l => l.id == leaderSkillId);
-      if (leader) {
-        leaderTab.innerHTML = `
-          <div class="info-row" data-leader="true">
-            <div class="info-label">${leader.name}</div>
-            <div class="info-value">${leader.desc.replace(/\n/g, '<br>')}</div>
-          </div>
-        `;
-      } else {
-        leaderTab.innerHTML = '<div class="info-row">查無隊長技資料</div>';
-      }
-    } else {
-      leaderTab.innerHTML = '<div class="info-row">查無隊長技資料</div>';
-    }
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        // 新增：渲染技能內容
+        skillIds.forEach(skillId => {
+          if (skillId && skillId !== "0" && skillId !== 0) {
+            processSkill(skillId, null, skillTab);
+          }
+        });
+
+        // ... 隊長技顯示與其餘內容 ...
+        // 預設顯示隊長技
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
         leaderTab.style.display = '';
         skillTab.style.display = 'none';
@@ -826,45 +815,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             }
           };
         });
-    // Tab 切換功能
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.onclick = function() {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        document.getElementById('tab-skill').style.display = this.dataset.tab === 'skill' ? '' : 'none';
-        document.getElementById('tab-leader').style.display = this.dataset.tab === 'leader' ? '' : 'none';
-      };
-    });
-        // 設置背景圖和基本資訊
-        const infoBlock = document.getElementById("monsterInfoContent");
-        infoBlock.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monsterIdStr}.jpg')`);
-        
-        updateMonsterIcons(monsterElement, monster);
-        skillTab.innerHTML = '';
-        leaderTab.innerHTML = '';
-        
-        // 更新基本屬性
-        document.getElementById('monsterHP').textContent = monster.HP;
-        document.getElementById('monsterATK').textContent = monster.ATK;
-        document.getElementById('monsterREC').textContent = monster.REC;
-        document.getElementById('monsterHP1_2').textContent = Math.floor(monster.HP * 1.2);
-        document.getElementById('monsterATK1_2').textContent = Math.floor(monster.ATK * 1.2);
-        document.getElementById('monsterREC1_2').textContent = Math.floor(monster.REC * 1.2);
-
-         // 綁定技能描述的展開/收合功能
-         setTimeout(() => {
-          bindSkillDescriptions();
-        }, 100);
-
-        document.getElementById('monsterInfoModal').style.display = 'flex';
-      } else {
-        alert("⚠️找不到怪物資料！");
-      }
-    })
-    .catch(err => {
-      console.error("載入 monster.json 發生錯誤：", err);
-    });
-}
 
 // 新增綁定技能描述展開/收合的函數
 function bindSkillDescriptions() {
@@ -946,7 +896,9 @@ function processSkill(skillId, recRow,container) {
   label.addEventListener('click', toggleSkill);
 
   // 插入技能行
-  if (recRow && recRow.parentNode) {
+  if (container) {
+    container.appendChild(skillRow);
+  } else if (recRow && recRow.parentNode) {
     recRow.insertAdjacentElement('afterend', skillRow);
   }
   bindBoardHover();
