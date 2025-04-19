@@ -845,19 +845,12 @@ function processSkill(skillId, recRow,container) {
     document.head.appendChild(script);
     return;
   }
-  if (container) {
-    container.appendChild(skillRow);
-  } else if (recRow && recRow.parentNode) {
-    recRow.insertAdjacentElement('afterend', skillRow);
-  }
-
-  const skill = window.skilldesc?.[skillId?.toString()];
-  console.log("顯示技能:", skillId, skill);
-  if (!skill) {
-    console.warn("找不到技能描述 for skillId:", skillId);
-    return;
-  }
-
+  //if (container) {
+  //  container.appendChild(skillRow);
+  //} else if (recRow && recRow.parentNode) {
+  //  recRow.insertAdjacentElement('afterend', skillRow);
+ // }
+ 
  // 創建技能行
  const skillRow = document.createElement('div');
   skillRow.className = 'info-row';
@@ -865,6 +858,13 @@ function processSkill(skillId, recRow,container) {
   skillRow.style.borderTop = '1px solid #ccc';
   skillRow.style.marginTop = '8px';
   skillRow.style.paddingTop = '8px';
+
+  const skill = window.skilldesc?.[skillId?.toString()];
+  console.log("顯示技能:", skillId, skill);
+  if (!skill) {
+    console.warn("找不到技能描述 for skillId:", skillId);
+    return;
+  }
 
   // 創建技能標籤
   const label = document.createElement('div');
