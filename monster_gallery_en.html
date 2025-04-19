@@ -552,15 +552,15 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
  <body>
   <div class="search-bar-wrapper">
    <div class="search-bar">
-    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+    <input id="searchInput" onkeyup="filterMonsters()" placeholder="Insert ID/Monster name..." type="text"/>
    </div>
-   <!-- 屬性 -->
+   <!-- Att -->
    <div class="dropdown" id="attributeDropdown">
     <div class="dropdown-button dropdown-trigger">
      <div class="selected-icons">
      </div>
      <span>
-      屬性
+      Att
      </span>
     </div>
     <div class="dropdown-content" id="attributeContent">
@@ -581,13 +581,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
      </div>
     </div>
    </div>
-   <!-- 種族 -->
+   <!-- Race -->
    <div class="dropdown" id="raceDropdown">
     <div class="dropdown-button dropdown-trigger">
      <div class="selected-icons">
      </div>
      <span>
-      種族
+      Race
      </span>
     </div>
     <div class="dropdown-content" id="raceContent">
@@ -1043,7 +1043,7 @@ function closeModal() {
 
 		const attributeIcon = document.createElement("img");
 		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
-		attributeIcon.alt = "屬性圖示";
+		attributeIcon.alt = "Att圖示";
 		attributeIcon.style.width = '24px';
 		attributeIcon.style.height = '24px';
 		attributeIcon.style.marginLeft = '8px';
@@ -1055,7 +1055,7 @@ function closeModal() {
 		} else {
 		  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
 		}
-		raceIcon.alt = "種族圖示";
+		raceIcon.alt = "Race圖示";
 		raceIcon.style.width = '24px';
 		raceIcon.style.height = '24px';
 		raceIcon.style.marginLeft = '4px';
