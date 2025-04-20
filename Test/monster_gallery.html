@@ -99,18 +99,34 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       z-index: 1000;
     }
   }
-  @media (min-width: 601px) and (max-width: 900px) {
+  @media (min-width: 1200px) {
   .gallery {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 100%;
+    grid-template-columns: repeat(10, 1fr);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 16px;
   }
   .monster {
-    width: 45vw;
+    width: 140px;
     max-width: 180px;
+    font-size: 16px;
   }
   .search-bar {
+    width: 30%;
+    margin-left: 35%;
+    font-size: 18px;
+  }
+  .modal-content {
     width: 60%;
-    margin-left: 20%;
+    max-width: 900px;
+    font-size: 18px;
+    padding: 32px;
+  }
+  .tab-btn {
+    font-size: 16px;
+    min-width: 60px;
+    height: 36px;
   }
 }
     .search-bar input {
