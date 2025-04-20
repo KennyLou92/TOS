@@ -1048,25 +1048,6 @@ function closeModal() {
   idText.style.color = '#666';
   monsterIdElement.appendChild(idText);
 
-  // 怪物大頭貼（重點修改區）
-  const monsterIcon = document.createElement("img");
-  let skinObj = (typeof skins !== "undefined") ? skins.find(s => s.id == monster.id) : null;
-  if (skinObj && skinObj.base64) {
-    monsterIcon.src = skinObj.base64;
-  } else {
-    monsterIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
-  }
-  monsterIcon.alt = "怪物圖示";
-  monsterIcon.style.width = '32px';
-  monsterIcon.style.height = '32px';
-  monsterIcon.style.marginLeft = '8px';
-  monsterIdElement.appendChild(monsterIcon);
-  monsterIcon.onerror = function() {
-    this.onerror = null;
-    this.src = 'https://kennylou92.github.io/tos_story/Img/default.png';
-  };
-  monsterIdElement.appendChild(monsterIcon);
-
   // 屬性圖示
 		const attributeIcon = document.createElement("img");
 		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
