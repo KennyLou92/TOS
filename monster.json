@@ -51436,6 +51436,39 @@
         "REC": 100
     },
     {
+        "id": "50075",
+        "attribute": 3,
+        "race": 7,
+        "leaderskill": 0,
+        "normalskill1": 0,
+        "normalskill2": 0,
+        "HP": 100,
+        "ATK": 100,
+        "REC": 100
+    },
+    {
+        "id": "50076",
+        "attribute": 3,
+        "race": 7,
+        "leaderskill": 0,
+        "normalskill1": 0,
+        "normalskill2": 0,
+        "HP": 100,
+        "ATK": 100,
+        "REC": 100
+    },
+    {
+        "id": "50077",
+        "attribute": 3,
+        "race": 7,
+        "leaderskill": 0,
+        "normalskill1": 0,
+        "normalskill2": 0,
+        "HP": 100,
+        "ATK": 100,
+        "REC": 100
+    },
+    {
         "id": "50079",
         "attribute": 4,
         "race": 1,
