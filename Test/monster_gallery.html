@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script>
 function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {    return;
   }
@@ -51,19 +50,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       flex-direction: column;
       height: 100vh;
     }
-    @media (max-width: 600px) {
     .gallery {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(8, 1fr);
       gap: 10px;
       justify-items: center;
       width: 100%;
       max-width: 1200px;
-      margin-top: 70px;
+      margin-top: 80px;
     }
     .monster {
-      width: 95vw;
-      max-width: 180px;
+      width: 142px;
       text-align: center;
       padding: 8px;
       box-sizing: border-box;
@@ -89,8 +86,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       align-items: center;
     }
     .search-bar {
-      width: 90%;
-      margin-left: 5%;
+      width: 25%;
+      margin-left: 20px;
       background: #fff;
       padding: 10px 20px;
       box-sizing: border-box;
@@ -98,37 +95,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       position: relative;
       z-index: 1000;
     }
-  }
-  @media (min-width: 1200px) {
-  .gallery {
-    grid-template-columns: repeat(10, 1fr);
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 16px;
-  }
-  .monster {
-    width: 140px;
-    max-width: 180px;
-    font-size: 16px;
-  }
-  .search-bar {
-    width: 30%;
-    margin-left: 35%;
-    font-size: 18px;
-  }
-  .modal-content {
-    width: 60%;
-    max-width: 900px;
-    font-size: 18px;
-    padding: 32px;
-  }
-  .tab-btn {
-    font-size: 16px;
-    min-width: 60px;
-    height: 36px;
-  }
-}
     .search-bar input {
       width: 100%;
       padding: 8px;
