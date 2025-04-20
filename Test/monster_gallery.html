@@ -537,7 +537,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
              data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
           <div>${monster.id}</div>
           <img alt="${monsterName}" 
-               src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
+               src="${imgSrc}"
                onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
           <div>${monsterName}</div>
         </div>
