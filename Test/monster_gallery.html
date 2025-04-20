@@ -1002,7 +1002,11 @@ function processSkill(skillId, recRow,container) {
   bindBoardHover();
 }
 function closeModal() {
-	  document.getElementById("monsterInfoModal").style.display = "none";
+	  //document.getElementById("monsterInfoModal").style.display = "none";
+    document.getElementById("monsterInfoModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeModal();
+  }
 	}
 
 	document.querySelectorAll('.monster').forEach(monster => {
