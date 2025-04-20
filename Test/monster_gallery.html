@@ -519,6 +519,14 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       // 修正名稱查找邏輯，確保 id 為數字類型
       const nameObj = names.find(n => n.id === parseInt(monster.id));
       const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+    
+      // 新增：優先使用 skins.js 的 base64
+      let imgSrc = '';
+      if (window.skins && window.skins[monster.id]) {
+        imgSrc = window.skins[monster.id];
+      } else {
+        imgSrc = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
+      }
       
       return `
         <div class="monster" 
