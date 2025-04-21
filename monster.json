@@ -32068,12 +32068,12 @@
         "id": "2926",
         "attribute": 4,
         "race": 4,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
+        "leaderskill": 2398,
+        "normalskill1": 4975,
+        "normalskill2": 0,
+        "HP": 4688,
+        "ATK": 1534,
+        "REC": 18
     },
     {
         "id": "3001",
