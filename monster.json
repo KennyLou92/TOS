@@ -47063,7 +47063,7 @@
         "race": 1,
         "leaderskill": 2384,
         "normalskill1": 4410,
-        "normalskill2": 0,
+        "normalskill2": 4411,
         "HP": 2934,
         "ATK": 1574,
         "REC": 454
@@ -47097,6 +47097,7 @@
         "leaderskill": 2381,
         "normalskill1": 4401,
         "normalskill2": 4402,
+        "normalskill3": 4403,
         "HP": 2979,
         "ATK": 1764,
         "REC": 515
@@ -47107,7 +47108,7 @@
         "race": 1,
         "leaderskill": 2384,
         "normalskill1": 4408,
-        "normalskill2": 0,
+        "normalskill2": 4409,
         "HP": 2836,
         "ATK": 1520,
         "REC": 496
@@ -47118,7 +47119,7 @@
         "race": 1,
         "leaderskill": 2384,
         "normalskill1": 4412,
-        "normalskill2": 0,
+        "normalskill2": 4413,
         "HP": 3225,
         "ATK": 1360,
         "REC": 477
@@ -47129,7 +47130,7 @@
         "race": 2,
         "leaderskill": 2384,
         "normalskill1": 4414,
-        "normalskill2": 0,
+        "normalskill2": 4415,
         "HP": 3893,
         "ATK": 1478,
         "REC": 208
@@ -47284,6 +47285,7 @@
         "leaderskill": 2387,
         "normalskill1": 4429,
         "normalskill2": 4430,
+        "normalskill3": 4431,
         "HP": 1942,
         "ATK": 2693,
         "REC": 621
