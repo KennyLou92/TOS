@@ -1,4 +1,4 @@
-const leader_skill = [
+window.leader_skill = [
   {
     "id": 0,
     "name": "沒有技能",
