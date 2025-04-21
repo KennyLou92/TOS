@@ -1,4 +1,4 @@
-window.skilldescen = {
+window.skilldesc = {
   "DESC": { name: "I. Tap 1 Runestone:\n⇒ Modify that column to\n    become Protected Runestones.\nII. If the column below a \n   【Classical Epic】 Member is tapped:\n⇒ That Member changes to the \n    corresponding 【Ensemble】mode\n    according to the Attribute tapped.", description: "" },
   "3261": { name: "Swastika of Light", description: "I. Turn all Runestones into Enchanted Light and Enchanted Heart Runestones of [board=AAEBAAYFC/nkz7wCDYabsMMBAA==]fixed numbers and fixed positions[/board].\nFor 1 Round,\nII. Light and Dragon Attack x 2." },
   "0": { name: "Ceaseless Slaughter", description: "Nil" },
