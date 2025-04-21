@@ -21,17 +21,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script src="skillData.js">
   </script>
-  <script src="skilldescen.js">
+  <script src="skilldesc.js">
   </script>
-  <script src="leader_skill_en.js">
+  <script src="leader_skill_zh.js">
   </script>
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
   if (!window.skilldesc) {
-    console.error('skilldescen.js 未正確載入');
+    console.error('skilldesc.js 未正確載入');
   } else {
-    console.log('skilldescen.js 載入成功');
+    console.log('skilldesc.js 載入成功');
     console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
   }
 });
@@ -39,7 +39,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
   <title>
-   TOS Gallery
+   神魔圖鑒
   </title>
   <style>
    body {
@@ -508,7 +508,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   try {
     const [monsterResponse, nameResponse] = await Promise.all([
       fetch('monster.json'),
-      fetch('monster_name_en.json')
+      fetch('monster_name_zh.json')
     ]);
     
     const monsters = await monsterResponse.json();
@@ -519,7 +519,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     gallery.innerHTML = monsters.map(monster => {
       // 修正名稱查找邏輯，確保 id 為數字類型
       const nameObj = names.find(n => n.id === parseInt(monster.id));
-      const monsterName = nameObj ? nameObj.name : `NULL (${monster.id})`;
+      const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
 
       // 新增：優先使用 skins.js 的 base64
       let imgSrc = '';
@@ -563,7 +563,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
  <body>
   <div class="search-bar-wrapper">
    <div class="search-bar">
-    <input id="searchInput" onkeyup="filterMonsters()" placeholder="Insert ID/Monster name..." type="text"/>
+    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
    </div>
    <!-- 屬性 -->
    <div class="dropdown" id="attributeDropdown">
@@ -571,7 +571,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
      <div class="selected-icons">
      </div>
      <span>
-      Attribute
+      屬性
      </span>
     </div>
     <div class="dropdown-content" id="attributeContent">
@@ -598,7 +598,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
      <div class="selected-icons">
      </div>
      <span>
-      Race
+      種族
      </span>
     </div>
     <div class="dropdown-content" id="raceContent">
@@ -659,7 +659,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       <div id="monsterID">
       </div>
       <div class="info-row">
-        <p class="info-label">Leader Skill：</p>
+        <p class="info-label">隊長技：</p>
         <p class="info-value" id="monsterLeaderSkill"></p>
       </div>
       <div class="info-row">
@@ -700,8 +700,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       </div>
       <div class="tab-container">
         <div class="tab-buttons">
-          <button class="tab-btn active" data-tab="leader">Leader Skill</button>
-          <button class="tab-btn" data-tab="skill">Active Skill</button>
+          <button class="tab-btn active" data-tab="leader">隊長技</button>
+          <button class="tab-btn" data-tab="skill">主動技</button>
         </div>
         <div class="tab-content" id="tab-leader"></div>
         <div class="tab-content" id="tab-skill" style="display:none"></div>
@@ -865,7 +865,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             leaderSkillText = `<div style="font-weight:bold;">${leaderObj.name}</div><div>${leaderObj.desc.replace(/\n/g, '<br>')}</div>`;
           }
         }
-        leaderTab.innerHTML = leaderSkillText || 'NULL';
+        leaderTab.innerHTML = leaderSkillText || '無';
         // ... 取得 skillIds ...
         let skillIds = [];
         if (monster.normalskill_id) {
@@ -877,11 +877,12 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             skillIds.push(monster.normalskill_id);
           }
         }
-        if (skillIds.length === 0) {
-          if (monster.normalskill1) skillIds.push(monster.normalskill1);
-          if (monster.normalskill2) skillIds.push(monster.normalskill2);
+        let i = 1;
+        while (monster[`normalskill${i}`]) {
+          skillIds.push(monster[`normalskill${i}`]);
+          i++;
         }
-
+        
         // 清除舊技能顯示
         skillTab.innerHTML = '';
 
@@ -897,7 +898,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           }
         });
         if (!skillFound) {
-          skillTab.innerHTML = 'NULL';
+          skillTab.innerHTML = '無';
         }
 
         // 預設顯示隊長技
@@ -942,9 +943,9 @@ function processSkill(skillId, recRow,container) {
   
   if (!window.skilldesc) {
     console.error('skilldesc 未載入，嘗試重新載入');
-    // 嘗試重新載入 skilldescen.js
+    // 嘗試重新載入 skilldesc.js
     const script = document.createElement('script');
-    script.src = 'skilldescen.js';
+    script.src = 'skilldesc.js';
     script.onload = () => {
       console.log('skilldesc 重新載入完成');
       // 重新嘗試處理技能
@@ -977,7 +978,7 @@ function processSkill(skillId, recRow,container) {
   // 創建技能標籤
   const label = document.createElement('div');
   label.className = 'info-label';
-  label.textContent = skill.name || 'NULL';
+  label.textContent = skill.name || '無名稱';
   applySkillTypeTag(skillId, label);
 
   // 創建技能描述容器
