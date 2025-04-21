@@ -15,9 +15,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   labelElement.appendChild(tag);
 }
 </script>
-</script>
-<script src="skins.js">
-</script>
+  <script src="skins.js">
+  </script>
   <script src="board.icons.js">
   </script>
   <script src="skillData.js">
@@ -520,7 +519,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     gallery.innerHTML = monsters.map(monster => {
       // 修正名稱查找邏輯，確保 id 為數字類型
       const nameObj = names.find(n => n.id === parseInt(monster.id));
-      const monsterName = nameObj ? nameObj.name : `Null (${monster.id})`;
+      const monsterName = nameObj ? nameObj.name : `NULL (${monster.id})`;
 
       // 新增：優先使用 skins.js 的 base64
       let imgSrc = '';
@@ -538,7 +537,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
              data-name="${monsterName}"
              data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
           <div>${monster.id}</div>
-          <img alt="${monsterName}" 
+          <img alt="${monsterName}"
+			   src="${imgSrc}"
                src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
                onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
           <div>${monsterName}</div>
@@ -565,13 +565,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
    <div class="search-bar">
     <input id="searchInput" onkeyup="filterMonsters()" placeholder="Insert ID/Monster name..." type="text"/>
    </div>
-   <!-- Att -->
+   <!-- 屬性 -->
    <div class="dropdown" id="attributeDropdown">
     <div class="dropdown-button dropdown-trigger">
      <div class="selected-icons">
      </div>
      <span>
-      Att
+      Attribute
      </span>
     </div>
     <div class="dropdown-content" id="attributeContent">
@@ -592,7 +592,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
      </div>
     </div>
    </div>
-   <!-- Race -->
+   <!-- 種族 -->
    <div class="dropdown" id="raceDropdown">
     <div class="dropdown-button dropdown-trigger">
      <div class="selected-icons">
@@ -897,10 +897,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           }
         });
         if (!skillFound) {
-          skillTab.innerHTML = 'NULL';
+          skillTab.innerHTML = '無';
         }
 
-        // 預設顯示Leader Skill
+        // 預設顯示隊長技
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
         leaderTab.style.display = '';
@@ -976,7 +976,7 @@ function processSkill(skillId, recRow,container) {
   // 創建技能標籤
   const label = document.createElement('div');
   label.className = 'info-label';
-  label.textContent = skill.name || '無名稱';
+  label.textContent = skill.name || 'NULL';
   applySkillTypeTag(skillId, label);
 
   // 創建技能描述容器
@@ -1060,7 +1060,7 @@ function closeModal() {
 
 		const attributeIcon = document.createElement("img");
 		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
-		attributeIcon.alt = "Att圖示";
+		attributeIcon.alt = "屬性圖示";
 		attributeIcon.style.width = '24px';
 		attributeIcon.style.height = '24px';
 		attributeIcon.style.marginLeft = '8px';
@@ -1072,7 +1072,7 @@ function closeModal() {
 		} else {
 		  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
 		}
-		raceIcon.alt = "Race圖示";
+		raceIcon.alt = "種族圖示";
 		raceIcon.style.width = '24px';
 		raceIcon.style.height = '24px';
 		raceIcon.style.marginLeft = '4px';
