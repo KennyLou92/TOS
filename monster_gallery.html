@@ -877,11 +877,12 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             skillIds.push(monster.normalskill_id);
           }
         }
-        if (skillIds.length === 0) {
-          if (monster.normalskill1) skillIds.push(monster.normalskill1);
-          if (monster.normalskill2) skillIds.push(monster.normalskill2);
+        let i = 1;
+        while (monster[`normalskill${i}`]) {
+          skillIds.push(monster[`normalskill${i}`]);
+          i++;
         }
-
+        
         // 清除舊技能顯示
         skillTab.innerHTML = '';
 
