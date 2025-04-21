@@ -4,39183 +4,34565 @@ window.skillData = [
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 5,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 6,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 7,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 8,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 9,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 10,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 11,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 12,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 13,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 14,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 15,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 16,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 17,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 18,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 19,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 20,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 21,
     "min_cd": 10,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 22,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 23,
     "min_cd": 10,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 24,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 25,
     "min_cd": 10,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 26,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 27,
     "min_cd": 10,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 28,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 29,
     "min_cd": 10,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 30,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 31,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 32,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 33,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 34,
     "min_cd": 10,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 35,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 36,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 37,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 38,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 39,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 40,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 41,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 42,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 43,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 44,
     "min_cd": 16,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 45,
     "min_cd": 16,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 46,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 47,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 48,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 49,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 50,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 51,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 52,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 53,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 54,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 55,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 56,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 57,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 58,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 59,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 60,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 61,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 62,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 63,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 64,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 65,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 66,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 67,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 68,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 69,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 70,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 71,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 72,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 73,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 74,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 75,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 76,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 77,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 78,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 79,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 80,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 81,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 82,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 83,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 84,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 85,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 86,
     "min_cd": 9,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 87,
     "min_cd": 9,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 88,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 89,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 90,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 91,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 92,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 93,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 94,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 95,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 96,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 97,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 98,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 99,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 100,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 101,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 102,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 103,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 104,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 105,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 106,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 107,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 108,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 109,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 110,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 111,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 112,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 113,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 114,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 115,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 116,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 117,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 118,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 119,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 120,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 121,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 122,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 123,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 124,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 125,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 126,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 127,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 128,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 129,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 130,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 131,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 132,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 133,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 134,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 135,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 136,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 137,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 138,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 139,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 140,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 141,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 142,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 143,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 144,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 145,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 146,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 147,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 148,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 149,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 150,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 151,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 152,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 153,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 154,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 155,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 156,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 157,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 158,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 159,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 160,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 161,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 162,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 163,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 164,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 165,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 166,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 167,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 168,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 169,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 170,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 171,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 172,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 173,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 174,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 175,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 176,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 177,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 178,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 179,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 180,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 181,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 182,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 183,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 184,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 185,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 186,
     "min_cd": 15,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 187,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 188,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 189,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 190,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 191,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 192,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 193,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 194,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 195,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 196,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 197,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 198,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 199,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 200,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 201,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 202,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 203,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 204,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 205,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 206,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 207,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 208,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 209,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 210,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 211,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 212,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 213,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 214,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 215,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 216,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 217,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 218,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 219,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 220,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 221,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 222,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 223,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 224,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 225,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 226,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 227,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 228,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 229,
     "min_cd": 16,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 230,
     "min_cd": 16,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 231,
     "min_cd": 16,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 232,
     "min_cd": 16,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 233,
     "min_cd": 16,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 234,
     "min_cd": 21,
     "start_cd": 35,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 235,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 236,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 237,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 238,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 239,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 240,
     "min_cd": 14,
     "start_cd": 25,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 241,
     "min_cd": 14,
     "start_cd": 25,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 242,
     "min_cd": 14,
     "start_cd": 25,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 243,
     "min_cd": 14,
     "start_cd": 25,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 244,
     "min_cd": 14,
     "start_cd": 25,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 245,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 246,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 247,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 248,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 249,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 250,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 251,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 252,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 253,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 254,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 255,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 256,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 257,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 258,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 259,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 260,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 261,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 262,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 263,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 264,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 265,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 266,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 267,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 268,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 269,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 270,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 271,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 272,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 273,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 274,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 275,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 276,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 277,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 278,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 279,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 280,
     "min_cd": 18,
     "start_cd": 32,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 281,
     "min_cd": 18,
     "start_cd": 32,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 282,
     "min_cd": 18,
     "start_cd": 32,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 283,
     "min_cd": 18,
     "start_cd": 32,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 284,
     "min_cd": 18,
     "start_cd": 32,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 285,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 286,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 287,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 288,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 289,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 290,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 291,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 292,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 293,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 294,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 295,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 296,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 297,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 298,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 299,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 300,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 301,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 302,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 303,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 304,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 305,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 306,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 307,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 308,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 309,
     "min_cd": 12,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 310,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 311,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 312,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 313,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 314,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 315,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 316,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 317,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 318,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 319,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 320,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 321,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 322,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 323,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 324,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 325,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 326,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 327,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 328,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 329,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 330,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 331,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 332,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 333,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 334,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 335,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 336,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 337,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 338,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 339,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 340,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 341,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 342,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 343,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 344,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 345,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 346,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 347,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 348,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 349,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 350,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 351,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 352,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 353,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 354,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 355,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 356,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 357,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 358,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 359,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 360,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 361,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 362,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 363,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 364,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 365,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 366,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 367,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 368,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 369,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 370,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 371,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 372,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 373,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 374,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 375,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 376,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 377,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 378,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 379,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 380,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 381,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 382,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 383,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 384,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 385,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 386,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 387,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 388,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 389,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 390,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 391,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 392,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 393,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 394,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 395,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 396,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 397,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 398,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 399,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 400,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 401,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 402,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 403,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 404,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 405,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 406,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 407,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 408,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 409,
     "min_cd": 13,
     "start_cd": 27,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 410,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 411,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 412,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 413,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 414,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 415,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 416,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 417,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 418,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 419,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 420,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 421,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 422,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 423,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 424,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 425,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 426,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 427,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 428,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 429,
     "min_cd": 10,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 430,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 431,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 432,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 433,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 434,
     "min_cd": 10,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 435,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 436,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 437,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 438,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 439,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 440,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 441,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 442,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 443,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 444,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 445,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 446,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 447,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 448,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 449,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 450,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 451,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 452,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 453,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 454,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 455,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 456,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 457,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 458,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 459,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 460,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 461,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 462,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 463,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 464,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 465,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 466,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 467,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 468,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 469,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 470,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 471,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 472,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 473,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 474,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 475,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 476,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 477,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 478,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 479,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 480,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 481,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 482,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 483,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 484,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 485,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 486,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 487,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 488,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 489,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 490,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 491,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 492,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 493,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 494,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 495,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 496,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 497,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 498,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 499,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 500,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 501,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 502,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 503,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 504,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 505,
     "min_cd": 5,
     "start_cd": 9,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 506,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 507,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 508,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 509,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 510,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 511,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 512,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 513,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 514,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 515,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 516,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 517,
     "min_cd": 5,
     "start_cd": 44,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 518,
     "min_cd": 5,
     "start_cd": 39,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 519,
     "min_cd": 5,
     "start_cd": 5,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 520,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 521,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 522,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 523,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 524,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 525,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 526,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 527,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 528,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 529,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 530,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 531,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 532,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 533,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 534,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 535,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 536,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 537,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 538,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 539,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 540,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 541,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 542,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 543,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 544,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 545,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 546,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 547,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 548,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 549,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 550,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 551,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 552,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 553,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 554,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 555,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 556,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 557,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 558,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 559,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 560,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 561,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 562,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 563,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 564,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 565,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 566,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 567,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 568,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 569,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 570,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 571,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 572,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 573,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 574,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 575,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 576,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 577,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 578,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 579,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 580,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 581,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 582,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 583,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 584,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 585,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 586,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 587,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 588,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 589,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 590,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 591,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 592,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 593,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 594,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 595,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 596,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 597,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 598,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 599,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 600,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 601,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 602,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 603,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 604,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 605,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 606,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 607,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 608,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 609,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 610,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 611,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 612,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 613,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 614,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 615,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 616,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 617,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 618,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 619,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 620,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 621,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 622,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 623,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 624,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 625,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 626,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 627,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 628,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 629,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 630,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 631,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 632,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 633,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 634,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 635,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 636,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 637,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 638,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 639,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 640,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 641,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 642,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 643,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 644,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 645,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 646,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 647,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 648,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 649,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 650,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 651,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 652,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 653,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 654,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 655,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 656,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 657,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 658,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 659,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 660,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 661,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 662,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 663,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 664,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 665,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 666,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 667,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 668,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 669,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 670,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 671,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 672,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 673,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 674,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 675,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 676,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 677,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 678,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 679,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 680,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 681,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 682,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 683,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 684,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 685,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 686,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 687,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 688,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 689,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 690,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 691,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 692,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 693,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 694,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 695,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 696,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 697,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 698,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 699,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 700,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 701,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 702,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 703,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 704,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 705,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 706,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 707,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 708,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 709,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 710,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 711,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 712,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 713,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 714,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 715,
     "min_cd": 5,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 716,
     "min_cd": 5,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 717,
     "min_cd": 5,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 718,
     "min_cd": 5,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 719,
     "min_cd": 5,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 720,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 721,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 722,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 723,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 724,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 725,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 726,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 727,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 728,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 729,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 730,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 731,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 732,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 733,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 734,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 735,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 736,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 737,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 738,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 739,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 740,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 741,
     "min_cd": 4,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 742,
     "min_cd": 4,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 743,
     "min_cd": 4,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 744,
     "min_cd": 4,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 745,
     "min_cd": 4,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 746,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 747,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 748,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 749,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 750,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 751,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 752,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 753,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 754,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 755,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 756,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 757,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 758,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 759,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 760,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 761,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 762,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 763,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 764,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 765,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 766,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 767,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 768,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 769,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 770,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 771,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 772,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 773,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 774,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 775,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 776,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 777,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 778,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 779,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 780,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 781,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 782,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 783,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 784,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 785,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 786,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 787,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 788,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 789,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 790,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 791,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 792,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 793,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 794,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 795,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 796,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 797,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 798,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 799,
     "min_cd": 8,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 800,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 801,
     "min_cd": 10,
     "start_cd": 33,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 802,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 803,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 804,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 805,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 806,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 807,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 808,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 809,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 810,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 811,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 812,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 813,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 814,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 815,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 816,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 817,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 818,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 819,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 820,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 821,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 822,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 823,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 824,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 825,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 826,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 827,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 828,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 829,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 830,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 831,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 832,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 833,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 834,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 835,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 836,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 837,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 838,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 839,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 840,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 841,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 842,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 843,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 844,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 845,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 846,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 847,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 848,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 849,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 850,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 851,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 852,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 853,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 854,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 855,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 856,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 857,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 858,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 859,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 860,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 861,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 862,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 863,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 864,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 865,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 866,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 867,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 868,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 869,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 870,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 871,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 872,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 873,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 874,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 875,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 876,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 877,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 878,
     "min_cd": 15,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 879,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 880,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 881,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 882,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 883,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 884,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 885,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 886,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 887,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 888,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 889,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 890,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 891,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 892,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 893,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 894,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 895,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 896,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 897,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 898,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 899,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 900,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 901,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 902,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 903,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 904,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 905,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 906,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 907,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 908,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 909,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 910,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 911,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 912,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 913,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 914,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 915,
     "min_cd": 50,
     "start_cd": 59,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 916,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 917,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 918,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 919,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 920,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 921,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 922,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 923,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 924,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 925,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 926,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 927,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 928,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 929,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 930,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 931,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 932,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 933,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 934,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 935,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 936,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 937,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 938,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 939,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 940,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 941,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 942,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 943,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 944,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 945,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 946,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 947,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 948,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 949,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 950,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 951,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 952,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 953,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 954,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 955,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 956,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 957,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 958,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 959,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 960,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 961,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 962,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 963,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 964,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 965,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 966,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 967,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 968,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 969,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 970,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 971,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 972,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 973,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 974,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 975,
     "min_cd": 2,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 976,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 977,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 978,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 979,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 980,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 981,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 982,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 983,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 984,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 985,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 986,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 987,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 988,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 989,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 990,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 991,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 992,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 993,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 994,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 995,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 996,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 997,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 998,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 999,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1000,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1001,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1002,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1003,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1004,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1005,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1006,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1007,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1008,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1009,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1010,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1011,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1012,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1013,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1014,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1015,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1016,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1017,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1018,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1019,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1020,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1021,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1022,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1023,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1024,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1025,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1026,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1027,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1028,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1029,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1030,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1031,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1032,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1033,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1034,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1035,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1036,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1037,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1038,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1039,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1040,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1041,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1042,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1043,
     "min_cd": 15,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1044,
     "min_cd": 15,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1045,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1046,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1047,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1048,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1049,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1050,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1051,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1052,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1053,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1054,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1055,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1056,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1057,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1058,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1059,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1060,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1061,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1062,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1063,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1064,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1065,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1066,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1067,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1068,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1069,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1070,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1071,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1072,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1073,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1074,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1075,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1076,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1077,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1078,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1079,
     "min_cd": 10,
     "start_cd": 36,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1080,
     "min_cd": 10,
     "start_cd": 36,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1081,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1082,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1083,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1084,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1085,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1086,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1087,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1088,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1089,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1090,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1091,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1092,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1093,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1094,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1095,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1096,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1097,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1098,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1099,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1100,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1101,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1102,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1103,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1104,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1105,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1106,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1107,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1108,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1109,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1110,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1111,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1112,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1113,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1114,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1115,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1116,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1117,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1118,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1119,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1120,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1121,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1122,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1123,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1124,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1125,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1126,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1127,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1128,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1129,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1130,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1131,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1132,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1133,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1134,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1135,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1136,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1137,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1138,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1139,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1140,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1141,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1142,
     "min_cd": 11,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1143,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1144,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1145,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1146,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1147,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1148,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1149,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1150,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1151,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1152,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1153,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1154,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1155,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1156,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1157,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1158,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1159,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1160,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1161,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1162,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1163,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1164,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1165,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1166,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1167,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1168,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1169,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1170,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1171,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1172,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1173,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1174,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1175,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1176,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1177,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1178,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1179,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1180,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1181,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1182,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1183,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1184,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1185,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1186,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1187,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1188,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1189,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1190,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1191,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1192,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1193,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1194,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1195,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1196,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1197,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1198,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1199,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1200,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1201,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1202,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1203,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1204,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1205,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1206,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1207,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1208,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1209,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1210,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1211,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1212,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1213,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1214,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1215,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1216,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1217,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1218,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1219,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1220,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1221,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1222,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1223,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1224,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1225,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1226,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1227,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1228,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1229,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1230,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1231,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1232,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1233,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1234,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1235,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1236,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1237,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1238,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1239,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1240,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1241,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1242,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1243,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1244,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1245,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1246,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1247,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1248,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1249,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1250,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1251,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1252,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1253,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1254,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1255,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1256,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1257,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1258,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1259,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1260,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1261,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1262,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1263,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1264,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1265,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1266,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1267,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1268,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1269,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1270,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1271,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1272,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1273,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1274,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1275,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1276,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1277,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1278,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1279,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1280,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1281,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1282,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1283,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1284,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1285,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1286,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1287,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1288,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1289,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1290,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1291,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1292,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1293,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1294,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1295,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1296,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1297,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1298,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1299,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1300,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1301,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1302,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1303,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1304,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1305,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1306,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1307,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1308,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1309,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1310,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1311,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1312,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1313,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1314,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1315,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1316,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1317,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1318,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1319,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1320,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1321,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1322,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1323,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1324,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1325,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1326,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1327,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1328,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1329,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1330,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1331,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1332,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1333,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1334,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1335,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1336,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1337,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1338,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1339,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1340,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1341,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1342,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1343,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1344,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1345,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1346,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1347,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1348,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1349,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1350,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1351,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1352,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1353,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1354,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1355,
     "min_cd": 9,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1356,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1357,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1358,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1359,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1360,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1361,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1362,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1363,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1364,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1365,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1366,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1367,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1368,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1369,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1370,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1371,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1372,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1373,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1374,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1375,
     "min_cd": 2,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1376,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1377,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1378,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1379,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1380,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1381,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1382,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1383,
     "min_cd": 8,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1384,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1385,
     "min_cd": 9,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1386,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1387,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1388,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1389,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1390,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1391,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1392,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1393,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1394,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1395,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1396,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1397,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1398,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1399,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1400,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1401,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1402,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1403,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1404,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1405,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1406,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1407,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1408,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1409,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1410,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1411,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1412,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1413,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1414,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1415,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1416,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1417,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1418,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1419,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1420,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1421,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1422,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1423,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1424,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1425,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1426,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1427,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1428,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1429,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1430,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1431,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1432,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1433,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1434,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1435,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1436,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1437,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1438,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1439,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1440,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1441,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1442,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1443,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1444,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1445,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1446,
     "min_cd": 1,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1447,
     "min_cd": 1,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1448,
     "min_cd": 1,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1449,
     "min_cd": 1,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1450,
     "min_cd": 1,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1451,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1452,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1453,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1454,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1455,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1456,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1457,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1458,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1459,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1460,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1461,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1462,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1463,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1464,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1465,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 1466,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 1467,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 1468,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 1469,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 1470,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1471,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1472,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1473,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1474,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1475,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1476,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 1477,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 1478,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 1479,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 1480,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 1481,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1482,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1483,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1484,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1485,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1486,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1487,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 1488,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1489,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1490,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1491,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1492,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1493,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1494,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1495,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1496,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1497,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1498,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1499,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1500,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1501,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1502,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1503,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1504,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1505,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1506,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1507,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1508,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1509,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1510,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1511,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1512,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1513,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1514,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1515,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1516,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1517,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1518,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1519,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1520,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1521,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1522,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1523,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1524,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1525,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1526,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1527,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1528,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1529,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1530,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1531,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1532,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1533,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1534,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1535,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1536,
     "min_cd": 9,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1537,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1538,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1539,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1540,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1541,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1542,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1543,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1544,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1545,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1546,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1547,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1548,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1549,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1550,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1551,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1552,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1553,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1554,
     "min_cd": 8,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1555,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1556,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1557,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1558,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1559,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1560,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1561,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1562,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1563,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1564,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1565,
     "min_cd": 16,
     "start_cd": 27,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1566,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1567,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1568,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1569,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1570,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1571,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1572,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1573,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1574,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1575,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1576,
     "min_cd": 9,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1577,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1578,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1579,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1580,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1581,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1582,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1583,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1584,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1585,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1586,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1587,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1588,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1589,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1590,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1591,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1592,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1593,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1594,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1595,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1596,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1597,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1598,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1599,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1600,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1601,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1602,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1603,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1604,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1605,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1606,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1607,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1608,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1609,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1610,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1611,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1612,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1613,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1614,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1615,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1616,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1617,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1618,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1619,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1620,
     "min_cd": 15,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1621,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1622,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1623,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1624,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1625,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1626,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1627,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1628,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1629,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1630,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1631,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1632,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1633,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1634,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1635,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1636,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1637,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1638,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1639,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1640,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1641,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1642,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1643,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1644,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1645,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1646,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1647,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1648,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1649,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1650,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1651,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1652,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1653,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1654,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1655,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1656,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1657,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1658,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1659,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1660,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1661,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1662,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1663,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1664,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1665,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1666,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1667,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1668,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1669,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1670,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1671,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1672,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1673,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1674,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1675,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1676,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1677,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1678,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1679,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1680,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1681,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1682,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1683,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1684,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1685,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1686,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1687,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1688,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1689,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1690,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1691,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1692,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1693,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1694,
     "min_cd": 8,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1695,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1696,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1697,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1698,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1699,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1700,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1701,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1702,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1703,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1704,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1705,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1706,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1707,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1708,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1709,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1710,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1711,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1712,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1713,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1714,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1715,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1716,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1717,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1718,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1719,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1720,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1721,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1722,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1723,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1724,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1725,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1726,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1727,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1728,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1729,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1730,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1731,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1732,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1733,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1734,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1735,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1736,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1737,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1738,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1739,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1740,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1741,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1742,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1743,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1744,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1745,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1746,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1747,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1748,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1749,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1750,
     "min_cd": 10,
     "start_cd": 39,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1751,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1752,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1753,
     "min_cd": 3,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1754,
     "min_cd": 3,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1755,
     "min_cd": 3,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1756,
     "min_cd": 3,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1757,
     "min_cd": 3,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1758,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1759,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1760,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1761,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1762,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1763,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1764,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1765,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1766,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1767,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1768,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1769,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1770,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1771,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1772,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1773,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1774,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1775,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1776,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1777,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1778,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1779,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1780,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1781,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1782,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1783,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1784,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1785,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1786,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1787,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1788,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1789,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1790,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1791,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1792,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1793,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1794,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1795,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1796,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1797,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1798,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1799,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1800,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1801,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1802,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1803,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1804,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1805,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1806,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1807,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1808,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1809,
     "min_cd": 5,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1810,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1811,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1812,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1813,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1814,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1815,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1816,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1817,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1818,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1819,
     "min_cd": 5,
     "start_cd": 39,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1820,
     "min_cd": 16,
     "start_cd": 27,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1821,
     "min_cd": 16,
     "start_cd": 27,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1822,
     "min_cd": 16,
     "start_cd": 27,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1823,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1824,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1825,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1826,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1827,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1828,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1829,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1830,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1831,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1832,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1833,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1834,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1835,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1836,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1837,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1838,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1839,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1840,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1841,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1842,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1843,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1844,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1845,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1846,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1847,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1848,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1849,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1850,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1851,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1852,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1853,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1854,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1855,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1856,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1857,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1858,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1859,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1860,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1861,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1862,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1863,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1864,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1865,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1866,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1867,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1868,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1869,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1870,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1871,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1872,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1873,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1874,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1875,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1876,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1877,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1878,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1879,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1880,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1881,
     "min_cd": 9,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1882,
     "min_cd": 9,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1883,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1884,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1885,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1886,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1887,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1888,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1889,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1890,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1891,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1892,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1893,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1894,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1895,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1896,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1897,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1898,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1899,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1900,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1901,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1902,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1903,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1904,
     "min_cd": 9,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1905,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1906,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1907,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1908,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1909,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1910,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1911,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1912,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1913,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1914,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1915,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1916,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1917,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1918,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1919,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1920,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1921,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1922,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1923,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1924,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1925,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1926,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1927,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1928,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1929,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1930,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1931,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1932,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1933,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1934,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1935,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1936,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1937,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1938,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1939,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1940,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1941,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1942,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1943,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1944,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1945,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1946,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1947,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1948,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1949,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1950,
     "min_cd": 13,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1951,
     "min_cd": 13,
     "start_cd": 27,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1952,
     "min_cd": 13,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1953,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1954,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1955,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1956,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1957,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1958,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1959,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1960,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1961,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1962,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1963,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1964,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1965,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1966,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1967,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1968,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1969,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1970,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1971,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1972,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1973,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1974,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1975,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1976,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1977,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1978,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1979,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1980,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1981,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1982,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1983,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1984,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1985,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1986,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1987,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1988,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1989,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1990,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1991,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1992,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1993,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1994,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1995,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1996,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1997,
     "min_cd": 15,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1998,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 1999,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2000,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2001,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2002,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2003,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2004,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2005,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2006,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2007,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2008,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2009,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2010,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2011,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2012,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2013,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2014,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2015,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2016,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2017,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2018,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2019,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2020,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2021,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2022,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2023,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2024,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2025,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2026,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2027,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2028,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2029,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2030,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2031,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2032,
     "min_cd": 12,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2033,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2034,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2035,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2036,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2037,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2038,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2039,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2040,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2041,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2042,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2043,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2044,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2045,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2046,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2047,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2048,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2049,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2050,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2051,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2052,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2053,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2054,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2055,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2056,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2057,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2058,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2059,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2060,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2061,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2062,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2063,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2064,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2065,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2066,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2067,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2068,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2069,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2070,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2071,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2072,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2073,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2074,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2075,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2076,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2077,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2078,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2079,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2080,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2081,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2082,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2083,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2084,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2085,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2086,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2087,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2088,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2089,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2090,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2091,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2092,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2093,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2094,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2095,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2096,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2097,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2098,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2099,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2100,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2101,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2102,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2103,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2104,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2105,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2106,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2107,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2108,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2109,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2110,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2111,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2112,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2113,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2114,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2115,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2116,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2117,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2118,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2119,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2120,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2121,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2122,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2123,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2124,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2125,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2126,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2127,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2128,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2129,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2130,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2131,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2132,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2133,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2134,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2135,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2136,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2137,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2138,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2139,
     "min_cd": 6,
     "start_cd": 25,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2140,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2141,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2142,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2143,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2144,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2145,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2146,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2147,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2148,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2149,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2150,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2151,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2152,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2153,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2154,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2155,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2156,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2157,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2158,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2159,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2160,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2161,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2162,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2163,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2164,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2165,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2166,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2167,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2168,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2169,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2170,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2171,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2172,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2173,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2174,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2175,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2176,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2177,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2178,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2179,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2180,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2181,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2182,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2183,
     "min_cd": 10,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2184,
     "min_cd": 10,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2185,
     "min_cd": 10,
     "start_cd": 10,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2186,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2187,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2188,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2189,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 3,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 2190,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2191,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2192,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2193,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2194,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2195,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2196,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2197,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2198,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2199,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2200,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2201,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2202,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2203,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2204,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2205,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2206,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2207,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 5,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 2208,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 2209,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2210,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2211,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2212,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2213,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2214,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2215,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2216,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2217,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2218,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2219,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2220,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2221,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2222,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2223,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2224,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2225,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2226,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2227,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2228,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2229,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2230,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2231,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2232,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2233,
     "min_cd": 9,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2234,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2235,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2236,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2237,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2238,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2239,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2240,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2241,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2242,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2243,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2244,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 5,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 2245,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2246,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2247,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2248,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2249,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 2250,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2251,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2252,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2253,
     "min_cd": 6,
     "start_cd": 6,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2254,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2255,
     "min_cd": 6,
     "start_cd": 6,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2256,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2257,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2258,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2259,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2260,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 2261,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2262,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2263,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 12,
-    "start_ep": 18,
-    "type": "EP"
+    "start_ep": 18
   },
   {
     "skillid": 2264,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2265,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2266,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2267,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2268,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 5,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 2269,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2270,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 3,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 2271,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2272,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2273,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2274,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2275,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2276,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2277,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2278,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2279,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2280,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2281,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2282,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2283,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2284,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2285,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2286,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2287,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2288,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2289,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2290,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2291,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2292,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2293,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2294,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2295,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2296,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2297,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2298,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2299,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2300,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2301,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2302,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2303,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2304,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2305,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2306,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2307,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2308,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2309,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2310,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2311,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2312,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2313,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2314,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2315,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2316,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2317,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2318,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2319,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2320,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2321,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2322,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2323,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2324,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2325,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2326,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2327,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2328,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2329,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2330,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2331,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2332,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2333,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2334,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2335,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2336,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2337,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2338,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2339,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2340,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2341,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2342,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2343,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2344,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2345,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2346,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2347,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2348,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2349,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2350,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2351,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2352,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2353,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2354,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2355,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2356,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2357,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2358,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2359,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2360,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2361,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2362,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2363,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2364,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2365,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2366,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2367,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2368,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2369,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2370,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2371,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2372,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2373,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2374,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2375,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2376,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2377,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2378,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2379,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2380,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2381,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2382,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2383,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2384,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2385,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2386,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2387,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2388,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2389,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2390,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2391,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2392,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2393,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2394,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2395,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2396,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2397,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2398,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2399,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2400,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2401,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2402,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2403,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2404,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2405,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2406,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2407,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2408,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2409,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2410,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2411,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2412,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2413,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2414,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2415,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2416,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2417,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2418,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2419,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2420,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2421,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2422,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2423,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2424,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2425,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2426,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2427,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2428,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2429,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2430,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2431,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2432,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2433,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2434,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2435,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2436,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2437,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2438,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2439,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2440,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2441,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2442,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2443,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 8,
-    "type": "EP"
+    "start_ep": 8
   },
   {
     "skillid": 2444,
     "min_cd": 0,
     "start_cd": 14,
     "min_ep": 3,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 2445,
     "min_cd": 0,
     "start_cd": 14,
     "min_ep": 10,
-    "start_ep": 17,
-    "type": "EP"
+    "start_ep": 17
   },
   {
     "skillid": 2446,
     "min_cd": 0,
     "start_cd": 11,
     "min_ep": 7,
-    "start_ep": 0,
-    "type": "EP"
+    "start_ep": 0
   },
   {
     "skillid": 2447,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2448,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2449,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2450,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2451,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2452,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2453,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2454,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2455,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2456,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2457,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "EP"
+    "start_ep": 0
   },
   {
     "skillid": 2458,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2459,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2460,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2461,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2462,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2463,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2464,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2465,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2466,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2467,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2468,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2469,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2470,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2471,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2472,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2473,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2474,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2475,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2476,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2477,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2478,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2479,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2480,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2481,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2482,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2483,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2484,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2485,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2486,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2487,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2488,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2489,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2490,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2491,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2492,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2493,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2494,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2495,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2496,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2497,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2498,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2499,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2500,
     "min_cd": 10,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2501,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2502,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2503,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2504,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2505,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2506,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2507,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2508,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2509,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2510,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2511,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2512,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2513,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2514,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2515,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2516,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2517,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2518,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2519,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2520,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2521,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2522,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2523,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2524,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2525,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2526,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2527,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2528,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2529,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2530,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2531,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2532,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2533,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2534,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2535,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2536,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2537,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2538,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2539,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2540,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2541,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2542,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2543,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2544,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2545,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2546,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2547,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2548,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2549,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2550,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2551,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2552,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2553,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2554,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2555,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2556,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2557,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2558,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2559,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2560,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2561,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2562,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2563,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2564,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2565,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2566,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 2567,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 2568,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 2569,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 2570,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 4,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 2571,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 2572,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 2573,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 2574,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 2575,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 2576,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2577,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2578,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2579,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2580,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2581,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2582,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2583,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2584,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2585,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2586,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2587,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2588,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2589,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2590,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2591,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2592,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2593,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2594,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2595,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2596,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2597,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2598,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2599,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2600,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2601,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2602,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2603,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2604,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2605,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2606,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2607,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2608,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2609,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2610,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2611,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2612,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 2613,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2614,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 9,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 2615,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2616,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2617,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 9,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 2618,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2619,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 2620,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2621,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2622,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2623,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2624,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2625,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2626,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2627,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2628,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2629,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2630,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2631,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2632,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2633,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2634,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2635,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2636,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2637,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2638,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2639,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2640,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2641,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2642,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2643,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2644,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2645,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2646,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 2647,
     "min_cd": 9,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2648,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2649,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2650,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2651,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2652,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2653,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2654,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2655,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2656,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2657,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2658,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2659,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2660,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2661,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2662,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2663,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2664,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2665,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2666,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2667,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2668,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2669,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2670,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2671,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2672,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2673,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2674,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2675,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2676,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2677,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 5,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 2678,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 9,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 2679,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2680,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2681,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2682,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2683,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2684,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2685,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2686,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 2687,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2688,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2689,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2690,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2691,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2692,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2693,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2694,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2695,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2696,
     "min_cd": 3,
     "start_cd": 3,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2697,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2698,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 9,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 2699,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2700,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2701,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2702,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2703,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2704,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2705,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2706,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2707,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2708,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2709,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2710,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2711,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2712,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2713,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2714,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2715,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2716,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2717,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2718,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2719,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2720,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2721,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2722,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2723,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2724,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2725,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2726,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2727,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2728,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2729,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2730,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2731,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2732,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2733,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2734,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2735,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2736,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2737,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2738,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2739,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2740,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2741,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2742,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2743,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2744,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2745,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2746,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2747,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2748,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2749,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2750,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2751,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2752,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2753,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2754,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2755,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2756,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2757,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2758,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2759,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2760,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2761,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2762,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2763,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2764,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2765,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2766,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2767,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 5,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 2768,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 2769,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2770,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2771,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2772,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2773,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2774,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2775,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2776,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2777,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2778,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2779,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2780,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2781,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2782,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2783,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2784,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2785,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2786,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2787,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2788,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2789,
     "min_cd": 23,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2790,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2791,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2792,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2793,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2794,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2795,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2796,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2797,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2798,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2799,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2800,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2801,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2802,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2803,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2804,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2805,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2806,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2807,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2808,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2809,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2810,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2811,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2812,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2813,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2814,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2815,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2816,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2817,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2818,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2819,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2820,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2821,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2822,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2823,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2824,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2825,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2826,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2827,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2828,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2829,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2830,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2831,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2832,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2833,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2834,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2835,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2836,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2837,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2838,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2839,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2840,
     "min_cd": 99,
     "start_cd": 99,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2841,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2842,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2843,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2844,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2845,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2846,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2847,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2848,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2849,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2850,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2851,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2852,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2853,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2854,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2855,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2856,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2857,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2858,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2859,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2860,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2861,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2862,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2863,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2864,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2865,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2866,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2867,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2868,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2869,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2870,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2871,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2872,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2873,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2874,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2875,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2876,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2877,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2878,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2879,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2880,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2881,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2882,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2883,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2884,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2885,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2886,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2887,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2888,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2889,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2890,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2891,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2892,
     "min_cd": 8,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2893,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2894,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2895,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2896,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2897,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2898,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2899,
     "min_cd": 6,
     "start_cd": 29,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2900,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2901,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2902,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2903,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2904,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2905,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2906,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2907,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2908,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2909,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2910,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2911,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2912,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2913,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2914,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2915,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2916,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2917,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2918,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2919,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2920,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2921,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2922,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2923,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2924,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2925,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2926,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2927,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2928,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2929,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2930,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2931,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2932,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2933,
     "min_cd": 1,
     "start_cd": 1,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2934,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2935,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2936,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2937,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2938,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2939,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2940,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2941,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2942,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2943,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2944,
     "min_cd": 10,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2945,
     "min_cd": 8,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2946,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2947,
     "min_cd": 10,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2948,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2949,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2950,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2951,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2952,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2953,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2954,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 2955,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 2956,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2957,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2958,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2959,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2960,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2961,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2962,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2963,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2964,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2965,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2966,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2967,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2968,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2969,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2970,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2971,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2972,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2973,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2974,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2975,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2976,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2977,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2978,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2979,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2980,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2981,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2982,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2983,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2984,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2985,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2986,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2987,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2988,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2989,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2990,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2991,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2992,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2993,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2994,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2995,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2996,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2997,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2998,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 2999,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3000,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3001,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3002,
     "min_cd": 7,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3003,
     "min_cd": 7,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3004,
     "min_cd": 7,
     "start_cd": 54,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3005,
     "min_cd": 7,
     "start_cd": 54,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3006,
     "min_cd": 3,
     "start_cd": 62,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3007,
     "min_cd": 6,
     "start_cd": 65,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3008,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3009,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3010,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3011,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3012,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3013,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3014,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3015,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3016,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3017,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3018,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3019,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3020,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3021,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3022,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3023,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3024,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3025,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3026,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3027,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3028,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3029,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3030,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3031,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3032,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3033,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3034,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3035,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3036,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3037,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3038,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3039,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3040,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3041,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3042,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3043,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3044,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3045,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3046,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3047,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3048,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3049,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3050,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3051,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3052,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3053,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3054,
     "min_cd": 1,
     "start_cd": 0,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3055,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3056,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3057,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3058,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3059,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3060,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3061,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3062,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3063,
     "min_cd": 5,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3064,
     "min_cd": 8,
     "start_cd": 37,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3065,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3066,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3067,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3068,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3069,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3070,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3071,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3072,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3073,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3074,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3075,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3076,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3077,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3078,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3079,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3080,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3081,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3082,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3083,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3084,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3085,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3086,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3087,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3088,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3089,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3090,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3091,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3092,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3093,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3094,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 6,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3095,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 8,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 3096,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3097,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3098,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3099,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3100,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3101,
     "min_cd": 5,
     "start_cd": 10,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3102,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3103,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3104,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3105,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3106,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3107,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3108,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3109,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3110,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3111,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3112,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3113,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3114,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3115,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3116,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3117,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3118,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3119,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3120,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3121,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3122,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3123,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3124,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3125,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3126,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3127,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3128,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3129,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3130,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3131,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3132,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3133,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3134,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3135,
     "min_cd": 7,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3136,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3137,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3138,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3139,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3140,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3141,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3142,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3143,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3144,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3145,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3146,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3147,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3148,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3149,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3150,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3151,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3152,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3153,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3154,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3155,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3156,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3157,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3158,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3159,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 3160,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 3161,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3162,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3163,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3164,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3165,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3166,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3167,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3168,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3169,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3170,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3171,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3172,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3173,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3174,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3175,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3176,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3177,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3178,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3179,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3180,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3181,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3182,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3183,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3184,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3185,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3186,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3187,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3188,
     "min_cd": 5,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3189,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3190,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3191,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3192,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3193,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3194,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3195,
     "min_cd": 0,
     "start_cd": 11,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3196,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3197,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3198,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3199,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3200,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3201,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3202,
     "min_cd": 1,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3203,
     "min_cd": 5,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3204,
     "min_cd": 8,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3205,
     "min_cd": 5,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3206,
     "min_cd": 8,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3207,
     "min_cd": 5,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3208,
     "min_cd": 6,
     "start_cd": 32,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3209,
     "min_cd": 5,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3210,
     "min_cd": 8,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3211,
     "min_cd": 5,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3212,
     "min_cd": 8,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3213,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3214,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3215,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3216,
     "min_cd": 0,
     "start_cd": 0,
     "min_ep": 4,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 3217,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3218,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3219,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3220,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3221,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3222,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3223,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3224,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3225,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3226,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3227,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3228,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3229,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3230,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3231,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3232,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3233,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3234,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3235,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3236,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3237,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3238,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3239,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3240,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3241,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3242,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3243,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3244,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3245,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3246,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3247,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3248,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3249,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3250,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3251,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3252,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3253,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3254,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3255,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3256,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3257,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3258,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3259,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3260,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3261,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3262,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3263,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3264,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3265,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3266,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3267,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3268,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3269,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3270,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3271,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3272,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3273,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3274,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3275,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3276,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3277,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3278,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3279,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3280,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3281,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3282,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3283,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3284,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3285,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3286,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3287,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3288,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3289,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 5,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 3290,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 3291,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3292,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3293,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3294,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3295,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3296,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3297,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3298,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3299,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3300,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3301,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3302,
     "min_cd": 5,
     "start_cd": 5,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3303,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3304,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3305,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3306,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3307,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3308,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3309,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3310,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3311,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3312,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3313,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3314,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3315,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3316,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3317,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3318,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3319,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3320,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3321,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3322,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3323,
     "min_cd": 6,
     "start_cd": 6,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3324,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3325,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 3326,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3327,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3328,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3329,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3330,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3331,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3332,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3333,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3334,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3335,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3336,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3337,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3338,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3339,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3340,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3341,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3342,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3343,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3344,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3345,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3346,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3347,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3348,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3349,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3350,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3351,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3352,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3353,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3354,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3355,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3356,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3357,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3358,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3359,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3360,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3361,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3362,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3363,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3364,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3365,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3366,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3367,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3368,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3369,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3370,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3371,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3372,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3373,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3374,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3375,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3376,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3377,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3378,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3379,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3380,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3381,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3382,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3383,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3384,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3385,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3386,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3387,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3388,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3389,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3390,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3391,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3392,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3393,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3394,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3395,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3396,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3397,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3398,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3399,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3400,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3401,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3402,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3403,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3404,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3405,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3406,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3407,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3408,
     "min_cd": 10,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3409,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 3410,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 5,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 3411,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3412,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3413,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 4,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 3414,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 3415,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3416,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3417,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3418,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 3419,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3420,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3421,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3422,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3423,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3424,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3425,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3426,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3427,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3428,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3429,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3430,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3431,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3432,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3433,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3434,
     "min_cd": 25,
     "start_cd": 36,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3435,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3436,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3437,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3438,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3439,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 3,
-    "start_ep": 9,
-    "type": "EP"
+    "start_ep": 9
   },
   {
     "skillid": 3440,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3441,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3442,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3443,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3444,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3445,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3446,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3447,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3448,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3449,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3450,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3451,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3452,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3453,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3454,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3455,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3456,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3457,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3458,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3459,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3460,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3461,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3462,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3463,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3464,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3465,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3466,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3467,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3468,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3469,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3470,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3471,
     "min_cd": 8,
     "start_cd": 37,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3472,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3473,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3474,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3475,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3476,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3477,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3478,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3479,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3480,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3481,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3482,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3483,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3484,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3485,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3486,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3487,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3488,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3489,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3490,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3491,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3492,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3493,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3494,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3495,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3496,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3497,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3498,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3499,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3500,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3501,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3502,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3503,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3504,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3505,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3506,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3507,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3508,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3509,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 9,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 3510,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 10,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 3511,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3512,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3513,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3514,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 9,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 3515,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3516,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3517,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3518,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 3519,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3520,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3521,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3522,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3523,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 10,
-    "start_ep": 16,
-    "type": "EP"
+    "start_ep": 16
   },
   {
     "skillid": 3524,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3525,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3526,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 3527,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 3528,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3529,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3530,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3531,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3532,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3533,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3534,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3535,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3536,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3537,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3538,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3539,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3540,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3541,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3542,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3543,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3544,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3545,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3546,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3547,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3548,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3549,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3550,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3551,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3552,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3553,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3554,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3555,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3556,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3557,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3558,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3559,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3560,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3561,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3562,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3563,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3564,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3565,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3566,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3567,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3568,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3569,
     "min_cd": 5,
     "start_cd": 10,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3570,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3571,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3572,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3573,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3574,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3575,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3576,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3577,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3578,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3579,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 25,
-    "start_ep": 31,
-    "type": "EP"
+    "start_ep": 31
   },
   {
     "skillid": 3580,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 100,
-    "start_ep": 106,
-    "type": "EP"
+    "start_ep": 106
   },
   {
     "skillid": 3581,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3582,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3583,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3584,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3585,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3586,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3587,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3588,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3589,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3590,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3591,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3592,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3593,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3594,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3595,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3596,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3597,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3598,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3599,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3600,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3601,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3602,
     "min_cd": 7,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3603,
     "min_cd": 5,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3604,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3605,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3606,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3607,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3608,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3609,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3610,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3611,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3612,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3613,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3614,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3615,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3616,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3617,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3618,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3619,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3620,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3621,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3622,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3623,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3624,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3625,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3626,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3627,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3628,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3629,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3630,
     "min_cd": 8,
     "start_cd": 106,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3631,
     "min_cd": 8,
     "start_cd": 106,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3632,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3633,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3634,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3635,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3636,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3637,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3638,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3639,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3640,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3641,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3642,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3643,
     "min_cd": 2,
     "start_cd": 11,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3644,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3645,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3646,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3647,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3648,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3649,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3650,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3651,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3652,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3653,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3654,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3655,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3656,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3657,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3658,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3659,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3660,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3661,
     "min_cd": 12,
     "start_cd": 26,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3662,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3663,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3664,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3665,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3666,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3667,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3668,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3669,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3670,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3671,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3672,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3673,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3674,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3675,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3676,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3677,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3678,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3679,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3680,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3681,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3682,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3683,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3684,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3685,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3686,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3687,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3688,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3689,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3690,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3691,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3692,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3693,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3694,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3695,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3696,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3697,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3698,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3699,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3700,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3701,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3702,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3703,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3704,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3705,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3706,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3707,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3708,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3709,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3710,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3711,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3712,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3713,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3714,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3715,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3716,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3717,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3718,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3719,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3720,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3721,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3722,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3723,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3724,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3725,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3726,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3727,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3728,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3729,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3730,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3731,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3732,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3733,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3734,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3735,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3736,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3737,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3738,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3739,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3740,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3741,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3742,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3743,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3744,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3745,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3746,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3747,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3748,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3749,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3750,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3751,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3752,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3753,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3754,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3755,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3756,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3757,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3758,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3759,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3760,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3761,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3762,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3763,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3764,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3765,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3766,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3767,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3768,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3769,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3770,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3771,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3772,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3773,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3774,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3775,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3776,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3777,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3778,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3779,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3780,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3781,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3782,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3783,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3784,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3785,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3786,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3787,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3788,
     "min_cd": 7,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3789,
     "min_cd": 7,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3790,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3791,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3792,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3793,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3794,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3795,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3796,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3797,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3798,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3799,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3800,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3801,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3802,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3803,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3804,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3805,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3806,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3807,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3808,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3809,
     "min_cd": 7,
     "start_cd": 76,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3810,
     "min_cd": 7,
     "start_cd": 76,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3811,
     "min_cd": 8,
     "start_cd": 77,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3812,
     "min_cd": 8,
     "start_cd": 77,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3813,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3814,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3815,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3816,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3817,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3818,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3819,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3820,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3821,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3822,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3823,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3824,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3825,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3826,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3827,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3828,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3829,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3830,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3831,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3832,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3833,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3834,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3835,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3836,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3837,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3838,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3839,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3840,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3841,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3842,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3843,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3844,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3845,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3846,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3847,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3848,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3849,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3850,
     "min_cd": 7,
     "start_cd": 76,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3851,
     "min_cd": 3,
     "start_cd": 72,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3852,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3853,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3854,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3855,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3856,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3857,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3858,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3859,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3860,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3861,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3862,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3863,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3864,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3865,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3866,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3867,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3868,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3869,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3870,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3871,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3872,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3873,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3874,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3875,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3876,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3877,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3878,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3879,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3880,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3881,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3882,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3883,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3884,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3885,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3886,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3887,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3888,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3889,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3890,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3891,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3892,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3893,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3894,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3895,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3896,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3897,
     "min_cd": 10,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3898,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3899,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3900,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3901,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3902,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3903,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3904,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3905,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3906,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3907,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3908,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3909,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3910,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3911,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3912,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3913,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3914,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3915,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3916,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3917,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3918,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3919,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3920,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3921,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3922,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3923,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3924,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3925,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3926,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3927,
     "min_cd": 3,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3928,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3929,
     "min_cd": 25,
     "start_cd": 36,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3930,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3931,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3932,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3933,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3934,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3935,
     "min_cd": 3,
     "start_cd": 62,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3936,
     "min_cd": 6,
     "start_cd": 65,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3937,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3938,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3939,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3940,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3941,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3942,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3943,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3944,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3945,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3946,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3947,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3948,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3949,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3950,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3951,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3952,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3953,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3954,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3955,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3956,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3957,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3958,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3959,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 3960,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3961,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3962,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3963,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3964,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3965,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3966,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3967,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3968,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3969,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3970,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3971,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3972,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3973,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3974,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3975,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3976,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3977,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3978,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 3,
-    "start_ep": 7,
-    "type": "EP"
+    "start_ep": 7
   },
   {
     "skillid": 3979,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 6,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 3980,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3981,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3982,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3983,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3984,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3986,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3987,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3988,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3989,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3990,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3991,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3992,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3993,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3994,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3995,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3996,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3997,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3998,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 3999,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4001,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4002,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4003,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4004,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4005,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4006,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4007,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4011,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4012,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4013,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4014,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4015,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4016,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4017,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4018,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4019,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4020,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4021,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4022,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4023,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4024,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4025,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4026,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4027,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4028,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4029,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4030,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4031,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4032,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4033,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4034,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4035,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4036,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4037,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4038,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4039,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 4040,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 7,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 4041,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4042,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4043,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4044,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4045,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4046,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4047,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4048,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4049,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4050,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4051,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4052,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4053,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4054,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4055,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4056,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4057,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4058,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4059,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4060,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4061,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4062,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4063,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4064,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4065,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4066,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4067,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4068,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4069,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4070,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4071,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4072,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4073,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4074,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4075,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4076,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4077,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4078,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4079,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4080,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4081,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4082,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4083,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4084,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4086,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4087,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4089,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4090,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4091,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4092,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4093,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4094,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4095,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4096,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4097,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4099,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4100,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4101,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4102,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4103,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4104,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4105,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4106,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4107,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4108,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4109,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4110,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4111,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4112,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4113,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4114,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4115,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4116,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4117,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4118,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4119,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4120,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4121,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4122,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4123,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4124,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4125,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4126,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4127,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4128,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4129,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4130,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4131,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4132,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4133,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4134,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4135,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4136,
     "min_cd": 7,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4137,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4138,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4139,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4140,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4141,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4142,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4143,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4144,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4145,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4146,
     "min_cd": 5,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4147,
     "min_cd": 6,
     "start_cd": 32,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4148,
     "min_cd": 5,
     "start_cd": 31,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4149,
     "min_cd": 8,
     "start_cd": 34,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4150,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4151,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4152,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4153,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4154,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4155,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4156,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4157,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4158,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4159,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4160,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4161,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4162,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4163,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4164,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4165,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4166,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4167,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4168,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4169,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4170,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4171,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4172,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4173,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4174,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4175,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4176,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4177,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4178,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4179,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4180,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4181,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4182,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4183,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4184,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4185,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4186,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4187,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4188,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4189,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4190,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4191,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4192,
     "min_cd": 7,
     "start_cd": 76,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4193,
     "min_cd": 8,
     "start_cd": 77,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4194,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4195,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4196,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4197,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4198,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4199,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4200,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4201,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4202,
     "min_cd": 7,
     "start_cd": 30,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4203,
     "min_cd": 1,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4204,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4205,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4206,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4207,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4208,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4209,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4210,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4211,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4212,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4213,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4214,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4215,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4216,
     "min_cd": 8,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4217,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4218,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4219,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4220,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4221,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4222,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4223,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4224,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4225,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4226,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4227,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4228,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4229,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4230,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4231,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4232,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4233,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4234,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4235,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4236,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4237,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4238,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4239,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4240,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4241,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4242,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4243,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4244,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4245,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4246,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4247,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4248,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4249,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4250,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4251,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4252,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4253,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4254,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4255,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4256,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4257,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4258,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4259,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4260,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4261,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4262,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4263,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4264,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4265,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4266,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4267,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4268,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4269,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4270,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4271,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4272,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4273,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4274,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4275,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4276,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4277,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4278,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4279,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4280,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4281,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4282,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4283,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4284,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4285,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4286,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4287,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4288,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4289,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4290,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4291,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4292,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4293,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4294,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4295,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4296,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4297,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4298,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4299,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4300,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4301,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4302,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4303,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4304,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4305,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4306,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4307,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4308,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4309,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4310,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4311,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4312,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4313,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4314,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4315,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4316,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4317,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4318,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4319,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4320,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4321,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4322,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4323,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4324,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4325,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4326,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4327,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4328,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4329,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4330,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4331,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4332,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4333,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4334,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4335,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4336,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4337,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4338,
     "min_cd": 9,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4339,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4340,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4341,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4342,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4343,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4344,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4345,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4346,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4347,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4348,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4349,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4350,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4351,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4352,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4353,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4354,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4355,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4356,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4357,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4358,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4359,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4360,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4361,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4362,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4363,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4364,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4365,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4366,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4367,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4368,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4369,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4370,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4371,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4372,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4373,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4374,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4375,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4376,
     "min_cd": 7,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4377,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4378,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4379,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4380,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4381,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4382,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4383,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4384,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4385,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4386,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4387,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4388,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4389,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4390,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4391,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4392,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4393,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4394,
     "min_cd": 5,
     "start_cd": 74,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4395,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4396,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4397,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4398,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4399,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4400,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4401,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4402,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4403,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4404,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4405,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4406,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4407,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4408,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4409,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4410,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4411,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4412,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4413,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4414,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4415,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4416,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4417,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4418,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4419,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4420,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4421,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4422,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4423,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4424,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4425,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4426,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4427,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4428,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4429,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4430,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4431,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4432,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4433,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4434,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4435,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4436,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4437,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4438,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4439,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4440,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4441,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4442,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4443,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4444,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4445,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4446,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4447,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4448,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4449,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4450,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 4451,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 5,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 4452,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 7,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4453,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4454,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4455,
     "min_cd": 8,
     "start_cd": 8,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4456,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 4,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 4457,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 4458,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4459,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4461,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 10,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 4462,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4463,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4466,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4467,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4468,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 2,
-    "start_ep": 8,
-    "type": "EP"
+    "start_ep": 8
   },
   {
     "skillid": 4469,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4470,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 4471,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 4472,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 4475,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4476,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4477,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4478,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4479,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4480,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4481,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4482,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4483,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4484,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4485,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4486,
     "min_cd": 8,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4487,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 5,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 4488,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 4489,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4490,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4491,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4492,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4493,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4494,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4495,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4498,
     "min_cd": 5,
     "start_cd": 5,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4505,
     "min_cd": 6,
     "start_cd": 6,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4506,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4507,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4508,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4509,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4510,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4511,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4512,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4513,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4514,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4515,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4516,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4517,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4518,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4519,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4520,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4521,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4522,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4523,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4524,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4525,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 4,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 4526,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4527,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4528,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4529,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4530,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4531,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4532,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4533,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4534,
     "min_cd": 6,
     "start_cd": 35,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4535,
     "min_cd": 7,
     "start_cd": 36,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4536,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4537,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4538,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4539,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4540,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4541,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4542,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4543,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4544,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4545,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4546,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4547,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4548,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4549,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4550,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4551,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4552,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4553,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4554,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4555,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4556,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4557,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4558,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4559,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4560,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4561,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4562,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4563,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4564,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4565,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4566,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4567,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4568,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4569,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4570,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4571,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4572,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4573,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4574,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4575,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4576,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4577,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4578,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4579,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4580,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4581,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4582,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4583,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4584,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4585,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4586,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4587,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4588,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4589,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4590,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4591,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4592,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4593,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4594,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4595,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4596,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4597,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4598,
     "min_cd": 6,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4599,
     "min_cd": 1,
     "start_cd": 14,
     "min_ep": 6,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 4600,
     "min_cd": 1,
     "start_cd": 14,
     "min_ep": 8,
-    "start_ep": 15,
-    "type": "EP"
+    "start_ep": 15
   },
   {
     "skillid": 4601,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4602,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4603,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4604,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4605,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4606,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4607,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4608,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4609,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4610,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4611,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4612,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4613,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4614,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4615,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4616,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4617,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4618,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4619,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4620,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4621,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4622,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4623,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4624,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4625,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4626,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4627,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4628,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4629,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4630,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4631,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4632,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4633,
     "min_cd": 2,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4634,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4635,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4636,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4637,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4638,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4639,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4640,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4643,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4644,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4645,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4646,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4647,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4648,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4649,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4650,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4651,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4652,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4653,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4654,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4655,
     "min_cd": 8,
     "start_cd": 77,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4656,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4657,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4658,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4659,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4660,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4661,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4662,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4663,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4664,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4665,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4666,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4667,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4668,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 40,
-    "start_ep": 46,
-    "type": "EP"
+    "start_ep": 46
   },
   {
     "skillid": 4669,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 60,
-    "start_ep": 66,
-    "type": "EP"
+    "start_ep": 66
   },
   {
     "skillid": 4670,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4671,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4672,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 80,
-    "start_ep": 86,
-    "type": "EP"
+    "start_ep": 86
   },
   {
     "skillid": 4673,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 80,
-    "start_ep": 86,
-    "type": "EP"
+    "start_ep": 86
   },
   {
     "skillid": 4674,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4675,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4676,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4677,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4678,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4679,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4680,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4681,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4682,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4683,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4684,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 80,
-    "start_ep": 86,
-    "type": "EP"
+    "start_ep": 86
   },
   {
     "skillid": 4685,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 80,
-    "start_ep": 86,
-    "type": "EP"
+    "start_ep": 86
   },
   {
     "skillid": 4686,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4688,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4689,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4690,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4691,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4692,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4693,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4694,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4695,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4696,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4697,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4698,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4699,
     "min_cd": 7,
     "start_cd": 76,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4700,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4701,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4702,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4703,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4704,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4705,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4706,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4707,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4708,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4709,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4710,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4711,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4712,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4713,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4714,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4715,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4716,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4717,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4718,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4719,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4720,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4721,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4722,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4723,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4724,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4725,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4726,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4727,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4729,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4730,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4731,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4732,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4733,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4734,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4735,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4736,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4737,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4738,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4739,
     "min_cd": 7,
     "start_cd": 76,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4740,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4741,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4742,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 11,
-    "type": "EP"
+    "start_ep": 11
   },
   {
     "skillid": 4743,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 4744,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 4745,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 4746,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4747,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4748,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4749,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 6,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 4750,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 3,
-    "start_ep": 7,
-    "type": "EP"
+    "start_ep": 7
   },
   {
     "skillid": 4751,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4752,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4753,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4754,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4755,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4756,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4757,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4758,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4759,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4760,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4761,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4762,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4763,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4764,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4765,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4766,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4767,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4768,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4769,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4770,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4771,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4772,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4773,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4774,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4775,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4776,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4777,
     "min_cd": 4,
     "start_cd": 73,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4778,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4779,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4780,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4781,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4782,
     "min_cd": 8,
     "start_cd": 77,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4783,
     "min_cd": 8,
     "start_cd": 77,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4784,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4785,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4786,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4787,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4788,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4789,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4790,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4791,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4792,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4793,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4794,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4795,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4796,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4797,
     "min_cd": 10,
     "start_cd": 24,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4798,
     "min_cd": 8,
     "start_cd": 22,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4799,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4800,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4801,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4802,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4803,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4804,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4805,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4806,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4807,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4808,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4810,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4812,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4813,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4814,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4815,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4816,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4817,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4819,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4820,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4821,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4822,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4823,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4824,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4825,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4826,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4827,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4828,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4829,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4830,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4831,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4832,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4833,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4834,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4835,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4836,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4837,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4838,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4839,
     "min_cd": 3,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4840,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4841,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4842,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4843,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4844,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4845,
     "min_cd": 5,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4846,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4847,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4848,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4849,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4850,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4851,
     "min_cd": 6,
     "start_cd": 75,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4852,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 4853,
     "min_cd": 1,
     "start_cd": 10,
     "min_ep": 8,
-    "start_ep": 13,
-    "type": "EP"
+    "start_ep": 13
   },
   {
     "skillid": 4854,
     "min_cd": 10,
     "start_cd": 19,
     "min_ep": 10,
-    "start_ep": 10,
-    "type": "EP"
+    "start_ep": 10
   },
   {
     "skillid": 4855,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4856,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4857,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4858,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4859,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4860,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4861,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4862,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4863,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4864,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4865,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4866,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4867,
     "min_cd": 3,
     "start_cd": 14,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4868,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4869,
     "min_cd": 4,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4870,
     "min_cd": 5,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4871,
     "min_cd": 2,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4872,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4873,
     "min_cd": 12,
     "start_cd": 23,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4874,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 4875,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 8,
-    "start_ep": 14,
-    "type": "EP"
+    "start_ep": 14
   },
   {
     "skillid": 4876,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4877,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4878,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4879,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4880,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 6,
-    "start_ep": 12,
-    "type": "EP"
+    "start_ep": 12
   },
   {
     "skillid": 4881,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 3,
-    "start_ep": 6,
-    "type": "EP"
+    "start_ep": 6
   },
   {
     "skillid": 4882,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4884,
     "min_cd": 8,
     "start_cd": 19,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4885,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4886,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4887,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4888,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4889,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4890,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4891,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4892,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4893,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4894,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4895,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4896,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4897,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4898,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4899,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4900,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4901,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4902,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4903,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
+  },
+  {
+    "skillid": 4904,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4905,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4906,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4907,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4908,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4909,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4910,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4911,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4912,
+    "min_cd": 7,
+    "start_cd": 18,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4913,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4914,
+    "min_cd": 7,
+    "start_cd": 18,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4915,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4916,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4917,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4918,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4919,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 5,
+    "start_ep": 11
+  },
+  {
+    "skillid": 4920,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 10,
+    "start_ep": 16
+  },
+  {
+    "skillid": 4921,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4922,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4923,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4924,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4925,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4926,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4927,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4928,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4929,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4930,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4931,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4932,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4933,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4934,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4935,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4936,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4937,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4938,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0
+  },
+  {
+    "skillid": 4953,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12
+  },
+  {
+    "skillid": 4954,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12
+  },
+  {
+    "skillid": 4955,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12
+  },
+  {
+    "skillid": 4956,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12
   },
   {
     "skillid": 4957,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4958,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4959,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4960,
     "min_cd": 4,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4961,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4962,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4963,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4964,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4965,
     "min_cd": 7,
     "start_cd": 18,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4966,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4967,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4968,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4969,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4970,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4971,
     "min_cd": 5,
     "start_cd": 16,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4972,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4973,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4974,
     "min_cd": 6,
     "start_cd": 17,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
+  },
+  {
+    "skillid": 4975,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 7,
+    "start_ep": 13
   },
   {
     "skillid": 4976,
     "min_cd": 4,
     "start_cd": 13,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4977,
     "min_cd": 6,
     "start_cd": 15,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4982,
     "min_cd": 7,
     "start_cd": 21,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4983,
     "min_cd": 6,
     "start_cd": 20,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   },
   {
     "skillid": 4984,
     "min_cd": 1,
     "start_cd": 12,
     "min_ep": 0,
-    "start_ep": 0,
-    "type": "CD"
+    "start_ep": 0
   }
-];
+]

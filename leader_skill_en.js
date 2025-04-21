@@ -12170,6 +12170,61 @@ window.leader_skill = [
     "desc": "I. Humans:\n⇒ Attack x 144; HP & Recovery x 4.4.\nII.【Re:ZERO】 Members:\n⇒ Attack x 1.4 additionally.\nIII. Launch 1 Attribute-effective \n     Counterattack as much as \n    14,000,000x the Damage received\n     to each attacking enemy."
   },
   {
+    "id": 2541,
+    "name": "The Invincible Star Platinum",
+    "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n  and Dark Members:\n⓵ Attack x 33.\n⓶ HP & Recovery x 2.3.\nII.【JoJo’s Bizarre Adventure】 Members:\n⇒ HP, Attack & Recovery x 3 additionally.\nIII. By dissolving Runestones of a Member’s Attribute,\n⇒ Team Attack x 3 additionally."
+  },
+  {
+    "id": 2542,
+    "name": "A True Gentleman",
+    "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n   and Light Members:\n⓵ Attack x 11.\n⓶ HP & Recovery x 2.1.\nII.【JoJo’s Bizarre Adventure】 Members:\n⓵ HP, Attack & Recovery x 2.1 additionally.\n⓶ Each launches 1 extra Light attack\n     as much as 50% of its Attack.\nIII. By dissolving ≥5 Light or\n     Heart Runestones in total:\n⓵ Team Attack x 11 additionally.\n⓶ “Jonathan Joestar”:\n⇒ Skill CD -1."
+  },
+  {
+    "id": 2543,
+    "name": "Wits and Prestidigitation",
+    "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n   and Earth Members:\n⓵ Attack x 22.\n⓶ Attack & Recovery 2.2.\nII.【JoJo’s Bizarre Adventure】 Members:\n⇒ HP, Attack & Recovery x 2 additionally.\nIII. By dissolving Runestones of\n     an enemy’s Attribute,\n⇒ there is a 50% chance that\n    the first 2 attacks of each enemy\n    of that Attribute(s) \n    will be dodged in that Round.\nIV. By dissolving ≥9 Water, Fire or\n     Earth Runestones in total,\n⇒ Team Attack x 4 additionally."
+  },
+  {
+    "id": 2544,
+    "name": "The Most Powerful World",
+    "desc": "When the Team has only Demons:\nI. Team Attack x 10;\n   Attack & Recovery x 3.\nII.【Vampire】 Members:\n⇒ HP, Attack & Recovery x 2 additionally.\nIII. The more the Runestones are dissolved,\n⇒【Vampire】 Members:\n⇒ the higher the Attack increases additionally,\n⇒ to the max x 9 for 10 Runestones dissolved.\nIV. For each Light or Dark Runestone dissolved,\n⇒ Combo count +1,\n⇒ to the max +9."
+  },
+  {
+    "id": 2545,
+    "name": "Requiem for the Rebels",
+    "desc": "I. Team Attack x 55; HP & Recovery x 5.5.\nII.【JoJo’s Bizarre Adventure】 Members:\n⇒ Attack x 1.85 additionally.\nIII. By dissolving Light or Heart Runestones,\n⇒ Team Attack x 3.5 additionally."
+  },
+  {
+    "id": 2546,
+    "name": "Shining Diamond Is Unbreakble",
+    "desc": "I. Humans,【JoJo’s Bizarre Adventure】\n  and Fire Members:\n⓵ Attack x 44.\n⓶ HP & Recovery x 4.4.\nII. The more the Runestones\n    are dissolved,\n⇒ Humans,【JoJo’s Bizarre Adventure】 \n    and Fire Members:\n⇒ the higher the Attack \n    increases additionally,\n⇒ to the max x 4 \n    for 24 Runestones dissolved.\nIII. By dissolving ≥4 groups of Runestones,\n⇒【JoJo’s Bizarre Adventure】 Members:\n⇒ Attack x 1.4 additionally."
+  },
+  {
+    "id": 2547,
+    "name": "Free from the Stone Ocean",
+    "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n  and Water Members:\n⓵ Attack x 66.\n⓶ HP & Recovery x 3.6.\nII. By dissolving Water, Earth\n    or Dark Runestones,\n⇒【JoJo’s Bizarre Adventure】 Members:\n⇒ Attack x 3.6 additionally."
+  },
+  {
+    "id": 2548,
+    "name": "Unyielding Resolve",
+    "desc": "I. 【Team Bucciarati】 Members:\n⓵ Attack x 50.\n⓶ HP & Recovery x 4.5.\nII. By dissolving Light or\n    Heart Runestones,\n⇒ Team Attack x 3.5 additionally."
+  },
+  {
+    "id": 2549,
+    "name": "Inherited Golden Spirit",
+    "desc": "【JoJo’s Bizarre Adventure】 Members:\nI. Attack x 100.\nII. HP & Recovery x 4.\n"
+  },
+  {
+    "id": 2554,
+    "name": "The Most Powerful Star Platinum",
+    "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n  and Dark Members:\n⓵ Attack x 30.\n⓶ HP & Recovery x 3.6.\nII.【JoJo’s Bizarre Adventure】 Members:\n⓵ Attack x 3 additionally.\n⓶ Attack & Recovery  x 1.6 additionally.\nIII. By dissolving Runestones \n     of a Member’s Attribute,\n⇒ Team Attack x 3 additionally.\nIV. At the end of each Round,\n⇒ Humans, 【JoJo’s Bizarre Adventure】\n    and Dark Members:\n⓵ Skill CDs -1\n⓶ Skill EPs +1\n(Dissolving Runestones is necessary.)"
+  },
+  {
+    "id": 2555,
+    "name": "Bizarre Golden Wind",
+    "desc": "I. Team Attack x 55; HP & Recovery x 4.5.\nII.【JoJo’s Bizarre Adventure】 Members:\n⇒ Attack x 1.5 additionally.\nIII. By dissolving Light or Heart Runestones,\n⇒ Team Attack x 3.5 additionally."
+  },
+  {
     "id": 2556,
     "name": "Colors of Music",
     "desc": "I. Team Attack x 50;\n   HP & Recovery x 3.9.\nII.【Classical Epic】 Members and \n    Members of the Character’s Attribute:\n⇒ HP, Attack & Recovery\n    x 1.3 additionally.\nIII. For every group of Heart Runestones\n     or Runestones of a Member’s\n     Attribute dissolved,\n⇒ Team Attack increases additionally,\n⇒ to the max x 4 \n    for 3 groups dissolved.\nIV. Upon the end of the \n     last Runestone movement,\n⇒ Ex. Combo and Combo count +5."
