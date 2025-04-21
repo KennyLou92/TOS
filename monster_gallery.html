@@ -923,6 +923,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         });
         // 顯示 Modal
         document.getElementById("monsterInfoModal").style.display = "block";
+        document.body.style.overflow = "hidden";
       }
     })
 }
@@ -1015,6 +1016,7 @@ function processSkill(skillId, recRow,container) {
 }
 function closeModal() {
 	  document.getElementById("monsterInfoModal").style.display = "none";
+    document.body.style.overflow = "";
 	}
 
   document.getElementById("monsterInfoModal").addEventListener("click", function(e) {
