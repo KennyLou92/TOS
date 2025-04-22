@@ -39000,6 +39000,318 @@ window.skillData = [
     "type": "CD"
   },
   {
+    "skillid": 4904,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4905,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4906,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4907,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4908,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4909,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4910,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4911,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4912,
+    "min_cd": 7,
+    "start_cd": 18,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4913,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4914,
+    "min_cd": 7,
+    "start_cd": 18,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4915,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4916,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4917,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4918,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4919,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 5,
+    "start_ep": 11,
+    "type": "EP"
+  },
+  {
+    "skillid": 4920,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 10,
+    "start_ep": 16,
+    "type": "EP"
+  },
+  {
+    "skillid": 4921,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4922,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4923,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4924,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4925,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4926,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4927,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4928,
+    "min_cd": 4,
+    "start_cd": 15,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4929,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4930,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4931,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4932,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4933,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4934,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4935,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4936,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4937,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4938,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4953,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12,
+    "type": "EP"
+  },
+  {
+    "skillid": 4954,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12,
+    "type": "EP"
+  },
+  {
+    "skillid": 4955,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12,
+    "type": "EP"
+  },
+  {
+    "skillid": 4956,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 6,
+    "start_ep": 12,
+    "type": "EP"
+  },
+  {
     "skillid": 4957,
     "min_cd": 5,
     "start_cd": 16,
@@ -39142,6 +39454,14 @@ window.skillData = [
     "min_ep": 0,
     "start_ep": 0,
     "type": "CD"
+  },
+  {
+    "skillid": 4975,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 7,
+    "start_ep": 13,
+    "type": "EP"
   },
   {
     "skillid": 4976,
