@@ -557,6 +557,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   } catch (error) {
     console.error('載入怪物資料時發生錯誤：', error);
   }
+  }
 
   // 將 fetchMonsterInfo 移到這裡，作為獨立函數
 async function fetchMonsterInfo(monsterId, monsterElement) {
