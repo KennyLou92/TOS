@@ -497,10 +497,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
   // 修改為：
   window.addEventListener('load', async () => {
-    if (!window.skilldesc) {
-      console.error('技能資料載入失敗');
-      return;
-    }
+  console.log('window.teamskill:', window.teamskill);
+  if (!window.skilldesc) {
+    console.error('技能資料載入失敗');
+    return;
+  }
     console.log('技能資料載入成功');
     console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
     await loadMonsters();
