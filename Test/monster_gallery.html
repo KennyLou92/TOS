@@ -487,7 +487,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 .tab-btn.active::after {
   width: 80%;
 }
-    .tab-content { margin-top: 12px; }
+.tab-content { 
+  margin-top: 12px; 
+}
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
   </style>
   <script>
     // 確保 DOM 載入完成後執行
@@ -605,40 +614,21 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
     document.getElementById('monsterLeaderSkill').innerHTML = '無';
   }
 
-// 新增：log 觀察 teamskill 資訊
-console.log('monster.teamskill:', monster.teamskill);
-      if (window.teamskill) {
-        if (Array.isArray(monster.teamskill)) {
-          monster.teamskill.forEach(id => {
-            console.log('window.teamskill[' + id + ']:', window.teamskill[id]);
-          });
-        } else {
-          console.log('window.teamskill[' + monster.teamskill + ']:', window.teamskill[monster.teamskill]);
-        }
-      } else {
-        console.log('window.teamskill 尚未載入');
-      }
-      
-    // 處理隊伍技能   
-  if (monster.teamskill && window.teamskill) {
-  const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
-  const teamSkillContent = teamSkillIds
-    .map(id => {
-      const desc = window.teamskill[id];
-      if (!desc) return null;
-      return `
-        <div class="info-row" data-skill="true">
-          <div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div>
-        </div>
-      `;
-    })
-    .filter(Boolean)
-    .join('');
+// 設置標籤切換功能
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // 移除所有標籤的 active 類
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    // 隱藏所有標籤內容
+    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
     
-    document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
-} else {
-  document.getElementById('tab-team').innerHTML = '無';
-}
+    // 激活當前標籤
+    btn.classList.add('active');
+    // 顯示對應的標籤內容
+    const tabId = btn.getAttribute('data-tab');
+    document.getElementById(`tab-${tabId}`).classList.add('active');
+  });
+});
      // 顯示 Modal
      document.getElementById('monsterInfoModal').style.display = 'block';
     }
