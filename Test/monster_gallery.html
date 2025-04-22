@@ -925,49 +925,39 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             }
           };
         });
-        let teamSkillText = '';
-        console.log('處理隊伍技能開始');
-        console.log('monster:', monster);
-        console.log('window.teamskill:', window.teamskill);
-            // 處理隊伍技能
-
-            if (monster.teamskill && window.teamskill) {
-  console.log('monster.teamskill 存在:', monster.teamskill);
-  // 確保 teamskill 是陣列
+       // 處理隊伍技能
+let teamSkillContent = '';
+if (monster.teamskill && window.teamskill) {
   const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
-  console.log('處理後的 teamSkillIds:', teamSkillIds);
   
-  const teamSkills = teamSkillIds
+  teamSkillContent = teamSkillIds
     .map(id => {
-      console.log('正在處理技能 ID:', id);
       const skill = window.teamskill[id];
-      console.log('找到的技能:', skill);
       if (!skill) return null;
-      return `<div style="font-weight:bold;">${skill.name || ''}</div><div>${(skill.desc || '').replace(/\n/g, '<br>')}</div>`;
+      return `<div class="info-row" data-skill="true">
+        <div class="info-label">${skill.name || ''}</div>
+        <div class="info-value skill-desc">${(skill.desc || '').replace(/\n/g, '<br>')}</div>
+      </div>`;
     })
-    .filter(Boolean) // 過濾掉 null 值
-    .join('<br>'); // 用換行分隔多個技能
-    
-  console.log('最終處理的技能文字:', teamSkills);
-  teamSkillText = teamSkills || '無';
-} else {
-  console.log('沒有隊伍技能資料');
-  teamSkillText = '無';
+    .filter(Boolean)
+    .join('');
 }
 
-console.log('最終設定的 teamSkillText:', teamSkillText);
-document.getElementById('tab-team').innerHTML = teamSkillText || '無';
-        // Tab 切換功能
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-          btn.onclick = function() {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            document.querySelectorAll('.tab-content').forEach(content => {
-              content.style.display = 'none';
-            });
-            document.getElementById(`tab-${this.dataset.tab}`).style.display = '';
-          };
-        });
+document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
+
+// 處理標籤頁切換
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // 移除所有 active 狀態
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
+    
+    // 設置當前 tab 為 active
+    this.classList.add('active');
+    const tabId = this.getAttribute('data-tab');
+    document.getElementById(`tab-${tabId}`).style.display = '';
+  });
+});
         // 顯示 Modal
         document.getElementById("monsterInfoModal").style.display = "block";
         document.body.style.overflow = "hidden";
