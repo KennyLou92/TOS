@@ -600,9 +600,23 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
   } else {
     document.getElementById('monsterLeaderSkill').innerHTML = '無';
   }
+
+// 新增：log 觀察 teamskill 資訊
+console.log('monster.teamskill:', monster.teamskill);
+      if (window.teamskill) {
+        if (Array.isArray(monster.teamskill)) {
+          monster.teamskill.forEach(id => {
+            console.log('window.teamskill[' + id + ']:', window.teamskill[id]);
+          });
+        } else {
+          console.log('window.teamskill[' + monster.teamskill + ']:', window.teamskill[monster.teamskill]);
+        }
+      } else {
+        console.log('window.teamskill 尚未載入');
+      }
       
     // 處理隊伍技能   
-    if (monster.teamskill && window.teamskill) {
+  if (monster.teamskill && window.teamskill) {
   const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
   const teamSkillContent = teamSkillIds
     .map(id => {
