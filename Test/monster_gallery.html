@@ -926,19 +926,23 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           };
         });
             // 處理隊伍技能
-        let teamSkillText = '';
-        if (monster.teamskill && window.leader_skill) {
-        const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
-  
-        const teamSkills = teamSkillIds
-        .map(id => window.teamskill[id])
-        .filter(skill => skill) // 過濾掉未找到的技能
-        .map(skill => `<div style="font-weight:bold;">${skill.name}</div><div>${skill.desc.replace(/\n/g, '<br>')}</div>`)
-        .join('<br>'); // 用換行分隔多個技能
-        
-      teamSkillText = teamSkills || '無';
-    }
-    document.getElementById('tab-team').innerHTML = teamSkillText;
+
+    if (monster.teamskill && window.teamskill) {
+    // 確保 teamskill 是陣列
+    const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+    
+    const teamSkills = teamSkillIds
+      .map(id => {
+        const skill = window.teamskill[id];
+        if (!skill) return null;
+        return `<div style="font-weight:bold;">${skill.name || ''}</div><div>${(skill.desc || '').replace(/\n/g, '<br>')}</div>`;
+      })
+      .filter(Boolean) // 過濾掉 null 值
+      .join('<br>'); // 用換行分隔多個技能
+      
+    teamSkillText = teamSkills || '無';
+  }
+  document.getElementById('tab-team').innerHTML = teamSkillText || '無';
         // Tab 切換功能
         document.querySelectorAll('.tab-btn').forEach(btn => {
           btn.onclick = function() {
