@@ -570,6 +570,7 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
     const monster = data.find(m => m.id.toString() === monsterIdStr);
     
     if (monster) {
+      console.log('monster:', monster); 
       // 設置怪物ID和屬性圖標
       const attributeIcons = {
         1: 'water.png',
