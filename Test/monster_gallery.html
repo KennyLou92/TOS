@@ -600,26 +600,25 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
   }
       
     // 處理隊伍技能   
-  if (monster.teamskill && window.teamskill) {
-    const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
-    const teamSkillContent = teamSkillIds
-      .map(id => {
-        const skill = window.teamskill[id];
-        if (!skill) return null;
-        return `
-          <div class="info-row" data-skill="true">
-            <div class="info-label">${skill.name || ''}</div>
-            <div class="info-value skill-desc">${skill.desc ? skill.desc.replace(/\n/g, '<br>') : ''}</div>
-          </div>
-        `;
-      })
-      .filter(Boolean)
-      .join('');
+    if (monster.teamskill && window.teamskill) {
+  const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+  const teamSkillContent = teamSkillIds
+    .map(id => {
+      const desc = window.teamskill[id];
+      if (!desc) return null;
+      return `
+        <div class="info-row" data-skill="true">
+          <div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div>
+        </div>
+      `;
+    })
+    .filter(Boolean)
+    .join('');
     
     document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
-  }  else {
-    document.getElementById('tab-team').innerHTML = '無';
-  }
+} else {
+  document.getElementById('tab-team').innerHTML = '無';
+}
      // 顯示 Modal
      document.getElementById('monsterInfoModal').style.display = 'block';
     }
