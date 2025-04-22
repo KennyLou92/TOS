@@ -833,18 +833,12 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	  5: 'dark',
 	};
 
-	function fetchMonsterInfo(monsterId, monsterElement) {
-  if (!monsterId || !monsterElement) { return; }
-
-  const monsterIdStr = monsterId.toString();
-  const skillTab = document.getElementById('tab-skill');
-  const leaderTab = document.getElementById('tab-leader');
-  skillTab.innerHTML = '';
-  leaderTab.innerHTML = '';
-  fetch('monster.json')
-    .then(response => response.json())
-    .then(data => {
-      const monster = data.find(m => m.id.toString() === monsterIdStr);
+	async function fetchMonsterInfo(monsterId, monsterElement) {
+  try {
+    const monsterIdStr = monsterId.toString();
+    const response = await fetch('monster.json');
+    const data = await response.json();
+    const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
         // 顯示名稱與圖示
         updateMonsterIcons(monsterElement, monster);
@@ -926,31 +920,36 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           };
         });
        // 處理隊伍技能
-let teamSkillContent = '';
-if (monster.teamskill && window.teamskill) {
-  const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
-  
-  teamSkillContent = teamSkillIds
-    .map(id => {
-      const skill = window.teamskill[id];
-      if (!skill) return null;
-      return `<div class="info-row" data-skill="true">
-        <div class="info-label">${skill.name || ''}</div>
-        <div class="info-value skill-desc">${(skill.desc || '').replace(/\n/g, '<br>')}</div>
-      </div>`;
-    })
-    .filter(Boolean)
-    .join('');
-}
+       let teamSkillContent = '';
+      if (monster.teamskill && window.teamskill) {
+        const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+        
+        teamSkillContent = teamSkillIds
+          .map(id => {
+            const skill = window.teamskill[id];
+            if (!skill) return null;
+            return `<div class="info-row" data-skill="true">
+              <div class="info-label">${skill.name || ''}</div>
+              <div class="info-value skill-desc">${skill.desc ? skill.desc.replace(/\n/g, '<br>') : ''}</div>
+            </div>`;
+          })
+          .filter(Boolean)
+          .join('');
+      }
 
-document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
-
-// 處理標籤頁切換
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
-    // 移除所有 active 狀態
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
+      document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
+      
+      // 處理標籤頁切換
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
+          
+          this.classList.add('active');
+          const tabId = this.getAttribute('data-tab');
+          document.getElementById(`tab-${tabId}`).style.display = 'block';
+        });
+      });
     
     // 設置當前 tab 為 active
     this.classList.add('active');
