@@ -25,8 +25,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script src="leader_skill_zh.js">
   </script>
-  <script src="teamskilldesczh.js">
-  </script>
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
@@ -512,7 +510,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       fetch('monster.json'),
       fetch('monster_name_zh.json')
     ]);
-    
+
     const monsters = await monsterResponse.json();
     const names = await nameResponse.json();
     
@@ -548,8 +546,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       `;
     }).join('');
 
-        // 重新綁定點擊事件
-        document.querySelectorAll('.monster').forEach(monster => {
+      // 重新綁定點擊事件
+      document.querySelectorAll('.monster').forEach(monster => {
       monster.addEventListener('click', () => {
         const id = monster.getAttribute('data-id');
         fetchMonsterInfo(id, monster);
@@ -558,6 +556,64 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
   } catch (error) {
     console.error('載入怪物資料時發生錯誤：', error);
+  }
+
+  // 將 fetchMonsterInfo 移到這裡，作為獨立函數
+async function fetchMonsterInfo(monsterId, monsterElement) {
+  try {
+    const monsterIdStr = monsterId.toString();
+    const response = await fetch('monster.json');
+    const data = await response.json();
+    const monster = data.find(m => m.id.toString() === monsterIdStr);
+    
+    if (monster) {
+      // 設置怪物ID和屬性圖標
+      const attributeIcons = {
+        1: 'water.png',
+        2: 'fire.png',
+        3: 'earth.png',
+        4: 'light.png',
+        5: 'dark.png'
+      };
+      
+      document.getElementById('monsterID').innerHTML = `
+        ${monster.id}
+        <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeIcons[monster.attribute]}" 
+             alt="屬性" style="width:24px;height:24px;">
+      `;
+
+      // 設置基本屬性
+      document.getElementById('monsterHP').textContent = monster.hp || '0';
+      document.getElementById('monsterHP1_2').textContent = monster.hp_120 || '0';
+      document.getElementById('monsterATK').textContent = monster.attack || '0';
+      document.getElementById('monsterATK1_2').textContent = monster.attack_120 || '0';
+      document.getElementById('monsterREC').textContent = monster.recovery || '0';
+      document.getElementById('monsterREC1_2').textContent = monster.recovery_120 || '0';
+   
+      // 處理隊伍技能   
+  if (monster.teamskill && window.teamskill) {
+    const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+    const teamSkillContent = teamSkillIds
+      .map(id => {
+        const skill = window.teamskill[id];
+        if (!skill) return null;
+        return `
+          <div class="info-row" data-skill="true">
+            <div class="info-label">${skill.name || ''}</div>
+            <div class="info-value skill-desc">${skill.desc ? skill.desc.replace(/\n/g, '<br>') : ''}</div>
+          </div>
+        `;
+      })
+      .filter(Boolean)
+      .join('');
+    
+    document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
+  }
+     // 顯示 Modal
+     document.getElementById('monsterInfoModal').style.display = 'block';
+    }
+  } catch (error) {
+    console.error('獲取怪物資訊時發生錯誤：', error);
   }
 }
   </script>
@@ -833,12 +889,18 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	  5: 'dark',
 	};
 
-	async function fetchMonsterInfo(monsterId, monsterElement) {
-  try {
-    const monsterIdStr = monsterId.toString();
-    const response = await fetch('monster.json');
-    const data = await response.json();
-    const monster = data.find(m => m.id.toString() === monsterIdStr);
+	function fetchMonsterInfo(monsterId, monsterElement) {
+  if (!monsterId || !monsterElement) { return; }
+
+  const monsterIdStr = monsterId.toString();
+  const skillTab = document.getElementById('tab-skill');
+  const leaderTab = document.getElementById('tab-leader');
+  skillTab.innerHTML = '';
+  leaderTab.innerHTML = '';
+  fetch('monster.json')
+    .then(response => response.json())
+    .then(data => {
+      const monster = data.find(m => m.id.toString() === monsterIdStr);
       if (monster) {
         // 顯示名稱與圖示
         updateMonsterIcons(monsterElement, monster);
@@ -919,44 +981,6 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             }
           };
         });
-       // 處理隊伍技能
-       let teamSkillContent = '';
-      if (monster.teamskill && window.teamskill) {
-        const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
-        
-        teamSkillContent = teamSkillIds
-          .map(id => {
-            const skill = window.teamskill[id];
-            if (!skill) return null;
-            return `<div class="info-row" data-skill="true">
-              <div class="info-label">${skill.name || ''}</div>
-              <div class="info-value skill-desc">${skill.desc ? skill.desc.replace(/\n/g, '<br>') : ''}</div>
-            </div>`;
-          })
-          .filter(Boolean)
-          .join('');
-      }
-
-      document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
-      
-      // 處理標籤頁切換
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-          document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
-          
-          this.classList.add('active');
-          const tabId = this.getAttribute('data-tab');
-          document.getElementById(`tab-${tabId}`).style.display = 'block';
-        });
-      });
-    
-    // 設置當前 tab 為 active
-    this.classList.add('active');
-    const tabId = this.getAttribute('data-tab');
-    document.getElementById(`tab-${tabId}`).style.display = '';
-  });
-});
         // 顯示 Modal
         document.getElementById("monsterInfoModal").style.display = "block";
         document.body.style.overflow = "hidden";
