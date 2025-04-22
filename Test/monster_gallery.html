@@ -25,6 +25,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script src="leader_skill_zh.js">
   </script>
+  <script src="teamskilldesczh.js">
+  </script>
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
@@ -702,9 +704,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         <div class="tab-buttons">
           <button class="tab-btn active" data-tab="leader">隊長技</button>
           <button class="tab-btn" data-tab="skill">主動技</button>
+          <button class="tab-btn" data-tab="team">隊伍技</button>
         </div>
         <div class="tab-content" id="tab-leader"></div>
         <div class="tab-content" id="tab-skill" style="display:none"></div>
+        <div class="tab-content" id="tab-team" style="display:none"></div>
       </div>
      </div>
     </div>
@@ -919,6 +923,31 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
               skillTab.style.display = 'none';
               leaderTab.style.display = '';
             }
+          };
+        });
+            // 處理隊伍技能
+        let teamSkillText = '';
+        if (monster.teamskill && window.leader_skill) {
+        const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+  
+        const teamSkills = teamSkillIds
+        .map(id => window.teamskill[id])
+        .filter(skill => skill) // 過濾掉未找到的技能
+        .map(skill => `<div style="font-weight:bold;">${skill.name}</div><div>${skill.desc.replace(/\n/g, '<br>')}</div>`)
+        .join('<br>'); // 用換行分隔多個技能
+        
+      teamSkillText = teamSkills || '無';
+    }
+    document.getElementById('tab-team').innerHTML = teamSkillText;
+        // Tab 切換功能
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.onclick = function() {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            document.querySelectorAll('.tab-content').forEach(content => {
+              content.style.display = 'none';
+            });
+            document.getElementById(`tab-${this.dataset.tab}`).style.display = '';
           };
         });
         // 顯示 Modal
