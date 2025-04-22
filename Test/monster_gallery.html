@@ -925,24 +925,38 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             }
           };
         });
+        let teamSkillText = '';
+        console.log('處理隊伍技能開始');
+        console.log('monster:', monster);
+        console.log('window.teamskill:', window.teamskill);
             // 處理隊伍技能
 
-    if (monster.teamskill && window.teamskill) {
-    // 確保 teamskill 是陣列
-    const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+            if (monster.teamskill && window.teamskill) {
+  console.log('monster.teamskill 存在:', monster.teamskill);
+  // 確保 teamskill 是陣列
+  const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+  console.log('處理後的 teamSkillIds:', teamSkillIds);
+  
+  const teamSkills = teamSkillIds
+    .map(id => {
+      console.log('正在處理技能 ID:', id);
+      const skill = window.teamskill[id];
+      console.log('找到的技能:', skill);
+      if (!skill) return null;
+      return `<div style="font-weight:bold;">${skill.name || ''}</div><div>${(skill.desc || '').replace(/\n/g, '<br>')}</div>`;
+    })
+    .filter(Boolean) // 過濾掉 null 值
+    .join('<br>'); // 用換行分隔多個技能
     
-    const teamSkills = teamSkillIds
-      .map(id => {
-        const skill = window.teamskill[id];
-        if (!skill) return null;
-        return `<div style="font-weight:bold;">${skill.name || ''}</div><div>${(skill.desc || '').replace(/\n/g, '<br>')}</div>`;
-      })
-      .filter(Boolean) // 過濾掉 null 值
-      .join('<br>'); // 用換行分隔多個技能
-      
-    teamSkillText = teamSkills || '無';
-  }
-  document.getElementById('tab-team').innerHTML = teamSkillText || '無';
+  console.log('最終處理的技能文字:', teamSkills);
+  teamSkillText = teamSkills || '無';
+} else {
+  console.log('沒有隊伍技能資料');
+  teamSkillText = '無';
+}
+
+console.log('最終設定的 teamSkillText:', teamSkillText);
+document.getElementById('tab-team').innerHTML = teamSkillText || '無';
         // Tab 切換功能
         document.querySelectorAll('.tab-btn').forEach(btn => {
           btn.onclick = function() {
