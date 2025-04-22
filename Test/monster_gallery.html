@@ -591,7 +591,15 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
       document.getElementById('monsterREC').textContent = monster.recovery || '0';
       document.getElementById('monsterREC1_2').textContent = monster.recovery_120 || '0';
    
-      // 處理隊伍技能   
+      // 設置隊長技
+  if (monster.leader_skill && window.leader_skill_zh) {
+    const leaderSkill = window.leader_skill_zh[monster.leader_skill];
+    document.getElementById('monsterLeaderSkill').innerHTML = leaderSkill ? leaderSkill.desc.replace(/\n/g, '<br>') : '無';
+  } else {
+    document.getElementById('monsterLeaderSkill').innerHTML = '無';
+  }
+      
+    // 處理隊伍技能   
   if (monster.teamskill && window.teamskill) {
     const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
     const teamSkillContent = teamSkillIds
@@ -609,6 +617,8 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
       .join('');
     
     document.getElementById('tab-team').innerHTML = teamSkillContent || '無';
+  }  else {
+    document.getElementById('tab-team').innerHTML = '無';
   }
      // 顯示 Modal
      document.getElementById('monsterInfoModal').style.display = 'block';
