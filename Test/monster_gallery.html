@@ -614,6 +614,8 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
       document.getElementById('monsterLeaderSkill').innerHTML = '無';
     }
 
+      // 在這裡加上 debug log
+      console.log('monster.id:', monster.id, 'teamskill:', monster.teamskill, 'window.teamskill:', window.teamskill);
     // 處理隊伍技能（這段放這裡）
     if (monster.teamskill && window.teamskill) {
       const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
