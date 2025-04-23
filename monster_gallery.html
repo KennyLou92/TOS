@@ -511,6 +511,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <script>
     // 確保 DOM 載入完成後執行
     document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOMContentLoaded 已觸發');
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.onclick = function() {
       if (btn.classList.contains('disabled')) return;
