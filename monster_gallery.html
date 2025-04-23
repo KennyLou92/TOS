@@ -1057,7 +1057,7 @@ document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
       teamTab.innerHTML = '';
     }
 
-    const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.teamskilldesc_zh[monster.teamskill_id];
+   /* const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.teamskilldesc_zh[monster.teamskill_id];
     const teamTabBtn = document.querySelector('.tab-btn[data-tab="teamskill"]');
     if (teamTabBtn) {
       if (!hasTeamSkill) {
@@ -1067,7 +1067,7 @@ document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
         teamTabBtn.classList.remove('disabled');
         teamTabBtn.removeAttribute('tabindex');
       }
-    }
+    } */
 
         document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.onclick = function() {
