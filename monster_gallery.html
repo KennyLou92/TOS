@@ -1051,10 +1051,10 @@ document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
         })
         .filter(Boolean)
         .join('');
-      teamTab.innerHTML = teamSkillContent || '無';
+      teamTab.innerHTML = teamSkillContent || '';
       bindBoardHover();
     } else {
-      teamTab.innerHTML = '無';
+      teamTab.innerHTML = '';
     }
 
     const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.teamskilldesc_zh[monster.teamskill_id];
