@@ -25,6 +25,9 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script src="leader_skill_en.js">
   </script>
+  </script>
+  <script src="teamskilldescen.js">
+  </script>
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
@@ -485,8 +488,20 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 .tab-btn.active::after {
   width: 80%;
 }
-    .tab-content { margin-top: 12px; }
+.tab-content { margin-top: 12px; }
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
   </style>
+  <script>
+  function parseColorTag(desc) {
+  // 將 [color=#xxxxxx]內容[/color] 轉成 <span style="color:#xxxxxx">內容</span>
+  return desc.replace(/\[color=(#[0-9A-Fa-f]{6})\]([\s\S]*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+}</script>
   <script>
     // 確保 DOM 載入完成後執行
   document.addEventListener('DOMContentLoaded', () => {
@@ -702,9 +717,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         <div class="tab-buttons">
           <button class="tab-btn active" data-tab="leader">Leader Skill</button>
           <button class="tab-btn" data-tab="skill">Active Skill</button>
+		  <button class="tab-btn" data-tab="team">Team Skill</button>
         </div>
         <div class="tab-content" id="tab-leader"></div>
         <div class="tab-content" id="tab-skill" style="display:none"></div>
+		<div class="tab-content" id="tab-team" style="display:none"></div>
       </div>
      </div>
     </div>
@@ -900,6 +917,29 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         if (!skillFound) {
           skillTab.innerHTML = 'NULL';
         }
+        if (!skillFound) {
+          skillTab.innerHTML = '無';
+        }
+      if (monster.teamskill && window.teamskilldesc) {
+      let teamSkillIds = [];
+      if (Array.isArray(monster.teamskill)) {
+        teamSkillIds = monster.teamskill;
+      } else if (typeof monster.teamskill === 'string' || typeof monster.teamskill === 'number') {
+        teamSkillIds = [monster.teamskill];
+      }
+      const teamSkillContent = teamSkillIds
+        .map(id => {
+          let desc = window.teamskilldesc[id];
+          if (!desc) return null;
+          desc = parseColorTag(desc);
+          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div></div>`;
+        })
+        .filter(Boolean)
+        .join('');
+      teamTab.innerHTML = teamSkillContent || '無';
+    } else {
+      teamTab.innerHTML = '無';
+    }
 
         // 預設顯示隊長技
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
