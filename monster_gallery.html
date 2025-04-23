@@ -656,19 +656,7 @@ const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.t
         teamTabBtn.removeAttribute('tabindex');
       }
     }
-
-    // 設置標籤切換功能
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.onclick = function() {
-        if (btn.classList.contains('disabled')) return;
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-        btn.classList.add('active');
-        const tabId = btn.getAttribute('data-tab');
-        document.getElementById(`tab-${tabId}`).classList.add('active');
-      };
-    });
-
+    
      // 顯示 Modal
      document.getElementById('monsterInfoModal').style.display = 'block';
     }
