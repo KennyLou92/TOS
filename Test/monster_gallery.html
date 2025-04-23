@@ -999,6 +999,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
           let desc = window.teamskilldesc[id];
           if (!desc) return null;
           desc = parseColorTag(desc);
+          desc = parseSkillDesc(desc);
           return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
         })
         .filter(Boolean)
