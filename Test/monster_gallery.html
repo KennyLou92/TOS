@@ -982,9 +982,13 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
         if (!skillFound) {
           skillTab.innerHTML = '無';
         }
-        if (monster.teamskill && window.teamskilldesc) {
-      // 支援單一或陣列
-      const teamSkillIds = Array.isArray(monster.teamskill) ? monster.teamskill : [monster.teamskill];
+      if (monster.teamskill && window.teamskilldesc) {
+      let teamSkillIds = [];
+      if (Array.isArray(monster.teamskill)) {
+        teamSkillIds = monster.teamskill;
+      } else if (typeof monster.teamskill === 'string' || typeof monster.teamskill === 'number') {
+        teamSkillIds = [monster.teamskill];
+      }
       const teamSkillContent = teamSkillIds
         .map(id => {
           const desc = window.teamskilldesc[id];
