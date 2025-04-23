@@ -996,7 +996,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       }
       const teamSkillContent = teamSkillIds
         .map(id => {
-          const desc = window.teamskilldesc[id];
+          let desc = window.teamskilldesc[id];
           if (!desc) return null;
           desc = parseColorTag(desc);
           return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div></div>`;
