@@ -917,9 +917,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         if (!skillFound) {
           skillTab.innerHTML = 'NULL';
         }
-        if (!skillFound) {
-          skillTab.innerHTML = '無';
-        }
+        
       if (monster.teamskill && window.teamskilldesc) {
       let teamSkillIds = [];
       if (Array.isArray(monster.teamskill)) {
@@ -936,9 +934,9 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         })
         .filter(Boolean)
         .join('');
-      teamTab.innerHTML = teamSkillContent || '無';
+      teamTab.innerHTML = teamSkillContent || 'NULL';
     } else {
-      teamTab.innerHTML = '無';
+      teamTab.innerHTML = 'NULL';
     }
 
         // 預設顯示隊長技
