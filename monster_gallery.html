@@ -525,7 +525,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 });
 
   // 修改為：
-  window.addEventListener('load', async () => {
+ /* window.addEventListener('load', async () => {
   console.log('window.teamskill:', window.teamskill);
   if (!window.skilldesc) {
     console.error('技能資料載入失敗');
@@ -534,7 +534,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     console.log('技能資料載入成功');
     console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
     await loadMonsters();
-  });
+  }); */
 
   async function loadMonsters() {
   try {
@@ -656,7 +656,7 @@ const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.t
         teamTabBtn.removeAttribute('tabindex');
       }
     }
-    
+
      // 顯示 Modal
      document.getElementById('monsterInfoModal').style.display = 'block';
     }
