@@ -487,6 +487,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 .tab-btn.active::after {
   width: 80%;
 }
+.tab-btn.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
 .tab-content { 
   margin-top: 12px; 
 }
@@ -1032,7 +1037,19 @@ document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
     } else {
       teamTab.innerHTML = '無';
     }
-        // 預設顯示隊長技
+
+    const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.teamskilldesc_zh[monster.teamskill_id];
+    const teamTabBtn = document.querySelector('.tab-btn[data-tab="teamskill"]');
+    if (teamTabBtn) {
+      if (!hasTeamSkill) {
+        teamTabBtn.classList.add('disabled');
+        teamTabBtn.setAttribute('tabindex', '-1');
+      } else {
+        teamTabBtn.classList.remove('disabled');
+        teamTabBtn.removeAttribute('tabindex');
+      }
+    }
+
         document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.onclick = function() {
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -1052,6 +1069,13 @@ document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
         }
           };
         });
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (btn.classList.contains('disabled')) return; // 禁用時不切換
+          // ... existing code ...
+        });
+      });
         // 顯示 Modal
         document.getElementById("monsterInfoModal").style.display = "block";
         document.body.style.overflow = "hidden";
