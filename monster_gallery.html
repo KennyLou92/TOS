@@ -835,35 +835,35 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
     }
 
-let selectedAttribute = null;
+let selectedAttribute = [];
 document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
   item.addEventListener('click', function() {
     const value = this.getAttribute('data-value');
-    if (selectedAttribute === value) {
-      // 再點一次同一個，取消選取
+    const idx = selectedAttribute.indexOf(value);
+    if (idx > -1) {
+      // 已選，取消
+      selectedAttribute.splice(idx, 1);
       this.classList.remove('selected');
-      selectedAttribute = null;
     } else {
-      // 先清除其他選取
-      document.querySelectorAll('#attributeContent .dropdown-item').forEach(i => i.classList.remove('selected'));
+      // 未選，加入
+      selectedAttribute.push(value);
       this.classList.add('selected');
-      selectedAttribute = value;
     }
     filterMonsters();
   });
 });
 
-let selectedRace = null;
+let selectedRace = [];
 document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
   item.addEventListener('click', function() {
     const value = this.getAttribute('data-value');
-    if (selectedRace === value) {
+    const idx = selectedRace.indexOf(value);
+    if (idx > -1) {
+      selectedRace.splice(idx, 1);
       this.classList.remove('selected');
-      selectedRace = null;
     } else {
-      document.querySelectorAll('#raceContent .dropdown-item').forEach(i => i.classList.remove('selected'));
+      selectedRace.push(value);
       this.classList.add('selected');
-      selectedRace = value;
     }
     filterMonsters();
   });
