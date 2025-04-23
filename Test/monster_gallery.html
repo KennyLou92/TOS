@@ -499,6 +499,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 }
   </style>
   <script>
+  function parseColorTag(desc) {
+  // 將 [color=#xxxxxx]內容[/color] 轉成 <span style="color:#xxxxxx">內容</span>
+  return desc.replace(/\[color=(#[0-9A-Fa-f]{6})\]([\s\S]*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+}</script>
+  <script>
     // 確保 DOM 載入完成後執行
   document.addEventListener('DOMContentLoaded', () => {
   loadMonsters();
@@ -993,6 +998,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
         .map(id => {
           const desc = window.teamskilldesc[id];
           if (!desc) return null;
+          desc = parseColorTag(desc);
           return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div></div>`;
         })
         .filter(Boolean)
