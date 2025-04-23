@@ -931,11 +931,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           let desc = window.teamskilldesc[id];
           if (!desc) return null;
           desc = parseColorTag(desc);
-          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div></div>`;
+          desc = parseSkillDesc(desc);
+          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
         })
         .filter(Boolean)
         .join('');
       teamTab.innerHTML = teamSkillContent || 'NULL';
+      bindBoardHover();
     } else {
       teamTab.innerHTML = 'NULL';
     }
