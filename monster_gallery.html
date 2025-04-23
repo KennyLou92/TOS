@@ -624,30 +624,43 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
       document.getElementById('monsterLeaderSkill').innerHTML = '無';
     }
 
-     // 設置隊伍技 tab 是否可用
-     const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.teamskilldesc_zh[monster.teamskill_id];
+// 設置隊伍技 tab 是否可用
+const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.teamskilldesc_zh[monster.teamskill_id];
     const teamTabBtn = document.querySelector('.tab-btn[data-tab="teamskill"]');
     if (teamTabBtn) {
       if (!hasTeamSkill) {
         teamTabBtn.classList.add('disabled');
         teamTabBtn.setAttribute('tabindex', '-1');
+        // 若目前顯示的是隊伍技頁，切回第一個可用tab
+        if (teamTabBtn.classList.contains('active')) {
+          teamTabBtn.classList.remove('active');
+          // 找到第一個沒被禁用的tab並激活
+          const firstEnabled = document.querySelector('.tab-btn:not(.disabled)');
+          if (firstEnabled) {
+            firstEnabled.classList.add('active');
+            const tabId = firstEnabled.getAttribute('data-tab');
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+          }
+        }
       } else {
         teamTabBtn.classList.remove('disabled');
         teamTabBtn.removeAttribute('tabindex');
       }
     }
 
-// 設置標籤切換功能
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (btn.classList.contains('disabled')) return;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    // 設置標籤切換功能
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.onclick = function() {
+        if (btn.classList.contains('disabled')) return;
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
         btn.classList.add('active');
         const tabId = btn.getAttribute('data-tab');
         document.getElementById(`tab-${tabId}`).classList.add('active');
-      });
+      };
     });
+    
      // 顯示 Modal
      document.getElementById('monsterInfoModal').style.display = 'block';
     }
