@@ -999,10 +999,12 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
           let desc = window.teamskilldesc[id];
           if (!desc) return null;
           desc = parseColorTag(desc);
-          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div></div>`;
+          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
         })
         .filter(Boolean)
         .join('');
+        teamTab.innerHTML = teamSkillContent || '無';
+        bindBoardHover();
       teamTab.innerHTML = teamSkillContent || '無隊伍技能';
     } else {
       teamTab.innerHTML = '無隊伍技能';
