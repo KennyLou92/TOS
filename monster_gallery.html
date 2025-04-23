@@ -1071,6 +1071,9 @@ document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
     } */
 
         document.querySelectorAll('.tab-btn').forEach(btn => {
+        monster.addEventListener('click', () => {
+        const id = monster.getAttribute('data-id');
+        fetchMonsterInfo(id, monster);
         btn.onclick = function() {
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         this.classList.add('active');
