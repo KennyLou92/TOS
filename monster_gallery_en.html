@@ -955,10 +955,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             if (this.dataset.tab === 'skill') {
               skillTab.style.display = '';
               leaderTab.style.display = 'none';
-            } else {
-              skillTab.style.display = 'none';
-              leaderTab.style.display = '';
-            }
+			  teamTab.style.display = 'none';
+			} else if (this.dataset.tab === 'team') {
+			  teamTab.style.display = '';
+			  leaderTab.style.display = 'none';
+			  skillTab.style.display = 'none';
+			} else {
+			  leaderTab.style.display = '';
+			  skillTab.style.display = 'none';
+			  teamTab.style.display = 'none';
+			}
           };
         });
         // 顯示 Modal
