@@ -624,21 +624,30 @@ async function fetchMonsterInfo(monsterId, monsterElement) {
       document.getElementById('monsterLeaderSkill').innerHTML = '無';
     }
 
+     // 設置隊伍技 tab 是否可用
+     const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.teamskilldesc_zh[monster.teamskill_id];
+    const teamTabBtn = document.querySelector('.tab-btn[data-tab="teamskill"]');
+    if (teamTabBtn) {
+      if (!hasTeamSkill) {
+        teamTabBtn.classList.add('disabled');
+        teamTabBtn.setAttribute('tabindex', '-1');
+      } else {
+        teamTabBtn.classList.remove('disabled');
+        teamTabBtn.removeAttribute('tabindex');
+      }
+    }
+
 // 設置標籤切換功能
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    // 移除所有標籤的 active 類
+    if (btn.classList.contains('disabled')) return;
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    // 隱藏所有標籤內容
-    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-    
-    // 激活當前標籤
-    btn.classList.add('active');
-    // 顯示對應的標籤內容
-    const tabId = btn.getAttribute('data-tab');
-    document.getElementById(`tab-${tabId}`).classList.add('active');
-  });
-});
+        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+        btn.classList.add('active');
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(`tab-${tabId}`).classList.add('active');
+      });
+    });
      // 顯示 Modal
      document.getElementById('monsterInfoModal').style.display = 'block';
     }
