@@ -964,6 +964,7 @@ document.getElementById('resetFilters').addEventListener('click', function() {
     }
 
         // 預設顯示隊長技
+        let currentTab = 'leader';
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
         leaderTab.style.display = '';
