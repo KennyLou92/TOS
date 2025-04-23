@@ -165,7 +165,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
     .dropdown-item.selected {
       opacity: 0.4;
-      pointer-events: none;
+     /* pointer-events: none; */
     }
 	#scrollButtons {
 	  position: fixed;
@@ -870,20 +870,27 @@ document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
 });
 
     function filterMonsters() {
-      const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
-      const monsters = document.querySelectorAll(".monster");
-
-      monsters.forEach(monster => {
-        const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
-        const id = monster.querySelector("div:nth-child(1)").textContent.toLowerCase();
-        const attribute = monster.getAttribute('data-attribute');
+      const search = document.getElementById('searchInput').value.trim();
+      document.querySelectorAll('.monster').forEach(monster => {
+        const attr = monster.getAttribute('data-attribute');
         const race = monster.getAttribute('data-race');
+        const name = monster.getAttribute('data-name');
+        const id = monster.getAttribute('data-id');
+        let show = true;
 
-        const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
-        const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
-        const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
-
-        monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
+        // 屬性多選
+        if (selectedAttribute.length > 0 && !selectedAttribute.includes(attr)) {
+          show = false;
+        }
+        // 種族多選
+        if (selectedRace.length > 0 && !selectedRace.includes(race)) {
+          show = false;
+        }
+        // 關鍵字搜尋
+        if (search && !(name.includes(search) || id.includes(search))) {
+          show = false;
+        }
+        monster.style.display = show ? '' : 'none';
       });
     }
 
