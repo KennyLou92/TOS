@@ -1137,6 +1137,9 @@ function closeModal() {
 		attributeIcon.style.width = '24px';
 		attributeIcon.style.height = '24px';
 		attributeIcon.style.marginLeft = '8px';
+    attributeIcon.onerror = function () {
+    this.src = 'https://i.postimg.cc/6q0Y863v/unknown.png';
+    };
 		const raceIcon = document.createElement("img");
 		if (raceId === 6) {
 		  raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
@@ -1149,6 +1152,9 @@ function closeModal() {
 		raceIcon.style.width = '24px';
 		raceIcon.style.height = '24px';
 		raceIcon.style.marginLeft = '4px';
+    raceIcon.onerror = function () {
+    this.src = 'https://i.postimg.cc/6q0Y863v/unknown.png';
+    };
 
 		monsterIdElement.appendChild(attributeIcon);
 		monsterIdElement.appendChild(raceIcon);	}
