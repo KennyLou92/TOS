@@ -25,6 +25,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script src="leader_skill_zh.js">
   </script>
+    <script src="teamskilldesczh.js">
+  </script>
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
@@ -485,8 +487,22 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 .tab-btn.active::after {
   width: 80%;
 }
-    .tab-content { margin-top: 12px; }
+.tab-content { 
+  margin-top: 12px; 
+}
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
   </style>
+  <script>
+  function parseColorTag(desc) {
+  // 將 [color=#xxxxxx]內容[/color] 轉成 <span style="color:#xxxxxx">內容</span>
+  return desc.replace(/\[color=(#[0-9A-Fa-f]{6})\]([\s\S]*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+}</script>
   <script>
     // 確保 DOM 載入完成後執行
   document.addEventListener('DOMContentLoaded', () => {
@@ -495,10 +511,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
   // 修改為：
   window.addEventListener('load', async () => {
-    if (!window.skilldesc) {
-      console.error('技能資料載入失敗');
-      return;
-    }
+  console.log('window.teamskill:', window.teamskill);
+  if (!window.skilldesc) {
+    console.error('技能資料載入失敗');
+    return;
+  }
     console.log('技能資料載入成功');
     console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
     await loadMonsters();
@@ -510,7 +527,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       fetch('monster.json'),
       fetch('monster_name_zh.json')
     ]);
-    
+
     const monsters = await monsterResponse.json();
     const names = await nameResponse.json();
     
@@ -546,8 +563,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       `;
     }).join('');
 
-        // 重新綁定點擊事件
-        document.querySelectorAll('.monster').forEach(monster => {
+      // 重新綁定點擊事件
+      document.querySelectorAll('.monster').forEach(monster => {
       monster.addEventListener('click', () => {
         const id = monster.getAttribute('data-id');
         fetchMonsterInfo(id, monster);
@@ -556,6 +573,72 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
   } catch (error) {
     console.error('載入怪物資料時發生錯誤：', error);
+  }
+  }
+
+  // 將 fetchMonsterInfo 移到這裡，作為獨立函數
+async function fetchMonsterInfo(monsterId, monsterElement) {
+  console.log('fetchMonsterInfo called', monsterId); 
+  console.log('monsterElement:', monsterElement);
+  try {
+    const monsterIdStr = monsterId.toString();
+    const response = await fetch('monster.json');
+    const data = await response.json();
+    const monster = data.find(m => m.id.toString() === monsterIdStr);
+    
+    if (monster) {
+      console.log('monster:', monster); 
+      // 設置怪物ID和屬性圖標
+      const attributeIcons = {
+        1: 'water.png',
+        2: 'fire.png',
+        3: 'earth.png',
+        4: 'light.png',
+        5: 'dark.png'
+      };
+      
+      document.getElementById('monsterID').innerHTML = `
+        ${monster.id}
+        <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeIcons[monster.attribute]}" 
+             alt="屬性" style="width:24px;height:24px;">
+      `;
+
+      // 設置基本屬性
+      document.getElementById('monsterHP').textContent = monster.hp || '0';
+      document.getElementById('monsterHP1_2').textContent = monster.hp_120 || '0';
+      document.getElementById('monsterATK').textContent = monster.attack || '0';
+      document.getElementById('monsterATK1_2').textContent = monster.attack_120 || '0';
+      document.getElementById('monsterREC').textContent = monster.recovery || '0';
+      document.getElementById('monsterREC1_2').textContent = monster.recovery_120 || '0';
+   
+      // 設置隊長技
+      if (monster.leader_skill && window.leader_skill_zh) {
+      const leaderSkill = window.leader_skill_zh[monster.leader_skill];
+      document.getElementById('monsterLeaderSkill').innerHTML = leaderSkill ? leaderSkill.desc.replace(/\n/g, '<br>') : '無';
+    } else {
+      document.getElementById('monsterLeaderSkill').innerHTML = '無';
+    }
+
+// 設置標籤切換功能
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // 移除所有標籤的 active 類
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    // 隱藏所有標籤內容
+    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+    
+    // 激活當前標籤
+    btn.classList.add('active');
+    // 顯示對應的標籤內容
+    const tabId = btn.getAttribute('data-tab');
+    document.getElementById(`tab-${tabId}`).classList.add('active');
+  });
+});
+     // 顯示 Modal
+     document.getElementById('monsterInfoModal').style.display = 'block';
+    }
+  } catch (error) {
+    console.error('獲取怪物資訊時發生錯誤：', error);
   }
 }
   </script>
@@ -702,9 +785,11 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         <div class="tab-buttons">
           <button class="tab-btn active" data-tab="leader">隊長技</button>
           <button class="tab-btn" data-tab="skill">主動技</button>
+          <button class="tab-btn" data-tab="team">隊伍技</button>
         </div>
         <div class="tab-content" id="tab-leader"></div>
         <div class="tab-content" id="tab-skill" style="display:none"></div>
+        <div class="tab-content" id="tab-team" style="display:none"></div>
       </div>
      </div>
     </div>
@@ -835,8 +920,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   const monsterIdStr = monsterId.toString();
   const skillTab = document.getElementById('tab-skill');
   const leaderTab = document.getElementById('tab-leader');
+  const teamTab = document.getElementById('tab-team');
   skillTab.innerHTML = '';
   leaderTab.innerHTML = '';
+  teamTab.innerHTML = '';
   fetch('monster.json')
     .then(response => response.json())
     .then(data => {
@@ -900,25 +987,44 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         if (!skillFound) {
           skillTab.innerHTML = '無';
         }
-
+      if (monster.teamskill && window.teamskilldesc) {
+      let teamSkillIds = [];
+      if (Array.isArray(monster.teamskill)) {
+        teamSkillIds = monster.teamskill;
+      } else if (typeof monster.teamskill === 'string' || typeof monster.teamskill === 'number') {
+        teamSkillIds = [monster.teamskill];
+      }
+      const teamSkillContent = teamSkillIds
+        .map(id => {
+          let desc = window.teamskilldesc[id];
+          if (!desc) return null;
+          desc = parseColorTag(desc);
+          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${desc.replace(/\n/g, '<br>')}</div></div>`;
+        })
+        .filter(Boolean)
+        .join('');
+      teamTab.innerHTML = teamSkillContent || '無隊伍技能';
+    } else {
+      teamTab.innerHTML = '無隊伍技能';
+    }
         // 預設顯示隊長技
-        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-        document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
-        leaderTab.style.display = '';
-        skillTab.style.display = 'none';
-
-        // Tab 切換功能
         document.querySelectorAll('.tab-btn').forEach(btn => {
-          btn.onclick = function() {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            if (this.dataset.tab === 'skill') {
-              skillTab.style.display = '';
-              leaderTab.style.display = 'none';
-            } else {
-              skillTab.style.display = 'none';
-              leaderTab.style.display = '';
-            }
+        btn.onclick = function() {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        if (this.dataset.tab === 'skill') {
+          skillTab.style.display = '';
+          leaderTab.style.display = 'none';
+          teamTab.style.display = 'none';
+        } else if (this.dataset.tab === 'team') {
+          teamTab.style.display = '';
+          leaderTab.style.display = 'none';
+          skillTab.style.display = 'none';
+        } else {
+          leaderTab.style.display = '';
+          skillTab.style.display = 'none';
+          teamTab.style.display = 'none';
+        }
           };
         });
         // 顯示 Modal
