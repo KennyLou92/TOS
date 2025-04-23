@@ -47098,6 +47098,7 @@
         "normalskill1": 4401,
         "normalskill2": 4402,
         "normalskill3": 4403,
+        "normalskill4": 4404,
         "teamskill": ["1614","1910","1939"],
         "HP": 2979,
         "ATK": 1764,
