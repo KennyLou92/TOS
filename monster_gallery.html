@@ -835,25 +835,39 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
     }
 
-    document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
-      item.addEventListener('click', function () {
-        const value = this.getAttribute('data-value');
-        this.classList.toggle('selected');
-        selectedAttributes.has(value) ? selectedAttributes.delete(value) : selectedAttributes.add(value);
-        updateSelectedIcons('attributeDropdown', selectedAttributes);
-        filterMonsters();
-      });
-    });
+let selectedAttribute = null;
+document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    if (selectedAttribute === value) {
+      // 再點一次同一個，取消選取
+      this.classList.remove('selected');
+      selectedAttribute = null;
+    } else {
+      // 先清除其他選取
+      document.querySelectorAll('#attributeContent .dropdown-item').forEach(i => i.classList.remove('selected'));
+      this.classList.add('selected');
+      selectedAttribute = value;
+    }
+    filterMonsters();
+  });
+});
 
-    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
-      item.addEventListener('click', function () {
-        const value = this.getAttribute('data-value');
-        this.classList.toggle('selected');
-        selectedRaces.has(value) ? selectedRaces.delete(value) : selectedRaces.add(value);
-        updateSelectedIcons('raceDropdown', selectedRaces);
-        filterMonsters();
-      });
-    });
+let selectedRace = null;
+document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    if (selectedRace === value) {
+      this.classList.remove('selected');
+      selectedRace = null;
+    } else {
+      document.querySelectorAll('#raceContent .dropdown-item').forEach(i => i.classList.remove('selected'));
+      this.classList.add('selected');
+      selectedRace = value;
+    }
+    filterMonsters();
+  });
+});
 
     function filterMonsters() {
       const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
