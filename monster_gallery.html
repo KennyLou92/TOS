@@ -655,6 +655,7 @@ const hasTeamSkill = monster.teamskill_id && window.teamskilldesc_zh && window.t
       } else {
         teamTabBtn.classList.remove('disabled');
         teamTabBtn.removeAttribute('tabindex');
+        console.log('隊伍技 tab 狀態（應該要可點）：', teamTabBtn.className);
       }
     }
 
