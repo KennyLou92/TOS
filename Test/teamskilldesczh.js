@@ -1,4 +1,4 @@
-window.teamskill = {
+window.teamskilldesc = {
   "5": " ◆ 隊員攻擊力基值 5 倍",
   "6": " ◆ 隊員攻擊力基值 10 倍",
   "7": " ◆ 達成指定或以上的連擊 (Combo) 數，隊長攻擊力提升 2 倍",
