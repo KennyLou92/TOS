@@ -1004,11 +1004,10 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
         })
         .filter(Boolean)
         .join('');
-        teamTab.innerHTML = teamSkillContent || '無';
-        bindBoardHover();
-      teamTab.innerHTML = teamSkillContent || '無隊伍技能';
+      teamTab.innerHTML = teamSkillContent || '無';
+      bindBoardHover();
     } else {
-      teamTab.innerHTML = '無隊伍技能';
+      teamTab.innerHTML = '無';
     }
         // 預設顯示隊長技
         document.querySelectorAll('.tab-btn').forEach(btn => {
