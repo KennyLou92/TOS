@@ -852,6 +852,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   const monsterIdStr = monsterId.toString();
   const skillTab = document.getElementById('tab-skill');
   const leaderTab = document.getElementById('tab-leader');
+  const teamTab = document.getElementById('tab-team');
   skillTab.innerHTML = '';
   leaderTab.innerHTML = '';
   fetch('monster.json')
@@ -917,7 +918,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         if (!skillFound) {
           skillTab.innerHTML = 'NULL';
         }
-        
+
       if (monster.teamskill && window.teamskilldesc) {
       let teamSkillIds = [];
       if (Array.isArray(monster.teamskill)) {
@@ -953,7 +954,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
             if (this.dataset.tab === 'skill') {
               skillTab.style.display = '';
               leaderTab.style.display = 'none';
-			  teamTab.style.display = 'none';
+			        teamTab.style.display = 'none';
 			} else if (this.dataset.tab === 'team') {
 			  teamTab.style.display = '';
 			  leaderTab.style.display = 'none';
