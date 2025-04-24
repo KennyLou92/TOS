@@ -729,9 +729,9 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </div>
   <script>
    let selectedAttributes = new Set();
-    let selectedRaces = new Set();
+let selectedRaces = new Set();
 
-    document.querySelectorAll(".dropdown").forEach(dropdown => {
+document.querySelectorAll(".dropdown").forEach(dropdown => {
   const trigger = dropdown.querySelector(".dropdown-trigger");
   const content = dropdown.querySelector(".dropdown-content");
   const selectedIcons = trigger.querySelector(".selected-icons");
@@ -765,8 +765,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     });
   }
 
-  // 綁定選擇事件
-  content.querySelectorAll(".dropdown-item").forEach(item => {
+   // 綁定選擇事件
+   content.querySelectorAll(".dropdown-item").forEach(item => {
     item.addEventListener("click", function(e) {
       const value = item.getAttribute("data-value");
       let selectedSet = dropdown.id === "attributeDropdown" ? selectedAttributes : selectedRaces;
@@ -776,25 +776,49 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         selectedSet.add(value);
       }
       updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
-      // 這裡可加上你的 filterMonsters() 呼叫
       if (typeof filterMonsters === "function") filterMonsters();
     });
   });
 
-  // 初始化
-  updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
+  // 點擊 dropdown-button 顯示/隱藏下拉
+  trigger.addEventListener("click", function(e) {
+    e.stopPropagation();
+    content.classList.toggle("show");
+    // 關閉其他 dropdown
+    document.querySelectorAll(".dropdown-content").forEach(other => {
+      if (other !== content) other.classList.remove("show");
+    });
+  });
+
+ // 初始化
+ updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
 });
 
+// 點擊空白處關閉所有 dropdown
+document.addEventListener("click", function() {
+  document.querySelectorAll(".dropdown-content").forEach(content => content.classList.remove("show"));
+});
+
+// 補上 filterMonsters 避免報錯（你可根據需求自行實作過濾邏輯）
+function filterMonsters() {
+  // 這裡可以根據 selectedAttributes、selectedRaces 進行過濾
+  // 目前僅重新載入全部怪物
+  if (typeof loadMonsters === "function") loadMonsters();
+}
+
+// reset 按鈕
 document.getElementById('resetFilters').addEventListener('click', function() {
-  // 清空多選陣列
-  selectedAttribute = [];
-  selectedRace = [];
-  // 移除所有已選樣式
-  document.querySelectorAll('#attributeContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
-  document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
-  // 清空搜尋框
-  document.getElementById('searchInput').value = '';
-  // 重新篩選
+  selectedAttributes.clear();
+  selectedRaces.clear();
+  document.querySelectorAll('.dropdown .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  document.querySelectorAll(".dropdown").forEach(dropdown => {
+    const trigger = dropdown.querySelector(".dropdown-trigger");
+    const content = dropdown.querySelector(".dropdown-content");
+    const selectedIcons = trigger.querySelector(".selected-icons");
+    const labelSpan = trigger.querySelector("span");
+    labelSpan.style.display = "";
+    selectedIcons.innerHTML = "";
+  });
   filterMonsters();
 });
 
