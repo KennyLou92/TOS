@@ -769,37 +769,72 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
     let selectedAttribute = [];
     document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
-  item.addEventListener('click', function() {
-    const value = this.getAttribute('data-value');
-    const idx = selectedAttribute.indexOf(value);
-      // 切換選擇狀態
+    item.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const value = this.getAttribute('data-value');
+      const iconUrl = this.querySelector('img').src;
+      const selectedIconsDiv = document.querySelector('#attributeDropdown .selected-icons');
       if (selectedAttributes.has(value)) {
+        selectedAttributes.delete(value);
+        selectedIconsDiv.querySelectorAll('img').forEach(img => {
+          if (img.getAttribute('data-value') === value) img.remove();
+        });
+        this.classList.remove('selected');
+      } else {
+        selectedAttributes.add(value);
+        const icon = document.createElement('img');
+        icon.src = iconUrl;
+        icon.setAttribute('data-value', value);
+        icon.style.width = '24px';
+        icon.style.height = '24px';
+        icon.style.marginRight = '2px';
+        icon.style.cursor = 'pointer';
+        icon.onclick = function(ev) {
+          ev.stopPropagation();
           selectedAttributes.delete(value);
-      // 從已選區移除
-      document.querySelector("#attributeDropdown .selected-icons").querySelectorAll("img").forEach(img => {
-        if (img.getAttribute("data-value") === value) img.remove();
-      });
-    } else {
-      selectedAttributes.add(value);
-      // 加到已選區
-      document.querySelector("#attributeDropdown .selected-icons").appendChild(icon);
-    }
+          this.remove();
+          item.classList.remove('selected');
+          // 這裡可加上觸發 filter 的程式，如 filterMonsters();
+        };
+        selectedIconsDiv.appendChild(icon);
+        this.classList.add('selected');
+      }
     filterMonsters();
   });
 });
 
     let selectedRace = [];
     document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
-  item.addEventListener('click', function() {
-    const value = this.getAttribute('data-value');
-    const idx = selectedRace.indexOf(value);
-    if (idx > -1) {
-      selectedRace.splice(idx, 1);
-      this.classList.remove('selected');
-    } else {
-      selectedRace.push(value);
-      this.classList.add('selected');
-    }
+    item.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const value = this.getAttribute('data-value');
+      const iconUrl = this.querySelector('img').src;
+      const selectedIconsDiv = document.querySelector('#raceDropdown .selected-icons');
+      if (selectedRaces.has(value)) {
+        selectedRaces.delete(value);
+        selectedIconsDiv.querySelectorAll('img').forEach(img => {
+          if (img.getAttribute('data-value') === value) img.remove();
+        });
+        this.classList.remove('selected');
+      } else {
+        selectedRaces.add(value);
+        const icon = document.createElement('img');
+        icon.src = iconUrl;
+        icon.setAttribute('data-value', value);
+        icon.style.width = '24px';
+        icon.style.height = '24px';
+        icon.style.marginRight = '2px';
+        icon.style.cursor = 'pointer';
+        icon.onclick = function(ev) {
+          ev.stopPropagation();
+          selectedRaces.delete(value);
+          this.remove();
+          item.classList.remove('selected');
+          // 這裡可加上觸發 filter 的程式，如 filterMonsters();
+        };
+        selectedIconsDiv.appendChild(icon);
+        this.classList.add('selected');
+      }
     filterMonsters();
   });
 });
