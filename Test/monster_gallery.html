@@ -519,77 +519,59 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     await loadMonsters();
   });
 
-  let allMonsters = [];
-  let allNames = []; 
   async function loadMonsters() {
   try {
     const [monsterResponse, nameResponse] = await Promise.all([
       fetch('monster.json'),
       fetch('monster_name_zh.json')
     ]);
-    allMonsters = await monsterResponse.json();
-    allNames = await nameResponse.json();
-    filterMonsters(); // 初始化時直接呼叫 filterMonsters
+    
+    const monsters = await monsterResponse.json();
+    const names = await nameResponse.json();
+    
+    const gallery = document.getElementById('monsterGallery');
+    
+    gallery.innerHTML = monsters.map(monster => {
+      // 修正名稱查找邏輯，確保 id 為數字類型
+      const nameObj = names.find(n => n.id === parseInt(monster.id));
+      const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+
+      // 新增：優先使用 skins.js 的 base64
+      let imgSrc = '';
+      if (window.skins && window.skins[monster.id]) {
+        imgSrc = window.skins[monster.id];
+      } else {
+        imgSrc = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
+      }
+      
+      return `
+        <div class="monster" 
+             data-attribute="${monster.attribute}" 
+             data-id="${monster.id}" 
+             data-race="${monster.race}" 
+             data-name="${monsterName}"
+             data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
+          <div>${monster.id}</div>
+          <img alt="${monsterName}"
+			   src="${imgSrc}"
+               src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
+               onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
+          <div>${monsterName}</div>
+        </div>
+      `;
+    }).join('');
+
+        // 重新綁定點擊事件
+        document.querySelectorAll('.monster').forEach(monster => {
+      monster.addEventListener('click', () => {
+        const id = monster.getAttribute('data-id');
+        fetchMonsterInfo(id, monster);
+      });
+    });
+
   } catch (error) {
     console.error('載入怪物資料時發生錯誤：', error);
   }
-}
-
-function filterMonsters() {
-  const searchValue = document.getElementById('searchInput').value.trim();
-  const gallery = document.getElementById('monsterGallery');
-  let filtered = allMonsters;
-
-  // 屬性篩選
-  if (selectedAttributes.size > 0) {
-    filtered = filtered.filter(monster => selectedAttributes.has(String(monster.attribute)));
-  }
-  // 種族篩選
-  if (selectedRaces.size > 0) {
-    filtered = filtered.filter(monster => selectedRaces.has(String(monster.race)));
-  }
-  // 關鍵字搜尋（ID或名稱）
-  if (searchValue) {
-    filtered = filtered.filter(monster => {
-      const nameObj = allNames.find(n => n.id === parseInt(monster.id));
-      const monsterName = nameObj ? nameObj.name : '';
-      return monster.id.includes(searchValue) || monsterName.includes(searchValue);
-    });
-  }
-    
-  gallery.innerHTML = filtered.map(monster => {
-    const nameObj = allNames.find(n => n.id === parseInt(monster.id));
-    const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
-    let imgSrc = '';
-    if (window.skins && window.skins[monster.id]) {
-      imgSrc = window.skins[monster.id];
-    } else {
-      imgSrc = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
-    }
-    return `
-      <div class="monster" 
-           data-attribute="${monster.attribute}" 
-           data-id="${monster.id}" 
-           data-race="${monster.race}" 
-           data-name="${monsterName}"
-           data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
-        <div>${monster.id}</div>
-        <img alt="${monsterName}"
-             src="${imgSrc}"
-             src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
-             onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
-        <div>${monsterName}</div>
-      </div>
-    `;
-  }).join('');
-
-  // 重新綁定點擊事件
-  document.querySelectorAll('.monster').forEach(monster => {
-    monster.addEventListener('click', () => {
-      const id = monster.getAttribute('data-id');
-      fetchMonsterInfo(id, monster);
-    });
-  });
 }
   </script>
  </head>
@@ -746,104 +728,112 @@ function filterMonsters() {
    </div>
   </div>
   <script>
-let selectedAttributes = new Set();
-let selectedRaces = new Set();
-window.addEventListener('load', async () => {
-  if (!window.skilldesc) {
-    console.error('技能資料載入失敗');
-    return;
-  }
-  await loadMonsters();
-});
+   let selectedAttributes = new Set();
+    let selectedRaces = new Set();
 
-document.querySelectorAll(".dropdown").forEach(dropdown => {
-  const trigger = dropdown.querySelector(".dropdown-trigger");
-  const content = dropdown.querySelector(".dropdown-content");
-  const selectedIcons = trigger.querySelector(".selected-icons");
-  const labelSpan = trigger.querySelector("span");
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
+      const trigger = dropdown.querySelector(".dropdown-trigger");
+      const content = dropdown.querySelector(".dropdown-content");
 
-  function updateSelectedIcons(type) {
-    let selectedSet = type === "attribute" ? selectedAttributes : selectedRaces;
-    selectedIcons.innerHTML = "";
-    if (selectedSet.size > 0) {
-      labelSpan.style.display = "none";
-      selectedSet.forEach(val => {
-        const item = content.querySelector(`.dropdown-item[data-value="${val}"] img`);
-        if (item) {
-          const icon = item.cloneNode(true);
-          icon.style.marginRight = "2px";
-          selectedIcons.appendChild(icon);
+      trigger.addEventListener("click", () => {
+        content.classList.toggle("show");
+      });
+    });
+
+    document.addEventListener("click", function(event) {
+      document.querySelectorAll(".dropdown-content").forEach(content => {
+        if (!content.parentElement.contains(event.target)) {
+          content.classList.remove("show");
         }
       });
-    } else {
-      labelSpan.style.display = "";
-      selectedIcons.innerHTML = "";
+    });
+
+    function updateSelectedIcons(containerId, selectedSet) {
+      const container = document.querySelector(`#${containerId} .selected-icons`);
+      const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
+      const label = document.querySelector(`#${containerId} .dropdown-button span`);
+      container.innerHTML = '';
+
+      selectedSet.forEach(value => {
+        items.forEach(item => {
+          if (item.dataset.value === value) {
+            const img = item.querySelector('img').cloneNode();
+            img.style.width = '20px';
+            img.style.height = '20px';
+            container.appendChild(img);
+          }
+        });
+      });
+      label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
     }
-    // 處理淡化效果
-    content.querySelectorAll(".dropdown-item").forEach(item => {
-      const value = item.getAttribute("data-value");
-      if (selectedSet.has(value)) {
-        item.classList.add("selected");
-      } else {
-        item.classList.remove("selected");
-      }
-    });
-  }
 
-   // 綁定選擇事件
-   content.querySelectorAll(".dropdown-item").forEach(item => {
-    item.addEventListener("click", function(e) {
-      const value = item.getAttribute("data-value");
-      let selectedSet = dropdown.id === "attributeDropdown" ? selectedAttributes : selectedRaces;
-      if (selectedSet.has(value)) {
-        selectedSet.delete(value);
-      } else {
-        selectedSet.add(value);
-      }
-      updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
-      if (typeof filterMonsters === "function") filterMonsters();
-    });
+    let selectedAttribute = [];
+    document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedAttribute.indexOf(value);
+    if (idx > -1) {
+      selectedAttribute.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedAttribute.push(value);
+      this.classList.add('selected');
+    }
+    filterMonsters();
   });
-
-  // 點擊 dropdown-button 顯示/隱藏下拉
-  trigger.addEventListener("click", function(e) {
-    e.stopPropagation();
-    content.classList.toggle("show");
-    // 關閉其他 dropdown
-    document.querySelectorAll(".dropdown-content").forEach(other => {
-      if (other !== content) other.classList.remove("show");
-    });
-  });
-
- // 初始化
- updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
 });
 
-// 點擊空白處關閉所有 dropdown
-document.addEventListener("click", function() {
-  document.querySelectorAll(".dropdown-content").forEach(content => content.classList.remove("show"));
+    let selectedRace = [];
+    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedRace.indexOf(value);
+    if (idx > -1) {
+      selectedRace.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedRace.push(value);
+      this.classList.add('selected');
+    }
+    filterMonsters();
+  });
 });
 
-// 補上 filterMonsters 避免報錯（你可根據需求自行實作過濾邏輯）
 function filterMonsters() {
-  // 這裡可以根據 selectedAttributes、selectedRaces 進行過濾
-  // 目前僅重新載入全部怪物
-  if (typeof loadMonsters === "function") loadMonsters();
+  const search = document.getElementById('searchInput').value.trim();
+  document.querySelectorAll('.monster').forEach(monster => {
+    const attr = monster.getAttribute('data-attribute');
+    const race = monster.getAttribute('data-race');
+    const name = monster.getAttribute('data-name');
+    const id = monster.getAttribute('data-id');
+    let show = true;
+
+    // 屬性多選
+    if (selectedAttribute.length > 0 && !selectedAttribute.includes(attr)) {
+      show = false;
+    }
+    // 種族多選
+    if (selectedRace.length > 0 && !selectedRace.includes(race)) {
+      show = false;
+    }
+    // 關鍵字搜尋
+    if (search && !(name.includes(search) || id.includes(search))) {
+      show = false;
+    }
+    monster.style.display = show ? '' : 'none';
+  });
 }
 
-// reset 按鈕
 document.getElementById('resetFilters').addEventListener('click', function() {
-  selectedAttributes.clear();
-  selectedRaces.clear();
-  document.querySelectorAll('.dropdown .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
-  document.querySelectorAll(".dropdown").forEach(dropdown => {
-    const trigger = dropdown.querySelector(".dropdown-trigger");
-    const content = dropdown.querySelector(".dropdown-content");
-    const selectedIcons = trigger.querySelector(".selected-icons");
-    const labelSpan = trigger.querySelector("span");
-    labelSpan.style.display = "";
-    selectedIcons.innerHTML = "";
-  });
+  // 清空多選陣列
+  selectedAttribute = [];
+  selectedRace = [];
+  // 移除所有已選樣式
+  document.querySelectorAll('#attributeContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  // 清空搜尋框
+  document.getElementById('searchInput').value = '';
+  // 重新篩選
   filterMonsters();
 });
 
