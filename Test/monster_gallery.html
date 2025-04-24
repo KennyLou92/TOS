@@ -732,97 +732,58 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     let selectedRaces = new Set();
 
     document.querySelectorAll(".dropdown").forEach(dropdown => {
-      const trigger = dropdown.querySelector(".dropdown-trigger");
-      const content = dropdown.querySelector(".dropdown-content");
+  const trigger = dropdown.querySelector(".dropdown-trigger");
+  const content = dropdown.querySelector(".dropdown-content");
+  const selectedIcons = trigger.querySelector(".selected-icons");
+  const labelSpan = trigger.querySelector("span");
 
-      trigger.addEventListener("click", () => {
-        content.classList.toggle("show");
-      });
-    });
-
-    document.addEventListener("click", function(event) {
-      document.querySelectorAll(".dropdown-content").forEach(content => {
-        if (!content.parentElement.contains(event.target)) {
-          content.classList.remove("show");
+  function updateSelectedIcons(type) {
+    let selectedSet = type === "attribute" ? selectedAttributes : selectedRaces;
+    selectedIcons.innerHTML = "";
+    if (selectedSet.size > 0) {
+      labelSpan.style.display = "none";
+      selectedSet.forEach(val => {
+        const item = content.querySelector(`.dropdown-item[data-value="${val}"] img`);
+        if (item) {
+          const icon = item.cloneNode(true);
+          icon.style.marginRight = "2px";
+          selectedIcons.appendChild(icon);
         }
       });
+    } else {
+      labelSpan.style.display = "";
+      selectedIcons.innerHTML = "";
+    }
+    // 處理淡化效果
+    content.querySelectorAll(".dropdown-item").forEach(item => {
+      const value = item.getAttribute("data-value");
+      if (selectedSet.has(value)) {
+        item.classList.add("selected");
+      } else {
+        item.classList.remove("selected");
+      }
     });
+  }
 
-    function updateSelectedIcons(containerId, selectedSet) {
-      const container = document.querySelector(`#${containerId} .selected-icons`);
-      const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
-      const label = document.querySelector(`#${containerId} .dropdown-button span`);
-      container.innerHTML = '';
-
-      selectedSet.forEach(value => {
-        items.forEach(item => {
-          if (item.dataset.value === value) {
-            const img = item.querySelector('img').cloneNode();
-            img.style.width = '20px';
-            img.style.height = '20px';
-            container.appendChild(img);
-          }
-        });
-      });
-      label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
-    }
-
-    let selectedAttribute = [];
-    document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
-  item.addEventListener('click', function() {
-    const value = this.getAttribute('data-value');
-    const idx = selectedAttribute.indexOf(value);
-    if (idx > -1) {
-      selectedAttribute.splice(idx, 1);
-      this.classList.remove('selected');
-    } else {
-      selectedAttribute.push(value);
-      this.classList.add('selected');
-    }
-    filterMonsters();
+  // 綁定選擇事件
+  content.querySelectorAll(".dropdown-item").forEach(item => {
+    item.addEventListener("click", function(e) {
+      const value = item.getAttribute("data-value");
+      let selectedSet = dropdown.id === "attributeDropdown" ? selectedAttributes : selectedRaces;
+      if (selectedSet.has(value)) {
+        selectedSet.delete(value);
+      } else {
+        selectedSet.add(value);
+      }
+      updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
+      // 這裡可加上你的 filterMonsters() 呼叫
+      if (typeof filterMonsters === "function") filterMonsters();
+    });
   });
+
+  // 初始化
+  updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
 });
-
-    let selectedRace = [];
-    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
-  item.addEventListener('click', function() {
-    const value = this.getAttribute('data-value');
-    const idx = selectedRace.indexOf(value);
-    if (idx > -1) {
-      selectedRace.splice(idx, 1);
-      this.classList.remove('selected');
-    } else {
-      selectedRace.push(value);
-      this.classList.add('selected');
-    }
-    filterMonsters();
-  });
-});
-
-function filterMonsters() {
-  const search = document.getElementById('searchInput').value.trim();
-  document.querySelectorAll('.monster').forEach(monster => {
-    const attr = monster.getAttribute('data-attribute');
-    const race = monster.getAttribute('data-race');
-    const name = monster.getAttribute('data-name');
-    const id = monster.getAttribute('data-id');
-    let show = true;
-
-    // 屬性多選
-    if (selectedAttribute.length > 0 && !selectedAttribute.includes(attr)) {
-      show = false;
-    }
-    // 種族多選
-    if (selectedRace.length > 0 && !selectedRace.includes(race)) {
-      show = false;
-    }
-    // 關鍵字搜尋
-    if (search && !(name.includes(search) || id.includes(search))) {
-      show = false;
-    }
-    monster.style.display = show ? '' : 'none';
-  });
-}
 
 document.getElementById('resetFilters').addEventListener('click', function() {
   // 清空多選陣列
