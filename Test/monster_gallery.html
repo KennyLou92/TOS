@@ -808,7 +808,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
     let selectedRace = [];
     // 種族多選顯示
-  document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
     item.addEventListener('click', function(e) {
       e.stopPropagation();
       const value = this.getAttribute('data-value');
