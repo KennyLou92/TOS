@@ -779,6 +779,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       selectedAttribute.push(value);
       this.classList.add('selected');
     }
+	// ✅ 點擊後隱藏屬性文字
+    document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'none';
     filterMonsters();
   });
 });
@@ -795,6 +797,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       selectedRace.push(value);
       this.classList.add('selected');
     }
+	// ✅ 點擊後隱藏種族文字
+    document.querySelector('#raceDropdown .dropdown-button span').style.display = 'none';
     filterMonsters();
   });
 });
@@ -833,7 +837,9 @@ document.getElementById('resetFilters').addEventListener('click', function() {
   document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
   // 清空搜尋框
   document.getElementById('searchInput').value = '';
-  // 重新篩選
+  // ✅ reset 時顯示回文字 label
+  document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'inline';
+  document.querySelector('#raceDropdown .dropdown-button span').style.display = 'inline';
   filterMonsters();
 });
 
