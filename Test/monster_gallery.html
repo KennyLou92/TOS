@@ -732,13 +732,50 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     let selectedRaces = new Set();
 
     document.querySelectorAll(".dropdown").forEach(dropdown => {
-      const trigger = dropdown.querySelector(".dropdown-trigger");
-      const content = dropdown.querySelector(".dropdown-content");
+  const trigger = dropdown.querySelector(".dropdown-trigger");
+  const content = dropdown.querySelector(".dropdown-content");
+  const selectedIcons = trigger.querySelector(".selected-icons");
+  const labelSpan = trigger.querySelector("span");
 
-      trigger.addEventListener("click", () => {
-        content.classList.toggle("show");
+  function updateSelectedIcons(type) {
+    let selectedSet = type === "attribute" ? selectedAttributes : selectedRaces;
+    selectedIcons.innerHTML = "";
+    if (selectedSet.size > 0) {
+      // 有選擇時，顯示已選 icon，隱藏 label
+      labelSpan.style.display = "none";
+      selectedSet.forEach(val => {
+        const item = content.querySelector(`.dropdown-item[data-value="${val}"] img`);
+        if (item) {
+          const icon = item.cloneNode(true);
+          icon.style.marginRight = "2px";
+          selectedIcons.appendChild(icon);
+        }
       });
+    } else {
+      // 沒有選擇時，顯示 label，隱藏 icon
+      labelSpan.style.display = "";
+      selectedIcons.innerHTML = "";
+    }
+  }
+  content.querySelectorAll(".dropdown-item").forEach(item => {
+    item.addEventListener("click", function(e) {
+      const value = item.getAttribute("data-value");
+      let selectedSet = dropdown.id === "attributeDropdown" ? selectedAttributes : selectedRaces;
+      if (selectedSet.has(value)) {
+        selectedSet.delete(value);
+        item.classList.remove("selected");
+      } else {
+        selectedSet.add(value);
+        item.classList.add("selected");
+      }
+      updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
+      // 這裡可加上你的 filterMonsters() 呼叫
+      filterMonsters && filterMonsters();
     });
+  });
+   // 初始化時也呼叫一次
+   updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
+});
 
     document.addEventListener("click", function(event) {
       document.querySelectorAll(".dropdown-content").forEach(content => {
@@ -747,6 +784,27 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         }
       });
     });
+
+    function updateSelectedIcons(type) {
+    let selectedSet = type === "attribute" ? selectedAttributes : selectedRaces;
+    selectedIcons.innerHTML = "";
+    if (selectedSet.size > 0) {
+      // 有選擇時，顯示已選 icon，隱藏 label
+      labelSpan.style.display = "none";
+      selectedSet.forEach(val => {
+        const item = content.querySelector(`.dropdown-item[data-value="${val}"] img`);
+        if (item) {
+          const icon = item.cloneNode(true);
+          icon.style.marginRight = "2px";
+          selectedIcons.appendChild(icon);
+        }
+      });
+    } else {
+      // 沒有選擇時，顯示 label，隱藏 icon
+      labelSpan.style.display = "";
+      selectedIcons.innerHTML = "";
+    }
+  }
 
     function updateSelectedIcons(containerId, selectedSet) {
       const container = document.querySelector(`#${containerId} .selected-icons`);
@@ -834,7 +892,7 @@ document.getElementById('resetFilters').addEventListener('click', function() {
   // 清空搜尋框
   document.getElementById('searchInput').value = '';
   // 重新篩選
-  filterMonsters();
+  updateSelectedIcons(dropdown.id === "attributeDropdown" ? "attribute" : "race");
 });
 
     window.addEventListener('scroll', () => {
