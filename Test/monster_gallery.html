@@ -772,12 +772,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   item.addEventListener('click', function() {
     const value = this.getAttribute('data-value');
     const idx = selectedAttribute.indexOf(value);
-    if (idx > -1) {
-      selectedAttribute.splice(idx, 1);
-      this.classList.remove('selected');
+      // 切換選擇狀態
+      if (selectedAttributes.has(value)) {
+          selectedAttributes.delete(value);
+      // 從已選區移除
+      document.querySelector("#attributeDropdown .selected-icons").querySelectorAll("img").forEach(img => {
+        if (img.getAttribute("data-value") === value) img.remove();
+      });
     } else {
-      selectedAttribute.push(value);
-      this.classList.add('selected');
+      selectedAttributes.add(value);
+      // 加到已選區
+      document.querySelector("#attributeDropdown .selected-icons").appendChild(icon);
     }
     filterMonsters();
   });
