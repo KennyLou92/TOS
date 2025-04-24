@@ -25,15 +25,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <script src="leader_skill_zh.js">
   </script>
-    <script src="teamskilldesczh.js">
+  </script>
+  <script src="teamskilldesczh.js">
   </script>
   <script>
     // 檢查 skilldesc 是否正確載入
     window.addEventListener('load', () => {
   if (!window.skilldesc) {
-    console.error('skilldesc.js 未正確載入');
+    console.error('skilldescen.js 未正確載入');
   } else {
-    console.log('skilldesc.js 載入成功');
+    console.log('skilldescen.js 載入成功');
     console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
   }
 });
@@ -165,7 +166,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
     .dropdown-item.selected {
       opacity: 0.4;
-      pointer-events: none;
+    /* pointer-events: none; */
     }
 	#scrollButtons {
 	  position: fixed;
@@ -487,9 +488,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 .tab-btn.active::after {
   width: 80%;
 }
-.tab-content { 
-  margin-top: 12px; 
-}
+.tab-content { margin-top: 12px; }
 .tab-pane {
   display: none;
 }
@@ -511,11 +510,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
   // 修改為：
   window.addEventListener('load', async () => {
-  console.log('window.teamskill:', window.teamskill);
-  if (!window.skilldesc) {
-    console.error('技能資料載入失敗');
-    return;
-  }
+    if (!window.skilldesc) {
+      console.error('技能資料載入失敗');
+      return;
+    }
     console.log('技能資料載入成功');
     console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
     await loadMonsters();
@@ -527,7 +525,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       fetch('monster.json'),
       fetch('monster_name_zh.json')
     ]);
-
+    
     const monsters = await monsterResponse.json();
     const names = await nameResponse.json();
     
@@ -563,8 +561,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       `;
     }).join('');
 
-      // 重新綁定點擊事件
-      document.querySelectorAll('.monster').forEach(monster => {
+        // 重新綁定點擊事件
+        document.querySelectorAll('.monster').forEach(monster => {
       monster.addEventListener('click', () => {
         const id = monster.getAttribute('data-id');
         fetchMonsterInfo(id, monster);
@@ -574,79 +572,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   } catch (error) {
     console.error('載入怪物資料時發生錯誤：', error);
   }
-  }
-
-  // 將 fetchMonsterInfo 移到這裡，作為獨立函數
-async function fetchMonsterInfo(monsterId, monsterElement) {
-  console.log('fetchMonsterInfo called', monsterId); 
-  console.log('monsterElement:', monsterElement);
-  try {
-    const monsterIdStr = monsterId.toString();
-    const response = await fetch('monster.json');
-    const data = await response.json();
-    const monster = data.find(m => m.id.toString() === monsterIdStr);
-    
-    if (monster) {
-      console.log('monster:', monster); 
-      // 設置怪物ID和屬性圖標
-      const attributeIcons = {
-        1: 'water.png',
-        2: 'fire.png',
-        3: 'earth.png',
-        4: 'light.png',
-        5: 'dark.png'
-      };
-      
-      document.getElementById('monsterID').innerHTML = `
-        ${monster.id}
-        <img src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeIcons[monster.attribute]}" 
-             alt="屬性" style="width:24px;height:24px;">
-      `;
-
-      // 設置基本屬性
-      document.getElementById('monsterHP').textContent = monster.hp || '0';
-      document.getElementById('monsterHP1_2').textContent = monster.hp_120 || '0';
-      document.getElementById('monsterATK').textContent = monster.attack || '0';
-      document.getElementById('monsterATK1_2').textContent = monster.attack_120 || '0';
-      document.getElementById('monsterREC').textContent = monster.recovery || '0';
-      document.getElementById('monsterREC1_2').textContent = monster.recovery_120 || '0';
-   
-      // 設置隊長技
-      if (monster.leader_skill && window.leader_skill_zh) {
-      const leaderSkill = window.leader_skill_zh[monster.leader_skill];
-      document.getElementById('monsterLeaderSkill').innerHTML = leaderSkill ? leaderSkill.desc.replace(/\n/g, '<br>') : '無';
-    } else {
-      document.getElementById('monsterLeaderSkill').innerHTML = '無';
-    }
-
-// 設置標籤切換功能
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    // 移除所有標籤的 active 類
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    // 隱藏所有標籤內容
-    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-    
-    // 激活當前標籤
-    btn.classList.add('active');
-    // 顯示對應的標籤內容
-    const tabId = btn.getAttribute('data-tab');
-    document.getElementById(`tab-${tabId}`).classList.add('active');
-  });
-});
-     // 顯示 Modal
-     document.getElementById('monsterInfoModal').style.display = 'block';
-    }
-  } catch (error) {
-    console.error('獲取怪物資訊時發生錯誤：', error);
-  }
 }
   </script>
  </head>
  <body>
   <div class="search-bar-wrapper">
    <div class="search-bar">
-    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入卡片編號或名稱..." type="text"/>
+    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入ID/名稱" type="text"/>
    </div>
    <!-- 屬性 -->
    <div class="dropdown" id="attributeDropdown">
@@ -659,19 +591,19 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     </div>
     <div class="dropdown-content" id="attributeContent">
      <div class="dropdown-item" data-value="1">
-      <img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png"/>
+      <img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="2">
-      <img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png"/>
+      <img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="3">
-      <img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png"/>
+      <img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="4">
-      <img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png"/>
+      <img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="5">
-      <img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png"/>
+      <img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
     </div>
    </div>
@@ -686,31 +618,31 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     </div>
     <div class="dropdown-content" id="raceContent">
      <div class="dropdown-item" data-value="1">
-      <img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png"/>
+      <img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="2">
-      <img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png"/>
+      <img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="3">
-      <img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png"/>
+      <img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="4">
-      <img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png"/>
+      <img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="5">
-      <img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png"/>
+      <img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="8">
-      <img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png"/>
+      <img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="10">
-      <img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png"/>
+      <img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="6">
-      <img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png"/>
+      <img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
      <div class="dropdown-item" data-value="7">
-      <img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png"/>
+      <img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
      </div>
     </div>
    </div>
@@ -742,7 +674,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       <div id="monsterID">
       </div>
       <div class="info-row">
-        <p class="info-label">隊長技：</p>
+        <p class="info-label"></p>
         <p class="info-value" id="monsterLeaderSkill"></p>
       </div>
       <div class="info-row">
@@ -785,11 +717,11 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
         <div class="tab-buttons">
           <button class="tab-btn active" data-tab="leader">隊長技</button>
           <button class="tab-btn" data-tab="skill">主動技</button>
-          <button class="tab-btn" data-tab="team">隊伍技</button>
+		  <button class="tab-btn" data-tab="team">隊伍技</button>
         </div>
         <div class="tab-content" id="tab-leader"></div>
         <div class="tab-content" id="tab-skill" style="display:none"></div>
-        <div class="tab-content" id="tab-team" style="display:none"></div>
+		<div class="tab-content" id="tab-team" style="display:none"></div>
       </div>
      </div>
     </div>
@@ -835,54 +767,75 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
     }
 
+    let selectedAttribute = [];
     document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
-      item.addEventListener('click', function () {
-        const value = this.getAttribute('data-value');
-        this.classList.toggle('selected');
-        selectedAttributes.has(value) ? selectedAttributes.delete(value) : selectedAttributes.add(value);
-        updateSelectedIcons('attributeDropdown', selectedAttributes);
-        filterMonsters();
-      });
-    });
-
-    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
-      item.addEventListener('click', function () {
-        const value = this.getAttribute('data-value');
-        this.classList.toggle('selected');
-        selectedRaces.has(value) ? selectedRaces.delete(value) : selectedRaces.add(value);
-        updateSelectedIcons('raceDropdown', selectedRaces);
-        filterMonsters();
-      });
-    });
-
-    function filterMonsters() {
-      const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
-      const monsters = document.querySelectorAll(".monster");
-
-      monsters.forEach(monster => {
-        const name = monster.querySelector("div:nth-child(3)").textContent.toLowerCase();
-        const id = monster.querySelector("div:nth-child(1)").textContent.toLowerCase();
-        const attribute = monster.getAttribute('data-attribute');
-        const race = monster.getAttribute('data-race');
-
-        const matchesSearch = name.includes(searchTerm) || id.includes(searchTerm);
-        const matchesAttribute = selectedAttributes.size === 0 || selectedAttributes.has(attribute);
-        const matchesRace = selectedRaces.size === 0 || selectedRaces.has(race);
-
-        monster.style.display = (matchesSearch && matchesAttribute && matchesRace) ? "block" : "none";
-      });
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedAttribute.indexOf(value);
+    if (idx > -1) {
+      selectedAttribute.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedAttribute.push(value);
+      this.classList.add('selected');
     }
+    filterMonsters();
+  });
+});
 
-    document.getElementById("resetFilters").addEventListener("click", () => {
-      selectedAttributes.clear();
-      selectedRaces.clear();
-      document.querySelectorAll('.dropdown-item.selected').forEach(item => item.classList.remove('selected'));
-      document.querySelectorAll('.selected-icons').forEach(iconBox => iconBox.innerHTML = '');
-      document.getElementById("searchInput").value = '';
-      updateSelectedIcons('attributeDropdown', selectedAttributes);
-      updateSelectedIcons('raceDropdown', selectedRaces);
-      filterMonsters();
-    });
+    let selectedRace = [];
+    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedRace.indexOf(value);
+    if (idx > -1) {
+      selectedRace.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedRace.push(value);
+      this.classList.add('selected');
+    }
+    filterMonsters();
+  });
+});
+
+function filterMonsters() {
+  const search = document.getElementById('searchInput').value.trim();
+  document.querySelectorAll('.monster').forEach(monster => {
+    const attr = monster.getAttribute('data-attribute');
+    const race = monster.getAttribute('data-race');
+    const name = monster.getAttribute('data-name');
+    const id = monster.getAttribute('data-id');
+    let show = true;
+
+    // 屬性多選
+    if (selectedAttribute.length > 0 && !selectedAttribute.includes(attr)) {
+      show = false;
+    }
+    // 種族多選
+    if (selectedRace.length > 0 && !selectedRace.includes(race)) {
+      show = false;
+    }
+    // 關鍵字搜尋
+    if (search && !(name.includes(search) || id.includes(search))) {
+      show = false;
+    }
+    monster.style.display = show ? '' : 'none';
+  });
+}
+
+document.getElementById('resetFilters').addEventListener('click', function() {
+  // 清空多選陣列
+  selectedAttribute = [];
+  selectedRace = [];
+  // 移除所有已選樣式
+  document.querySelectorAll('#attributeContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  // 清空搜尋框
+  document.getElementById('searchInput').value = '';
+  // 重新篩選
+  filterMonsters();
+});
 
     window.addEventListener('scroll', () => {
       const scrollBtn = document.getElementById('scrollButtons');
@@ -923,7 +876,6 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   const teamTab = document.getElementById('tab-team');
   skillTab.innerHTML = '';
   leaderTab.innerHTML = '';
-  teamTab.innerHTML = '';
   fetch('monster.json')
     .then(response => response.json())
     .then(data => {
@@ -969,7 +921,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
           skillIds.push(monster[`normalskill${i}`]);
           i++;
         }
-        
+
         // 清除舊技能顯示
         skillTab.innerHTML = '';
 
@@ -987,6 +939,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
         if (!skillFound) {
           skillTab.innerHTML = '無';
         }
+
       if (monster.teamskill && window.teamskilldesc) {
       let teamSkillIds = [];
       if (Array.isArray(monster.teamskill)) {
@@ -1009,24 +962,33 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     } else {
       teamTab.innerHTML = '無';
     }
+
         // 預設顯示隊長技
+        let currentTab = 'leader';
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
+        leaderTab.style.display = '';
+        skillTab.style.display = 'none';
+        teamTab.style.display = 'none';
+
+        // Tab 切換功能
         document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.onclick = function() {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        if (this.dataset.tab === 'skill') {
-          skillTab.style.display = '';
-          leaderTab.style.display = 'none';
-          teamTab.style.display = 'none';
-        } else if (this.dataset.tab === 'team') {
-          teamTab.style.display = '';
-          leaderTab.style.display = 'none';
-          skillTab.style.display = 'none';
-        } else {
-          leaderTab.style.display = '';
-          skillTab.style.display = 'none';
-          teamTab.style.display = 'none';
-        }
+          btn.onclick = function() {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            if (this.dataset.tab === 'skill') {
+              skillTab.style.display = '';
+              leaderTab.style.display = 'none';
+			        teamTab.style.display = 'none';
+			} else if (this.dataset.tab === 'team') {
+			  teamTab.style.display = '';
+			  leaderTab.style.display = 'none';
+			  skillTab.style.display = 'none';
+			} else {
+			  leaderTab.style.display = '';
+			  skillTab.style.display = 'none';
+			  teamTab.style.display = 'none';
+			}
           };
         });
         // 顯示 Modal
@@ -1051,7 +1013,7 @@ function processSkill(skillId, recRow,container) {
   
   if (!window.skilldesc) {
     console.error('skilldesc 未載入，嘗試重新載入');
-    // 嘗試重新載入 skilldesc.js
+    // 嘗試重新載入 skilldescen.js
     const script = document.createElement('script');
     script.src = 'skilldesc.js';
     script.onload = () => {
@@ -1086,7 +1048,7 @@ function processSkill(skillId, recRow,container) {
   // 創建技能標籤
   const label = document.createElement('div');
   label.className = 'info-label';
-  label.textContent = skill.name || '無名稱';
+  label.textContent = skill.name || 'NULL';
   applySkillTypeTag(skillId, label);
 
   // 創建技能描述容器
@@ -1175,6 +1137,9 @@ function closeModal() {
 		attributeIcon.style.width = '24px';
 		attributeIcon.style.height = '24px';
 		attributeIcon.style.marginLeft = '8px';
+    attributeIcon.onerror = function () {
+    this.src = 'https://i.postimg.cc/6q0Y863v/unknown.png';
+    };
 		const raceIcon = document.createElement("img");
 		if (raceId === 6) {
 		  raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
@@ -1187,6 +1152,9 @@ function closeModal() {
 		raceIcon.style.width = '24px';
 		raceIcon.style.height = '24px';
 		raceIcon.style.marginLeft = '4px';
+    raceIcon.onerror = function () {
+    this.src = 'https://i.postimg.cc/6q0Y863v/unknown.png';
+    };
 
 		monsterIdElement.appendChild(attributeIcon);
 		monsterIdElement.appendChild(raceIcon);	}
