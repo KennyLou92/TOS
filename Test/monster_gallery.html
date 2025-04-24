@@ -519,59 +519,77 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     await loadMonsters();
   });
 
+  let allMonsters = [];
+  let allNames = []; 
   async function loadMonsters() {
   try {
     const [monsterResponse, nameResponse] = await Promise.all([
       fetch('monster.json'),
       fetch('monster_name_zh.json')
     ]);
-    
-    const monsters = await monsterResponse.json();
-    const names = await nameResponse.json();
-    
-    const gallery = document.getElementById('monsterGallery');
-    
-    gallery.innerHTML = monsters.map(monster => {
-      // 修正名稱查找邏輯，確保 id 為數字類型
-      const nameObj = names.find(n => n.id === parseInt(monster.id));
-      const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
-
-      // 新增：優先使用 skins.js 的 base64
-      let imgSrc = '';
-      if (window.skins && window.skins[monster.id]) {
-        imgSrc = window.skins[monster.id];
-      } else {
-        imgSrc = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
-      }
-      
-      return `
-        <div class="monster" 
-             data-attribute="${monster.attribute}" 
-             data-id="${monster.id}" 
-             data-race="${monster.race}" 
-             data-name="${monsterName}"
-             data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
-          <div>${monster.id}</div>
-          <img alt="${monsterName}"
-			   src="${imgSrc}"
-               src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
-               onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
-          <div>${monsterName}</div>
-        </div>
-      `;
-    }).join('');
-
-        // 重新綁定點擊事件
-        document.querySelectorAll('.monster').forEach(monster => {
-      monster.addEventListener('click', () => {
-        const id = monster.getAttribute('data-id');
-        fetchMonsterInfo(id, monster);
-      });
-    });
-
+    allMonsters = await monsterResponse.json();
+    allNames = await nameResponse.json();
+    filterMonsters(); // 初始化時直接呼叫 filterMonsters
   } catch (error) {
     console.error('載入怪物資料時發生錯誤：', error);
   }
+}
+
+function filterMonsters() {
+  const searchValue = document.getElementById('searchInput').value.trim();
+  const gallery = document.getElementById('monsterGallery');
+  let filtered = allMonsters;
+
+  // 屬性篩選
+  if (selectedAttributes.size > 0) {
+    filtered = filtered.filter(monster => selectedAttributes.has(String(monster.attribute)));
+  }
+  // 種族篩選
+  if (selectedRaces.size > 0) {
+    filtered = filtered.filter(monster => selectedRaces.has(String(monster.race)));
+  }
+  // 關鍵字搜尋（ID或名稱）
+  if (searchValue) {
+    filtered = filtered.filter(monster => {
+      const nameObj = allNames.find(n => n.id === parseInt(monster.id));
+      const monsterName = nameObj ? nameObj.name : '';
+      return monster.id.includes(searchValue) || monsterName.includes(searchValue);
+    });
+  }
+    
+  gallery.innerHTML = filtered.map(monster => {
+    const nameObj = allNames.find(n => n.id === parseInt(monster.id));
+    const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+    let imgSrc = '';
+    if (window.skins && window.skins[monster.id]) {
+      imgSrc = window.skins[monster.id];
+    } else {
+      imgSrc = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
+    }
+    return `
+      <div class="monster" 
+           data-attribute="${monster.attribute}" 
+           data-id="${monster.id}" 
+           data-race="${monster.race}" 
+           data-name="${monsterName}"
+           data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
+        <div>${monster.id}</div>
+        <img alt="${monsterName}"
+             src="${imgSrc}"
+             src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
+             onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
+        <div>${monsterName}</div>
+      </div>
+    `;
+  }).join('');
+
+  // 重新綁定點擊事件
+  document.querySelectorAll('.monster').forEach(monster => {
+    monster.addEventListener('click', () => {
+      const id = monster.getAttribute('data-id');
+      fetchMonsterInfo(id, monster);
+    });
+  });
 }
   </script>
  </head>
@@ -728,7 +746,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
    </div>
   </div>
   <script>
-   let selectedAttributes = new Set();
+let selectedAttributes = new Set();
 let selectedRaces = new Set();
 
 document.querySelectorAll(".dropdown").forEach(dropdown => {
