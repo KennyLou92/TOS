@@ -769,82 +769,35 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
     let selectedAttribute = [];
     document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
-    item.addEventListener('click', function(e) {
-      e.stopPropagation();
-      const value = this.getAttribute('data-value');
-      const iconUrl = this.querySelector('img').src;
-      const selectedIconsDiv = document.querySelector('#attributeDropdown .selected-icons');
-      if (selectedAttributes.has(value)) {
-        selectedAttributes.delete(value);
-        selectedIconsDiv.querySelectorAll('img').forEach(img => {
-          if (img.getAttribute('data-value') === value) img.remove();
-        });
-        this.classList.remove('selected');
-        this.style.display = ''; // 顯示label
-      } else {
-        selectedAttributes.add(value);
-        const icon = document.createElement('img');
-        icon.src = iconUrl;
-        icon.setAttribute('data-value', value);
-        icon.style.width = '24px';
-        icon.style.height = '24px';
-        icon.style.marginRight = '2px';
-        icon.style.cursor = 'pointer';
-        icon.onclick = (ev) => {
-          ev.stopPropagation();
-          selectedAttributes.delete(value);
-          icon.remove();
-          item.classList.remove('selected');
-          item.style.display = '';
-          filterMonsters();
-        };
-        selectedIconsDiv.appendChild(icon);
-        this.classList.add('selected');
-        this.style.display = 'none'; // 隱藏label
-      }
-      filterMonsters();
-    });
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedAttribute.indexOf(value);
+    if (idx > -1) {
+      selectedAttribute.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedAttribute.push(value);
+      this.classList.add('selected');
+    }
+    filterMonsters();
   });
+});
 
     let selectedRace = [];
-    // 種族多選顯示
     document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
-    item.addEventListener('click', function(e) {
-      e.stopPropagation();
-      const value = this.getAttribute('data-value');
-      const iconUrl = this.querySelector('img').src;
-      const selectedIconsDiv = document.querySelector('#raceDropdown .selected-icons');
-      if (selectedRaces.has(value)) {
-        selectedRaces.delete(value);
-        selectedIconsDiv.querySelectorAll('img').forEach(img => {
-          if (img.getAttribute('data-value') === value) img.remove();
-        });
-        this.classList.remove('selected');
-        this.style.display = '';
-      } else {
-        selectedRaces.add(value);
-        const icon = document.createElement('img');
-        icon.src = iconUrl;
-        icon.setAttribute('data-value', value);
-        icon.style.width = '24px';
-        icon.style.height = '24px';
-        icon.style.marginRight = '2px';
-        icon.style.cursor = 'pointer';
-        icon.onclick = (ev) => {
-          ev.stopPropagation();
-          selectedRaces.delete(value);
-          icon.remove();
-          item.classList.remove('selected');
-          item.style.display = '';
-          filterMonsters();
-        };
-        selectedIconsDiv.appendChild(icon);
-        this.classList.add('selected');
-        this.style.display = 'none';
-      }
-      filterMonsters();
-    });
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedRace.indexOf(value);
+    if (idx > -1) {
+      selectedRace.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedRace.push(value);
+      this.classList.add('selected');
+    }
+    filterMonsters();
   });
+});
 
 function filterMonsters() {
   const search = document.getElementById('searchInput').value.trim();
@@ -872,16 +825,17 @@ function filterMonsters() {
 }
 
 document.getElementById('resetFilters').addEventListener('click', function() {
-    selectedAttributes.clear();
-    selectedRaces.clear();
-    document.querySelectorAll('#attributeDropdown .selected-icons img').forEach(img => img.remove());
-    document.querySelectorAll('#raceDropdown .selected-icons img').forEach(img => img.remove());
-    document.querySelectorAll('#attributeContent .dropdown-item, #raceContent .dropdown-item').forEach(item => {
-      item.classList.remove('selected');
-      item.style.display = '';
-    });
-    filterMonsters();
-  });
+  // 清空多選陣列
+  selectedAttribute = [];
+  selectedRace = [];
+  // 移除所有已選樣式
+  document.querySelectorAll('#attributeContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  // 清空搜尋框
+  document.getElementById('searchInput').value = '';
+  // 重新篩選
+  filterMonsters();
+});
 
     window.addEventListener('scroll', () => {
       const scrollBtn = document.getElementById('scrollButtons');
