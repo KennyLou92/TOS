@@ -790,10 +790,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         icon.style.height = '24px';
         icon.style.marginRight = '2px';
         icon.style.cursor = 'pointer';
-        icon.onclick = function(ev) {
+        icon.onclick = (ev) => {
           ev.stopPropagation();
           selectedAttributes.delete(value);
-          this.remove();
+          icon.remove();
           item.classList.remove('selected');
           item.style.display = '';
           filterMonsters();
@@ -830,10 +830,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
         icon.style.height = '24px';
         icon.style.marginRight = '2px';
         icon.style.cursor = 'pointer';
-        icon.onclick = function(ev) {
+        icon.onclick = (ev) => {
           ev.stopPropagation();
           selectedRaces.delete(value);
-          this.remove();
+          icon.remove();
           item.classList.remove('selected');
           item.style.display = '';
           filterMonsters();
