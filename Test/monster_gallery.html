@@ -781,6 +781,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
 	// ✅ 點擊後隱藏屬性文字
     document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'none';
+	// ✅ 更新 icon 顯示
+    updateSelectedIcons('attributeDropdown', new Set(selectedAttribute));
     filterMonsters();
   });
 });
@@ -799,6 +801,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
 	// ✅ 點擊後隱藏種族文字
     document.querySelector('#raceDropdown .dropdown-button span').style.display = 'none';
+	// ✅ 更新 icon 顯示
+    updateSelectedIcons('raceDropdown', new Set(selectedRace));
     filterMonsters();
   });
 });
@@ -838,6 +842,8 @@ document.getElementById('resetFilters').addEventListener('click', function() {
   // 清空搜尋框
   document.getElementById('searchInput').value = '';
   // ✅ reset 時顯示回文字 label
+  updateSelectedIcons('attributeDropdown', new Set());
+  updateSelectedIcons('raceDropdown', new Set());
   document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'inline';
   document.querySelector('#raceDropdown .dropdown-button span').style.display = 'inline';
   filterMonsters();
