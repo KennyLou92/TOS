@@ -50697,6 +50697,17 @@
         "REC": 560
     },
 	{
+        "id": "10911",
+        "attribute": null,
+        "race": null,
+        "leaderskill": null,
+        "normalskill1": null,
+        "normalskill2": null,
+        "HP": null,
+        "ATK": null,
+        "REC": null
+    },
+	{
 	    "id": "10912",
         "attribute": null,
         "race": null,
