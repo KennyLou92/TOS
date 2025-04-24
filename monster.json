@@ -50651,27 +50651,27 @@
         "REC": 333
     },
 	{
-	    "id": "10907",
+        "id": "10907",
+        "attribute": 5,
+        "race": 1,
+        "leaderskill": 2550,
+        "normalskill1": 5070,
+        "normalskill2": 4940,
+        "HP": 3333,
+        "ATK": 2133,
+        "REC": 830
+    },
+	{
+        "id": "10908",
         "attribute": 2,
         "race": 1,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
-	},
-	{
-	    "id": "10908",
-        "attribute": null,
-        "race": null,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
-	},
+        "leaderskill": 2549,
+        "normalskill1": 4941,
+        "normalskill2": 0,
+        "HP": 2744,
+        "ATK": 1644,
+        "REC": 444
+    },
 	{
 	    "id": "10909",
         "attribute": null,
@@ -50684,16 +50684,16 @@
         "REC": null
 	},
 	{
-	    "id": "10910",
-        "attribute": null,
-        "race": null,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
-	},
+        "id": "10910",
+        "attribute": 4,
+        "race": 1,
+        "leaderskill": 2395,
+        "normalskill1": 4943,
+        "normalskill2": 4944,
+        "HP": 2700,
+        "ATK": 1516,
+        "REC": 560
+    },
 	{
 	    "id": "10912",
         "attribute": null,
