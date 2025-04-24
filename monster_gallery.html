@@ -779,6 +779,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       selectedAttribute.push(value);
       this.classList.add('selected');
     }
+	// ✅ 隱藏 label
+    document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'none';
+    // ✅ 更新 icon 顯示
+    updateSelectedIcons('attributeDropdown', new Set(selectedAttribute));
     filterMonsters();
   });
 });
@@ -795,6 +799,10 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       selectedRace.push(value);
       this.classList.add('selected');
     }
+    // ✅ 隱藏 label
+    document.querySelector('#raceDropdown .dropdown-button span').style.display = 'none';
+    // ✅ 更新 icon 顯示
+    updateSelectedIcons('raceDropdown', new Set(selectedRace));
     filterMonsters();
   });
 });
@@ -833,6 +841,11 @@ document.getElementById('resetFilters').addEventListener('click', function() {
   document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
   // 清空搜尋框
   document.getElementById('searchInput').value = '';
+  // ✅ 重設 icon 和 label 顯示
+  updateSelectedIcons('attributeDropdown', new Set());
+  updateSelectedIcons('raceDropdown', new Set());
+  document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'inline';
+  document.querySelector('#raceDropdown .dropdown-button span').style.display = 'inline';
   // 重新篩選
   filterMonsters();
 });
