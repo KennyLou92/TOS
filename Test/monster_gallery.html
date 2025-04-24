@@ -780,6 +780,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           if (img.getAttribute('data-value') === value) img.remove();
         });
         this.classList.remove('selected');
+        this.style.display = ''; // 顯示label
       } else {
         selectedAttributes.add(value);
         const icon = document.createElement('img');
@@ -794,17 +795,20 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           selectedAttributes.delete(value);
           this.remove();
           item.classList.remove('selected');
-          // 這裡可加上觸發 filter 的程式，如 filterMonsters();
+          item.style.display = '';
+          filterMonsters();
         };
         selectedIconsDiv.appendChild(icon);
         this.classList.add('selected');
+        this.style.display = 'none'; // 隱藏label
       }
-    filterMonsters();
+      filterMonsters();
+    });
   });
-});
 
     let selectedRace = [];
-    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+    // 種族多選顯示
+  document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
     item.addEventListener('click', function(e) {
       e.stopPropagation();
       const value = this.getAttribute('data-value');
@@ -816,6 +820,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           if (img.getAttribute('data-value') === value) img.remove();
         });
         this.classList.remove('selected');
+        this.style.display = '';
       } else {
         selectedRaces.add(value);
         const icon = document.createElement('img');
@@ -830,14 +835,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
           selectedRaces.delete(value);
           this.remove();
           item.classList.remove('selected');
-          // 這裡可加上觸發 filter 的程式，如 filterMonsters();
+          item.style.display = '';
+          filterMonsters();
         };
         selectedIconsDiv.appendChild(icon);
         this.classList.add('selected');
+        this.style.display = 'none';
       }
-    filterMonsters();
+      filterMonsters();
+    });
   });
-});
 
 function filterMonsters() {
   const search = document.getElementById('searchInput').value.trim();
@@ -865,17 +872,16 @@ function filterMonsters() {
 }
 
 document.getElementById('resetFilters').addEventListener('click', function() {
-  // 清空多選陣列
-  selectedAttribute = [];
-  selectedRace = [];
-  // 移除所有已選樣式
-  document.querySelectorAll('#attributeContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
-  document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
-  // 清空搜尋框
-  document.getElementById('searchInput').value = '';
-  // 重新篩選
-  filterMonsters();
-});
+    selectedAttributes.clear();
+    selectedRaces.clear();
+    document.querySelectorAll('#attributeDropdown .selected-icons img').forEach(img => img.remove());
+    document.querySelectorAll('#raceDropdown .selected-icons img').forEach(img => img.remove());
+    document.querySelectorAll('#attributeContent .dropdown-item, #raceContent .dropdown-item').forEach(item => {
+      item.classList.remove('selected');
+      item.style.display = '';
+    });
+    filterMonsters();
+  });
 
     window.addEventListener('scroll', () => {
       const scrollBtn = document.getElementById('scrollButtons');
