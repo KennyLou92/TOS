@@ -12215,6 +12215,11 @@ window.leader_skill = [
     "desc": "【JoJo’s Bizarre Adventure】 Members:\nI. Attack x 100.\nII. HP & Recovery x 4.\n"
   },
   {
+    "id": 2550,
+    "name": "A Quiet Life",
+    "desc": "I. Team Attack x 33;\n    HP & Recovery x 3.3.\nII. “Kosaku Kawajiri & Deadly Queen”:\n⇒ Attack x 8 additionally.\nIII. By dissolving Runestones of\n     an enemy’s Attribute,\n⇒ there is a 33% chance that\n    the first attack of each enemy\n    of that Attribute(s) \n    will be dodged in that Round."
+  },
+  {
     "id": 2554,
     "name": "The Most Powerful Star Platinum",
     "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n  and Dark Members:\n⓵ Attack x 30.\n⓶ HP & Recovery x 3.6.\nII.【JoJo’s Bizarre Adventure】 Members:\n⓵ Attack x 3 additionally.\n⓶ Attack & Recovery  x 1.6 additionally.\nIII. By dissolving Runestones \n     of a Member’s Attribute,\n⇒ Team Attack x 3 additionally.\nIV. At the end of each Round,\n⇒ Humans, 【JoJo’s Bizarre Adventure】\n    and Dark Members:\n⓵ Skill CDs -1\n⓶ Skill EPs +1\n(Dissolving Runestones is necessary.)"

@@ -49810,6 +49810,7 @@
         "leaderskill": 2526,
         "normalskill1": 4846,
         "normalskill2": 4847,
+        "teamskill":["1879","1880","1882","459"],
         "HP": 5536,
         "ATK": 1927,
         "REC": 527
@@ -49821,6 +49822,7 @@
         "leaderskill": 2527,
         "normalskill1": 4848,
         "normalskill2": 4849,
+        "teamskill":["1880","1881","1882","459"],
         "HP": 5144,
         "ATK": 2024,
         "REC": 531
@@ -50019,6 +50021,7 @@
         "leaderskill": 2534,
         "normalskill1": 4876,
         "normalskill2": 4877,
+        "teamskill":["1896","1903","1895","1898"],
         "HP": 1520,
         "ATK": 2577,
         "REC": 468
@@ -50030,6 +50033,7 @@
         "leaderskill": 2535,
         "normalskill1": 4878,
         "normalskill2": 4879,
+        "teamskill":["1896","1903","1895","1898"],
         "HP": 1494,
         "ATK": 2734,
         "REC": 440
@@ -50041,6 +50045,7 @@
         "leaderskill": 2536,
         "normalskill1": 4880,
         "normalskill2": 4881,
+        "teamskill":["1896","1905","1895","1898"],
         "HP": 1775,
         "ATK": 2530,
         "REC": 398
@@ -50052,6 +50057,7 @@
         "leaderskill": 2537,
         "normalskill1": 4888,
         "normalskill2": 0,
+        "teamskill":["1895","1898"],
         "HP": 3723,
         "ATK": 1340,
         "REC": 368
@@ -50261,6 +50267,7 @@
         "leaderskill": 2556,
         "normalskill1": 4957,
         "normalskill2": 0,
+        "teamskill":["1944","1941"],
         "HP": 3891,
         "ATK": 1921,
         "REC": 546
@@ -50272,6 +50279,7 @@
         "leaderskill": 2557,
         "normalskill1": 4960,
         "normalskill2": 4984,
+        "teamskill":["1945","1941"],
         "HP": 3610,
         "ATK": 2091,
         "REC": 421
@@ -50283,6 +50291,7 @@
         "leaderskill": 2558,
         "normalskill1": 4961,
         "normalskill2": 0,
+        "teamskill":["1946","1941"],
         "HP": 4212,
         "ATK": 1529,
         "REC": 383
@@ -50294,6 +50303,7 @@
         "leaderskill": 2558,
         "normalskill1": 4962,
         "normalskill2": 0,
+        "teamskill":["1941"],
         "HP": 3927,
         "ATK": 1648,
         "REC": 471
@@ -50305,6 +50315,7 @@
         "leaderskill": 2558,
         "normalskill1": 4963,
         "normalskill2": 0,
+        "teamskill":["1941"],
         "HP": 3461,
         "ATK": 1840,
         "REC": 380
@@ -50316,6 +50327,7 @@
         "leaderskill": 2558,
         "normalskill1": 4964,
         "normalskill2": 0,
+        "teamskill":["1941"],
         "HP": 3647,
         "ATK": 1742,
         "REC": 357
@@ -50639,27 +50651,29 @@
         "REC": 333
     },
 	{
-	    "id": "10907",
+        "id": "10907",
+        "attribute": 5,
+        "race": 1,
+        "leaderskill": 2550,
+        "normalskill1": 5070,
+        "normalskill2": 4940,
+        "teamskill":["1932"],
+        "HP": 3333,
+        "ATK": 2133,
+        "REC": 830
+    },
+	{
+        "id": "10908",
         "attribute": 2,
         "race": 1,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
-	},
-	{
-	    "id": "10908",
-        "attribute": null,
-        "race": null,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
-	},
+        "leaderskill": 2549,
+        "normalskill1": 4941,
+        "normalskill2": 0,
+        "teamskill":["1930","1931"],
+        "HP": 2744,
+        "ATK": 1644,
+        "REC": 444
+    },
 	{
 	    "id": "10909",
         "attribute": null,
@@ -50672,16 +50686,16 @@
         "REC": null
 	},
 	{
-	    "id": "10910",
-        "attribute": null,
-        "race": null,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
-	},
+        "id": "10910",
+        "attribute": 4,
+        "race": 1,
+        "leaderskill": 2395,
+        "normalskill1": 4943,
+        "normalskill2": 4944,
+        "HP": 2700,
+        "ATK": 1516,
+        "REC": 560
+    },
 	{
 	    "id": "10912",
         "attribute": null,
