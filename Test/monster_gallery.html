@@ -748,6 +748,13 @@ function filterMonsters() {
   <script>
 let selectedAttributes = new Set();
 let selectedRaces = new Set();
+window.addEventListener('load', async () => {
+  if (!window.skilldesc) {
+    console.error('技能資料載入失敗');
+    return;
+  }
+  await loadMonsters();
+});
 
 document.querySelectorAll(".dropdown").forEach(dropdown => {
   const trigger = dropdown.querySelector(".dropdown-trigger");
