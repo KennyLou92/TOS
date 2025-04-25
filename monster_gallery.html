@@ -1057,9 +1057,11 @@ function processSkill(skillId, recRow,container) {
  const skillRow = document.createElement('div');
   skillRow.className = 'info-row';
   skillRow.setAttribute('data-skill', 'true');
+  if (container && container.childElementCount > 0) {
   skillRow.style.borderTop = '1px solid #ccc';
   skillRow.style.marginTop = '8px';
   skillRow.style.paddingTop = '8px';
+}
 
   const skill = window.skilldesc?.[skillId?.toString()];
   console.log("顯示技能:", skillId, skill);
