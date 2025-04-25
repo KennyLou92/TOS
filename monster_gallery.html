@@ -497,6 +497,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   display: block;
 }
   </style>
+  <style>
+.team-skill-block {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.team-skill-block:last-child {
+  border-bottom: none;
+}
+    </style>
   <script>
   function parseColorTag(desc) {
   // 將 [color=#xxxxxx]內容[/color] 轉成 <span style="color:#xxxxxx">內容</span>
@@ -966,7 +976,7 @@ document.getElementById('resetFilters').addEventListener('click', function() {
           if (!desc) return null;
           desc = parseColorTag(desc);
           desc = parseSkillDesc(desc);
-          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
+          return `<div class="team-skill-block info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
         })
         .filter(Boolean)
         .join('');
