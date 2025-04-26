@@ -47075,6 +47075,7 @@
         "leaderskill": 2383,
         "normalskill1": 4406,
         "normalskill2": 4407,
+		"teamskill" : ["1912","1915"],
         "HP": 3336,
         "ATK": 1402,
         "REC": 494
@@ -47086,6 +47087,7 @@
         "leaderskill": 2382,
         "normalskill1": 4405,
         "normalskill2": 0,
+		"teamskill" : ["1911","1915"],
         "HP": 3005,
         "ATK": 1417,
         "REC": 543
@@ -47099,7 +47101,7 @@
         "normalskill2": 4402,
         "normalskill3": 4403,
         "normalskill4": 4404,
-        "teamskill": ["1614","1910","1939"],
+        "teamskill": ["1614","1910","1915","1939"],
         "HP": 2979,
         "ATK": 1764,
         "REC": 515
