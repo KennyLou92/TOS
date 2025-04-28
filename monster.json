@@ -47064,6 +47064,7 @@
         "leaderskill": 2384,
         "normalskill1": 4410,
         "normalskill2": 4411,
+		"teamskill" : ["1614","1623","1624"],
         "HP": 2934,
         "ATK": 1574,
         "REC": 454
@@ -47113,6 +47114,7 @@
         "leaderskill": 2384,
         "normalskill1": 4408,
         "normalskill2": 4409,
+		"teamskill" : ["1614","1622"],
         "HP": 2836,
         "ATK": 1520,
         "REC": 496
