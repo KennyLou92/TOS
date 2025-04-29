@@ -44,7 +44,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <title>
    神魔圖鑒
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "icon" type = "image/x-icon" href = "https://i.postimg.cc/26XNpq6C/2878.png"></link>
   <style>
    body {
       font-family: sans-serif;
@@ -57,23 +57,20 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
 	.gallery {
 	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* ✅ 每格最小120px 自適應 */
-	  gap: 16px; /* ✅ 卡片之間留足夠距離 */
+	  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	  gap: 20px; /* ✅ 中間空隙拉大 */
 	  justify-items: center;
 	  padding: 20px;
 	  max-width: 1200px;
 	  margin: 80px auto 0;
-	  box-sizing: border-box;
 	}
-
 	.monster {
+	  width: 120px; /* ✅ 每格固定小一點 */
 	  background: #fff;
 	  border-radius: 10px;
-	  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-	  padding: 12px 8px;
+	  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	  padding: 10px;
 	  text-align: center;
-	  width: 100%;
-	  max-width: 120px;
 	  transition: transform 0.2s, box-shadow 0.2s;
 	  display: flex;
 	  flex-direction: column;
@@ -94,41 +91,13 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
 	.monster div:first-child {
 	  font-weight: bold;
-	  font-size: 13px;
+	  font-size: 14px;
 	  margin-bottom: 4px;
-	  color: #333;
 	}
 
 	.monster div:last-child {
-	  font-size: 12px;
-	  color: #666;
-	}
-
-	/* ✅ 手機版額外設定 */
-	@media (max-width: 600px) {
-	  .gallery {
-		grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* 手機小格子90px */
-		gap: 12px;
-	  }
-
-	  .monster {
-		max-width: 90px;
-		padding: 10px 6px;
-	  }
-
-	  .monster img {
-		width: 60px;
-		height: 60px;
-		margin-bottom: 6px;
-	  }
-
-	  .monster div:first-child {
-		font-size: 12px;
-	  }
-
-	  .monster div:last-child {
-		font-size: 11px;
-	  }
+	  font-size: 13px;
+	  color: #555;
 	}
     .search-bar-wrapper {
       position: fixed;
@@ -262,15 +231,14 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	}
 
 	.modal-content {
+	  position: relative;
 	  background-color: #fefefe;
 	  margin: 5% auto;
 	  padding: 20px;
 	  border: 1px solid #888;
 	  width: 80%;
-	  max-height: 90vh;
-	  overflow-y: auto;
-	  border-radius: 8px; /* ✅建議加圓角，手機上更好看 */
-	  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* ✅建議加陰影 */
+	  max-height: 90vh;     /* 可選：限制最大高度 */
+	  overflow-y: auto;     /* 當內容真的太多可滾動 */
 	}
 
 	.close {
@@ -550,23 +518,17 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 .tab-pane.active {
   display: block;
 }
-@media (max-width: 600px) {
-  .modal-content {
-    width: 90%;      /* ✅小手機寬度放大 */
-    margin: 10% auto;
-    padding: 16px;
-  }
-  .tab-buttons {
-    flex-wrap: wrap;
-  }
-  .tab-btn {
-    min-width: 40px;
-    font-size: 12px;
-    height: 24px;
-    line-height: 22px;
-  }
-}
   </style>
+  <style>
+.team-skill-block {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.team-skill-block:last-child {
+  border-bottom: none;
+}
+    </style>
   <script>
   function parseColorTag(desc) {
   // 將 [color=#xxxxxx]內容[/color] 轉成 <span style="color:#xxxxxx">內容</span>
@@ -849,9 +811,9 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       selectedAttribute.push(value);
       this.classList.add('selected');
     }
-	// ✅ 點擊後隱藏屬性文字
+	// ✅ 隱藏 label
     document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'none';
-	// ✅ 更新 icon 顯示
+    // ✅ 更新 icon 顯示
     updateSelectedIcons('attributeDropdown', new Set(selectedAttribute));
     filterMonsters();
   });
@@ -869,9 +831,9 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       selectedRace.push(value);
       this.classList.add('selected');
     }
-	// ✅ 點擊後隱藏種族文字
+    // ✅ 隱藏 label
     document.querySelector('#raceDropdown .dropdown-button span').style.display = 'none';
-	// ✅ 更新 icon 顯示
+    // ✅ 更新 icon 顯示
     updateSelectedIcons('raceDropdown', new Set(selectedRace));
     filterMonsters();
   });
@@ -911,11 +873,12 @@ document.getElementById('resetFilters').addEventListener('click', function() {
   document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
   // 清空搜尋框
   document.getElementById('searchInput').value = '';
-  // ✅ reset 時顯示回文字 label
+  // ✅ 重設 icon 和 label 顯示
   updateSelectedIcons('attributeDropdown', new Set());
   updateSelectedIcons('raceDropdown', new Set());
   document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'inline';
   document.querySelector('#raceDropdown .dropdown-button span').style.display = 'inline';
+  // 重新篩選
   filterMonsters();
 });
 
@@ -1035,7 +998,7 @@ document.getElementById('resetFilters').addEventListener('click', function() {
           if (!desc) return null;
           desc = parseColorTag(desc);
           desc = parseSkillDesc(desc);
-          return `<div class="info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
+          return `<div class="team-skill-block info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
         })
         .filter(Boolean)
         .join('');
@@ -1116,9 +1079,11 @@ function processSkill(skillId, recRow,container) {
  const skillRow = document.createElement('div');
   skillRow.className = 'info-row';
   skillRow.setAttribute('data-skill', 'true');
+  if (container && container.childElementCount > 0) {
   skillRow.style.borderTop = '1px solid #ccc';
   skillRow.style.marginTop = '8px';
   skillRow.style.paddingTop = '8px';
+}
 
   const skill = window.skilldesc?.[skillId?.toString()];
   console.log("顯示技能:", skillId, skill);
