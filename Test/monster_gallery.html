@@ -55,36 +55,50 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       flex-direction: column;
       height: 100vh;
     }
-  .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
-  justify-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin-top: 80px;
-  padding: 10px; /* ✅ 手機時周圍留點空間 */
-  box-sizing: border-box; /* ✅ 保證不超出 */
-  border: 1px solid #ccc; /* ✅ 整個 gallery 外圍包一層 */
+	.gallery {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	  gap: 20px; /* ✅ 中間空隙拉大 */
+	  justify-items: center;
+	  padding: 20px;
+	  max-width: 1200px;
+	  margin: 80px auto 0;
+	}
+	.monster {
+	  width: 120px; /* ✅ 每格固定小一點 */
+	  background: #fff;
+	  border-radius: 10px;
+	  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	  padding: 10px;
+	  text-align: center;
+	  transition: transform 0.2s, box-shadow 0.2s;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
 	}
 
-	.monster {
-	  width: 142px;
-	  text-align: center;
-	  padding: 8px;
-	  box-sizing: border-box;
-	  border: 1px solid #ccc; /* 四邊都有邊框 */
-	  border-radius: 8px;     /* (建議) 圓角一點會更美觀 */
-	  background: white;     /* (建議) 背景弄成白色，和外面的區隔開 */
-	  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* (建議) 加一點陰影，看起來更有獨立格效果 */
+	.monster:hover {
+	  transform: translateY(-5px);
+	  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 	}
-    .monster img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto 8px;
-    }
+
+	.monster img {
+	  width: 80px;
+	  height: 80px;
+	  object-fit: contain;
+	  margin-bottom: 8px;
+	}
+
+	.monster div:first-child {
+	  font-weight: bold;
+	  font-size: 14px;
+	  margin-bottom: 4px;
+	}
+
+	.monster div:last-child {
+	  font-size: 13px;
+	  color: #555;
+	}
     .search-bar-wrapper {
       position: fixed;
       top: 0;
