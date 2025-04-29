@@ -452,21 +452,44 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 	  content: '▲';
 	}
 	@media (max-width: 600px) {
-	  .modal-content {
-		width: 90%;
-		margin: 10% auto;
-		padding: 16px;
+	  .gallery {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		gap: 12px;
+		padding: 10px;
+		margin-top: 60px;
 	  }
-	  .tab-buttons {
-		flex-wrap: wrap;
+
+	  .monster {
+		width: 100px;
+		padding: 6px;
 	  }
-	  .tab-btn {
-		min-width: 40px;
+
+	  .monster img {
+		width: 60px;
+		height: 60px;
+	  }
+
+	  .monster div:first-child,
+	  .monster div:last-child {
 		font-size: 12px;
-		height: 24px;
-		line-height: 22px;
+	  }
+
+	  .search-bar {
+		width: 70%;
+		margin-left: 10px;
+	  }
+
+	  .dropdown-button {
+		font-size: 12px;
+		padding: 6px 8px;
+	  }
+
+	  #scrollButtons button {
+		font-size: 12px;
+		padding: 8px;
 	  }
 	}
+
   </style>
   <style>
     .tab-container { margin-top: 16px; }
