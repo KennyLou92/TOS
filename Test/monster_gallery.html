@@ -44,6 +44,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   <title>
    神魔圖鑒
   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
    body {
       font-family: sans-serif;
@@ -54,15 +55,18 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       flex-direction: column;
       height: 100vh;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 10px;
-      justify-items: center;
-      width: 100%;
-      max-width: 1200px;
-      margin-top: 80px;
-    }
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 80px;
+  padding: 10px; /* ✅ 手機時周圍留點空間 */
+  box-sizing: border-box; /* ✅ 保證不超出 */
+	}
+
     .monster {
       width: 142px;
       text-align: center;
@@ -495,6 +499,22 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
 .tab-pane.active {
   display: block;
+}
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+    padding: 16px;
+  }
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+  .tab-btn {
+    min-width: 40px;
+    font-size: 12px;
+    height: 24px;
+    line-height: 22px;
+  }
 }
   </style>
   <script>
