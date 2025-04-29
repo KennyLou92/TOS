@@ -41,6 +41,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
    神魔圖鑒
   </title>
@@ -57,12 +58,14 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
 	.gallery {
 	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	  gap: 20px; /* ✅ 中間空隙拉大 */
+	  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	  gap: 10px;
 	  justify-items: center;
-	  padding: 20px;
+	  width: 100%;
 	  max-width: 1200px;
-	  margin: 80px auto 0;
+	  margin-top: 80px;
+	  padding: 10px;
+	  box-sizing: border-box;
 	}
 	.monster {
 	  width: 120px; /* ✅ 每格固定小一點 */
@@ -449,6 +452,22 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
 	.skill-desc.expanded::after {
 	  content: '▲';
+	}
+	@media (max-width: 600px) {
+	  .modal-content {
+		width: 90%;
+		margin: 10% auto;
+		padding: 16px;
+	  }
+	  .tab-buttons {
+		flex-wrap: wrap;
+	  }
+	  .tab-btn {
+		min-width: 40px;
+		font-size: 12px;
+		height: 24px;
+		line-height: 22px;
+	  }
 	}
   </style>
   <style>
