@@ -57,20 +57,23 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
     }
 	.gallery {
 	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	  gap: 20px; /* ✅ 中間空隙拉大 */
+	  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* ✅ 每格最小120px 自適應 */
+	  gap: 16px; /* ✅ 卡片之間留足夠距離 */
 	  justify-items: center;
 	  padding: 20px;
 	  max-width: 1200px;
 	  margin: 80px auto 0;
+	  box-sizing: border-box;
 	}
+
 	.monster {
-	  width: 120px; /* ✅ 每格固定小一點 */
 	  background: #fff;
 	  border-radius: 10px;
-	  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-	  padding: 10px;
+	  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	  padding: 12px 8px;
 	  text-align: center;
+	  width: 100%;
+	  max-width: 120px;
 	  transition: transform 0.2s, box-shadow 0.2s;
 	  display: flex;
 	  flex-direction: column;
@@ -91,13 +94,41 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
 
 	.monster div:first-child {
 	  font-weight: bold;
-	  font-size: 14px;
+	  font-size: 13px;
 	  margin-bottom: 4px;
+	  color: #333;
 	}
 
 	.monster div:last-child {
-	  font-size: 13px;
-	  color: #555;
+	  font-size: 12px;
+	  color: #666;
+	}
+
+	/* ✅ 手機版額外設定 */
+	@media (max-width: 600px) {
+	  .gallery {
+		grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* 手機小格子90px */
+		gap: 12px;
+	  }
+
+	  .monster {
+		max-width: 90px;
+		padding: 10px 6px;
+	  }
+
+	  .monster img {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 6px;
+	  }
+
+	  .monster div:first-child {
+		font-size: 12px;
+	  }
+
+	  .monster div:last-child {
+		font-size: 11px;
+	  }
 	}
     .search-bar-wrapper {
       position: fixed;
