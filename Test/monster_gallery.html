@@ -68,15 +68,16 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   border: 1px solid #ccc; /* ✅ 整個 gallery 外圍包一層 */
 	}
 
-    .monster {
-      width: 142px;
-      text-align: center;
-      padding: 8px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-	  border-right: 1px solid #ccc;
-	  border-bottom: 1px solid #ccc;
-    }
+	.monster {
+	  width: 142px;
+	  text-align: center;
+	  padding: 8px;
+	  box-sizing: border-box;
+	  border: 1px solid #ccc; /* 四邊都有邊框 */
+	  border-radius: 8px;     /* (建議) 圓角一點會更美觀 */
+	  background: white;     /* (建議) 背景弄成白色，和外面的區隔開 */
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* (建議) 加一點陰影，看起來更有獨立格效果 */
+	}
     .monster img {
       width: 80px;
       height: 80px;
