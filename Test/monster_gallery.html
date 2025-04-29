@@ -65,6 +65,7 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
   margin-top: 80px;
   padding: 10px; /* ✅ 手機時周圍留點空間 */
   box-sizing: border-box; /* ✅ 保證不超出 */
+  border: 1px solid #ccc; /* ✅ 整個 gallery 外圍包一層 */
 	}
 
     .monster {
@@ -73,6 +74,8 @@ function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {   
       padding: 8px;
       box-sizing: border-box;
       border: 1px solid #ccc;
+	  border-right: 1px solid #ccc;
+	  border-bottom: 1px solid #ccc;
     }
     .monster img {
       width: 80px;
