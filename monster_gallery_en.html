@@ -889,10 +889,10 @@ function filterMonsters() {
     if (selectedRace.length > 0 && !selectedRace.includes(race)) {
       show = false;
     }
-    // 關鍵字搜尋
-    if (search && !(name.includes(search) || id.includes(search))) {
-      show = false;
-    }
+    // 關鍵字搜尋（不區分大小寫）
+	if (search && !(name.toLowerCase().includes(search.toLowerCase()) || id.toLowerCase().includes(search.toLowerCase()))) {
+	  show = false;
+	}
     monster.style.display = show ? '' : 'none';
   });
 }
