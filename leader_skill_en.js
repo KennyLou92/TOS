@@ -12220,6 +12220,11 @@ window.leader_skill = [
     "desc": "I. Team Attack x 33;\n    HP & Recovery x 3.3.\nII. “Kosaku Kawajiri & Deadly Queen”:\n⇒ Attack x 8 additionally.\nIII. By dissolving Runestones of\n     an enemy’s Attribute,\n⇒ there is a 33% chance that\n    the first attack of each enemy\n    of that Attribute(s) \n    will be dodged in that Round."
   },
   {
+    "id": 2551,
+    "name": "Two-faced Devil",
+    "desc": "When the Team has only【JoJo’s Bizarre Adventure】Members, Humans or Demons:\nI. Team Attack x 60.\nII. “Diavolo & Emperor Crimson”:\n⓵ HP & Recovery x 6.\n⓶ Damage will be dealt \n     regardless of Defense.\nIII. By dissolving ≥6 groups\n     of Runestones:\n⓵ Team Attack x 2.6 additionally.\n⓶ The Character’s Attack\n     x 6 additionally."
+  },
+  {
     "id": 2554,
     "name": "The Most Powerful Star Platinum",
     "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n  and Dark Members:\n⓵ Attack x 30.\n⓶ HP & Recovery x 3.6.\nII.【JoJo’s Bizarre Adventure】 Members:\n⓵ Attack x 3 additionally.\n⓶ Attack & Recovery  x 1.6 additionally.\nIII. By dissolving Runestones \n     of a Member’s Attribute,\n⇒ Team Attack x 3 additionally.\nIV. At the end of each Round,\n⇒ Humans, 【JoJo’s Bizarre Adventure】\n    and Dark Members:\n⓵ Skill CDs -1\n⓶ Skill EPs +1\n(Dissolving Runestones is necessary.)"
