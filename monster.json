@@ -50768,6 +50768,7 @@
         "leaderskill": 2553,
         "normalskill1": 4951,
         "normalskill2": 4952,
+		"teamskill" : 1934,
         "HP": 4349,
         "ATK": 2143,
         "REC": 691
