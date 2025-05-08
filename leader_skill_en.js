@@ -12225,6 +12225,16 @@ window.leader_skill = [
     "desc": "When the Team has only【JoJo’s Bizarre Adventure】Members, Humans or Demons:\nI. Team Attack x 60.\nII. “Diavolo & Emperor Crimson”:\n⓵ HP & Recovery x 6.\n⓶ Damage will be dealt \n     regardless of Defense.\nIII. By dissolving ≥6 groups\n     of Runestones:\n⓵ Team Attack x 2.6 additionally.\n⓶ The Character’s Attack\n     x 6 additionally."
   },
   {
+    "id": 2552,
+    "name": "The Way to Heaven",
+    "desc": "When the Team has only【JoJo’s Bizarre Adventure】Members, Humans, Gods or Demons:\nI. Team Attack x 239; \n   HP & Recovery x 5.\nII. If any of the following numbers\n    is a prime number ≤47:\n▋Groups of Runestones dissolved in the first batch\n▋Number of Runestones dissolved in the first batch\n▋Total Combo count\n⇒ the Character's Attack x 3 additionally."
+  },
+  {
+    "id": 2553,
+    "name": "At the End of Universe",
+    "desc": "When the Team has only 【JoJo’s Bizarre Adventure】 Members, Humans, Gods or Demons:\nI. Team Attack x 251;\n   HP & Recovery x 5.\nII. If any of the following numbers\n    is a prime number ≤47:\n▋Groups of Runestones dissolved in the first batch\n▋Number of Runestones dissolved in the first batch\n▋Total Combo count\n⇒ the Character's Attack x 5 additionally."
+  },
+  {
     "id": 2554,
     "name": "The Most Powerful Star Platinum",
     "desc": "I. Humans, 【JoJo’s Bizarre Adventure】\n  and Dark Members:\n⓵ Attack x 30.\n⓶ HP & Recovery x 3.6.\nII.【JoJo’s Bizarre Adventure】 Members:\n⓵ Attack x 3 additionally.\n⓶ Attack & Recovery  x 1.6 additionally.\nIII. By dissolving Runestones \n     of a Member’s Attribute,\n⇒ Team Attack x 3 additionally.\nIV. At the end of each Round,\n⇒ Humans, 【JoJo’s Bizarre Adventure】\n    and Dark Members:\n⓵ Skill CDs -1\n⓶ Skill EPs +1\n(Dissolving Runestones is necessary.)"
