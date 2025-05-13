@@ -50799,6 +50799,28 @@
         "ATK": 100,
         "REC": 100
     },
+	    {
+        "id": "10918",
+        "attribute": null,
+        "race": null,
+        "leaderskill": 0,
+        "normalskill1": 0,
+        "normalskill2": 0,
+        "HP": null,
+        "ATK": null,
+        "REC": null
+    },
+		    {
+        "id": "10919",
+        "attribute": null,
+        "race": null,
+        "leaderskill": 0,
+        "normalskill1": 0,
+        "normalskill2": 0,
+        "HP": null,
+        "ATK": null,
+        "REC": null
+    },
     {
         "id": "10931",
         "attribute": null,
