@@ -39344,6 +39344,46 @@ window.skillData = [
     "type": "CD"
   },
   {
+    "skillid": 4948,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4949,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4950,
+    "min_cd": 7,
+    "start_cd": 18,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 4951,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 7,
+    "start_ep": 13,
+    "type": "EP"
+  },
+  {
+    "skillid": 4952,
+    "min_cd": 1,
+    "start_cd": 12,
+    "min_ep": 7,
+    "start_ep": 13,
+    "type": "EP"
+  },
+  {
     "skillid": 4953,
     "min_cd": 1,
     "start_cd": 12,
