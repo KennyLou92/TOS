@@ -32076,6 +32076,17 @@
         "REC": 18
     },
     {
+        "id": "2927",
+        "attribute": null,
+        "race": null,
+        "leaderskill": null,
+        "normalskill1": null,
+        "normalskill2": null,
+        "HP": null,
+        "ATK": null,
+        "REC": null
+    },
+    {
         "id": "3001",
         "attribute": 5,
         "race": 3,
