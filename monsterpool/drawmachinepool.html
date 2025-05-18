@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Monster Pool Viewer</title>
   <style>
     body {
@@ -30,16 +30,18 @@
 <body>
   <h1>選擇卡池</h1>
   <select id="poolDropdown"></select>
-
   <div id="monsterContainer" class="monster-grid"></div>
 
   <script>
-    let jsonData;
+    let jsonData = {};
 
     fetch('luckyDrawPoolMonster.json')
       .then(response => response.json())
       .then(data => {
-        jsonData = data;
+        // 重新整理成 poolId => monsterRates 的格式
+        data.data.forEach(entry => {
+          jsonData[entry.poolId] = entry.monsterRates;
+        });
         populateDropdown();
       });
 
@@ -48,20 +50,23 @@
       Object.keys(jsonData).forEach(poolId => {
         const option = document.createElement('option');
         option.value = poolId;
-        option.textContent = `Pool ${poolId}`;
+        option.textContent = poolId;
         dropdown.appendChild(option);
       });
 
       dropdown.addEventListener('change', () => displayMonsters(dropdown.value));
+
       // 初始顯示第一個 pool
       if (dropdown.options.length > 0) {
-        displayMonsters(dropdown.options[0].value);
+        dropdown.value = dropdown.options[0].value;
+        displayMonsters(dropdown.value);
       }
     }
 
     function displayMonsters(poolId) {
       const container = document.getElementById('monsterContainer');
       container.innerHTML = '';
+
       const monsters = jsonData[poolId];
 
       monsters.forEach(entry => {
@@ -72,9 +77,9 @@
         img.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${entry.monsterId}.jpg`;
         img.alt = entry.monsterId;
 
-        const rate = entry.rate ? `<div>${entry.rate}%</div>` : '';
+        const rateText = entry.rate !== undefined ? `<div>${(entry.rate * 100).toFixed(3)}%</div>` : '';
 
-        card.innerHTML = `<img src="${img.src}" alt="${entry.monsterId}">${rate}`;
+        card.innerHTML = `<img src="${img.src}" alt="${entry.monsterId}">${rateText}`;
         container.appendChild(card);
       });
     }
