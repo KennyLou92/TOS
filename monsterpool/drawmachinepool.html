@@ -63,7 +63,7 @@
       }
     }
 
-    function displayMonsters(poolId) {
+	function displayMonsters(poolId) {
 	  const container = document.getElementById('monsterContainer');
 	  container.innerHTML = '';
 
@@ -73,7 +73,7 @@
 		const card = document.createElement('div');
 		card.className = 'monster-card';
 
-		const paddedId = entry.monsterId.toString().padStart(5, '0');
+		const paddedId = entry.monsterId.toString().padStart(4, '0'); // << 補成4位數
 		const img = document.createElement('img');
 		img.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${paddedId}.jpg`;
 		img.alt = entry.monsterId;
