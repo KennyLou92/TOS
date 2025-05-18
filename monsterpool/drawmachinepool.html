@@ -64,25 +64,26 @@
     }
 
     function displayMonsters(poolId) {
-      const container = document.getElementById('monsterContainer');
-      container.innerHTML = '';
+	  const container = document.getElementById('monsterContainer');
+	  container.innerHTML = '';
 
-      const monsters = jsonData[poolId];
+	  const monsters = jsonData[poolId];
 
-      monsters.forEach(entry => {
-        const card = document.createElement('div');
-        card.className = 'monster-card';
+	  monsters.forEach(entry => {
+		const card = document.createElement('div');
+		card.className = 'monster-card';
 
-        const img = document.createElement('img');
-        img.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${entry.monsterId}.jpg`;
-        img.alt = entry.monsterId;
+		const paddedId = entry.monsterId.toString().padStart(5, '0');
+		const img = document.createElement('img');
+		img.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${paddedId}.jpg`;
+		img.alt = entry.monsterId;
 
-        const rateText = entry.rate !== undefined ? `<div>${(entry.rate * 100).toFixed(3)}%</div>` : '';
+		const rateText = entry.rate !== undefined ? `<div>${(entry.rate * 100).toFixed(3)}%</div>` : '';
 
-        card.innerHTML = `<img src="${img.src}" alt="${entry.monsterId}">${rateText}`;
-        container.appendChild(card);
-      });
-    }
+		card.innerHTML = `<img src="${img.src}" alt="${entry.monsterId}">${rateText}`;
+		container.appendChild(card);
+	  });
+	}
   </script>
 </body>
 </html>
