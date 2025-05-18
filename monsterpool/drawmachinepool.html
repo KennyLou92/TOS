@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monster Pool Viewer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .monster-grid {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .monster-card {
+      text-align: center;
+      font-size: 14px;
+    }
+    .monster-card img {
+      width: 100%;
+      max-width: 80px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>選擇卡池</h1>
+  <select id="poolDropdown"></select>
+
+  <div id="monsterContainer" class="monster-grid"></div>
+
+  <script>
+    let jsonData;
+
+    fetch('luckyDrawPoolMonster.json')
+      .then(response => response.json())
+      .then(data => {
+        jsonData = data;
+        populateDropdown();
+      });
+
+    function populateDropdown() {
+      const dropdown = document.getElementById('poolDropdown');
+      Object.keys(jsonData).forEach(poolId => {
+        const option = document.createElement('option');
+        option.value = poolId;
+        option.textContent = `Pool ${poolId}`;
+        dropdown.appendChild(option);
+      });
+
+      dropdown.addEventListener('change', () => displayMonsters(dropdown.value));
+      // 初始顯示第一個 pool
+      if (dropdown.options.length > 0) {
+        displayMonsters(dropdown.options[0].value);
+      }
+    }
+
+    function displayMonsters(poolId) {
+      const container = document.getElementById('monsterContainer');
+      container.innerHTML = '';
+      const monsters = jsonData[poolId];
+
+      monsters.forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'monster-card';
+
+        const img = document.createElement('img');
+        img.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${entry.monsterId}.jpg`;
+        img.alt = entry.monsterId;
+
+        const rate = entry.rate ? `<div>${entry.rate}%</div>` : '';
+
+        card.innerHTML = `<img src="${img.src}" alt="${entry.monsterId}">${rate}`;
+        container.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>
