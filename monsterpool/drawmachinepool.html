@@ -8,28 +8,53 @@
       font-family: sans-serif;
       padding: 20px;
     }
+
+    h1 {
+      text-align: center;
+    }
+
+    .center {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #poolDropdown {
+      font-size: 16px;
+      padding: 6px 12px;
+    }
+
     .monster-grid {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
-      gap: 10px;
+      gap: 4px;
       margin-top: 20px;
+      justify-items: center;
     }
+
     .monster-card {
       text-align: center;
-      font-size: 14px;
+      font-size: 13px;
+      transition: transform 0.2s;
     }
+
+    .monster-card:hover {
+      transform: scale(1.05);
+    }
+
     .monster-card img {
       width: 100%;
-      max-width: 80px;
+      max-width: 60px;
       height: auto;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
   <h1>選擇卡池</h1>
-  <select id="poolDropdown"></select>
+  <div class="center">
+    <select id="poolDropdown"></select>
+  </div>
   <div id="monsterContainer" class="monster-grid"></div>
 
   <script>
@@ -38,7 +63,6 @@
     fetch('luckyDrawPoolMonster.json')
       .then(response => response.json())
       .then(data => {
-        // 重新整理成 poolId => monsterRates 的格式
         data.data.forEach(entry => {
           jsonData[entry.poolId] = entry.monsterRates;
         });
@@ -56,34 +80,31 @@
 
       dropdown.addEventListener('change', () => displayMonsters(dropdown.value));
 
-      // 初始顯示第一個 pool
       if (dropdown.options.length > 0) {
         dropdown.value = dropdown.options[0].value;
         displayMonsters(dropdown.value);
       }
     }
 
-	function displayMonsters(poolId) {
-	  const container = document.getElementById('monsterContainer');
-	  container.innerHTML = '';
+    function displayMonsters(poolId) {
+      const container = document.getElementById('monsterContainer');
+      container.innerHTML = '';
 
-	  const monsters = jsonData[poolId];
+      const monsters = jsonData[poolId];
 
-	  monsters.forEach(entry => {
-		const card = document.createElement('div');
-		card.className = 'monster-card';
+      monsters.forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'monster-card';
 
-		const paddedId = entry.monsterId.toString().padStart(4, '0'); // << 補成4位數
-		const img = document.createElement('img');
-		img.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${paddedId}.jpg`;
-		img.alt = entry.monsterId;
+        const paddedId = entry.monsterId.toString().padStart(4, '0');
+        const imgUrl = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${paddedId}.jpg`;
 
-		const rateText = entry.rate !== undefined ? `<div>${(entry.rate * 100).toFixed(3)}%</div>` : '';
+        const rateText = entry.rate !== undefined ? `<div>${(entry.rate * 100).toFixed(3)}%</div>` : '';
 
-		card.innerHTML = `<img src="${img.src}" alt="${entry.monsterId}">${rateText}`;
-		container.appendChild(card);
-	  });
-	}
+        card.innerHTML = `<img src="${imgUrl}" alt="${entry.monsterId}">${rateText}`;
+        container.appendChild(card);
+      });
+    }
   </script>
 </body>
 </html>
