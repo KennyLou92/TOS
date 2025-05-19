@@ -23,14 +23,13 @@
       padding: 6px 12px;
     }
 
-    .monster-grid {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      gap: 4px;
-      margin-top: 20px;
-	  justify-content: center;
-	  justify-items: center;
-    }
+	.monster-grid {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;  /* 水平置中 */
+	  gap: 6px;
+	  margin-top: 20px;
+	}
 
     .monster-card {
       text-align: center;
