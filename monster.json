@@ -32082,6 +32082,7 @@
         "leaderskill": 1865,
         "normalskill1": 5033,
         "normalskill2": null,
+		"teamskill": ["1994"],
         "HP": null,
         "ATK": null,
         "REC": null
@@ -50535,6 +50536,7 @@
         "leaderskill": 2399,
         "normalskill1": 5013,
         "normalskill2": null,
+		"teamskill": ["1983","1984"],
         "HP": null,
         "ATK": null,
         "REC": null
@@ -50831,6 +50833,7 @@
         "leaderskill": 2573,
         "normalskill1": 5007,
         "normalskill2": 0,
+		"teamskill":["1973","1974","1975","1976","1979"],
         "HP": null,
         "ATK": null,
         "REC": null
@@ -50842,6 +50845,7 @@
         "leaderskill": 2398,
         "normalskill1": 5012,
         "normalskill2": 0,
+		"teamskill":["1979"],
         "HP": null,
         "ATK": null,
         "REC": null
@@ -50853,6 +50857,7 @@
         "leaderskill": 2400,
         "normalskill1": 5009,
         "normalskill2": 0,
+		"teamskill":["1976"],
         "HP": null,
         "ATK": null,
         "REC": null
