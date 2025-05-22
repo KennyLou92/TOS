@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+ <head>
+<script>
+function applySkillTypeTag(skillId, labelElement) {  if (!window.skillData) {    return;
+  }
+  const info = skillData.find(s => s.skillid === parseInt(skillId));
+  if (!info) {    return;
+  }  const value = info.type === 'CD' ? info.min_cd : info.min_ep;
+  const tag = document.createElement('span');
+  tag.textContent = ` [${info.type}: ${value}]`;
+  tag.style.marginLeft = '6px';
+  tag.style.color = info.type === 'CD' ? '#007bff' : '#28a745';
+  tag.style.fontSize = '13px';
+  labelElement.appendChild(tag);
+}
+</script>
+  <script src="skins.js">
+  </script>
+  <script src="board.icons.js">
+  </script>
+  <script src="skillData.js">
+  </script>
+  <script src="skilldesc.js">
+  </script>
+  <script src="leader_skill_zh.js">
+  </script>
+  </script>
+  <script src="teamskilldesczh.js">
+  </script>
+  <script>
+    // 檢查 skilldesc 是否正確載入
+    window.addEventListener('load', () => {
+  if (!window.skilldesc) {
+    console.error('skilldescen.js 未正確載入');
+  } else {
+    console.log('skilldescen.js 載入成功');
+    console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
+  }
+});
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   神魔圖鑒
+  </title>
+  <link rel = "icon" type = "image/x-icon" href = "https://i.postimg.cc/26XNpq6C/2878.png"></link>
+  <style>
+   body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 100vh;
+    }
+	.gallery {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	  gap: 20px; /* ✅ 中間空隙拉大 */
+	  justify-items: center;
+	  padding: 10px;
+	  max-width: 1200px;
+	  margin: 80px auto 0;
+	}
+	.monster {
+	  width: 120px; /* ✅ 每格固定小一點 */
+	  background: #fff;
+	  border-radius: 10px;
+	  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	  padding: 10px;
+	  text-align: center;
+	  transition: transform 0.2s, box-shadow 0.2s;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+
+	.monster:hover {
+	  transform: translateY(-5px);
+	  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+	}
+
+	.monster img {
+	  width: 80px;
+	  height: 80px;
+	  object-fit: contain;
+	  margin-bottom: 8px;
+	}
+
+	.monster div:first-child {
+	  font-weight: bold;
+	  font-size: 14px;
+	  margin-bottom: 4px;
+	}
+
+	.monster div:last-child {
+	  font-size: 13px;
+	  color: #555;
+	}
+    .search-bar-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar {
+      width: 25%;
+      margin-left: 20px;
+      background: #fff;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border-radius: 6px;
+      position: relative;
+      z-index: 1000;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .dropdown {
+      position: relative;
+      margin-left: 10px;
+    }
+    .dropdown-button {
+      background: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: border-color 0.3s;
+    }
+    .dropdown-button:hover {
+      border-color: #888;
+    }
+    .dropdown-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    .dropdown-content {
+      display: none;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      min-width: max-content;
+      padding: 4px 0;
+      border-radius: 6px;
+      transition: opacity 0.3s ease;
+    }
+    .dropdown-content.show {
+      display: block;
+      opacity: 1;
+    }
+    .dropdown-item {
+      padding: 6px 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+    .dropdown-item:hover {
+      background-color: #f0f0f0;
+    }
+    .dropdown-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .dropdown-item.selected {
+      opacity: 0.4;
+    /* pointer-events: none; */
+    }
+	#scrollButtons {
+	  position: fixed;
+	  right: 20px;
+	  bottom: 20px;
+	  display: none;
+	  flex-direction: column;
+	  gap: 10px;
+	  z-index: 999;
+	}
+
+	#scrollButtons button {
+	  padding: 10px 12px;
+	  font-size: 14px;
+	  border: none;
+	  border-radius: 8px;
+	  background-color: #333;
+	  color: white;
+	  cursor: pointer;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	  transition: background-color 0.3s ease;
+	}
+
+	#scrollButtons button:hover {
+	  background-color: #555;
+	}
+	#resetFilters {
+	  padding: 8px;
+	  border: none;
+	  background: none;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  cursor: pointer;
+	}
+	#resetFilters img {
+	  width: 30px;
+	  height: 30px;
+	  object-fit: contain;
+	}
+
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: 5% auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	  max-height: 90vh;     /* 可選：限制最大高度 */
+	  overflow-y: auto;     /* 當內容真的太多可滾動 */
+	}
+
+	.close {
+	  position: absolute;
+	  top: 10px;
+	  right: 10px;
+	  font-size: 28px;
+	  color: #aaa;
+	  cursor: pointer;
+	  transition: color 0.2s;
+	  z-index: 10;
+	}
+
+	.close:hover {
+	  color: #333;
+	}
+
+	#monsterInfoContent {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-start; /* 保持內容在上 */
+	  height: 100%; /* 使容器佔據全部高度 */
+	  position: relative;
+	  /* background-position: center bottom; */
+	  /* background-size: cover; */
+	}
+	#monsterInfoContent > * {
+	  position: relative;
+	  z-index: 1;
+	}
+	#monsterInfoContent .content {
+	  flex-grow: 1;  /* 使內容區域可以擴展，填滿剩餘空間 */
+	  height: auto;     /* ✅ 新增這行，確保會撐開高度 */
+	  overflow: visible; /* ✅ 讓裡面的內容正常顯示 */
+	}
+	.info-row {
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 5px 0;
+	}
+
+	.info-label {
+	  font-weight: bold;
+	  width: 100px;  /* 控制左側的寬度 */
+	}
+
+	.info-value {
+	  width: 100px;  /* 控制右側的寬度 */
+	  text-align: center;  /* 讓數據居中顯示 */
+	}
+
+	.info-row[data-skill="true"] .info-value {
+	  width: auto;
+	  flex-grow: 1;
+	  text-align: left;
+	}
+
+	#monsterInfoContent button {
+	  margin-top: auto;
+	  padding: 10px 20px;
+	  background-color: #333;
+	  color: white;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	#monsterInfoContent button:hover {
+	  background-color: #555;
+	}
+  
+#monsterInfoContent {
+  position: relative;
+  width : 100%;
+  padding-top: 40px; /* ✅ 預留空間，讓 .close 不會被蓋住 */
+  /* background-position: center bottom; */
+  /* background-size: cover; */
+}
+#monsterInfoContent::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 60px; /* 距離上方固定 60px，可依需求調整 */
+  width: 400px;
+  height: 400px;
+  transform: translateX(-50%);
+  background-image: var(--monster-bg);
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  opacity: 0.2;
+  z-index: 0;
+}
+#monsterInfoContent > * {
+  position: relative;
+  z-index: 1;
+}
+#monsterID {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+#monsterID img {
+  width: 24px;
+  height: 24px;
+}
+    .skill-desc {
+      display: block !important; /* 強制顯示 */
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+    .skill-desc.collapsed {
+    max-height: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: none !important;
+    }
+    .skill-desc.collapsed::after {
+      content: '▼';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(to top, white, transparent 50%);
+      padding: 4px 8px;
+      font-size: 12px;
+      color: #555;
+    }
+    .skill-desc.expanded {
+    white-space: normal;
+    max-height: none;
+    overflow: visible;
+    }
+    .skill-desc.expanded::after {
+      content: '▲';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(to top, white, transparent 50%);
+      padding: 4px 8px;
+      font-size: 12px;
+      color: #555;
+    }
+    .board-hover {
+      position: relative;
+      cursor: pointer;
+      color: #0077cc;
+      text-decoration: underline dotted;
+    }
+    .board-tooltip {
+      position: absolute;
+      top: 120%;
+      left: 0;
+      z-index: 999;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .board-tooltip table td {
+      padding: 2px;
+    }
+    .board-tooltip img {
+      width: 40px;
+      height: 40px;
+    }
+
+	/* ✅ 讓技能區塊上下排列 */
+	.info-row[data-skill="true"] {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+
+	/* ✅ 技能名稱不換行，讓它顯眼一點 */
+	.info-row[data-skill="true"] .info-label {
+	  white-space: nowrap;
+	  font-size: 16px;
+	  margin-bottom: 4px;
+	  color: #333;
+	}
+
+	/* ✅ 技能描述內文樣式（讓它寬度自適應並自然換行） */
+	.info-row[data-skill="true"] .info-value {
+	  width: 100%;
+	}
+
+	/* ✅ 折疊/展開箭頭 */
+	.skill-desc.collapsed::after,
+	.skill-desc.expanded::after {
+	  content: '▼';
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  padding: 0 4px;
+	  font-size: 12px;
+	  background: linear-gradient(to left, white 30%, transparent);
+	  color: #777;
+	}
+
+	/* 箭頭符號（只在 collapsed 狀態才顯示） */
+	.info-row[data-skill="true"] .info-label::after {
+	  content: ' ▼';
+	  font-size: 12px;
+	  color: #666;
+	  margin-left: 6px;
+	  cursor: pointer;
+	}
+
+	.skill-desc.expanded::after {
+	  content: '▲';
+	}
+	@media (max-width: 600px) {
+	  .modal-content {
+		width: 90%;
+		margin: 10% auto;
+		padding: 16px;
+	  }
+	  .tab-buttons {
+		flex-wrap: wrap;
+	  }
+	  .tab-btn {
+		min-width: 40px;
+		font-size: 12px;
+		height: 24px;
+		line-height: 22px;
+	  }
+	}
+  </style>
+  <style>
+    .tab-container { margin-top: 16px; }
+    .tab-buttons {
+  display: flex;
+  gap: 4px;
+  background: none;
+  border-bottom: none; /* 移除底線 */
+  margin-bottom: 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  padding: 2px 10px 2px 10px; /* 更小的 padding */
+  position: relative;
+  font-size: 13px;            /* 更小字體 */
+  font-weight: 500;
+  color: #888;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: color 0.2s, background 0.2s;
+  box-shadow: none;
+  outline: none;
+  min-width: 48px;
+  height: 28px;
+  line-height: 24px;
+  display: flex;               /* 新增 */
+  align-items: center;         /* 垂直置中 */
+  justify-content: center;     /* 水平置中 */
+  text-align: center;   
+  overflow: hidden;       /* 保險起見 */
+}
+
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #007bff;
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.tab-btn.active {
+  color: #333;
+  background: #e3f0ff;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  /* border-bottom: 3px solid #007bff;  // 移除舊底線 */
+  transition: background 0.2s, box-shadow 0.2s, border-bottom 0.2s;
+}
+
+.tab-btn.active::after {
+  width: 80%;
+}
+.tab-content { margin-top: 12px; }
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+  </style>
+  <style>
+.team-skill-block {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.team-skill-block:last-child {
+  border-bottom: none;
+}
+    </style>
+  <script>
+  function parseColorTag(desc) {
+  // 將 [color=#xxxxxx]內容[/color] 轉成 <span style="color:#xxxxxx">內容</span>
+  return desc.replace(/\[color=(#[0-9A-Fa-f]{6})\]([\s\S]*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+}</script>
+  <script>
+    // 確保 DOM 載入完成後執行
+  document.addEventListener('DOMContentLoaded', () => {
+  loadMonsters();
+  });
+
+  // 修改為：
+  window.addEventListener('load', async () => {
+    if (!window.skilldesc) {
+      console.error('技能資料載入失敗');
+      return;
+    }
+    console.log('技能資料載入成功');
+    console.log('已載入技能數量:', Object.keys(window.skilldesc).length);
+    await loadMonsters();
+  });
+
+  async function loadMonsters() {
+  try {
+    const [monsterResponse, nameResponse] = await Promise.all([
+      fetch('monster.json'),
+      fetch('monster_name_zh.json')
+    ]);
+    
+    const monsters = await monsterResponse.json();
+    const names = await nameResponse.json();
+    
+    const gallery = document.getElementById('monsterGallery');
+    
+    gallery.innerHTML = monsters.map(monster => {
+      // 修正名稱查找邏輯，確保 id 為數字類型
+      const nameObj = names.find(n => n.id === parseInt(monster.id));
+      const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+
+      // 新增：優先使用 skins.js 的 base64
+      let imgSrc = '';
+      if (window.skins && window.skins[monster.id]) {
+        imgSrc = window.skins[monster.id];
+      } else {
+        imgSrc = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
+      }
+      
+      return `
+        <div class="monster" 
+             data-attribute="${monster.attribute}" 
+             data-id="${monster.id}" 
+             data-race="${monster.race}" 
+             data-name="${monsterName}"
+             data-normalskill-id="${Array.isArray(monster.normalskill_id) ? monster.normalskill_id.join(',') : monster.normalskill_id || ''}">
+          <div>${monster.id}</div>
+          <img alt="${monsterName}"
+			   src="${imgSrc}"
+               src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg"
+               onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
+          <div>${monsterName}</div>
+        </div>
+      `;
+    }).join('');
+
+        // 重新綁定點擊事件
+        document.querySelectorAll('.monster').forEach(monster => {
+      monster.addEventListener('click', () => {
+        const id = monster.getAttribute('data-id');
+        fetchMonsterInfo(id, monster);
+      });
+    });
+
+  } catch (error) {
+    console.error('載入怪物資料時發生錯誤：', error);
+  }
+}
+  </script>
+ </head>
+ <body>
+  <div class="search-bar-wrapper">
+   <div class="search-bar">
+    <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入ID/名稱" type="text"/>
+   </div>
+   <!-- 屬性 -->
+   <div class="dropdown" id="attributeDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      屬性
+     </span>
+    </div>
+    <div class="dropdown-content" id="attributeContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="水" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/water.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="火" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fire.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="木" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/earth.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="光" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/light.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="暗" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dark.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+    </div>
+   </div>
+   <!-- 種族 -->
+   <div class="dropdown" id="raceDropdown">
+    <div class="dropdown-button dropdown-trigger">
+     <div class="selected-icons">
+     </div>
+     <span>
+      種族
+     </span>
+    </div>
+    <div class="dropdown-content" id="raceContent">
+     <div class="dropdown-item" data-value="1">
+      <img alt="人" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/human.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="2">
+      <img alt="獸" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/animal.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="3">
+      <img alt="妖" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/fairy.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="4">
+      <img alt="龍" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/dragon.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="5">
+      <img alt="神" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/god.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="8">
+      <img alt="魔" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/devil.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="10">
+      <img alt="機械" src="https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/mech.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="6">
+      <img alt="進化" src="https://i.postimg.cc/zbDvRhPc/evolve.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+     <div class="dropdown-item" data-value="7">
+      <img alt="強化" src="https://i.postimg.cc/cKB6HhT3/level.png" onerror="this.onerror=null;this.src='https://i.postimg.cc/6q0Y863v/unknown.png';"/>
+     </div>
+    </div>
+   </div>
+   <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">
+    <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
+   </button>
+  </div>
+  <div class="gallery" id="monsterGallery">
+  </div>
+  <div id="scrollButtons">
+   <button onclick="scrollToTop()">
+    <i class="fas fa-angle-up">
+    </i>
+   </button>
+   <button onclick="scrollToBottom()">
+    <i class="fas fa-angle-down">
+    </i>
+   </button>
+  </div>
+  <!-- Modal for displaying monster info -->
+  <div id="monsterInfoModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); padding-top: 60px;">
+   <div class="modal-content">
+    <span class="close" onclick="closeModal()">
+     <i class="fas fa-times">
+     </i>
+    </span>
+    <div id="monsterInfoContent">
+     <div class="content">
+      <div id="monsterID">
+      </div>
+      <div class="info-row">
+        <p class="info-label"></p>
+        <p class="info-value" id="monsterLeaderSkill"></p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        HP:
+       </p>
+       <p class="info-value" id="monsterHP">
+       </p>
+       <p class="info-label">
+        HP (+20):
+       </p>
+       <p class="info-value" id="monsterHP1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        ATK:
+       </p>
+       <p class="info-value" id="monsterATK">
+       </p>
+       <p class="info-label">
+        ATK (+20):
+       </p>
+       <p class="info-value" id="monsterATK1_2">
+       </p>
+      </div>
+      <div class="info-row">
+       <p class="info-label">
+        REC:
+       </p>
+       <p class="info-value" id="monsterREC">
+       </p>
+       <p class="info-label">
+        REC (+20):
+       </p>
+       <p class="info-value" id="monsterREC1_2">
+       </p>
+      </div>
+      <div class="tab-container">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="leader">隊長技</button>
+          <button class="tab-btn" data-tab="skill">主動技</button>
+		  <button class="tab-btn" data-tab="team">隊伍技</button>
+        </div>
+        <div class="tab-content" id="tab-leader"></div>
+        <div class="tab-content" id="tab-skill" style="display:none"></div>
+		<div class="tab-content" id="tab-team" style="display:none"></div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   let selectedAttributes = new Set();
+    let selectedRaces = new Set();
+
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
+      const trigger = dropdown.querySelector(".dropdown-trigger");
+      const content = dropdown.querySelector(".dropdown-content");
+
+      trigger.addEventListener("click", () => {
+        content.classList.toggle("show");
+      });
+    });
+
+    document.addEventListener("click", function(event) {
+      document.querySelectorAll(".dropdown-content").forEach(content => {
+        if (!content.parentElement.contains(event.target)) {
+          content.classList.remove("show");
+        }
+      });
+    });
+
+    function updateSelectedIcons(containerId, selectedSet) {
+      const container = document.querySelector(`#${containerId} .selected-icons`);
+      const items = document.querySelectorAll(`#${containerId} .dropdown-item`);
+      const label = document.querySelector(`#${containerId} .dropdown-button span`);
+      container.innerHTML = '';
+
+      selectedSet.forEach(value => {
+        items.forEach(item => {
+          if (item.dataset.value === value) {
+            const img = item.querySelector('img').cloneNode();
+            img.style.width = '20px';
+            img.style.height = '20px';
+            container.appendChild(img);
+          }
+        });
+      });
+      label.style.display = selectedSet.size > 0 ? 'none' : 'inline';
+    }
+
+    let selectedAttribute = [];
+    document.querySelectorAll('#attributeContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedAttribute.indexOf(value);
+    if (idx > -1) {
+      selectedAttribute.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedAttribute.push(value);
+      this.classList.add('selected');
+    }
+	// ✅ 隱藏 label
+    document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'none';
+    // ✅ 更新 icon 顯示
+    updateSelectedIcons('attributeDropdown', new Set(selectedAttribute));
+    filterMonsters();
+  });
+});
+
+    let selectedRace = [];
+    document.querySelectorAll('#raceContent .dropdown-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    const idx = selectedRace.indexOf(value);
+    if (idx > -1) {
+      selectedRace.splice(idx, 1);
+      this.classList.remove('selected');
+    } else {
+      selectedRace.push(value);
+      this.classList.add('selected');
+    }
+    // ✅ 隱藏 label
+    document.querySelector('#raceDropdown .dropdown-button span').style.display = 'none';
+    // ✅ 更新 icon 顯示
+    updateSelectedIcons('raceDropdown', new Set(selectedRace));
+    filterMonsters();
+  });
+});
+
+function filterMonsters() {
+  const search = document.getElementById('searchInput').value.trim();
+  document.querySelectorAll('.monster').forEach(monster => {
+    const attr = monster.getAttribute('data-attribute');
+    const race = monster.getAttribute('data-race');
+    const name = monster.getAttribute('data-name');
+    const id = monster.getAttribute('data-id');
+    let show = true;
+
+    // 屬性多選
+    if (selectedAttribute.length > 0 && !selectedAttribute.includes(attr)) {
+      show = false;
+    }
+    // 種族多選
+    if (selectedRace.length > 0 && !selectedRace.includes(race)) {
+      show = false;
+    }
+    // 關鍵字搜尋（不區分大小寫）
+	if (search && !(name.toLowerCase().includes(search.toLowerCase()) || id.toLowerCase().includes(search.toLowerCase()))) {
+	  show = false;
+	}
+    monster.style.display = show ? '' : 'none';
+  });
+}
+
+document.getElementById('resetFilters').addEventListener('click', function() {
+  // 清空多選陣列
+  selectedAttribute = [];
+  selectedRace = [];
+  // 移除所有已選樣式
+  document.querySelectorAll('#attributeContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  document.querySelectorAll('#raceContent .dropdown-item.selected').forEach(item => item.classList.remove('selected'));
+  // 清空搜尋框
+  document.getElementById('searchInput').value = '';
+  // ✅ 重設 icon 和 label 顯示
+  updateSelectedIcons('attributeDropdown', new Set());
+  updateSelectedIcons('raceDropdown', new Set());
+  document.querySelector('#attributeDropdown .dropdown-button span').style.display = 'inline';
+  document.querySelector('#raceDropdown .dropdown-button span').style.display = 'inline';
+  // 重新篩選
+  filterMonsters();
+});
+
+    window.addEventListener('scroll', () => {
+      const scrollBtn = document.getElementById('scrollButtons');
+      scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+	const raceMapping = {
+	  1: 'human',
+	  2: 'animal',
+	  3: 'fairy',
+	  4: 'dragon',
+	  5: 'god',
+	  8: 'devil',
+	  10: 'mech',
+	};
+	const attributeMapping = {
+	  1: 'water',
+	  2: 'fire',
+	  3: 'earth',
+	  4: 'light',
+	  5: 'dark',
+	};
+
+	function fetchMonsterInfo(monsterId, monsterElement) {
+  if (!monsterId || !monsterElement) { return; }
+
+  const monsterIdStr = monsterId.toString();
+  const skillTab = document.getElementById('tab-skill');
+  const leaderTab = document.getElementById('tab-leader');
+  const teamTab = document.getElementById('tab-team');
+  skillTab.innerHTML = '';
+  leaderTab.innerHTML = '';
+  fetch('monster.json')
+    .then(response => response.json())
+    .then(data => {
+      const monster = data.find(m => m.id.toString() === monsterIdStr);
+      if (monster) {
+        // 顯示名稱與圖示
+        updateMonsterIcons(monsterElement, monster);
+        const modalContent = document.getElementById('monsterInfoContent');
+        modalContent.style.setProperty('--monster-bg', `url('https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/cards/${monster.id}.jpg')`);
+       // 填入 HP/ATK/REC
+        document.getElementById('monsterHP').textContent = monster.HP || '';
+        document.getElementById('monsterHP1_2').textContent = monster.HP ? Math.floor(monster.HP * 1.2) : '';
+        document.getElementById('monsterATK').textContent = monster.ATK || '';
+        document.getElementById('monsterATK1_2').textContent = monster.ATK ? Math.floor(monster.ATK * 1.2) : '';
+        document.getElementById('monsterREC').textContent = monster.REC || '';
+        document.getElementById('monsterREC1_2').textContent = monster.REC ? Math.floor(monster.REC * 1.2) : '';
+        
+      // === 這裡加 log 檢查 ===
+        console.log('monster.leaderskill:', monster.leaderskill);
+        console.log('window.leader_skill:', window.leader_skill);
+
+        let leaderSkillText = '';
+        if (monster.leaderskill && window.leader_skill) {
+          const leaderObj = window.leader_skill.find(ls => ls.id == monster.leaderskill);
+          if (leaderObj) {
+            leaderSkillText = `<div style="font-weight:bold;">${leaderObj.name}</div><div>${leaderObj.desc.replace(/\n/g, '<br>')}</div>`;
+          }
+        }
+        leaderTab.innerHTML = leaderSkillText || '無';
+        // ... 取得 skillIds ...
+        let skillIds = [];
+        if (monster.normalskill_id) {
+          if (typeof monster.normalskill_id === 'string') {
+            skillIds.push(...monster.normalskill_id.split(',').map(id => id.trim()));
+          } else if (Array.isArray(monster.normalskill_id)) {
+            skillIds.push(...monster.normalskill_id);
+          } else {
+            skillIds.push(monster.normalskill_id);
+          }
+        }
+        let i = 1;
+        while (monster[`normalskill${i}`]) {
+          skillIds.push(monster[`normalskill${i}`]);
+          i++;
+        }
+
+        // 清除舊技能顯示
+        skillTab.innerHTML = '';
+
+        // 新增：渲染技能內容
+        let skillFound = false; // 新增變數
+        skillIds.forEach(skillId => {
+          if (skillId && skillId !== "0" && skillId !== 0) {
+            // 嘗試取得技能描述
+            if (window.skilldesc && window.skilldesc[skillId?.toString()]) {
+              processSkill(skillId, null, skillTab);
+              skillFound = true;
+            }
+          }
+        });
+        if (!skillFound) {
+          skillTab.innerHTML = '無';
+        }
+
+      if (monster.teamskill && window.teamskilldesc) {
+      let teamSkillIds = [];
+      if (Array.isArray(monster.teamskill)) {
+        teamSkillIds = monster.teamskill;
+      } else if (typeof monster.teamskill === 'string' || typeof monster.teamskill === 'number') {
+        teamSkillIds = [monster.teamskill];
+      }
+      const teamSkillContent = teamSkillIds
+        .map(id => {
+          let desc = window.teamskilldesc[id];
+          if (!desc) return null;
+          desc = parseColorTag(desc);
+          desc = parseSkillDesc(desc);
+          return `<div class="team-skill-block info-row" data-skill="true"><div class="info-value skill-desc">${parseSkillDesc(desc)}</div></div>`;
+        })
+        .filter(Boolean)
+        .join('');
+      teamTab.innerHTML = teamSkillContent || '無';
+      bindBoardHover();
+    } else {
+      teamTab.innerHTML = '無';
+    }
+
+        // 預設顯示隊長技
+        let currentTab = 'leader';
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelector('.tab-btn[data-tab="leader"]').classList.add('active');
+        leaderTab.style.display = '';
+        skillTab.style.display = 'none';
+        teamTab.style.display = 'none';
+
+        // Tab 切換功能
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.onclick = function() {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            if (this.dataset.tab === 'skill') {
+              skillTab.style.display = '';
+              leaderTab.style.display = 'none';
+			        teamTab.style.display = 'none';
+			} else if (this.dataset.tab === 'team') {
+			  teamTab.style.display = '';
+			  leaderTab.style.display = 'none';
+			  skillTab.style.display = 'none';
+			} else {
+			  leaderTab.style.display = '';
+			  skillTab.style.display = 'none';
+			  teamTab.style.display = 'none';
+			}
+          };
+        });
+        // 顯示 Modal
+        document.getElementById("monsterInfoModal").style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+    })
+}
+// 新增綁定技能描述展開/收合的函數
+function bindSkillDescriptions() {
+  document.querySelectorAll('.skill-desc').forEach(desc => {
+    desc.addEventListener('click', function() {
+      this.classList.toggle('collapsed');
+      this.classList.toggle('expanded');
+    });
+  });
+}
+
+function processSkill(skillId, recRow,container) {
+  // 先檢查 skilldesc 是否存在並輸出其內容
+  console.log('skilldesc 狀態:', window.skilldesc);
+  
+  if (!window.skilldesc) {
+    console.error('skilldesc 未載入，嘗試重新載入');
+    // 嘗試重新載入 skilldescen.js
+    const script = document.createElement('script');
+    script.src = 'skilldesc.js';
+    script.onload = () => {
+      console.log('skilldesc 重新載入完成');
+      // 重新嘗試處理技能
+      processSkill(skillId, recRow);
+    };
+    document.head.appendChild(script);
+    return;
+  }
+  //if (container) {
+  //  container.appendChild(skillRow);
+  //} else if (recRow && recRow.parentNode) {
+  //  recRow.insertAdjacentElement('afterend', skillRow);
+ // }
+
+ // 創建技能行
+ const skillRow = document.createElement('div');
+  skillRow.className = 'info-row';
+  skillRow.setAttribute('data-skill', 'true');
+  if (container && container.childElementCount > 0) {
+  skillRow.style.borderTop = '1px solid #ccc';
+  skillRow.style.marginTop = '8px';
+  skillRow.style.paddingTop = '8px';
+}
+
+  const skill = window.skilldesc?.[skillId?.toString()];
+  console.log("顯示技能:", skillId, skill);
+  if (!skill) {
+    console.warn("找不到技能描述 for skillId:", skillId);
+    return;
+  }
+
+  // 創建技能標籤
+  const label = document.createElement('div');
+  label.className = 'info-label';
+  label.textContent = skill.name || 'NULL';
+  applySkillTypeTag(skillId, label);
+
+  // 創建技能描述容器
+  const value = document.createElement('div');
+  value.className = 'info-value';
+
+  // 創建技能描述
+  const descLine = document.createElement('div');
+  descLine.className = 'skill-desc expanded';
+  const skillDesc = skill.description || skill.desc || skill.skillDesc || '';
+  descLine.innerHTML = parseSkillDesc(skillDesc);
+  descLine.style.position = 'relative';
+  descLine.style.display = 'block';
+
+  // 組裝元素
+  value.appendChild(descLine);
+  skillRow.appendChild(label);
+  skillRow.appendChild(value);
+
+  // 添加展開/收合功能
+  const toggleSkill = () => {
+    descLine.classList.toggle('collapsed');
+    descLine.classList.toggle('expanded');
+  };
+
+  label.addEventListener('click', toggleSkill);
+
+  // 插入技能行
+  if (container) {
+    container.appendChild(skillRow);
+  } else if (recRow && recRow.parentNode) {
+    recRow.insertAdjacentElement('afterend', skillRow);
+  }
+  bindBoardHover();
+}
+function closeModal() {
+	  document.getElementById("monsterInfoModal").style.display = "none";
+    document.body.style.overflow = "";
+	}
+
+  document.getElementById("monsterInfoModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
+
+	document.querySelectorAll('.monster').forEach(monster => {
+	  monster.addEventListener('click', () => {
+		const id = monster.getAttribute('data-id');
+		fetchMonsterInfo(id, monster);
+	  });
+	});
+  </script>
+  <script>
+  function updateMonsterIcons(monsterElement, monster) {
+  const attributeId = parseInt(monsterElement.getAttribute('data-attribute'), 10);
+  const raceId = parseInt(monsterElement.getAttribute('data-race'), 10);
+  const monsterName = monsterElement.getAttribute('data-name');
+
+  const attributeName = attributeMapping[attributeId] || 'unknown';
+  let raceName = raceMapping[raceId] || 'unknown';
+
+  if (raceId === 6) {
+    raceName = 'evolve';
+  } else if (raceId === 7) {
+    raceName = 'level';
+  }
+
+  const monsterIdElement = document.getElementById('monsterID');
+  monsterIdElement.innerHTML = ''; // 清空舊內容
+
+  // 先加入名稱
+  const nameText = document.createElement('span');
+  nameText.textContent = monsterName;
+  monsterIdElement.appendChild(nameText);
+
+  // 加入 ID
+  const idText = document.createElement('span');
+  idText.textContent = ` (ID: ${monster.id})`;
+  idText.style.color = '#666';
+  monsterIdElement.appendChild(idText);
+
+		const attributeIcon = document.createElement("img");
+		attributeIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${attributeName}.png`;
+		attributeIcon.alt = "屬性圖示";
+		attributeIcon.style.width = '24px';
+		attributeIcon.style.height = '24px';
+		attributeIcon.style.marginLeft = '8px';
+    attributeIcon.onerror = function () {
+    this.src = 'https://i.postimg.cc/6q0Y863v/unknown.png';
+    };
+		const raceIcon = document.createElement("img");
+		if (raceId === 6) {
+		  raceIcon.src = 'https://i.postimg.cc/zbDvRhPc/evolve.png';
+		} else if (raceId === 7) {
+		  raceIcon.src = 'https://i.postimg.cc/cKB6HhT3/level.png';
+		} else {
+		  raceIcon.src = `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/checkup/tag-selectors/${raceName}.png`;
+		}
+		raceIcon.alt = "種族圖示";
+		raceIcon.style.width = '24px';
+		raceIcon.style.height = '24px';
+		raceIcon.style.marginLeft = '4px';
+    raceIcon.onerror = function () {
+    this.src = 'https://i.postimg.cc/6q0Y863v/unknown.png';
+    };
+
+		monsterIdElement.appendChild(attributeIcon);
+		monsterIdElement.appendChild(raceIcon);	}
+  </script>
+  <script>
+   function parseSkillDesc(rawDesc) {
+	  return (rawDesc || '')
+		.replace(/\n/g, '<br>')
+		.replace(/\[board=(.*?)\](.*?)\[\/board\]/g, (match, code, label) => {
+		  return `<span class="board-hover" data-board="${code}">${label}</span>`;
+		});
+	}
+
+	function bindBoardHover() {
+	  document.querySelectorAll('.board-hover').forEach(el => {
+		el.addEventListener('mouseenter', () => {
+		  const code = el.dataset.board;
+		  const tooltip = decodeBoardToElement(code, icons);
+		  if (tooltip instanceof HTMLElement) {
+			tooltip.classList.add('board-tooltip');
+			el.appendChild(tooltip);
+		  } else {		  }
+		});
+		el.addEventListener('mouseleave', () => {
+		  const tip = el.querySelector('.board-tooltip');
+		  if (tip) tip.remove();
+		});
+	  });
+	}
+  </script>
+  <script src="board.decoder.new.js">
+  </script>
+ </body>
+</html>
