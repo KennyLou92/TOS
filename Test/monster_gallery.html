@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>神魔圖鑒</title>
   <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/26XNpq6C/2878.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <style>
     body {
       font-family: sans-serif;
@@ -85,45 +86,44 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
-	#scrollButtons {
-	  position: fixed;
-	  right: 20px;
-	  bottom: 20px;
-	  display: none;
-	  flex-direction: column;
-	  gap: 10px;
-	  z-index: 999;
-	}
-
-	#scrollButtons button {
-	  padding: 10px 12px;
-	  font-size: 14px;
-	  border: none;
-	  border-radius: 8px;
-	  background-color: #333;
-	  color: white;
-	  cursor: pointer;
-	  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-	  transition: background-color 0.3s ease;
-	}
-
-	#scrollButtons button:hover {
-	  background-color: #555;
-	}
-	#resetFilters {
-	  padding: 8px;
-	  border: none;
-	  background: none;
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  cursor: pointer;
-	}
-	#resetFilters img {
-	  width: 30px;
-	  height: 30px;
-	  object-fit: contain;
-	}
+    #resetFilters {
+      padding: 8px;
+      border: none;
+      background: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    #resetFilters img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+    #scrollButtons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    #scrollButtons button {
+      padding: 10px 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    #scrollButtons button:hover {
+      background-color: #555;
+    }
   </style>
   <script>
     window.addEventListener('load', async () => {
@@ -168,18 +168,16 @@
       });
     }
 
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
     window.addEventListener('scroll', () => {
       const scrollBtn = document.getElementById('scrollButtons');
       scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
     });
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function scrollToBottom() {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    }
   </script>
 </head>
 <body>
@@ -187,10 +185,10 @@
     <div class="search-bar">
       <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入ID/名稱" type="text"/>
     </div>
+    <button id="resetFilters">
+      <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
+    </button>
   </div>
-   <button id="resetFilters" style="margin-left: 10px; padding: 8px 16px;">
-    <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
-   </button>
   <div class="gallery" id="monsterGallery"></div>
   <div id="scrollButtons">
     <button onclick="scrollToTop()">
