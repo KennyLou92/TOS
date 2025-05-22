@@ -178,6 +178,11 @@
       const scrollBtn = document.getElementById('scrollButtons');
       scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
     });
+
+    document.getElementById('resetFilters').addEventListener('click', () => {
+      document.getElementById('searchInput').value = '';
+      filterMonsters();
+    });
   </script>
 </head>
 <body>
