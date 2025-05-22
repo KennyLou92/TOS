@@ -1,0 +1,213 @@
+<!-- 以下是已修改的 monster_gallery.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神魔圖鑒</title>
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/26XNpq6C/2878.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      padding: 10px;
+      max-width: 1200px;
+      margin: 80px auto 0;
+    }
+    .monster {
+      width: 120px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .monster:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+    .monster img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+    .monster div:first-child {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .monster div:last-child {
+      font-size: 13px;
+      color: #555;
+    }
+    .search-bar-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar {
+      width: 25%;
+      margin-left: 20px;
+      background: #fff;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border-radius: 6px;
+      position: relative;
+      z-index: 1000;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #resetFilters {
+      padding: 8px;
+      border: none;
+      background: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    #resetFilters img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+    #scrollButtons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    #scrollButtons button {
+      padding: 10px 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    #scrollButtons button:hover {
+      background-color: #555;
+    }
+  </style>
+  <script>
+    window.addEventListener('load', async () => {
+  const [monsterResponse, nameResponse] = await Promise.all([
+    fetch('monster.json'),
+    fetch('monster_name_zh.json')
+  ]);
+  const monsters = await monsterResponse.json();
+  const names = await nameResponse.json();
+  const gallery = document.getElementById('monsterGallery');
+
+  gallery.innerHTML = monsters.map(monster => {
+    const nameObj = names.find(n => n.id === parseInt(monster.id));
+    const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+    let imgSrc = window.skins?.[monster.id] || `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
+
+    return `
+      <div class="monster" 
+           data-id="${monster.id}" 
+           data-name="${monsterName}">
+        <div>${monster.id}</div>
+        <img alt="${monsterName}"
+             src="${imgSrc}"
+             onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
+        <div>${monsterName}</div>
+      </div>
+    `;
+  }).join('');
+
+  // ✅ Reset button event handler moved here to ensure it's bound after DOM is loaded
+  document.getElementById('resetFilters').addEventListener('click', () => {
+    document.getElementById('searchInput').value = '';
+    filterMonsters();
+  });
+});
+
+    function filterMonsters() {
+      const search = document.getElementById('searchInput').value.trim();
+      document.querySelectorAll('.monster').forEach(monster => {
+        const name = monster.getAttribute('data-name');
+        const id = monster.getAttribute('data-id');
+        let show = true;
+
+        if (search && !(name.toLowerCase().includes(search.toLowerCase()) || id.toLowerCase().includes(search.toLowerCase()))) {
+          show = false;
+        }
+        monster.style.display = show ? '' : 'none';
+      });
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+    window.addEventListener('scroll', () => {
+      const scrollBtn = document.getElementById('scrollButtons');
+      scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
+    });
+
+    document.getElementById('resetFilters').addEventListener('click', () => {
+      document.getElementById('searchInput').value = '';
+      filterMonsters();
+    });
+  </script>
+</head>
+<body>
+  <div class="search-bar-wrapper">
+    <div class="search-bar">
+      <input id="searchInput" onkeyup="filterMonsters()" placeholder="輸入ID/名稱" type="text"/>
+    </div>
+    <button id="resetFilters">
+      <img src="https://i.postimg.cc/X7SptCXY/SI125.png"/>
+    </button>
+  </div>
+  <div class="gallery" id="monsterGallery"></div>
+  <div id="scrollButtons">
+    <button onclick="scrollToTop()">
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <button onclick="scrollToBottom()">
+      <i class="fas fa-angle-down"></i>
+    </button>
+  </div>
+</body>
+</html>
