@@ -154,7 +154,9 @@
   }).join('');
 
   // ✅ Reset button event handler moved here to ensure it's bound after DOM is loaded
-  
+  document.getElementById('resetFilters').addEventListener('click', () => {
+    document.getElementById('searchInput').value = '';
+    filterMonsters();
   });
 });
 
