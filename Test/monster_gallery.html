@@ -127,32 +127,36 @@
   </style>
   <script>
     window.addEventListener('load', async () => {
-      const [monsterResponse, nameResponse] = await Promise.all([
-        fetch('monster.json'),
-        fetch('monster_name_zh.json')
-      ]);
-      const monsters = await monsterResponse.json();
-      const names = await nameResponse.json();
-      const gallery = document.getElementById('monsterGallery');
+  const [monsterResponse, nameResponse] = await Promise.all([
+    fetch('monster.json'),
+    fetch('monster_name_zh.json')
+  ]);
+  const monsters = await monsterResponse.json();
+  const names = await nameResponse.json();
+  const gallery = document.getElementById('monsterGallery');
 
-      gallery.innerHTML = monsters.map(monster => {
-        const nameObj = names.find(n => n.id === parseInt(monster.id));
-        const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
-        let imgSrc = window.skins?.[monster.id] || `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
+  gallery.innerHTML = monsters.map(monster => {
+    const nameObj = names.find(n => n.id === parseInt(monster.id));
+    const monsterName = nameObj ? nameObj.name : `未知 (${monster.id})`;
+    let imgSrc = window.skins?.[monster.id] || `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${monster.id}.jpg`;
 
-        return `
-          <div class="monster" 
-               data-id="${monster.id}" 
-               data-name="${monsterName}">
-            <div>${monster.id}</div>
-            <img alt="${monsterName}"
-                 src="${imgSrc}"
-                 onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
-            <div>${monsterName}</div>
-          </div>
-        `;
-      }).join('');
-    });
+    return `
+      <div class="monster" 
+           data-id="${monster.id}" 
+           data-name="${monsterName}">
+        <div>${monster.id}</div>
+        <img alt="${monsterName}"
+             src="${imgSrc}"
+             onerror="this.onerror=null;this.src='https://kennylou92.github.io/tos_story/Img/default.png';" />
+        <div>${monsterName}</div>
+      </div>
+    `;
+  }).join('');
+
+  // ✅ Reset button event handler moved here to ensure it's bound after DOM is loaded
+  
+  });
+});
 
     function filterMonsters() {
       const search = document.getElementById('searchInput').value.trim();
