@@ -50914,16 +50914,16 @@
         "ATK": 100,
         "REC": 100
     },
-	    {
+    {
         "id": "10918",
-        "attribute": null,
-        "race": null,
-        "leaderskill": 0,
-        "normalskill1": 0,
+        "attribute": 5,
+        "race": 3,
+        "leaderskill": 2397,
+        "normalskill1": 5037,
         "normalskill2": 0,
-        "HP": null,
-        "ATK": null,
-        "REC": null
+        "HP": 2069,
+        "ATK": 1443,
+        "REC": 1058
     },
 	{
         "id": "10919",
