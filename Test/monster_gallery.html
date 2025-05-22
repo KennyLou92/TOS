@@ -84,9 +84,31 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+    #scrollButtons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    #scrollButtons button {
+      padding: 10px 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    #scrollButtons button:hover {
+      background-color: #555;
+    }
   </style>
   <script>
-    // 載入怪物資料但不綁定點擊事件
     window.addEventListener('load', async () => {
       const [monsterResponse, nameResponse] = await Promise.all([
         fetch('monster.json'),
@@ -114,6 +136,33 @@
         `;
       }).join('');
     });
+
+    function filterMonsters() {
+      const search = document.getElementById('searchInput').value.trim();
+      document.querySelectorAll('.monster').forEach(monster => {
+        const name = monster.getAttribute('data-name');
+        const id = monster.getAttribute('data-id');
+        let show = true;
+
+        if (search && !(name.toLowerCase().includes(search.toLowerCase()) || id.toLowerCase().includes(search.toLowerCase()))) {
+          show = false;
+        }
+        monster.style.display = show ? '' : 'none';
+      });
+    }
+
+    window.addEventListener('scroll', () => {
+      const scrollBtn = document.getElementById('scrollButtons');
+      scrollBtn.style.display = window.scrollY > 200 ? 'flex' : 'none';
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToBottom() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
   </script>
 </head>
 <body>
@@ -123,5 +172,13 @@
     </div>
   </div>
   <div class="gallery" id="monsterGallery"></div>
+  <div id="scrollButtons">
+    <button onclick="scrollToTop()">
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <button onclick="scrollToBottom()">
+      <i class="fas fa-angle-down"></i>
+    </button>
+  </div>
 </body>
 </html>
