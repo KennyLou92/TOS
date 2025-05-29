@@ -50994,27 +50994,27 @@
         "ATK": 1937,
         "REC": 560
     },
-	{
+    {
         "id": "10925",
-        "attribute": null,
-        "race": null,
-        "leaderskill": 0,
-        "normalskill1": 0,
+        "attribute": 5,
+        "race": 10,
+        "leaderskill": 2401,
+        "normalskill1": 5032,
         "normalskill2": 0,
-        "HP": null,
-        "ATK": null,
-        "REC": null
+        "HP": 4394,
+        "ATK": 1919,
+        "REC": 414
     },
-	{
+    {
         "id": "10926",
-        "attribute": null,
-        "race": null,
-        "leaderskill": 0,
-        "normalskill1": 0,
+        "attribute": 3,
+        "race": 10,
+        "leaderskill": 2401,
+        "normalskill1": 5031,
         "normalskill2": 0,
-        "HP": null,
-        "ATK": null,
-        "REC": null
+        "HP": 4612,
+        "ATK": 1354,
+        "REC": 382
     },
 	{
         "id": "10927",
