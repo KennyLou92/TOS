@@ -39664,6 +39664,22 @@ window.skillData = [
     "type": "CD"
   },
   {
+    "skillid": 5031,
+    "min_cd": 5,
+    "start_cd": 16,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
+    "skillid": 5032,
+    "min_cd": 6,
+    "start_cd": 17,
+    "min_ep": 0,
+    "start_ep": 0,
+    "type": "CD"
+  },
+  {
     "skillid": 5033,
     "min_cd": 6,
     "start_cd": 17,
