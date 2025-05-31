@@ -12273,5 +12273,10 @@ window.leader_skill = [
     "id": 2561,
     "name": "Dragonborn Flames - Ritual",
     "desc": "I. Team Attack x 20; HP x 4.\nII. The more the Runestones are dissolved,\n⇒ the greater the Team Attack\n    increases additionally,\n⇒ to the max x 10 \n    for 30 Runestones dissolved.\nIII. Dragons:\n⇒ Damage will be dealt regardless of\n     Duet Elemental Shield, \n    Trio Elemental Shield, \n    Quartet Elemental Shield, \n    Quintet Elemental Shield.\nIV. By dissolving all Runestones\n     in the first batch,\n⇒ Team Attack x 1.3 additionally."
+  },
+  {
+    "id": 2573,
+    "name": "Dimensional Rift",
+    "desc": "I.【Illusory Oblivion】 Members\n    and Demons:\n⓵ Attack x 180.\n⓶ HP x 5.5.\nII. By dissolving Runestones of a \n 【Illusory Oblivion】 Member’s\n    Attribute,\n⇒ Team Attack x 2.2 additionally."
   }
 ];
