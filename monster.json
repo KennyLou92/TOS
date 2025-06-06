@@ -51049,7 +51049,6 @@
         "leaderskill": 2396,
         "normalskill1": 5030,
         "normalskill2": 0,
-		"teamskill" : ["1996","1997"],
         "HP": 4313,
         "ATK": 2094,
         "REC": 126
@@ -51061,6 +51060,7 @@
         "leaderskill": 2400,
         "normalskill1": 5035,
         "normalskill2": 0,
+		"teamskill" : ["1996","1997"],
         "HP": 1550,
         "ATK": 3150,
         "REC": 450
