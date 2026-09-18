@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
     <style>
         :root {
             --bg-color: #f8f9fa;
@@ -89,6 +90,7 @@
             display: flex;
             gap: 15px;
             font-weight: bold;
+            align-items: center;
         }
 
         .badge {
@@ -100,6 +102,7 @@
         .badge-added { background: #dafbe1; color: #1a7f37; }
         .badge-modified { background: #fff8c5; color: #9a6700; }
         .badge-deleted { background: #ffebe9; color: #cf222e; }
+        .badge-mode { background: #e1f5fe; color: #0288d1; }
 
         .btn-group {
             display: flex;
@@ -168,26 +171,27 @@
 <body>
 
 <div class="container">
+    <h1></h1>
 
     <div class="upload-area">
         <div class="drop-zone" id="zone-old" onclick="document.getElementById('file-old').click()">
             <h3>1. 選擇舊版 (Old File)</h3>
-            <p>拖放 .bytes 檔案至此或點擊上傳</p>
-            <input type="file" id="file-old" accept=".bytes">
+            <p>拖放任何檔案至此或點擊上傳</p>
+            <input type="file" id="file-old">
             <div class="file-info" id="info-old">尚未選擇檔案</div>
         </div>
 
         <div class="drop-zone" id="zone-new" onclick="document.getElementById('file-new').click()">
             <h3>2. 選擇新版 (New File)</h3>
-            <p>拖放 .bytes 檔案至此或點擊上傳</p>
-            <input type="file" id="file-new" accept=".bytes">
+            <p>拖放任何檔案至此或點擊上傳</p>
+            <input type="file" id="file-new">
             <div class="file-info" id="info-new">尚未選擇檔案</div>
         </div>
     </div>
 
     <div class="controls">
         <div class="stats">
-            <span>差異統計：</span>
+            <span class="badge badge-mode" id="mode-label">對比模式: 待判定</span>
             <span class="badge badge-added" id="count-added">新增: 0</span>
             <span class="badge badge-modified" id="count-modified">修改: 0</span>
             <span class="badge badge-deleted" id="count-deleted">刪除: 0</span>
@@ -198,7 +202,7 @@
     </div>
 
     <div id="result-container">
-        <div class="empty-state" id="empty-state">請在上方的兩個區域上傳新舊版本的 .bytes 檔案進行對比</div>
+        <div class="empty-state" id="empty-state">請在上方的兩個區域上傳新舊版本的檔案進行對比</div>
     </div>
 </div>
 
@@ -206,19 +210,31 @@
     let parsedOld = null;
     let parsedNew = null;
     let currentDiff = [];
+    let compareMode = 'kv';
 
-    // 設定拖放與上傳監聽
-    setupDropZone('zone-old', 'file-old', (data, file) => {
-        parsedOld = { data, name: file.name };
-        document.getElementById('info-old').innerHTML = `<strong>${file.name}</strong><br>版本: ${data.version} | 項目數: ${Object.keys(data.output).length}`;
+    setupDropZone('zone-old', 'file-old', (parsed, file) => {
+        parsedOld = { parsed, name: file.name };
+        renderFileInfo('info-old', file, parsed);
         checkAndCompare();
     });
 
-    setupDropZone('zone-new', 'file-new', (data, file) => {
-        parsedNew = { data, name: file.name };
-        document.getElementById('info-new').innerHTML = `<strong>${file.name}</strong><br>版本: ${data.version} | 項目數: ${Object.keys(data.output).length}`;
+    setupDropZone('zone-new', 'file-new', (parsed, file) => {
+        parsedNew = { parsed, name: file.name };
+        renderFileInfo('info-new', file, parsed);
         checkAndCompare();
     });
+
+    function renderFileInfo(elementId, file, parsed) {
+        let extra = '';
+        if (parsed.type === 'bytes') {
+            extra = `類型: .bytes | 版本: ${parsed.version} | 項目數: ${Object.keys(parsed.data).length}`;
+        } else if (parsed.type === 'json') {
+            extra = `類型: JSON | 平坦化 Key 總數: ${Object.keys(parsed.data).length}`;
+        } else {
+            extra = `類型: 純文字/其他 | 總行數: ${parsed.lines.length}`;
+        }
+        document.getElementById(elementId).innerHTML = `<strong>${file.name}</strong><br>${extra}`;
+    }
 
     function setupDropZone(zoneId, inputId, callback) {
         const zone = document.getElementById(zoneId);
@@ -247,32 +263,88 @@
         });
     }
 
-    function handleFile(file, callback) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const buffer = new Uint8Array(e.target.result);
-            const parsed = parseBytes(buffer);
-            callback(parsed, file);
-        };
-        reader.readAsArrayBuffer(file);
+    // 將巢狀 JSON / 陣列轉成平坦的 Key-Value 結構 (例如 {"a.b[0].c": "val"})
+    function flattenObject(obj, prefix = '') {
+        let res = {};
+        if (obj === null || obj === undefined) return res;
+
+        if (typeof obj !== 'object') {
+            res[prefix] = obj;
+            return res;
+        }
+
+        if (Array.isArray(obj)) {
+            if (obj.length === 0) {
+                res[prefix] = [];
+            } else {
+                obj.forEach((item, index) => {
+                    const p = prefix ? `${prefix}[${index}]` : `[${index}]`;
+                    Object.assign(res, flattenObject(item, p));
+                });
+            }
+            return res;
+        }
+
+        const keys = Object.keys(obj);
+        if (keys.length === 0 && prefix) {
+            res[prefix] = {};
+            return res;
+        }
+
+        keys.forEach(k => {
+            const p = prefix ? `${prefix}.${k}` : k;
+            Object.assign(res, flattenObject(obj[k], p));
+        });
+
+        return res;
     }
 
-    // 將 Python 中的 parseBytes 邏輯移植為 JS ( Varint 讀取 + 鍵值對解碼 )
+    // 自動判斷檔案格式並解析
+    function handleFile(file, callback) {
+        const reader = new FileReader();
+
+        if (file.name.endsWith('.bytes')) {
+            reader.onload = function(e) {
+                const buffer = new Uint8Array(e.target.result);
+                const parsed = parseBytes(buffer);
+                callback(parsed, file);
+            };
+            reader.readAsArrayBuffer(file);
+        } else {
+            reader.onload = function(e) {
+                const text = e.target.result;
+                // 嘗試解析為 JSON
+                try {
+                    const jsonObj = JSON.parse(text);
+                    if (typeof jsonObj === 'object' && jsonObj !== null) {
+                        const flatObj = flattenObject(jsonObj);
+                        callback({ type: 'json', data: flatObj }, file);
+                        return;
+                    }
+                } catch (err) {
+                    // 非 JSON，當作純文字處理
+                }
+                
+                // 當作純文字按行切分
+                const lines = text.split(/\r?\n/);
+                callback({ type: 'text', lines }, file);
+            };
+            reader.readAsText(file, 'utf-8');
+        }
+    }
+
+    // Bytes 解析邏輯
     function parseBytes(uint8Array) {
         let index = 1;
 
         function readNumber() {
-            let result = 0;
-            let offset = 0;
+            let result = 0, offset = 0;
             while (index < uint8Array.length) {
                 const byte = uint8Array[index];
                 result |= (byte & 0x7f) << offset;
                 index++;
-                if (byte & 0x80) {
-                    offset += 7;
-                } else {
-                    break;
-                }
+                if (byte & 0x80) offset += 7;
+                else break;
             }
             return result;
         }
@@ -297,55 +369,103 @@
             }
         }
 
-        return { version: dv, output };
+        return { type: 'bytes', version: dv, data: output };
     }
 
-    // 對比舊版與新版
+    // 對比發動
     function checkAndCompare() {
         if (!parsedOld || !parsedNew) return;
 
-        const oldData = parsedOld.data.output;
-        const newData = parsedNew.data.output;
+        const typeOld = parsedOld.parsed.type;
+        const typeNew = parsedNew.parsed.type;
 
+        // 若兩者都是 Key-Value 結構 (bytes 或 json)
+        if ((typeOld === 'bytes' || typeOld === 'json') && (typeNew === 'bytes' || typeNew === 'json')) {
+            compareMode = 'kv';
+            document.getElementById('mode-label').innerText = '對比模式: Key-Value 對比';
+            compareKeyValue(parsedOld.parsed.data, parsedNew.parsed.data);
+        } else {
+            // 否則採用逐行文字對比
+            compareMode = 'text';
+            document.getElementById('mode-label').innerText = '對比模式: 逐行文字對比';
+            
+            const linesOld = parsedOld.parsed.lines || textToLines(parsedOld.parsed);
+            const linesNew = parsedNew.parsed.lines || textToLines(parsedNew.parsed);
+            compareTextLines(linesOld, linesNew);
+        }
+    }
+
+    function textToLines(parsedObj) {
+        return JSON.stringify(parsedObj.data, null, 2).split('\n');
+    }
+
+    // 1. Key-Value 模式對比
+    function compareKeyValue(oldData, newData) {
         const allKeys = new Set([...Object.keys(oldData), ...Object.keys(newData)]);
-        
         currentDiff = [];
-        let addedCount = 0;
-        let modifiedCount = 0;
-        let deletedCount = 0;
+        let addedCount = 0, modifiedCount = 0, deletedCount = 0;
 
         allKeys.forEach(key => {
             const hasOld = key in oldData;
             const hasNew = key in newData;
 
+            const oldVal = oldData[key];
+            const newVal = newData[key];
+
             if (hasNew && !hasOld) {
-                currentDiff.push({ type: 'added', key, oldVal: '', newVal: newData[key] });
+                currentDiff.push({ type: 'added', target: key, oldVal: '', newVal });
                 addedCount++;
             } else if (hasOld && !hasNew) {
-                currentDiff.push({ type: 'deleted', key, oldVal: oldData[key], newVal: '' });
+                currentDiff.push({ type: 'deleted', target: key, oldVal, newVal: '' });
                 deletedCount++;
-            } else if (oldData[key] !== newData[key]) {
-                currentDiff.push({ type: 'modified', key, oldVal: oldData[key], newVal: newData[key] });
+            } else if (JSON.stringify(oldVal) !== JSON.stringify(newVal)) {
+                currentDiff.push({ type: 'modified', target: key, oldVal, newVal });
                 modifiedCount++;
             }
         });
 
-        // 更新 UI 統計
-        document.getElementById('count-added').innerText = `新增: ${addedCount}`;
-        document.getElementById('count-modified').innerText = `修改: ${modifiedCount}`;
-        document.getElementById('count-deleted').innerText = `刪除: ${deletedCount}`;
-
-        document.getElementById('btn-export-diff').disabled = currentDiff.length === 0;
-
-        renderDiffTable(currentDiff);
+        updateStats(addedCount, modifiedCount, deletedCount);
+        renderDiffTable('Key / 欄位路徑');
     }
 
-    // 渲染差異列表 (僅顯示差異項目)
-    function renderDiffTable(diffList) {
+    // 2. 逐行文字模式對比
+    function compareTextLines(linesOld, linesNew) {
+        currentDiff = [];
+        let addedCount = 0, modifiedCount = 0, deletedCount = 0;
+
+        const maxLen = Math.max(linesOld.length, linesNew.length);
+        for (let i = 0; i < maxLen; i++) {
+            const oldVal = linesOld[i];
+            const newVal = linesNew[i];
+
+            if (oldVal === undefined && newVal !== undefined) {
+                currentDiff.push({ type: 'added', target: `第 ${i + 1} 行`, oldVal: '', newVal });
+                addedCount++;
+            } else if (oldVal !== undefined && newVal === undefined) {
+                currentDiff.push({ type: 'deleted', target: `第 ${i + 1} 行`, oldVal, newVal: '' });
+                deletedCount++;
+            } else if (oldVal !== newVal) {
+                currentDiff.push({ type: 'modified', target: `第 ${i + 1} 行`, oldVal, newVal });
+                modifiedCount++;
+            }
+        }
+
+        updateStats(addedCount, modifiedCount, deletedCount);
+        renderDiffTable('位置 / 行號');
+    }
+
+    function updateStats(added, modified, deleted) {
+        document.getElementById('count-added').innerText = `新增: ${added}`;
+        document.getElementById('count-modified').innerText = `修改: ${modified}`;
+        document.getElementById('count-deleted').innerText = `刪除: ${deleted}`;
+        document.getElementById('btn-export-diff').disabled = currentDiff.length === 0;
+    }
+
+    function renderDiffTable(firstColHeader) {
         const container = document.getElementById('result-container');
 
-        if (diffList.length === 0) {
-            container.innerHTML = `<div class="empty-state">比對完成：新舊版本內容完全一致，無任何差異！</div>`;
+        if (currentDiff.length === 0) {
+            container.innerHTML = `<div class="empty-state">比對完成：兩份檔案內容完全一致，無任何差異！</div>`;
             return;
         }
 
@@ -354,7 +474,7 @@
                 <thead>
                     <tr>
                         <th style="width: 10%;">類型</th>
-                        <th style="width: 30%;">Key</th>
+                        <th style="width: 30%;">${firstColHeader}</th>
                         <th style="width: 30%;">舊版內容 (Old)</th>
                         <th style="width: 30%;">新版內容 (New)</th>
                     </tr>
@@ -362,7 +482,7 @@
                 <tbody>
         `;
 
-        diffList.forEach(item => {
+        currentDiff.forEach(item => {
             let typeLabel = '';
             let rowClass = '';
 
@@ -380,9 +500,9 @@
             html += `
                 <tr class="${rowClass}">
                     <td><strong>${typeLabel}</strong></td>
-                    <td>${escapeHtml(item.key)}</td>
-                    <td>${escapeHtml(item.oldVal)}</td>
-                    <td>${escapeHtml(item.newVal)}</td>
+                    <td>${escapeHtml(String(item.target))}</td>
+                    <td>${escapeHtml(formatVal(item.oldVal))}</td>
+                    <td>${escapeHtml(formatVal(item.newVal))}</td>
                 </tr>
             `;
         });
@@ -391,7 +511,12 @@
         container.innerHTML = html;
     }
 
-    // 導出差異為 JSON 檔案
+    function formatVal(val) {
+        if (val === undefined || val === '') return '';
+        if (typeof val === 'object') return JSON.stringify(val);
+        return String(val);
+    }
+
     function exportDiffJSON() {
         if (!currentDiff.length) return;
 
@@ -399,8 +524,7 @@
             metadata: {
                 oldFile: parsedOld.name,
                 newFile: parsedNew.name,
-                oldVersion: parsedOld.data.version,
-                newVersion: parsedNew.data.version,
+                compareMode: compareMode,
                 exportedAt: new Date().toISOString()
             },
             diff: currentDiff
@@ -410,7 +534,7 @@
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = `diff-${parsedOld.data.version}-to-${parsedNew.data.version}.json`;
+        a.download = `diff-${parsedOld.name}-vs-${parsedNew.name}.json`;
         a.click();
         URL.revokeObjectURL(url);
     }
