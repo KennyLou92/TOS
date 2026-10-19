@@ -189,22 +189,39 @@
             return /^\d+$/.test(id) ? id.padStart(4, '0') : id;
         }
 
+        // 圖片來源 CDN 沒開 CORS，依序嘗試：直連 -> 圖片代理 -> 備用代理
+        const PROXIES = [
+            u => u,
+            u => `https://wsrv.nl/?url=${encodeURIComponent(u)}`,
+            u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+            u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+        ];
+        const imgCache = {};
+
+        function blobToDataURL(blob) {
+            return new Promise((resolve, reject) => {
+                const r = new FileReader();
+                r.onload = () => resolve(r.result);
+                r.onerror = reject;
+                r.readAsDataURL(blob);
+            });
+        }
+
         async function getImageBase64(monsterId) {
             if (!monsterId) return '';
-            try {
-                const res = await fetch(IMG_URL(monsterId));
-                if (!res.ok) return '';
-                const blob = await res.blob();
-                return await new Promise((resolve, reject) => {
-                    const r = new FileReader();
-                    r.onload = () => resolve(r.result);
-                    r.onerror = reject;
-                    r.readAsDataURL(blob);
-                });
-            } catch (e) {
-                console.error(`下載圖片失敗 (${monsterId}):`, e);
-                return '';
+            if (imgCache[monsterId] !== undefined) return imgCache[monsterId];
+            const target = IMG_URL(monsterId);
+            for (const make of PROXIES) {
+                try {
+                    const res = await fetch(make(target));
+                    if (!res.ok) continue;
+                    const blob = await res.blob();
+                    if (!blob.type.startsWith('image/')) continue;
+                    return (imgCache[monsterId] = await blobToDataURL(blob));
+                } catch (e) { /* 換下一個 */ }
             }
+            console.error(`下載圖片失敗 (${monsterId})`);
+            return (imgCache[monsterId] = '');
         }
 
         async function parseEnemies(json) {
