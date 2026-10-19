@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>神魔關卡預覽與編輯器</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        .controls { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        
+        input[type="file"] { display: none; }
+        .file-upload-btn {
+            padding: 8px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        .file-upload-btn:hover { background-color: #0056b3; }
+        
+        button { padding: 8px 15px; margin-right: 10px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 4px; }
+        button:hover { background-color: #0056b3; }
+        .export-btn { background-color: #28a745; }
+        .export-btn:hover { background-color: #218838; }
+
+        /* 外層總容器 */
+        #preview-container { 
+            display: inline-block; 
+            background: white; 
+            padding: 15px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            width: fit-content;
+        }
+
+        .table-card { 
+            background: white; 
+            width: 100%;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        .table-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .table-header-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .table-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #333;
+        }
+
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            table-layout: auto; 
+        }
+        
+        th, td { 
+            border: 1px solid #ccc; 
+            padding: 8px 12px; 
+            text-align: center; 
+            vertical-align: middle; 
+            white-space: nowrap;
+        }
+        
+        .label-row th {
+            background-color: #d6d8db;
+            font-weight: bold;
+        }
+
+        .monster-img { width: 50px; height: 50px; object-fit: cover; border-radius: 4px; }
+
+        .skill-cell { 
+            text-align: center; 
+            white-space: pre-line; 
+        }
+        
+        .editable { 
+            outline: none; 
+            background-color: #ffffff;
+        }
+        .editable:focus { 
+            background-color: #fff3bf; 
+            border: 1px solid #fab005; 
+        }
+
+        /* ===== 新增：橫向 Stage 行樣式 (黑底白字) ===== */
+        .stage-row {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+        .stage-row:focus {
+            background-color: #333333 !important; /* 編輯時稍微變淺以便辨識 */
+            color: #ffffff !important;
+            border: 1px solid #fab005;
+        }
+        /* ========================================= */
+        
+        .action-col { border: none !important; background: transparent !important; }
+
+        .rendering table { 
+            table-layout: fixed !important; 
+            width: 1100px !important; 
+        }
+
+        .rendering th, .rendering td {
+            padding: 8px 6px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .rendering .action-col,
+        .rendering .monster-id-col,
+        .rendering col.col-monster-id,
+        .rendering col.action-col,
+        .rendering .table-header-toolbar { 
+            display: none !important; 
+        }
+
+        .rendering#preview-container {
+            padding: 10px !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="controls">
+        <h2>敵方資訊 JSON 解析與導出工具</h2>
+        <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <label class="file-upload-btn" style="margin: 0;">
+                    📁 選擇/匯入 JSON 檔案 (可多選)
+                    <input type="file" id="json-file" accept=".json" multiple onchange="autoUploadJSON(this)">
+                </label>
+                <span id="file-name" style="color: #666; font-size: 14px; word-break: break-word;"></span>
+            </div>
+            <button class="export-btn" style="margin: 0;" onclick="exportAllToPNG()">📸 一鍵導出為「垂直長圖 PNG」</button>
+        </div>
+    </div>
+
+    <div id="preview-container"></div>
+
+    <script>
+        // ===== 取代原本 app.py 的功能 =====
+        const SKILL_URL = 'skill_zh.json';
+        const IMG_URL = id => `https://d1h5mn9kk900cf.cloudfront.net/toswebsites/gallery/icons/${id}.jpg`;
+        let skillData = null;
+
+        async function loadSkillData() {
+            if (skillData) return skillData;
+            try {
+                const res = await fetch(SKILL_URL);
+                skillData = await res.json();
+            } catch (e) {
+                console.error('載入技能表失敗:', e);
+                skillData = {};
+            }
+            return skillData;
+        }
+
+        function getSkillName(id) {
+            const text = skillData[`BOSS_TITLE_${id}`] || `ID:${id}`;
+            return text.replace(/【/g, '').replace(/】/g, '').trim();
+        }
+
+        function formatNumber(val) {
+            if (val === null || val === undefined) return '';
+            const str = String(val).trim();
+            return /^\d+$/.test(str) ? Number(str).toLocaleString('en-US') : str;
+        }
+
+        function padId(raw) {
+            const id = String(raw ?? '').trim();
+            return /^\d+$/.test(id) ? id.padStart(4, '0') : id;
+        }
+
+        async function getImageBase64(monsterId) {
+            if (!monsterId) return '';
+            try {
+                const res = await fetch(IMG_URL(monsterId));
+                if (!res.ok) return '';
+                const blob = await res.blob();
+                return await new Promise((resolve, reject) => {
+                    const r = new FileReader();
+                    r.onload = () => resolve(r.result);
+                    r.onerror = reject;
+                    r.readAsDataURL(blob);
+                });
+            } catch (e) {
+                console.error(`下載圖片失敗 (${monsterId}):`, e);
+                return '';
+            }
+        }
+
+        async function parseEnemies(json) {
+            await loadSkillData();
+            const enemies = (json?.data?.enemyInfo || []).slice();
+            enemies.sort((a, b) =>
+                (parseInt(a.waveStart || 0) - parseInt(b.waveStart || 0)) ||
+                (parseInt(a.sequence || 0) - parseInt(b.sequence || 0)));
+
+            return Promise.all(enemies.map(async enemy => {
+                const monster_id = padId(enemy.monsterId);
+                const attackCd = enemy.attackDuration ?? '0';
+                const initCd = parseInt(enemy.initAttackDuration || 0);
+                return {
+                    stage: parseInt(enemy.waveStart || 0) + 1,
+                    img_base64: await getImageBase64(monster_id),
+                    monster_id,
+                    atk: formatNumber(enemy.attack ?? ''),
+                    hp: formatNumber(enemy.hp ?? ''),
+                    def: formatNumber(enemy.defense ?? ''),
+                    cd: initCd > 0 ? `${attackCd}(${initCd})` : String(attackCd),
+                    skills: (enemy.characteristicList || []).map(getSkillName),
+                };
+            }));
+        }
+        // =================================
+
+        async function autoUploadJSON(input) {
+            if (!input.files || input.files.length === 0) return;
+
+            const files = Array.from(input.files);
+            document.getElementById('file-name').innerText = `已載入 ${files.length} 個檔案：${files.map(f => f.name).join(', ')}`;
+
+            const container = document.getElementById('preview-container');
+            container.innerHTML = ''; 
+
+            for (const file of files) {
+                try {
+                    const text = await file.text();
+                    const enemies = await parseEnemies(JSON.parse(text));
+                    createTableCard(file.name, enemies);
+                } catch (err) {
+                    alert(`檔案 ${file.name} 解析失敗：` + err.message);
+                }
+            }
+        }
+
+        function createTableCard(fileName, enemies) {
+            const container = document.getElementById('preview-container');
+
+            const card = document.createElement('div');
+            card.className = 'table-card';
+
+            card.innerHTML = `
+                <div class="table-header-toolbar">
+                    <span class="table-title">📄 關卡檔案：${fileName}</span>
+                    <div>
+                        <button class="export-btn" style="padding: 4px 10px; font-size: 12px;" onclick="exportSinglePNG(this)">📸 導出單獨此表格 PNG</button>
+                        <button style="padding: 4px 10px; font-size: 12px; background:#dc3545;" onclick="this.closest('.table-card').remove()">🗑️ 移除此表格</button>
+                    </div>
+                </div>
+                <table>
+                    <colgroup>
+                        <col style="width: 90px;">   <col style="width: 80px;" class="col-monster-id"> <col style="width: 120px;">  <col style="width: 200px;">  <col style="width: 130px;">  <col style="width: 70px;">   <col style="width: 420px;">  <col style="width: auto;" class="action-col">  </colgroup>
+                    <thead class="table-head">
+                        <tr class="label-row">
+                            <th contenteditable="true" class="editable">Monster</th>
+                            <th contenteditable="true" class="editable monster-id-col">Monster ID</th>
+                            <th contenteditable="true" class="editable">ATK</th>
+                            <th contenteditable="true" class="editable">HP</th>
+                            <th contenteditable="true" class="editable">DEF</th>
+                            <th contenteditable="true" class="editable">CD</th>
+                            <th class="editable">Skill</th>
+                            <th class="action-col">
+                                <button onclick="addRowAboveHeader(this)" style="padding: 2px 5px; font-size:12px; background:#17a2b8;">+標題上方加行</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body"></tbody>
+                </table>
+            `;
+
+            container.appendChild(card);
+            const tbody = card.querySelector('.table-body');
+
+            renderTableBody(tbody, enemies);
+        }
+
+        // 修改後的渲染邏輯：插入橫向 Stage 標題行
+        function renderTableBody(tbody, enemies) {
+            tbody.innerHTML = '';
+            if (!enemies || enemies.length === 0) return;
+
+            let i = 0;
+            while (i < enemies.length) {
+                const currentStage = enemies[i].stage;
+                let groupCount = 0;
+
+                while (i + groupCount < enemies.length && enemies[i + groupCount].stage === currentStage) {
+                    groupCount++;
+                }
+
+                // ===== 插入獨立的 Stage 橫行 (colspan="7" 覆蓋所有資料欄位) =====
+                const stageRow = document.createElement('tr');
+                stageRow.innerHTML = `
+                    <td contenteditable="true" class="editable stage-row" colspan="7">STAGE ${currentStage || '自訂關卡'}</td>
+                    <td class="action-col">
+                        <button onclick="deleteRow(this)" style="padding: 2px 5px; font-size:12px; background:#dc3545;">刪除</button>
+                    </td>
+                `;
+                tbody.appendChild(stageRow);
+                // =========================================================
+
+                for (let j = 0; j < groupCount; j++) {
+                    const enemy = enemies[i + j];
+                    const row = createRowHTML(enemy);
+                    tbody.appendChild(row);
+                }
+
+                i += groupCount;
+            }
+        }
+
+        // 簡化後的建立列邏輯，不再需要處理 rowspan
+        function createRowHTML(data = {}) {
+            const tr = document.createElement('tr');
+            const skillsText = Array.isArray(data.skills) ? data.skills.join('\n') : (data.skills || '');
+            const monsterIdStr = data.monster_id || '';
+            
+            const imgHTML = data.img_base64 
+                ? `<img src="${data.img_base64}" class="monster-img" alt="icon">` 
+                : `<span style="font-weight:bold;">${monsterIdStr || '-'}</span>`;
+
+            tr.innerHTML = `
+                <td class="icon-cell">${imgHTML}</td>
+                <td contenteditable="true" class="editable monster-id-col" onblur="updateIconByMonsterId(this)">${monsterIdStr}</td>
+                <td contenteditable="true" class="editable" onblur="formatNumberInput(this)">${data.atk || ''}</td>
+                <td contenteditable="true" class="editable" onblur="formatNumberInput(this)">${data.hp || ''}</td>
+                <td contenteditable="true" class="editable" onblur="formatNumberInput(this)">${data.def || ''}</td>
+                <td contenteditable="true" class="editable">${data.cd || ''}</td>
+                <td contenteditable="true" class="editable skill-cell">${skillsText}</td>
+                <td class="action-col">
+                    <button onclick="addRowAbove(this)" style="padding: 2px 5px; margin-bottom: 2px; font-size:12px;">+上方加行</button><br>
+                    <button onclick="mergeDown(this)" style="padding: 2px 5px; margin-bottom: 2px; font-size:12px; background:#ffc107; color:black;">⬇ 往下合併</button><br>
+                    <button onclick="deleteRow(this)" style="padding: 2px 5px; font-size:12px; background:#dc3545;">刪除</button>
+                </td>
+            `;
+            return tr;
+        }
+
+        async function updateIconByMonsterId(td) {
+            const newMonsterId = td.innerText.trim();
+            const row = td.closest('tr');
+            const iconTd = row.querySelector('.icon-cell');
+
+            if (!newMonsterId) {
+                iconTd.innerHTML = '<span style="font-weight:bold;">-</span>';
+                return;
+            }
+
+            try {
+                const monsterId = padId(newMonsterId);
+                const img = await getImageBase64(monsterId);
+                const result = { monster_id: monsterId, img_base64: img };
+
+                td.innerText = result.monster_id;
+
+                if (result.img_base64) {
+                    iconTd.innerHTML = `<img src="${result.img_base64}" class="monster-img" alt="icon">`;
+                } else {
+                    iconTd.innerHTML = `<span style="font-weight:bold;">${result.monster_id}</span>`;
+                }
+            } catch (err) {
+                console.error("更新圖片失敗:", err);
+                iconTd.innerHTML = `<span style="font-weight:bold;">${newMonsterId}</span>`;
+            }
+        }
+
+        function formatNumberInput(td) {
+            let val = td.innerText.replace(/,/g, '').trim();
+            if (val && !isNaN(val)) {
+                td.innerText = Number(val).toLocaleString('en-US');
+            }
+        }
+
+        function addRowAboveHeader(btn) {
+            const thead = btn.closest('.table-head');
+            const labelRow = thead.querySelector('.label-row');
+            
+            const newRow = document.createElement('tr');
+            // 注意：因為少了一欄 Stage，這裡的 colspan 從 8 改為 7
+            newRow.innerHTML = `
+                <td contenteditable="true" class="editable" colspan="7" style="text-align: left; font-weight: bold; background-color: #e2e3e5;">自訂標題 / 關卡備註資訊</td>
+                <td class="action-col">
+                    <button onclick="deleteRow(this)" style="padding: 2px 5px; font-size:12px; background:#dc3545;">刪除</button>
+                </td>
+            `;
+            thead.insertBefore(newRow, labelRow);
+        }
+
+        function addRowAbove(btn) {
+            const currentRow = btn.closest('tr');
+            // 直接新增一隻空怪物
+            const newRow = createRowHTML({ monster_id: '', skills: '自訂文字' });
+            currentRow.parentNode.insertBefore(newRow, currentRow);
+        }
+
+        function deleteRow(btn) {
+            btn.closest('tr').remove();
+        }
+
+        function exportSinglePNG(btn) {
+            const container = document.getElementById('preview-container');
+            container.classList.add('rendering');
+
+            const card = btn.closest('.table-card');
+            card.classList.add('rendering');
+
+            // 導出前：將跨行的 colspan 由 7 改為 6 (因為隱藏了 Monster ID)
+            const spanCells = card.querySelectorAll('td[colspan="7"]');
+            spanCells.forEach(td => td.setAttribute('colspan', '6'));
+
+            html2canvas(card, { scale: 2 }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'Enemy_Data_Single.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                
+                // 導出後：恢復 colspan 為 7
+                spanCells.forEach(td => td.setAttribute('colspan', '7'));
+                card.classList.remove('rendering');
+                container.classList.remove('rendering');
+            }).catch(err => {
+                console.error("導出圖片失敗:", err);
+                spanCells.forEach(td => td.setAttribute('colspan', '7'));
+                card.classList.remove('rendering');
+                container.classList.remove('rendering');
+            });
+        }
+
+        function mergeDown(btn) {
+            const currentRow = btn.closest('tr');
+            const nextRow = currentRow.nextElementSibling;
+
+            // 檢查下方是否有列，且不能是標題列 (Stage row) 或是表頭
+            if (!nextRow || nextRow.querySelector('.stage-row') || nextRow.querySelector('th')) {
+                alert("下方沒有可以合併的怪物列！");
+                return;
+            }
+
+            const currentIcon = currentRow.querySelector('.icon-cell');
+            const currentId = currentRow.querySelector('.monster-id-col');
+            const nextIcon = nextRow.querySelector('.icon-cell');
+            const nextId = nextRow.querySelector('.monster-id-col');
+
+            // 檢查下方的列是否已經被合併過（找不到頭像欄位）
+            if (!nextIcon || !nextId) {
+                alert("下方的列已經被合併過了！");
+                return;
+            }
+
+            // 計算新的 rowspan 數值
+            const currentSpan = parseInt(currentIcon.getAttribute('rowspan') || '1', 10);
+            const nextSpan = parseInt(nextIcon.getAttribute('rowspan') || '1', 10);
+
+            // 更新當前列的 rowspan
+            currentIcon.setAttribute('rowspan', currentSpan + nextSpan);
+            currentId.setAttribute('rowspan', currentSpan + nextSpan);
+
+            // 徹底移除下一列的頭像與 ID 欄位 (這樣表格才不會因為多出格子而向右突出)
+            nextIcon.remove();
+            nextId.remove();
+        }
+
+        function exportAllToPNG() {
+            const container = document.getElementById('preview-container');
+            const cards = container.querySelectorAll('.table-card');
+
+            if (cards.length === 0) {
+                alert("目前沒有可導出的關卡表格！");
+                return;
+            }
+
+            container.classList.add('rendering');
+
+            // 導出前：將跨行的 colspan 由 7 改為 6
+            const spanCells = container.querySelectorAll('td[colspan="7"]');
+            spanCells.forEach(td => td.setAttribute('colspan', '6'));
+
+            html2canvas(container, { scale: 2 }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'Enemy_Data_All_Stages.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                
+                // 導出後：恢復 colspan 為 7
+                spanCells.forEach(td => td.setAttribute('colspan', '7'));
+                container.classList.remove('rendering');
+            }).catch(err => {
+                console.error("導出圖片失敗:", err);
+                alert("圖片導出失敗");
+                spanCells.forEach(td => td.setAttribute('colspan', '7'));
+                container.classList.remove('rendering');
+            });
+        }
+    </script>
+</body>
+</html>
