@@ -74,12 +74,12 @@
             white-space: nowrap;
         }
         
-        .label-row th {
+        .label-row th { height: 36px; min-width: 40px;
             background-color: #d6d8db;
             font-weight: bold;
         }
 
-        .stats-cell { text-align: left; line-height: 1.5; }
+        .stats-cell { text-align: left; line-height: 1.6; padding-left: 24px !important; padding-right: 16px !important; }
         .stat-line { white-space: nowrap; }
         .stat-label { font-weight: bold; }
         .stat-val { display: inline-block; min-width: 40px; }
@@ -119,7 +119,7 @@
 
         .rendering table { 
             table-layout: fixed !important; 
-            width: 680px !important; 
+            width: 760px !important; 
         }
 
         .rendering th, .rendering td {
@@ -292,16 +292,16 @@
                     <colgroup>
                         <col style="width: 90px;">
                         <col style="width: 80px;" class="col-monster-id">
-                        <col style="width: 190px;">
+                        <col style="width: 270px;">
                         <col style="width: auto;">
                         <col style="width: auto;" class="action-col">
                     </colgroup>
                     <thead class="table-head">
                         <tr class="label-row">
-                            <th contenteditable="true" class="editable">Monster</th>
+                            <th contenteditable="true" class="editable"></th>
                             <th contenteditable="true" class="editable monster-id-col">Monster ID</th>
-                            <th contenteditable="true" class="editable">HP / ATK / DEF / CD</th>
-                            <th class="editable">Skill</th>
+                            <th contenteditable="true" class="editable"></th>
+                            <th contenteditable="true" class="editable"></th>
                             <th class="action-col">
                                 <button onclick="addRowAboveHeader(this)" style="padding: 2px 5px; font-size:12px; background:#17a2b8;">+標題上方加行</button>
                             </th>
