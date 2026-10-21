@@ -196,12 +196,12 @@
             return /^\d+$/.test(id) ? id.padStart(4, '0') : id;
         }
 
-        // 圖片來源 CDN 沒開 CORS，依序嘗試：直連 -> 圖片代理 -> 備用代理
+        // 圖片來源 CDN 沒開 CORS（直連一定會被擋），所以直接走代理，依序嘗試
         const PROXIES = [
-            u => u,
             u => `https://wsrv.nl/?url=${encodeURIComponent(u)}`,
             u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
             u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+            u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
         ];
         const imgCache = {};
 
