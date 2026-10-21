@@ -74,6 +74,7 @@
             white-space: nowrap;
         }
         
+        .header-title:empty::before { content: attr(data-placeholder); color: #999; font-weight: normal; font-size: 13px; }
         .label-row th { height: 36px; min-width: 40px;
             background-color: #d6d8db;
             font-weight: bold;
@@ -298,10 +299,7 @@
                     </colgroup>
                     <thead class="table-head">
                         <tr class="label-row">
-                            <th contenteditable="true" class="editable">Monster</th>
-                            <th contenteditable="true" class="editable monster-id-col">Monster ID</th>
-                            <th contenteditable="true" class="editable"></th>
-                            <th contenteditable="true" class="editable">Skill</th>
+                            <th contenteditable="true" class="editable header-title" colspan="4" data-placeholder="標題（留空則導出時不顯示）"></th>
                             <th class="action-col">
                                 <button onclick="addRowAboveHeader(this)" style="padding: 2px 5px; font-size:12px; background:#17a2b8;">+標題上方加行</button>
                             </th>
@@ -442,6 +440,19 @@
             btn.closest('tr').remove();
         }
 
+        // 導出時：標題是空的就把整列隱藏；回傳還原函式
+        function hideEmptyTitles(root) {
+            const hidden = [];
+            root.querySelectorAll('.header-title').forEach(th => {
+                if (th.innerText.trim() === '') {
+                    const tr = th.closest('tr');
+                    hidden.push([tr, tr.style.display]);
+                    tr.style.display = 'none';
+                }
+            });
+            return () => hidden.forEach(([tr, d]) => { tr.style.display = d; });
+        }
+
         function exportSinglePNG(btn) {
             const container = document.getElementById('preview-container');
             container.classList.add('rendering');
@@ -450,8 +461,9 @@
             card.classList.add('rendering');
 
             // 導出前：將跨行的 colspan 由 4 改為 3 (因為隱藏了 Monster ID)
-            const spanCells = card.querySelectorAll('td[colspan="4"]');
+            const spanCells = card.querySelectorAll('td[colspan="4"], th[colspan="4"]');
             spanCells.forEach(td => td.setAttribute('colspan', '3'));
+            const restoreTitles = hideEmptyTitles(card);
 
             html2canvas(card, { scale: 2 }).then(canvas => {
                 const link = document.createElement('a');
@@ -461,11 +473,13 @@
                 
                 // 導出後：恢復 colspan 為 4
                 spanCells.forEach(td => td.setAttribute('colspan', '4'));
+                restoreTitles();
                 card.classList.remove('rendering');
                 container.classList.remove('rendering');
             }).catch(err => {
                 console.error("導出圖片失敗:", err);
                 spanCells.forEach(td => td.setAttribute('colspan', '4'));
+                restoreTitles();
                 card.classList.remove('rendering');
                 container.classList.remove('rendering');
             });
@@ -517,8 +531,9 @@
             container.classList.add('rendering');
 
             // 導出前：將跨行的 colspan 由 4 改為 3
-            const spanCells = container.querySelectorAll('td[colspan="4"]');
+            const spanCells = container.querySelectorAll('td[colspan="4"], th[colspan="4"]');
             spanCells.forEach(td => td.setAttribute('colspan', '3'));
+            const restoreTitles = hideEmptyTitles(container);
 
             html2canvas(container, { scale: 2 }).then(canvas => {
                 const link = document.createElement('a');
@@ -528,11 +543,13 @@
                 
                 // 導出後：恢復 colspan 為 4
                 spanCells.forEach(td => td.setAttribute('colspan', '4'));
+                restoreTitles();
                 container.classList.remove('rendering');
             }).catch(err => {
                 console.error("導出圖片失敗:", err);
                 alert("圖片導出失敗");
                 spanCells.forEach(td => td.setAttribute('colspan', '4'));
+                restoreTitles();
                 container.classList.remove('rendering');
             });
         }
