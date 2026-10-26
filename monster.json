@@ -51258,14 +51258,15 @@
     },
     {
         "id": "10947",
-        "attribute": null,
-        "race": null,
-        "leaderskill": null,
-        "normalskill1": null,
-        "normalskill2": null,
-        "HP": null,
-        "ATK": null,
-        "REC": null
+        "attribute": 1,
+        "race": 7,
+        "leaderskill": 2570,
+        "normalskill1": 5006,
+        "normalskill2": 0,
+        "teamskill": ["1961"],
+        "HP": 1715,
+        "ATK": 118,
+        "REC": 0
     },
     {
         "id": "10948",
